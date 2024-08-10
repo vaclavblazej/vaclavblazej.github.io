@@ -1,0 +1,156 @@
+
+\def\arr{$\rightarrow$}
+\def\tilde{\widetilde}
+\def\RA{\Rightarrow}
+
+
+$G$ $k$-degenerate \arr\ $\exists$ orientation with indegree $\leq k$ \arr\ $\chi(G) \leq k+1$ and $ch(G) \leq k+1$
+
+1) $ch(K_{k,k^k+1})>k$
+2) (deciding choosability  $ch(G) \leq k$ is hard: $\Pi_2^p$-complete)
+
+
+[Grunbaun] Acyclic coloring: proper coloring (1 color induce an independent set), and 2 colors induce a forest.
+For planar graphs = 9 [Grünbam], 5 [Bordin].
+
+$\chi_a(G) 2^{\chi_a(G)-1}$ \arr 2 colors star forst = star coloring $\chi_S$
+(pic 1)
+Planar graph $\chi_S(G) \leq 2304$.
+From Bordin bound improved to $X_S(G) \leq 18$.
+
+\def\no{\nabla_0}
+
+How to prove bound on the star coloring number:
+If two colors induce a star forst means, that we cannot find an induced path of length $3$.
+What are all the possible orientations of path $3$: RRR, RLR, \dots.
+If two edges are oriented in the same way then there are $k^2$ grandparents to a vertex.
+If we add transitive edges bade of two edges then that vertex has to have different color than its grandparents.
+Otherwise the $P_3$ has altering edge directions.
+If we add all the edges between vertices which have edges from incoming into $v$ and add transitive edges then density of this graph is $\no(G^+) \leq k+k^2+k^2\tilde\nabla_1(G)$.
+Therefore $\no(G^+) \leq \tilde\nabla_1(G)$ and so $\chi_S(G) = o(\tilde\nabla_1(G)^3)) = O(\nabla_1(G)^2)$.
+
+[obr 3]
+
+\def\oa{\overrightarrow}
+Thm: Let $C$ have a bounded expansion. Let $\oa{C} = \{\oa{G},G \in C, \Delta^-(\oa{G}) \leq k\}$.
+Let $$C^+ = \{ { Fraternal Augmentation } G^+ of \oa{G},\oa{G} \in \oa{C}\}$$
+then $C^+$ has bounded expansion.
+
+[obr 4]
+
+And so $G^+ \in [G\cdot K_{{k \choose 2}+1}]\tilde\nabla$.
+
+Bounded tree width = not having big grid as a minor.
+Bounded tree depth = not having long path as a subgraph.
+
+$td(G) =$ minimal height of a rooted forest $F$ such that $G \subseteq Clos(F)$.
+Ex: $td(P_{2^n-1}) = n$, $td(P_n) \approx \log n$.
+
+\def\LRA{\Leftrightarrow}
+
+$C$ such that $tw(G) = O(|G|^c) \LRA td(G) = O(|G|^c)$.
+Btw. $tw(G) + 1\leq td(G) \leq tw(G)\log(G)$
+
+$tw=1$ forsests ($\chi a$), $td = 2$ star ($\chi_S$); $tw=2$ series-parallel, $td=3$ [obr 5]
+
+Thm: Let $C$ be a bounded expansion class $\LRA$ $(\forall p) \exists N(p)$ such that every $G\in C$ can be $N(p)$-colored in such a way that every $i \leq p$ colors induce a subgraph with tree-depth $\leq i$ (we denote this $\chi_p(G)$).
+
+
+Ex: For $i=1$ proper coloring, for $i=2$ star coloring, for few colors we have a 'simple' induced subgraphs. Also $\chi_1(G)=\chi(G)$ and $\chi_2(G)=\chi_S(G)$.
+
+If $H$ is a minor of $G$ $\Rightarrow td(H) \leq td(G)$, i.e., this class is minor monotone.
+
+If $G_t = \{G,td(G) \leq t\}$ then $G_t$ is well quassi ordered for $\subseteq_i$
+
+$td(G)$ is $1$ if $G=K_1$, $\max(td(G_i)$ if $\forall G_i \subseteq G$, or $1+\min_{V\in V(G)} td(G-V)$ if $G$ is connected.
+
+$C$ has bounded $td$ $\LRA$ $\exists s,t,q$ such that graphs in $C$ exclude $P_x, K_t, K_{q,q}$ as induced subgraphs.
+
+Thm: $\forall s,k$ $\exists$ polynomial time algorithm to decide whether a $P_s$-free graph is $k$-choosable.
+
+Pf: There is no $P_s$, no $K_{k+1}$ and no $K_{k,k^k+1}$ $\RA$ we have bounded $td$ $\RA$ finite number of obstructions.
+
+Question: Does there exist some integer $N$ such that every trignale-free planar graph can be $N$-colored in such a way that every odd cycle gets at lest $4$ colors?
+
+Question[altered]: Class $C$ with bounded expansion $\exists N$ such that $\forall G\in C$ ($N=\chi_3(C)$) there is a $N$-coloring such that every cycle of length $\geq 5$ gets $\geq 4$ colors.
+
+Def[reminder of Homomorphism]: Function $f: G\rightarrow H$ is mapping of vertices such that $\{u,v\}\in E(G) \RA \{f(u),f(v)\}\in E(H)$.
+
+\def\nrightarrow{\rightarrow}
+
+Lemma: $C$ and every triangle-free graph $G \in C$ can be $N$ colored such that \dots (same)
+Then there exists a trignal-free graph $D$ such that $\forall G \in C$, $K_3 \nrightarrow G \RA G \rightarrow D$.
+
+$D=(V,E)$, $V=\{i,\varphi) :1\leq i\leq N:\varphi:{[N]\choose 3} \rightarrow\{0,1\}\}$, $E = \{(i,\varphi),(i',\varphi ')\}: i+-i' {and} \forall T\in {[n] \choose 3}\}$, if $\{i,i'\} \subseteq T$ then $\varphi(T) \neq \varphi i'(T)$
+
+1) $D$ is triangle-free
+2) Let $G\in C$ be triangle-free $\exists c:V(G) \rightarrow[N]$. Let $T\in {[N]\choose 3}$ $\psi_T:G_T \rightarrow K_2$. $f: G \rightarrow D$, $f(v)=(c(v),\varphi_v)$ $\varphi_v(T) = \psi_T(v)$ if $c(V)\in T$ otherwise $\varphi+v(T)=1$.
+$\{u,v\}\in E(G) \rightarrow c(u)=i, c(v)=j$. $f(u)=(i,\varphi_u)$, $f(v)=(j,\varphi_v)$, $T=\{i,j,k\}$.
+
+Thm: If $C$ has bounded expansion $\forall F$ connected $\exists D_f$ such that $F \nrightarrow D_f$ and $\forall G\in C$ $F \nrightarrow G \LRA G\rightarrow D$. (restricted dualities).
+
+Thm: Assume hereditary $C$ is closed unber subdivisions. Then $C$ has all restricted dualities $\LRA$ $C$ has bounded expansion.
+
+Take a random graph $G(n,d/n)$ [Erdös-Ronyi model], $\exists R_d$ such that $G(n,d/n) \in R_d$ asymptotically almost sure and $R_d$ has bounded expansion.
+
+$K_3 \subseteq G(n,d/n) \rightarrow e^{-d^3/6}$. $K_3 \nrightarrow G \LRA G\rightarrow D$ on $R_d$.
+
+Assume $H$-coloring is non-trivial on $G(n,d/n)$ and approximable in plynomial time.
+Is it true that either $H$ is bipartite or $H$ is a restricted dual.
+
+
+%thursday
+%\hline
+
+Thm: Let $C$ be a class of graphs, then $\chi_p(G) < \infty\,\, \forall p$ iff $C$ has bounded expansion.
+
+Property P: $\chi_p(G)$ any $i \leq p$ colors induce a subgraph with $td \leq i$.
+
+Let $C$ be a bounded expansion class. Then $\exists f:N \rightarrow N$ and an algorithm $A$ such that $\forall G\in C \forall p\in N$ $A$ computes a colorin with property P with at most $f(p)$ colors in time $O(w^pn^2)$, $O(f(p)n)$.
+
+Thm: Let $C$ be a class of graphs, then $(\forall p)(\forall \epsilon)\, \chi_p(G) <|G|^\epsilon$ $\forall G\in C$ sufficiently big ($|C| > N(p)$) $\LRA$ $C$ is nowhere dense.
+
+Lem: If $C$ nowhere dense, then $limsup_{G \in C} {\log ||G|| \over \log |G|} \in \{-\infty,0,1\}$.
+
+Thm: If $C$ nowhere monotone and dense and $F$ is a graph, then $limsup_{G \in C} {\log \# F \subseteq G \over \log |G|} \in \{-\infty,0,1,\dots,\alpha(F)\}$.
+
+Letmma: $\exists t:(0,1)\times N\rightarrow (0,1)$, $\forall p,k \in N\, \forall F, |F|=p$, $\forall 0<\epsilon<1$, $\forall G$ such that $(\# F\subseteq G) > |G|^{k+\epsilon}$ then $\exists$ in $G$ a structure $(k+1,F)$-sunflower (such that $\min_i |Fe_i| \geq ({|G| \over {\chi_p(G) \choose p}^{1/\epsilon}})^{t(\epsilon,p)}$)
+$\RA \exists G' \in G$ which $|G'| \geq (k+1)({|G| \over {\chi_p(G) \choose p}^{1/\epsilon}})^{t(e,p)}$ and $(\# F \subseteq G') \geq ({|G'| - p \over k+1})^{k+1}$.
+
+[obr 6]
+$(\# F \in G) \geq \Pi|Fe_i|$
+
+Thm: Let $F$ be a graph with at least one edge. A monotone class $C$ is nowhere dense $\LRA$ for every $r$, $limsup_{G \in C\nabla r} {\log \# F \subseteq G \over \log |G|} < |F|$ ($\{-\infty,0,1,\dots,\alpha(G)\}$ - nowhere dense, $|F|$ - somewhere dense).
+
+
+Colorings:
+
+$$adm_r(G) \leq col_r(G) \leq wcol_r(G)$$
+$$wcol_r(G) \leq col_R(G)^r$$
+$$col_r(G) \leq adm_r(G)(adm_r(G)-1)^{r-1}+1$$
+
+Thm [Grohe, Kreutzer, Rabinovich, Sieberts]: $d,r \geq 4$, every $d$-regular graph $G$ with girth $\geq 2r+1$: 
+$$wcol_r(G) \geq {d \over d-3} (({d-1 \over 2})^r -1),$$
+$$adm_r(G) = d+1.$$
+
+Connnection to chromatic number
+$$\chi_p \leq wcol_{2^{p+1}}$$
+$$wcol_p \leq 2(1+p{\chi_{p+1} \choose p+1})^2$$
+
+Prop:
+$$\nabla_r(G) \leq wcol_{2r+1}(G)$$
+$$\tilde\nabla_r(G) \leq adm_{2r+1}(G)$$
+$$\nabla_r(G) \leq col_{4r+1}(G)$$
+
+Lemma:
+$$adm_r(G) \leq 1+6r\lceil \tilde\nabla_{r+1}(G)\rceil^3$$
+
+Thm [Grohe, Rubinovich, Siebertz, Stavroupoulos, Krentzer]: $\forall r\geq 3$ computing $wcol_r(G)$ is NP-complete.
+
+Thm [Dvorák]: $C$  be a fixed bounded expansion class, $r \in N$. Then there exists a linear time algorithm that, given $G \in C$ computes an ordering ($<$) witnessing $adm_r(G)$ (optimal).
+
+Thm [van den Heavel, Kiergstead, Siebertz]
+Let $C$ be a bounded expansion class, $\exists $ such that $\forall G\in C\, \exists f:N \rightarrow N$ a linear order on $V(G)$ such that $\forall r |WReach_r(u)|\leq f(r)$ .
+
+
+\bye

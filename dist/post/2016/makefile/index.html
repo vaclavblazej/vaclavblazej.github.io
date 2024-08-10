@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Make &amp; Makefile - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2016-07-30T00:00:00Z" class="post-list timeago">30.07.2016</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/make">make</a> <a href="https://vaclavblazej.github.io/tags/program">program</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Make &amp; Makefile</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Makefile je soubor používaný programem &lsquo;make&rsquo;.
+Spuštění příkazu &lsquo;make&rsquo; způsobí přečtení souboru &lsquo;makefile&rsquo; nebo &lsquo;Makefile&rsquo; (bez přípony), zparsování skriptu a provedení prvního cíle.
+Definice cíle obsahuje název, závislosti a příkazy.</p>
+<p>Příklad cíle &lsquo;clean&rsquo;, bez závoslostí, se dvěma příkazy (všechny příkazy nutno předsadit TABem):</p>
+<pre><code>clean:
+	rm -f $(OBJECTS) $(EXECUTABLE) ./doc
+	rmdir $(TMP)
+</code></pre>
+<p>Příklad cíle &lsquo;clear&rsquo;, který je závislý na cíli &lsquo;clean&rsquo;:</p>
+<pre><code>clear: clean
+</code></pre>
+<p>Vyvolání konkrétního cíle provedeme např. příkazem &lsquo;make clean&rsquo;.
+To způsobí, provedení závislostí a potom příkazů vybraného cíle.
+Závislosti se neprovedou, pokud je cíl jméno souboru, který má závislost na nezměněné soubory.</p>
+<p>Příkaz make má spoustu vychytávek, které mohou usnadnit práci.
+Základní je uložení často používané hodnoty do proměnné:</p>
+<pre><code>DIR=./src/engine/
+</code></pre>
+<p>tu pak můžeme použít kdekoli ve skriptu:</p>
+<pre><code>$(TMP)%.o: $(DIR)%.cpp
+	$(CC) $(CFLAGS) $&lt; -o $@
+</code></pre>
+<p>V předchozím skriptu jsou kromě několika proměnných také předvedené zkratky.
+Zkratky máme pro název cíle <code>$@</code>, první závislost <code>$&lt;</code> a závislosti, které se od posledního provedení změnily <code>$?</code>.</p>
+<p>Pro lepší pochopení si můžete projít příklad složitějšího <a href="./Makefile">makefile</a>, který jsem použil ve své semestrální práci na programování v c++.</p>
+<p>Zdroj: <a href="http://web.eng.hawaii.edu/Tutor/Make/"target="_blank">http://web.eng.hawaii.edu/Tutor/Make/<span style="white-space: nowrap;">&thinsp;↗</span></a> (EN)</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2016
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

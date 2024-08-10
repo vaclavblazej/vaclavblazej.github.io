@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Polynomial Kernels for Tracking Shortest Paths - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-06-27T00:00:00Z" class="post-list timeago">27.06.2022</time>
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other %!s(&lt;nil&gt;)" href="https://arxiv.org/abs/2202.11927">arXiv</a>
+    
+
+
+    
+        
+
+
+
+    
+        <a class="box journal published" href="https://www.sciencedirect.com/science/article/pii/S0020019022000722?dgcid=coauthor">IPL</a>
+    
+
+
+
+    
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/kernelization">kernelization</a> <a href="https://vaclavblazej.github.io/tags/graph-theory">graph theory</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Polynomial Kernels for Tracking Shortest Paths</h1>
+
+            
+    
+    with
+     Pratibha Choudhary, Dušan Knop, Jan Matyáš Křišťan, Ondřej Suchý, and Tomáš Valla
+
+
+        </div>
+        <div class="post-content">
+            <p><em>Tracking Shortest Paths</em> is a task where we want to add $k$ trackers to a directed acyclic graph so that any shortest path which goes from source to the target activates a unique combination of trackers.
+In other words, there are no two paths that would activate the same set of trackers.
+One can study this problem also in variant where the paths are not necessarily shortest &ndash; this is called <em>Tracking Paths</em> problem.</p>
+<p>We showed that</p>
+<ul>
+<li>there is a $O(k^2)$ kernel for Tracking Paths on DAGs</li>
+<li>there is a $O(k)$ kernel for Tracking Paths on planar DAGs</li>
+<li>there is a $O(k^4)$ kernel for Tracking Shortest Paths on general graphs</li>
+<li>there is a $O(k^2)$ kernel for Tracking Shortest Paths on planar graphs</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

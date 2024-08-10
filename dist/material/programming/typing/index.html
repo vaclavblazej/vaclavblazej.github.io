@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Typing practice - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-03-10T00:00:00Z" class="post-list timeago">10.03.2018</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Typing practice</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <head>
+    <include src="./angular.js"/>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    .unvisited { background: darkgoldenrod }
+    .open      { background: green }
+    .closed    { background: #a84444 }
+    .wall      { background: #333333 }
+    .type      { white-space: pre-wrap }
+    .typed     { background: #66BB66 }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+var app = angular.module('app', []);
+app.controller('myCtrl', function($scope, $timeout, $http) {
+    $scope.arr = [];
+    $scope.typed  = "";
+    $scope.target = "Hello world!";
+    $scope.done   = "";
+    $scope.error  = false;
+    $http.get('./1.txt').then(function(res){
+        $scope.target = res.data;
+        console.log(res.data);
+    }, function(){
+        $scope.error = true;
+    });
+    //.success(function(data, status, headers, config) {
+    //    $scope.contents=data;
+    //}).error(function(data, status, headers, config) {          
+    //    $scope.error = true;
+    //});
+    $scope.$watch('typed', process);
+    function process(e){
+        $scope.firstTyped = first($scope.typed);
+        $scope.firstTarget = first($scope.target);
+        if($scope.firstTyped === $scope.firstTarget){
+            var len=$scope.firstTarget.length;
+            $scope.target=$scope.target.substring(len);
+            $scope.done +=$scope.typed.substring(0,len);
+            $scope.typed =$scope.typed.substring(len);
+        }
+        //$scope.test = $scope.target.substring(0,$scope.res.length);
+        //if($scope.res == $scope.target.substring(0,$scope.res.length)){
+        //    console.log('test');
+        //    $scope.target=$scope.target.substring($scope.res.length);
+        //}
+    }
+    $scope.firstTyped = '';
+    $scope.firstTarget = '';
+    function first(sentence){
+        var last = sentence.search(/[ \n]/i);
+        return sentence.substring(0,last+1);
+    }
+});
+</script>
+<p>One of programmer&rsquo;s basic assets.</p>
+<ul>
+<li>practice for beginners on <a href="https://www.keybr.com/"target="_blank">Keybr<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>practice fast english typing on <a href="http://play.typeracer.com/"target="_blank">Typeracer<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>typing practice for normal programmers on <a href="https://typing.io/"target="_blank">Typing<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<div ng-app="app" ng-controller="myCtrl">
+    <div ng-show="error">Chyba při načítání obsahu</div>
+    <div>
+        <textarea ng-model="typed" ng-trim="false"></textarea>
+    </div>
+    <code class="hljs asciidoc type" ng-trim="false"><span class="typed">{{done}}</span>{{target}}</code>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

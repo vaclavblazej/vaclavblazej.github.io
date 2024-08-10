@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Notes from the &#39;Hardness of Approximation: From the PCP Theorem to the 2-to-2 Games Theorem&#39; - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2020-08-24T00:00:00Z" class="post-list timeago">24.08.2020</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Notes from the &#39;Hardness of Approximation: From the PCP Theorem to the 2-to-2 Games Theorem&#39;</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>The information in this post consists of information provided by <a href="https://cs.nyu.edu/~khot/"target="_blank">Subhash Khot<span style="white-space: nowrap;">&thinsp;↗</span></a> in the &lsquo;<a href="..">Prague Summer School on Discrete Mathematics 2020</a>&rsquo;.</p>
+<p>We will focus on Hardness of Approximation, meaning that approximation algorithm of factor $\alpha$ is still NP-hard.</p>
+<h2 id="known-results">Known results</h2>
+<ul>
+<li>Bin packing $1+\epsilon$ PTAS</li>
+<li>3-SAT 7/8, hard for $7/8+\epsilon$</li>
+<li>set cover $\ln n$, hard for $(1-\epsilon) \ln n$</li>
+<li>clique $n$, hard for $n^{1-\epsilon}$</li>
+</ul>
+<p>Plan:</p>
+<ul>
+<li>pre PCP Theorem &ndash; Edge disjoint Paths</li>
+<li>post PCP Theorem &ndash; 3 LIN oevr $F_2$</li>
+<li>Via Unique Games conjecture &ndash; Max Cut</li>
+<li>Proof of 2 to 2 games conjecture &ndash; clique($n/4$, $\epsilon n$)</li>
+</ul>
+<h2 id="gap-reductions">Gap reductions</h2>
+<p>Poly time reduction 3SAT -&gt; P with instance Phi -&gt; I, where Yes (completeness) instance has $OPT(I) \ge h(n)$ and no instance (soundness) has $OPT(I) \le \alpha h(n)$.</p>
+<h3 id="example-hamiltonian-cycle-to-tsp-reduction">Example: Hamiltonian cycle to TSP reduction.</h3>
+<p>Let us reduce graph from Ham cycle to TSP by setting edges for TSP to 1 iff they are in G for Ham.cycle, otherwise their weight is $\infty$.</p>
+<h3 id="edge-disjoint-paths">Edge disjoint paths</h3>
+<ul>
+<li>Input: $(s_i,t_i)$</li>
+<li>Goal: find maximum amount of disjoint paths from the sources to the sinks.</li>
+<li>is NP-hard to approximate EDP with factor $|E|^{1/2-\epsilon}$</li>
+</ul>
+<p>Reduction from 2EDP (edge disjoint paths, same but with only two sources and sinks) which is known to be NP-hard.
+Create paths for each $i$, and cross all pairs.
+Substitute the intersection with $G$ from 2EDP.
+Yes instance will have $OPT(H)=n$ because EDP is solvable, otherwise we can only satisfy one, since every pair is crossing.</p>
+<h3 id="pcp-probabilisticaly-checkable-proofs-theorem">PCP (Probabilisticaly Checkable Proofs) Theorem</h3>
+<p>There is a reduction from 3SAT to Gap-3SAT (either we have satisfiable or at most $\alpha$ satisfiable 3SAT formulae).
+So if $\Phi$ is safisfiable $OPT(\Phi)=1$, but if $\Phi$ is not satisfisable, then $OPT(\Phi) \le \alpha$, so a big fraction of clauses are not satisfied.</p>
+<h3 id="np-class">NP class</h3>
+<p>Languages L that have membership proof that can be checked in deterministic polytime.</p>
+<ul>
+<li>Completness $x \in L \Rightarrow \exists \pi \text{ s.t. } V(\pi) \text{ accepts}$</li>
+<li>Soudness $x \not\in L \Rightarrow \forall \pi \text{ s.t. } V(\pi) \text{ rejects}$</li>
+</ul>
+<h3 id="pcp-theorem">PCP Theorem</h3>
+<p>Every $L \in NP$ has probabilistic polytime verifier that uses $O(\log n)$ random bits and makes $O(1)$ queries to proof, and has completness $1$ and soudness $\le 1/2$ (probability of wrong accept is at most $1/2$ or any constant).</p>
+<p>Idea:
+For 3SAT the &lsquo;supposed&rsquo; proof is the assignment to variables.
+(&lsquo;Supposed&rsquo; because we verify probabistically, and we could be fooled by a wrong proof by an adversary.)
+PCP proof creates a new proof $\pi$ which is an encoding of the original NP proof $\sigma$ via error correcting code s.t. $|\pi|=|\sigma|^{O(1)}$ (new proof has poly-length in the old proof).</p>
+<p>We will show that two version of PCP theorem are equivalent:</p>
+<ul>
+<li>PCP Theorem version 1 (yes=1, no $\le \alpha$)</li>
+<li>PCP Theorem version 2 (yes accept with prob=1, no acecpts with prob \le 1/2)</li>
+</ul>
+<p><strong>1 $\Rightarrow$ 2</strong></p>
+<ul>
+<li>Ask proved for the proof reduced via reduction to the reduced proof (Gap 3SAT).</li>
+<li>Pick random clause and check if it is satisfied. Read it and check those 3 bits.</li>
+<li>If yes we accept always; if no then we know that we accept with probability at most $\alpha$.</li>
+</ul>
+<p><strong>2 $\Rightarrow$ 1</strong></p>
+<p>We will design the reduction</p>
+<ul>
+<li>We have the probabilistic verifier and are given the input x; the $\pi$ is an unknown proof.</li>
+<li>Unknown proof $\pi = y_1y_2y_3\dots y_{|\pi|}$, but we know that if we read any constant number of random bits then we get constant that it must be satisfied (assume x is ok)</li>
+<li>We built polynomial number of constrants and get CSP (constrant satisfiability problem)</li>
+<li>Completness is 1 because every constraint is satisfied if x is yes; soudness is 1/2 (idk why 1:00:00 in the video)</li>
+<li>Reduce CSP to 3SAT
+<ul>
+<li>yes =&gt; yes</li>
+<li>no (wrong $\le 1/2$) =&gt; no (wrong $\le 1-1/{2^2}$)</li>
+</ul>
+</li>
+</ul>
+<h2 id="hardness">Hardness</h2>
+<p>Hardness results for approximation algorithms overwheamingly build upon PCP theorem (aside few exceptions).</p>
+<p>The gap reductions can squeeze or widen the gap for the approximation.</p>
+<h3 id="3bit-pcp">3bit PCP</h3>
+<p>NP has PCP verifier that uses $O(\log n)$ random bits, $3$ queries, linear predicate (over $\mathbb{F}_2$); accepts correctly with $1-\epsilon$ and rejects incorrectly with $1/2+\epsilon$.</p>
+<p>Given 3LIN instance S where each equation has $x + y + z = 0$ or $=1$ it is NP hard to diestinguish bet${}^n$.
+We can always find assignment which satisfies at least $1/2$ off all equations; but we cannot do better.
+(Loss of perfect completness is inherent, otherwise we could solve the problem faster.)</p>
+<p>High level:
+The result comes from combination of two following problems.</p>
+<ul>
+<li>Dictatorship testing, Linearity testing, $A:{-1,1}^n \rightarrow {-1,1}$.</li>
+<li>PCP Theorem, build Label Cover, and use Parallel Repetition Theorem</li>
+</ul>
+<h3 id="label-cover-problem">Label cover problem</h3>
+<p>(Description is just cumbersome.)
+Labelling / constraint satisfaction problem.
+We have bipartite graph; vertices are variables, task is to assign labels to vertices.
+Labels come from an (constant-sized) alphabet and there is different alphabet for each side of the graph partity.
+Left-hand side will be assigned labels from $N$ and right-hand side from $M$.
+Each edge gives a constraint $\pi_{vw} : [M] \rightarrow [N]$ ($|M| &raquo; |N|$).
+Edge is satisfied if $\pi_{vw}(l(w))=l(v)$.
+Goal is to find labeling with maximal number of satisfied edges OPT.</p>
+<p>It is NP-h to distinguish of $\mathbb{L}(G(V,W,E),[2],[7],{\pi_{vw}}) has yes=1, no$\le \alpha$.</p>
+<p>Pf:
+Reduction from ${\rm Gap3SAT}_{1,\beta}$ (PCP Theorem)
+Left-side are variables $x_i$, right-hand side are clauses;</p>
+<p>Each failed clause will have at least one failed edge, this is where $/3$ comes from.
+After reduction no is wrong in $\le 1-(1-\beta)/3 = \alpha$.</p>
+<p>Label color problem has gap amplification property.
+There is a product construction, where the result has a boosted gap, i.e., using $k$ we have wrong no in $\le \epsilon = 2^{-k}$.
+So, this problem is very hard to approximate.</p>
+<h2 id="hw1">HW1</h2>
+<ul>
+<li>max 2-SAT for $0.943\dots+\epsilon$ is hard assuming UGC; there exists a polynomial-time $0.943\dots$ approximation algorithm</li>
+</ul>
+<hr>
+<h1 id="lecture-2">Lecture 2</h1>
+<h2 id="basics-of-fourier-analysis">Basics of Fourier Analysis</h2>
+<p>$2^n$-dimensional space of $A:{-1,1}^n \rightarrow \mathbb{R}$ (but we are interested in $\rightarrow {-1,1}$)</p>
+<p><strong>Character functions</strong> &ndash; for every $\alpha \subseteq [n]$ character $X_\alpha(x)=\Pi_{i\in\alpha} x_i$
+(these are in fact linear functions)</p>
+<p>Every function on hypercube can be written as a combination of character functions $\sum_{\alpha\subseteq[n]} A_\alpha X_\alpha(x)$.</p>
+<h2 id="linearity-testing">Linearity Testing</h2>
+<p>We will use multiplicative notation where we use ${-1,1}$ and use multiplication instead of ${0,1}$ and xor.</p>
+<p>Theorem: 3 query test, perfect completeness, soudness $Pr[{\rm accept}] = \mathbb{E}<em>{x,y}[(1+A(x)A(y)A(xy))/2]$, (note nominator is 1 iff A is linear).
+Magic happens and probability of acceptance results to $1/2 + 1/2 \sum</em>\alpha \hat A_\alpha^3$.</p>
+<h2 id="dictatorship-testing">Dictatorship Testing</h2>
+<p>Dict. functions: ${\rm dict}_i(x_1,\dots,x_n)=x_i$.</p>
+<p>Test if fun is dictator.</p>
+<p>Hastad: there is a 3-query linear test s.t. if a is a distator it accepts with $\ge 1-\epsilon$, if $Pr[{\rm accept}] \ge 1/2 + \eta$ then $A$ is $(2\eta,O(1/\epsilon \cdot \log (1/\eta))$-junta.</p>
+<p>TODO</p>
+<h3 id="dictatorship-as-encoding-long-code">Dictatorship as Encoding (Long Code)</h3>
+<p>Encoding ${1,\dots,n} \rightarrow {-1,1}^{2^n}$, i.e., table of values of ${\rm dict}<em>i (=X</em>{{i}})$</p>
+<h2 id="label-cover-again">Label cover (again)</h2>
+<p>Achieving Boolean queries, idea: we ask the prover to give us encoding by LongCode (from dictatorship), we can then check that the encoding is valid: 2 bits from encoding of w (codework test), and 1 bit from encoding of v (consistency test)</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2020
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

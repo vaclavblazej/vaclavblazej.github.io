@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/science/</link>
+    <description>Recent content in Science on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX setup for writing a paper review response</title>
+      <link>https://vaclavblazej.github.io/post/2023/review_response/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/review_response/</guid>
+      <description>A simple but sufficient setup to response to a review. The rev command guards that response is given and prints a red note otherwise.&#xA;main.tex:&#xA;\documentclass[a4paper,USenglish]{article} \usepackage{xcolor} \newcommand{\rev}[2]{ \item #1 \if\relax\detokenize{#2}\relax {\color{red}UNANSWERED} \else {\color{blue}#2} \fi } \begin{document} \section*{Response} We thank the reviewers for their reviews \dots \subsection*{Reviewer 1} \begin{enumerate} \rev{Line 128: \dots}{} \rev{Line 256: \dots}{we changed this} \end{enumerate} \end{document} </description>
+    </item>
+    <item>
+      <title>Jak funguje Věda</title>
+      <link>https://vaclavblazej.github.io/post/2022/veda/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/veda/</guid>
+      <description>Způsob lidského poznání se dere kupředu něčím těžko definovatelným. Kde se bere nové poznání, a jak víme, že je správně?&#xA;Tento soupis je z pohledu českého vědce v teoretické informatice. Z různých oborů bude pohled trochu jiný.&#xA;fyzika má články, kde je bězné mít obrovský počet autorů na článku (třeba 60) autoři seřazeni podle podílu tězké se jako začínající vědec prosadit na konferenci matematika konference jsou spíše sešlost, nebývají z toho publikace informatika míva na konferencích publikaci autoři seřazeni podle abecedy teoretické obory stále možnost proniknout i jako jednotlivec Kde se berou problémy všude kolem, praxe Turingovy stroje jsou model výpočetních zařízení PRAM jsou model pameti paralelních strojů kombinace / zjednodušení / zesložitění známých problémů zjednodušujeme, aby se daly řešit tězké problémy zesložiťujeme, abychom řešením pokryli více problemů současně zkoumané problémy přirozeně vzbuzují zájem dalších vědců Kdo se problémy snaží řešit zpravidla vědci &amp;ndash; mají to v popisu práce lidé se zaměřují na různé aspekty &amp;ndash; problém solveři / budovatel teorií vědci se stejnym zájmem mohou tvořit vyzkumne skupiny identifikuje je jejich jméno, nově i ORCID&amp;thinsp;↗ identifikátor vysoké školy &amp;ndash; akademičtí vědci běžně bývaji ranky: student doktorátu (nic), doktor (Ph.</description>
+    </item>
+  </channel>
+</rss>

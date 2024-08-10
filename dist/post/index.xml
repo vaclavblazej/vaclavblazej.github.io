@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/post/</link>
+    <description>Recent content in Blog on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating static pages</title>
+      <link>https://vaclavblazej.github.io/post/2024/migrating_pages/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/migrating_pages/</guid>
+      <description>I hoped that my alma mater would keep my account open but that turned out to not be the case. University&amp;rsquo;s data got compromised and they pushed us to change our passwords. When I did attempt to change it the respective website didn&amp;rsquo;t work. After the password got deactivated I contacted the helpdesk which informed me my account will not be activated as I have no formal relation to the faculty and the alumni access is not yet implemented.</description>
+    </item>
+    <item>
+      <title>Circular design for Flag Semaphor decyphering</title>
+      <link>https://vaclavblazej.github.io/post/2024/semaphor/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/semaphor/</guid>
+      <description>Flag semaphor&amp;thinsp;↗ is a method historically used to transfer infromation between ships. Currently, it is one of several methods of encrypting text in cypher games. While encoding text is best done with a map from alphabet to the semaphore decoding is not so easy. Either one has to decode in reverse direction to the alphabet, or with a 2d table that has one hand in rows and the second hand in columns &amp;ndash; this still takes quite a long time to find the correct cell.</description>
+    </item>
+    <item>
+      <title>Bergen &amp; EPIT 2024</title>
+      <link>https://vaclavblazej.github.io/post/2024/bergen_epit/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/bergen_epit/</guid>
+      <description>From 29. April to 17. May I travelled together with Peter&amp;thinsp;↗ Bergen for 2 weeks of work and to France EPIT 2024&amp;thinsp;↗ for 1 week of workshop. I thank Peter for planning this trip.&#xA;Bergen, Norway We were invited to Bergen to work with Sushmita Gupta&amp;thinsp;↗ and meet members of the Algorithms Group&amp;thinsp;↗.&#xA;To get there we flew from Birmingham to Bergen through Copenhagen. From Bergen airport it is easy to get in-city using their Bybanen tram.</description>
+    </item>
+    <item>
+      <title>Ring of Pain</title>
+      <link>https://vaclavblazej.github.io/post/2024/ring_of_pain/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/ring_of_pain/</guid>
+      <description>Rogue-lite games manifest in repeated playthroughs and gradual metagame progression. Complete mastery of the game may allow you to win a run on the first try. But for mortals there is no option other than to run many times to gain a better chance of winning. The notion of repeated play to challenge yourself to get knowledge and progression is apparent even in the name. Ring of Pain&amp;thinsp;↗ is a very good rogue-lite game with its theme embedded in every corner.</description>
+    </item>
+    <item>
+      <title>Inscription</title>
+      <link>https://vaclavblazej.github.io/post/2024/inscription/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/inscription/</guid>
+      <description>The appeal of Inscription&amp;thinsp;↗ is its cool card game tied to a rogue-lite progression through the story. I found the game to be made of two major parts and, surprisingly, even though the story is interesting, I think that the game establishes a theme which later gets betrayed &amp;ndash; let me elaborate; spoilers ahead.&#xA;The game starts with you being forced into playing a card game against a dungeon mater (Leshy) who challenges you in an ascension through a map.</description>
+    </item>
+    <item>
+      <title>Hierarchy of Parameters update</title>
+      <link>https://vaclavblazej.github.io/post/2024/parameters_update/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/parameters_update/</guid>
+      <description>It&amp;rsquo;s been a long time coming but over the longer weekend I finished rewriting of HOPS&amp;thinsp;↗ from python to rust. Throughout the rewriting, there were some new ideas of what could be included, unfinished parts of which are coded. Now, after a long time, I believe the resulting page to be in a better state than it was before so it was finally released. The biggest changes are as follows.</description>
+    </item>
+    <item>
+      <title>Manipulating game files on Steam</title>
+      <link>https://vaclavblazej.github.io/post/2024/downgrading_steam_games/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/downgrading_steam_games/</guid>
+      <description>Steam&amp;thinsp;↗ installs and updates your games automatically. However, in some cases it may be needed to change local files manually.&#xA;Running a game with flags right click game, properties in general change the Launchh options The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &amp;ndash; that one is available through variable %command%. For adding a flag use</description>
+    </item>
+    <item>
+      <title>PC build</title>
+      <link>https://vaclavblazej.github.io/post/2024/pc_build/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/pc_build/</guid>
+      <description>For over 13 years I rely on laptops to provide me with computing. The first few I used ASUS PRO5DID-SX128V and the last 9 years were dominated by brilliant ASUS N56JN-CN047. The notebook got a new SSD and battery by the end of 2017, that was the last upgrade. There, I dual boot windows for games and ubuntu for everything else.&#xA;I always wanted to get a &amp;ldquo;good&amp;rdquo; pc once I find a more permanent place but why wait?</description>
+    </item>
+    <item>
+      <title>Over the Garden Wall</title>
+      <link>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</guid>
+      <description>I heard about Over The Garden Wall&amp;thinsp;↗ series for the first time two days ago. It is an almost 10 years old miniseries with runtime of 1 hour 40 minutes. It is rare to find a series with so much care given to it; I can wholeheartedly recommend it. The miniseries format gives it a short runtime and gave the creators incentive to tie all the knots, an important feature that I seek in any series that I consider watching.</description>
+    </item>
+    <item>
+      <title>Evolution</title>
+      <link>https://vaclavblazej.github.io/post/2023/evolution/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/evolution/</guid>
+      <description>Evolution is a process where an object adjust to the environment through change over time. For an evolution to appear we need two factors.&#xA;Objects that can multiply and change Environment that enforces the change Both are necessary and sufficient. Without objects we have no things to evolve. If they could not multiply than we only have self-improvement. Without environmental pressure the changes do not lead anywhere. Note that the improvement is always with respect to the environment &amp;ndash; there is no evolution for its own sake.</description>
+    </item>
+    <item>
+      <title>Note on AI</title>
+      <link>https://vaclavblazej.github.io/post/2023/ai/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/ai/</guid>
+      <description>Phrase artificial intelligence is changing its meaning quickly. In about 2012, I would say it is a sci-fi concept or a game&amp;rsquo;s opponent controlled by a computer. In 2017 this was very similar, but AI seemed to encompass gradient descent and fancy heuristics. Everyone was creating &amp;ldquo;chat-bots&amp;rdquo; that I never found anywhere close to useful, even for their dedicated purpose. (E.g. our school had big PR news about our awesome chatbot about Covid 2019; it didn&amp;rsquo;t have reasonable answers even for the most basic questions.</description>
+    </item>
+    <item>
+      <title>About rants</title>
+      <link>https://vaclavblazej.github.io/post/2023/rant/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/rant/</guid>
+      <description>It is difficult to be consistent about anything. In good mood I decide to do something, then priorities change and I stop it. But the big ideas always boomerang back to me and I find myself thinking about them again. I am very glad that five years ago circumstances made me create this website. To an accidental reader, I wish to convey that it serves as a overview of my past thoughts.</description>
+    </item>
+    <item>
+      <title>A short peek at Manim</title>
+      <link>https://vaclavblazej.github.io/post/2023/manim/</link>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/manim/</guid>
+      <description>There are only a few public projects that I admire and Manim became a candidate to place among them. Using Manim you can make programmical animations and pictures. It is written in python3 and connects to ffmpeg to render video. Although its output is bitmap it holds vectors in its representation for as long as it can. It started as a project of 3b1b&amp;thinsp;↗ who opened it to public via Community Edition.</description>
+    </item>
+    <item>
+      <title>A note about XNLP-completeness</title>
+      <link>https://vaclavblazej.github.io/post/2023/xnlp_note/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/xnlp_note/</guid>
+      <description>Classically, we aim to determine whether a computational problem is either NP-hard or polynomial-time solvable. Such a distinction is only the first step when researching a problem that is NP-hard as often we still need to devise an algorithm that will provide us with a solution.&#xA;Within the field of parameterized complexity we aim to find algorithms that are &amp;ldquo;terrible&amp;rdquo; only with respect to some facet of the input. More precisely, this means that instead of having something like $\mathcal O(2^n)$ where $n$ is the size of the input we instead may have $f(k) n^{\mathcal O(1)}$ where $f$ is any computable function and $k$ describes parameter of the input.</description>
+    </item>
+    <item>
+      <title>Partial preorders</title>
+      <link>https://vaclavblazej.github.io/post/2023/comparabilities/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/comparabilities/</guid>
+      <description>Let us have a preorder&amp;thinsp;↗ that is unknown to us. Our ultimate goal is to discover it entirely but before that we have only partial information. For every pair A and B we can have&#xA;$A \le B$, $A \not\le B$, or unknown. When we know relations in both directions between two elements we may get&#xA;$A \not\le B \land B \not\le A$ implies that $A$ and $B$ are incomparable, $A \le B \land B \not\le A$ implies $A &amp;lt; B$ (and vice-versa), or $A \le B \land B \le A$ implies $A = B$.</description>
+    </item>
+    <item>
+      <title>Mathjax</title>
+      <link>https://vaclavblazej.github.io/post/2023/mathjax/</link>
+      <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/mathjax/</guid>
+      <description>Setting up Mathjax&amp;thinsp;↗ for your website allows you to add mathematical symbols as either inline math $E = mc^2$, or display math: \[ R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_{\mu \nu} \] Such mathematics are written in LaTeX format&amp;thinsp;↗. If you already have old Mathjax 2 setup, you can use Conversion tool&amp;thinsp;↗ to migrate.&#xA;To setup the math from zero we enable inline math to be entered using dollar symbols $E = mc^2$ or display math by using escaped square brackets:</description>
+    </item>
+    <item>
+      <title>Systems page update</title>
+      <link>https://vaclavblazej.github.io/post/2023/update_system/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/update_system/</guid>
+      <description>This website is split between into two main parts. First are blog posts that are time-sensitive and eventually go out-of-date. Second is called material that is meant to be updated regularly or capture time-insensitive information.&#xA;Page about my system setup used to only list some programs I used or knew about and it was terribly out-of-date &amp;hellip; so the time came up to update it.&#xA;Though I am quite satisfied with my current setup there are still some minor things that I would like to fix eventually.</description>
+    </item>
+    <item>
+      <title>Small survey on tools used by mathematicians</title>
+      <link>https://vaclavblazej.github.io/post/2023/ccc_survey/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/ccc_survey/</guid>
+      <description>In the field of Theoretical Computer Science it is standard to write scientific papers in LaTeX. However, there are still quite a few options when deciding what software to use to create the text, images, or conference presentations. I asked several people during CCC 2023&amp;thinsp;↗ about this.&#xA;Up-to-date compilation of tools can be found in Material section.&#xA;Assuming we talk about collaborative works, majority of questioned people write their papers in Overleaf&amp;thinsp;↗.</description>
+    </item>
+    <item>
+      <title>Dredge</title>
+      <link>https://vaclavblazej.github.io/post/2023/dredge/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/dredge/</guid>
+      <description>&amp;ldquo;Dredge&amp;thinsp;↗ is a single-player fisihing adventure with a sinister undercurrent&amp;rdquo; &amp;ndash; as Steam says. I do not want to spoil anything so I split this post into several sections with gradually increasing amount of spoilers. Let me start with a spoiler-free review.&#xA;Dredge is awesome. You end up on an island, you have a ship, go fishing - which is implemented via a simple mini-game, sell your catch, talk to townsfolk, discover the islands.</description>
+    </item>
+    <item>
+      <title>Initialization of Parameters hierarchy website</title>
+      <link>https://vaclavblazej.github.io/post/2023/parameters/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/parameters/</guid>
+      <description>During the last two weeks I set up repository&amp;thinsp;↗ which generates website&amp;thinsp;↗ about parameterized complexity. More specifically, it depicts hierarchy of various parameters. This project was on my mind for a while and wasn&amp;rsquo;t sure how to do it, but then realized it will be quite easy to do with a static website. I use static web generator for my homepage and understand it well enough to setup any other site.</description>
+    </item>
+    <item>
+      <title>Segre chart (Table of nuclides)</title>
+      <link>https://vaclavblazej.github.io/post/2023/segre_chart/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/segre_chart/</guid>
+      <description>Decades of effort and millions of dollars compressed into a table that shows base blocks of our universe:&#xA;&amp;thinsp;↗&#xA;Table of nuclides&amp;thinsp;↗ depicts elements of the periodic table in the first axis and their isotopes in the second axis.&#xA;The first exposition to it I had was the excelent BobbyBroccoli video about &amp;ldquo;a guy who faked an element&amp;rdquo;.&#xA;Explore it yourself. A few websites that have a reasonable interactive chart are:</description>
+    </item>
+    <item>
+      <title>Forward and inverse serach in Okular with NeoVim and Lazy plugin loader</title>
+      <link>https://vaclavblazej.github.io/post/2023/synctex/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/synctex/</guid>
+      <description>TLDR;&#xA;pip3 install neovim-remote setup vimtex in lazy&amp;thinsp;↗ and configure vimtex&amp;thinsp;↗ set &amp;ldquo;Okular/Settings/Configure Okular/Editor/Custom Text Editor&amp;rdquo; to nvr --remote-silent +%l %f 10 months ago I setup my vim to support jump to and from PDF viewer. Since then I jumped into NeoVim which broke this setup, so here is the new one.&#xA;In NeoVim ~/.config/nvim/init.lua apart from the typical lazy setup&amp;thinsp;↗ we include lervag/vimtex as a plugin while disabling lazy loading.</description>
+    </item>
+    <item>
+      <title>LaTeX setup for writing a paper review response</title>
+      <link>https://vaclavblazej.github.io/post/2023/review_response/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/review_response/</guid>
+      <description>A simple but sufficient setup to response to a review. The rev command guards that response is given and prints a red note otherwise.&#xA;main.tex:&#xA;\documentclass[a4paper,USenglish]{article} \usepackage{xcolor} \newcommand{\rev}[2]{ \item #1 \if\relax\detokenize{#2}\relax {\color{red}UNANSWERED} \else {\color{blue}#2} \fi } \begin{document} \section*{Response} We thank the reviewers for their reviews \dots \subsection*{Reviewer 1} \begin{enumerate} \rev{Line 128: \dots}{} \rev{Line 256: \dots}{we changed this} \end{enumerate} \end{document} </description>
+    </item>
+    <item>
+      <title>Logos</title>
+      <link>https://vaclavblazej.github.io/post/2023/logos/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/logos/</guid>
+      <description>Some logos of brands, companies, software products, etc. sorted by my perceived complexity and memorability. I do not consider shading an issue as we may remove it to get a flat-design logo.&#xA;I find the following logos to be extremely simple and clear.&#xA;These are touch too complex to hard to draw accurately from memory.&#xA;The following are either way too complex to draw or a bit boring (typically too much text).</description>
+    </item>
+    <item>
+      <title>NeoVim Setup</title>
+      <link>https://vaclavblazej.github.io/post/2023/neovim/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/neovim/</guid>
+      <description>Doing all my editing in Vim I thought for some time whether to switch to NeoVim&amp;thinsp;↗. A few days ago I finally decided to do the switch. The result is awesome.&#xA;I ought to credit ThePrimeagen whose videotutorial&amp;thinsp;↗ stands was the main reason for my transition. Another reason was a nice tutorial for using VimTeX by ejmastnak&amp;thinsp;↗.&#xA;Why Here are my reasons to use NeoVim.&#xA;highlighting (via incremental syntax tree) support for custom code snippets&amp;thinsp;↗ revert local changes via undotree&amp;thinsp;↗ good support for LaTex&amp;thinsp;↗ and Git&amp;thinsp;↗ quick fuzzy search for files or contents navigation&amp;thinsp;↗ LSP support&amp;thinsp;↗ :checkhealth tells you what is wrong (missing dependencies, old versions, etc.</description>
+    </item>
+    <item>
+      <title>Wall world</title>
+      <link>https://vaclavblazej.github.io/post/2023/wallworld/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/wallworld/</guid>
+      <description>Wall world&amp;thinsp;↗ is a 14-hour&amp;thinsp;↗ rouge-lite digging game where you take on a role of a operator of a mech that can climb the Wall. The world consists only of the Wall and creatures from no-one-knows-where constantly attack you. You go and dig the Wall to find powerful upgrades while always escaping just before your mech gets destroyed by overwhelming waves of enemies.&#xA;I enjoyed this game a lot. It reminded me of times when I tried to find good games about digging and the only things I found were shitty flash games.</description>
+    </item>
+    <item>
+      <title>Manage versions of a scientific paper in LaTeX</title>
+      <link>https://vaclavblazej.github.io/post/2023/paper_versions/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/paper_versions/</guid>
+      <description>Colleagues made me realize that this setup is too complex for collaborative work. There, simplicity is king and a simple \toappendix macro is simple enough to make multiple versions possible.&#xA;While working on a paper we usually need different versions. We can manage versions using primitives like the following.&#xA;\newif\iflongversion \longversiontrue % \longversionfalse \iflongversion Text shown only in the long version. \else Not-long version \fi Today I made a setup that allows for a more nuanced control.</description>
+    </item>
+    <item>
+      <title>Issue submitting paper to arXiv; dvips issue with colors</title>
+      <link>https://vaclavblazej.github.io/post/2023/arxiv_colors/</link>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/arxiv_colors/</guid>
+      <description>On submitting a paper to arXiv I got an error &amp;ldquo;cannot convert to PDF&amp;rdquo; with no apparent reason. The minimum non-working example is as main.tex:&#xA;\documentclass[a4paper]{article} \usepackage{xcolor} \definecolor[named]{customColor}{rgb}{0.31,0.31,0.33} \begin{document} \textcolor{customColor} Hello world \end{document} Compiling it with latexmk -ps main.tex yields the following error.&#xA;Running &amp;#39;ps2pdf -dALLOWPSTRANSPARENCY &amp;#34;main.ps&amp;#34; &amp;#34;main.pdf&amp;#34;&amp;#39; ------------ Error: /undefined in XC@customColor Operand stack: Execution stack: %interp_exit .runexec2 --nostringval-- --nostringval-- --nostringval-- 2 %stopped_push --nostringval-- --nostringval-- --nostringval-- false 1 %stopped_push 1990 1 3 %oparray_pop 1989 1 3 %oparray_pop 1977 1 3 %oparray_pop 1833 1 3 %oparray_pop --nostringval-- %errorexec_pop .</description>
+    </item>
+    <item>
+      <title>Patrick&#39;s Parabox</title>
+      <link>https://vaclavblazej.github.io/post/2023/patricks_parabox/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/patricks_parabox/</guid>
+      <description>Recently I finished Patrick&amp;rsquo;s Parabox&amp;thinsp;↗ and can recommend it to anyone who likes puzzle games. The whole game is in-theme and the production is very good. Great deal of planning seems to have gone into the puzzles and their progression is well thought-out.&#xA;The game uses well-known and easy-to-understand Sokoban mechanics while always adding something new to them. The main change is that each block that player usually pushes is itself a map and can under some circumstances be entered and exited.</description>
+    </item>
+    <item>
+      <title>Intense work</title>
+      <link>https://vaclavblazej.github.io/post/2023/work/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/work/</guid>
+      <description>For the last fourteen days, I&amp;rsquo;ve been engrossed in my work. The process is enjoyable but each day flies by fairly quickly. On the other hand, looking back at this time so much was done that it feels like a long interval even though it is not. I guess you do not have time to notice the time goes by when things are happening.&#xA;During work, I&amp;rsquo;ve been enjoying the new Gorillaz album.</description>
+    </item>
+    <item>
+      <title>Modelling problems with SAT</title>
+      <link>https://vaclavblazej.github.io/post/2023/sat/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/sat/</guid>
+      <description>We shall go through many example problems that demonstrate how to model them using Satisfiability problem. Such model is useful because there are many fast solvers for SAT so we can use them to solve our instance and extract the solution back to our original problem.&#xA;We aim to create a formula in Conjunctive Normal Form (CNF): $$(a \lor b) \land (c \lor d \lor e) \land \dots \land (f \lor g)$$</description>
+    </item>
+    <item>
+      <title>Jak na pointery?!</title>
+      <link>https://vaclavblazej.github.io/post/2023/pointers/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/pointers/</guid>
+      <description>Tento příspěvek vznikl jako doplňující materiál ke kurzu BI-PA2 v roce 2015 Díky Páje za jeho připomenutí :) Za fakultním přihlášením je přístupný zmigrovaný original na courses&amp;thinsp;↗.&#xA;Proměnná je jako hotovost. Ukazatel je jako bankovní účet &amp;ndash; znáte číslo účtu a na peníze nelze šáhnout přímo, ale pouze zkrz číslo účtu.&#xA;Co je to pointer? Ukazatel (anglicky Pointer) je proměnná, která místo hodnoty ukládá adresu jiné proměnné.&#xA;Adresa proměnné Zdrojový kód (v C++):</description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://vaclavblazej.github.io/post/2023/automatization/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/automatization/</guid>
+      <description>A big part of programmer&amp;rsquo;s job is to automate processes. Some people find this activity very satisfying and enjoy programming because of it. The same feeling, but arguably stronger, can be achieved in games such as Factorio&amp;thinsp;↗ or Bitburner&amp;thinsp;↗.&#xA;The goal of automating something is to make a repetitive task easier or (ideally) entirely automatic. We shall consider only tasks that can be done on a computer. We categorize tasks into several levels of abstraction.</description>
+    </item>
+    <item>
+      <title>Thought experiment on continuous consciousness within many worlds universe interpretation</title>
+      <link>https://vaclavblazej.github.io/post/2023/manyworlds/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/manyworlds/</guid>
+      <description>In TV mini series Devs&amp;thinsp;↗ a claim within the many world hypothesis is posed: If one&amp;rsquo;s survival depends on a quantum fluctuation, then their consciousness lives on in the world where it did not end. In my opinion, this leads to one of the more thought provoking scenes of the show.&#xA;Content warning: The following thoughts discuss death and suicide and will be disturbing to some readers. Carefully consider whether reading further is worth the risk.</description>
+    </item>
+    <item>
+      <title>Let old posts decompose</title>
+      <link>https://vaclavblazej.github.io/post/2023/old_posts/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/old_posts/</guid>
+      <description>There are two types of information you can find on the internet. The first presents new information that decays with time. The second is more persistent. I wish to elaborate on cases where the second type turns into the first type unintentionally.&#xA;On the creation of this website, I had an unachievable dream of presenting a database of algorithms together with experiments that would compare various approaches or implementations. This attempt is hinted at in one of the first posts: Polynomial multiplication (in Czech) which compares three different multiplication methods.</description>
+    </item>
+    <item>
+      <title>Posts in 2023?</title>
+      <link>https://vaclavblazej.github.io/post/2023/posts/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2023/posts/</guid>
+      <description>Hi! So, I&amp;rsquo;ve been thinking whether to write more posts on this blog and decided to create a post every week. Then three weeks went by and I did not finish any single post. So let me try again. I claim that I&amp;rsquo;ll do a post each week from now on &amp;ndash; we&amp;rsquo;ll see how it goes.&#xA;My main motivation is to improve in non-technical (but also technical) writing. I spend majority of my time slowly writing a precise text or going over it again and again, making sure it is correct, or writing code (which is basically the same thing).</description>
+    </item>
+    <item>
+      <title>Přenášky na podzimním soustředění FIKS 2022</title>
+      <link>https://vaclavblazej.github.io/post/2022/fiks_podzim/</link>
+      <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/fiks_podzim/</guid>
+      <description>11.-13. listopadu 2022 bylo podzimní soustředění FIKS v Praze. Následují osnovy a dodatečné materiály k mým přednáškám.&#xA;Kreslení vektorové grafiky Ukázali jsme si jak kreslit vektorovou grafiku pomocí IPE a TikZu.&#xA;Řešení těžkých problémů Kód používaný pro demonstraci na přednášce stáhnete zde: fiks_sat.zip. MiniSat lze stáhnout online dle vašeho OS.&#xA;Které problémy umíme řešít rychle, a co &amp;lsquo;rychle&amp;rsquo; znamená? Rychlé uvažujeme polynomiální Co je to P a NP turingův stroj pouze pro rozhodovací problémy (odpověď je Ano/Ne) řešitelné v polynomiálním čase = P nedeterministicky řešitelné v polynomiálním čase = NP Logika Proměnné, Literály, Klauzule, Logické spojky, Formule Úprava logické formule Úloha SAT &amp;ndash; rozhodovací, jak je těžká?</description>
+    </item>
+    <item>
+      <title>Imagination</title>
+      <link>https://vaclavblazej.github.io/post/2022/fantasy/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/fantasy/</guid>
+      <description>Close your eyes and imagine a mug on a table. What do you &amp;ldquo;actually&amp;rdquo; perceive in your head?&#xA;Somewhat normal are the two following images. Usually with focused mind, the image becomes more clear.&#xA;When the image is very clear even without high mind concentration, then you have Hyperphantasia (2.6% of people). If you do not perceive nothing but darkness, then you have Aphantasia (0.7% of people).&#xA;There is also a difference in ability to place objects into the real world &amp;ndash; some people have the mental image disconnected from the real image, some can put them together.</description>
+    </item>
+    <item>
+      <title>Synctex setup for Vim with Okular</title>
+      <link>https://vaclavblazej.github.io/post/2022/synctex/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/synctex/</guid>
+      <description>Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa. This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup. I tried the setup of forward (code to PDF) and reverse search (PDF to code) with vim several times and failed. It is such a pain that I want to give this short tutorial on how I managed to make it work.</description>
+    </item>
+    <item>
+      <title>Combinatorial games talk at MATRIS</title>
+      <link>https://vaclavblazej.github.io/post/2022/matris_talk/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/matris_talk/</guid>
+      <description>An outline of a short talk that I have in Vienna on 20. July 2022.&#xA;Combinatorial games &amp;ndash; we have full information, deterministic How to play chess, game tree, heuristic to count winning chance, minmax Basics of game theory domineering &amp;ndash; L has vertical moves, R has horizontal moves winning states L, R, N, and P; first vs second player examples of plays L-shape je N I-shape je L I-hor. I je R square je N 2x square P square and L-shape N bigger L P impartial vs partizan games impartial: standardni triky Chocolate &amp;ndash; parity Placing dominos without restrictions &amp;ndash; symetrie Chomp &amp;ndash; strategy stealing Changing snake &amp;ndash; matching strategy building a theory lost game = 0 one move for L is 1, for R is 1 {|} = 0, creating numbers birthday &amp;ndash; step when created sum of games 0 does not change it other than that, we can only say L+L=L, R+R=R, L+N=LuN, R+N=RuN numbers we have -1,0,1 N={N-1|} a -N={|1-N} impartial nimbers and mex nim winning strategy for nim nim in misere variant </description>
+    </item>
+    <item>
+      <title>Simple data consistency with two-sided references</title>
+      <link>https://vaclavblazej.github.io/post/2022/link/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/link/</guid>
+      <description>Imagine a programming language where the references can be mutual. What exactly does this mean and would such a feature be useful?&#xA;Basics Standard way to declare reference attribute is to set its name and type. We imagine a case where one could also declare attribute in the target class which would become mutually tied to the currently defined attribute. The declaration could look as in the following example.&#xA;class Person { passport: Passport.</description>
+    </item>
+    <item>
+      <title>In Space with Markiplier diagram</title>
+      <link>https://vaclavblazej.github.io/post/2022/in_space_with_markiplier/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/in_space_with_markiplier/</guid>
+      <description>In Space with Markiplier is an interactive video story which you should watch first&amp;thinsp;↗ before reading this post. The whole experiance will take approximately 2 hours and I recommend not to cheat by changing your choices.&#xA;Here we go The story is not only branching but also joins later. Moreover, some parts of the videos have the same parts, all of which is included in the following visualization. There is also a PDF version.</description>
+    </item>
+    <item>
+      <title>Jak funguje Věda</title>
+      <link>https://vaclavblazej.github.io/post/2022/veda/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/veda/</guid>
+      <description>Způsob lidského poznání se dere kupředu něčím těžko definovatelným. Kde se bere nové poznání, a jak víme, že je správně?&#xA;Tento soupis je z pohledu českého vědce v teoretické informatice. Z různých oborů bude pohled trochu jiný.&#xA;fyzika má články, kde je bězné mít obrovský počet autorů na článku (třeba 60) autoři seřazeni podle podílu tězké se jako začínající vědec prosadit na konferenci matematika konference jsou spíše sešlost, nebývají z toho publikace informatika míva na konferencích publikaci autoři seřazeni podle abecedy teoretické obory stále možnost proniknout i jako jednotlivec Kde se berou problémy všude kolem, praxe Turingovy stroje jsou model výpočetních zařízení PRAM jsou model pameti paralelních strojů kombinace / zjednodušení / zesložitění známých problémů zjednodušujeme, aby se daly řešit tězké problémy zesložiťujeme, abychom řešením pokryli více problemů současně zkoumané problémy přirozeně vzbuzují zájem dalších vědců Kdo se problémy snaží řešit zpravidla vědci &amp;ndash; mají to v popisu práce lidé se zaměřují na různé aspekty &amp;ndash; problém solveři / budovatel teorií vědci se stejnym zájmem mohou tvořit vyzkumne skupiny identifikuje je jejich jméno, nově i ORCID&amp;thinsp;↗ identifikátor vysoké školy &amp;ndash; akademičtí vědci běžně bývaji ranky: student doktorátu (nic), doktor (Ph.</description>
+    </item>
+    <item>
+      <title>Přenášky na soustředění FIKS 2022</title>
+      <link>https://vaclavblazej.github.io/post/2022/fiks/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/fiks/</guid>
+      <description>24.-30. Dubna 2022 bylo soustředění FIKS ve Štědroníně. Následují hrubé osnovy k mým přednáškám.&#xA;Neděle Základy složitosti Kdy je problém lehké a kdy těžké řešít? Konkrétní příklady společně se způsobem jak toto matematicky zachytit (O notace).&#xA;Vypisování hvězdiček: příklady na O(N), O(N na 2), O(N log N), O(2 na N), O(N!) Co je to algoritmus? Jak dlouho trva instrukce? &amp;ndash; problemy se zavislosti algoritmu na konkretnim stroji Který algoritmus je Rychlejší 30*N log N nebo N log^2 N Notace O(N) formálně &amp;ndash; funkce f a g, f = O(g) pokud existuje konstanta c a n0 takova, ze pro vsechna n &amp;gt;= n0 je f(n) &amp;lt;= c g(n) Omega a Theta Jak rychlý je jednoduchý algoritmus?</description>
+    </item>
+    <item>
+      <title>On life, consciousness, and soul</title>
+      <link>https://vaclavblazej.github.io/post/2022/consciousness/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/consciousness/</guid>
+      <description>Where do you go when you sleep? Where do you go when you die? To clear these thoughts in my mind I decided to write a little post.&#xA;Each individual has freedom in what to believe in and from a selfish point of view, it makes sense to believe in what makes the individual more comfortable. Believe in soul and face philosophical questions of &amp;ldquo;what is soul and consciousness.&amp;rdquo; The purely materialistic view of the world has reasonable answers for those but, as mentioned, it may be beneficial to ignore them.</description>
+    </item>
+    <item>
+      <title>Žádost o GAČR grant</title>
+      <link>https://vaclavblazej.github.io/post/2022/gacr/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/gacr/</guid>
+      <description>Začátkem Dubna 2022 jsem ve spolupráci s polskou univerzitou podal žádost o GAČR grant &amp;ndash; outgoing postdoc. Vzhledem k délce procesu s jeho komplikovanosti mám nyní nutnání o něm napsat pár odstavců.&#xA;Žádost o tento grant se podává 7.4.2022 a výsledek bude zhruba v Prosinci 2022. U podávání grantu je důležité pečlivě pročíst zadávací dokumentaci (tender document) &amp;ndash; zde se píše vše důležité, ovšem pár samozřejmostí není jasně oznámeno.&#xA;Celý grant sepisuje navrhovatel (já/ty), ale žádá o něj uchazeč (škola / instituce).</description>
+    </item>
+    <item>
+      <title>How to write an Interactive story</title>
+      <link>https://vaclavblazej.github.io/post/2022/storytelling/</link>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2022/storytelling/</guid>
+      <description>➤ I&amp;#39;m a programmer, not a writer :o If I were a pure writer, then I couldn&amp;rsquo;t explain the target concepts.&#xA;If you are a programmer, then this post will be easier for you to read because it tries to convey basic programming concepts with comprehensible words and many examples.&#xA;If you are not a programmer, then this post was meant for you :)&#xA;Modern computer games increased the storytelling level lower bound significantly.</description>
+    </item>
+    <item>
+      <title>Microphone</title>
+      <link>https://vaclavblazej.github.io/post/2021/microphone/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/microphone/</guid>
+      <description>Recently, I got a new microphone and this post shall shed light on few weird things which happened during setting it up.&#xA;The full list of things:&#xA;microhpone: SHURE SM48-LC sound card: M-AUDIO M-Track SOLO table clamp: K&amp;amp;M 237 Table clamp XLR cable: ADAM HALL K3 MMF 0100 gooseneck: GRAVITY MA GOOSE XL windscreen: SHURE A58WS-BLK screw adapter 3/8&amp;rsquo;&amp;rsquo; to 5/8&amp;rsquo;&amp;rsquo;: STAGG 6000616N Buying a microphone one option you have is to have a stand between you and the keyboard.</description>
+    </item>
+    <item>
+      <title>How to migrate static pages to another address</title>
+      <link>https://vaclavblazej.github.io/post/2021/migrating_pages/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/migrating_pages/</guid>
+      <description>A newer iteration of this post is available.&#xA;I knew that in time it would be necessary to move this web to another address. The setup for deployment is its own hassle. The main things I wanted was to be able to come to an old address and get redirected to the correct current address. It would be quite easy with something dynamic, but these pages are static, and so cannot really catch someone attending a random address of the old page.</description>
+    </item>
+    <item>
+      <title>Easy-to-remember Rubik&#39;s cube solution</title>
+      <link>https://vaclavblazej.github.io/post/2021/rubiks_cube/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/rubiks_cube/</guid>
+      <description>The usual solution to Rubik&amp;rsquo;s cube is an algorithm &amp;ndash; do this, do that and you have the first layer, then second layer, and last layer is made via set of arbitrary moves. I always had problem remembering those, but when the sexy move (play animation here: R U R&#39; U&#39;&amp;thinsp;↗) was introduced to me I thought of an easy-to-remember solution.&#xA;If you want to come up with it yourself, then I have one simple advice: analyze what sexy move does, including when it is repeated several times; that should be almost enough to solve the cube.</description>
+    </item>
+    <item>
+      <title>Profiling memory of C&#43;&#43; programs using Massif</title>
+      <link>https://vaclavblazej.github.io/post/2021/memory_profiling/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/memory_profiling/</guid>
+      <description>The valgrind program has many additional tools, one of which is called massif (manual here&amp;thinsp;↗). We can call it using syntax similar to normal valgrind call.&#xA;valgrind --tool=massif ./a.out &amp;lt;input.txt The command produces a file called massif.out.&amp;lt;number&amp;gt; where the number is bigger for later measurements. This file can be visualized with massif-visualizer from https://github.com/KDE/massif-visualizer&amp;thinsp;↗.&#xA;massif-visualizer massif.out.&amp;lt;number&amp;gt; valgrind --tool=massif --detailed-freq=1 ./a.out &amp;lt;input.txt Seeing leaks A leaking program will accumulate the used memory which will show in the graph as an ever-increasing mass of used memroy.</description>
+    </item>
+    <item>
+      <title>MBTI</title>
+      <link>https://vaclavblazej.github.io/post/2021/mbti/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/mbti/</guid>
+      <description>Myers–Briggs Type Indicator (MBTI) is a way to classify psychological preferences in how people perceive the world and make decisions, see Wikipedia&amp;thinsp;↗ for more descriptions. The test which sets you in a specific box can be found online&amp;thinsp;↗, however I view these tests as an interesting entry point to the theory, but ultimately, they say how a person behaves, not how person thinks. To make self-classification, one can simply use a pretty nice chart&amp;thinsp;↗, which is present on wikipedia as well.</description>
+    </item>
+    <item>
+      <title>Imagemagick examples</title>
+      <link>https://vaclavblazej.github.io/post/2021/imagemagick/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/imagemagick/</guid>
+      <description>The imagemagick&amp;rsquo;s magick (convert) program provides a great command line tool for editing images. Doing a simple bulk edition can be frustrating as there are many unuseful resources for this program. I made this page to keep examples of most useful commands I needed, found, and used. It is written in a way so that when read sequentially you should get a reasonable idea how to use this tool.&#xA;➤ Running bulk commands To be able to do bulk edition a basic bash knowledge is expected.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; makefile</title>
+      <link>https://vaclavblazej.github.io/post/2021/makefile/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/makefile/</guid>
+      <description>A while back I made a makefile which could compile virtually any simple project in c++. Recently, this need appeared again so I created the makefile again.&#xA;This source code is released into the public domain. Basically, you may use it in any way you like, but read the unlicense notice at the beginning of the file for more precise information.&#xA;Requirements The project should have this makefile above src folder, and it creates a build folder for intermediate compilation files and exe folder for the final executables.</description>
+    </item>
+    <item>
+      <title>Structured information</title>
+      <link>https://vaclavblazej.github.io/post/2020/structured_information/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/structured_information/</guid>
+      <description>Information in this post is superseeded by a material page&#xA;Several systems were developed to take and organize smart notes and keep ones second brain. For example Roam&amp;thinsp;↗, Obsidian&amp;thinsp;↗, Notion&amp;thinsp;↗, DokuWiki&amp;thinsp;↗, Org mode&amp;thinsp;↗, Foam&amp;thinsp;↗, and TiddlyWiki&amp;thinsp;↗. There seems to be a big potential in what these systems could eventually achieve. In this post, we delve into a general model that describes a way to store and manage data for information systems, how it may help with improving and interconnecting them, and what these systems may introduce in the future.</description>
+    </item>
+    <item>
+      <title>GD 2020 notes</title>
+      <link>https://vaclavblazej.github.io/post/2020/graph_drawing/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/graph_drawing/</guid>
+      <description>This page contains my notes on talks given on GD 2020 conference, which was held online.&#xA;(speaker is shown in bold)&#xA;conference website&amp;thinsp;↗ program&amp;thinsp;↗ Gradient descent and queue layouts Reyan Ahmed, Felice De Luca, Sabin Devkota, Stephen Kobourov and Mingwei Li. Graph drawing via gradient descent, (GD)^2 &amp;ndash; multi-parameter graph drawing using gradient descent, live demo on Mingwei Li&amp;rsquo;s page&amp;thinsp;↗&#xA;Katharina Börsig, Ulrik Brandes and Barna Pasztor. Stochastic Gradient Descent Works Really Well for Stress Minimization &amp;ndash; Stochastic Gradient Descent (SGD) jako alternativa Majorization metody kreslení grafu, z experimentů se zdá, že funguje okay.</description>
+    </item>
+    <item>
+      <title>Fast Fourier Transform (FFT) c&#43;&#43; code explained</title>
+      <link>https://vaclavblazej.github.io/post/2020/fft/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/fft/</guid>
+      <description>Discrete Fourier Transform (DFT) takes $x_0,\dots,x_{N-1}$ and produces $X_0,\dots,X_{N-1}$ by the following equality&#xA;$$X_k = \sum^{N-1}_{n=0} x_n e^{-i2\pi kn/N}.$$&#xA;Fast Fourier Transform (FFT) does this computation effectively in $O(N \log N)$ time. Possibility of doing the computation in a more effective way raises from decomposition of the values into odd and even elements, and applying the computation recursively.&#xA;Let $\omega_N=e^{-2i\pi /N}$, so we have&#xA;$$ X_k = \sum^{N-1}{n=0} x_n \omega^{nk}N = \sum^{N/2-1}{n=0} x{2n} \omega^{2nk}_N</description>
+    </item>
+    <item>
+      <title>Command-line completion</title>
+      <link>https://vaclavblazej.github.io/post/2020/completion/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/completion/</guid>
+      <description>The setup of completion is an essential part of creating a well-behaved script. Unfortunately, the setup has several obstacles, mainly that each shell handles completion differently. In this post, I hope to unravel the problems and show solutions to setting up completion for a custom script in several frequently used unix shells. The first section simply states the solution, its usage, and references used to accomplish these. In the second section we show a detailed progression which lead to the solution.</description>
+    </item>
+    <item>
+      <title>Teorie grafů</title>
+      <link>https://vaclavblazej.github.io/post/2020/graph_theory/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/graph_theory/</guid>
+      <description>Drobnosti v přednáškách AG1:&#xA;handout přednášky 3, strana 14&amp;thinsp;↗, nešťastně se v obrázku překrývají značení startu a cíle s čísly BFS průchodu handout přednášky 4, strany 7&amp;thinsp;↗ a 11&amp;thinsp;↗, obrázky úplně zničený handout 11, strana 23&amp;thinsp;↗; To, že O(m log m)=O(m log n) je sice pravda, ale úplně stejnou úpravou můžu u Jarníka napsat, že je O(m log m). Tato úprava mi přijde předčasná a matoucí. Dává smysl aby se promítla až ve finální verzi složitosti, kde je započítaný i Union-Find.</description>
+    </item>
+    <item>
+      <title>Algorithmic game theory notes</title>
+      <link>https://vaclavblazej.github.io/post/2020/ath/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2020/ath/</guid>
+      <description>Source Martin Balko&amp;rsquo;s Lecture Notes&amp;thinsp;↗ Basic notions &amp;ndash; Normal-form game, player actions, strategy, utility Normal form of a game can be described as a matrix where each cell contains payoffs for each player. Formally we have a triple $(P,A,u)$ where $P$ is a set of $n$ players, $A = A_1 \times \dots \times A_n$ is a set of action profiles, and $u=(u_1,\dots,u_n)$ is a $n$-tuple where $u_i: A \rightarrow \mathbb{R}$ is the utility function.</description>
+    </item>
+    <item>
+      <title>Eleusis (card game)</title>
+      <link>https://vaclavblazej.github.io/post/2019/eleusis/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/eleusis/</guid>
+      <description>A card game by Robert Abbott&amp;thinsp;↗.&#xA;Overview Each round one player is God (dealer) and other players are scientists. God makes up a rule and scientists are trying to get rid of their cards by playing them accodring to the rule.&#xA;The following picture shows one possible layout of cards at the end of one round.&#xA;Example scoring: (Read the rules and scoring first.) Assume there were 5 players with hands of size (13, Prophet&amp;rsquo;s 11, 2, 0, and God which doesn&amp;rsquo;t have a hand), the scoring would go like this: First players gets no points.</description>
+    </item>
+    <item>
+      <title>ICS 2019</title>
+      <link>https://vaclavblazej.github.io/post/2019/ics/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/ics/</guid>
+      <description>Dne 8-19. července se na FIT ČVUT konal kurz Introduction to Computer Science&amp;thinsp;↗. V bohatém programu se našlo místo na přednášku, kde jsem povídal o výpočetní geometrii. Veškeré materiály k přednášce jsou ve veřejném repozitáři na školním GitLabu&amp;thinsp;↗.</description>
+    </item>
+    <item>
+      <title>CSR 2019</title>
+      <link>https://vaclavblazej.github.io/post/2019/csr/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/csr/</guid>
+      <description>From 1. to 5. of July 2019 I attended the 14th International Computer Science Symposium in Russia&amp;thinsp;↗, Novosibirsk. Visa to Russia took approximately a week.&#xA;Getting there, I nearly missed the connecting flight from Moscow. The destination was Akademgorodok&amp;thinsp;↗ in Novosibirsk which is an awesome location in nature built for education and science. The conference was held in the new building of Novosibirsk State University&amp;thinsp;↗.&#xA;Some of the attendees were: Rahul Ilango&amp;thinsp;↗, Danny Hucke Dmitry Kravchenko Francesco Dolce&amp;thinsp;↗, Dmitriy Zhuk, Giuseppe Italiano&amp;thinsp;↗ Meena Mahajan&amp;thinsp;↗, Gregory Kucherov, René van Bevern, Michael Fellows&amp;thinsp;↗, Petros A.</description>
+    </item>
+    <item>
+      <title>Jak rozběhnout výpočet na RCI serveru</title>
+      <link>https://vaclavblazej.github.io/post/2019/rci_server/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/rci_server/</guid>
+      <description>Základní info Oficiální návod&amp;thinsp;↗ je dobrý. Obsahuje všechno a je dobře udržovaný. Na následující stránce shrnu jak jsem server použil, a také pár drobností, které mě překvapily, nebo jsem je v návodu nenašel.&#xA;Přístup na server je rozdělen: přihlášení dovede uživatele na login1 node. Ten není výpočetní, a chybí mu například kompilátor. Na výpočetní node se dá dostat pomocí srun --pty bash -i, a kompilovat přes srun make.&#xA;Odkazy: novinky&amp;thinsp;↗ stránka s různorodým INFO&amp;thinsp;↗ zatížení RCI clusteru&amp;thinsp;↗ statistiky zatížení dle jobů a skupin&amp;thinsp;↗ zatížení GPU nodů&amp;thinsp;↗ chat s dalšímy uživately (Slack)&amp;thinsp;↗ Přihlášení nastavit si heslo pro cluster na https://login.</description>
+    </item>
+    <item>
+      <title>Extended graph structure for data persistance</title>
+      <link>https://vaclavblazej.github.io/post/2019/extended_graphs/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/extended_graphs/</guid>
+      <description>Information in this post is superseeded by a material page&#xA;Let us extend graphs and build system around their structure to accomodate better persistance.&#xA;Relational databases are fine for a domain-specific usecase. Graph databases (like Neo4j) are nice for a very non-structured data. However, we want structure and flexibility. This can be achieved via defining the structure inside the graph itself &amp;ndash; storing the metadata as data. Graphs are also not good enough, since they have only nodes and relations (both with parameters), but lack ordered lists of relations as parameters.</description>
+    </item>
+    <item>
+      <title>Dimea Days 2019</title>
+      <link>https://vaclavblazej.github.io/post/2019/dimea_days/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/dimea_days/</guid>
+      <description>During 12. and 13. of Juny 2019 there was Dimea Days 2019 first run in the center of Brno, Czech Republic. The event took place at the museum at &amp;lsquo;Zelný trh&amp;rsquo; near the main bus and train station &amp;lsquo;Hlavní nádraží&amp;rsquo;. The programme consisted mainly of eight cca 1h invited talks and one 1h10m poster session for presenting new research. The talks were combinatorial in nature and introduced the following concepts.</description>
+    </item>
+    <item>
+      <title>Scientific poster for poster session</title>
+      <link>https://vaclavblazej.github.io/post/2019/poster/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/poster/</guid>
+      <description>It is quite scary if have to prepare a poster for a conference. The main idea is to transfer the information about your research af efficiently as possible. I found a great video by Mike Morrison&amp;thinsp;↗ talking about the poster session difficulties. I think this is mainly applicable to big conferences.&#xA;Well, I used this format on a quite small and crowded poster session (15 posters in total) and it didn&amp;rsquo;t go particularly well.</description>
+    </item>
+    <item>
+      <title>Musical notation - Guitar tabs</title>
+      <link>https://vaclavblazej.github.io/post/2019/tabs/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/tabs/</guid>
+      <description>For purposes of playing guitar tabs are a natural choice (as opposed to classical musical notes&amp;thinsp;↗ are not ideal).&#xA;My tabs&amp;thinsp;↗ which follow the format described further can be found on Github&amp;thinsp;↗.&#xA;Tabs The easiest choice, with no setup, is to create ascii tabs&amp;thinsp;↗ using a text editor.&#xA;There are many ways to create ascii tabs because they don&amp;rsquo;t have a fixed format. I chose the following order: meta-information, text with chords, fingerstyle.</description>
+    </item>
+    <item>
+      <title>Vědecká visa do Ruska</title>
+      <link>https://vaclavblazej.github.io/post/2019/rus_visa/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/rus_visa/</guid>
+      <description>Kdysy dávno jsem si zařizoval visa do Ruska, a po dlouhé době zapomněl, co všechno je vlastně potřeba. Na téhle stránce je sepsaný seznam požadavků na dokumenty, které jsem potřeboval pro podání žádosti o visa v květnu 2019.&#xA;Informace k visa lze najít na stránce vfsglobal.com&amp;thinsp;↗.&#xA;Žádost je dobré podat nejpozději měsíc před odjezdem.&#xA;Výtažky z informací&amp;thinsp;↗ Humanitární vízum potřebujete v případě, chcete-li vstoupit na území Ruské federace za kulturním, vědeckým, sportovním, náboženským a jiným podobným účelem.</description>
+    </item>
+    <item>
+      <title>Representing knowledge using graphs</title>
+      <link>https://vaclavblazej.github.io/post/2019/knowledge_graph/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/knowledge_graph/</guid>
+      <description>Information in this post is superseeded by a material page&#xA;In this post we will discuss how to tackle representing an abstract structure as a graph (combinatorial graph). In particular, we will focus on representing a general knowledge structure. Our example arises from an academic environment. We have courses which teach students various concepts and skills. Our goal is to have some searchable representation of taught concepts. This representation can be used to generate student profiles and recommend suitable semestral projects, or to find what is (unintentionally) omitted from the curricula.</description>
+    </item>
+    <item>
+      <title>Kombinatorika a grafy III</title>
+      <link>https://vaclavblazej.github.io/post/2018/kag3/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/kag3/</guid>
+      <description>Koncentrované znalosti z kurzu Kombinatorika a grafy III&amp;thinsp;↗ Roberta Šámala na MFF UK.&#xA;Termíny zkoušky:&#xA;24.01.2019 - Čtvrtek 10:00 S10 30.01.2019 - Středa 13:00 S6 12.02.2019 - Úterý 10:00 S10 Zkouškové příklady Buď G graf s n vrcholy takový, že jeho hrany jsou pokryty párováními M1, M2, &amp;hellip;, Mn. Předpokládejme, že neexistují 1 \leq i,j \leq n, pro něž existují po dvou různé vrcholy a,b,c,d, že ab je v Mi, bc v Mj, cd v Mi.</description>
+    </item>
+    <item>
+      <title>CERC - Prague 2018</title>
+      <link>https://vaclavblazej.github.io/post/2018/cerc/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/cerc/</guid>
+      <description>Po třech letech kdy se CERC konal v Záhřebu se místo konání přesunulo, a protentokrát skončilo v Praze. Před pár měsíci jsem byl požádán, jestli bych pomohl s přípravou úloh, tak jsme se společně s Morassem, Pavlem, Martinem, Romanem, Pepou a Pepou pustili do úkonu. Úlohy jsme s Morassem připravovali dost dopředu, ovšem zbytek teamu se zapojil tak nějak až ve čtvrtek (3 dny před contestem). Hodně odladili zadání, ovšem bylo potřeba doladit i kódy ke třem úlohám.</description>
+    </item>
+    <item>
+      <title>p5js tutoriál - Uklízecí roboti</title>
+      <link>https://vaclavblazej.github.io/post/2018/p5_tutorial_roboti/</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/p5_tutorial_roboti/</guid>
+      <description>Pro tento tutoriál si potřebujete otevřít dvě stránky:&#xA;Editor&amp;thinsp;↗ Dokumentace&amp;thinsp;↗ Náš ultimátní cíl bude nasimulovat uklízací roboty, kteří jezdí po místnosti. Asi nějak takhle:&#xA;Základy O co jde? p5 je knihovna, ve které se dají jednoduše vytvářet vizualizace. Je postavená na Javascriptu, takže se dá spustit v prohlížeči (není potřeba nic instalovat). Navíc má i online editor!&#xA;Do editoru se dá přihlásit, aby se dali uložit rozdělané projekty. Po otevření editoru uvidíte:</description>
+    </item>
+    <item>
+      <title>MCW - výpisky</title>
+      <link>https://vaclavblazej.github.io/post/2018/mcw/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/mcw/</guid>
+      <description>Martin Loebl: Perfect matchings in double-torus grids&#xA;It is known that the number of the perfect matchings of each finite double-torus grid is a linear combination of 16 determinants. It is predicted by the Quantum field theory (Alvarez-Gaume, Vaffa) that exactly 6 of these determinants go to zero when the size of the grid grows. I will introduce the rich world around this claim.&#xA;Temperley bijection &amp;ndash; koster nxn mřížky a párování 2n+1 x 2n+1 mřížky.</description>
+    </item>
+    <item>
+      <title>ICALP 2018 - výpisky</title>
+      <link>https://vaclavblazej.github.io/post/2018/icalp/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/icalp/</guid>
+      <description>T. Johnson, M. T. Goodrich, W. E. Devanny, J. J. B. Vial and D. Eppstein: Optimally Sorting Evolving Data&amp;thinsp;↗&#xA;Máme měnící se data, která chceme seřadit. Po každém compare-and-exchange operaci se vymění náhodná dvě sousední data. Počítáme vzdálenost ke správnému seřazení pomocí inverzí. Lower bound je Omega(N) inverzí po konci algoritmu.&#xA;Autorům se povedlo dokázat, že insertion sort je optimální &amp;ndash; tj. po doběhnutí algoritmu máme s vysokou pravděpodobností O(N) inverzí.</description>
+    </item>
+    <item>
+      <title>Historie</title>
+      <link>https://vaclavblazej.github.io/post/2018/history/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/history/</guid>
+      <description>Následující vizualizace je inspirována Timeline z wikipedie, která se často vyskytuje u hudebních skupin.&#xA;Historie složení týmu rozvoje, později týmu spolupráce s průmyslem. Dynamická verze vytvořená v p5 js.&#xA;Složení organizátorů FIKS</description>
+    </item>
+    <item>
+      <title>PPA - Pokročilé Paralelní Algoritmy</title>
+      <link>https://vaclavblazej.github.io/post/2018/ppa/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/ppa/</guid>
+      <description>Základy Sekvenční T(n) - doba běhu algoritmu pro vstup velikosti n SL(n) - sequential lower bound - dolní mez doby běhu sekvenčního algoritmu SU(n) - sequential upper bound - horní mez; worst case nejlepšího známého algoritmu Paralelní T(n,p) - doba běhu algoritmu pro vstup velikosti n na p procesorech S(n,p)=SU(n)/T(n,p) - zrychlení oproti sekvenčnímu řešení; lineární zrychlení je, pokud S(n,p)=\Theta(p) L(n,p)=SL(n)/p - lower bound C(n,p)=p T(n,p) - cena; algo je cenově optimální, pokud C(n,p)=O(SU(n)) W(n,p) - paralelní práce je u synchroních algoritmů součet počtu taktů přes všechny procesory, a u asynchroních algoritmů součet času práce vláken; algo je pracovně optimální, pokud W(n,p)=O(SU(n)) E(n,p)=SU(n)/C(n,p) - paralelní efektivita / zrychlení na procesor Algoritmus je cenově optimální &amp;lt;=&amp;gt; má lineární zrychlení &amp;lt;=&amp;gt; má konstantní efektivitu</description>
+    </item>
+    <item>
+      <title>Grafové algoritmy 2</title>
+      <link>https://vaclavblazej.github.io/post/2018/gr2/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/gr2/</guid>
+      <description>Koncentrované znalosti z kurzu Grafové algoritmy II&amp;thinsp;↗ Martina Mareše na MFF UK. Bacha na to, že každý rok na kurzu povídá trochu něco jiného :)&#xA;Verifikace minimality kostry (Komlósův algoritmus, algoritmus v lineárním čase) Rozdělme si hrany na stromové, lehké a těžké (vůči cestě po stromě). Těžké hrany nebudou ve stromě díku červenému lemma. Modré lemma zase říká, že nejlehčí hrana libovolného elementárního řezu ve MST určitě bude.&#xA;Převedení na jiný problém Převedeme si verifikaci MST postupně na docela jiný problém.</description>
+    </item>
+    <item>
+      <title>Tréninky Závodního Programování</title>
+      <link>https://vaclavblazej.github.io/post/2018/training/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/training/</guid>
+      <description>Proč začít Zlepšit si svoje programátorské a algoritmizační dovednosti, poznat partu lidí, které zajímají zajímavé úlohy, algoritmizace a rychlé programování, objevit řadu těžkých problémů, které mají opravdové uplatnění, a je výzva je řešit dobře. Jak začít Záleží dost jestli chcete kouče, nebo si vystačíte sami. Rozhodně ale doporučuju se časem potkávat se skupinou, protože jinak může člověk mít málo motivace a tréninků zanechá.&#xA;Samostatně Na internetu existuje řada stránek, které podporují procvičování programování.</description>
+    </item>
+    <item>
+      <title>Pravděpodobnostní techniky</title>
+      <link>https://vaclavblazej.github.io/post/2018/pt/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/pt/</guid>
+      <description>Pravděpodobnostní prostor je trojice $(\Omega, \Sigma, P)$, kde $\Omega$ je množina, $\Sigma \subseteq 2^{\Omega}$ je $\sigma$-algebra na $\Omega$ (množina podmnožin $\Omega$ uzavřená na komplement, spočetná sjednocení a spočetné průniky) a $P$ je &amp;lsquo;countably additive&amp;rsquo; míra na $\Sigma$ s $P[\Omega]=1$. Elementy $\Sigma$ jsou náhodné jevy a elementy $\Omega$ jsou elementární jevy. Pro event $A$ je $P[A]$ jeho pravděpodobnost.&#xA;Náhodná proměnná $A$ na pravděpodobnostním prostoru $(\Omega, \Sigma, P)$ je funkce $X: \Omega \rightarrow \mathbb{R}$ taková, že pro každé $a \in \mathbb{R}, \{\omega \in \Omega: X(\omega)\leq a\} \in \Sigma$.</description>
+    </item>
+    <item>
+      <title>Pár fixů pro nové ubuntu</title>
+      <link>https://vaclavblazej.github.io/post/2017/ubuntu_fix/</link>
+      <pubDate>Sat, 09 Dec 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/ubuntu_fix/</guid>
+      <description>Po čisté instalaci ubuntu jsem narazil na pár problémů.&#xA;Přestal jít zvuk Je pro mě magie, proč nastavení text-to-speech opraví zvuk.&#xA;Změnit RUN=yes v&#xA;sudo vim /etc/default/speech-dispatcher zdroj: fix&amp;thinsp;↗&#xA;Failed to start session v display manageru Zafungovalo přeinstalovat ubuntu-session. Taky nefungoval display manager, tak jsem tam dal lightdm.&#xA;sudo apt install lightdm sudo apt install [--reinstall] ubuntu-session </description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2017</title>
+      <link>https://vaclavblazej.github.io/post/2017/zagreb/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/zagreb/</guid>
+      <description>17 - 19 Listopadu 2017 jsme opět byli v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc, tentokrát jako coach. Má cesta začla ve Vídni, odkud jsem jel 5 hodin pomocí FlixBusu, ostatní jeli celý den z Prahy. Bohužel jsem tak prošvihl večeři. S ostatními jsme se potkali večer v hotelu Internacional. Ráno klasická snídaně, cesta na univerzitu, nějaké povídání od pořadatelů a sponsorů, a potom testovací kolo.&#xA;Druhý den, v Neděli, jsme vstali brzo, abychom stihli poslední informace v 8:30.</description>
+    </item>
+    <item>
+      <title>MACIS - Vienna 2017</title>
+      <link>https://vaclavblazej.github.io/post/2017/macis/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/macis/</guid>
+      <description>Mezi daty 14-17.11.2017 jsem byl ve Vídni na konferenci MACIS&amp;thinsp;↗, kde jsem prezentoval výsledky z bakalářky &amp;ndash; algoritmus na Swap Matching.&#xA;Před posláním na macis jsem práci ještě přepracoval do takového stavu, kdy jsem s ní byl spokojený. Navíc do článku přibyla měření rychlosti běhu algoritmů a měření míry chybovosti algoritmu z chybného článku. Díky tomu, že jsem článku konečně věřil se prezentace stala o poznání jednodušší - bez problémů jsem o vísledcích mluvil z patra 24 minut a zbylo dost času i na otázky.</description>
+    </item>
+    <item>
+      <title>Počet koster úplného bipartitního grafu $K_{n,m}$</title>
+      <link>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</guid>
+      <description>Aktualizováno 15. Srpna 2023&#xA;Parafrázování článku Spanning Trees of the Complete Bipartite Graph&amp;thinsp;↗.&#xA;Věta Počet koster úplného bipartitního grafu $K_{m,n}$ je $n^{m-1} m^{n-1}$.&#xA;Lemma Mějme kostru T grafu $K_{m,n}, m \leq n$, s vrcholy rozdělenými na množiny $M={a_1,\dots,a_m}$ a $N={b_1,\dots,b_n}$, kde množiny $M,N$ jsou barvy přirozeného obarvení úplného bipartitního grafu. Pak pro nějaké k, $1 \leq k \leq n, \textrm{deg}(b_k)=1$.&#xA;Důkaz lemma Mějme $A, B$ součty stupňů uvnitř T vrcholů v $M, N$ resp.</description>
+    </item>
+    <item>
+      <title>Grafy</title>
+      <link>https://vaclavblazej.github.io/post/2017/graphs/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/graphs/</guid>
+      <description>Grafové barvení Výpisky kapitoly o Barvení z Modern Graph Theory.&#xA;Pro (vrcholovou) barevnost grafu $\chi(G)$ a hranovou barevnost grafu $\chi&amp;rsquo;(G)$ platí:&#xA;$\chi(G) \geq \omega(G)$ kde $\omega$ je klikovost grafu. $\chi&amp;rsquo;(H) = \chi(L(H))$ kde $L(H)$ je line graf $H$. $\chi(G) \geq |G|/\alpha(G)$ kde $\alpha$ je nezávislost. Vrcholové barvení Greedy algo barví hladově dle pořadí předložených vrcholů.&#xA;Obarví $K_{k,k} \setminus E_{k-1}$ pomocí nejhůře $k+1$ barev (E jsou isolované hrany).&#xA;Pro $k=max_H \delta(H)$, kde H je indukovaný podgraf G.</description>
+    </item>
+    <item>
+      <title>Exact family of trees for which $\alpha(G)=\gamma(G)$</title>
+      <link>https://vaclavblazej.github.io/post/2017/independence_domination/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/independence_domination/</guid>
+      <description>The characterization of the family for which the domination number is equal to the independence.&#xA;This proof was published however the paper was not published electronically so I proved it for myself. I am not really sure how they proved it originally.&#xA;Definitions $\alpha(G)$ is the independence number. $\gamma(G)$ is the domination number. $\widehat{T}$ of a tree T is a new tree created from T by adding one new leaf to each of its vertices.</description>
+    </item>
+    <item>
+      <title>Matika na webu</title>
+      <link>https://vaclavblazej.github.io/post/2017/math/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/math/</guid>
+      <description>Aktualizovaný blogpost Mathjax 2023&#xA;Jak rozchodit matematiku na webových stránkách. Přidat&#xA;&amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; Inlinovou matematiku lze spustit pomocí&#xA;&amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#39;\\(&amp;#39;,&amp;#39;\\)&amp;#39;]]} }); &amp;lt;/script&amp;gt; Pozor na to, že při použití více systémů je potřeba escapovat některé znaky. Např. v markdownu má podtržítko a hvězdička speciální význam a k jejich vyhodnocení dojde před vyhodnocením matematiky.&#xA;Příklad Math test $$1+\frac{2}{3}.$$ Math test $$1+\frac{2}{3}.$$&#xA;Inline $2^3$ test. Inline $2^3$ test.</description>
+    </item>
+    <item>
+      <title>Bridge and torch problem</title>
+      <link>https://vaclavblazej.github.io/post/2017/algorithm/torch-problem/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/algorithm/torch-problem/</guid>
+      <description>Mějme N lidí na břehu řeky. Každý člověk má nějakou rychlost a skupina se chce dostat přes řeku. Přejít řeku lze pouze po lávce, která neunese více jak dvě osoby. Přecházející dvojice lidí jde pouze tak rychle, jak jde pomalejší z nich. Zároveň s sebou musí nést louči, která jim svítí na cestu. Problém je, že louče je pouze jedna, a tak se vždy musí jeden člověk vrátit s loučí zpátky na první břeh.</description>
+    </item>
+    <item>
+      <title>Matrix screensaver</title>
+      <link>https://vaclavblazej.github.io/post/2017/matrix/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/matrix/</guid>
+      <description>Pro linuxový X Window System máme program xscreensaver, který umožňuje nastavit matrixový screensaver. Prvně nainstalujeme xscreensaver a extra balíčky, kde je schovaný matrix styl.&#xA;sudo apt install xscreensaver xscreensaver-data-extra Nastavit screensaver můžeme buď přes rozhraní xscreensaver-demo, nebo přímo v souboru ~/.xscreensaver. Např. pro náš matrix xmatrix -root -small -no-trace -delay 50000 -density 6.&#xA;Aby šel screensaver zapnout, tak musí program běžet (třeba na pozadí). Přidáme do ~/.profile následující inicializaci.&#xA;xscreensaver -no-splash &amp;amp; Nakonec chceme nastavit klávesovou zkratku pro zamknutí obrazovky, tak nabindujeme následující příkaz.</description>
+    </item>
+    <item>
+      <title>NSFOCS</title>
+      <link>https://vaclavblazej.github.io/post/2017/novi_sad/</link>
+      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/novi_sad/</guid>
+      <description>Od 16. do 22.7. jsem byl v Novi Sad, Srbsko, na workshopu NSFOCS&amp;thinsp;↗. Konal se od pondělí do pátku, ale přijel jsem o den dřív a odjel o den později, abych si nenarušil průběh workshopu. Dopravil jsem se letadlem (cca 7000,-) a z Bělehradu pak autem (s několika dalšíma účastníkama), které zařídili organizátoři (děkuju). První dva dny byly plně věnovány přednáškám, a další dva dny pak měli přednáškové bloky jen dopoledne.</description>
+    </item>
+    <item>
+      <title>Doktorát</title>
+      <link>https://vaclavblazej.github.io/post/2017/doktorat/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/doktorat/</guid>
+      <description>Následující obsah vznikl postupně v průběhu doktorátu mezi lety 2017 a 2022. Každá sekce byla napsána téměř hned po uvedených událostech. Dne 29. září 2022 jsem úspěšně obhájil. (Poslední aktualizace 16. února 2023.)&#xA;Tenhle rok jsem se hlásil na doktorát na FIT ČVUT, a možná by někoho zajímalo jak takový proces vlastně probíhá.&#xA;První a nejdůležitější krok je najít si školitele. Měl by to být člověk, který se zabývá tím, co chceš zkoumat.</description>
+    </item>
+    <item>
+      <title>Plzeň - SVOČ</title>
+      <link>https://vaclavblazej.github.io/post/2017/svoc/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/svoc/</guid>
+      <description>Mezi daty 21. - 23. května se v Plzni konalo závěrečné kolo svoč&amp;thinsp;↗. Hlavní část probíhala v neděli 22.5., první a poslední den byly vyhrazeny na cestování.&#xA;V neděli jsme ráno přejeli z hotelu na fakultu, kde proběhlo zahájení. Rozešli jsme se do místností podle kategorií a po malé prodlevě začali prezentace. Byl jsem první na řadě a věděl jsem, že to všechno nestihnu povědět za patnáct minut. Navíc byly problémy s projekcí a přepínač nefungoval.</description>
+    </item>
+    <item>
+      <title>Diplomová práce</title>
+      <link>https://vaclavblazej.github.io/post/2017/diplomka/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/diplomka/</guid>
+      <description>V diplomové práci jsem se věnoval online Ramsey theorii.&#xA;Představte si hru Buildera a Paintera. Každé kolo Builder vytvoří hranu, a Painter rozhodne o její barvě. Úkolem Buildera je vynutit, aby vznikl jednobarevný podgraf. Nejmenší počet tahů, ve kterých Builder dovede vyhrát (proti jekékoli Painterově strategii) se nazýví online Ramsey number (ORN)&#xA;Výsledky:&#xA;definice nekonečné rodiny stromů, pro které je ORN menší nez size-Ramsey number horní mez na ORN cyklů horní mez na ORN k-podrozdělených hvězd zjištění přesné hodnoty ORN C_3 vs S_n na souvislých grafech Tyto výsledky byly publikvoány.</description>
+    </item>
+    <item>
+      <title>Klávesnice</title>
+      <link>https://vaclavblazej.github.io/post/2017/keyboard/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/keyboard/</guid>
+      <description>Jak nastavit klávesnici? (bez přepínání - Unix) Programovat na české klávesnici je zlo. Programovat na české qwerty už je trochu lepší. Programovat na jedné klávesnici, která je schopná psát vše co chci &amp;hellip; je ultimátní.&#xA;Potřebujete mít: program setxkbmap&#xA;Překvapivě, některým developerům nejsou češi ukradení, tak udělali us(cz_sk_de) klávesnici. Ty lze nastavit buď jednorázově pomocí&#xA;setxkbmap -layout &#39;us&#39; -variant &#39;cz_sk_de&#39; setxkbmap -option &amp;quot;lv3:caps_switch&amp;quot; nebo permanentně úpravou souboru /etc/default/keyboard na&#xA;# KEYBOARD CONFIGURATION FILE # Consult the keyboard(5) manual page.</description>
+    </item>
+    <item>
+      <title>Latex - instalace, kompilace</title>
+      <link>https://vaclavblazej.github.io/post/2017/latex/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/latex/</guid>
+      <description>Systém latex (čtěme latech) slouží pro výrobu dokumentů. Základem je text psaný v .tex souboru, a ovládací příkazy, které latexu říkají, jak má tento text zpracovat.&#xA;Instalace pro Windows stáhněte a nainstalujte miktex&amp;thinsp;↗ a teprve potom texmaker&amp;thinsp;↗ (pokud je miktex při jeho instalaci už na PC, tak se automaticky nastaví) - všechny příkazy, o kterých se bavíme v tomto návodu jsou i v těchto programech pro Unix nainstalujte programy latex, bibtex a dvipdf Funguje to takto: Kompilaci provádíme příkazem &amp;ldquo;latex&amp;rdquo;</description>
+    </item>
+    <item>
+      <title>London Stringology Days</title>
+      <link>https://vaclavblazej.github.io/post/2017/london/</link>
+      <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/london/</guid>
+      <description>Mezi daty 8.2. a 11.2. jsem se zůčastnil konference LSD &amp;amp; LAW 2017&amp;thinsp;↗, kde jsem se potkal s širokou skupinou teoretických informatiků, zejména stringologů.&#xA;Ve středu jsem po příletu přejel z Gatwicku do Londýna (Victoria) a odsud na Russel Square kde jsem byl ubytovaný (pozn &amp;ndash; příště nekupovat nejlevnější hostel). (pozn &amp;ndash; při koupi lístků vždy vyžadovat &amp;lsquo;receipt&amp;rsquo;, čteme &amp;lsquo;rysít&amp;rsquo;) Univerzita je 15 minut pěšky, což značně ušetřilo náklady, protože doprava po Londýně není zrovna levná (odhadem 60,- za přejezd v centru).</description>
+    </item>
+    <item>
+      <title>Zmatené prší</title>
+      <link>https://vaclavblazej.github.io/post/2016/prsi/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/prsi/</guid>
+      <description>Pravidla zmateného prší.&#xA;Karty sedm[7] &amp;ndash; další bere + dvě karty (srdcová +4), přeskakuje lízání osm[8] &amp;ndash; ruší poslední sedmu, ale pořád líže devět[9] &amp;ndash; přeskakuje lízání deset[10] &amp;ndash; obrací směr hry, přeskakuje lízání spodek[1] &amp;ndash; mění hodnotu svršek[20, srdcový 40] &amp;ndash; mění barvu král[2] &amp;ndash; viz turnaj eso[11] &amp;ndash; přeskočí dalšího hráče, lze přebít dalším esem Přeskakuje lízání = přesto, že by měl hráč lízat, tak může zahrát kartu co přeskakuje lízání, a tím pošle lízání na dalšího hráče.</description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2016</title>
+      <link>https://vaclavblazej.github.io/post/2016/zagreb/</link>
+      <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/zagreb/</guid>
+      <description>Tak jsme 18 - 21 Listopadu 2016 zase byli s Davidem a Klárou v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc. Celý výjezd byl velice podobný minulému ročníku. Víkednová akce začala v pátek ráno v 8 výjezdem z Roztyl autobusem. Jelo pět týmů z FITu, tři týmy z matfyzu a jeden tým středoškoláků a spousta coachů a co-coachů. Po příjezdu jsme se ubytovali v hotelu, zaregistrovali na soutěž a najedli se v místní hospůdce u Medvěda.</description>
+    </item>
+    <item>
+      <title>Autojump</title>
+      <link>https://vaclavblazej.github.io/post/2016/autojump/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/autojump/</guid>
+      <description>Autojump je příkaz, který funguje jako cd, ale napříč celým diskem.&#xA;Setup:&#xA;sudo apt-get install automake echo &amp;quot;. /usr/share/autojump/autojump.sh&amp;quot; &amp;gt;&amp;gt; ~/.bashrc Použití:&#xA;blazeva1@localhost: ~ $ j gen /home/blazeva1/Documents/Projects/generator blazeva1@localhost: ~/Documents/Projects/generator $ Nejdříve je nutné chvíli používat příkazovou řádku bez autojumpu (jen se zapnutým scriptem). Autojump si udělá index používaných složek s váhami (zobrazí j -s). Potom co je složka v indexu, tak na ní lze přecházet pomocí &amp;lsquo;j&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>Stigma 2016</title>
+      <link>https://vaclavblazej.github.io/post/2016/stigma/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/stigma/</guid>
+      <description>Mezi dny 26. září - 1. října jsme s kolegy s KTI byli na stigmě. Klasicky se konala v Kruhu u Jilemnice.&#xA;Kdo o čem mluvil: Pondělí 26.9.2016 cca 11:45 Příjezd autobusu na místo konference Přivítání, úvodní slovo Václav Blažej - On-line Ramsey Theory. (autory článku jsou J. A. Grytczuk, M. Haluszczak a H. A. Kierstead) Ivo Petr - Introduction to lattice-based cryptography and LLL algorithm. Úterý 27.9.2016 Klára Drhová - Výměna klíčů založená na isogeniích supersingulár-ních eliptických křivek.</description>
+    </item>
+    <item>
+      <title>Petrozavodsk léto 2016</title>
+      <link>https://vaclavblazej.github.io/post/2016/petrozavodsk/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/petrozavodsk/</guid>
+      <description>Organizace O prázdninách 2016 jsme 20. září - 5. října díky Tomášově&amp;thinsp;↗ snaze a štědrosti fakulty&amp;thinsp;↗ s Šimonem jeli do ruska na Petrozavodsk Programming Camp&amp;thinsp;↗. Do ruska měl původně jet i Peter, ale ten na poslední chvíli ochořel, a nikdo jiný by si nestihl vybavit víza, takže jsme nakonec jetli jen dva.&#xA;Trénink Celý výlet byl v rozmezí patnícti dnů, kde čtyři dny byly na cestu a turistiku, a dále 11 v Petrozavodsku, ze kterých 9 byl trénink (viz schedule&amp;thinsp;↗).</description>
+    </item>
+    <item>
+      <title>Make &amp; Makefile</title>
+      <link>https://vaclavblazej.github.io/post/2016/makefile/</link>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/makefile/</guid>
+      <description>Makefile je soubor používaný programem &amp;lsquo;make&amp;rsquo;. Spuštění příkazu &amp;lsquo;make&amp;rsquo; způsobí přečtení souboru &amp;lsquo;makefile&amp;rsquo; nebo &amp;lsquo;Makefile&amp;rsquo; (bez přípony), zparsování skriptu a provedení prvního cíle. Definice cíle obsahuje název, závislosti a příkazy.&#xA;Příklad cíle &amp;lsquo;clean&amp;rsquo;, bez závoslostí, se dvěma příkazy (všechny příkazy nutno předsadit TABem):&#xA;clean: rm -f $(OBJECTS) $(EXECUTABLE) ./doc rmdir $(TMP) Příklad cíle &amp;lsquo;clear&amp;rsquo;, který je závislý na cíli &amp;lsquo;clean&amp;rsquo;:&#xA;clear: clean Vyvolání konkrétního cíle provedeme např. příkazem &amp;lsquo;make clean&amp;rsquo;. To způsobí, provedení závislostí a potom příkazů vybraného cíle.</description>
+    </item>
+    <item>
+      <title>Forged Alliance na Linuxu</title>
+      <link>https://vaclavblazej.github.io/post/2016/faf/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/faf/</guid>
+      <description>Supreme Commander Forged Alliance je strategická PC hra. Tento návod Vám pomůže hru spustit pod lobby FAF, pokud máte hru koupenou na platformě Steam.&#xA;Jak na spuštění SC-FA Program playonlinux umožňuje běh windowsovských programů pod linuxem (s pomocí wine). Výhodou je, že tento program spravuje verze wine a verze programů, je také možné vytvořit více různých virtuálních disků s různými konfiguracemi.&#xA;Pro spuštění Forged Alliance je potřeba playonlinux nainstalovat, v něm vytvořit disk, na něj nainstalovat FAF, Steam a z něho i SC-FA.</description>
+    </item>
+    <item>
+      <title>Násobení polynomů</title>
+      <link>https://vaclavblazej.github.io/post/2015/polymul/</link>
+      <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/polymul/</guid>
+      <description>Násobení dvou polynomů se dá naprogramovat třemi základními způsoby, které jsou progresivně obtížné na pochopení. Zde najdete přehled známých řešení, jejich naměřenou rychlost a celkové srovnání.&#xA;Naivní řešení Násobení můžeme implementovat přesně podle definice. Je to nejspolehlivější způsob, který ale není zrovna efektivní. Výsledná složitost je pro velikost N obou polynomů O(N^2). Výsledný graf měření odpovídá očekávání - není co dodat.&#xA;Karatsuba Algoritmus Karatsuba využívá toho, že pro výpočet (Ax + B)(C*x + D) nemusíme dělat čtyři násobení, ale pouze tři.</description>
+    </item>
+    <item>
+      <title>Bash cheetsheet</title>
+      <link>https://vaclavblazej.github.io/post/2015/bash_cheetsheet/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/bash_cheetsheet/</guid>
+      <description>What to use Use may want to use shellcheck program to check beginner mistakes.&#xA;The script should start with a shebang line #!/usr/bin/env bash&#xA;To make the script runnable use chmod u+x ./script.sh&#xA;system_name=$(uname) script_path=$(realpath $0) if [ $# -eq 0 ]; then echo &amp;#34;usage: ...&amp;#34;; fi #compare numbers using -eq -ne -lt -le -gt -ge #compare strings using = != &amp;lt; &amp;lt;= &amp;gt; &amp;gt;= while [ $# -ne 0 ]; do shift; done #remove the first argument with shift array=( &amp;#39;a&amp;#39; &amp;#39;b&amp;#39; &amp;#39;c d&amp;#39; ) echo &amp;#34;Array of ${#array[@]} contains: ${array[*]}&amp;#34; for element in &amp;#34;${array[@]}&amp;#34;; do echo &amp;#34;Value: $element&amp;#34; if [ &amp;#34;$element&amp;#34; = &amp;#34;c d&amp;#34; ]; then break; elif [ &amp;#34;$element&amp;#34; = &amp;#34;a&amp;#34; ]; then continue; echo &amp;#34;Only the element &amp;#39;b&amp;#39; is printed here&amp;#34; done unset array if [ -f &amp;#34;file.</description>
+    </item>
+    <item>
+      <title>Karatsuba v c&#43;&#43;</title>
+      <link>https://vaclavblazej.github.io/post/2015/karatsuba/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/karatsuba/</guid>
+      <description>Násobení polynomů lze řešit několika způsoby, zde si promluvíme o jednom z těch zajímavých.&#xA;Karatsuba Karatsuba využívá toho, že pro výpočet $(Ax + B)(Cx + D)$ nemusíme dělat čtyři násobení, ale stačí tři. Vyplývá to z následujícího:&#xA;(Ax + B)(Cx + D) = = ACx^2 + (AD+BC)x + BD Víme že: (A+B)(C+D) = AD + BC + AC + BD A proto: AD + BC = (A+B)(C+D) - AC - BD Nahrazením získáme: ACx^2 + ((A+B)(C+D) - AC - BD)x + BD Protože AC a BD už pronásobené máme, tak stačí spočítat $(A+B)(C+D)$ a od toho je odečíst.</description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2015</title>
+      <link>https://vaclavblazej.github.io/post/2015/zagreb/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/zagreb/</guid>
+      <description>Tak jsme 13 - 15 Listopadu 2015 byli s Davidem a Klárou v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc. Společně s dalšími týmy z Fit, Fel i Matfyzu jsme v pátek 8 ráno vyrazili autobusem do chorvatska. Cesta trvala přibližně 11 hodin. Po příjezdu jsme se ubytovali&amp;thinsp;↗ a po chvíli zašli na registraci&amp;thinsp;↗ - kde jsme oznámili naši přítomnost. Pak jsme vyrazili lovit večeři, kterou jsme našli v místní hospůdce.</description>
+    </item>
+    <item>
+      <title>Přihlášení přes SSH bez hesla</title>
+      <link>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</link>
+      <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</guid>
+      <description>Přes SSH se můžeme bezpečně přihlásit na server, vždy je však potřeba zadat heslo. Je však možné zadánvání hesla nahradit ověřením pomocí RSA klíče.&#xA;Klíč RSA První krok je vytvořit si vlastní soukromý a veřejný rsa klíč. Tato dvojice klíčů slouží pro identifikaci počítače - soukromý klíč je nutno udržovat v tajnosti, a veřejný klíč lze libovolně distribuovat.&#xA;Generování klíče (v příkazové řádce):&#xA;user@localhost$ ssh-keygen Při vytváření klíče se program zeptá na nové heslo.</description>
+    </item>
+    <item>
+      <title>Make heap složitost</title>
+      <link>https://vaclavblazej.github.io/post/2015/make_heap/</link>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/make_heap/</guid>
+      <description>Kontext Halda je užitečná datová struktura. Avšak mnozí tvrdí, že ji lze z neseřazeného pole nainicializovat v čase $O(n)$. To nemusí na první pohled dávat smysl &amp;mdash; kdyby totiž člověk vytvářel haldu postupným přidáváním prvků, tak by její vytvoření mělo složitost $\mathcal O(n \log(n))$. Tak jak to tedy je?&#xA;Tvoření haldy neprobíhá postupným přidáváním prvků, ale opravy h-vlastnosti zespodu. Když si představíme haldu jako strom (viz obrázek), tak se od spodu bere každý podstrom a udělá se z něj halda.</description>
+    </item>
+    <item>
+      <title>Bakalářská práce</title>
+      <link>https://vaclavblazej.github.io/post/2015/bakalarka/</link>
+      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/bakalarka/</guid>
+      <description>V r. 2015 jsem v publikaci našel chybu. Přednesl jsem o ní na TS a nabídl způsob jak přepoužít model tak, aby algoritmus fungoval. Tomáš mi nabídl, abych z toho udělal bakalářskou práci. Společně jsme pak práci upravili a zkoušeli poslat na různé konference (neúspěšně). Přidal se i Ondra, ale o článek stejně nebyl zájem. Zkoušeli jsme poslat do TCS, taky nechtěli. S prací jsem potom jel na SVOČ (bez úspěchu).</description>
+    </item>
+  </channel>
+</rss>

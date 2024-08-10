@@ -1,0 +1,461 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            p5js tutoriál - Uklízecí roboti - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="wide-image">
+        <div style="background-image: url('https://vaclavblazej.github.io//images/wide/carpet-cleaning-robot.jpg');">
+        </div>
+    </div>
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-11-21T00:00:00Z" class="post-list timeago">21.11.2018</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/p5">p5</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>p5js tutoriál - Uklízecí roboti</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+<script src="sketch.js"></script>
+<p>Pro tento tutoriál si potřebujete otevřít dvě stránky:</p>
+<ul>
+<li><a href="https://editor.p5js.org/"target="_blank">Editor<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://p5js.org/reference/"target="_blank">Dokumentace<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<p>Náš ultimátní cíl bude nasimulovat uklízací roboty, kteří jezdí po místnosti. Asi nějak takhle:</p>
+<div id="sketch-container"></div>
+<h1 id="základy">Základy</h1>
+<h2 id="o-co-jde">O co jde?</h2>
+<p>p5 je knihovna, ve které se dají jednoduše vytvářet vizualizace. Je postavená na Javascriptu, takže se dá spustit v prohlížeči (není potřeba nic instalovat). Navíc má i online editor!</p>
+<p>Do editoru se dá přihlásit, aby se dali uložit rozdělané projekty. Po otevření editoru uvidíte:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() { <span style="color:#998;font-style:italic">// &lt;- spustí se jednou
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  createCanvas(<span style="color:#099">400</span>, <span style="color:#099">400</span>); <span style="color:#998;font-style:italic">// vytvoří oblast pro vykreslování o velikosti 400x400 pixelů
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() { <span style="color:#998;font-style:italic">// &lt;- spustí se cca 25x za sekundu
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  background(<span style="color:#099">220</span>); <span style="color:#998;font-style:italic">// vybarví pozadí světle šedou (hodnoty od 0 do 255)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p>Pokud tento kód spustíte, tak se na pravé straně objeví šedý čtverec &ndash; což je plátno, do kterého budeme kreslit různé věci.</p>
+<h2 id="první-kontakt">První kontakt</h2>
+<p>Do funkce draw přidejte:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  ellipse(mouseX,mouseY,<span style="color:#099">40</span>,<span style="color:#099">40</span>); <span style="color:#998;font-style:italic">// vykreslí kruh s průměrem 40 na pozici myši
+</span></span></span></code></pre></div><p>Funkce <code>background</code> překresluje pozadí pokaždé. Zkuste co se stane, pokud překreslíme pozadí pouze jednou, při startu programu. Přesuňte volání <code>background</code> do funkce <code>setup</code>.</p>
+<p>Udělejme z tohoto příkladu &ldquo;kreslítko&rdquo; &ndash; pokud budeme držet myš, tak budeme kreslit bílou na černé pozadí. Pro to bude stačit vykreslit kruh pouze, pokud držíme myšítko, což zjistíme z proměnné <code>mouseIsPressed</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">if</span>(mouseIsPressed){
+</span></span><span style="display:flex;"><span>    ellipse(mouseX,mouseY,<span style="color:#099">40</span>,<span style="color:#099">40</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>Ještě nastavit černou barvu pozadí a bílou barvu kruhu. Pozadí změníme pouhou změnou hodnoty <code>background(0)</code>. Ovšem pro kruh potřebujeme nastavit barvy obvodu a výplně:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  fill(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  noStroke();
+</span></span></code></pre></div><p>Výsledný kód, který kreslí bílou na černé pozadí:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() {
+</span></span><span style="display:flex;"><span>  createCanvas(<span style="color:#099">400</span>, <span style="color:#099">400</span>);
+</span></span><span style="display:flex;"><span>  background(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>  fill(<span style="color:#099">255</span>);
+</span></span><span style="display:flex;"><span>  noStroke();
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">if</span>(mouseIsPressed){
+</span></span><span style="display:flex;"><span>    ellipse(mouseX,mouseY,<span style="color:#099">40</span>,<span style="color:#099">40</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>Upravte kód tak, abychom měli čtverec jako štětec místo kruhu. (Tvary lze najít v <a href="https://p5js.org/reference/"target="_blank">dokumentaci<span style="white-space: nowrap;">&thinsp;↗</span></a>)</em></p>
+<h2 id="práce-s-kruhy">Práce s kruhy</h2>
+<p>Připomeňme si prvně několik věcí o kruzích a geometrii. Trochu atypicky bude v našem případě osa Y směrem &ldquo;dolů&rdquo;.</p>
+<p><img src="obr.png"></img></p>
+<p>Náš robot bude kruh, který má střed na souřadnicích <strong>(x,y)</strong>, a pohybuje se rychlostí <strong>d</strong> ve směru <strong>r</strong>.
+Z trigoniometrie (o úhlech a trojúhelnících) plyne, že můžeme spočíst dx a dy následovně:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> dx <span style="color:#000;font-weight:bold">=</span> d<span style="color:#000;font-weight:bold">*</span>cos(r);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> dy <span style="color:#000;font-weight:bold">=</span> d<span style="color:#000;font-weight:bold">*</span>sin(r);
+</span></span></code></pre></div><p>Potom jen tuto změnu pozice přičteme v každém kroku k pozici kruhu. A kruh se nám tak začne pohybovat.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  x<span style="color:#000;font-weight:bold">+=</span>dx;
+</span></span><span style="display:flex;"><span>  y<span style="color:#000;font-weight:bold">+=</span>dy;
+</span></span><span style="display:flex;"><span>  r<span style="color:#000;font-weight:bold">+=</span><span style="color:#099">0.1</span>;
+</span></span></code></pre></div><p>Dostaneme tak kruh, který jezdí po ploše, a je možné ovládat jeho rychlost i zatočení.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() {
+</span></span><span style="display:flex;"><span>  createCanvas(<span style="color:#099">400</span>, <span style="color:#099">400</span>);
+</span></span><span style="display:flex;"><span>  background(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x<span style="color:#000;font-weight:bold">=</span><span style="color:#099">50</span>,y<span style="color:#000;font-weight:bold">=</span><span style="color:#099">50</span>,r<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>,d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>,rd<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0.02</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>  fill(<span style="color:#099">255</span>);
+</span></span><span style="display:flex;"><span>  noStroke();
+</span></span><span style="display:flex;"><span>  r<span style="color:#000;font-weight:bold">+=</span>rd;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> dx<span style="color:#000;font-weight:bold">=</span>d<span style="color:#000;font-weight:bold">*</span>cos(r);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> dy<span style="color:#000;font-weight:bold">=</span>d<span style="color:#000;font-weight:bold">*</span>sin(r);
+</span></span><span style="display:flex;"><span>  x<span style="color:#000;font-weight:bold">+=</span>dx;
+</span></span><span style="display:flex;"><span>  y<span style="color:#000;font-weight:bold">+=</span>dy;
+</span></span><span style="display:flex;"><span>  ellipse(x,y,<span style="color:#099">20</span>,<span style="color:#099">20</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>Upravte kód tak, aby při stisknutí myši zatáčel robot na druhou stranu.</em></p>
+<h2 id="kolize-práce-s-pixely">Kolize, práce s pixely</h2>
+<p>Teď nám robot jezdí po ploše, ale může vyjet bez problému i mimo.
+Abychom tohle upravili, tak přidáme robotovi tři senzory, které budou pozorovat, co je před ním.
+Sensory položíme kousek před robota ve směru jeho natočení, a pak 45 stupňů vlevo a vpravo, jako na obrázku.</p>
+<p><img src="sensor.png"></img></p>
+<p>V programu se počítají úhly v radiánech (od 0 do <code>TWO_PI</code>).
+Tři úhly sensorů budou <code>r, r+PI/4, r-PI/4</code>.</p>
+<p>Pro každý sensor budeme muset zjistit jaká barva je pod ním vykreslená.</p>
+<h3 id="vsuvka-o-pixelech">Vsuvka o pixelech</h3>
+<p>Pixely jsou uložené jako čísla v poli.
+Například: <code>[0,0,0,0,255,255,255,0,0,255,0,0]</code>.
+Každý pixel vlastní 4 hodnoty: červená, zelená, modrá a průhlednost.
+Předchozí příklad tedy obsahuje 3 pixely.</p>
+<pre tabindex="0"><code> čer zel mod
+[0,  0,  0,  0, &lt;- černý pixel
+ 255,255,255,0, &lt;- bílý pixel
+ 0,  255,0,  0] &lt;- zelený pixel
+</code></pre><p>To ještě není vše.
+Tyto pixely jsou v poli poskládané po řádcích od shora.
+Takže pokud chceme zjistit kde je uložný pixel co je na pozici X=5 a Y=4, tak se musíme podívat na šířku celé plochy (ta je v proměnné <code>width</code>).
+Pak dovedeme pozici zjistit výpočtem:</p>
+<pre tabindex="0"><code>4*(x+width*y) + 0 // hodnota červené
+4*(x+width*y) + 1 // zelená
+4*(x+width*y) + 2 // modrá
+4*(x+width*y) + 3 // průhlednost
+</code></pre><p>Pro čtení pixelů je potřeba zavolat funkci <code>loadPixels()</code> a potom máme v proměnné <code>pixels</code> data.
+Z technických důvodů je také potřeba zavolat v setupu funkci <code>pixelDensity(1)</code>.</p>
+<h3 id="zpátky-ke-kolizi">Zpátky ke kolizi</h3>
+<p>Abychom nepsali 3x to samé (zjištění hodnoty pixelu), tak to napíšeme jen jednou, a potom to zkusíme zobecnit.</p>
+<p>Prvně, kde je pozice sensoru?
+Od středu robota leží ve směru <strong>r</strong> a je daleko třeba <code>prumer/2+3</code>.
+Pozici zjistíme podobně jako při počítání rychlosti v Xové a Yové souřadnici.
+Ovšem funkce <code>sin</code> a <code>cos</code> nevracejí celá čísla, takže výsledek zaokrouhlíme funkcí <code>round</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> sensorX<span style="color:#000;font-weight:bold">=</span>floor(x<span style="color:#000;font-weight:bold">+</span>(prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">+</span><span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">*</span>cos(r));
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> sensorY<span style="color:#000;font-weight:bold">=</span>floor(y<span style="color:#000;font-weight:bold">+</span>(prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">+</span><span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">*</span>sin(r));
+</span></span><span style="display:flex;"><span>  ellipse(x,y,prumer,prumer); <span style="color:#998;font-style:italic">// jen pro kontrolu
+</span></span></span></code></pre></div><p>Zároveň jsme si sensor vykreslili, abychom viděli, že je na správném místě.</p>
+<p>Nyní chceme zjistit jestli je pixel na pozici sensoru černý, bílý nebo mimo mapu.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> barvaSensoru <span style="color:#000;font-weight:bold">=</span> pixels[<span style="color:#099">4</span><span style="color:#000;font-weight:bold">*</span>(sensorX <span style="color:#000;font-weight:bold">+</span> sensorY<span style="color:#000;font-weight:bold">*</span>width)];
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> koliduje <span style="color:#000;font-weight:bold">=</span> barvaSensoru <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">255</span>; <span style="color:#998;font-style:italic">// červená barva pixelu je na maximum (např. bílá)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">if</span>(sensorX<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">||</span> sensorX <span style="color:#000;font-weight:bold">&gt;=</span>width <span style="color:#000;font-weight:bold">||</span> sensorY<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">||</span> sensorY<span style="color:#000;font-weight:bold">&gt;=</span>height){
+</span></span><span style="display:flex;"><span>    koliduje <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>; <span style="color:#998;font-style:italic">// pokud je sensor mimomapu, tak koliduje
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  }
+</span></span><span style="display:flex;"><span>  d <span style="color:#000;font-weight:bold">=</span> koliduje <span style="color:#000;font-weight:bold">?</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#099">1</span>; <span style="color:#998;font-style:italic">// pokud koliduje, zastavíme robota
+</span></span></span></code></pre></div><p>Kolize nám teď funguje.
+Stačí teďka místo jednoho sensoru udělat 3 tak, jak jsme už naznačili.</p>
+<p>Připravme si směry sensorů <code>sensory=[0,PI/4,-PI/4];</code> a kód, který zjišťuje kolize vložíme do cyklu.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">3</span>; <span style="color:#000;font-weight:bold">++</span>i){ <span style="color:#998;font-style:italic">// zapne se 3x, s hodnotou i=0, i=1 a i=2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">// co cheme opakovat?
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p><em>Upravte kód tak, aby pomocí for cyklu kontroloval všechny 3 pozice sensorů, a vykreslil je.</em></p>
+<h2 id="jak-zanechat-stopu">Jak zanechat stopu?</h2>
+<p>Chtěli bychom vědět, kde už roboti vysáli.
+Proto budeme prostor, který projeli označovat zeleně.
+To uděláme podobně, jako když jsme na začátku dělali kreslení bílých kruhů do černé plochy.
+Potřebujeme ale oddělit to, co se vykreslí a zůstane, od toho, co je pokaždé vykresluje znovu, a nezanechává stopu.</p>
+<p>Pro tento účel použijeme <code>Graphics</code> &ndash; je podobné jako obraz, do kterého normálně kreslíme, ale nezobrazuje se hnedka.
+Musíme ho vykreslit ručně, což nám ale vyhovuje, protože do něj můžeme vykreslovat a nepřekreslovat pozadí, takže zůstane zachované.
+Potom do plochy vykreslíme Graphics, a nad to robota, takže se robot nepropíše nastálo.</p>
+<p>Můžeme teď jednoduše znovu kreslit do plochy a robot si všimne, že tam něco je.
+Stopu pod robota také není těžké nakreslit.
+Jediné na co dáváme pozor je, že co chceme kreslit do plochy tak, aby to zůstalo, tak má volání funkce napsané s <code>g</code> na začátku: <code>g.funkce(...)</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// setup
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  g <span style="color:#000;font-weight:bold">=</span> createGraphics(<span style="color:#099">400</span>,<span style="color:#099">400</span>);
+</span></span><span style="display:flex;"><span>  g.background(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  g.noStroke();
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// draw
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  image(g,<span style="color:#099">0</span>,<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">if</span>(mouseIsPressed){ <span style="color:#998;font-style:italic">// pokud držíme myš, tak nakreslíme bílou stopu
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    g.fill(<span style="color:#099">255</span>); <span style="color:#998;font-style:italic">// bílá barva
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    g.ellipse(mouseX,mouseY,<span style="color:#099">20</span>,<span style="color:#099">20</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  g.fill(<span style="color:#099">0</span>,<span style="color:#099">255</span>,<span style="color:#099">0</span>); <span style="color:#998;font-style:italic">// zelená barva
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  g.ellipse(x,y,<span style="color:#099">20</span>,<span style="color:#099">20</span>); <span style="color:#998;font-style:italic">// nakreslíme stopu pod robota
+</span></span></span></code></pre></div><p><em>Rozmyslete si, proč robot koliduje s  bílou stopou a né se zelenou stopou?</em></p>
+<h2 id="více-robotů">Více robotů</h2>
+<p>Už jsme vlastně u konce přípravy simulace.
+Jediné věci co nejsou dokončené jsou, že se robot nechová nijak chytře, a že máme robota jenom jednoho.</p>
+<p>Mít více robotů není těžké, jenom je potřeba pro každého oddělit jeho vlastní data.
+Kokrétně musí mít různé hodnoty <code>x,y,r,d</code> atd.
+Toho lze dosáhnout tak, že z robota uděláme <strong>Objekt</strong>.
+Objekty se dají napsat asi takto:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> Robot{
+</span></span><span style="display:flex;"><span>    constructor(){
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">// co se má stát při vytvoření robota
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#998;font-style:italic">// aby program odlyšil co je v objektu a co je mimo
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#998;font-style:italic">//     tak proměnná x objektu se jmenuje `this.x`
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">this</span>.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">50</span>, <span style="color:#000;font-weight:bold">this</span>.y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">50</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    move(){ <span style="color:#998;font-style:italic">// naše vlastní funkce
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#998;font-style:italic">// co se má stát, když zavoláme funkci robot.move()
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Pokud všechna prvotní nastavení přesuneme do metody <code>constructor()</code> a hodnoty, výpočty a vykreslovací metody robota přesuneme do metody <code>move()</code>, a všem použítí proměnných robota přidáme <code>this.</code>, tak nám bude fungovat následující kód.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> robot;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() {
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  robot <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Robot(); <span style="color:#998;font-style:italic">// vytvoří robota - volá constructor()
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  robot.move(); <span style="color:#998;font-style:italic">// zavoláme move(), aby robot provedl svoje výpočty
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p>Vytvořit více robotů je nyní hračka:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> robot <span style="color:#000;font-weight:bold">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">6</span>; <span style="color:#000;font-weight:bold">++</span>i){ <span style="color:#998;font-style:italic">// jen zopakujeme to co jsme udělali pro jednoho
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    robot[i] <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Robot();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">6</span>; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>    robot[i].move();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>Zkuste podle popisku zprovoznit více robotů bez pomoci. Pokud to vzdáte, tak níže je celý kód v kuse.</em></p>
+<h2 id="vylepšení-chování">Vylepšení chování</h2>
+<p>Pokud se vám nepovedlo všechno zprovoznit, tak níže máte celý šedesátiřádkový kód v kuse.</p>
+<p>Poslední nedodělaný kus je chování robota.
+Zkuste si rozmyslet co by mohlo robotům pomoci, aby prošli celý prostor.
+Můžete třeba</p>
+<ul>
+<li>měnit jak robot zahýbá,</li>
+<li>zkusit v náhodný čas říct robotovi, aby se otočil do náhodného směru,</li>
+<li>najít nevysátý prostor a robota k němu nasměrovat.</li>
+</ul>
+<p><em>Zkuste experimentovat s chováním robotů tak, aby vysáli celý prostor.</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> sensory <span style="color:#000;font-weight:bold">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> g, robot <span style="color:#000;font-weight:bold">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> setup() {
+</span></span><span style="display:flex;"><span>  createCanvas(<span style="color:#099">400</span>, <span style="color:#099">400</span>);
+</span></span><span style="display:flex;"><span>  pixelDensity(<span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>  sensory <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">0</span>, PI<span style="color:#000;font-weight:bold">/</span><span style="color:#099">4</span>, <span style="color:#000;font-weight:bold">-</span>PI<span style="color:#000;font-weight:bold">/</span><span style="color:#099">4</span>];
+</span></span><span style="display:flex;"><span>  g <span style="color:#000;font-weight:bold">=</span> createGraphics(<span style="color:#099">400</span>,<span style="color:#099">400</span>);
+</span></span><span style="display:flex;"><span>  g.background(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  g.noStroke();
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">6</span>; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>  	robot[i] <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Robot();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> Robot{
+</span></span><span style="display:flex;"><span>  constructor(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">this</span>.x<span style="color:#000;font-weight:bold">=</span>random()<span style="color:#000;font-weight:bold">*</span>width,<span style="color:#000;font-weight:bold">this</span>.y<span style="color:#000;font-weight:bold">=</span>random()<span style="color:#000;font-weight:bold">*</span>height,<span style="color:#000;font-weight:bold">this</span>.r<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>,<span style="color:#000;font-weight:bold">this</span>.d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>,<span style="color:#000;font-weight:bold">this</span>.rd<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0.02</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  move(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> koliduje <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>;
+</span></span><span style="display:flex;"><span>    loadPixels();
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">3</span>; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">var</span> sensorX<span style="color:#000;font-weight:bold">=</span>round(<span style="color:#000;font-weight:bold">this</span>.x<span style="color:#000;font-weight:bold">+</span>(prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">+</span><span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">*</span>cos(<span style="color:#000;font-weight:bold">this</span>.r<span style="color:#000;font-weight:bold">+</span>sensory[i]));
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">var</span> sensorY<span style="color:#000;font-weight:bold">=</span>round(<span style="color:#000;font-weight:bold">this</span>.y<span style="color:#000;font-weight:bold">+</span>(prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">+</span><span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">*</span>sin(<span style="color:#000;font-weight:bold">this</span>.r<span style="color:#000;font-weight:bold">+</span>sensory[i]));
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">var</span> barvaSensoru <span style="color:#000;font-weight:bold">=</span> pixels[<span style="color:#099">4</span><span style="color:#000;font-weight:bold">*</span>(sensorX <span style="color:#000;font-weight:bold">+</span> sensorY<span style="color:#000;font-weight:bold">*</span>width)];
+</span></span><span style="display:flex;"><span>      koliduje <span style="color:#000;font-weight:bold">=</span> koliduje <span style="color:#000;font-weight:bold">||</span> barvaSensoru <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">255</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">if</span>(sensorX<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">||</span> sensorX <span style="color:#000;font-weight:bold">&gt;=</span>width <span style="color:#000;font-weight:bold">||</span> sensorY<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">||</span> sensorY<span style="color:#000;font-weight:bold">&gt;=</span>height){
+</span></span><span style="display:flex;"><span>        koliduje <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">this</span>.r<span style="color:#000;font-weight:bold">+=</span><span style="color:#000;font-weight:bold">this</span>.rd;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">this</span>.d <span style="color:#000;font-weight:bold">=</span> koliduje <span style="color:#000;font-weight:bold">?</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> dx<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">this</span>.d<span style="color:#000;font-weight:bold">*</span>cos(<span style="color:#000;font-weight:bold">this</span>.r);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> dy<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">this</span>.d<span style="color:#000;font-weight:bold">*</span>sin(<span style="color:#000;font-weight:bold">this</span>.r);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">this</span>.x<span style="color:#000;font-weight:bold">+=</span>dx;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">this</span>.y<span style="color:#000;font-weight:bold">+=</span>dy;
+</span></span><span style="display:flex;"><span>    stroke(<span style="color:#099">255</span>,<span style="color:#099">0</span>,<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ellipse(<span style="color:#000;font-weight:bold">this</span>.x,<span style="color:#000;font-weight:bold">this</span>.y,prumer,prumer);
+</span></span><span style="display:flex;"><span>    line(<span style="color:#000;font-weight:bold">this</span>.x,<span style="color:#000;font-weight:bold">this</span>.y,
+</span></span><span style="display:flex;"><span>         <span style="color:#000;font-weight:bold">this</span>.x<span style="color:#000;font-weight:bold">+</span>prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>cos(<span style="color:#000;font-weight:bold">this</span>.r),
+</span></span><span style="display:flex;"><span>         <span style="color:#000;font-weight:bold">this</span>.y<span style="color:#000;font-weight:bold">+</span>prumer<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>sin(<span style="color:#000;font-weight:bold">this</span>.r));
+</span></span><span style="display:flex;"><span>  	g.fill(<span style="color:#099">0</span>,<span style="color:#099">255</span>,<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  	g.ellipse(<span style="color:#000;font-weight:bold">this</span>.x,<span style="color:#000;font-weight:bold">this</span>.y,<span style="color:#099">20</span>,<span style="color:#099">20</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> prumer <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>  image(g,<span style="color:#099">0</span>,<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">if</span>(mouseIsPressed){
+</span></span><span style="display:flex;"><span>    g.fill(<span style="color:#099">255</span>);
+</span></span><span style="display:flex;"><span>    g.ellipse(mouseX,mouseY,<span style="color:#099">20</span>,<span style="color:#099">20</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span>(<span style="color:#000;font-weight:bold">var</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#099">6</span>; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>  	robot[i].move();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  fill(<span style="color:#099">255</span>);
+</span></span><span style="display:flex;"><span>  noStroke();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

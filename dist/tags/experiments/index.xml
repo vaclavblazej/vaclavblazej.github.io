@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiments on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/experiments/</link>
+    <description>Recent content in Experiments on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 06 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/experiments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Simple Streaming Bit-parallel Algorithm for Swap Pattern Matching</title>
+      <link>https://vaclavblazej.github.io/pub/2015/gsm/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2015/gsm/</guid>
+      <description>In this paper we present a streaming algorithm for Pattern Matching with Swaps (Swap Matching).&#xA;Abstract The pattern matching problem with swaps is to find all occurrences of a pattern in a text while allowing the pattern to swap adjacent symbols. The goal is to design fast matching algorithm that takes advantage of the bit parallelism of bitwise machine instructions and has only streaming access to the input. We introduce a new approach to solve this problem based on the graph theoretic model and compare its performance to previously known algorithms.</description>
+    </item>
+  </channel>
+</rss>

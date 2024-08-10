@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/material/</link>
+    <description>Recent content on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/material/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust cheetsheet</title>
+      <link>https://vaclavblazej.github.io/material/programming/rust/cheatsheet/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/programming/rust/cheatsheet/</guid>
+      <description>This page serves as a quick reference constructions in Rust programming language. Knowledge of the language is assumed so the code explained minimally. However, for a skilled programmer this page may serve as a syntax reference.&#xA;Main and prints fn main() { // todo here } fn function(par1: Type, par2: Type) -&amp;gt; ReturnType { expressions; let val = function2(par1, par2, par3); returned_value // or return returned_value; } format!, print! (println!), and eprint!</description>
+    </item>
+    <item>
+      <title>Typing practice</title>
+      <link>https://vaclavblazej.github.io/material/programming/typing/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/programming/typing/</guid>
+      <description> One of programmer&amp;rsquo;s basic assets.&#xA;practice for beginners on Keybr&amp;thinsp;↗ practice fast english typing on Typeracer&amp;thinsp;↗ typing practice for normal programmers on Typing&amp;thinsp;↗ Chyba při načítání obsahu {{done}}{{target}} </description>
+    </item>
+    <item>
+      <title>ACM Overview</title>
+      <link>https://vaclavblazej.github.io/material/programming/acm/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/programming/acm/</guid>
+      <description>Welcome, this page contains information about repositories used for acm trainings on FIT-CTU. Note that the formal requirements of the BI-ACM course can be found on Tom&amp;rsquo;s webpage&amp;thinsp;↗ (in czech).&#xA;Each team is encouraged to create their own repository contatining prepared solutions to well known problems. (You can use school&amp;rsquo;s gitlab&amp;thinsp;↗, github&amp;thinsp;↗, etc.)&#xA;Team Project Teams usualy have their own repository with solutions to problems they encountered. A team should be familiar with all codes they have in their repository because they will often have to edit these codes to solve a problem.</description>
+    </item>
+    <item>
+      <title>Profilování programu v C&#43;&#43;</title>
+      <link>https://vaclavblazej.github.io/material/programming/profiling/</link>
+      <pubDate>Thu, 11 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/programming/profiling/</guid>
+      <description>Pro optimalizace výkonu programu potřebujeme vědět, které jeho části se počítají nejdéle.&#xA;Náinstalujeme nástroje pro profilování:&#xA;sudo apt-get install valgrind kcachegrind graphviz Zkompilujeme program s přidaným info (-g přepínač)&#xA;g++ -std=c++11 -g main.cpp -o program A pustíme pod valgrind s nastaveným nástrojem callgrind&#xA;valgrind --tool=callgrind ./program [program_options] výstupem je soubor typu callgrind.out.XXXXX (X čísla se stále zvětšují, poslední je aktuálnější), ten otevřeme pod kcachegrind&#xA;kcachegrind callgrind.out.20942 Tento program visualizuje kolik proběhlo volání každé řádky.</description>
+    </item>
+    <item>
+      <title>Generovaná grafika</title>
+      <link>https://vaclavblazej.github.io/material/programming/make/processing/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/programming/make/processing/</guid>
+      <description>Přes program Processing&amp;thinsp;↗ lze relativně jednoduše tvořit grafiku a animace. Na téhle stránce jsou uvedeny příklady programů.&#xA;Verze 2.2.1 umožňuje generovat .gif obrázky pomocí modulu GifAnimation.&#xA;Postupně sem budu přidávat ukázky animací a příslušné kódy.&#xA;BFS Processing BFS Code </description>
+    </item>
+  </channel>
+</rss>

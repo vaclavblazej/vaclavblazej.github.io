@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            NeoVim Setup - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-04-30T00:00:00Z" class="post-list timeago">30.04.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/setup">setup</a> <a href="https://vaclavblazej.github.io/tags/tutorial">tutorial</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>NeoVim Setup</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Doing all my editing in Vim I thought for some time whether to switch to <a href="https://neovim.io/"target="_blank">NeoVim<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+A few days ago I finally decided to do the switch.
+The result is <strong>awesome</strong>.</p>
+<p>I ought to credit ThePrimeagen whose <a href="https://www.youtube.com/watch?v=w7i4amO_zaE"target="_blank">videotutorial<span style="white-space: nowrap;">&thinsp;↗</span></a> stands was the main reason for my transition.
+Another reason was a nice tutorial for using <a href="https://www.ejmastnak.com/tutorials/vim-latex/intro/"target="_blank">VimTeX by ejmastnak<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h2 id="why">Why</h2>
+<p>Here are my reasons to use NeoVim.</p>
+<ul>
+<li>highlighting (via <a href="nvim-treesitter/nvim-treesitter">incremental syntax tree</a>)</li>
+<li>support for custom <a href="https://github.com/L3MON4D3/LuaSnip"target="_blank">code snippets<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>revert local changes via <a href="https://github.com/mbbill/undotree"target="_blank">undotree<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>good support for <a href="https://github.com/lervag/vimtex"target="_blank">LaTex<span style="white-space: nowrap;">&thinsp;↗</span></a> and <a href="https://github.com/tpope/vim-fugitive"target="_blank">Git<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>quick fuzzy search for files or contents <a href="https://github.com/nvim-telescope/telescope.nvim"target="_blank">navigation<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://github.com/VonHeikemen/lsp-zero.nvim"target="_blank">LSP support<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><code>:checkhealth</code> tells you what is wrong (missing dependencies, old versions, etc.)</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>My current setup is available at <a href="https://github.com/vaclavblazej/nvim"target="_blank">https://github.com/vaclavblazej/nvim<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+Installation on Ubuntu goes like this.</p>
+<ul>
+<li>Install <code>neovim</code></li>
+<li>Configure <code>init.lua</code> in <code>~/.config/nvim/</code>.</li>
+<li>(optionally) set <code>alias vim=nvim</code> in <code>~/.zshrc</code> (<code>~/.bashrc</code> for bash users).</li>
+</ul>
+<p>For more details, see the tutorials mentioned above.</p>
+<h2 id="some-basics">Some basics</h2>
+<p>I just note some things that would make my transition little smoother.</p>
+<ul>
+<li>Obviously, you need to install <code>neovim</code>. Some errors or comments may mention that a program is missing, then install it as well.</li>
+<li>NeoVim configuration lives in <code>~/.config/nvim/</code>. (Vim config is traditionally in <code>~/.vim/</code>.)</li>
+<li>NeoVim config entry file is <code>~/.config/nvim/init.lua</code> (or <code>init.vim</code> for just copied old config). (Vim config is traditionally in <code>~/.vimrc</code>.)</li>
+<li>All files (e.g. <code>file.lua</code>) within <code>.config/nvim/lua</code> can be requested by other script files by <code>require(&quot;file&quot;)</code> command.</li>
+<li>Files in <code>.config/nvim/after</code> folder are loaded automatically.</li>
+<li>It is important to load <code>lazy</code> <strong>after</strong> setup of key remaps as otherwise leader key may be old for plugin commands.</li>
+<li>The <code>lazy</code> plugin manager downloads the plugins on startup. Otherwise just pull it up with <code>:Lazy</code>.</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

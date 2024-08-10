@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\draw[help lines] (-2.7,-6.3) grid (0.7,-0.7);
+\foreach[count=\i] \len in {mm,cm,pt,ex,em,in} {
+    \node[anchor=west] at (0,-\i) {\len};
+    \draw[|-|,blue] (0,-\i) -- +(-1\len,0);
+}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,26 @@
+# Fdb version 3
+["dvips"] 1679925523 "main.dvi" "main.ps" "main" 1679925523
+  "main.dvi" 1679925523 444 0a536d77c0a608d0e2ed9992d71b10d4 "latex"
+  (generated)
+  "main.ps"
+["latex"] 1679925522 "main.tex" "main.dvi" "main" 1679925523
+  "/etc/texmf/web2c/texmf.cnf" 1651761021 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def" 1498170935 5895 4b59bd0c17e1116fd6b6e7c683dea655 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1642022539 35666 245843706ef8bde3dc5fcca41b43ec1e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1635798903 56029 3f7889dab51d620aa43177c391b7b190 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/latex.fmt" 1651996404 2798492 c42b862868e799cb4c98fa9c38df2ad0 ""
+  "main.aux" 1679925523 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "main.tex" 1679925521 192 69e2ad05303aec54e7815a45d7a8641a ""
+  (generated)
+  "main.aux"
+  "main.dvi"
+  "main.log"
+["ps2pdf"] 1679925523 "main.ps" "main.pdf" "main" 1679925523
+  "main.ps" 1679925523 42008 be2e87a0d3d87410c3e5c11d99dee4df "dvips"
+  (generated)
+  "main.pdf"

@@ -1,0 +1,2 @@
+all:
+	pdftex test.tex

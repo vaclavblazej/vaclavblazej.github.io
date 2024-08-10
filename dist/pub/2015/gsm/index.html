@@ -1,0 +1,336 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            A Simple Streaming Bit-parallel Algorithm for Swap Pattern Matching - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2015-11-06T00:00:00Z" class="post-list timeago">06.11.2015</time>
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other %!s(&lt;nil&gt;)" href="https://arxiv.org/abs/1606.04763">arXiv</a>
+    
+
+
+    
+        
+
+
+    
+        <a class="box conference %!s(&lt;nil&gt;)" href="https://link.springer.com/chapter/10.1007/978-3-319-72453-9_28">MACIS 2017</a>
+    
+
+
+
+
+    
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/stringology">stringology</a> <a href="https://vaclavblazej.github.io/tags/experiments">experiments</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>A Simple Streaming Bit-parallel Algorithm for Swap Pattern Matching</h1>
+
+            
+    
+    with
+     Ondřej Suchý and Tomáš Valla
+
+
+        </div>
+        <div class="post-content">
+            <p>In this paper we present a streaming algorithm for Pattern Matching with Swaps (Swap Matching).</p>
+<h2 id="abstract">Abstract</h2>
+<p>The pattern matching problem with swaps is to find all occurrences of a pattern in a text while allowing the pattern to swap adjacent symbols.
+The goal is to design fast matching algorithm that takes advantage of the bit parallelism of bitwise machine instructions
+and has only streaming access to the input.
+We introduce a new approach to solve this problem based on the graph theoretic model and compare its performance to previously known algorithms.
+We also show that an approach using deterministic finite automata cannot achieve similarly efficient algorithms.
+Furthermore, we describe a fatal flaw in some of the previously published algorithms based on the same model.
+Finally, we provide experimental evaluation of our algorithm on real-world data.</p>
+<h2 id="codes--other">Codes &amp; Other</h2>
+<p>All related code materials: <a href="codes.tar.gz">codes.tar.gz</a></p>
+<p>The code was tested on these corpuses:</p>
+<ul>
+<li><a href="https://ftp.ensembl.org/pub/release-90/fasta/homo_sapiens/dna/"target="_blank">ftp.ensembl.org &ndash; DNA<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="http://www.data-compression.info/Corpora/ProteinCorpus/"target="_blank">data-compression.info &ndash; Protein<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="http://corpus.canterbury.ac.nz/descriptions/large/bible.html"target="_blank">Canterbury corpus &ndash; Bible<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<div class="expandbox">
+<div class="expand-container hidden" id="raw_code-box">
+<button class="expand-title" id="raw_code-control">➤ <b>Raw GSM code (used for testing)</b></button>
+<div class="expand-content">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">gsm</span>(string <span style="color:#000;font-weight:bold">&amp;</span>P, <span style="color:#000;font-weight:bold">const</span> <span style="color:#458;font-weight:bold">char</span> <span style="color:#000;font-weight:bold">*</span>T, <span style="color:#458;font-weight:bold">int</span> p, <span style="color:#458;font-weight:bold">int</span> t){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">const</span> <span style="color:#458;font-weight:bold">int</span> u <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>, m <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, d <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// DMASK initialization
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#458;font-weight:bold">int</span> i;
+</span></span><span style="display:flex;"><span>    bint F <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>    bint D[SIGMA];
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> SIGMA; <span style="color:#000;font-weight:bold">++</span>i) D[i] <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> p; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>        D[P[i]] <span style="color:#000;font-weight:bold">|=</span> F;
+</span></span><span style="display:flex;"><span>        F <span style="color:#000;font-weight:bold">=</span> F <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// GSM initialization
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    bint tmp[<span style="color:#099">3</span>]; <span style="color:#998;font-style:italic">// temporary vectors
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    bint r[<span style="color:#099">3</span>]; <span style="color:#998;font-style:italic">// result vectors
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    r[<span style="color:#099">0</span>]<span style="color:#000;font-weight:bold">=</span>r[<span style="color:#099">1</span>]<span style="color:#000;font-weight:bold">=</span>r[<span style="color:#099">2</span>]<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>    bint resCheck <span style="color:#000;font-weight:bold">=</span> ((bint)<span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">&lt;&lt;</span> (p <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// GSM execution
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">for</span>(i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> t; <span style="color:#000;font-weight:bold">++</span>i){
+</span></span><span style="display:flex;"><span>        tmp[u] <span style="color:#000;font-weight:bold">=</span> (r[d] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>        tmp[m] <span style="color:#000;font-weight:bold">=</span> (r[m] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> (r[u] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>        tmp[d] <span style="color:#000;font-weight:bold">=</span> tmp[m];
+</span></span><span style="display:flex;"><span>        r[u] <span style="color:#000;font-weight:bold">=</span> tmp[u] <span style="color:#000;font-weight:bold">&amp;</span> (D[T[i]] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>        r[m] <span style="color:#000;font-weight:bold">=</span> tmp[m] <span style="color:#000;font-weight:bold">&amp;</span>  D[T[i]];
+</span></span><span style="display:flex;"><span>        r[d] <span style="color:#000;font-weight:bold">=</span> tmp[d] <span style="color:#000;font-weight:bold">&amp;</span> (D[T[i]] <span style="color:#000;font-weight:bold">&gt;&gt;</span> <span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span>(((r[m] <span style="color:#000;font-weight:bold">|</span> r[u]) <span style="color:#000;font-weight:bold">&amp;</span> resCheck) <span style="color:#000;font-weight:bold">!=</span> <span style="color:#099">0</span>) {
+</span></span><span style="display:flex;"><span>            FOUND(i <span style="color:#000;font-weight:bold">-</span> p <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">2</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+</div>
+</div>
+<script>setupToggleDiv("raw_code" + "-box", "raw_code" + "-control")</script>
+<!--
+citation:
+	@article{DBLP:journals/corr/BlazejSV16,
+	  author    = {V{\'a}clav Bla{\v z}ej and
+		       Ond{\v r}ej Such{\'y} and
+		       Tom{\'a}{\v s} Valla},
+	  title     = {A Simpler Bit-parallel Algorithm for Swap Matching},
+	  journal   = {CoRR},
+	  volume    = {abs/1606.04763},
+	  year      = {2016},
+	  url       = {http://arxiv.org/abs/1606.04763},
+	  timestamp = {Fri, 01 Jul 2016 17:39:49 +0200},
+	  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/BlazejSV16},
+	  bibsource = {dblp computer science bibliography, http://dblp.org}
+	}
+-->
+<h2 id="implementation-in-c">Implementation in c++</h2>
+<p>In practice, the data types required may be way bigger than 4*word-size so next we provide a GSM implementation in cpp which use bitsets.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="cpp_code-box">
+<button class="expand-title" id="cpp_code-control">➤ <b>GSM c&#43;&#43; code</b></button>
+<div class="expand-content">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#define MAX 50001 </span><span style="color:#998;font-style:italic">// maximal pattern length (+some)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// find all positions which contain a swapMatch of pattern in text
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// sawp match allows distinct swapps of adjacent characters
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>vector<span style="color:#000;font-weight:bold">&lt;</span>ll<span style="color:#000;font-weight:bold">&gt;</span> gsm(string pattern, string text, <span style="color:#458;font-weight:bold">int</span> p, <span style="color:#458;font-weight:bold">int</span> t, <span style="color:#458;font-weight:bold">int</span> Sigma){
+</span></span><span style="display:flex;"><span>    vector<span style="color:#000;font-weight:bold">&lt;</span>ll<span style="color:#000;font-weight:bold">&gt;</span> res;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(<span style="color:#458;font-weight:bold">int</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>t; <span style="color:#000;font-weight:bold">++</span>i)text[i]<span style="color:#000;font-weight:bold">-=</span><span style="color:#d14">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(<span style="color:#458;font-weight:bold">int</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>p; <span style="color:#000;font-weight:bold">++</span>i)pattern[i]<span style="color:#000;font-weight:bold">-=</span><span style="color:#d14">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// DMASK initialization
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    vector<span style="color:#000;font-weight:bold">&lt;</span>bitset<span style="color:#000;font-weight:bold">&lt;</span>MAX<span style="color:#000;font-weight:bold">&gt;&gt;</span> D(Sigma);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span>(<span style="color:#458;font-weight:bold">int</span> i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>p; <span style="color:#000;font-weight:bold">++</span>i) D[pattern[i]].set(i);
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// GSM initialization
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    bitset<span style="color:#000;font-weight:bold">&lt;</span>MAX<span style="color:#000;font-weight:bold">&gt;</span> r[<span style="color:#099">3</span>]; <span style="color:#998;font-style:italic">// result vectors
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    bitset<span style="color:#000;font-weight:bold">&lt;</span>MAX<span style="color:#000;font-weight:bold">&gt;</span> tmp[<span style="color:#099">3</span>]; <span style="color:#998;font-style:italic">// temporary vectors
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    bitset<span style="color:#000;font-weight:bold">&lt;</span>MAX<span style="color:#000;font-weight:bold">&gt;</span> resCheck;resCheck.set(p<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>    bitset<span style="color:#000;font-weight:bold">&lt;</span>MAX<span style="color:#000;font-weight:bold">&gt;</span> one;one.set(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// GSM execution
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">for</span>(<span style="color:#458;font-weight:bold">int</span> j<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; j<span style="color:#000;font-weight:bold">&lt;</span>t; <span style="color:#000;font-weight:bold">++</span>j){
+</span></span><span style="display:flex;"><span>        tmp[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> (r[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> one;
+</span></span><span style="display:flex;"><span>        tmp[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> (r[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> (r[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">|</span> one;
+</span></span><span style="display:flex;"><span>        tmp[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> tmp[<span style="color:#099">1</span>];
+</span></span><span style="display:flex;"><span>        r[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> tmp[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">&amp;</span> (D[text[j]] <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>        r[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> tmp[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">&amp;</span> D[text[j]];
+</span></span><span style="display:flex;"><span>        r[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> tmp[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">&amp;</span> (D[text[j]] <span style="color:#000;font-weight:bold">&gt;&gt;</span> <span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span>(<span style="color:#000;font-weight:bold">!</span>((r[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">|</span> r[<span style="color:#099">2</span>]) <span style="color:#000;font-weight:bold">&amp;</span> resCheck).none()) res.push_back(j<span style="color:#000;font-weight:bold">-</span>p<span style="color:#000;font-weight:bold">+</span><span style="color:#099">1</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> res;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+</div>
+</div>
+<script>setupToggleDiv("cpp_code" + "-box", "cpp_code" + "-control")</script>
+<h2 id="presentation">Presentation</h2>
+<p>The paper was presented at MACIS 2017.</p>
+<ul>
+<li><a href="slides.pdf">macis slides pdf</a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

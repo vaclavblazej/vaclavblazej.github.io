@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Manipulating game files on Steam - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-03-12T00:00:00Z" class="post-list timeago">12.03.2024</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/tutorial">tutorial</a> <a href="https://vaclavblazej.github.io/tags/game">game</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Manipulating game files on Steam</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><a href="https://store.steampowered.com/"target="_blank">Steam<span style="white-space: nowrap;">&thinsp;↗</span></a> installs and updates your games automatically.
+However, in some cases it may be needed to change local files manually.</p>
+<h2 id="running-a-game-with-flags">Running a game with flags</h2>
+<ul>
+<li>right click game, properties</li>
+<li>in general change the Launchh options</li>
+</ul>
+<p>The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &ndash; that one is available through variable <code>%command%</code>.
+For adding a flag use</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>%command% -flag
+</span></span></code></pre></div><p>And for delegating start to a script, use a command like</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./start_game_bepinex.sh %command%
+</span></span></code></pre></div><h2 id="find-game-files">Find game files</h2>
+<p>First, we find where Steam keeps files of a game.</p>
+<ul>
+<li>open Steam game library</li>
+<li>right click game, properties</li>
+<li>installed files, browse</li>
+</ul>
+<p>The opened folder will be important later, save the target location.</p>
+<h2 id="steam-console">Steam console</h2>
+<p>Steam has a hidden console that can be opened by opening <a href="steam://open/console"><code>steam://open/console</code></a> in web browser.
+This shows a new tab on steam named <em>Console</em> which allows you to input commands directly.</p>
+<p>The same can be achieved by running:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>steam -console
+</span></span></code></pre></div><h2 id="downloading-an-old-build-of-a-game">Downloading an old build of a game</h2>
+<p>First find App ID, Depot ID, and Manifest ID.</p>
+<ul>
+<li>open <a href="https://steamdb.info/"target="_blank">https://steamdb.info/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>find the game</li>
+<li>note that url contains AppID, e.g. <a href="https://steamdb.info/app/730/"target="_blank">https://steamdb.info/app/730/<span style="white-space: nowrap;">&thinsp;↗</span></a> has AppID <code>730</code></li>
+<li>go to <em>Depots</em></li>
+<li>find the one you care about and click it</li>
+<li>note Depot ID</li>
+<li>go to <em>Manifest</em></li>
+<li>note Manifest ID for the version you want</li>
+</ul>
+<p>Run command in steam console</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>download_depot &lt;App ID&gt; &lt;Depot ID&gt; &lt;Manifest ID&gt;
+</span></span></code></pre></div><p>This command does not seem to display progress but will print message when the download is finished.
+The command then prints the final directory location, which will be similar to the following.</p>
+<pre tabindex="0"><code>/home/user/.local/share/Steam/ubuntu12_32/steamapps/content/app_730/depot_734
+</code></pre><p>From this location the game can be run directly or copied to the location of the Steam copy.
+Steam copy may get automatically updated, which may defeat the purpose of doing this, but updates do not verify integrity so overriding the files may just work for you.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=873543244"target="_blank">https://steamcommunity.com/sharedfiles/filedetails/?id=873543244<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://www.makeuseof.com/how-to-downgrade-steam-games/"target="_blank">https://www.makeuseof.com/how-to-downgrade-steam-games/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

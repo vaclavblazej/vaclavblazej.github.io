@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Forward and inverse serach in Okular with NeoVim and Lazy plugin loader - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-05-26T00:00:00Z" class="post-list timeago">26.05.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/neovim">neovim</a> <a href="https://vaclavblazej.github.io/tags/latex">latex</a> <a href="https://vaclavblazej.github.io/tags/tutorial">tutorial</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Forward and inverse serach in Okular with NeoVim and Lazy plugin loader</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <hr>
+<p>TLDR;</p>
+<ul>
+<li><code>pip3 install neovim-remote</code></li>
+<li><a href="https://github.com/vaclavblazej/nvim/blob/main/lua/blazeva1/lazy.lua"target="_blank">setup vimtex in lazy<span style="white-space: nowrap;">&thinsp;↗</span></a> and <a href="https://github.com/vaclavblazej/nvim/blob/main/after/plugin/vimtex.lua"target="_blank">configure vimtex<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>set &ldquo;<code>Okular/Settings/Configure Okular/Editor/Custom Text Editor</code>&rdquo; to <code>nvr --remote-silent +%l %f</code></li>
+</ul>
+<hr>
+<p><a href="https://vaclavblazej.github.io/post/2022/synctex/">10 months ago</a> I setup my vim to support jump to and from PDF viewer.
+Since then I <a href="https://vaclavblazej.github.io/post/2023/neovim/">jumped into NeoVim</a> which broke this setup, so here is the new one.</p>
+<p>In NeoVim <code>~/.config/nvim/init.lua</code> apart from the <a href="https://github.com/folke/lazy.nvim"target="_blank">typical lazy setup<span style="white-space: nowrap;">&thinsp;↗</span></a> we include <code>lervag/vimtex</code> as a plugin while disabling lazy loading.
+It is mentioned in the <a href="https://github.com/lervag/vimtex"target="_blank">VimTex README<span style="white-space: nowrap;">&thinsp;↗</span></a> lazy loading messes the <code>VimtexInverseSearch</code> command; I tried, it really does.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>require(<span style="color:#d14">&#39;lazy&#39;</span>).setup({
+</span></span><span style="display:flex;"><span>    {                               <span style="color:#998;font-style:italic">-- LaTeX support</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#39;lervag/vimtex&#39;</span>,
+</span></span><span style="display:flex;"><span>        lazy <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>Next, setup <code>vimtex</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>vim.g.vimtex_view_general_viewer <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;okular&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g.vimtex_view_general_options <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;--unique file:@pdf</span><span style="color:#d14">\\</span><span style="color:#d14">#src:@line@tex&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g.tex_flavor <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;latex&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g.vimtex_compiler_progname <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;nvr&#39;</span>
+</span></span></code></pre></div><p>Now, opening a <code>.tex</code> file and <code>&lt;leader&gt;ll</code> should compile it and open PDF in Okular.</p>
+<p>To support Inverse search (clicking PDF to move editor) we install <code>neovim-remote</code> (requires <code>python3</code> and <code>pip3</code>) which adds a new command <code>nvr</code>.</p>
+<ul>
+<li><code>pip3 install neovim-remote</code></li>
+</ul>
+<p>Next, go to Okular and navigate menu to <code>Settings/Configure Okular/Editor/Custom Text Editor</code>&quot; which should be set to <code>nvr --remote-silent +%l %f</code>.</p>
+<p>Note that the PDF must be compiled through the NeoVim, otherwise it may not contain hints on where it should jump.
+VimTex does not compile the document if source did not change so you may have to do a meaningless change to get the hints in.</p>
+<p>Now in Okular&rsquo;s <strong>Browse Mode</strong> holding <strong>Shift</strong> and <strong>Left Cicking</strong> should move your NeoVim.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

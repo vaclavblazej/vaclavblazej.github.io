@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[scale=0.4]
+\draw[help lines] (-1.1,-11.1) grid (0.1,0.1);
+
+\foreach[count=\i] \style in {
+    , red, fill=red, open, round, length=2.5mm, width=2.5mm,
+    angle=90:4pt, inset=.2mm, slant=.5, harpoon
+}{
+    \draw[-{Stealth[\style]}] (-1,-\i+.4) -- ++(1,.1);
+    \node[anchor=west] at (0,-\i+.5) {\style};
+}
+
+\end{tikzpicture}
+\end{document}

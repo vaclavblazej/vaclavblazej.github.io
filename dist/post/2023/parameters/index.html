@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Initialization of Parameters hierarchy website - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="wide-image">
+        <div style="background-image: url('https://vaclavblazej.github.io//images/wide/par_hierarchy_2023.png');">
+        </div>
+    </div>
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-06-21T00:00:00Z" class="post-list timeago">21.06.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/rant">rant</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Initialization of Parameters hierarchy website</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>During the last two weeks I set up <a href="https://github.com/vaclavblazej/parameters"target="_blank">repository<span style="white-space: nowrap;">&thinsp;↗</span></a> which generates <a href="https://vaclavblazej.github.io/parameters/"target="_blank">website<span style="white-space: nowrap;">&thinsp;↗</span></a> about parameterized complexity.
+More specifically, it depicts hierarchy of various parameters.
+This project was on my mind for a while and wasn&rsquo;t sure how to do it, but then realized it will be quite easy to do with a static website.
+I use static web generator for my homepage and understand it well enough to setup any other site.</p>
+<p>Originally, the data was modelled via system that I tried to develop in the past.
+There are no nice tools to manage such data, so that was a huge drawback about this approach.
+From a software developer viewpoint it may be natural to save the data in a database, but this comes with a cost of managing the database and migrating whenever the scheme is updated.
+I don&rsquo;t have time for that!
+So the final data representation is as a python source code.
+This can be easily imported to other python code to generate the site or fill a database.
+It is easy to migrate through text replacements as everything is in text files (use vim btw).
+It allows people to participate, as it is relatively easy to raise a pull request with a source code change.</p>
+<p>Having a single underlying representation is important to allow exports to various formats.
+The plan is to have static entries, interactive mode, and a PDF.</p>
+<p>The depicted boxes represent series of graph classes each consisting of graph with upper bounded value of the mentioned parameter.
+So <em>treewidth</em> means all graphs with treewidth at most T where T is some integer.
+An arrow represents inclusions of these graph classes, more precisely, any class of bounded treewidth T is contained in a class of bounded cliquewidth $f(T)$ where $f$ is computable function.
+Plan is to also show when $f$ is polynomial or exponential, which seems to be of interest to the field.</p>
+<p>A different issue with any such diagram is whether it is correct, best possible, and complete.
+Correctness will hopefully be reached with having references to everything together with people reporting issues.
+Depicting an inclusion as best possible (among depicted parameters) can be done with a different arrow, that is not the issue.
+Such inclusion should also come with a proof of optimality &ndash; a simple way to do this is to show a classical graph class has upper bounded one parameter and unbounded another parameter.
+This gives a natural demand for a view that depicts for each graph class whether it is bounded or unbounded for each parameter in the hierarchy.
+Completeness is almost impossible, but we can aim to have as many useful parameters as possible.
+It is important to define what properties should a parameter have to be included in the picture &ndash; I believe that it has to be one of the following.</p>
+<ul>
+<li><em>natural</em> &ndash; trivial definition, understandable</li>
+<li><em>useful</em> &ndash; may have hard definition but we can solve many problems that could not be easily solved for less restrictive parameters</li>
+</ul>
+<p>We may define meta parameters to bring generalizations for several other parameters.
+Such parameters could be simply defined as union of the other parameters so these should be shown to posses one of the above properties.</p>
+<p>This hierarchy bring a natural comparison to <a href="https://www.graphclasses.org/"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a> &ndash; a project which holds information about graph inclusions and tractability of problems for graph classes.
+We can draw a comparison to it:</p>
+<ul>
+<li>ISGCI holds graph classes; we have &ldquo;sequences&rdquo; of classes</li>
+<li>classes relate with inclusions; sequences have inclusions but with a changed parameter</li>
+<li>non-inclusion is witnessed with a counterexample graph; sequence non-inclusion is witnessed with a counterexample graph class</li>
+</ul>
+<p>A natural question is now &ldquo;where&rdquo; is the graph class included in the bounded parameter class?
+E.g. linear-forests are included in pathwidth 1 graphs.
+As bounded parameter graph classes are downward-closed it implies that all pathwidth $\ge 1$ graphs classes include paths.
+To show paths are not included at all, we have to show that paths include a sequence of graphs that contradict this inclusion.
+E.g. a path has logarithmic treedepth so class of paths have unbounded treedepth.</p>
+<p>Bounded-parameter graph classes may form infinite hierarchy, e.g. $d$-path vertex cover is a class that depends on the value of $d$.
+2-path vertex cover is simply the vertex cover.
+3-path vertex cover is the same as distance to independent edge.
+Simply said, $d$-path vertex cover is distance to graphs with paths at most $d-1$.
+Clearly, there is an inclusion of 2-PVC in 3-PVC, and so on.
+This phenomenon is similar to what happens to the graph classes with respect to the parameter, however, the parameter has a special role in characterizing the complexity of the problem.
+BUT if we care just about inclusions, then complexity of the problem is irrelevant and we may be just interested whether 3-PVC with solution size 6 is included in 9-PVC with solution size 4.
+How to show this will hopefully become clearer in the future.</p>
+<p>Once we put back the requirement to investigate problems within this hierarchy it is natural to try P vs NP-hardness for each fixed-parameter class.
+This gives us XP and para-NP classes, respectively.
+XP is not great because the polynomial can grow hugely dependent on the parameter, so we prefer to have the polynomial independent on the parameter &ndash; this gives us FPT complexity class.
+Right now, there is no plan to add complexity classes to the database &ndash; it may be possible to display complexities for a researched problem in the future, but having also a database of problems and their solutions would step on the field of ISGCI, and perhaps then it would be natural to consider joining them.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+
+\draw[<->] (0.0,2.0) node[draw=red,circle] () {}
+        -- (+.1,1.5) node[draw=red,circle] () {}
+        -- (-.1,1.0) node[draw=red,circle] () {}
+        -- (+.1,0.5) node[draw=red,circle] () {}
+        -- (0.0,0.0) node[draw=red,circle] () {};
+
+\node[draw=red,fill=yellow] at (1,2) (c) {color};
+\node[draw,circle]          at (1,0) (d) {d};
+\draw[<->] (d) --node[sloped,below]{label} (c);
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,384 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Grafové algoritmy 2 - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-06-04T00:00:00Z" class="post-list timeago">04.06.2018</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/school">school</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Grafové algoritmy 2</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Koncentrované znalosti z kurzu <a href="http://mj.ucw.cz/vyuka/1718/ga2/"target="_blank">Grafové algoritmy II<span style="white-space: nowrap;">&thinsp;↗</span></a> Martina Mareše na MFF UK.
+Bacha na to, že každý rok na kurzu povídá trochu něco jiného :)</p>
+<h1 id="verifikace-minimality-kostry-komlósův-algoritmus-algoritmus-v-lineárním-čase">Verifikace minimality kostry (Komlósův algoritmus, algoritmus v lineárním čase)</h1>
+<p>Rozdělme si hrany na stromové, lehké a těžké (vůči cestě po stromě).
+Těžké hrany nebudou ve stromě díku červenému lemma.
+Modré lemma zase říká, že nejlehčí hrana libovolného elementárního řezu ve MST určitě bude.</p>
+<h2 id="převedení-na-jiný-problém">Převedení na jiný problém</h2>
+<p>Převedeme si verifikaci MST postupně na docela jiný problém.</p>
+<ul>
+<li>původní problém: T =? MST(G)</li>
+<li>najít T-lehké hrany v G (pokud jedna existuje, tak T není MST)</li>
+<li>pro query Q=[u,v]xN najít nejtěžší hranu na cestě u~v v T</li>
+<li>to samé, ale na logaritmicky hlubokém stromě</li>
+<li>to samé, ale pouze pro svislé cesty &ndash; toto vyřeší Komlósův algoritmus</li>
+</ul>
+<p>Převod je docela jednoduchý až na to, z query na T udělat query na logaritmicky hlubokém stromě.
+Kontrahující veze Borůvkůvkova algoritmu je na třídě stromů O(n).
+Vytvoříme strom B(T) reprezentující průběh Borůvkova algoritmu &ndash; ten jistě má nejvýše log(n) hladin.
+Věta: Cesta v T má stejné maximum jako cesta mezi reprezentatny konců cesty v B(T).
+DK: Co by se muselo pokazit?
+Po cestě na B(T) je těžká hrana co nebyla na u~v v T.
+No jo, ale Borůvka přeci takovou hranu nevybere &ndash; vybere dříve tu lehčí z této komponenty.</p>
+<h2 id="komlósův-algoritmus">Komlósův algoritmus</h2>
+<p>Probíhá následnovně</p>
+<pre><code>KA(u,p,Tp,Pp){ (vrchol, hrana do rodiče, cesty a jejich max váhy)
+    zpracujeme dotazy končí ve vrcholu u
+    pro syny v vrcholu u zpracujeme e = uv {
+        Te:=Tp / cesty končící ve v
+        Pe:=Pp upravíme dle Tp
+        hodnoty v Pe menší než w(e) přepíšeme na w(e)
+        KA(v,e,Te,Pe)
+    }
+}
+</code></pre>
+<p>Věta: KA provede O(n+q) porovnání.</p>
+<hr>
+<h1 id="randomizovaný-algoritmus-na-minimální-kostru-a-gomoryho-huovy-stromy">Randomizovaný algoritmus na minimální kostru a Gomoryho-Huovy stromy</h1>
+<h2 id="kargerovo-vzorkovací-lemma">Kargerovo vzorkovací lemma</h2>
+<p>Lemma: Nechť H \subseteq G tak, že všechny hrany G mají pst. p být vybrány do H; F=msf(G); potom E[# hran, které nejsou F-těžké]&lt;=n/p.
+DK: algo:</p>
+<pre><code>setřídíme hrany E
+F = \emptyset
+pro hrany e z E {
+    1) pokud F+e má cyklus, hranu zahodím (e je F těžká)
+    2) s pravděpodobností 1-p hranu zahodím
+    3) F:=F+e
+}
+</code></pre>
+<p>Pozorujeme, že 3) se stane maximálně n krát.
+Krok 2) je vlastně opakovaný náhodný jev s pravděpodobností p, který se stane nejvýše n krát ~ E[X]&lt;=n/p.</p>
+<h2 id="kkt-rand-algo-pro-mst">KKT rand. algo. pro MST</h2>
+<pre><code>odstraníme z G isolované vrcholy
+pokud G nemá vrcholy, vrátíme \emptyset
+provedeme 2 Borůvkovy kroky -&gt; B
+navzorkujeme H \subseteq G s p=1/2
+F:=KKT(H)
+G':=G bez těžkých hran
+R:=KKT(G')
+vrátíme B \cup R
+</code></pre>
+<p>Zřejmě po 2 Borůvkových krocích bude mít graf 4x méně vrcholů; má tedy nejvýše log[4] N hladin a na i-té hladině n/4^i vrcholů.
+Rekurze se větví dvakrát, má tak v i-té úrovni 2^i podproblémů.
+Dohromady tyto odhady dávají, že celková velikost přes všechny podproblémy je nejvýše 2n.
+Jeden podproblém bez rekurze trvá O(ni+mi), protože Borůvkovy kroky jsou v O(ni,mi), vzorkování je v O(mi) a na hledání těžkých hran použijeme Komlósův algo., který je také lineární.</p>
+<p>Algoritmus je worst case O(n+min(n^2,m log n)).
+Mez n^2 plyne z faktu, že v každém podproblému je nejvýše ni^2 hran.
+Dostáváme \sum[i] O(ni+mi)=\sum O(ni^2)=O(\sum ni^2)&lt;=O(n^2).
+Pro mez m \log n stačí ukázat, že jeden level rekurze je nejhůře O(m).
+Hrany poslané do rekurze v H mohou být poslané do rekurze v G&rsquo; pouze pokud nebyly těžké &ndash; jsou tedy stromové, a těch je maximálně Nv/4.
+Hrany schramstnuté v krocích Borůvkova algoritmu bude Bv.
+Dostáváme: Ml+Mr+Bv &lt;= Mv + Nv/4; ale Borůvka Bv je alespoň Nv/2, tak dostáváme Ml+Mr &lt;= Mv, takže se počet hran v další úrovni rozhodně nezvětší.</p>
+<p>Střední složitost na RAM je O(M).
+Strom rekurze je hluboký max log[4]N.
+Když se zaměříme na levé cesty z každého vrcholu, tak si povšimneme, že počet hran se snižuje exponenciálně &ndash; očekávaný čas strávený na cestě je tedy O(Nr+Mr).
+Každá levá cesta (mimo root) je pravý syn nějakého vrcholu a velikost podproblému je dána odebráním těžkých hran, kterých je podle lemma nejvýše Nv/p=2Nv.
+Přes všechny vrcholy (krom roota) bude slóžitost omezena \sum Nv což jsme již ustanovili, že je O(N) díky Borůvkovým krokům.</p>
+<hr>
+<h1 id="soft-haldy">Soft-haldy</h1>
+<p>Mějme haldu, které dovolímea části vložených prvků (0&lt;e&lt;1) zvýšit prioritu.
+Díky upravení vah ale nebude její struktura striktní jako u hald a také nezafunguje dolní mez řazení, jsme tak schopni dosáhnout O*(log(1/e)) složitosti všech následujících operací:</p>
+<pre><code>create(e) - vytvoří haldu s epsilonem = e
+insert(H,x) - vloží prvek do haldy
+meld(P,Q) - spojí haldu Q do P
+extractMin(H) - smaže a vrátí prvek s minimální priroritou
+explode(H) - zničí haldu a vrátí prvky (s označením poškození)
+</code></pre>
+<p>Soft stromy budou heap-like struktury, kde má každý vektor obousměrně zřetězený spoják prvků.
+První prvek spojáku bude také zastupovat roli priority/klíče celého vrcholu, ostatní hodnoty listu jsou <em>poškozené</em>.
+Klíče vrochlů splňují haldovou podmínku.</p>
+<p>Soft halda sestává z obousměrně zřetězeného spojového seznamu soft stromů ve vzrůstajícím pořadí, suffixových minim a globálního parametru r (sudý int nastavený dle e).</p>
+<p><strong>Meld</strong> hald proběhne spojením stromů stejného řádu (bin sčítačka-like) a přepočtením suffixových minim odzadu.
+<strong>Create</strong> se dělá vytvořením stromu s jedním elementem a přidáním jej do prázdné haldy.</p>
+<p>Jakmile klesne počet elementů |list(v)| pod size(v)/2, proběhne operace <strong>Sift</strong>:</p>
+<pre><code>sift(v){
+    dokud list(v) &lt; size(v) a v není list, tak {
+        pokud l(v) je list nebo ckey(l(v)) &gt; ckey(r(v)), prohoď syny v
+        prvky list(l(v)) přesuneme do list(v)
+        ckey(v) &lt;- ckey(l(v))
+        pokud l(v) je list, tak smazat
+        jinak sift(l(v))
+    }
+}
+</code></pre>
+<hr>
+<h1 id="optimální-algoritmus-pro-minimální-kostry">Optimální algoritmus pro minimální kostry</h1>
+<h2 id="robustní-kontrakce">Robustní kontrakce</h2>
+<p>Definujme, že podgraf C je kontrahovatelný právě tehdy, když pro každý pár hran e,f z řezu C^2 existuje cesta P taková, že e nebo f je lehčí než všechny hrany na P.
+Mějme malou část grafu, ve které Jarníkův algoritmus našel minimální kostru, tato komponenta je jistě kontrahovatelná.
+Když tuto část C kontrahujeme do jednoho vrcholu, potom platí msf(G)=msf(C) \cup msf(G/C).</p>
+<p>My ovšem (pro rychlost) chceme v Jarníkově algoritmu použít soft haldy.
+To zaviní poškození hodnot hran R, a tak by jeho výstup nemusel být korektní.
+Dokážeme si, že kontrakce jsou robustní, tedy že $msf(G) \subseteq msf(C) \cup msf((G / C) \setminus R^c) \cup R^c$.
+Nu hrana může být buď v C, R či v G\C\R.
+Hrany v C/T(C) jsou jasně těžké pro T(C).
+Hrany v R nás nezajímají, páč je všechny bereme.
+Hrany ve zbytku grafu mající těžký cyklus zasahující do C mají v C lehkou cestu, takže jsou těžké v T(G\C\R) a nezasahující do C jsou triviálně těžké v T(G\C\R).</p>
+<h2 id="rozhodovací-stromy">Rozhodovací stromy</h2>
+<p>Pomocí analýzy kontrahovací verze borůvkova algoritmu dojdeme k tomu, že hledání minimální kostry má rozhodovací strom nejvýše 4/3 n^2 pater.
+Na pointer machine je lze rozhodovací strom sestavit v čase 2^2^(hloubka)&lt;=2^2^(2n^2).
+Pro rozhodovací stromy nad kostrami platí D(m,n)&gt;=m/2 pro n,m&gt;2 a D(m&rsquo;,n&rsquo;)&gt;=D(m,n) když m&rsquo;&gt;=m a n&rsquo;&gt;=n.</p>
+<p>Přihrádky (compartment) jsou rozdělení grafu na k částí Ci tak, že jsou hranově disjunktní a jejich union je celé G, a také msf(G)=union msf(Ci).
+Pozorujeme, že kontrakce z předchozí sekce vytvoří validní přihrádky H \subseteq G.
+Díky disjunktnosti koster uvnitř přihrádek existuje rozhodovací strom, který neporovnává přihrádky mezi sebou, ale pouze uvnitř přihrádek.
+Navíc tedy D(G)=sum D(Ci), DK omezení shora: dáme stromy pod sebe; druhý DK přeskočíme.</p>
+<p>Z předchozích zjištění plyne D(\cup Ci)=\sum D(Ci) pro komponenty vytvořené v algo. robustních konstrakcí.
+Navíc 2D(m,n)&lt;=D(2m,2n) protože spojení dvou kopií G za jeden vrchol má 2m a 2n a odpověď bude nejvýše 2x tak velká.</p>
+<h2 id="optimální-algoritmus">Optimální algoritmus</h2>
+<p>Nastavme si t na log^(3)n, zavoláme robustní kontrakce, které zklastrují na skupiny velikosti t a označí maximálně 2em poničených hran.
+V klastrech spočítáme kostry předpočítanými rozhodovacími stromy.
+Na graf po kontrakci použijeme Jarníkův algoritmus &ndash; který díky velikosti grafu poběží v lin čase.
+Potom zkombinujeme MSF z klusterů a jarníka, přihodíme poškozené hrany a spoustíme dvě iterace kontrahujícího Borůvky.
+Toto garantuje zmenšení počtu vrcholů a hran o konstantí faktor, zarekurzíme na výsledný graf.</p>
+<hr>
+<h1 id="dynamická-souvislost-datová-struktura-dolní-odhad">Dynamická souvislost: datová struktura, dolní odhad</h1>
+<h2 id="et-posloupnosti-a-stromy">ET posloupnosti a stromy</h2>
+<p>ET-posloupnost stromu je in-order průchod, kde label vrcholu vypíšeme vždy, když ho navštívíme (i mezi všemi syny).
+Vrchol bude vypsaný d+[je kořen] krát, kde d je jeho stupeň.
+Posloupnost má 2n-1 záznamů.
+Podporuje následující operace:</p>
+<pre><code>překořenění: rAuBr -&gt; uBrAu
+link:        rAr, sBs -&gt; rArsBsr
+cut:         rAuvBvuCr -&gt; rAuCr, vBv
+</code></pre>
+<p>ET-stromy jsou (a,b)-stromy reprezentující ET-posloupnost.
+Umí Insert, Delete, Cut a Join v O(b log[a] n) a FindRoot v O(log[a] n).
+Navíc má v listech seznam incidentních nestromových hran.
+Ve vnitřních vrcholech si budeme udržvoat počet nestromových hran listů v tomto podstromu.
+Umíme tak proiterovat všechny nestromové hrany velice rychle.</p>
+<h2 id="dynamická-souvislost">Dynamická souvislost</h2>
+<p>Každá hrana v G bude mít svůj level i.
+Mějme soubor lesů koster všech hran stejného levelu F0, F1, &hellip;, FL (pro L = log n).
+Držme invarianty: 1) strom Fi má floor(n/2^i) vrcholů a 2) pokud je uv nestromová hrana s levelem i, pak u a v leží v tomtéž stromu v Fi.</p>
+<p>Při inicializaci se vytvoří L levelů stromů velikosti 1, nejsou přítomné žádné hrany, takže invarianty triviálně platí.
+Inserty budeme provádět do F0, což nám invarianty nerozbije.</p>
+<p>Insert a delete nestromových hran je jednoduchý &ndash; upravíme příslušný seznam sousedních hran příslušných vrcholů.
+Insert stromové provedeme mergem stromů incidentních vrcholů.
+Delete stromové hrany je trochu komplikovanější.</p>
+<p>Delete stromové hrany uv mezi podstomy Tu a Tv (BÚNO Tu &lt;= Tv) proběhne následovně:</p>
+<ul>
+<li>všem hranám s levelem i uvnitř Tu zvýšíme level na i+1</li>
+<li>projdeme nestromové hrany xy v Tu kde x je v Tu
+<ul>
+<li>buď y je z Tv -&gt; pak jsme našli náhradu, konec</li>
+<li>nebo y je z Tu, zvýšíme level xy na i+1</li>
+</ul>
+</li>
+<li>pokud jsme nenašli, pusť znovu na i-1</li>
+</ul>
+<h2 id="lower-bound">Lower bound</h2>
+<p>Zdroj: <a href="https://www.youtube.com/watch?v=Yarwp7TNTL4"target="_blank">Demainova přednáška<span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>LB na dynamic connectivity je Omega(log N).
+Dokážeme pro cesty na cell-probe modelu, což implikuje RAM LB.
+Mějme mřížku sqrt(N) na sqrt(N) kde je každý sloupec spojený s dalším sloupcem spojený perfektním párováním (ekvivalent permutace).</p>
+<p>Definujme blokové operace</p>
+<ul>
+<li>update(i,P): Pi=P, trvá O(sqrt(N)) delete a insertů</li>
+<li>verify(i,P): složení permutací od 1 do i, trvá O(sqrt(N)) dotazů na souvislost</li>
+</ul>
+<p>Tvrdíme, že sqrt(N) update a verify operací potřebuje Omega(N log N) cell probes &ndash; je přirozený lower bound na původní problém, protože ztratíme sqrt(N) díky počtu operací a další sqrt(N) na blokové operace, toto dá Omega(log(N)) na jednu operaci (i amortizovaně).</p>
+<p>Definujme jednu operaci pro index i jako verify(i,Sum Pj od 0 do i) a update(i,random(P)).
+Pozorujme, že verify má vždy vrátit true.
+Provedeme operace v bit-reversal pořadí, tedy např. 0,4,2,6,1,5,3,7.
+Pokud nad těmito operacemi postavíme úplný binární strom (výšky log N), můžeme pak počítat pro každý vnitřní vrchol operace, které se zapsali v jeho levém podstromě a přečetli v pravém.
+Tvrdíme, že v pro každý vrchol bude ve střední hodnotě takových operací Omega(l sqrt(N)).
+Protože se každá operace objeví log N krát, každá dvojice operací se počítá jen jednou v LCA, a díky linearitě střední hodnoty víme, že součet přes všechny vrcholy bude Omega(sqrt(N)log N * sqrt(N)), z čehož vyplývá finální lower bound.</p>
+<p>Tvrdíme, že v pro každý vrchol bude ve střední hodnotě takových operací Omega(l sqrt(N)).
+Levý podstrom má l/2 updatů s náhodnými permutacemi.
+Libovolné kódování těchto permutací musí používat Omega(l sqrt(N) log(N)) bitů (Kolmogorov).
+Pokud tvrzení nezafunguje, tak by šlo zakódovat perumtace efektivněji (spor).</p>
+<p>Protože provátíme operace v bit-reversal pořadí, víme, že pro každý podstom se střídají operace v levém a pravém podstromě.
+Střídají se query a updaty, a proto stačí zakódovat pouze výsledky query &ndash; dokážeme z toho dopočítat jaké byly permutace v updatech.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/pub/</link>
+    <description>Recent content in Research on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/pub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Controlling Knockout Tournaments Without Perfect Information</title>
+      <link>https://vaclavblazej.github.io/pub/2024/probabilistic_tournament_fixing/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2024/probabilistic_tournament_fixing/</guid>
+      <description>Abstract Over the last decade, extensive research has been conducted on the algorithmic aspects of designing single-elimination (SE) tournaments. Addressing natural questions of algorithmic tractability, we identify key properties of input instances that enable the tournament designer to efficiently schedule the tournament in a way that maximizes the chances of a preferred player winning. Much of the prior algorithmic work on this topic focuses on the perfect (complete and deterministic) information scenario, especially in the context of fixed-parameter algorithm design.</description>
+    </item>
+    <item>
+      <title>On the Parameterized Complexity of Eulerian Strong Component Arc Deletion</title>
+      <link>https://vaclavblazej.github.io/pub/2024/eulertian_strong_components/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2024/eulertian_strong_components/</guid>
+      <description>Abstract In this paper, we study the Eulerian Strong Component Arc Deletion problem, where the input is a directed multigraph and the goal is to delete the minimum number of arcs to ensure every strongly connected component of the resulting digraph is Eulerian.&#xA;This problem is a natural extension of the Directed Feedback Arc Set problem and is also known to be motivated by certain scenarios arising in the study of housing markets.</description>
+    </item>
+    <item>
+      <title>Equitable Connected Partition and Structural Parameters Revisited: N-fold Beats Lenstra</title>
+      <link>https://vaclavblazej.github.io/pub/2024/equitable_connected_partition/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2024/equitable_connected_partition/</guid>
+      <description>Abstract We study the Equitable Connected Partition (ECP for short) problem, where we are given a graph $G=(V,E)$ together with an integer $p$, and our goal is to find a partition of $V$ into $p$ parts such that each part induces a connected sub-graph of $G$ and the size of each two parts differs by at most 1. On the one hand, the problem is known to be NP-hard in general and W[1]-hard with respect to the path-width, the feedback-vertex set, and the number of parts $p$ combined.</description>
+    </item>
+    <item>
+      <title>Constrained and Ordered Level Planarity Parameterized by the Number of Levels</title>
+      <link>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</link>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</guid>
+      <description>We are given a graph where each vertex is assigned a position with an arbitrary x-coordinate, but y-coordinate being 1 to $k$. The question is whether it is possible to embed the edges in a planar way so that each edge is y-monotone &amp;ndash; meaning from the lower vertex the edge always increases in y-coordinate until it reaches the other vertex.&#xA;Note the problem can also be posed as having the vertices assigned to horizontal lines and given their left-to-right order.</description>
+    </item>
+    <item>
+      <title>On the smallest synchronizing terms of finite tree automata</title>
+      <link>https://vaclavblazej.github.io/pub/2023/synchronization/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2023/synchronization/</guid>
+      <description>It is well-known that the shortest synchronizing words for any automata lies between $n^2$ and roughly $n^3$. We focused on the same question but for tree automata, i.e., what are the &amp;ldquo;smallest&amp;rdquo; terms which sychronize a tree automaton?&#xA;It became clear that classical notion of sychronization does not 1-to-1 correspond to this new setting, so we define &amp;ldquo;weak&amp;rdquo; and &amp;ldquo;strong&amp;rdquo; synchronization and show bounds for both. The weak sychronization is more string-like &amp;ndash; the interesting part of simpmlest synchronization terms boil down to a single path which is basically a string.</description>
+    </item>
+    <item>
+      <title>Online Ramsey numbers: Long versus short cycles</title>
+      <link>https://vaclavblazej.github.io/pub/2023/ramsey_cycles/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2023/ramsey_cycles/</guid>
+      <description>In Online Ramsey games we have two players. One is placing edges to a graph with infinite number of vertices while the second chooses their color to be blue or red immediately. Builder (the first player) aims to force a monochromatic graph to appear. Painter (the second player) tries to postpone win of the first player as long as possible. Due to Ramsey theorem, we know that the first player eventually wins.</description>
+    </item>
+    <item>
+      <title>Computing m-Eternal Domination Number of Cactus Graphs in Linear Time</title>
+      <link>https://vaclavblazej.github.io/pub/2023/cacti_eternal_domination/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2023/cacti_eternal_domination/</guid>
+      <description>This paper is a culmination of a long-term effort of me and Matyáš under the supervision of Tomáš. It was initiated by Bachelor&amp;rsquo;s thesis of Matyáš which then turned into a published paper.&#xA;The reserach concerns m-eternal domination &amp;ndash; a setting where two players, attacked and defender, play in turns. One designs the initial layout of $k$ guards on the input graph and tells how they are all moved. Each turn the attacked announces a vertex and the defender can move all guards, each by at most one edge, so that the attacked vertex now contains a guard.</description>
+    </item>
+    <item>
+      <title>The Parameterized Complexity of Network Microaggregation</title>
+      <link>https://vaclavblazej.github.io/pub/2023/microaggregation/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2023/microaggregation/</guid>
+      <description>Abstract Microaggregation is a classical statistical disclosure control technique which requires the input data to be partitioned into clusters while adhering to specified size constraints. We provide novel exact algorithms and lower bounds for the task of microaggregating a given network while considering both unrestricted and connected clusterings, and analyze these from the perspective of the parameterized complexity paradigm. Altogether, our results assemble a complete complexity-theoretic picture for the network microaggregation problem with respect to the most natural parameterizations of the problem, including input-specified parameters capturing the size and homogeneity of the clusters as well as the treewidth and vertex cover number of the network.</description>
+    </item>
+    <item>
+      <title>On Polynomial Kernels for Traveling Salesperson Problem and its Generalizations</title>
+      <link>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</guid>
+      <description>We investigated kernels for TSP and a related problem called Waypoint routing (WRP) &amp;ndash; a variant of TSP where one needs to only visit a subset of vertices (subset TSP) and edges have capacities for the maximum number of their traversal within the solution. Compared to the classical TSP where one may create edges that represent shortest paths, we leave the graph unchanged and analyze properties of the solution on the graph.</description>
+    </item>
+    <item>
+      <title>Polynomial Kernels for Tracking Shortest Paths</title>
+      <link>https://vaclavblazej.github.io/pub/2022/tracking-paths/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/tracking-paths/</guid>
+      <description>Tracking Shortest Paths is a task where we want to add $k$ trackers to a directed acyclic graph so that any shortest path which goes from source to the target activates a unique combination of trackers. In other words, there are no two paths that would activate the same set of trackers. One can study this problem also in variant where the paths are not necessarily shortest &amp;ndash; this is called Tracking Paths problem.</description>
+    </item>
+    <item>
+      <title>Efficient attack sequences in m-eternal domination</title>
+      <link>https://vaclavblazej.github.io/pub/2022/edn-attack-sequences/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/edn-attack-sequences/</guid>
+      <description>We are given a graph and a number of guards to defend it against a sequence of vertex attacks. Defender controls the guards and may move every guard by at most one edge after each attack. After his move the attacked vertex must be occupied by a guard, otherwise the attacked wins. Defender wins if he has a strategy that defends the graph indefinitely.&#xA;We investigate this problem for trees where the optimal strategy was already known.</description>
+    </item>
+    <item>
+      <title>Controlling the Spread of Two Secrets in Diverse Social Networks</title>
+      <link>https://vaclavblazej.github.io/pub/2022/group-selection/</link>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/group-selection/</guid>
+      <description>Abstract Information diffusion in social networks is a well-studied concept in social choice theory. We propose the study of the diffusion of two secrets in a heterogeneous environment from the complexity perspective, that is, there are two different networks with the same set of agents (e.g., the structure of the set of followers might be different in two distinct social networks). Formally, our model combines two group identification processes for which we do have independent desiderata&amp;mdash;either constructive, where we would like a given group of agents to be exposed to a secret, or destructive, where a given group of agents should not be exposed to a secret.</description>
+    </item>
+    <item>
+      <title>Constant Factor Approximation for Tracking Paths and Fault Tolerant Feedback Vertex Set</title>
+      <link>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</guid>
+      <description>Consider a vertex-weighted graph $G$ with a source $s$ and a target $t$. Tracking Paths requires finding a minimum weight set of vertices (trackers) such that the sequence of trackers in each path from $s$ to $t$ is unique. In this work, we derive a factor $6$-approximation algorithm for Tracking Paths in weighted graphs and a factor $4$-approximation algorithm if the input is unweighted. This is the first constant factor approximation for this problem.</description>
+    </item>
+    <item>
+      <title>Non-homotopic Loops with a Bounded Number of Pairwise Intersections</title>
+      <link>https://vaclavblazej.github.io/pub/2021/homotopic_loops_2/</link>
+      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2021/homotopic_loops_2/</guid>
+      <description>Improvement on our previous work On the Intersections of Non-homotopic Loops.&#xA;Abstract Let $V = {v_1, \dots, v_n}$ be a set of $n$ points in the plane and let $x \notin V$. An $x$-loop is a continuous closed curve not containing any point of $V$, except for passing exactly once through the point $x$. We say that two $x$-loops are non-homotopic if they cannot be transformed continuously into each other without passing through a point of $V$.</description>
+    </item>
+    <item>
+      <title>Bears with Hats and Independence Polynomials</title>
+      <link>https://vaclavblazej.github.io/pub/2021/bears-hats-independent/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2021/bears-hats-independent/</guid>
+      <description>Abstract Consider the following hat guessing game. A bear sits on each vertex of a graph $G$, and a demon puts on each bear a hat colored by one of $h$ colors. Each bear sees only the hat colors of his neighbors. Based on this information only, each bear has to guess $g$ colors and he guesses correctly if his hat color is included in his guesses. The bears win if at least one bear guesses correctly for any hat arrangement.</description>
+    </item>
+    <item>
+      <title>On the Intersections of Non-homotopic Loops</title>
+      <link>https://vaclavblazej.github.io/pub/2021/homotopic_loops/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2021/homotopic_loops/</guid>
+      <description>Abstract Let $V = {v_1, \dots, v_n}$ be a set of $n$ points in the plane and let $x \in V$. An $x$-loop is a continuous closed curve not containing any point of $V$, except of passing exactly once through the point $x$. We say that two $x$-loops are non-homotopic if they cannot be transformed continuously into each other without passing through a point of $V$. For $n=2$, we give an upper bound $2^{O(k)}$ on the maximum size of a family of pairwise non-homotopic $x$-loops such that every loop has fewer than $k$ self-intersections and any two loops have fewer than $k$ intersections.</description>
+    </item>
+    <item>
+      <title>On the Edge-Length Ratio of 2-Trees</title>
+      <link>https://vaclavblazej.github.io/pub/2020/2-trees_edge_ratio_drawing/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2020/2-trees_edge_ratio_drawing/</guid>
+      <description>We study planar straight-line drawings of graphs that minimize the ratio between the length of the longest and the shortest edge. We answer a question of Lazard et al. [Theor. Comput. Sci. 770 (2019), 88&amp;ndash;94] and, for any given constant $r$, we provide a $2$-tree which does not admit a planar straight-line drawing with a ratio bounded by $r$. When the ratio is restricted to adjacent edges only, we prove that any $2$-tree admits a planar straight-line drawing whose edge-length ratio is at most $4 + \varepsilon$ for any arbitrarily small $\varepsilon &amp;gt; 0$, hence the upper bound on the local edge-length ratio of partial $2$-trees is $4$.</description>
+    </item>
+    <item>
+      <title>On the m-eternal Domination Number of Cactus Graphs</title>
+      <link>https://vaclavblazej.github.io/pub/2019/cacti_eternal_domination/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2019/cacti_eternal_domination/</guid>
+      <description>This research is a followup to Bachelor&amp;rsquo;s Thesis of Jan Matyáš Křišťan (available only with sign-in)&amp;thinsp;↗.&#xA;Abstract Given a graph $G$, guards are placed on vertices of $G$. Then vertices are subject to an infinite sequence of attacks, so that each attack must be defended by a guard moving from a neighboring vertex. The $m$-eternal domination number is the minimum number of guards such that the graph can be defended indefinitely.</description>
+    </item>
+    <item>
+      <title>On Induced Online Ramsey Number of Paths, Cycles, and Trees</title>
+      <link>https://vaclavblazej.github.io/pub/2019/induced_ornum/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2019/induced_ornum/</guid>
+      <description>Abstract An online Ramsey game is a game between Builder and Painter, alternating in turns. They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices. In each round Builder draws an edge and Painter colors it either red or blue. Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins. The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.</description>
+    </item>
+    <item>
+      <title>A Simple Streaming Bit-parallel Algorithm for Swap Pattern Matching</title>
+      <link>https://vaclavblazej.github.io/pub/2015/gsm/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2015/gsm/</guid>
+      <description>In this paper we present a streaming algorithm for Pattern Matching with Swaps (Swap Matching).&#xA;Abstract The pattern matching problem with swaps is to find all occurrences of a pattern in a text while allowing the pattern to swap adjacent symbols. The goal is to design fast matching algorithm that takes advantage of the bit parallelism of bitwise machine instructions and has only streaming access to the input. We introduce a new approach to solve this problem based on the graph theoretic model and compare its performance to previously known algorithms.</description>
+    </item>
+  </channel>
+</rss>

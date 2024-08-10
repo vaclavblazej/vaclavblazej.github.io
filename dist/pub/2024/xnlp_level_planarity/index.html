@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Constrained and Ordered Level Planarity Parameterized by the Number of Levels - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-02-07T00:00:00Z" class="post-list timeago">07.02.2024</time>
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other published" href="https://arxiv.org/abs/2403.13702">arXiv</a>
+    
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other published" href="https://wrap.warwick.ac.uk/184539/">wrap</a>
+    
+
+
+    
+        
+
+
+    
+        <a class="box conference published" href="https://doi.org/10.4230/LIPIcs.SoCG.2024.20">SoCG 2024</a>
+    
+
+
+
+
+    
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/parameterized-complexity">parameterized complexity</a> <a href="https://vaclavblazej.github.io/tags/graph-drawing">graph drawing</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Constrained and Ordered Level Planarity Parameterized by the Number of Levels</h1>
+
+            
+    
+    with
+     Boris Klemz, Felix Klesen, Marie Diana Sieper, Alexander Wolff, and Johannes Zink
+
+
+        </div>
+        <div class="post-content">
+            <p>We are given a graph where each vertex is assigned a position with an arbitrary x-coordinate, but y-coordinate being 1 to $k$.
+The question is whether it is possible to embed the edges in a planar way so that each edge is y-monotone &ndash; meaning from the lower vertex the edge always increases in y-coordinate until it reaches the other vertex.</p>
+<p>Note the problem can also be posed as having the vertices assigned to horizontal lines and given their left-to-right order.
+Our original investigation concerned the case where the order is not total (called constrained level planarity).
+For that variant it was known that 2 levels are easy and 5 levels are NP-hard (by a reduction from 3-partition).
+We improved the hardness to 4 levels and 3 levels were investigated deeper.
+It turns out that 3 levels can be solved, but the algorithm is quite complex.</p>
+<p>The main part of the paper looks at the total-order variant and asks what is its parameterized complexity with respect to the number of levels.
+We noticed that a sweep line DP reaches XP quite easily.
+Then we built W[1]-hardness reduction from multicolored independent set.
+And last we noticed that the linear structure of the problem allows us to chain the reduced instances &ndash; leading to XNLP-hardness (which notably implies that the problem is W[t]-hard for every t).
+The construction heavily depended on a sequence of disconnected components that &ldquo;shift&rdquo; around to model vertex selection.
+So as the last step, we showed one can increase the number of levels to $O(k^2)$ and alter the construction to also have a path from each component to a single topmost vertex, making the construction connected.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

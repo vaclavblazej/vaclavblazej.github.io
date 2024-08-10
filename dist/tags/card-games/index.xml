@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Card Games on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/card-games/</link>
+    <description>Recent content in Card Games on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/card-games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eleusis (card game)</title>
+      <link>https://vaclavblazej.github.io/post/2019/eleusis/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2019/eleusis/</guid>
+      <description>A card game by Robert Abbott&amp;thinsp;↗.&#xA;Overview Each round one player is God (dealer) and other players are scientists. God makes up a rule and scientists are trying to get rid of their cards by playing them accodring to the rule.&#xA;The following picture shows one possible layout of cards at the end of one round.&#xA;Example scoring: (Read the rules and scoring first.) Assume there were 5 players with hands of size (13, Prophet&amp;rsquo;s 11, 2, 0, and God which doesn&amp;rsquo;t have a hand), the scoring would go like this: First players gets no points.</description>
+    </item>
+  </channel>
+</rss>

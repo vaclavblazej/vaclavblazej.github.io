@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Manage versions of a scientific paper in LaTeX - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-04-13T00:00:00Z" class="post-list timeago">13.04.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/latex">latex</a> <a href="https://vaclavblazej.github.io/tags/setup">setup</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Manage versions of a scientific paper in LaTeX</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><em>Colleagues made me realize that this setup is too complex for collaborative work. There, simplicity is king and a simple <code>\toappendix</code> macro is simple enough to make multiple versions possible.</em></p>
+<hr>
+<p>While working on a paper we usually need different versions.
+We can manage versions using primitives like the following.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newif\iflongversion</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\longversiontrue</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \longversionfalse
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\iflongversion</span>
+</span></span><span style="display:flex;"><span>    Text shown only in the long version.
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\else</span>
+</span></span><span style="display:flex;"><span>    Not-long version
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\fi</span>
+</span></span></code></pre></div><p>Today I made a setup that allows for a more nuanced control.
+The classic text is showed always.
+By toggling we may display texts that are exclusive only to <em>short</em> or <em>long</em> version.
+Also, we may toggle <em>appendix</em> which is useful conference proceeding submissions.
+(Note that the <code>\toappendix</code> takes the enclosed text and moves it to the appendix.)</p>
+<p>My goal was to make writing easier, by toggling <em>draft</em> we get parts of the appendix displayed in the place where they were defined.
+Toggling <em>color</em> colors linenumbers at affected paragraphs so that one can see which parts of the text fall exclusively into some version.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#998;font-style:italic">%==== VERSIONS: macros for various paper variants; requires \usepackage{etoolbox} ==================
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\def\appendixProofText</span><span style="color:#0086b3">{}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newtoggle</span><span style="color:#0086b3">{</span>short<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\newtoggle</span><span style="color:#0086b3">{</span>long<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\newtoggle</span><span style="color:#0086b3">{</span>appendix<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\newtoggle</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\newtoggle</span><span style="color:#0086b3">{</span>draft<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">%---- typically we need many versions; named toggles should have \toggletrue, others \togglefalse --
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% * conference submission version - short &amp; appendix
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% * conference final version - short
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% * journal full version - long (&amp; appendix)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\toggletrue</span><span style="color:#0086b3">{</span>short<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\togglefalse</span><span style="color:#0086b3">{</span>long<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\togglefalse</span><span style="color:#0086b3">{</span>appendix<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% during writing you may find the following useful
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\togglefalse</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}</span> <span style="color:#998;font-style:italic">% requires \linenumbers; colors numbrs depending on whether their lines fall into only one version
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\togglefalse</span><span style="color:#0086b3">{</span>draft<span style="color:#0086b3">}</span> <span style="color:#998;font-style:italic">% displays text deferred to appendix where they are defined -- this is useful for seeing short proof sketch and long proof next to each other
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">%---- use the following commands to mark parts of the text -----------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \shortversion{} - show only in short version -- texts shown only in the short version
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \longversion{} - show only in long version -- texts to be entirely omitted from short version
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \longversionproof{} - move to app only in short version -- long proofs deferred to appendix for reviews
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \appversion{} - show here only if appendix is active -- notes that point to the appendix
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \toappendix{} - shown in appendix if it is active -- text between 
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% note that conference &amp; journal requirements usually want these kind of commands removed
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">%---------------------------------------------------------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}{</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\def\markingcolor</span><span style="color:#0086b3">{</span>black<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\renewcommand\linenumberfont</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\normalfont\tiny\sffamily\color</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\markingcolor</span><span style="color:#0086b3">}</span><span style="color:#d14">$</span><span style="color:#008080">\blacksquare\,</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}{}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\longcolor</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\def\markingcolor</span><span style="color:#0086b3">{</span>blue!60!black<span style="color:#0086b3">}}{}</span>#1<span style="color:#0086b3">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\shortcolor</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\def\markingcolor</span><span style="color:#0086b3">{</span>red!70!black<span style="color:#0086b3">}</span>#1<span style="color:#0086b3">}{</span>#1<span style="color:#0086b3">}}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\appcolor</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>color<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\def\markingcolor</span><span style="color:#0086b3">{</span>green!60!black<span style="color:#0086b3">}}{}</span>#1<span style="color:#0086b3">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\toappendix</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>draft<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\appcolor</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>appendix<span style="color:#0086b3">}{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\gappto</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\appendixProofText</span><span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\appcolor</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">}{}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\shortversion</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>short<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\shortcolor</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}{}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\longversion</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>long<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\longcolor</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}{}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\longversionproof</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>short<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\toappendix</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}{}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\appversion</span><span style="color:#0086b3">}</span>[1]<span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\iftoggle</span><span style="color:#0086b3">{</span>appendix<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\appcolor</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}}{}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">%==== END OF VERSIONS ==============================================================================
+</span></span></span></code></pre></div><p>Setup appendix as follows.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\appversion</span><span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newpage</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\appendix</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\section*</span><span style="color:#0086b3">{</span>Appendix<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\appendixProofText</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span></code></pre></div><p>I wrote this code and I put into <code>public domain</code>, use at your own risk ;)</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

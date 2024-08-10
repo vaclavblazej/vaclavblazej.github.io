@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            How to migrate static pages to another address - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2021-06-30T00:00:00Z" class="post-list timeago">30.06.2021</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/setup">setup</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>How to migrate static pages to another address</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><a href="https://vaclavblazej.github.io/post/2024/migrating_pages/">A newer iteration of this post is available.</a></p>
+<hr>
+<p>I knew that in time it would be necessary to move this web to another address.
+The setup for deployment is its own hassle.
+The main things I wanted was to be able to come to an old address and get redirected to the correct current address.
+It would be quite easy with something dynamic, but these pages are static, and so cannot really catch someone attending a random address of the old page.</p>
+<p>The structure of the new website should be identical so there is a simple way of doing it.
+Generate a single redirect page <code>index.html</code> for each of the previously active pages.</p>
+<p>The code for a moved page was given to me by <a href="https://twitter.com/jakubjirutka"target="_blank">JJ<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#000080">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">title</span>&gt;Page Moved&lt;/<span style="color:#000080">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">meta</span> <span style="color:#008080">http-equiv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;refresh&#34;</span> <span style="color:#008080">content</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;0; URL=https://my.new.homepage.com/address&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#000080">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#000080">body</span>&gt;
+</span></span><span style="display:flex;"><span>    This page has moved. Click &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://my.new.homepage.com/address&#34;</span>&gt;here&lt;/<span style="color:#000080">a</span>&gt; to go to the new page.
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#000080">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">html</span>&gt;
+</span></span></code></pre></div><p>For each old page we need to substitute <code>address</code> with the old address.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">for</span> line in <span style="color:#000;font-weight:bold">$(</span>cat ./pages.txt<span style="color:#000;font-weight:bold">)</span>; <span style="color:#000;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008080">par</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">$(</span>dirname <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>    mkdir -p <span style="color:#d14">&#34;</span><span style="color:#008080">$par</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$par</span><span style="color:#d14">&#34;</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008080">pp</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">${</span><span style="color:#008080">par</span>:<span style="color:#008080">2</span>:<span style="color:#008080">1000</span><span style="color:#d14">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$pp</span><span style="color:#d14">&#34;</span><span style="color:#d14">&#39;/&#39;</span>
+</span></span><span style="display:flex;"><span>    cp orig.html copy.html
+</span></span><span style="display:flex;"><span>    sed -i <span style="color:#d14">&#39;s|address|&#39;</span><span style="color:#d14">&#34;</span><span style="color:#008080">$pp</span><span style="color:#d14">&#34;</span><span style="color:#d14">&#39;|g&#39;</span> copy.html
+</span></span><span style="display:flex;"><span>    cp copy.html <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">done</span>
+</span></span></code></pre></div><p>Where the <code>pages.txt</code> contains list of all pages on your page &ndash; one per line.
+You may get it e.g. like this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -iname <span style="color:#d14">&#34;*.html&#34;</span> &gt;pages.txt
+</span></span></code></pre></div><p>Now the old pages redirect (and contain link) to their new counterpart.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2021
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

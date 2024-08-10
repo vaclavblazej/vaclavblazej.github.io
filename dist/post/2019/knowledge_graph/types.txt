@@ -1,0 +1,42 @@
+Node 0 {
+    type: 0
+    name: 'NodeType'
+    desc: 'Each node in the database should have one attribute called "type" which defines its structure. When the type of a node is THIS node then the node itself defines a new structure. This is achieved by connection with nodes of type (nodeid) 1 via attribute "attrs".'
+    attrs: [01,02,03,04]
+}
+Node 01 {
+    type: 1
+    name: 'type'
+    dbtype: 0
+}
+Node 02 {
+    type: 1
+    name: 'name'
+    dbtype: string
+}
+Node 03 {
+    type: 1
+    name: 'desc'
+    dbtype: string
+}
+Node 04 {
+    type: 1
+    name: 'attrs'
+    dbtype: 1[]
+}
+Node 1 {
+    type: 0
+    name: 'AttrType'
+    desc: 'Each node N which has "type" set to 0 defines a node structure. Every other node having "type" set to N should contain all parameters which are contained in attribute "attrs" in N. Each attribute contains "name" which says the attribyte description string, and "dbtype" which says what can be saved to the attribute.
+    attrs: [11,12]
+}
+Node 11 {
+    type: 1
+    name: 'name'
+    dbtype: string
+}
+Node 12 {
+    type: 1
+    name: 'dbtype'
+    dbtype: dbtype
+}

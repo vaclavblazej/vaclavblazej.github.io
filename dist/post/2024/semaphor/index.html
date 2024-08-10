@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Circular design for Flag Semaphor decyphering - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-08-05T00:00:00Z" class="post-list timeago">05.08.2024</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/cyper">cyper</a> <a href="https://vaclavblazej.github.io/tags/design">design</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Circular design for Flag Semaphor decyphering</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><a href="https://en.wikipedia.org/wiki/Flag_semaphore"target="_blank">Flag semaphor<span style="white-space: nowrap;">&thinsp;↗</span></a> is a method historically used to transfer infromation between ships.
+Currently, it is one of several methods of encrypting text in cypher games.
+While encoding text is best done with a map from alphabet to the semaphore decoding is not so easy.
+Either one has to decode in reverse direction to the alphabet, or with a 2d table that has one hand in rows and the second hand in columns &ndash; this still takes quite a long time to find the correct cell.
+Towards making this process easier for people that did not memorize the encoding by hearth I devised the following decoding design.</p>
+<p><img src="main.svg" alt="Semaphor"></p>
+<p>The image is generated in LaTeX using TikZ package from the following <a href="main.tex">source code</a>.
+Both the image and the source code is put to the public domain and can be used without any restrictions whatsoever.
+I would still appreaciate a memo if someone uses it.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\documentclass</span><span style="color:#0086b3">{</span>standalone<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>tikz<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usetikzlibrary</span><span style="color:#0086b3">{</span>calc<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% position, degree 1, degree 2, text
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\semafor</span><span style="color:#0086b3">}</span>[4]<span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill=white,circle,inner sep=1pt]</span> (#4) at #1 <span style="color:#0086b3">{</span>#4<span style="color:#0086b3">}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill,circle,inner sep=.8pt]</span> (a) at (<span style="color:#d14">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0086b3">#</span><span style="color:#099">4</span><span style="color:#000;font-weight:bold">)+(</span><span style="color:#0086b3">#</span><span style="color:#099">2</span><span style="color:#0086b3">:.</span><span style="color:#099">8</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">$</span>) <span style="color:#0086b3">{}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill,circle,inner sep=.8pt]</span> (b) at (<span style="color:#d14">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0086b3">#</span><span style="color:#099">4</span><span style="color:#000;font-weight:bold">)+(</span><span style="color:#0086b3">#</span><span style="color:#099">3</span><span style="color:#0086b3">:.</span><span style="color:#099">8</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">$</span>) <span style="color:#0086b3">{}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[thick,line cap=round]</span> (#4) -- (a);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[thick,line cap=round]</span> (#4) -- (b);
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\foreach</span> <span style="color:#000;font-weight:bold">\i</span> in <span style="color:#0086b3">{</span>45,90,...,360<span style="color:#0086b3">}{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[gray!60,thick]</span> (0,0) -- (<span style="color:#000;font-weight:bold">\i</span>:3.4);
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\foreach</span> <span style="color:#000;font-weight:bold">\distance</span>/<span style="color:#000;font-weight:bold">\degree</span>/<span style="color:#000;font-weight:bold">\letter</span> in <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>        0/0/D,
+</span></span><span style="display:flex;"><span>        0/90/R,
+</span></span><span style="display:flex;"><span>        0/135/L,
+</span></span><span style="display:flex;"><span>        0/180/D,
+</span></span><span style="display:flex;"><span>        0/270/R,
+</span></span><span style="display:flex;"><span>        0/315/L,
+</span></span><span style="display:flex;"><span>        1/22.5/V,
+</span></span><span style="display:flex;"><span>        1/67.5/Y,
+</span></span><span style="display:flex;"><span>        1/112.5/Q,
+</span></span><span style="display:flex;"><span>        1/157.5/K,
+</span></span><span style="display:flex;"><span>        1/202.5/C,
+</span></span><span style="display:flex;"><span>        1/247.5/S,
+</span></span><span style="display:flex;"><span>        1/292.5/M,
+</span></span><span style="display:flex;"><span>        1/337.5/E,
+</span></span><span style="display:flex;"><span>        2/0/X,
+</span></span><span style="display:flex;"><span>        2/45/J,
+</span></span><span style="display:flex;"><span>        2/90/U,
+</span></span><span style="display:flex;"><span>        2/135/P,
+</span></span><span style="display:flex;"><span>        2/180/I,
+</span></span><span style="display:flex;"><span>        2/225/B,
+</span></span><span style="display:flex;"><span>        2/270/N,
+</span></span><span style="display:flex;"><span>        2/315/F,
+</span></span><span style="display:flex;"><span>        3/22.5/W,
+</span></span><span style="display:flex;"><span>        3/67.5/~,
+</span></span><span style="display:flex;"><span>        3/112.5/T,
+</span></span><span style="display:flex;"><span>        3/157.5/O,
+</span></span><span style="display:flex;"><span>        3/202.5/H,
+</span></span><span style="display:flex;"><span>        3/247.5/A,
+</span></span><span style="display:flex;"><span>        3/292.5/G,
+</span></span><span style="display:flex;"><span>        3/337.5/Z
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span> <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\half</span><span style="color:#0086b3">{</span>(4-<span style="color:#000;font-weight:bold">\distance</span>)/2*45<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\one</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\degree</span>-<span style="color:#000;font-weight:bold">\half</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\two</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\degree</span>+<span style="color:#000;font-weight:bold">\half</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\fdist</span><span style="color:#0086b3">{</span>3-<span style="color:#000;font-weight:bold">\distance*</span>0.6<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\semafor</span><span style="color:#0086b3">{</span>(<span style="color:#000;font-weight:bold">\degree</span>:<span style="color:#000;font-weight:bold">\fdist</span>)<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\one</span><span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\two</span><span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\letter</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

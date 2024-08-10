@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Puzzle on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/puzzle/</link>
+    <description>Recent content in Puzzle on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/puzzle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easy-to-remember Rubik&#39;s cube solution</title>
+      <link>https://vaclavblazej.github.io/post/2021/rubiks_cube/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2021/rubiks_cube/</guid>
+      <description>The usual solution to Rubik&amp;rsquo;s cube is an algorithm &amp;ndash; do this, do that and you have the first layer, then second layer, and last layer is made via set of arbitrary moves. I always had problem remembering those, but when the sexy move (play animation here: R U R&#39; U&#39;&amp;thinsp;↗) was introduced to me I thought of an easy-to-remember solution.&#xA;If you want to come up with it yourself, then I have one simple advice: analyze what sexy move does, including when it is repeated several times; that should be almost enough to solve the cube.</description>
+    </item>
+  </channel>
+</rss>

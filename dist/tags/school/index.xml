@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>School on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/school/</link>
+    <description>Recent content in School on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/school/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kombinatorika a grafy III</title>
+      <link>https://vaclavblazej.github.io/post/2018/kag3/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/kag3/</guid>
+      <description>Koncentrované znalosti z kurzu Kombinatorika a grafy III&amp;thinsp;↗ Roberta Šámala na MFF UK.&#xA;Termíny zkoušky:&#xA;24.01.2019 - Čtvrtek 10:00 S10 30.01.2019 - Středa 13:00 S6 12.02.2019 - Úterý 10:00 S10 Zkouškové příklady Buď G graf s n vrcholy takový, že jeho hrany jsou pokryty párováními M1, M2, &amp;hellip;, Mn. Předpokládejme, že neexistují 1 \leq i,j \leq n, pro něž existují po dvou různé vrcholy a,b,c,d, že ab je v Mi, bc v Mj, cd v Mi.</description>
+    </item>
+    <item>
+      <title>PPA - Pokročilé Paralelní Algoritmy</title>
+      <link>https://vaclavblazej.github.io/post/2018/ppa/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/ppa/</guid>
+      <description>Základy Sekvenční T(n) - doba běhu algoritmu pro vstup velikosti n SL(n) - sequential lower bound - dolní mez doby běhu sekvenčního algoritmu SU(n) - sequential upper bound - horní mez; worst case nejlepšího známého algoritmu Paralelní T(n,p) - doba běhu algoritmu pro vstup velikosti n na p procesorech S(n,p)=SU(n)/T(n,p) - zrychlení oproti sekvenčnímu řešení; lineární zrychlení je, pokud S(n,p)=\Theta(p) L(n,p)=SL(n)/p - lower bound C(n,p)=p T(n,p) - cena; algo je cenově optimální, pokud C(n,p)=O(SU(n)) W(n,p) - paralelní práce je u synchroních algoritmů součet počtu taktů přes všechny procesory, a u asynchroních algoritmů součet času práce vláken; algo je pracovně optimální, pokud W(n,p)=O(SU(n)) E(n,p)=SU(n)/C(n,p) - paralelní efektivita / zrychlení na procesor Algoritmus je cenově optimální &amp;lt;=&amp;gt; má lineární zrychlení &amp;lt;=&amp;gt; má konstantní efektivitu</description>
+    </item>
+    <item>
+      <title>Grafové algoritmy 2</title>
+      <link>https://vaclavblazej.github.io/post/2018/gr2/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/gr2/</guid>
+      <description>Koncentrované znalosti z kurzu Grafové algoritmy II&amp;thinsp;↗ Martina Mareše na MFF UK. Bacha na to, že každý rok na kurzu povídá trochu něco jiného :)&#xA;Verifikace minimality kostry (Komlósův algoritmus, algoritmus v lineárním čase) Rozdělme si hrany na stromové, lehké a těžké (vůči cestě po stromě). Těžké hrany nebudou ve stromě díku červenému lemma. Modré lemma zase říká, že nejlehčí hrana libovolného elementárního řezu ve MST určitě bude.&#xA;Převedení na jiný problém Převedeme si verifikaci MST postupně na docela jiný problém.</description>
+    </item>
+    <item>
+      <title>Pravděpodobnostní techniky</title>
+      <link>https://vaclavblazej.github.io/post/2018/pt/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2018/pt/</guid>
+      <description>Pravděpodobnostní prostor je trojice $(\Omega, \Sigma, P)$, kde $\Omega$ je množina, $\Sigma \subseteq 2^{\Omega}$ je $\sigma$-algebra na $\Omega$ (množina podmnožin $\Omega$ uzavřená na komplement, spočetná sjednocení a spočetné průniky) a $P$ je &amp;lsquo;countably additive&amp;rsquo; míra na $\Sigma$ s $P[\Omega]=1$. Elementy $\Sigma$ jsou náhodné jevy a elementy $\Omega$ jsou elementární jevy. Pro event $A$ je $P[A]$ jeho pravděpodobnost.&#xA;Náhodná proměnná $A$ na pravděpodobnostním prostoru $(\Omega, \Sigma, P)$ je funkce $X: \Omega \rightarrow \mathbb{R}$ taková, že pro každé $a \in \mathbb{R}, \{\omega \in \Omega: X(\omega)\leq a\} \in \Sigma$.</description>
+    </item>
+    <item>
+      <title>Grafy</title>
+      <link>https://vaclavblazej.github.io/post/2017/graphs/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/graphs/</guid>
+      <description>Grafové barvení Výpisky kapitoly o Barvení z Modern Graph Theory.&#xA;Pro (vrcholovou) barevnost grafu $\chi(G)$ a hranovou barevnost grafu $\chi&amp;rsquo;(G)$ platí:&#xA;$\chi(G) \geq \omega(G)$ kde $\omega$ je klikovost grafu. $\chi&amp;rsquo;(H) = \chi(L(H))$ kde $L(H)$ je line graf $H$. $\chi(G) \geq |G|/\alpha(G)$ kde $\alpha$ je nezávislost. Vrcholové barvení Greedy algo barví hladově dle pořadí předložených vrcholů.&#xA;Obarví $K_{k,k} \setminus E_{k-1}$ pomocí nejhůře $k+1$ barev (E jsou isolované hrany).&#xA;Pro $k=max_H \delta(H)$, kde H je indukovaný podgraf G.</description>
+    </item>
+    <item>
+      <title>Doktorát</title>
+      <link>https://vaclavblazej.github.io/post/2017/doktorat/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/doktorat/</guid>
+      <description>Následující obsah vznikl postupně v průběhu doktorátu mezi lety 2017 a 2022. Každá sekce byla napsána téměř hned po uvedených událostech. Dne 29. září 2022 jsem úspěšně obhájil. (Poslední aktualizace 16. února 2023.)&#xA;Tenhle rok jsem se hlásil na doktorát na FIT ČVUT, a možná by někoho zajímalo jak takový proces vlastně probíhá.&#xA;První a nejdůležitější krok je najít si školitele. Měl by to být člověk, který se zabývá tím, co chceš zkoumat.</description>
+    </item>
+    <item>
+      <title>Diplomová práce</title>
+      <link>https://vaclavblazej.github.io/post/2017/diplomka/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2017/diplomka/</guid>
+      <description>V diplomové práci jsem se věnoval online Ramsey theorii.&#xA;Představte si hru Buildera a Paintera. Každé kolo Builder vytvoří hranu, a Painter rozhodne o její barvě. Úkolem Buildera je vynutit, aby vznikl jednobarevný podgraf. Nejmenší počet tahů, ve kterých Builder dovede vyhrát (proti jekékoli Painterově strategii) se nazýví online Ramsey number (ORN)&#xA;Výsledky:&#xA;definice nekonečné rodiny stromů, pro které je ORN menší nez size-Ramsey number horní mez na ORN cyklů horní mez na ORN k-podrozdělených hvězd zjištění přesné hodnoty ORN C_3 vs S_n na souvislých grafech Tyto výsledky byly publikvoány.</description>
+    </item>
+    <item>
+      <title>Bakalářská práce</title>
+      <link>https://vaclavblazej.github.io/post/2015/bakalarka/</link>
+      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2015/bakalarka/</guid>
+      <description>V r. 2015 jsem v publikaci našel chybu. Přednesl jsem o ní na TS a nabídl způsob jak přepoužít model tak, aby algoritmus fungoval. Tomáš mi nabídl, abych z toho udělal bakalářskou práci. Společně jsme pak práci upravili a zkoušeli poslat na různé konference (neúspěšně). Přidal se i Ondra, ale o článek stejně nebyl zájem. Zkoušeli jsme poslat do TCS, taky nechtěli. S prací jsem potom jel na SVOČ (bez úspěchu).</description>
+    </item>
+  </channel>
+</rss>

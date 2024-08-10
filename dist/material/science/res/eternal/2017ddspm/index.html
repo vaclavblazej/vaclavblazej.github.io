@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Disjoint Dominating Sets with a Perfect Matching - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2017-09-25T00:00:00Z" class="post-list timeago">25.09.2017</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/eternal-games">eternal games</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Disjoint Dominating Sets with a Perfect Matching</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><span style="color: #e46f25"><strong>(experimental page)</strong></span></p>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<p>The <a href="https://arxiv.org/abs/1708.09774"target="_blank">paper<span style="white-space: nowrap;">&thinsp;↗</span></a> by William F. Klostermeyer, Margaret-Ellen Messinger, Alejandro Angeli Ayello study the $DD_m(G)$ and its connection to various graph parameters.</p>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li>independence number $\alpha(G)$</li>
+<li>dominating set</li>
+<li>domination number $\gamma(G)$</li>
+<li>perfect matching</li>
+<li>eternal eviction model</li>
+<li>(dominating) swap set</li>
+<li>$DD_m(G)$</li>
+<li>weak &amp; strong stem</li>
+<li>weak &amp; strong graph</li>
+<li>(simple) star partitioning</li>
+<li>weight of a partitioning</li>
+<li>$\widehat{G}$ graph</li>
+<li>weak reduction</li>
+</ul>
+<h2 id="results">Results</h2>
+<ul>
+<li>For every tree $\gamma(T) = e^\infty_m(T) = DD_m(T) = \alpha(T)$ if and only if $T = \widehat{H}$ for some tree $H$ of order $2|V(T)|$.</li>
+<li>For any tree $T, e^\infty_m(T) = \alpha(T)$ if and only if T has a minimum-weight simple star partitioning containing no $K_1$ parts.</li>
+<li>For $T&rsquo;$ a week reduction of T, $S(T&rsquo;) = \frac{1}{2} |V(T)| ⇔ \alpha(T) = S(T)$</li>
+<li>$\alpha(T) = e^\infty_m(T) \Leftrightarrow S(T) = 2|V(T)|$</li>
+<li>Let $p, q \geq 1$. Then $DD_m(K_{1,p} <del>\square</del> K_{1,q}) = p+q-1$.</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2017
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

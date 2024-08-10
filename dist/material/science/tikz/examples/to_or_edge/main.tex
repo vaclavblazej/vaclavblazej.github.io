@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[thick]
+\draw[help lines] (-0.1,-0.1) grid (2.3,1.1);
+
+\draw[blue] (0,.2)
+    to ++(1,0)
+    edge[red,very thick] ++(.1,.5)
+    to[red,very thick] ++(1,0) % styles do not change `to`
+    edge[green] ++(.1,.5)
+    ;
+
+\end{tikzpicture}
+\end{document}

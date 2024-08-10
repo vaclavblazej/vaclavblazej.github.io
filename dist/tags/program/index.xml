@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Program on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/program/</link>
+    <description>Recent content in Program on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/program/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://vaclavblazej.github.io/material/system/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/system/</guid>
+      <description>Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible. Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple. They were just put together gradually over the span of many years and will change when better alternatives appear.&#xA;The system consists of the latest version of Ubuntu&amp;thinsp;↗ but with a tiling window manager called AwesomeWM&amp;thinsp;↗.</description>
+    </item>
+    <item>
+      <title>Nástroj pro správu skriptů</title>
+      <link>https://vaclavblazej.github.io/material/system/cmd/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/system/cmd/</guid>
+      <description>Updated 2023-08-04&#xA;Idea programu cmd je umožnit správu a spouštění vlastních příkazů a scriptů.&#xA;Program je v rozpracovaném stavu, ovšem měl by být použitelný.&#xA;Na co správu příkazů? Po rozhovoru s kolegy jsem zjistil, že všichni zažíváme podobnou nepříjemnost: máme příkazy, které používáme často, ale nepamatujeme si je. Kolikrát má příkaz divné jméno, nebo divně pojmenovaný přepínač, který je nezapamatovatelný. Řešili jsme to různě:&#xA;já měl půlku věcí v aliasech, a půlku ve funkcích kolega hledal často používané příkazy pomocí bash-historie, třetí na to samé měl texťák Pro vyřešení vznikl příkaz cmd (shell-command-manager / shcmdmgr) napsaný v Python3 zamýšlený pro linux, který dovede příkazy uložit, vyhledat, a spustit.</description>
+    </item>
+    <item>
+      <title>Youtrack setup</title>
+      <link>https://vaclavblazej.github.io/material/system/youtrack/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/material/system/youtrack/</guid>
+      <description>Youtrack&amp;thinsp;↗ je aplikace od JetBrains pro správu softwarových projektů. Je zdarma pro max 10 lidí, pokud si ji dotyční někde nasadí.&#xA;Stáhnutí a zapnutí Stáhnout lze ze stránek programu&amp;thinsp;↗. Nejjednodušší je stáhnout .jar, které potom lze jednoduše spustit:&#xA;java -jar youtrack-7.0.27965.jar 8082 Poslední argument je port. Po spuštění lze najít stránky najít na adrese:&#xA;localhost:8082 Data se ukládají ve složce ~/teamsysdata/youtrack a jejich promazáním se vše resetuje jako před instalací. Také jsou nějaké pomocné informace ve složce ~/.</description>
+    </item>
+    <item>
+      <title>Make &amp; Makefile</title>
+      <link>https://vaclavblazej.github.io/post/2016/makefile/</link>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/makefile/</guid>
+      <description>Makefile je soubor používaný programem &amp;lsquo;make&amp;rsquo;. Spuštění příkazu &amp;lsquo;make&amp;rsquo; způsobí přečtení souboru &amp;lsquo;makefile&amp;rsquo; nebo &amp;lsquo;Makefile&amp;rsquo; (bez přípony), zparsování skriptu a provedení prvního cíle. Definice cíle obsahuje název, závislosti a příkazy.&#xA;Příklad cíle &amp;lsquo;clean&amp;rsquo;, bez závoslostí, se dvěma příkazy (všechny příkazy nutno předsadit TABem):&#xA;clean: rm -f $(OBJECTS) $(EXECUTABLE) ./doc rmdir $(TMP) Příklad cíle &amp;lsquo;clear&amp;rsquo;, který je závislý na cíli &amp;lsquo;clean&amp;rsquo;:&#xA;clear: clean Vyvolání konkrétního cíle provedeme např. příkazem &amp;lsquo;make clean&amp;rsquo;. To způsobí, provedení závislostí a potom příkazů vybraného cíle.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Length of a synchronizing word of finite automata - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2019-06-19T00:00:00Z" class="post-list timeago">19.06.2019</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Length of a synchronizing word of finite automata</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <h2 id="question">Question</h2>
+<p>What is the maximal length of a shortest synchronizing word over an automaton.</p>
+<h2 id="known-results">Known results</h2>
+<p>Lower bound is asymptotically $n^2$.</p>
+<p><img src="./lower.svg" alt="Lower bound construction"></p>
+<p>Upper bound is asymptotically $n^3$.
+Consider the shortest synchronizing word W for an automata.</p>
+<p><img src="./upper.svg" alt="Upper bound proof"></p>
+<ul>
+<li><a href="https://eudml.org/doc/29801"target="_blank">A Note on Homogeneous Experiments with Finite Automata, 1964<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>Pin 1983 ${n^3-n \over 6}$ upper bound</li>
+<li>$n^2$ was shown for few classes of synchronizing automata</li>
+<li><a href="https://hal.archives-ouvertes.fr/hal-00143937/document"target="_blank">On two combinatorial problems arising from automatatheory, 1981<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>Kari 2003, if the underlying digraph is Eulerian, then the minimum reset word is of length at most (n-2)(n-1)+1 (open of tight?)</li>
+<li>Trahtman 2011 ${7n^3+12n^2-4n \over 48}$</li>
+</ul>
+<h2 id="videos">Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0blZK9CewIc"target="_blank">Around the Cerny conjecture<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=fSXueUBCQ8s"target="_blank">An overview of the Černý Conjecture part 1<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=hCOfZwn4uyI"target="_blank">An overview of the Černý Conjecture part 2<span style="white-space: nowrap;">&thinsp;↗</span></a> &ndash; wrong cubic upper bound mentioned in the middle</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2019
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

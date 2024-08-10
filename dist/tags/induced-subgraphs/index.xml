@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Induced Subgraphs on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/induced-subgraphs/</link>
+    <description>Recent content in Induced Subgraphs on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 11 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/induced-subgraphs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Induced Online Ramsey Number of Paths, Cycles, and Trees</title>
+      <link>https://vaclavblazej.github.io/pub/2019/induced_ornum/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2019/induced_ornum/</guid>
+      <description>Abstract An online Ramsey game is a game between Builder and Painter, alternating in turns. They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices. In each round Builder draws an edge and Painter colors it either red or blue. Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins. The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.</description>
+    </item>
+  </channel>
+</rss>
