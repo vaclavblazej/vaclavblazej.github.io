@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>
         
-            Make heap složitost - Homepage of Vašek
+            Tunic - Homepage of Vašek
         
     </title>
     <meta name="description" content="Homepage of Vašek">
@@ -121,7 +121,7 @@
 <div class="content">
     
     <div class="wide-image">
-        <div style="background-image: url('heap.jpg');">
+        <div style="background-image: url('tunic.png');">
         </div>
     </div>
     
@@ -131,7 +131,7 @@
                 
 
 
-    <time datetime="2015-11-08T00:00:00Z" class="post-list timeago">08.11.2015</time>
+    <time datetime="2024-08-10T00:00:00Z" class="post-list timeago">10.08.2024</time>
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-    tags:[ <a href="https://vaclavblazej.github.io/tags/proof">proof</a> ]
+    tags:[ <a href="https://vaclavblazej.github.io/tags/game">game</a> <a href="https://vaclavblazej.github.io/tags/review">review</a> <a href="https://vaclavblazej.github.io/tags/cypher">cypher</a> ]
 
 
 
@@ -149,88 +149,28 @@
 
 
             </p>
-            <h1>Make heap složitost</h1>
+            <h1>Tunic</h1>
 
             
 
         </div>
         <div class="post-content">
-            <h2 id="kontext">Kontext</h2>
-<p>Halda je užitečná datová struktura. Avšak mnozí tvrdí, že ji lze z neseřazeného pole nainicializovat v čase $O(n)$.
-To nemusí na první pohled dávat smysl &mdash; kdyby totiž člověk vytvářel haldu postupným přidáváním prvků, tak by její vytvoření mělo složitost $\mathcal O(n \log(n))$.
-Tak jak to tedy je?</p>
-<p>Tvoření haldy neprobíhá postupným přidáváním prvků, ale opravy h-vlastnosti zespodu.
-Když si představíme haldu jako strom (viz obrázek), tak se od spodu bere každý podstrom a udělá se z něj halda.
-Protože se prvky berou odspodu, tak vždy víme, že synové podstromu, ze kterého se snažíme udělat haldu už haldy jsou (žlutý a zelený), a tak stačí pouze prvku na vrcholku upravit h-vlastnost (modrý).</p>
-<p><img src="make_heap.png" alt="Podstromy haldy při provádění make heap operace"></p>
-<p><strong>Teorém:</strong> Vytvoření haldy má složitost $\mathcal O(n)$.</p>
-<h2 id="důkaz">Důkaz</h2>
-<p>Pro všech n prvků musíme opravit h-vlastnost &mdash; to znamená prohodit jej s větším z potomků, pokud je prvek menší než alespoň jeden z jeho potomků.
-Tato operace se potom volá rekurzivně a víme, že se provede maximálně g krát, kde g je výška uzlu.
-Doplňme haldu tak, aby všechny listy ležely ve stejné hloubce.
-Tímto nezvětšíme velikost haldy o více jak n/2.
-Nyní spočteme kolik uzlů je v jedné výšce g.
-Protože je halda úplný binární strom, tak se s hloubkou počet uzlů dvojnásobí.
-Výška je však pojem opačný, takže začneme s vysokým počtem uzlů, který se bude se zvyšující se výškou dělit dvěma.
-Tedy: ve výšce g a hloubkce stromu h je
-\[
-\frac{2^h}{2^g}.
-\]</p>
-<p>Z toho co jsme si doposud řekli vyplývá, že počet operací pro celé jedno patro je \[
-g \frac{2^h}{2^g}.
-\]</p>
-<p>Pro sečtení všech pater použijeme sumu \[
-\sum_{g=1}^h g \frac{2^h}{2^g}.
-\]</p>
-<p>Hodnota h není v sumě proměnnou a tak ji můžeme vytknout.
-\[
-2^h \sum_{g=1}^h \frac{g}{2^g}
-\]</p>
-<p>Nyní se zaměříme pouze na člen sumy.
-Víme, že všechny členy sumy jsou nezáporné, a tak je suma určitě menší než součet s intervalem do nekonečna.
-Tuto sumu můžeme upravit vytknutím 1/2.
-Dále jen změníme index sumy.
-Potom sumu rozložíme na dvě, podle čitatele podílu.
-Nakonec z první sumy odebereme prvek pro $g=0$, protože výraz vychází 0, ten sumu nijak nemění.</p>
-<p>\[
-\sum_{g=1}^h \frac{g}{2^g} \leq \sum_{g=1}^\infty \frac{g}{2^g} = \frac{1}{2} \sum_{g=1}^\infty \frac{g}{2^{g-1}}
-\]
-\[
-= \frac{1}{2} \sum_{g=0}^\infty \frac{g + 1}{2^g} = \frac{1}{2} \left(\sum_{g=0}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \frac{1}{2^g}\right)
-\]
-\[
-= \frac{1}{2} \left(\sum_{g=1}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \frac{1}{2^g}\right)
-\]</p>
-<p>Z rovnice dostáváme vztah
-\[
-\sum_{g=1}^\infty \frac{g}{2^g} = \frac{1}{2} \left(\sum_{g=1}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \left(\frac{1}{2}^g\right)\right)
-\]</p>
-<p>Po substituci SUM výraz zjednodušíme.
-\[
-a = \frac{1}{2} \cdot (a + b) \rightarrow a = a/2 + b/2 \rightarrow a = b
-\]</p>
-<p>Zpátky dostáváme následující vztah.
-\[
-\sum_{g=1}^\infty \frac{g}{2^g} = \sum_{g=0}^\infty \frac{1}{2^g}
-\]</p>
-<p>Pravá strana výrazu má tvar geometrické řady, pro kterou je známý součtový vzorec.
-Mnoho lidí umí tuto řadu sečíst i bez součtového vzorce.
-\[
-\sum_{g=0}^\infty \frac{1}{2^g} = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots = 2
-\]</p>
-<p>Z toho vyplývá, že
-\[
-\sum_{g=1}^h \frac{g}{2^g} &lt; 2.
-\]</p>
-<p>A tak součet všech operací přes všechny prvky všech pater haldy je
-\[
-2^h \sum_{g=1}^h \frac{g}{2^g} &lt; 2^{h+1}.
-\]</p>
-<p>A protože pro hloubku úplného binárního stromu platí $h = \log(n)$, dostáváme složitost make heap
-\[
-\mathcal O(2^h) = \mathcal O(2^{\log(n)}) = \mathcal O(n).
-\]</p>
-<p>Což jsme chtěli dokázat. $\square$</p>
+            <p><a href="https://store.steampowered.com/app/553420/TUNIC/"target="_blank">TUNIC<span style="white-space: nowrap;">&thinsp;↗</span></a> is an isometric action game which also contains a good deal of puzzles.
+The world consists of several non-trivially interconnected locations.
+You progress through the game mainly by exploring, finding items, and beating bosses.
+While you are not given explicit directions it is usually quite clear what to do next.
+When some extra information is required (e.g. initially hidden control options) it is revealed through a booklet.
+You get pages of the booklet throughout the game and it feeds you the information in a vague manner.
+I found this feature to be surprisingly well done &ndash; finding the information you need in the booklet is nice, often leading to sudden moments of understanding.</p>
+<p><img src="./booklet.png" alt="Booklet"></p>
+<p>The exploration always feeled meaningful as the game is filled with shortcuts and secrets.
+And if I got stuck it often helped to skim through the booklet and think about the overall picture of what is happening.
+Many puzzles can be solved by keen observation.
+For some you may have the solution before you know what exact tool will be necessary for solving them.
+Throughout the gameplay I found just two exceptions that seem to be insufficiently communicated: 1) At some point the bed becomes usable, 2) some walls can be blown up, and 3) some buttons do not show a control hint.
+There were vague hints for other things as well but these I found particularly baffling.</p>
+<p>Not to end on a low note I need to say: the game is excellent.
+I expected to get a Metroidvania style action adventure and I got about 20 hours of intriguing story, unique mechanics, a few simple puzzles, and couple of hard puzzles.</p>
 
         </div>
     </div>
@@ -242,7 +182,7 @@ Mnoho lidí umí tuto řadu sečíst i bez součtového vzorce.
         <li>
             © Václav Blažej
             
-                2015
+                2024
             
         </li>
         

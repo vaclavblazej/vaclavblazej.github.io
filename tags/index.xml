@@ -12,6 +12,27 @@
     <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cypher</title>
+      <link>https://vaclavblazej.github.io/tags/cypher/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/tags/cypher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game</title>
+      <link>https://vaclavblazej.github.io/tags/game/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/tags/game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>https://vaclavblazej.github.io/tags/review/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Setup</title>
       <link>https://vaclavblazej.github.io/tags/setup/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
@@ -65,20 +86,6 @@
       <link>https://vaclavblazej.github.io/tags/work/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/tags/work/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Game</title>
-      <link>https://vaclavblazej.github.io/tags/game/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://vaclavblazej.github.io/tags/game/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Review</title>
-      <link>https://vaclavblazej.github.io/tags/review/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://vaclavblazej.github.io/tags/review/</guid>
       <description></description>
     </item>
     <item>

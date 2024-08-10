@@ -9,8 +9,15 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tunic</title>
+      <link>https://vaclavblazej.github.io/post/2024/tunic/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/tunic/</guid>
+      <description>TUNIC&amp;thinsp;↗ is an isometric action game which also contains a good deal of puzzles. The world consists of several non-trivially interconnected locations. You progress through the game mainly by exploring, finding items, and beating bosses. While you are not given explicit directions it is usually quite clear what to do next. When some extra information is required (e.g. initially hidden control options) it is revealed through a booklet. You get pages of the booklet throughout the game and it feeds you the information in a vague manner.</description>
+    </item>
     <item>
       <title>Ring of Pain</title>
       <link>https://vaclavblazej.github.io/post/2024/ring_of_pain/</link>
@@ -59,6 +66,13 @@
       <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2022/storytelling/</guid>
       <description>➤ I&amp;#39;m a programmer, not a writer :o If I were a pure writer, then I couldn&amp;rsquo;t explain the target concepts.&#xA;If you are a programmer, then this post will be easier for you to read because it tries to convey basic programming concepts with comprehensible words and many examples.&#xA;If you are not a programmer, then this post was meant for you :)&#xA;Modern computer games increased the storytelling level lower bound significantly.</description>
+    </item>
+    <item>
+      <title>Forged Alliance na Linuxu</title>
+      <link>https://vaclavblazej.github.io/post/2016/faf/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2016/faf/</guid>
+      <description>Supreme Commander Forged Alliance je strategická PC hra. Tento návod Vám pomůže hru spustit pod lobby FAF, pokud máte hru koupenou na platformě Steam.&#xA;Jak na spuštění SC-FA Program playonlinux umožňuje běh windowsovských programů pod linuxem (s pomocí wine). Výhodou je, že tento program spravuje verze wine a verze programů, je také možné vytvořit více různých virtuálních disků s různými konfiguracemi.&#xA;Pro spuštění Forged Alliance je potřeba playonlinux nainstalovat, v něm vytvořit disk, na něj nainstalovat FAF, Steam a z něho i SC-FA.</description>
     </item>
   </channel>
 </rss>

@@ -9,8 +9,15 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tunic</title>
+      <link>https://vaclavblazej.github.io/post/2024/tunic/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/tunic/</guid>
+      <description>TUNIC&amp;thinsp;↗ is an isometric action game which also contains a good deal of puzzles. The world consists of several non-trivially interconnected locations. You progress through the game mainly by exploring, finding items, and beating bosses. While you are not given explicit directions it is usually quite clear what to do next. When some extra information is required (e.g. initially hidden control options) it is revealed through a booklet. You get pages of the booklet throughout the game and it feeds you the information in a vague manner.</description>
+    </item>
     <item>
       <title>Ring of Pain</title>
       <link>https://vaclavblazej.github.io/post/2024/ring_of_pain/</link>
