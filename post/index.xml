@@ -9,14 +9,14 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tunic</title>
-      <link>https://vaclavblazej.github.io/post/2024/tunic/</link>
-      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://vaclavblazej.github.io/post/2024/tunic/</guid>
-      <description>TUNIC&amp;thinsp;↗</description>
+      <title>Migrating static pages</title>
+      <link>https://vaclavblazej.github.io/post/2024/migrating_pages/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/migrating_pages/</guid>
+      <description>I hoped that my alma mater would keep my account open but that turned out to not be the case. University&amp;rsquo;s data got compromised and they pushed us to change our passwords. When I did attempt to change it the respective website didn&amp;rsquo;t work. After the password got deactivated I contacted the helpdesk which informed me my account will not be activated as I have no formal relation to the faculty and the alumni access is not yet implemented.</description>
     </item>
     <item>
       <title>Circular design for Flag Semaphor decyphering</title>
@@ -352,7 +352,7 @@
       <link>https://vaclavblazej.github.io/post/2021/migrating_pages/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2021/migrating_pages/</guid>
-      <description>I knew that in time it would be necessary to move this web to another address. The setup for deployment is its own hassle. The main things I wanted was to be able to come to an old address and get redirected to the correct current address. It would be quite easy with something dynamic, but these pages are static, and so cannot really catch someone attending a random address of the old page.</description>
+      <description>A newer iteration of this post is available.&#xA;I knew that in time it would be necessary to move this web to another address. The setup for deployment is its own hassle. The main things I wanted was to be able to come to an old address and get redirected to the correct current address. It would be quite easy with something dynamic, but these pages are static, and so cannot really catch someone attending a random address of the old page.</description>
     </item>
     <item>
       <title>Easy-to-remember Rubik&#39;s cube solution</title>
