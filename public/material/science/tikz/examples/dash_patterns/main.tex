@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[thick]
+
+\foreach[count=\i] \x in {
+    solid,
+    dotted, densely dotted, loosely dotted,
+    dashed, densely dashed, loosely dashed,
+    dashdotted, densely dashdotted, loosely dashdotted}{
+    \draw[\x] (0,-\i) --node[sloped,below]{\x} +(4,.25);
+}
+% custom dash pattern
+\draw[dash pattern=on \the\pgflinewidth
+    off 2pt on 2pt off 2pt on 3pt off 2pt on 4pt off 2pt
+] (0,-11.5)
+--node[sloped,below]{custom (see source code)}
++(4,.25);
+
+\end{tikzpicture}
+\end{document}

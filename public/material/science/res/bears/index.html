@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Hat chromatic number of graphs - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2019-09-11T00:00:00Z" class="post-list timeago">11.09.2019</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/research">research</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Hat chromatic number of graphs</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>List of sources used to create this summary can be found at the bottom of the page.</p>
+<h2 id="problem-statement">Problem statement</h2>
+<p>We are given a graph $G$ and number of colors $K$.
+Vertices of $G$ are occupied by players (called Bears) which can see all their neighbors but not themselves.
+Each of them will be given a hat in one of $K$ colors (multiple Bears can have the same color) and their task is to come up with a collective strategy such that at least one of them will guess his hat correctly.
+The guess may depend only on hat colors of Bear&rsquo;s neighbors.
+The coloring of $G$ is chosen by an evil adversary (called Demon) who knows bears&rsquo; strategy.
+If the Bears are guaranteed that at least one correct guess in each coloring, then their strategy wins.</p>
+<p>The <strong>hat chromatic number</strong> $\mu(G)$ is the maximum number of colors $K$ such that there is a strategy which wins.</p>
+<h2 id="known-results-and-conjectures">Known results and conjectures</h2>
+<h3 id="classic-version">Classic version</h3>
+<p>Example:
+Let us have a graph containing a single edge between two vertices.
+Each vertex is occupied by a player, who sees only the other player (not himself).
+Each of them gets a hat which is either red or blue.
+How should they plan their guesses so that when guessing their hat color simultaneously at least one of them will be correct?</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="example_1-box">
+<button class="expand-title" id="example_1-control">➤ <b>Answer</b></button>
+<div class="expand-content">
+<p>The first will guess the color he sees, and the second guesses the color he doesn&rsquo;t see.
+This ensures that if they are given the same color, the first one shall be correct, and if they are given different colors, the second one will be correct.</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("example_1" + "-box", "example_1" + "-control")</script>
+<p>Observation (monotocity): If Bears win for $K$ then they win for each $K&rsquo;&lt;K$ by shrinking the strategy.</p>
+<p>Lemma (number of correct guesses): Every Bear guesses exactly $1/k$ of all colorings correctly.</p>
+<p>Proof:
+Fix all colors except for one Bear.
+The Bear&rsquo;s guess is now fixed, and by changing his hat-color, we hit his guess exactly once out of $k$ cases.
+As the fixed coloring of the other vertices can be arbitrary, this covers all possible colorings.</p>
+<p>Observation (general upper bound): $\mu(G) \le |G|$</p>
+<p>Proof:
+By the previous lemma, one Bear guesses correctly exactly $1/k$ times.
+Using union bound we get that the chance for &ldquo;at least one Bear has correct guess&rdquo; does not exceed $|G|/k$.
+If the strategy is winning, then the sum over the ratios of correct guesses must give at least $1$.
+So for any $k \le \mu(G)$ it holds that $1 \le |G|/k$, which is eqvivalent to $k \le |G|$.
+In particular, that inequality is true for $k=\mu(G)$ as well, hence $\mu(G) \le |G|$.</p>
+<p>Theorem (cliques): $\mu(K_n) = n$</p>
+<p>Proof:
+The strategy for $i$-th bear is $S_i = (i - \sum\text{(colors of other Bears)}) \bmod n$.
+Let $M$ be the sum of all bears&rsquo; colors.
+We see that if $M=i$ then the $i$-th bear guesses correctly.
+As $0 \le M &lt; n$ we have that exactly one bear guesses correctly in every coloring.</p>
+<p>Theorem (non-cliques upperbound): $\mu(G) &lt; |G|$ if G is not a clique</p>
+<p>Proof:
+Recall the proof of &ldquo;general upper bound&rdquo;.
+If two vertices A and B are not connected then we can watch coloring from their (independent) point of view.
+There is a chance $1/k^2$ that their are both right.
+Hence the union bound of $1/k$ for all vertices except A and B and their contribution $2/k - 1/k^2$ gives $1\le|G|/k-1/k^2$, hence $k&lt;|G|$, therefore $\mu(G) &lt; |G|$.</p>
+<p>Observation (subgraphs): $\mu(G&rsquo;) \le \mu(G)$ for $G&rsquo;$ subgraph of $G$</p>
+<p>Theorem (cycle, Szczechla 2010, <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i1p37"target="_blank">CONF<span style="white-space: nowrap;">&thinsp;↗</span></a>, <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i1p37/pdf"target="_blank">PDF<span style="white-space: nowrap;">&thinsp;↗</span></a>):
+$\mu(C_n)=3$ for $n=4$ or $n=3 k$, otherwise $\mu(C_n)=2$.</p>
+<p>We shall not prove the Theorem in its entirety as it is rather complex.</p>
+<p>Proof (only for $C_4$):
+$\mu(C_4) &lt; 4$ by &ldquo;non-cliques upperbound&rdquo;.
+Bears guess (in order) G1=(X2+X4), G2=(-X1+X3), G3=(-X2+X4), G4=(-X1-X3).
+The correctness can be checked by brute-force.</p>
+<p>Theorem (paths): $\mu(P_N)=2$ for $N \ge 2$</p>
+<p>Proof: $\mu(P_N) \ge 2$ by $K_2 \subseteq P_N$, and $\mu(P_N)&lt;3$ by &ldquo;loosing path&rdquo; theorem.</p>
+<p>Theorem (trees, Butler, et al., <a href="https://www.cs.cornell.edu/~rdk/papers/hats.pdf"target="_blank">PDF<span style="white-space: nowrap;">&thinsp;↗</span></a>): $\mu(T) \le 2$</p>
+<p>Conjecture (strong coloring number) : $\mu(G) \le col(G)$</p>
+<p>Conjecture (weak coloring number): $\mu(G) \le f(col(G))$ for some function f</p>
+<p>Conjecture (strong planar): $\mu(G) \le 4$ for planar graphs</p>
+<p>Conjecture (weak planar): $\mu(G) \le C$ for planar graph for some constant C</p>
+<p>Theorem (planar, TODO REF): $\mu(G) \le 6$ for planar graphs G with girth at least 14</p>
+<p>Theorem (max degree): $\mu(G) \le e(\Delta + 1)$</p>
+<p>Proof: In random coloring each vertex has chance of 1/k to guess its color. Apply LLL $ep(d+1) \le 1$ where $p=1/k$, $d \le \Delta$, and get that if $k \ge e (\Delta +1)$, then noone guesses his color correctly, i.e., $\mu(G) \le e(\Delta + 1)$.</p>
+<p>Conjecture (max degree): $\mu(G) \le \Delta + 1$</p>
+<p>Observation (max clique): By the subgraph observation, we have that $\omega(G) \le \mu(G)$.</p>
+<p>Conjecture (max clique): $\chi(G) \le \mu(G)+1$</p>
+<p>Conjecture (<a href="https://en.wikipedia.org/wiki/Hadwiger_number"target="_blank">Hadwiger number<span style="white-space: nowrap;">&thinsp;↗</span></a>): $\mu(G) \le h(G)$</p>
+<p>Theorem (vertex addition lowerbound): If we can win on a graph G then we can win on a graph G&rsquo; = G \cup V where V is a new vertex which is arbitrarily connected to G, by V guessing 2, neighbors of V adding 1 to their guess and rest stays the same.</p>
+<p>Proof: TODO</p>
+<h3 id="list-version">List version</h3>
+<p>If each Bear has a list of colors from which the color is chosen (similarly to list coloring), we get a different, more configurable, version of hat chromatic number problem.
+We will denote the order of list by a simple number, and represent order of all Bear lists as (A1,A2,&hellip;,AN).
+Note that it does not matter which colors are in the lists.</p>
+<p>Observation (monotocity): If every Bear has list of smaller or same order, then the list hat chromatic number cannot increase.</p>
+<p>Theorem (loosing path): On a path $P_N$ with lists of orders (3,3,&hellip;,3,2) Bears lose.</p>
+<p>Proof:
+For N=1 the claim is trivial.
+For all N&gt;1 we note that the last Bear A guess is based on second to last Bear B.
+B&rsquo;s list has 3 elements, so A guesses the same color twice, say he guesses 1 when he sees 1 or 2 on B.
+We put color 2 on A and restrict ourselvest to colors 1 and 2 for B, diregard A which cannot win, and use induction on path shorter by one.</p>
+<p>Theorem (losing cycle): On a cycle $C_N$ with list of orders (4,3,&hellip;,3) Bears lose.</p>
+<p>Proof: TODO
+Let us focus on Bear B with list of 4 colors in $C_N$ who has neighbors A and C.
+We will show that he can be colored so that he does not guess his color and reduce the rest to path and use &rsquo;losing path&rsquo; theorem.
+&hellip; TODO</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="http://homepages.wmich.edu/~zyb1431/papers/hats2019.pdf"target="_blank">Hat Chromatic Number of Graphs - Bosek, Dudek, Farnik, Grytczuk, Mazur<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i1p37/pdf"target="_blank">The three colour hat guessing game on cycle graphs - Szczechla<span style="white-space: nowrap;">&thinsp;↗</span></a> (Sub 25.3.2015, Pub 17.2.2017)</li>
+</ul>
+<p>todos</p>
+<ul>
+<li><a href="https://www.cs.cornell.edu/~rdk/papers/hats.pdf"target="_blank">Hat Guessing Games - Butler, Hajiaghayi, Kleinberg, Leighton<span style="white-space: nowrap;">&thinsp;↗</span></a> (Pub 2008)</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2019
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

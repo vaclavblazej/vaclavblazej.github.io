@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-08-04T00:00:00Z" class="post-list timeago">04.08.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/program">program</a> <a href="https://blazeva1.pages.fit/tags/setup">setup</a> <a href="https://blazeva1.pages.fit/tags/overview">overview</a> ]
+
+
+
+
+
+
+            </p>
+            <h1></h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible.
+Though the following &ndash; my setup &ndash; may look complicated, all its parts are quite simple.
+They were just put together gradually over the span of many years and will change when better alternatives appear.</p>
+<p>The system consists of the latest version of <a href="https://ubuntu.com/"target="_blank">Ubuntu<span style="white-space: nowrap;">&thinsp;↗</span></a> but with a tiling window manager called <a href="https://awesomewm.org/"target="_blank">AwesomeWM<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h2 id="system">System</h2>
+<p>There are many Linux distributions to choose from.
+I use Ubuntu for adoption &ndash; there are simply many people using it so majority of small issues get eventually fixed.
+It can be setup easily from windows to have both systems so attempting transition does not mean losing the other system.
+For less technically included, I&rsquo;d recommend Ubuntu without the different window manager (described later).
+For technically inclined individuals I&rsquo;d recommend <a href="https://archlinux.org/"target="_blank">Arch Linux<span style="white-space: nowrap;">&thinsp;↗</span></a> (where you setup everything manually).</p>
+<h2 id="window-manager">Window manager</h2>
+<p>The first thing people notice is that the system &ldquo;looks&rdquo; different.
+This is fault of window managers.
+They take care of laying out your windows and displaying system menus.
+So Debian or Arch could looks the same as my setup if they used the same window manager.
+The main difference between distributions is its package manager &ndash; the canonical way you install software.</p>
+<p>Ubuntu comes with a preinstalled <a href="https://wiki.archlinux.org/title/GDM"target="_blank">GDM<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+When you install another window manager they live side by side and you may choose which one to activate in the login menu.</p>
+<p>I use <a href="https://awesomewm.org/"target="_blank">AwesomeWM<span style="white-space: nowrap;">&thinsp;↗</span></a> &ndash; a tiling window manager, i.e., you do not drag and scale windows yourself but they are automatically tiled onto the window.
+Many people I know use <a href="https://i3wm.org/"target="_blank">i3<span style="white-space: nowrap;">&thinsp;↗</span></a> which looks like a reasonable alternative, it seems to have wider adoption, but I&rsquo;m already used to mine so I will switch only if I have to.</p>
+<p>For configuration I use altered configuration by <a href="https://github.com/lcpz/awesome-copycats"target="_blank">lcpz<span style="white-space: nowrap;">&thinsp;↗</span></a> on Github.
+As a theme lcpz lists many options of which I use slightly altered <a href="https://github.com/romockee/powerarrow"target="_blank">powerarrow<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+My configuration is not public, this may change in the future.</p>
+<p>Each screen has 9 desktops and they are changed on each screen independently of the other screens.
+Moving windows between screens and desktops or changing their positions is all done via keyboard shortcuts.
+Majority of the shortcuts are hidden under Mod key &ndash; the one with windows/mac logo.</p>
+<p>I use <a href="https://christian.amsuess.com/tools/arandr/"target="_blank">ARandR<span style="white-space: nowrap;">&thinsp;↗</span></a> to switch between having a single or more monitors on side-by-side or mirrored display.
+This is not automatic, but at least the program allows you to save the setup as a shell script that is easy to invoke.</p>
+<p>To invoke programs or search among open windows I rebound <code>Mod+r</code> to <a href="https://github.com/davatorium/rofi"target="_blank">rofi<span style="white-space: nowrap;">&thinsp;↗</span></a> window switcher.</p>
+<h2 id="terminal-and-shell">Terminal and Shell</h2>
+<p>Further things are not as noticeable.
+I wanted to have configuration for all things to be in files that I can save elsewhere.
+This got me to use terminal <a href="https://alacritty.org/"target="_blank">Alacritty<span style="white-space: nowrap;">&thinsp;↗</span></a> &ndash; it comes with nice features that are somewhat natural if you already use vim.</p>
+<p>The flavor of shell you use mainly changes how completion and history is handled.
+As shell I use <code>zsh</code> with <a href="https://ohmyz.sh/"target="_blank">ohmyzsh<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+This is a significant improvement over the dumpsterfire of default bash.
+The community ohmyzsh provides a way to setup common features quite easily via plugins.
+I use:</p>
+<ul>
+<li>autojump &ndash; adds command <code>j &lt;folder&gt;</code> that switches you to a matching folder (that is anywhere on the system)</li>
+<li>git &ndash; show git repository status</li>
+<li>zsh-autosuggestions &ndash; gray autosuggestions just after the command</li>
+<li>zsh-shift-select &ndash; terminal text selection</li>
+</ul>
+<p>Along with autojump I found it useful to have scoped commands for my projects.
+I did not find such a simple tool elsewhere, so I wrote it.
+See <a href="cmd">cmd</a> post for details.</p>
+<h2 id="editors">Editors</h2>
+<p>List of software that I find useful for various tasks.</p>
+<ul>
+<li>text &amp; code &ndash; I&rsquo;ve used Vim for a while but now I&rsquo;m using <a href="https://blazeva1.pages.fit/post/2023/neovim/">NeoVim</a>; alternative would be <a href="https://code.visualstudio.com/"target="_blank">vs code<span style="white-space: nowrap;">&thinsp;↗</span></a> or <a href="https://www.jetbrains.com/"target="_blank">JetBrains<span style="white-space: nowrap;">&thinsp;↗</span></a> suite.</li>
+<li>recording &ndash; <a href="https://www.audacityteam.org/"target="_blank">Audacity<span style="white-space: nowrap;">&thinsp;↗</span></a> with <a href="https://github.com/wwmm/easyeffects"target="_blank">PulseEffects<span style="white-space: nowrap;">&thinsp;↗</span></a> using <a href="https://blazeva1.pages.fit/post/2021/microphone/">my mic setup</a></li>
+<li>document creation &ndash; <a href="https://www.latex-project.org/"target="_blank">Latex<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>organization &ndash; <a href="https://obsidian.md/"target="_blank">Obsidian<span style="white-space: nowrap;">&thinsp;↗</span></a>, better than nothing; I used Roam Reserach for a while, it is worse.</li>
+<li>video editing &ndash; <a href="https://kdenlive.org/"target="_blank">Kdenlive<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<p>I do not use the following often, or at all, but have some idea what I would try.</p>
+<ul>
+<li>sound editing &ndash; rare, but would use <a href="https://www.audacityteam.org/"target="_blank">Audacity<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>music &ndash; if I wanted to get serious, then probably <a href="https://www.steinberg.net/cubase/"target="_blank">Cubase<span style="white-space: nowrap;">&thinsp;↗</span></a>; alternatively <a href="http://www.image-line.com/flstudio/"target="_blank">FL Studio<span style="white-space: nowrap;">&thinsp;↗</span></a> or <a href="https://www.propellerheads.com/en/reason"target="_blank">Reason<span style="white-space: nowrap;">&thinsp;↗</span></a> (depends on usecase)</li>
+<li>music dj &ndash; <a href="https://www.native-instruments.com/en/products/traktor/dj-software/traktor-pro-3/"target="_blank">Traktor<span style="white-space: nowrap;">&thinsp;↗</span></a>, <a href="https://www.virtualdj.com/"target="_blank">VirtualDJ<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>sheet music &ndash; <a href="http://lilypond.org/"target="_blank">lilypond<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>video automation &ndash; <a href="https://ffmpeg.org/"target="_blank">FFmpeg<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>video editing &ndash; <a href="https://www.blackmagicdesign.com/products/davinciresolve/"target="_blank">DaVinci Resolve<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>3d modelling &ndash; I really like <a href="https://www.blender.org/"target="_blank">Blender<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

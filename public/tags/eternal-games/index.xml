@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eternal Games on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/eternal-games/</link>
+    <description>Recent content in Eternal Games on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/eternal-games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disjoint Dominating Sets with a Perfect Matching</title>
+      <link>https://blazeva1.pages.fit/material/science/res/eternal/2017ddspm/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/res/eternal/2017ddspm/</guid>
+      <description>(experimental page)&#xA;The paper&amp;thinsp;↗ by William F. Klostermeyer, Margaret-Ellen Messinger, Alejandro Angeli Ayello study the $DD_m(G)$ and its connection to various graph parameters.&#xA;Definitions independence number $\alpha(G)$ dominating set domination number $\gamma(G)$ perfect matching eternal eviction model (dominating) swap set $DD_m(G)$ weak &amp;amp; strong stem weak &amp;amp; strong graph (simple) star partitioning weight of a partitioning $\widehat{G}$ graph weak reduction Results For every tree $\gamma(T) = e^\infty_m(T) = DD_m(T) = \alpha(T)$ if and only if $T = \widehat{H}$ for some tree $H$ of order $2|V(T)|$.</description>
+    </item>
+    <item>
+      <title>Eternal games</title>
+      <link>https://blazeva1.pages.fit/material/science/res/eternal/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/res/eternal/</guid>
+      <description> Disjoint Dominating Sets with a Perfect Matching (summary, pdf&amp;thinsp;↗) </description>
+    </item>
+  </channel>
+</rss>

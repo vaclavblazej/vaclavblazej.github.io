@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\tikzset{custom/.style={
+    black,line width=2mm, postaction={draw=white,thin}}
+}
+
+\foreach[count=\y] \cap in {round,butt,rect}{
+    \draw[custom,line cap=\cap] (0,.4*\y-.2) -- +(.5,.2);
+    \node[right] at (.6, .4*\y) {\cap};
+}
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational and space complexity theory on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/material/science/cpx/</link>
+    <description>Recent content in Computational and space complexity theory on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/material/science/cpx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parameterized complexity hierarchy</title>
+      <link>https://blazeva1.pages.fit/material/science/cpx/parameters/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/cpx/parameters/</guid>
+      <description>This content was moved to another website&amp;thinsp;↗.</description>
+    </item>
+    <item>
+      <title>Hardness reductions of decision problems</title>
+      <link>https://blazeva1.pages.fit/material/science/cpx/hardness/</link>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/cpx/hardness/</guid>
+      <description>NP-hardness reductions NP-hardness (Wikipedia)&amp;thinsp;↗ NP-completness of 21 classical problems was shown by Karp in paper published 1972 &amp;ndash; Reducibility Among Combinatorial Problems. Assumption: $P \ne NP$ We list many problems one may want to reduce from to show NP-hardness.&#xA;Satisfiability (SAT) Problem: Is a formula satisfiable? Shown to be NP-complete by the Cook–Levin theorem&amp;thinsp;↗. Reduction is from a non-deterministic machine that solves an NP problem in polynomial time. Satisfiability in conjunctive normal form (CNFSAT) By alteration of the Cook–Levin theorem one can get CNF.</description>
+    </item>
+  </channel>
+</rss>

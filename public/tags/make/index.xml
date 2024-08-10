@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/make/</link>
+    <description>Recent content in Make on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; makefile</title>
+      <link>https://blazeva1.pages.fit/post/2021/makefile/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2021/makefile/</guid>
+      <description>A while back I made a makefile which could compile virtually any simple project in c++. Recently, this need appeared again so I created the makefile again.&#xA;This source code is released into the public domain. Basically, you may use it in any way you like, but read the unlicense notice at the beginning of the file for more precise information.&#xA;Requirements The project should have this makefile above src folder, and it creates a build folder for intermediate compilation files and exe folder for the final executables.</description>
+    </item>
+    <item>
+      <title>Make &amp; Makefile</title>
+      <link>https://blazeva1.pages.fit/post/2016/makefile/</link>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2016/makefile/</guid>
+      <description>Makefile je soubor používaný programem &amp;lsquo;make&amp;rsquo;. Spuštění příkazu &amp;lsquo;make&amp;rsquo; způsobí přečtení souboru &amp;lsquo;makefile&amp;rsquo; nebo &amp;lsquo;Makefile&amp;rsquo; (bez přípony), zparsování skriptu a provedení prvního cíle. Definice cíle obsahuje název, závislosti a příkazy.&#xA;Příklad cíle &amp;lsquo;clean&amp;rsquo;, bez závoslostí, se dvěma příkazy (všechny příkazy nutno předsadit TABem):&#xA;clean: rm -f $(OBJECTS) $(EXECUTABLE) ./doc rmdir $(TMP) Příklad cíle &amp;lsquo;clear&amp;rsquo;, který je závislý na cíli &amp;lsquo;clean&amp;rsquo;:&#xA;clear: clean Vyvolání konkrétního cíle provedeme např. příkazem &amp;lsquo;make clean&amp;rsquo;. To způsobí, provedení závislostí a potom příkazů vybraného cíle.</description>
+    </item>
+  </channel>
+</rss>

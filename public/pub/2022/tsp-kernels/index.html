@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            On Polynomial Kernels for Traveling Salesperson Problem and its Generalizations - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-06-27T00:00:00Z" class="post-list timeago">27.06.2022</time>
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other %!s(&lt;nil&gt;)" href="https://arxiv.org/abs/2207.01109">arXiv</a>
+    
+
+
+    
+        
+
+
+    
+        <a class="box conference published" href="https://drops.dagstuhl.de/opus/volltexte/2022/16937/">ESA 2022</a>
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>On Polynomial Kernels for Traveling Salesperson Problem and its Generalizations</h1>
+
+            
+    
+    with
+     Pratibha Choudhary, Dušan Knop, Šimon Schierreich, Ondřej Suchý, and Tomáš Valla
+
+
+        </div>
+        <div class="post-content">
+            <p>We investigated kernels for TSP and a related problem called <em>Waypoint routing</em> (WRP) &ndash; a variant of TSP where one needs to only visit a subset of vertices (subset TSP) and edges have capacities for the maximum number of their traversal within the solution.
+Compared to the classical TSP where one may create edges that represent shortest paths, we leave the graph unchanged and analyze properties of the solution on the graph.</p>
+<p>It was shown that the problem is FPT for Treewidth but whether it allows polynomial kernel was not investigated.
+The main result shows that a polynomial kernel is impossible (under standard assumptions) for <em>Fractioning Number</em> (a.k.a. Vertex Integrity) and that a polynomial kernel can be achieved for <em>Modulator to Constant Components</em> and <em>Feedback Edge Set</em>.
+There are also several other results for some settings including negative one for <em>Modulator to Disjoin Cycles</em> for Subset TSP and positive ones for Subset TSP and WRP for <em>Modulator to Constant Paths</em> and <em>Vertex Cover Number</em>, respectively.
+See the poster below for a graphical overview.</p>
+<p>The positive results on <em>Vertex Cover</em> use the notion of <em>natural behavior</em> &ndash; the cheapest way to connect a vertex outside of the vertex cover.
+Connecting all vertices in such a way may create an unconnected solution so we evaluate how costly is to change each behavior to the desired one (we try all combinations).
+It turns out that the number of behavior that use more than $2$ edges is small.
+As for each desired outcome we can keep only a limited number of natural behaviors (the ones that are cheapest to change to the desired one) we bound the total number of vertices that may not use their natural behavior.
+The ones that use natural behavior is solved implicitly and the rest is small &ndash; so we either get a NO-instance straight away or we get a kernel.</p>
+<p>For an overview of the problem see the poster I made for the DIMEA Days 2022 below.</p>
+<object data="main.pdf" type="application/pdf" width="100%" height="1380px">
+    <embed src="main.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="main.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

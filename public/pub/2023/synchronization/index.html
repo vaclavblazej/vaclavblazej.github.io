@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            On the smallest synchronizing terms of finite tree automata - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-05-20T00:00:00Z" class="post-list timeago">20.05.2023</time>
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other published" href="https://wrap.warwick.ac.uk/179013/">wrap</a>
+    
+
+
+    
+        
+
+
+    
+        <a class="box conference published" href="https://link.springer.com/chapter/10.1007/978-3-031-40247-0_5">CIAA 2023</a>
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>On the smallest synchronizing terms of finite tree automata</h1>
+
+            
+    
+    with
+     Jan Janoušek and Štěpán Plachý
+
+
+        </div>
+        <div class="post-content">
+            <p>It is well-known that the shortest synchronizing words for any automata lies between $n^2$ and roughly $n^3$.
+We focused on the same question but for tree automata, i.e., what are the &ldquo;smallest&rdquo; terms which sychronize a tree automaton?</p>
+<p>It became clear that classical notion of sychronization does not 1-to-1 correspond to this new setting, so we define &ldquo;weak&rdquo; and &ldquo;strong&rdquo; synchronization and show bounds for both.
+The weak sychronization is more string-like &ndash; the interesting part of simpmlest synchronization terms boil down to a single path which is basically a string.
+Surprisingly, the classical lower-bounds for strings stop working in this setting as it is not at all obvious that the sychronizing term cannot do something clever with the two subtrees to sychronize swiftly &ndash; this takes mental effort to persuade yourself that is it not trivial.</p>
+<p>For string sychronization all leaves ought to be variables so no trivializing substitution as in the weak case can take place.
+Here, height of the smallest sychronizing term seems to be dependant on size of the alphabet.
+We show how to reduce binary subtractor with $n$ bits using $2n$ states and a linear alphabet.
+Also, we reduce iteration through combinations on $n$ bits using $n+\sqrt{n}$ states and quadratic alphabet.
+While upper bounds is known to be exponential (the same one from strings works) these lower bounds show that we are far from the string case.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Synctex setup for Vim with Okular - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-07-21T00:00:00Z" class="post-list timeago">21.07.2022</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/setup">setup</a> <a href="https://blazeva1.pages.fit/tags/vim">vim</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Synctex setup for Vim with Okular</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa.
+This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup.
+I tried the setup of <em>forward</em> (code to PDF) and <em>reverse search</em> (PDF to code) with vim several times and failed.
+It is such a pain that I want to give this short tutorial on how I managed to make it work.</p>
+<h2 id="general-setup">General setup</h2>
+<p>This setup works for me on linux.
+Install <code>vim</code>, <code>okular</code>, and <code>synctex</code>.
+Load <em>vimtex</em> plugin (see <a href="https://vimawesome.com/plugin/vimtex"target="_blank">VimAwesome<span style="white-space: nowrap;">&thinsp;↗</span></a> for details; note that the line with <code>Plug</code> changes depending on the vim plugin loader).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>Plug <span style="color:#d14">&#39;https://github.com/lervag/vimtex&#39;</span>
+</span></span></code></pre></div><h2 id="forward-search">Forward search</h2>
+<p>Put the following into vim configuration (<code>~/.vimrc</code>).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:vimtex_view_general_viewer = <span style="color:#d14">&#39;okular&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:vimtex_view_general_options = <span style="color:#d14">&#39;--unique file:@pdf\#src:@line@tex&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:tex_flavor = <span style="color:#d14">&#39;latex&#39;</span>
+</span></span></code></pre></div><p>Reload configuration vim with <code>:source ~/.vimrc</code> (or restart vim).
+Open latex document and try <code>&lt;leader&gt;ll</code> (by default <code>\ll</code>) which should compile and show the latex file.
+Forward search should already work on <code>&lt;leader&gt;lv</code> (default <code>\lv</code>).</p>
+<h2 id="reverse-search">Reverse search</h2>
+<p>In Okular, go to <code>Settings/Configure Okular/Editor</code> switch to <code>Custom Text Editor</code> and set it to <code>vim --remote-silent +%l %f</code> and Ok.
+Now <code>Shift+Left click</code> in <strong>Browse</strong> mode should give you reverse search.
+It may be necessary to setup an alias for vim: <code>alias vim='vim --servername vim'</code> so that the command that okular sends is received by a vim server.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

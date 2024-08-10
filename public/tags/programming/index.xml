@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/programming/</link>
+    <description>Recent content in Programming on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jak na pointery?!</title>
+      <link>https://blazeva1.pages.fit/post/2023/pointers/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/pointers/</guid>
+      <description>Tento příspěvek vznikl jako doplňující materiál ke kurzu BI-PA2 v roce 2015 Díky Páje za jeho připomenutí :) Za fakultním přihlášením je přístupný zmigrovaný original na courses&amp;thinsp;↗.&#xA;Proměnná je jako hotovost. Ukazatel je jako bankovní účet &amp;ndash; znáte číslo účtu a na peníze nelze šáhnout přímo, ale pouze zkrz číslo účtu.&#xA;Co je to pointer? Ukazatel (anglicky Pointer) je proměnná, která místo hodnoty ukládá adresu jiné proměnné.&#xA;Adresa proměnné Zdrojový kód (v C++):</description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://blazeva1.pages.fit/post/2023/automatization/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/automatization/</guid>
+      <description>A big part of programmer&amp;rsquo;s job is to automate processes. Some people find this activity very satisfying and enjoy programming because of it. The same feeling, but arguably stronger, can be achieved in games such as Factorio&amp;thinsp;↗ or Bitburner&amp;thinsp;↗.&#xA;The goal of automating something is to make a repetitive task easier or (ideally) entirely automatic. We shall consider only tasks that can be done on a computer. We categorize tasks into several levels of abstraction.</description>
+    </item>
+    <item>
+      <title>Simple data consistency with two-sided references</title>
+      <link>https://blazeva1.pages.fit/post/2022/link/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2022/link/</guid>
+      <description>Imagine a programming language where the references can be mutual. What exactly does this mean and would such a feature be useful?&#xA;Basics Standard way to declare reference attribute is to set its name and type. We imagine a case where one could also declare attribute in the target class which would become mutually tied to the currently defined attribute. The declaration could look as in the following example.&#xA;class Person { passport: Passport.</description>
+    </item>
+    <item>
+      <title>Fast Fourier Transform (FFT) c&#43;&#43; code explained</title>
+      <link>https://blazeva1.pages.fit/post/2020/fft/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2020/fft/</guid>
+      <description>Discrete Fourier Transform (DFT) takes $x_0,\dots,x_{N-1}$ and produces $X_0,\dots,X_{N-1}$ by the following equality&#xA;$$X_k = \sum^{N-1}_{n=0} x_n e^{-i2\pi kn/N}.$$&#xA;Fast Fourier Transform (FFT) does this computation effectively in $O(N \log N)$ time. Possibility of doing the computation in a more effective way raises from decomposition of the values into odd and even elements, and applying the computation recursively.&#xA;Let $\omega_N=e^{-2i\pi /N}$, so we have&#xA;$$ X_k = \sum^{N-1}{n=0} x_n \omega^{nk}N = \sum^{N/2-1}{n=0} x{2n} \omega^{2nk}_N</description>
+    </item>
+    <item>
+      <title>Command-line completion</title>
+      <link>https://blazeva1.pages.fit/post/2020/completion/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2020/completion/</guid>
+      <description>The setup of completion is an essential part of creating a well-behaved script. Unfortunately, the setup has several obstacles, mainly that each shell handles completion differently. In this post, I hope to unravel the problems and show solutions to setting up completion for a custom script in several frequently used unix shells. The first section simply states the solution, its usage, and references used to accomplish these. In the second section we show a detailed progression which lead to the solution.</description>
+    </item>
+    <item>
+      <title>CERC - Prague 2018</title>
+      <link>https://blazeva1.pages.fit/post/2018/cerc/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2018/cerc/</guid>
+      <description>Po třech letech kdy se CERC konal v Záhřebu se místo konání přesunulo, a protentokrát skončilo v Praze. Před pár měsíci jsem byl požádán, jestli bych pomohl s přípravou úloh, tak jsme se společně s Morassem, Pavlem, Martinem, Romanem, Pepou a Pepou pustili do úkonu. Úlohy jsme s Morassem připravovali dost dopředu, ovšem zbytek teamu se zapojil tak nějak až ve čtvrtek (3 dny před contestem). Hodně odladili zadání, ovšem bylo potřeba doladit i kódy ke třem úlohám.</description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2017</title>
+      <link>https://blazeva1.pages.fit/post/2017/zagreb/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2017/zagreb/</guid>
+      <description>17 - 19 Listopadu 2017 jsme opět byli v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc, tentokrát jako coach. Má cesta začla ve Vídni, odkud jsem jel 5 hodin pomocí FlixBusu, ostatní jeli celý den z Prahy. Bohužel jsem tak prošvihl večeři. S ostatními jsme se potkali večer v hotelu Internacional. Ráno klasická snídaně, cesta na univerzitu, nějaké povídání od pořadatelů a sponsorů, a potom testovací kolo.&#xA;Druhý den, v Neděli, jsme vstali brzo, abychom stihli poslední informace v 8:30.</description>
+    </item>
+    <item>
+      <title>Profilování programu v C&#43;&#43;</title>
+      <link>https://blazeva1.pages.fit/material/programming/profiling/</link>
+      <pubDate>Thu, 11 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/programming/profiling/</guid>
+      <description>Pro optimalizace výkonu programu potřebujeme vědět, které jeho části se počítají nejdéle.&#xA;Náinstalujeme nástroje pro profilování:&#xA;sudo apt-get install valgrind kcachegrind graphviz Zkompilujeme program s přidaným info (-g přepínač)&#xA;g++ -std=c++11 -g main.cpp -o program A pustíme pod valgrind s nastaveným nástrojem callgrind&#xA;valgrind --tool=callgrind ./program [program_options] výstupem je soubor typu callgrind.out.XXXXX (X čísla se stále zvětšují, poslední je aktuálnější), ten otevřeme pod kcachegrind&#xA;kcachegrind callgrind.out.20942 Tento program visualizuje kolik proběhlo volání každé řádky.</description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2016</title>
+      <link>https://blazeva1.pages.fit/post/2016/zagreb/</link>
+      <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2016/zagreb/</guid>
+      <description>Tak jsme 18 - 21 Listopadu 2016 zase byli s Davidem a Klárou v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc. Celý výjezd byl velice podobný minulému ročníku. Víkednová akce začala v pátek ráno v 8 výjezdem z Roztyl autobusem. Jelo pět týmů z FITu, tři týmy z matfyzu a jeden tým středoškoláků a spousta coachů a co-coachů. Po příjezdu jsme se ubytovali v hotelu, zaregistrovali na soutěž a najedli se v místní hospůdce u Medvěda.</description>
+    </item>
+    <item>
+      <title>Petrozavodsk léto 2016</title>
+      <link>https://blazeva1.pages.fit/post/2016/petrozavodsk/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2016/petrozavodsk/</guid>
+      <description>Organizace O prázdninách 2016 jsme 20. září - 5. října díky Tomášově&amp;thinsp;↗ snaze a štědrosti fakulty&amp;thinsp;↗ s Šimonem jeli do ruska na Petrozavodsk Programming Camp&amp;thinsp;↗. Do ruska měl původně jet i Peter, ale ten na poslední chvíli ochořel, a nikdo jiný by si nestihl vybavit víza, takže jsme nakonec jetli jen dva.&#xA;Trénink Celý výlet byl v rozmezí patnícti dnů, kde čtyři dny byly na cestu a turistiku, a dále 11 v Petrozavodsku, ze kterých 9 byl trénink (viz schedule&amp;thinsp;↗).</description>
+    </item>
+    <item>
+      <title>CERC - Zagreb 2015</title>
+      <link>https://blazeva1.pages.fit/post/2015/zagreb/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2015/zagreb/</guid>
+      <description>Tak jsme 13 - 15 Listopadu 2015 byli s Davidem a Klárou v Záhřebu na středoevropském kole programátorské soutěže cerc&amp;thinsp;↗ acm icpc. Společně s dalšími týmy z Fit, Fel i Matfyzu jsme v pátek 8 ráno vyrazili autobusem do chorvatska. Cesta trvala přibližně 11 hodin. Po příjezdu jsme se ubytovali&amp;thinsp;↗ a po chvíli zašli na registraci&amp;thinsp;↗ - kde jsme oznámili naši přítomnost. Pak jsme vyrazili lovit večeři, kterou jsme našli v místní hospůdce.</description>
+    </item>
+  </channel>
+</rss>

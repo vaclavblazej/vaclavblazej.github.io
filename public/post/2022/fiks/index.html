@@ -1,0 +1,514 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Přenášky na soustředění FIKS 2022 - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-04-24T00:00:00Z" class="post-list timeago">24.04.2022</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/talk">talk</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Přenášky na soustředění FIKS 2022</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>24.-30. Dubna 2022 bylo soustředění FIKS ve Štědroníně.
+Následují hrubé osnovy k mým přednáškám.</p>
+<h1 id="neděle">Neděle</h1>
+<h2 id="základy-složitosti">Základy složitosti</h2>
+<p><em>Kdy je problém lehké a kdy těžké řešít? Konkrétní příklady společně se způsobem jak toto matematicky zachytit (O notace).</em></p>
+<ul>
+<li>Vypisování hvězdiček: příklady na O(N), O(N na 2), O(N log N), O(2 na N), O(N!)</li>
+<li>Co je to algoritmus?</li>
+<li>Jak dlouho trva instrukce? &ndash; problemy se zavislosti algoritmu na konkretnim stroji</li>
+<li>Který algoritmus je <em>Rychlejší</em> <code>30*N log N</code> nebo <code>N log^2 N</code></li>
+<li>Notace O(N) formálně &ndash; funkce f a g, f = O(g) pokud existuje konstanta c a n0 takova, ze pro vsechna n &gt;= n0 je f(n) &lt;= c g(n)</li>
+<li>Omega a Theta</li>
+<li>Jak rychlý je jednoduchý algoritmus?
+<ul>
+<li>naivni razeni &ndash; O(N^2)</li>
+<li>vypsat vsechny permutace &ndash; O(N*N!) &ndash; diskuse o velikosti cisel RAM-model</li>
+<li>najit prvek v serazenem poli &ndash; O(N), binarni puleni O(log N)</li>
+<li>naivního hledání v textu &ndash; O(N*M) &ndash; slozitost pomoci vice parametru</li>
+</ul>
+</li>
+</ul>
+<h1 id="pondělí">Pondělí</h1>
+<h2 id="základy-grafů">Základy grafů</h2>
+<p><em>Grafy jsou všude. Ukážeme si kde všude lze grafy najít a na jaké úlohy se dají použít. Že některé věci se na nich dají řešit jednoduše, ale některé další neumí nikdo vyřešit rychle.</em></p>
+<ul>
+<li>Graf, Vrcholy, Hrany, jejich kreslení</li>
+<li>Běžné příklady grafů v praxi</li>
+<li>Problém 4 barev</li>
+<li>Problém 2 barev vs. Listové 2-obarvení</li>
+<li>Jednotažky &ndash; Eulerovské grafy</li>
+</ul>
+<p>Zdroje</p>
+<ul>
+<li><a href="https://courses.fit.cvut.cz/BI-VAK/lectures/lec03.html"target="_blank">3. přednáška BI-VAK<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://doi.org/10.1007/978-3-662-53622-3"target="_blank">DIESTEL, Reinhard. <em>Graph Theory</em>. 5 ed. Berlin, Heidelberg: Springer, 2017. Graduate Texts in Mathematics. ISBN 978-3-662-53621-6.<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://doi.org/10.1017/CBO9780511761942"target="_blank">EASLEY, David a Jon KLEINBERG. <em>Networks, Crowds, and Markets</em>. Cambridge University Press, 2012. ISBN 978-0-521-19533-1.<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://doi.org/10.1007/978-3-030-68299-6"target="_blank">LOTKER, Zvi. <em>Analyzing Narratives in Social Networks</em>. Cham: Springer International Publishing, 2021. ISBN 978-3-030-68298-9.<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h2 id="prohledávání-grafů-bfs-dfs-dijkstra">Prohledávání grafů (BFS, DFS, Dijkstra)</h2>
+<p><em>Hledání nejkratší cesty z bodu A do bodu B uvnitř grafu. V jednoduchých grafech jednoduché. Když započteme další faktory, tak trochu těžší, ale stále to lze vyřešit.</em></p>
+<ul>
+<li>pripomenuti Grafu</li>
+<li>DFS
+<ul>
+<li>Jak najít jestli lze dojet z A do B? implementace</li>
+<li>souvislé komponenty</li>
+<li>intuice DFS a jeho implementace</li>
+<li>strom a les</li>
+<li>casova a pametova slozitost</li>
+</ul>
+</li>
+<li>BFS
+<ul>
+<li>Jak najít nejkratší cestu z A do B? implementace</li>
+<li>casova a pametova slozitost</li>
+</ul>
+</li>
+<li>Dijkstra
+<ul>
+<li>Hledání cesty ve váženém grafu?</li>
+<li>Uprava BFS
+<ul>
+<li>prioritni fronta</li>
+<li>vicenasobne vlozeni stejneho vrcholu do fronty</li>
+</ul>
+</li>
+<li>casova a pametova slozitost</li>
+</ul>
+</li>
+<li>A*
+<ul>
+<li>heuristika s garantovanym vysledkem</li>
+<li>Ukazat DFS, BFS, Dijkstru graficky a porovnat s A*</li>
+</ul>
+</li>
+<li>Jarnikuv algoritmus
+<ul>
+<li>kostra grafu</li>
+<li>trivialni uprava Dijkstrova algoritmu</li>
+</ul>
+</li>
+</ul>
+<h2 id="kombinatoricka-teorie-her">Kombinatoricka teorie her</h2>
+<p><em>Hry dvou hráčů s perfektní informací - piškvorky, nim a další. Jak je vyhrát/neprohrát.</em></p>
+<ul>
+<li>Kombinatoricke hry &ndash; plna informace, deterministicke</li>
+<li>Jak hrat sachy, herni strom, heuristika na odhadnuti sance vyhry, minmax</li>
+<li>zaklady a intuice herní teorie
+<ul>
+<li>hra dominování &ndash; L poklada domina vertikalne, R horizontalne</li>
+<li>Vyherni stavy L, R, N a P, levý a pravý hráč vs první a druhý hráč</li>
+<li>příklady nekolika partií
+<ul>
+<li>elko je N</li>
+<li>icko je L</li>
+<li>lezate I je R</li>
+<li>ctverec je N</li>
+<li>dva ctverce jsou P</li>
+<li>ctverec a elko je N</li>
+<li>vetsi elko je P</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>nestranné vs zaujaté hry</li>
+<li>nestranne hry: standardni triky
+<ul>
+<li>Umistovani Domin &ndash; symetrie</li>
+<li>Chomp &ndash; kradení strategie</li>
+<li>Stridavy had &ndash; parovaci strategie</li>
+<li>Lamani cokolady &ndash; parita</li>
+</ul>
+</li>
+<li>budovani teorie
+<ul>
+<li>prohranou hru znacme 0</li>
+<li>jednotahovou hru pro L necht je 1, a stejna hra pro R at je -1</li>
+<li>z tech budujeme dalsi hry kombinacemi pomoci {|}</li>
+<li>narozeniny jsou krok, ve kterem onu hry vytvorime &ndash; hloubka odpovidajiciho rozhodovaciho stromu</li>
+<li>soucet her
+<ul>
+<li>pricteni prohrane hry nezmeni vysledek; znacime 0 ci {|}</li>
+<li>ohledne ostatnich kombinaci toho nedovedeme moc rict, leda ze L+L=L, R+R=R, L+N=LuN, R+N=RuN</li>
+<li>hluboka teorie kolem</li>
+</ul>
+</li>
+<li>budovani cisel
+<ul>
+<li>mame jiz -1,0,1</li>
+<li>zavedme cisla jako hru kde ma pouze jeden hrac tahy, tj. N={N-1|} a -N={|1-N}</li>
+<li>pokud mame dve cisla &lsquo;vedle&rsquo; sebe, tak jedno vlevo druhe vpravo dava prumer</li>
+<li>libovolny zlomek muzeme aproximovat s libovolnou presnosti</li>
+<li>pro {A|B} ktere nejsou &lsquo;vedle&rsquo; sebe, tak je vysledek cislo mezi nimi s co nejmensimi narozeninami</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jak tato teorie zafunguje pro nestranne hry
+<ul>
+<li>nimbery a mex</li>
+<li>hra nim</li>
+<li>vyhrávající strategie pro nim</li>
+<li>hra nim v misere variante</li>
+</ul>
+</li>
+</ul>
+<h1 id="úterý">Úterý</h1>
+<h2 id="geometrie">Geometrie</h2>
+<p><em>Bod, přímka, kruh, vektorový a skalarní součin, konvexní obálka, řezání polygonů, a když bude čas a vůle, třeba i Beziérovy křivky či 3D geometrie.</em></p>
+<ul>
+<li>Zakladni geometrie a intuice ke standardnim nastrojum
+<ul>
+<li>Základní geometricke obrazce &ndash; bod, úsečka, přímka, polorovina, rovina, polygon, obdélník, rovnoběžník</li>
+<li>Báze, rotace, zvetseni, preklopeni</li>
+<li>Vektory, skalarni a vektorovy soucin</li>
+<li>Reprezentace operací maticí, skladani operaci pronasobenim matice</li>
+<li>Obsah polygonu pomoci vektoroveho soucinu</li>
+<li>rezano polygonu</li>
+<li>zmenseni polygonu</li>
+</ul>
+</li>
+<li>Diskretni geometrie
+<ul>
+<li>navrh hry Dobble</li>
+<li>podminky &ldquo;zajimavosti&rdquo; navrhu</li>
+<li>primky v diskretnim prostoru, podminky netriviality</li>
+<li>Fanova rovina</li>
+<li>obecny navrh pro rady prvocislo^2</li>
+</ul>
+</li>
+<li>Beziérovy křivky
+<ul>
+<li>Predpis pomoci LERP</li>
+<li>rad Bezierovy krivky</li>
+<li>De Casteljuv algoritmus pro hledani bodu krivky</li>
+<li>Bernsteinovy polynomy a jejich vyznam vuci puvodni krivce</li>
+<li>generovani grafiky podel Bezierovy krivky</li>
+<li>kratke predstaveni krivosti krivky</li>
+<li>Bezierovy krivky jako slozeni nekolika polynomu na omezenem rozsahu</li>
+</ul>
+</li>
+</ul>
+<p>Zdroje</p>
+<ul>
+<li><a href="./vak_04.pdf">4. přednáška BI-VAK na FIT ČVUT</a></li>
+<li><a href="https://www.youtube.com/watch?v=VTDKqW_GLkw"target="_blank">PARKER, Matt. <em>How does Dobble (Spot It) work?</em>.<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=aVwxzDHniEw"target="_blank">HOLMÉR Freya. <em>The Beauty of Bézier Curves</em>.<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h2 id="vyhledávací-stromy">Vyhledávací stromy</h2>
+<p><em>Pro práci s mnoha prvky (množina) je potřeba umět je rychle přdat, odebrat, hledat, měnit; toto vše umějí vyvažované vyhledávací stromy, které jsou za strukturami map, či set.</em></p>
+<ul>
+<li>Mnozina v programovacich jazycik, a co bezne umi</li>
+<li>Binární vyhledávací strom (BVS)
+<ul>
+<li>struktura, vlastnosti</li>
+<li>vkládání, slozitost O(H) &ndash; worst case</li>
+<li>další prvek, slozitost O(H)</li>
+<li>odebirani, rozbor pripadu, slozitost O(H)</li>
+<li><a href="bvs.cpp">Implementace BVS</a></li>
+</ul>
+</li>
+<li>AVL
+<ul>
+<li>zpusob jak omezit hloubku stormu, a tak zarucit dobrou slozitost</li>
+<li>hloubkovy invariant</li>
+<li>rotace, dvojita rotace, slozitost</li>
+<li>vlozeni, slozitost</li>
+</ul>
+</li>
+</ul>
+<h2 id="jak-funguje-věda">Jak funguje věda</h2>
+<p><em>Způsob lidského poznání se dere kupředu něčím těžko definovatelným &ndash; a to bych se pokusil přiblížit. Kde se bere nové poznání, a jak víme, že je správně?</em></p>
+<p><a href="../veda">Oddeleno do postu o vede</a></p>
+<h3 id="jak-se-mohou-stredoskolaci-zapojit-do-vedy">Jak se mohou stredoskolaci zapojit do vedy?</h3>
+<ul>
+<li>SOC &ndash; stredoskolska odborna cinnost</li>
+<li>Seminare &ndash; trenink, zkusit vyresit problem a sepsat reseni se podoba vedeckemu procesu</li>
+</ul>
+<h1 id="středa">Středa</h1>
+<h2 id="vyhledávání-v-textu">Vyhledávání v textu</h2>
+<p><em>Základy řetězců a abeced, KMP algoritmus, hashování.</em></p>
+<ul>
+<li>Uloha hledani vzorku uvnitr textu</li>
+<li>Retezce (string) a abecedy, formalne</li>
+<li>Naivni vyhledavani v O(N*M)</li>
+<li>Zpetny pristup, spatny worst case, dobra slozitost v normalnich textech</li>
+<li>rolling hash
+<ul>
+<li>polynom v modulu</li>
+</ul>
+</li>
+<li>KMP
+<ul>
+<li>border array</li>
+</ul>
+</li>
+<li>Vyhledavani s chybami</li>
+<li>Editacni vzdalenost</li>
+</ul>
+<h1 id="čtvrtek">Čtvrtek</h1>
+<h2 id="segmentové-stromy">Segmentové stromy</h2>
+<p><em>Jak rychle odpovídat dotazy na minimum z rozahu na poli (tzv. RMQ). Metody sparse table, fenwick, a nakonec segmentové stromy.</em></p>
+<ul>
+<li>Updaty a dotazy na element či rozsah (interval)</li>
+<li>Sum dotazy bez update a s update, časový rozdíl předpočtu s naivním</li>
+<li>Max dotazy bez udpate naivně, v log n pomocí tree decomp</li>
+</ul>
+<h1 id="pátek">Pátek</h1>
+<h2 id="řešení-těžkých-problémů">Řešení těžkých problémů</h2>
+<p>Kód používaný pro demonstraci na přednášce stáhnete zde: <a href="./fiks_sat.zip">fiks_sat.zip</a>.
+MiniSat lze stáhnout online dle vašeho OS.</p>
+<ul>
+<li>Které problémy umíme řešít rychle, a co &lsquo;rychle&rsquo; znamená?
+<ul>
+<li>Rychlé uvažujeme polynomiální</li>
+<li>Co je to P a NP
+<ul>
+<li>turingův stroj</li>
+<li>pouze pro rozhodovací problémy (odpověď je Ano/Ne)</li>
+<li>řešitelné v polynomiálním čase = P</li>
+<li>nedeterministicky řešitelné v polynomiálním čase = NP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Logika
+<ul>
+<li>Proměnné, Literály, Klauzule, Logické spojky, Formule</li>
+<li>Úprava logické formule</li>
+<li>Úloha SAT &ndash; rozhodovací, jak je těžká?</li>
+<li>Převod do CNF</li>
+</ul>
+</li>
+<li>Řešení SAT
+<ul>
+<li>vyvození trivialit</li>
+<li>jak vyresit 2-SAT</li>
+<li>rozhodovací strom &ndash; full search</li>
+<li>index, sledování dvou proměnných z klauzule &ndash; obrovské ušetření času algoritmu</li>
+<li>CDCL &ndash; chceme se naučit něco z minulosti
+<ul>
+<li>Graf závislostí</li>
+<li>unique implication point</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="neprovedené">Neprovedené</h1>
+<h2 id="union-find-a-minimální-kostry">Union-find a minimální kostry</h2>
+<p><em>Sturuktura Union-find umí rychle spojovat množiny. Její použití si ukážeme na Kruskalově algoritmu pro heldání minimální kostry grafu.</em></p>
+<h2 id="pokročilé-textové-operace">Pokročilé textové operace</h2>
+<p><em>Hledání všech výskytů kusu textu, či nejdelší společný řetězec - metody Suffix array s LCP</em></p>
+<ul>
+<li>co vsechno bychom chteli &ndash; longest common substring;</li>
+<li>Uloha vyhledavani, ale tentokrat s predpoctem, poznamka o KMP slozitosti</li>
+<li>Trie
+<ul>
+<li>Zaznam o mnoha slovech ve kterem, ve kterem lze dobre vyhledavat</li>
+</ul>
+</li>
+<li>Suffix array
+<ul>
+<li>Index vsech moznych vyskytu, funguje, ale je moc veliky</li>
+<li>Ukladat pouze index zacatku, je linearni, ale jak spocitat</li>
+<li>lexikograficke porovnani s delkami</li>
+<li>binary lifting</li>
+<li>longest common substring</li>
+</ul>
+</li>
+<li>FFT</li>
+<li>naznaceni Aho-Corasick</li>
+</ul>
+<h2 id="artikulace-mosty-a-silně-souvislé-komponenty">Artikulace, mosty, a silně souvislé komponenty</h2>
+<p><em>Graf obsahuje strukturálně &lsquo;slabé&rsquo; části, které po smazání graf rozseknou na více &lsquo;kusů&rsquo;. K jejich hledání a k dalším účelům se dá chytře využít DFS.</em></p>
+<h2 id="vývoj-videoher">Vývoj videoher</h2>
+<p><em>Vytvořit hru není jednoduché. Ukážeme si co je potřeba a jaké nástroje se dají použít.</em></p>
+<h2 id="práce-s-vim-a-terminálem">Práce s Vim a terminálem</h2>
+<p>Shell, Bash, Zsh</p>
+<h2 id="zákady-latex">Zákady LaTeX</h2>
+<p><em>Alternativa k MS Word. Systém maker, který umožňuje autorům textů sázet a tisknout svá díla ve velmi vysoké typografické kvalitě. (jak říká wikipedia)</em></p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Tools for writing a paper - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Tools for writing a paper</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Compiling a body of scientific work into a comprehensible document is one part of scientist&rsquo;s work that just needs to be done.
+What follows is a compilation of tools used by researchers to achieve this goal.</p>
+<p>This post focuses on methods used in Theoretical Computer Science where <a href="https://www.latex-project.org/"target="_blank">LaTeX<span style="white-space: nowrap;">&thinsp;↗</span></a> is the standard way to write a paper.</p>
+<h2 id="writing">Writing</h2>
+<p>Mainly, we need to consider how to get the text from our brain to the computer.
+However, it is important to make sure we do not lose our work due to technical or human errors.
+Also, it is essential that the process allows for an effective coauthor collaboration.</p>
+<h3 id="version-control--collaboration">Version control &amp; Collaboration</h3>
+<p>This facet is dominated by two approaches.
+An easy-to-use online editing tool Overleaf and a dedicated system for version control used by programmers Git.</p>
+<p><a href="https://www.overleaf.com/"target="_blank">Overleaf<span style="white-space: nowrap;">&thinsp;↗</span></a> is a popular online editing tool.
+It handles both version control and collaboration well.</p>
+<ul>
+<li><em>Allows authors to edit the text all at once</em> - This is very useful when working intensly but comes with a caveat that the project may not compile correctly due to coauthor being mid-edit. As we can see coauthors editing in real-time, there is no problem editing the same part of the text.</li>
+<li><em>Saves progress online</em> - Advanced work with history is hidden behind paywall. We can edit only when we are online. (To overcome this, download the sources before you go offline and upload it once you get back online but beware of overwriting progress your co-authors made in the meantime.)</li>
+<li>Note that paid Overleaf has <a href="https://www.overleaf.com/learn/how-to/Git_integration"target="_blank">Git integration<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+</ul>
+<p><a href="https://git-scm.com/"target="_blank">Git<span style="white-space: nowrap;">&thinsp;↗</span></a> is a version control tool usually used by programmers.
+Note that a project in Git (folder and also its online mirror) is called <em>repository</em>.</p>
+<ul>
+<li><em>Entry barrier</em> - Even basic usage requires the user to learn how to use the tool.</li>
+<li><em>User saves progress</em> - As synchronization happens only when user says so, it is possible to work online. Users need to know how to resolve conflicts (edits of two authors in the same place).</li>
+<li><em>Fail safe</em> - Even if the server fails each author have his own copy. It is not difficult to redirect a repository to a different server.</li>
+<li><em>Free</em> - Using and hosting this service is free (e.g. repository servers <a href="https://github.com/"target="_blank">GitHub<span style="white-space: nowrap;">&thinsp;↗</span></a>, <a href="https://gitlab.com"target="_blank">GitLab<span style="white-space: nowrap;">&thinsp;↗</span></a>, or <a href="https://bitbucket.org"target="_blank">Bitbucket<span style="white-space: nowrap;">&thinsp;↗</span></a>) and universities usually host their own repository servers.</li>
+<li><em>Advanced features</em> - This tool comes with many advanced features for free but because it was not built with paper authors in mind it requires advanced technical knowledge to use them.</li>
+</ul>
+<p>We do not mention approaches to version control that require passing an &ldquo;editing token&rdquo; via direct communication of authors.</p>
+<h3 id="input-method">Input method</h3>
+<p>Again, one of the major tools for editing text is the default Overleaf editor.
+Other tools use Git together with local editing software.</p>
+<p><a href="https://www.overleaf.com/"target="_blank">Overleaf<span style="white-space: nowrap;">&thinsp;↗</span></a> provides a basic editor with several nice features.
+The following assumes we use the default on-website editing.</p>
+<ul>
+<li><em>Zero setup</em> - User does not need to install anything.</li>
+<li><em>Familiar &amp; Accessible</em> - For many users this editing tool suffices.</li>
+<li><em>Completion</em> - Hints on possible command completions.</li>
+<li><em>Forward and Inverse search in PDF</em> - Having the two views (text and PDF) clicking on the middle arrows jumps one windows to the pace where the other window is.</li>
+<li><em>Paper templates</em> - One may create a project by using on of the prepared templates.</li>
+<li><em>Weak spell check</em> - The in-window spell checking underlines wrong words by red. This can be significantly improved by using <a href="https://grammarly.com/"target="_blank">Grammarly<span style="white-space: nowrap;">&thinsp;↗</span></a> web browser extension.</li>
+<li><em>Editing PDF figures</em> - If the figures are created in a different software than due to being online we need to download the picture, edit it, and upload it again.</li>
+<li><em>Clunky folder management</em> - It is quite tedious to set up the folder structure as you want and then upload files to the correct folders.</li>
+</ul>
+<p>From now on we assume use of <a href="https://git-scm.com/"target="_blank">Git<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+Local software means we install it on our computer and the files locally (within the Git repository).
+Let us go in order from the most accessible ones.</p>
+<p><a href="https://www.texstudio.org/"target="_blank">TeXstudio<span style="white-space: nowrap;">&thinsp;↗</span></a> basic editor prepared for latex.</p>
+<ul>
+<li><em>Made for LaTeX</em> - Very reminiscent of Overleaf, but local. All the usual features such as completion, PDF compilation, and highlighting.</li>
+</ul>
+<p><a href="https://code.visualstudio.com/"target="_blank">VS Code<span style="white-space: nowrap;">&thinsp;↗</span></a> is one of the most favourite developer text editors.</p>
+<ul>
+<li><em>Well established</em> - Has one of the biggest userbases among the mentioned programs.</li>
+<li><em>Needs plugin</em> - Install <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"target="_blank">LaTeX plugin<span style="white-space: nowrap;">&thinsp;↗</span></a> to have the usual LaTeX support.</li>
+</ul>
+<p>In truth, the biggest difference between Emacs and Vim is the input method.
+Some may argue one is better than other but the customizability, community support, and plugin availability is good for both.</p>
+<p><a href="https://www.gnu.org/software/emacs/"target="_blank">Emacs<span style="white-space: nowrap;">&thinsp;↗</span></a> a highly configurable editor.</p>
+<ul>
+<li><em>Highly extensible and configurable</em> - Though VS Code may be getting closer Emacs with is long history is one of the most configurable text editors. It may demand at least some technical knowledge to setup some of the plugins but ultimately if you are able to invest some time Emacs may be the editor you can mold into any shape you want.</li>
+<li><em>Needs plugin</em> - Install <a href="https://www.gnu.org/software/auctex/"target="_blank">LaTeX plugin<span style="white-space: nowrap;">&thinsp;↗</span></a> to have the usual LaTeX support.</li>
+</ul>
+<p><a href="https://neovim.io/"target="_blank">Neovim<span style="white-space: nowrap;">&thinsp;↗</span></a> (or <a href="https://www.vim.org/"target="_blank">Vim<span style="white-space: nowrap;">&thinsp;↗</span></a>) an scent of a different world.</p>
+<ul>
+<li><em>Steep learning curve</em> - Even writing in Vim is not easy as writing is just one of the modes it contains, and does not start in. User needs to learn how to switch modes first to start writing.</li>
+<li><em>Different focus</em> - Dedicated modes allow user to focus on the task at hand and makes it easy to perform slightly more complex edits.</li>
+<li><em>Needs plugin</em> - Install <a href="https://github.com/lervag/vimtex"target="_blank">LaTeX plugin<span style="white-space: nowrap;">&thinsp;↗</span></a> to have the usual LaTeX support.</li>
+</ul>
+<h2 id="images--figures">Images &amp; figures</h2>
+<p>Whenever possible we aim to use <a href="https://en.wikipedia.org/wiki/Vector_graphics"target="_blank">vector graphics<span style="white-space: nowrap;">&thinsp;↗</span></a> instead of <a href="https://en.wikipedia.org/wiki/Raster_graphics"target="_blank">raster graphics<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+We observe two main groups of tools for creating figures.
+Editors based on graphical interface and the other based on code.
+Let us mention only free software.</p>
+<h3 id="graphical-interface">Graphical interface</h3>
+<p><a href="https://ipe.otfried.org/"target="_blank">Ipe<span style="white-space: nowrap;">&thinsp;↗</span></a> extensible drawing editor.</p>
+<ul>
+<li><em>simple</em> - Easy to install, open, and get started with drawing.</li>
+<li><em>edit PDFs</em> - Result can be edited directly as PDF which can be imported to the paper. Note that this PDF contains custom comments that hint Ipe on meaning so this PDF should not be edited via other software as it will be impossible to open it in Ipe later.</li>
+<li><em>LaTeX support</em> - Texts are translated using LaTeX so it is easy to create mathematical equations etc.</li>
+<li><em>deep</em> - There are many options that are hidden or quite hard to set, which makes the editor quite powerful when we learn these advanced parts.</li>
+</ul>
+<p><a href="https://www.drawio.com/"target="_blank">draw.io<span style="white-space: nowrap;">&thinsp;↗</span></a> diagram online editor.</p>
+<ul>
+<li><em>online editor</em> - No need to install. Works only online.</li>
+<li><em>made for diagrams</em> - It is very easy to create flow-charts, org charts, network layouts, UML diagrams, etc. This means it is quite hard to create nice combinatorial graphs.</li>
+<li><em>LaTeX support</em> - Enable &ldquo;Mathematical Typesetting&rdquo; in extras and enclose math in double dollar sign.</li>
+</ul>
+<p><a href="https://www.geogebra.org/download"target="_blank">GeoGebra<span style="white-space: nowrap;">&thinsp;↗</span></a> downloadable and online apps.</p>
+<ul>
+<li><em>interactive</em> - Can be used to create diagrams that can be changed (e.g. via sliders) by the user.</li>
+<li><em>export to code</em> - App has TikZ export.</li>
+</ul>
+<p><a href="https://inkscape.org/"target="_blank">Inkscape<span style="white-space: nowrap;">&thinsp;↗</span></a> general vector editor.</p>
+<ul>
+<li><em>general</em> - Can open, edit, and save many vector graphic formats.</li>
+<li><em>low level</em> - Compared to other editors Inkscape can (only) edit the low-level objects of vectors like individual points, lines, curves, individual fill colors. It may be quite difficult to create a scientific graphic in it, but it is very useful when creating custom graphics &ndash; it is used e.g. by <a href="https://tcs.rwth-aachen.de/~reidl/"target="_blank">Felix Reidl<span style="white-space: nowrap;">&thinsp;↗</span></a> for &ldquo;fancy pictures&rdquo;.</li>
+</ul>
+<h3 id="coded-pictures">Coded pictures</h3>
+<p><a href="https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ"target="_blank">TikZ<span style="white-space: nowrap;">&thinsp;↗</span></a> latex package.</p>
+<ul>
+<li><em>LaTeX Native</em> - Due to TikZ being a LaTeX package, it connects directly to the paper&rsquo;s compilation. Hence, all the fonts have correct style and size. Also, we can create references to e.g. theorems form within the figure.</li>
+<li><em>Steep learning curve</em> - Although it is quite easy to copy some code form the internet TikZ system remains quite hard to learn. When user does not stpe over the initial obstacles he finds himself googling every small detail without understanding how TikZ works. (<a href="https://blazeva1.pages.fit/material/science/tikz/">my tutorial &amp; quick reference</a>)</li>
+</ul>
+<p><a href="https://matplotlib.org/"target="_blank">Matplotlib<span style="white-space: nowrap;">&thinsp;↗</span></a> python library.</p>
+<ul>
+<li><em>plotting</em> - Focused on taking data and plotting it in graphs, diagrams, etc.</li>
+</ul>
+<p><a href="https://networkx.org/"target="_blank">NetworkX<span style="white-space: nowrap;">&thinsp;↗</span></a> python library.</p>
+<ul>
+<li><em>plotting</em> - Focused on taking data and plotting it in graphs, diagrams, etc.</li>
+</ul>
+<h3 id="auxiliary-approaches">Auxiliary approaches</h3>
+<ul>
+<li><a href="https://chat.openai.com/"target="_blank">ChatGPT<span style="white-space: nowrap;">&thinsp;↗</span></a> to kick-start code in TikZ that is then edited by hand.</li>
+</ul>
+<p>Other approaches that I did not review yet.</p>
+<ul>
+<li><a href="https://www.mathcha.io/"target="_blank">Mathcha<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://tug.org/metapost.html"target="_blank">Metapost<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h2 id="presentations">Presentations</h2>
+<p><a href="https://en.wikipedia.org/wiki/Beamer_%28LaTeX%29"target="_blank">Beamer<span style="white-space: nowrap;">&thinsp;↗</span></a> LaTeX package.</p>
+<ul>
+<li><em>LaTeX Native</em> - By being a LaTeX package we can simply take parts of our paper and transform them easily into a presentation.</li>
+<li><em>Themes</em> - There are quite a few existing styles to choose from. Default theme and plain one are quite popular.</li>
+</ul>
+<p>System&rsquo;s presentation suite, for example <a href="https://www.libreoffice.org/download/download-libreoffice/"target="_blank">Libreoffice<span style="white-space: nowrap;">&thinsp;↗</span></a> on Linux, <a href="https://www.microsoft.com/microsoft-365/powerpoint"target="_blank">PowerPoint<span style="white-space: nowrap;">&thinsp;↗</span></a> on Windows, <a href="https://www.apple.com/keynote/"target="_blank">Keynote<span style="white-space: nowrap;">&thinsp;↗</span></a> on Mac.</p>
+<ul>
+<li><em>Easy to use</em> - As these tools are tailor-made to be presentation <a href="https://en.wikipedia.org/wiki/WYSIWYG"target="_blank">WISIWIGs<span style="white-space: nowrap;">&thinsp;↗</span></a> they are quite easy to use. They often come with possibility of fancy transitions.</li>
+<li><em>Custom format</em> - These editors use custom formats to save the presentation but can export to PDFs (losing the animation).</li>
+</ul>
+<p><a href="https://ipe.otfried.org/"target="_blank">Ipe<span style="white-space: nowrap;">&thinsp;↗</span></a> extensible drawing editor.</p>
+<ul>
+<li><em>Convenient</em> - As one of the options to create paper figures it is easy to pick up this tool also for creating presentations if you are already familiar with it.</li>
+<li><em>Style</em> - Adding a custom <a href="https://otfried.github.io/ipe/70_presentations.html"target="_blank">stylesheet<span style="white-space: nowrap;">&thinsp;↗</span></a> can change the default layout of Ipe to have the presentation aspect ratio. And some custom things that are present on each slide.</li>
+</ul>
+<p>Hand-made with tablet.</p>
+<ul>
+<li><em>Handwriting</em> - Make sure your handwriting is legible.</li>
+</ul>
+<p>Other fancy tools - some individuals use custom setups or exotic tools to prepare presentations.
+Those can be nice refreshment for the crowd but we do not mention them as they often require significantly more effort or familiarity with the tool than can be expected from a normal speaker.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015-2024 
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

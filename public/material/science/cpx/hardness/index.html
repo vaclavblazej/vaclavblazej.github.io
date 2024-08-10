@@ -1,0 +1,448 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Hardness reductions of decision problems - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-07-08T00:00:00Z" class="post-list timeago">08.07.2022</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Hardness reductions of decision problems</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <h1 id="np-hardness-reductions">NP-hardness reductions</h1>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/NP-hardness"target="_blank">NP-hardness (Wikipedia)<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>NP-completness of 21 classical problems was shown by Karp in paper published 1972 &ndash; <em>Reducibility Among Combinatorial Problems</em>.</li>
+<li>Assumption: $P \ne NP$</li>
+</ul>
+<p>We list many problems one may want to reduce from to show NP-hardness.</p>
+<ul>
+<li>Satisfiability (SAT)
+<ul>
+<li>Problem: Is a formula satisfiable?</li>
+<li>Shown to be NP-complete by the <a href="https://en.wikipedia.org/wiki/Cook%E2%80%93Levin_theorem"target="_blank">Cook–Levin theorem<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+<li>Reduction is from a non-deterministic machine that solves an NP problem in polynomial time.</li>
+</ul>
+</li>
+<li>Satisfiability in conjunctive normal form (CNFSAT)
+<ul>
+<li>By alteration of the Cook–Levin theorem one can get CNF. (mentioned <a href="https://en.wikipedia.org/wiki/Cook%E2%80%93Levin_theorem"target="_blank">here<span style="white-space: nowrap;">&thinsp;↗</span></a> in Consequences section)</li>
+</ul>
+</li>
+<li>Satisfiability in CNF with at most 3 literals per clause (3-SAT or 3-CNFSAT)
+<ul>
+<li>Split every clause of CNF (a or b or c or d) into (a or b or x) and (not x or c or d). Size of the new formula is linear wrt. to the old one. (Karp)</li>
+</ul>
+</li>
+<li>0-1 Integer Programming</li>
+<li>Clique
+<ul>
+<li>Problem: Does a graph contain a clique of size at least k?</li>
+</ul>
+</li>
+<li>Independent Set
+<ul>
+<li>Problem: Does a graph contain an independent set of size at least k?</li>
+<li>Is NP-hard on 3-regular graphs. (noted on page 428 of PA)</li>
+</ul>
+</li>
+<li>Set Packing</li>
+<li>Vertex Cover
+<ul>
+<li>Problem: Is there a set of k vertices such that every edge is incident to at least one of them?</li>
+</ul>
+</li>
+<li>Set Cover
+<ul>
+<li>Problem: For a system F over universe U, is there a subset of F with at most k elements such that their union is U?</li>
+</ul>
+</li>
+<li>Feedback Vertex Set
+<ul>
+<li>Problem: Does graph contain at most k vertices whose removal makes the graph tree?</li>
+</ul>
+</li>
+<li>Feedback Edge Set
+<ul>
+<li>Problem: Does graph contain at most k edges whose removal makes the graph tree?</li>
+</ul>
+</li>
+<li>Directed Hamilton Cycle</li>
+<li>Undirected Hamilton Cycle</li>
+<li>Chromatic Number
+<ul>
+<li>Problem: Does the graph have a proper coloring with k colors?</li>
+</ul>
+</li>
+<li>Clique Cover
+<ul>
+<li>Problem: Is it possible to partition the graph to cliques?</li>
+</ul>
+</li>
+<li>Exact Cover</li>
+<li>Hitting Set</li>
+<li>Steiner Tree</li>
+<li>3-Dimensional Matching</li>
+<li>Knapsack</li>
+<li>Job Sequencing</li>
+<li>Partition</li>
+<li>Max Cut</li>
+</ul>
+<h1 id="w1-hardness-and-w2-hardness-reductions">W[1]-hardness and W[2]-hardness reductions</h1>
+<p>The book <em>Parameterized Algorithms</em> (PA) lists several W[1]- and W[2]-hard and complete problems.
+Several novel problems are also included in the list.</p>
+<h2 id="w1-hard-problems">W[1]-hard problems</h2>
+<p>Assumption: $W[1] \ne FPT$</p>
+<ul>
+<li>Clique
+<ul>
+<li>Problem: Does a graph contain a clique of size at least k?</li>
+<li>Parameter: size of the clique k</li>
+</ul>
+</li>
+<li>Clique on regular graphs
+<ul>
+<li>Problem: Does a regular graph contain a clique of size at least k?</li>
+<li>Parameter: size of the clique k</li>
+<li>Reduction from Clique: Let d be max degree of G. Take d copies of G. Create d-N(v) new vertices for each v in V(G) and connecet them to every copy of v in the copies of the graph. (Theorem 13.4, PA)</li>
+</ul>
+</li>
+<li>Multicolored Clique (on r-regular graphs)
+<ul>
+<li>Problem: Does a k-vertex colored graph contain a rainbow clique of size k?</li>
+<li>Parameter: size of the clique k</li>
+<li>Polynomial-time reduction from Clique on r-Regular Graphs: Create k copies of V(G) where each copy has its own color. Connect two vertices of different colors iff the original vertices were originally adjacent. (Theorem 13.7, PA)</li>
+</ul>
+</li>
+<li>(Multicolored) Independent Set (on r-regular graphs)
+<ul>
+<li>Problem: Does a graph contain an independent set of size at least k?</li>
+<li>Parameter: size of the independent sum k</li>
+<li>Polynomial-time reduction from Clique: Independent set on G is a clique on the complement of G. Parameter does not change. (page 425, PA)</li>
+<li>reduction from Short Turing Machine Acceptance (see page 441, PA)</li>
+<li>Regular variant
+<ul>
+<li>Is FPT for constant r (noted on page 428, PA)</li>
+<li>Is FPT for combined parameter k+r (noted on page 428, PA)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Partial Vertex Cover
+<ul>
+<li>Problem: For a graph G and integers k and s. Is there a set of k vertices that is incident to at least s distinct edges?</li>
+<li>Parameter: size of the set of vertices k</li>
+<li>Polynomial-time reduction from Independent Set on r-Regular Graphs: The r-regular graph G has independent set of size k iff it has k vertices that cover rk edges. (Theorem 13.6, PA)</li>
+<li>Is FPT for parameter s. (page 428, PA)</li>
+</ul>
+</li>
+<li>Grid Tiling</li>
+<li>Grid Tiling with &lt;=</li>
+<li>Multidimensional Subset Sum
+<ul>
+<li>Problem: We have n of d-dimensional vectors A and one d-dimensional vector c. Is there a subset of A so that its sum equals to c?</li>
+<li>Parameter: the number of dimensions d</li>
+</ul>
+</li>
+<li>Relaxed Multidimensional Subset Sum
+<ul>
+<li>Problem: We have n of d-dimensional vectors A and one d-dimensional vector c. Is there at most d-element subset of A so that its sum equals to c?</li>
+<li>Parameter: the number of dimensions and size of the chosen subset d</li>
+</ul>
+</li>
+<li>Short Turing Machine Acceptance
+<ul>
+<li>Problem: We are given a nondeterministic Turing machine, input string, and an integer k. Does the Turing machine accept the input string in at most k steps? (page 440, PA)</li>
+<li>Parameter: the number of steps k</li>
+<li>reduction from from Independent Set: Use non-determinism to choose a vertex k times and check that there are no edges between the chosen vertices. (page 443, PA)</li>
+</ul>
+</li>
+<li>Balanced Vertex Separator
+<ul>
+<li>Problem: Given a graph G and an integer k, is there a set S of at most k vertices such that every connected component of V(G) / S has at most |V(G)|/2 vertices?</li>
+<li>Parameter: size of the separator k</li>
+<li>reduction from Clique (Theorem 13.29, PA)</li>
+</ul>
+</li>
+<li>List Coloring
+<ul>
+<li>Problem: Given a graph G, colors C, and a list of possible colors for each vertex, decide whether there is a proper graph coloring.</li>
+<li>Parameter: the treewidth of G</li>
+<li>Polynomial-time reduction from Multicolored Independent Set: New colors represent old vertices. Make one vertex per color class. For each edge have a vertex that contains colors respective to incident vertices. List coloring may not both adjacent vertices as there would be no color left for the vertex which represents the edge. (Theorem 13.30, PA)</li>
+</ul>
+</li>
+<li>Odd Set
+<ul>
+<li>Problem: For a system F over a universe U and an integer k, is there a subset S of U of size at most k such that the intersection of S and every element of F has odd size.</li>
+<li>Parameter: size of the subset k</li>
+<li>Polynomial-time reduction from Multicolored Clique (Theorem 13.31, PA)</li>
+</ul>
+</li>
+<li>Exact Odd Set (page 456, PA)</li>
+<li>Exact Even Set (page 456, PA)</li>
+<li>Unique Hitting Set (page 456, PA)</li>
+<li>Exact Unique Hitting Set (page 456, PA)</li>
+<li>Strongly Connected Steiner Subgraph (page 457, PA)
+<ul>
+<li>Polynomial-time reduction from Multicolored CLique: Represent vertices and edges. Apex vertex for vertices connected with bi-directed edges. Also apex vertex for every pair of colors over edges. Steiner set are the apex vertices. Connect adjacent vertices via a directed path through the incident edge. To be strongly connected the set must contain one of each color vertex and pair-colroed edges; plus, there they must be all connected via the short paths. (Theorem 13.33, PA)</li>
+</ul>
+</li>
+</ul>
+<h2 id="w2-hard-problems">W[2]-hard problems</h2>
+<ul>
+<li>Dominating Set
+<ul>
+<li>Problem: For a graph G and an integer k. Is there a set of vertices of size at most k such that the union of their closed neighborhoods is V(G)?</li>
+<li>Parameter: k</li>
+<li>Polynomial-time reduction from Multicolored Independent Set (showing only W[1]-hardness): Copy the vertices. Connect color classes by clique and connect them to 2 auxiliary vertices to ensure DS chooses each color exactly once. For every edge in G create a vertex that is connected to all vertices of respective colors with exception of the edge&rsquo;s endpoints, ensuring that both cannot be chosen. (Theorem 13.9, PA)</li>
+</ul>
+</li>
+<li>Dominating Set on Directed Graphs
+<ul>
+<li>Problem: For an oriented graph G and an integer k. Is there a set of vertices of size at most k such that the union of their closed out-neighborhoods is V(G)?</li>
+<li>Parameter: k</li>
+<li>Polynomial-time reduction from Dominating Set: Replace each edge with two directed edges in both directions. (noted on page 431, PA)</li>
+</ul>
+</li>
+<li>Dominating Set with Pattern
+<ul>
+<li>Problem: For a graph G, set of its vertices A, and an integer k. Is there a subset of A of size at most k such that the union of its closed neighborhoods is V(G)?</li>
+<li>reduction, (page 445, PA)</li>
+</ul>
+</li>
+<li>Set Cover
+<ul>
+<li>Problem: For a system F over a universe U, is there a subset of F with at most k elements such that their union is U?</li>
+<li>Parameter: number of sets in the solution k</li>
+<li>Polynomial-time reduction from Dominating Set: Create sets for closed neighborhoods. (Theorem 13.10, PA)</li>
+<li>Polynomial-time reduction from Dominating Set for Directed Graphs: Create sets for closed out-neighborhoods. (noted on page 431, PA)</li>
+</ul>
+</li>
+<li>Dominating Set on Tournaments (see Dominating Set on Directed Graphs)
+<ul>
+<li>reduction from Set Cover: non-trivial (Theorem 13.14, PA)</li>
+</ul>
+</li>
+<li>Connected Dominating Set
+<ul>
+<li>Problem: Is there a Dominating Set of size at most k that is connetced?</li>
+<li>Polynomial-time reduction from Dominating Set: Create a sibling for every vertex that is connected to its original. Then connect all siblings with a clique. Solution can always be moved into the siblings but covers only neighborhoods in the original graph. Solution in the sibling clique is connected. (Theorem 13.15, PA)</li>
+</ul>
+</li>
+</ul>
+<h2 id="wt-hard-problems">W[t]-hard problems</h2>
+<p>First several ropes.</p>
+<ul>
+<li>Boolean circuit is directed acyclic graph; there are inputs, one output, negations, ANDs, and ORs. It is evaluated as one would expect.</li>
+<li>Weft is the maximum number of vertices with non-constant in-degree on path from inputs to outputs in a boolean circuit.</li>
+<li>Weighted Circuit Satisfiability (WCS)
+<ul>
+<li>Problem: For a given boolean circuit and an integer k, is there an input assignment with exactly k inputs set to True such that the output is True?</li>
+</ul>
+</li>
+</ul>
+<p>The following problem defines the W[k] classes.</p>
+<ul>
+<li>Weighted Circuit Satisfiability (WCS) of weft t
+<ul>
+<li>Problem: For a given boolean circuit of weft t and an integer k, is there an input assignment with exactly k inputs set to True such that the output is True?</li>
+</ul>
+</li>
+</ul>
+<p>Problem P is in W[t] if there is a parameterized reduction from P to WCS on boolean circuits of weft t and fixed depth d.
+Problem P is in W[t]-hard if there is a parameterized reduction from WCS on boolean circuits of weft t and fixed depth d to P.</p>
+<ul>
+<li>Reduction from Independent Set to WCS: First negate vertices, join edges with OR, join all ORs with AND. One cannot choose two inputs that have an edge. Has weft 1, hence Independent Set is in W[1] (page 437, PA)</li>
+<li>Reduction from WCS to Independent Set (showing W[1]-hardness): non-trivial (noted on page 437, PA)</li>
+</ul>
+<p>The following are W[t]-complete (page 438, PA)</p>
+<p>For even t &gt;= 2</p>
+<ul>
+<li>Weighted t-normaliezd Satisfiability</li>
+<li>Weighted Monotone t-normaliezd Satisfiability</li>
+<li>Weighted Monotone (t+1)-normaliezd Satisfiability</li>
+</ul>
+<p>For odd t &gt;= 3</p>
+<ul>
+<li>Weighted t-normaliezd Satisfiability</li>
+<li>Weighted Antimonotone t-normaliezd Satisfiability</li>
+<li>Weighted Antimonotone (t+1)-normaliezd Satisfiability</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

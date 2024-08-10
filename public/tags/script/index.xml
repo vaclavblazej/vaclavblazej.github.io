@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Script on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/script/</link>
+    <description>Recent content in Script on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Mon, 23 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash cheetsheet</title>
+      <link>https://blazeva1.pages.fit/post/2015/bash_cheetsheet/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2015/bash_cheetsheet/</guid>
+      <description>What to use Use may want to use shellcheck program to check beginner mistakes.&#xA;The script should start with a shebang line #!/usr/bin/env bash&#xA;To make the script runnable use chmod u+x ./script.sh&#xA;system_name=$(uname) script_path=$(realpath $0) if [ $# -eq 0 ]; then echo &amp;#34;usage: ...&amp;#34;; fi #compare numbers using -eq -ne -lt -le -gt -ge #compare strings using = != &amp;lt; &amp;lt;= &amp;gt; &amp;gt;= while [ $# -ne 0 ]; do shift; done #remove the first argument with shift array=( &amp;#39;a&amp;#39; &amp;#39;b&amp;#39; &amp;#39;c d&amp;#39; ) echo &amp;#34;Array of ${#array[@]} contains: ${array[*]}&amp;#34; for element in &amp;#34;${array[@]}&amp;#34;; do echo &amp;#34;Value: $element&amp;#34; if [ &amp;#34;$element&amp;#34; = &amp;#34;c d&amp;#34; ]; then break; elif [ &amp;#34;$element&amp;#34; = &amp;#34;a&amp;#34; ]; then continue; echo &amp;#34;Only the element &amp;#39;b&amp;#39; is printed here&amp;#34; done unset array if [ -f &amp;#34;file.</description>
+    </item>
+  </channel>
+</rss>

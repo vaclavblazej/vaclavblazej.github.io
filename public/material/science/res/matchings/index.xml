@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matchings on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/material/science/res/matchings/</link>
+    <description>Recent content in Matchings on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/material/science/res/matchings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Egalitarian matchings</title>
+      <link>https://blazeva1.pages.fit/material/science/res/matchings/egalitarian/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/res/matchings/egalitarian/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Ubuntu system installation - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2019-06-20T00:00:00Z" class="post-list timeago">20.06.2019</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/system">system</a> <a href="https://blazeva1.pages.fit/tags/setup">setup</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Ubuntu system installation</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <h2 id="image-download">Image download</h2>
+<p>Download the system on the <a href="https://ubuntu.com/download/desktop"target="_blank">Ubuntu official page<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h2 id="usb-preparation">USB preparation</h2>
+<p>First, insert the USB and find what is the device&rsquo;s name.
+Find whether the USB is sdb/sdc/etc.</p>
+<pre tabindex="0"><code>sudo fdisk -l
+</code></pre><p>One of these is your hard disc &ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!</p>
+<p>Fdisk will show if the usb is bootable, we can check afte rinstalation.</p>
+<p>Se can either copy the image to the drive.
+Add sudo when you are SURE the sdX is the USB&rsquo;s descriptor.
+Not sure why, but this doesn&rsquo;t seem to set the bootable flag.</p>
+<pre tabindex="0"><code>dd if=/path/to/image.iso of=/dev/sdX bs=4M status=progress &amp;&amp; sync
+</code></pre><p>Or use <code>sudo usb-creator-gtk</code>, which is seemingly safer as it shows only USB in the selection.</p>
+<h2 id="system-installation">System installation</h2>
+<p>When copied, the USB can be inserted into the PC and run &ndash; choose to boot form that USB at boot menu.
+The Ubuntu then allows an installation, where one can setup whether to erase disc or to install it alongside other system.</p>
+<p>When the system runs check the <a href="https://wiki.archlinux.org/"target="_blank">Archwiki<span style="white-space: nowrap;">&thinsp;↗</span></a> for any notes on your computer / notebook fixes.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://fossbytes.com/create-bootable-usb-media-from-iso-ubuntu/"target="_blank">https://fossbytes.com/create-bootable-usb-media-from-iso-ubuntu/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://wiki.archlinux.org/"target="_blank">https://wiki.archlinux.org/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2019
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

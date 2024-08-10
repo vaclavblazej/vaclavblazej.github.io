@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Automation - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-02-09T00:00:00Z" class="post-list timeago">09.02.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/programming">programming</a> <a href="https://blazeva1.pages.fit/tags/rant">rant</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Automation</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>A big part of programmer&rsquo;s job is to automate processes.
+Some people find this activity very satisfying and enjoy programming because of it.
+The same feeling, but arguably stronger, can be achieved in games such as <a href="https://www.factorio.com/"target="_blank">Factorio<span style="white-space: nowrap;">&thinsp;↗</span></a> or <a href="https://store.steampowered.com/app/1812820/Bitburner/"target="_blank">Bitburner<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<p>The goal of automating something is to make a repetitive task easier or (ideally) entirely automatic.
+We shall consider only tasks that can be done on a computer.
+We categorize tasks into several levels of abstraction.</p>
+<p><em>How many levels of abstraction can be solved with automation?</em></p>
+<ul>
+<li><strong>first level</strong> &ndash;
+The usual task one does; this can be really any simple think such as sending many personalized e-mails, downloading songs from youtube videos, scheduling a weekly meeting with 10 people, keeping your list of watched movies up-to-date, writing a meeting summarization, finding a good restaurant in your area, creating and updating your daily todo list, pulling up weather forecast, checking e-mail for an anticipated decision letter, searching for a specific programming construction, translating text from one language to another, or finding what grocery products are currently discounted.</li>
+<li><strong>second level</strong> &ndash;
+Here, instead of solving each task separately we consider what features they have in common.
+All of them can be performed repeatedly (by definition).
+Some are ideally performed in a quick succession and some happen quite rarely.
+All of them work with data that is either created by the user or freely accessible through the internet.</li>
+<li><strong>third level</strong> &ndash;
+Think of how a solution for the second level problem would look like.
+It would be something like a <em>tool</em> that allows its user to create and manage repetitive tasks.
+However, by creating one tool one always adds complexity to the system, as per the well known <a href="https://xkcd.com/927/"target="_blank">xkcd comic<span style="white-space: nowrap;">&thinsp;↗</span></a> which applies to our situation as well.</li>
+</ul>
+<h2 id="solutions">Solutions</h2>
+<p>With more or less effort a capable programmer should be able to automate any of the first level tasks.</p>
+<p>Automation of second level tasks comes down to taking data, editing it, and presenting the result in a reasonable form.
+Constructing a system for solving a second level entirely is too general in practice, so we can currently find only domain-specific applications.</p>
+<p>For the third level &ndash; the tool for modelling automation tools cannot be really specified entirely as we do not know what future automation tools will bring.
+So a <em>meta</em> approach is required, a tool that can basically model anything.
+It can model itself so no further levels are needed.
+On one hand, third level solution is too hard as we have no idea what will be modeled so it is impossible to encompass everything.
+On the other hand, creating such a meta tool does not need to be encumbered with modelling the specific situation as it only needs to tell its users how to create these models.
+Creating this should be easier, or am I missing something?</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

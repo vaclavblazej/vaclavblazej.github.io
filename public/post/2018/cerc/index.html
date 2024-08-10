@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            CERC - Prague 2018 - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="wide-image">
+        <div style="background-image: url('https://blazeva1.pages.fit//images/wide/cerc-2018-judges.jpg');">
+        </div>
+    </div>
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-12-04T00:00:00Z" class="post-list timeago">04.12.2018</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/programming">programming</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>CERC - Prague 2018</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Po třech letech kdy se CERC konal v Záhřebu se místo konání přesunulo, a protentokrát skončilo v Praze.
+Před pár měsíci jsem byl požádán, jestli bych pomohl s přípravou úloh, tak jsme se společně s Morassem, Pavlem, Martinem, Romanem, Pepou a Pepou pustili do úkonu.
+Úlohy jsme s Morassem připravovali dost dopředu, ovšem zbytek teamu se zapojil tak nějak až ve čtvrtek (3 dny před contestem).
+Hodně odladili zadání, ovšem bylo potřeba doladit i kódy ke třem úlohám.</p>
+<p>Já jsem si vzal na starost Game of Stones (NIM), Reservoir Dog (Fyzika, Cases), Mirrority Report (Geometrie).
+Trochu jsem se bál, že je nezvládnu (hlavně report a psa) oddebugovat a pořádně otestovat, ale s pomocí ostatních jsme to nakonec nějak dali dohromady.</p>
+<h2 id="problem-rant">Problem rant</h2>
+<p>Nedá se říct, že průběh soutěže by byl úplně hladký.
+Už v testovacím kole se počítače hrozně zasekávali a někdy i pouhá kompilace trvala minuty.
+Team, který se staral o systém, se snažil tenhle problém odpoledna a přes noc odladit.
+Zdálo se, že komunikace na síti je přetížená, kvůli tomu, že lehkých klientů na jednou pracuje moc, a používané programy hodně cachují.
+Reálný problém ale nebyl úplně jasný, takže potom i při ostrém kontestu nastal znovu, a bylo tak potřeba použití stroje během contestu asi na hodinu a půl zakázat, během čehož se systémáci zabývali, jak problém odstranit.
+Infrastruktua v podstatě zhroucená, protože byl server zahlcený.
+Když už se někomu povedlo něco odeslat, tak vyhodnocení přišlo ryhle, ale vývoj na stanicích nebyl moc přívětivý.
+Kompilace od 10s do 5m, problémy zapnout libovolný program co má větší nároky, apod.; prostě jako bychom se s železem vrátili v čase do roku 1999, ale software byl z roku 2018.</p>
+<p>Nakonec byl kontest o něco prodloužen, aby se alespoň trochu kompenzoval ztracený čas na kódění.
+Ale škoda už byla napáchána: všichni cítili pachuť zkaženého kontestu.
+Soutěžící byli naštvaní, protože nemohli bez přerušení a normálně kódit, a pro mnohé je CERC možnost jak ukázat co umí.
+Organizátoři byli naštvaní, že nemůžou problém okamžitě odstranit, a i přes jejich snahy se problém pořád oběvoval; zároveň jejich snahy vyrušuje kontest samotný, takže svou snahou podmínky ještě zhoršují.</p>
+<p>Jakožto problemsetter nevidím moc do detailů těch problémů, na které systémáci narazili, tak snad jsem to popsal nějak rozumně.
+Zajímavé je, že každoroční contest CTU Open, který se konal před měsícem, běžel na stejné konfiguraci, a proběhl bez problémů.
+Na CERCu bylo soutěžních týmů asi 77 a na CTU tipuji kolem 40-50 (bylo dost off-site teamů, tak si nejsem jistý kolik bylo v Praze).</p>
+<p>Co situaci vůbec nepomohlo bylo, že nikdo ráno nepřišel před teamy, a řekl: udělali jsme tohle a tohle, a snad tento problém už nenastane.
+Během contestu pak nebylo jasné co a jak bude, protože se svět kolem všech hroutil, a hodně lidí zazmatkovalo.
+Také si orgové nechali omuvu až k vyhlášení, přestože by bylo lepší se omluvit ještě před vysvětlením řešení problémů (+ pak ještě později).</p>
+<h3 id="závěrem">Závěrem</h3>
+<p>Doufám, že se příští rok bude konat v Praze, a že všechno proběhne bez problémů, aby nebyla práce, kterou dáváme do úložek, zastíněna ostatními problémy.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

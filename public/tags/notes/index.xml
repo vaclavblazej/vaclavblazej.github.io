@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/notes/</link>
+    <description>Recent content in Notes on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithmic game theory notes</title>
+      <link>https://blazeva1.pages.fit/post/2020/ath/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2020/ath/</guid>
+      <description>Source Martin Balko&amp;rsquo;s Lecture Notes&amp;thinsp;↗ Basic notions &amp;ndash; Normal-form game, player actions, strategy, utility Normal form of a game can be described as a matrix where each cell contains payoffs for each player. Formally we have a triple $(P,A,u)$ where $P$ is a set of $n$ players, $A = A_1 \times \dots \times A_n$ is a set of action profiles, and $u=(u_1,\dots,u_n)$ is a $n$-tuple where $u_i: A \rightarrow \mathbb{R}$ is the utility function.</description>
+    </item>
+  </channel>
+</rss>

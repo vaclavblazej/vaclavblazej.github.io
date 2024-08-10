@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\tikzset{color=green}
+\begin{document}
+
+\begin{tikzpicture}[framed]
+    \node at (0,0) {global};
+\end{tikzpicture}
+\begin{tikzpicture}[framed,color=blue]
+    \node at (0,2) {picture};
+    \begin{scope}[color=orange]
+        \node at (0,1) {scope};
+        \node[color=red] at (0,0) {part};
+    \end{scope}
+\end{tikzpicture}
+
+\end{document}

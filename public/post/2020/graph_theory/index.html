@@ -1,0 +1,1226 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Teorie grafů - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2020-04-01T00:00:00Z" class="post-list timeago">01.04.2020</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Teorie grafů</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Drobnosti v přednáškách AG1:</p>
+<ul>
+<li><a href="https://courses.fit.cvut.cz/BI-AG1/media/lectures/bi-ag1-p3-handout.pdf?page=14"target="_blank">handout přednášky 3, strana 14<span style="white-space: nowrap;">&thinsp;↗</span></a>, nešťastně se v obrázku překrývají značení startu a cíle s čísly BFS průchodu</li>
+<li>handout přednášky 4, <a href="https://courses.fit.cvut.cz/BI-AG1/media/lectures/bi-ag1-p4-handout.pdf?page=7"target="_blank">strany 7<span style="white-space: nowrap;">&thinsp;↗</span></a> a <a href="https://courses.fit.cvut.cz/BI-AG1/media/lectures/bi-ag1-p4-handout.pdf?page=11"target="_blank">11<span style="white-space: nowrap;">&thinsp;↗</span></a>, obrázky úplně zničený</li>
+<li><a href="https://courses.fit.cvut.cz/BI-AG1/media/lectures/bi-ag1-p11-handout.pdf?page=23"target="_blank">handout 11, strana 23<span style="white-space: nowrap;">&thinsp;↗</span></a>; To, že O(m log m)=O(m log n) je sice pravda, ale úplně stejnou úpravou můžu u Jarníka napsat, že je O(m log m). Tato úprava mi přijde předčasná a matoucí. Dává smysl aby se promítla až ve finální verzi složitosti, kde je započítaný i Union-Find.</li>
+<li>Handout, přednáška 12, strana 16, rozbitý obrázek</li>
+<li>Handout, přednáška 12, strana 43, rozbitý obrázek</li>
+<li>GAK překlep &ldquo;reprezentující hrany s oběma <em>kopie</em> koncových vrcholů&rdquo;</li>
+</ul>
+<h2 id="zdroje">Zdroje</h2>
+<ul>
+<li>Přednášky předmětů BI-AG1, BI-AG2</li>
+<li>Materiály k MI-GAK</li>
+<li>Modern Graph Theory - Bollobas</li>
+<li>Graph Theory - Diestel</li>
+<li>Parametrized Algorithms (modrá knížka)</li>
+<li>(Wikipedie)</li>
+</ul>
+<hr>
+<h1 id="teorie-grafů-a-kombinatorika">Teorie grafů a kombinatorika</h1>
+<h2 id="grafové-modely-">Grafové modely ?</h2>
+<p>Kolář: &ldquo;To bývalo jakési motivační téma, které ukazovalo přehršli &ldquo;problémů z praxe&rdquo;, které se daly formulovat jako grafový problém a řešit nějakým grafovým algoritmem.&rdquo;</p>
+<h2 id="výpočetní-modely">Výpočetní modely</h2>
+<p><strong>Výpočetní model RAM</strong> (Random Access Machine) obsahuje</p>
+<ul>
+<li>Paměť: celočíselné paměťové buňky adresované celými čísly,</li>
+<li>Program: konečná posloupnost sekvenčně prováděných instrukcí,</li>
+<li>Instrukce: Aritmeticko-logické mají za argumenty konstanty / adresy / nepřímé adresy; Řídicí jsou skoky, podmíněné skoky, zastavení programu.</li>
+</ul>
+<p>Časová složitost je maximum instrukcí přes možné vstupy.
+Paměťová složitosti je maximum z počtu použitých poměťových buněk přes všechny vstupy.</p>
+<h2 id="neorientované-grafy-sousednost-souvislost">Neorientované grafy, Sousednost, Souvislost</h2>
+<p><strong>Neorientovaný graf</strong> je uspořádaná dvojice $(V,E)$, kde $V$ je neprázdná konečná množina vrcholů, a $E$ je množina hran, tj. neuspořádaných dvojic vrcholů.
+Vrcholy, které jsou spojeny hranou nazveme <strong>sousední</strong>.
+Pokud hrana obsahuje vrchol, pak jsou navzájem incidentní.</p>
+<p>Stupeň vrcholu $deg(v)$ je počet jeho sosuedů.
+Otevřené okolí $N(v)$ je množina sousedů v.
+Uzavřené okolí $N[v] = N(v) + v$.</p>
+<p>Typické grafy: $K_n$ úplný, $K_{n,m}$ úplný bipartitní (k-partitní), $P_n$ cesta, $C_n$ kružnice, $S_n$ hvězda.</p>
+<p>Doplněk grafu je, že prohodíme hrany a nehrany.</p>
+<p>Graf je <strong>souvislý</strong>, pokud existuje cesta mezi každou dvojicí jeho vrcholů.
+Každý v inkluzi maximální souvislý pograf tvoří komponentu souvislosti.</p>
+<p>Další pojmy</p>
+<ul>
+<li>Izolovaný vrchol: Vrchol stupně 0</li>
+<li>Princip sudosti: součet stupňů všech vrcholů je roven 2 krát počtu hran, $\sum_{v\in V}deg(v) = 2|E|$</li>
+<li>Podgraf: Graf H je podgrafem G, když $V(H) \subseteq V(G)$ a $E(H) \subseteq E(G)\cap 2^{V(H)}$</li>
+<li>Indukovaný pograf G[V&rsquo;]: $V&rsquo;=V(H) \subseteq V(G)$, ale $E(H)=E(G) \cap 2^{V(H)}$ (hrany se nevybírají)</li>
+<li>Klika: podmnožina vrcholů, kde jsou všechny po dvojicích sousední</li>
+<li>Nezávislá množina: podmnožina vrcholů, kde po dvojicích žádné nejsou sousední</li>
+</ul>
+<p>Reprezentace grafů</p>
+<ul>
+<li>graf (obrázek, viz <a href="#visualization">vizualiace grafů</a>)</li>
+<li>matice sousednosti: $N \times N$ matice, 1 na místech sousedích vrcholů, 0 všude jinde</li>
+<li>matice incidence: $N \times M$ matice, 1 na místech incidentních vrcholů a hran, 0 všude jinde</li>
+<li>seznam sousedů: u každého vrcholu máme seznam jeho sousedů &ndash; vhodné pro většinu aplikací (nejkratší cesty, kostry, toposort, barvení)</li>
+<li>seznam incidentních hran: u každého vrcholu máme seznam incidentních hran, sousedi mohou ukazovat buď na stejnou instanci, nebo svoji instanci, která je se sestrou nějak propojená &ndash; vhodné pro mnoho pokročilých aplikací (toky, párování)</li>
+</ul>
+<!--![test](./images/rep.svg)-->
+<p><strong>Vážený graf</strong> (nebo hranově ohodnocený) je rozšíření grafu o váhovou funkci $w:E \rightarrow R$, která přiřazuje každé hraně reálné číslo.
+Váha podgrafu G je potom součet vah všech jeho hran.</p>
+<p>Věta o souboru stupňů: (sestupně seřazená) posloupnost $(D_1,D_2,\dots,D_N)$ je soubor stupňů nějakého grafu právě tehdy, když $(D_2-1,D_3-1,\dots,D_{(1+D_1)}-1, D_{(2+D_1)},\dots,D_N)$ je soubor stupňů nějakého grafu.</p>
+<h2 id="izomorfismus">Izomorfismus</h2>
+<p>Grafy G a H jsou izomorfní, právě když existuje bijekce $F : V(G) \rightarrow V(H)$ taková, že
+$$
+{u,v} \in E(G) \Leftrightarrow {F(u),F(v)} \in E(H).
+$$</p>
+<p>Automorfismus je izomorfismus kde $G=H$.</p>
+<p>Izomorfismus grafů je obsažen ve třídě <a href="https://en.wikipedia.org/wiki/Graph_isomorphism_problem#Complexity_class_GI"target="_blank">GI<span style="white-space: nowrap;">&thinsp;↗</span></a> (graph isomorphism).
+Zároveň je ve třídách NP and co-<a href="https://en.wikipedia.org/wiki/Arthur%E2%80%93Merlin_protocol#AM"target="_blank">AM<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<ul>
+<li>V NP je proto, že ano-certifikát je výsledné mapování vrcholů, které lze jednoduše ověřit.</li>
+<li>(ověřit:) V co-AM je proto, že lze protokolem ověřit, že někdo umí tento problém řešit rychle.
+Konkrétněji: pošleme mu grafy A,B,C a má odpovědět, jestli je A isomorfní s B či C.
+To, že umí GI řešit lze ověřit opakovaným ptaním, s přepermutovanými vrcholy, a obmněněným třetím grafem.</li>
+</ul>
+<p>Při implementaci se můžeme omezit na srovnávání pouze těch vrcholů, které sdílejí všechny vlastnosti.</p>
+<ul>
+<li>stupeň</li>
+<li>soubor stupňů sousedů</li>
+<li>souvislá komponenta, 2-souvislá, 3-souvislá komponenta</li>
+</ul>
+<h2 id="orientované-grafy-silná-souvislost">Orientované grafy, Silná souvislost</h2>
+<p><strong>Orientovaný graf</strong> je uspořádaná dvojice $(V,E)$, kde $V$ je neprázdná konečná množina vrcholů, a $E$ je množina orientovaných hran, tj. uspořádaných dvojic vrcholů.</p>
+<p>Typické grafy: orientovaná cesta, orientovaná kružnice, zakořeněný strom</p>
+<p>Stupeň vrcholu $deg(v)$ je počet všech incidentních hran.
+Vstupní stupeň vrcholu $deg^+(v)$ je počet příchozích hran a výstupní stupeň $deg^-(v)$ je počet odchozích hran, a zřejmě $deg^+(v) + deg^-(v) = deg(v)$.</p>
+<p>Definice pro vstupní okolí (předchůdci), výstupní okolí (následníci), a okolí grafu jsou jasné (jsou to podmnožiny sousedství).</p>
+<ul>
+<li>Zdroj: vrchol se vstupním stupněm 0</li>
+<li>Stok: vrchol s výstupním stupněm 0</li>
+<li>Izolovaný vrchol: má stupeň 0</li>
+<li>Podgraf, Indukovaný podgraf a izomorfismus funguje stejně jako u neorientovaných.</li>
+</ul>
+<p>Symetrizace udělá z orientovaného grafu neorientovaný tak, že nahradí orientované hrany za neorientované hrany (a vyhodí případné duplikáty).</p>
+<p>Orientace neorientovaného grafu je když z neorientovaných hran uděláme nějakým definovaným způsobem orientované.</p>
+<p>Orientovaný graf je slabě souvislý, když je souvislá jeho symetrizace.
+Orientovaný graf je <strong>silně souvislý</strong>, když pro každou dvojici vrcholů $u,v$ existuje orientovaná cesta z $u$ do $v$.</p>
+<div class="algorithm">
+<p>Hledání silně souvislých komponent lze udělat pomocí odtrhávání stokových komponent.
+Vzhledem k tomu, že poslední uzavřený vrchol DFS (které pouštíme postupně ze všech nenavštívených vrcholů) je vždy ve zdrojové komponentě, tak můžele toto DFS pustit na grafu s obrácenými hranami a najít tak stokovou komponentu.
+Ve stokové komponentě pustíme DFS abychom našli všechny dostupné vrcholy, což jsou vrcholy oné komponenty.
+Tuto komponentu smažeme (uložíme stranou) a opakujeme.
+Výhodou je, že když máme uloženy pořadí uzavírání vrcholů z prvotního DFS, tak ho nemusíme pouštět stále dokola, ale stačí procházet odzadu a vždy vybrat poslední nesmazaný vrchol.</p>
+</div>
+<p>Kondenzování silně souvislých komponent nám nutně dá DAG.</p>
+<h2 id="prohledávání-grafu-do-hloubky-dfs-a-do-šířky-bfs">Prohledávání grafu do hloubky (DFS) a do šířky (BFS)</h2>
+<p>Algoritmy prohledávání grafu procházejí graf po vrcholech a hranách, aby o grafu něco zjistili.
+Hlavním způsobem odlišení algoritmů je pořadí ve kterém procházejí vrcholy.</p>
+<h3 id="depth-first-search-dfs">Depth-first search (DFS)</h3>
+<div class="algorithm">
+<pre tabindex="0"><code>všechny vrcholy označ jako nenavštívené
+navštiv startovní vrchol
+
+funkce navštiv vrchol u:
+    označ v jako otevřený
+    pro v z N(u):
+        pokud je v nenavštívený:
+            voláme funkci navštiv vrchol v
+    označ v jako uzavřený
+</code></pre></div>
+<p>Chování algoritmu je trochu jiné pro orientované a neorientované grafy.</p>
+<p>Pro neorientované grafy můžeme procházet hrany (do sousedů) v obou směrech.
+Průchod navštíví celou souvislou komponentu.
+Proto se často DFS pouští postupně na všechny vrcholy, které jsou nenavštívené
+Hrany můžeme během průchodu označovat podle situace, ve které jsme je prošli, získáme tak:</p>
+<ul>
+<li>stromové (hlaví průchod, navštívení do teď nenavštívených vrcholů) a</li>
+<li>zpětné (navštívení již projitých vrcholů).</li>
+</ul>
+<p>U orientovaných grafů bereme N(v) pouze ty sousedy, do kterých z u vede orientovaná hrana.
+Průchod navštíví všechny vrcholy, které jsou dosažitelné z u.
+(Navštíví souvislou komponentu u, a všechny souvislé komponenty dostupné z komponenty u.)
+Opět lze klasifikovat hrany:</p>
+<ul>
+<li>stromové (hlavní průchod, navštívení do teď nenavštívených vrcholů),</li>
+<li>zpětné (navštívení otevřených vrcholů),</li>
+<li>dopředné (navštívení již uzavřených vrcholů, které jsme otevřeli po našem) a</li>
+<li>příčné (navštívení již uzavřených vrcholů, které jsme otevřeli před naším).</li>
+</ul>
+<p>Časová složitost je $O(|V|+|E|)$ a používá $O(|V|)$ paměti navíc.</p>
+<h3 id="breadth-first-search-bfs">Breadth-first search (BFS)</h3>
+<div class="algorithm">
+<pre tabindex="0"><code>všechny vrcholy označ jako nenavštívené
+
+vytvoř prázdnou frontu
+přidej do fronty startovací vrchol
+označ startovací vrchol jako otevřený
+
+dokud není fronta prázdná:
+    vyjmi první vrchol u z fronty
+    označ u jako uzavřený
+    pro v z N(u):
+        pokud je v nenavštívený:
+            označ v jako otevřený
+            přidej v do fronty
+</code></pre></div>
+<p>Algoritmus hledá nejkratší cestu z u do všech ostatních vrcholů, co se počtu hran týče.</p>
+<p>Časová složitost je $O(|V|+|E|)$ a používá $O(|V|)$ paměti navíc.</p>
+<h3 id="lexicographic-breadth-first-search-lexbfs">Lexicographic breadth-first search (LexBFS)</h3>
+<p>Obecnému BFS je jedno, v jakém pořadí projde prvky z jedné vlny.
+Pro rozhodování těchto remíz lze použít řadu pravidel &ndash; nejjednodušší je pro sousedy jednoho vrcholu vzít pořadí seznamu sousedů z reprezentace grafu, a potomci z jedné vlny jsou zpracováni v pořadí kdo dřív přijde, ten dřív mele.</p>
+<p>LexBFS rozhoduje remízy tak, že se podívá kdo má za souseda vrchol, který byl v pořadí odebrání dříve, a při opětovné remíze kouká na druhého souseda, atd.</p>
+<h2 id="topologické-uspořádání">Topologické uspořádání</h2>
+<p><strong>Topologické uzpořádání</strong> orientovaného grafu je takové pořadí vrcholů, že pro každou hranu (u,v) platí, že u je v uspořádání před v.
+Zjevně neexistuje, pokud má graf cyklus, proto se bavíme pouze o orientovaných grafech bez cyklů (DAG).</p>
+<p>Lze najít buď odřezáváním zdrojů, nebo obrácením pořadí uzavírání vrcholů v DFS (vrcholy bez odchozí hrany jsou v daném kroce stoky).</p>
+<p>Počítání, kolik má graf topologických uspořadání je #P-complete, takže pro obecný graf se jedná o problém, který neumíme efektivně řešit.
+Pro malé grafy (max tak 20 vrcholů) lze projít všechny možnosti (s prořezáváním), případně zkusit urychlit přes DP na podmnožiny.</p>
+<h2 id="mosty-artikulace-a-2-souvislost">Mosty, artikulace a 2-souvislost</h2>
+<p><strong>Most</strong> je hrana, kterou když odstraníme, tak se zvýší počet souvislých komponent
+Hrana je most právě tehdy, když neleží na žádné kružnici.</p>
+<p>Mosty můžeme najít pomocí DFS tak, že si při průchodu pamatujeme nejnižší ID vrcholu, který jsme viděli.
+Pokud při uzavírání vrcholu nám synové vrátili, že já jsem nejvyšší vrchol, který viděli, tak hrana ode mě nahoru je most.
+Pokud synové vrátili vrchol, který je víš, tak vim, že existuje hrana z mého podstromu do vrcholu nademnou, a proto hrana ode mě nahoru není most.</p>
+<p><strong>Artikulace</strong> je vrchol, který když odstraníme, tak se zvýší počet souvislých komponent</p>
+<p>Graf je (vrcholově) <strong>2-souvislý</strong>, pokud neobsahuje artikulaci.
+(A je hranově 2-souvislý, pokud neobsahuje most.)
+Každý 2-souvislý graf lze vytvořit z kružnice přidáváním uší (napojení koncú nové cesty do dvou různých vrcholů grafu).</p>
+<p>2-souvislá komponenta je v inkluzi maximální 2-souvislý pograf.
+Dekompozice grafu na 2-souvislé komponenty lze udělat v lineárním čáse pomocí DFS.
+Artikulace je vrchol, který je ve více jak jedné 2-souvislé komponentě.
+Most je každá 2-souvislá komponenta obsahující 2 vrcholy.</p>
+<p>Více o k-souvislosti v oddílu o <a href="#flow">tocích</a>.</p>
+<h2 id="hahahugoshortcode116s3hbhb-barevnost"><span><a name="coloring"></a><a href="#coloring">#</a></span>
+ Barevnost</h2>
+<p>$k$-obarvení grafu je funkce $c:V(G) \rightarrow {1,\dots,k}$, tj. obarvení vrcholů $k$ barvami, takové, že ${u,v}\in E(G) \implies c(u) \ne c(v)$.
+Barevnost grafu $\chi(G) = \min k$ pro které existuje $k$-obarvení grafu $G$.</p>
+<p>Najít nejmenší počet barev pro dobré obarveni grafu je NP-úplný problém.</p>
+<p><strong>Věta o čtyřech barvách:</strong> Každý rovinný graf lze obarvit čtyřmi barvami.
+(Nemáme rozumný důkaz, pouze samé šílenosti. :D )</p>
+<p><strong>Věta o pěti barvách:</strong> Každý rovinný graf lze obarvit pěti barvami.
+Lze dokázat hned několika způsoby, jeden z nich předvedeme:</p>
+<div class="proof">
+Proof: 
+V rovonném grafu vždy existuje vrchol stupně nejvýše 5 (plyne z eulerovy rovnice).
+Uvažujme pořadí odebírání vrcholů takové, že vždy vybereme vrchol nejnižšího stupně.
+Pořadí obrátíme, vracíme je do grafu a zároveň je barvíme.
+(pozn. z toho triviálně plyne 6-barvení)
+Jediný problém nastává, když máme 5 různě obarvených sousedů.
+Vybereme dva protější, a koukneme na graf indukovaný jejich barvami.
+Pokud nejsou ve stejné komponentě indukovaného grafu, tak prohodim ty dvě barvy v komponentě jednoho z nich.
+Pokud jsou ve stejné, tak kouknu na jinou protější dvojici, která stejnou vlastnost nemůže splňovat, protože by se tyto komponenty (které mají disjunktní barvy) musely někde protnout.
+ <span style="float: right">&#9632;</span>
+</div>
+<p><strong>Brooksova věta:</strong> pokud souvislý G není lichý cyklus ani klika, tak platí, že barevnost(G) $\le$ největší stupeň(G).</p>
+<div class="proof">
+Proof: 
+Použijeme indukci nad počtem vrcholů.
+Uvažujme max stupeň 2, pak se jedná o sudou kružnici či cestu, kde tvrzení platí.
+Dekomponujme případy podle vrcholové souvislosti Kv(G).
+<ul>
+<li>Pokud Kv(G)=3, G není klika, proto obsahuje indukovanou cestu na 3 vrcholech (třešničku) s vrcholy v pořadí x,z,y.
+V G bez x,y existuje kostra (z 3-souvislosti), uděláme dfs z vrcholu z, pak toposort, abychom získali pořadí takové, kde má každý vrchol jednu hranu &lsquo;doprava&rsquo;.
+Přidáme x a y na začátek.
+First-Fit obarví x a y stejně, pak použije ne víc jak max stupeň barev, protože vždy jeden soused není obarven (ten vpravo), z může taky obarvit, protože barva x a y je stejná.</li>
+<li>Pokud Kv(G)=2, tak existuje {x,y} řez, přidáme hranu {x,y} a vyřešíme komponenty nezávisle, jednu přebarvíme tak, aby se na {x,y} rovanly a šli tak spojit do jedné.
+Přidání hrany nezvýší max stupeň v podkomponentách, protože aby mohly být {x,y} v řezu, tak musí mít alespoň jednu hrany do obou komponent.</li>
+<li>Pokud Kv(G)=1, tak má artikulaci, rozpojíme komponenty dle artikulace, a obarvíme zvlášť, přepermutujeme barvy a spojíme.
+Pokud nějaká komponenta je klika či lichá kružnice, tak pozorujeme, že spojením se zvýší stupeň ale ne obarvení komponenty.
+<span style="float: right">■</span></li>
+</ul>
+</div>
+<p><strong>Hadwigerova doměnka:</strong> Pokud graf nemá $K_t$ jako minor, pak jeho barevnost je ostře menší než $t$.</p>
+<p>Hadwigerova doměnka je dokázaná pro $1 \le t \le 6$.</p>
+<h2 id="hahahugoshortcode116s6hbhb-rovinné-grafy"><span><a name="planar"></a><a href="#planar">#</a></span>
+ Rovinné grafy</h2>
+<p>Kuratowského věta</p>
+<p>Věta o pěti barvách viz výše v části o barvenosti.</p>
+<h2 id="regularita-a-symetrie-grafů">Regularita a symetrie grafů</h2>
+<p>Graf je $r$-regulární, pokud stupeň každého jeho vrcholu je $r$.
+Graf je regulární, pokud všechny vrcholy mají stejný stupeň.
+Regulární graf nemůže mít lichou regularitu a zároveň lichý počet vrcholů (z principu sudosti).</p>
+<h2 id="stromy">Stromy</h2>
+<p>Souvislý graf bez kružnic nazveme <strong>stromem</strong>.
+Les je graf bez kružnic.
+List je vrchol stupně 1.</p>
+<p>Alternativní definice:</p>
+<ul>
+<li>mezi každými dvěma vrcholy existuje právě jedna cesta</li>
+<li>je souvislý a vynecháním libovolné hrany vznikne nesouvislý graf</li>
+<li>je souvislý a $|V|=|E|+1$</li>
+</ul>
+<p>Pro každý strom existuje pořadí odřezávání listů tak, že všechny mezi-grafy jsou také stromy (reverzní DFS pořadí).</p>
+<h2 id="kostry-minimální-kostry-grafu">Kostry, Minimální kostry grafu</h2>
+<p>Podgraf $K$ souvislého grafu $G$ je <strong>kostra</strong> grafu $G$, pokud $V(K)=V(G)$ a $K$ je strom.
+Najít lze vybráním stromových hran DFS / BFS průchodu.</p>
+<p><strong>Minimální kostra</strong> ve váženém grafu je mezi všemi kostrami ta, která má nejmenší váhu.
+Problém minimální kostry se dá řešit řadou algoritmů:</p>
+<div class="algorithm">
+<p><strong>Jarníkův (v zahraničí Primův) algoritmus:</strong>
+Začneme s komponentou o jednom vrcholu.
+$(N-1)$-krát přidáme vrchol takový, do kterého z dosavadní komponenty vede nejlehčí hrana.
+Složitost je]
+$$
+O(n \cdot \text{vybrání minima} + n \cdot \text{přidání do hlady} + m \cdot \text{decrease key}).
+$$
+Když při implementaci použijeme pro hledání nejlehčí hrany haldu, tak bude časová šložitost $O((n+m) \log n)$.
+Pokud to zabijeme Fibonacciho haldou, dostaneme $O(m + n \log n)$.</p>
+</div>
+<div class="algorithm">
+<p><strong>Kruskalův algoirtmus:</strong>
+Seřadíme hrany podle váhy.
+Projdeme hrany v pořadí, a přidáme je do kostry, pokud by v ní nevytvořily cyklus.
+Pro implementaci kontroly cyklů použijeme Union-Find.
+Složitost
+$$
+O(m \log m + m \cdot \text{find} + n \cdot \text{union})
+$$
+Bottleneck je řazení, s tím se nedá nic dělat, časová složitost je $O(m \log m)$.</p>
+</div>
+<div class="algorithm">
+<p><strong>Borůvkův algoritmus:</strong>
+Pustíme Jarníkův ze všech vrcholů zároveň.</p>
+</div>
+<h3 id="disjoint-set-union-find">Disjoint-Set Union-Find</h3>
+<p>Nejen v Kruskalově algoirtmu potřebujeme datovou strukturu, která dovede udržovat, které vrcholy jsou spolu v množině, a dovede množiny spojovat.
+Množiny můžeme uložit tak, že každá množina bude mít reprezentanta, na kterého ukazují (přímo nebo nepřímo) všechny její prvky.
+Samotný reprezentant bude ukazovat sám na sebe.
+Nyní jen vyřešit, jak množiny spojovat.</p>
+<p>Jedna možnost je spojit množiny tak, že přepíšeme všechny reprezentanty menší množiny.
+Tohle provede maximálně $\log n$ operací na jeden prvek.
+Spojení tak bude amortizovaně $\log n$, ale hledání je O(1).</p>
+<p>Další možnost pro spojení dvou množin je najít jejich reprezentanty, a jedním ukázat na druhý.
+Když chceme zjistit, jestli jsou prvky ze stejné množiny, tak porovnáme jejich reprezentanty, na které nepřímo ukazují.
+Co by se ale mohlo dít je, že řetízky nepřímích odkazů budou narůstat až na $\log n$, pokud spojujeme nižší strom pod vyšší.
+Tohle bude 2x find + O(1) na spojení, ale za to $O(\log n)$ na nalezení reprezentanta.</p>
+<p>Tohle se dá vylepšit tím, že když vyhledáváme prvek, tak jeho odkaz a odkazy celého řetězu referencí přepojíme na jejich společného reprezentanta.
+Dobrou složitost zaručuje následující věta.</p>
+<p>Věta: Amortizovaná složitost datové struktury Union-Find je $O(\log^*n)$ (iterovaný logaritmus).</p>
+<div class="proof">
+Proof: 
+([zdroj](https://www.cs.cmu.edu/~avrim/451f13/lectures/lect0912.pdf),
+[wiki zdroj](https://en.wikipedia.org/wiki/Proof_of_O(log*n)_time_complexity_of_union%E2%80%93find))
+Ukážeme, že celková složitost po zavolání $m$ operací Find a Union je $O(m \log n)$.
+Vzhledem k tomu, že operace pouze volá 2x find, tak stačí analyzovat složitost $m$ zavolání operace find.
+<p>Našim cílem je spočítat kolik se udělá přechodů při vybublávání v operaci find.
+Cenu kořene a jeho syna (zde se nepřepojují ukazatele) započteme do ceny operace find přímo (konstantní počet instrukcí na operaci).
+Zaveďme pro každý vrchol <em>rank</em>, který je na začátku 0, a který zvedneme o 1 pro kořen stromu, pokud je pod něj zapojen kořen stejného ranku.
+Intuitivně, rank je maximální výška podstromu vrcholu přes celou jeho historii, protože výška se může zmenšit, ale rank ne.</p>
+<ul>
+<li>vrchol je buď kořen, nebo má rodiče vyššího ranku,</li>
+<li>vrcholu, který není kořen, se už nezvýší rank,</li>
+<li>vrchol s rankem $i$ má alespoň $2^i$ vrcholů ve svém podstromě,</li>
+<li>vrcholů ranku $i$ je nejvýše $N/2^i$,</li>
+<li>vrcholů ranku $\ge i$ je nejvýše $2 N/2^i$ (suma $\frac{N}{2^i} + \frac{N}{2^{i+1}} + \dots$).</li>
+</ul>
+<p>Vytvořme $K$: kyblíky ranků, kde $i$-tý kyblík obsahuje všechny vrcholy ranku $2 \uparrow\uparrow i$ až $(2 \uparrow\uparrow (i+1))-1$ (aneb $2^{2^{2^{\dots}}}$, <a href="https://cs.wikipedia.org/wiki/Knuth%C5%AFv_z%C3%A1pis"target="_blank">Knuthův zápis<span style="white-space: nowrap;">&thinsp;↗</span></a>).
+Konkrétně, kyblíky postupně začínají na ranku: $(0,1,2,4,16,\dots,B,2^B,\dots)$.
+Označme $K(u)$ kyblík vrcholu $u$, $LK(u)$ nejnižší a $UK(u)$ nejvyšší rank obsažený v kyblíku $K(u)$.</p>
+<ul>
+<li>kyblíků je $\log^*n$ (inverzní funkce k $\uparrow\uparrow$),</li>
+<li>ranky v kyblíku $[B,2^B-1]$ dohromady obsahují nejvýše $2n / 2^B$ vrcholů.</li>
+</ul>
+<p>Nyní rozpočteme jednotlivé operace vybublávání při vykonávání $m$-krát FIND.
+Přechod z vrcholu $u$ do vrcholu $v$.</p>
+<ul>
+<li>Přechodů, kde $v$ je kořen, je dohromady $m$.</li>
+<li>Přechodů mezi kyblíky, tedy $K(u) \ne K(v)$ je dohromady nejvýšel $O(m \log ^<em>n)$ protože je $\log^</em> n$ kyblíků, a více rozhraní v jednom FIND nemůžeme přejít.</li>
+<li>Přechod uvnitř stejného kyblíku, tedy $K(u) = K(v)$.
+Prvně si připomeneme, že rank $u$ se nikdy nezvýší, protože není kořen.
+Dále, zkrácením linku z $u$ bude nová hrana vést do vrcholu s vyšším rankem, než měl $v$, protože $v$ také není kořen.
+Pokud se rank cílového vrcholu zvedne natolik, že je v jiném kyblíku, tak už nikdy nebude přechod z vrcholu $u$ započítán jako přechod ve stejném kyblíku.
+Díky tomu bude počet těchto započtení na jeden vrchol omezen počtem ranků v kyblíku, kterých je $2^B-B-1 &lt; 2^B$.
+Dříve jsme ukázali, že v bucketu s prvním rankem $B$ je dohromady nejvýše $2n / 2^B$ vrcholů, za každého z nich započteme nejvýše $2^B$, což dohromady dává $2^B \cdot 2n / 2^B = 2n$ operací na bucket, tj. $2n \log^* n$ operací za všechny buckety.</li>
+</ul>
+<p>Celkově dostáváme $O(m + m \log^* n + n \log^* n) = O(m \log^* n)$.
+<span style="float: right">■</span></p>
+</div>
+<p>Autor důkazu později ukázal, že stejný výsledek platí i pokud napojujeme keře pod sebe náhodně.
+Emprické testy nasvědčují, že při náhodném zavěšování je struktura trochu (ale znatelně) pomalejší.</p>
+<p>Implementace přepojovací verze v C++ může vypadat třeba takto:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">struct</span> <span style="color:#458;font-weight:bold">Uf</span>{
+</span></span><span style="display:flex;"><span>    vector<span style="color:#000;font-weight:bold">&lt;</span>ll<span style="color:#000;font-weight:bold">&gt;</span> p, r; <span style="color:#998;font-style:italic">// p=element&#39;s parent, r=rank
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    Uf(ll n)<span style="color:#000;font-weight:bold">:</span>p(n),r(n){ iota(p.begin(), p.end(), <span style="color:#099">0</span>); }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// finds representant of a&#39;s set
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ll <span style="color:#900;font-weight:bold">find</span>(ll a){ <span style="color:#000;font-weight:bold">return</span> p[a]<span style="color:#000;font-weight:bold">==</span>a <span style="color:#000;font-weight:bold">?</span> <span style="color:#900;font-weight:bold">a</span> : p[a]<span style="color:#000;font-weight:bold">=</span>find(p[a]); }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// unifies sets of a and b
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">uni</span>(ll a, ll b){
+</span></span><span style="display:flex;"><span>        a <span style="color:#000;font-weight:bold">=</span> find(a);
+</span></span><span style="display:flex;"><span>        b <span style="color:#000;font-weight:bold">=</span> find(b);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span>(a<span style="color:#000;font-weight:bold">==</span>b)<span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span>(r[a]<span style="color:#000;font-weight:bold">&lt;</span>r[b]) swap(a, b);
+</span></span><span style="display:flex;"><span>        p[b] <span style="color:#000;font-weight:bold">=</span> a;
+</span></span><span style="display:flex;"><span>        r[a] <span style="color:#000;font-weight:bold">+=</span> r[a]<span style="color:#000;font-weight:bold">==</span>r[b];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// check if elements are in the same set
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#458;font-weight:bold">bool</span> <span style="color:#900;font-weight:bold">same</span>(ll a, ll b){ <span style="color:#000;font-weight:bold">return</span> find(a) <span style="color:#000;font-weight:bold">==</span> find(b); }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="nejkratší-cesty">Nejkratší cesty</h2>
+<p>Uvažujme vážený graf G.
+Sled z u do v je střídavá posloupnost po sousedech incidentních vrcholů a hran, která začíná u a končí v.
+Tah je sled ve kterém se neopakují hrany.
+Cesta je tah ve kterém se neopakují vrcholy.</p>
+<p>Délka cesty (tahu a sledu) je součet délek hran, které obsahují.</p>
+<p>Pokud jsou hrany nezáporné, tak platí trojúhelníková nerovnost, tj. $dist(u \rightarrow v) \le dist(u \rightarrow w) + dist(w \rightarrow v)$.</p>
+<p>Relaxace hrany {u,v} (wlog w(u) &lt; w(v)) znamená, že do v si zapíšeme min(w(v), w(u)+W(uv)).</p>
+<p>Hlednání nejkratší cesty v ohodnoceném grafu řeší několik algoritmů:</p>
+<div class="algorithm">
+<p><strong>Dijkstrův algoritmus:</strong>
+Předpokládá nezáporně ohodnocený graf.
+Relaxuje hrany incidentní vrcholům, které ještě nebyly relaxované a které mají nejmenší vzdálenost od startu.
+Časová složítost je
+$$
+O(n \cdot \text{vybrání minima} + n \cdot \text{přidání do hlady} + m \cdot \text{decrease key}).
+$$</p>
+</div>
+<ul>
+<li>Pro husté grafy budeme snížení dělat přepisem, a extrakci průchodem; dostáváme $O(n^2)$.</li>
+<li>Pro řídké grafy budeme snižení a extrakci dělat v haldě; dostáváme $O(m + (n+m) \log (n+m))$.</li>
+<li>Pokud chceme overkill, tak přes Fibonacciho haldu dostaneme $O(m + n \log n)$.</li>
+</ul>
+<p>Pokud dovolíme Dijkstrovi otevírat vrcholy opakovaně, tak existují grafy bez záporných cyklů, ale se zápornými hranami, na kterých má exponenciální časovou složitost (bude se tam opravovat jako binární sčítačka).</p>
+<div class="algorithm">
+<p><strong>Bellman-Fordův algoirtmus:</strong>
+Funguje i na grafech se zápornými hranami, ovšem nesmí existovat záporný cyklus.
+Základní verze pouze relaxuje všechny hrany N-krát, což do každého vrcholu nastaví délku nejkratšího sledu ze startovního vrcholu; hledaná nejkratší cesta je sled bez opakovaných vrcholů.
+Vylepšená verze relaxuje pouze hrany, které mohou relaxací něco změnit, tj. dijkstra, kde si dáváme vrcholy do (neprioritní) fronty, provedeme ovšem pouze N iterací.
+Pokud se něco změní v jedné další iteraci, tak víme, že graf obsahuje záporný cyklus.
+Časová složitost je $O(n \cdot m)$.</p>
+</div>
+<p>Najít nejkratší cestu v libovolně ohodnoceném grafu je NP-úplné (všude vezměme ohodnocení -1 a nejlevnější=nejdelší cesta tj. uměli bychom hledat Hamiltonovskou cestu).</p>
+<h2 id="hahahugoshortcode116s13hbhb-toky-v-sítích"><span><a name="flow"></a><a href="#flow">#</a></span>
+ Toky v sítích</h2>
+<p><strong>Síť</strong> je čtveřice (G,z,s,c) kde G=(V,E) je orientovaný graf, z a s jsou zdroj a stok, a c je funkce kapacity c:E -&gt; R+0.</p>
+<p><strong>Tok</strong> v síti je každá funkce $f:E \rightarrow \mathbb{R}^+_0$, která splňuje $0 \le f(e) \le c(e)$ (tok zkrz hranu je v mezích kapacity), a pro každý vrchol u mimo zdroj a stok platí $\sum f(x,u) = \sum f(u,y)$ (první Kirchhoffův zákon).</p>
+<p><strong>Řez</strong> mezi z a s (kterému budeme říkat pouze řez) v síti nazveme podmnožinu R hran sítě takovou, že v síti s odebraným R neexistuje orientovaná cesta ze z do s.
+Kapacita řezu je součet kapacit jeho hran.</p>
+<p>Pro každou síť se velikost maximálního toku rovná kapacitě minimálního řezu.</p>
+<p>Mějme dělení sítě na dvě disjunktní množiny A a B takové, že z je v A a s je v B, pak hrany z A do B jsou řez, který značíme S(A,B) a nazveme jej elementárním řezem.
+Každý v inkluzi minimální řez je elementární.
+Pokud množina vrcholů A obsahuje zdroj a neobsahuje stok, tak celkový tok se rovná tomu, co vyteče z A do B mínus to co teče z B do A.
+Maximální tok je nejvýše velikost minimálního řezu.
+Nasycená cesta je taková, že podél ní nelze zvětšit tok.
+Tok je maximální, právě když je nasycený (kdyby nebyl, dovedeme podél nenasycené cesty trošku vylepšit).
+Pro každý maximální tok, existuje řež takový, že se velikost toku rovná kapacitě řezu (řez bude S(A,B) kde A jsou vrcholy, které jsou v nějaké nasycené cestě před první nasycenou hranou).</p>
+<p>Maximálních toky řeší následující algoritmy:</p>
+<p>Ford-Fulkersonův algoritmus (FF):
+Najdi zlepšující cestu (libovolnou) a zlepšiji co to jde; toto opakuj dokud existuje zlepšující cesta.
+Pro racionální váhy vždy skončí (protože se vždy zvětšuje alespoň o 1/LCM).
+Pro reálné váhy exisují grafy a výběr cest takový, že neskončí.
+Časova složitost závisí na velikosti vah v síti.</p>
+<p>Edmondův-Karpův algoirtmus (první ho publikoval Dinitz):
+Stejný jako FF, ale určí cestu pomocí BFS.
+Je konečný pro reálné váhy.
+Časová složitost je O(|V||E|^2).</p>
+<h3 id="hranová-a-vrcholová-k-souvislost">Hranová a Vrcholová k-Souvislost</h3>
+<p>Graf je hranově $k$-souvislý, když neexistuje řez velikosti nejvýše $k-1$.
+Graf je vrcholově $k$-souvislý, když neexistuje vrcholový řez velikosti nejvýše $k-1$, a má alespoň $k$ vrcholů.
+Vrcholová souvislost grafu G $\le$ jeho hranová souvislost.</p>
+<p>Ford Fulkersonova věta: Hranová souvislost $\ge T \Leftrightarrow$ mezi každými dvěma různými vrcholy u a v existuje alespoň $T$ hranově disjunktních cest.</p>
+<div class="proof">
+Proof: 
+<p>$\Leftarrow$ Pokud bychom měli řez T-1 a rozpojili ho, pak vzali vrcholy z výsledných různých komponent, mezi kterými mělo vést T hranově disjunktních cest, tak řez T-1 hran nemohl stačit.</p>
+<p>$\Rightarrow$ Vezmeme maximální tok, který je alespoň T, protože minimální řez je T; Potom vynulujeme cirkulace a ukážeme, že FF by celou dobu pracoval v celých číslech, nalezený tok můžeme upravit tak, že jednu cestu vynulujeme, tím se sníži tok o 1 a našli jsme jednu cestu; takto postupně získáme alespoň T hranově disjunktních cest.
+<span style="float: right">■</span></p>
+</div>
+<p>Mengerova věta: Vrcholová souvislost $\ge T \Leftrightarrow$ mezi každými dvěma různými vrcholy u a v existuje alespoň $T$ vrcholově (až na start a cíl) disjunktních cest.</p>
+<div class="proof">
+Proof: 
+(náznak)
+Důkaz je podobný FF.
+<p>$\Leftarrow$ opět sporem, že bychom potřebovali větší vrcholový řez</p>
+<p>$\Rightarrow$ graf zorientujeme a rozdělíme vrcholy (podmínku pro průchod každého max 1) a tok převedeme na vrcholově disjunktní cesty.
+<span style="float: right">■</span></p>
+</div>
+<h2 id="párování">Párování</h2>
+<p><strong>Párování</strong> je množina nezávislých hran.
+Perfektní párování má |V|/2 hran, a tedy pokrývá všechny vrcholy.</p>
+<p>Edmondsův Blossom algoritmus dovede párování najít v polynomiálním čase.</p>
+<p>V bipartitních grafech se tato úloha dá lehce převést na toky, protože jde o maximální tok z jedné partity do druhé s tím, že každý vrchol má max přítok / odtok 1.
+FF zde zafunguje v O(nm).</p>
+<p><strong>Systém rýzných reprezentantů</strong> (SRR) je funkce $f:I \rightarrow X$ taková, že pro každé i z I je f(i) z Mi, a že f je prosté; tedy výběr jednoho prvku (reprezentanta) z každé množiny Mi tak, že každý vybraný prvek je vybrán maximálně jednou množinou.</p>
+<p>Hallova věta: SRR existuje $\Leftrightarrow$ Pro každou podmnožinu množin M, označme jejich počet K, je sjednocení jejich prvků alespoň velikosti K.</p>
+<div class="proof">
+Proof: 
+<p>$\Rightarrow$ Jelikož má každá množina vlastního reprezentanta, tak jejich sjednocení bude mít alespoň K disjunktních prvků, právě ty reprezentanty; (obměnou) Pokud je menší, tak není dost reprezentantů aby šlo vybrat různého reprezentanta pro každou.</p>
+<p>$\Leftarrow$ TODO
+<span style="float: right">■</span></p>
+</div>
+<h3 id="edmondsův-blossom-algoritmus-pro-hledání-maximálního-párovánína-obecném-grafu">Edmondsův (Blossom) algoritmus pro hledání maximálního párování na obecném grafu</h3>
+<p>Uvažujme graf G, na kterém je částečné párování M.
+Volná střídavá cesta VSC je cesta, která začíná a končí v nespárovaných vrcholech, a každá její druhá hrana je v párování M.
+Zřejmě prohozením párovaných a nepárovaných hran ve VSC lze párování vylepšit.
+Zajímavé je, že pokud G nemá VSC, tak je M maximální (lze konstruktivně ukázat).</p>
+<p>V bipartitních grafech umíme maximální párování hledat efektivně, proto se zaměříme na liché kružnice.
+<strong>Květ vzhledem k M</strong> je lichá kružnice v G velikosti K, kde (K-1)/2 hran kružnice je v M, a poslední vrchol (ten nespárovaný uvnitř květu) je součástí stonku.
+Stonek je cesta sudé délky, kde se střídají hrany v M a mimo M (připouštíme i délku 0).
+Nyní hlavní myšlenka: Pro graf G s květem K je párování M maximální $\Leftrightarrow$ M bez hran C je maximální pro G s kontrahovaným C.
+Toto tvrzení lze ukázat tak, že VSC existuje v G $\Leftrightarrow$ VSC existuje v G&rsquo;; hlavní je rozbor případů při kontrakci květu, kde nějaké VSC květ a stonek protíná.</p>
+<p>Díky této rovnosti můžeme graf kontrahovat, najít zlepšující VSC v bipartitním grafu, a pak graf dekontrahovat a dostat VSC v původním grafu.
+Toto zopakujeme nejvýše N-krát, a dostaneme maximální párování.</p>
+<p>Technické detaily:</p>
+<ul>
+<li>Jak najít květ: budeme v G hledat VSC pomocí DFS, když narazíme na již projitý vrchol ve druhé paritě, tak část před opakovaným vrcholem je stonek, a onen cyklus je květ.</li>
+</ul>
+<h2 id="hladové-algoritmy-">Hladové algoritmy ?</h2>
+<p>(jednalo se jen o obecnou charakterizaci hladových algoritmů, resp. úloh, na jejichž řešení jdou použít)</p>
+<h2 id="mohutnost-množin-konečných-struktur-zobrazení-relací-stromů-ap">Mohutnost množin konečných struktur (zobrazení, relací, stromů, ap)</h2>
+<ul>
+<li>Počet všech bijektivních zobrazení N do N ($N!$), všech funkcí ($N^N$).</li>
+<li>Počty relací ruznýho typu
+<ul>
+<li>reflexivních (diagonála 1, zbytek 0/1 = $2^{n^2-n}$),</li>
+<li>symetrických (dolní trojúhelník 0/1 = $2^{n(n+1)/2}$),</li>
+<li>asymetrických (diagonála 0, zbytek buď 00,01,10 = $3^{n(n-1)/2}$),</li>
+<li>antisymetrických (diagonála 0/1, zbytek 00,01,10 = $2^n . 3^{n(n-1)/2}$).</li>
+</ul>
+</li>
+<li>Počet zakořeněných stromů (Catalanovo číslo, tj. $({1 \over {n+1}}) \cdot {2n \choose n}$).</li>
+</ul>
+<h3 id="hahahugoshortcode116s17hbhb-catalanovo-číslo"><span><a name="catalan"></a><a href="#catalan">#</a></span>
+ Catalanovo číslo</h3>
+<p><a href="https://en.wikipedia.org/wiki/Catalan_number"target="_blank">Catalanovo číslo<span style="white-space: nowrap;">&thinsp;↗</span></a> $C_n$ je rovno počtu</p>
+<ul>
+<li>binomiálních stromů na $n$ vrcholech,</li>
+<li>validních uzávorkování $2n$ závorkami,</li>
+<li>průchodů $n \times n$ mřížkou nad diagonálou z jednoho do druhého rohu,</li>
+<li>triangulací konvexního polygonu,</li>
+<li>(a mnoho dalšího).</li>
+</ul>
+<p>$$
+C_n = \binom{2n}{n} - \binom{2n}{n+1} = \frac{1}{n+1}\binom{2n}{n}
+$$</p>
+<p>Tyto počty se na sebe vzájemně bijektivně převádějí.</p>
+<p>Ukážeme si důkaz počtu binárních stromů pomocí generujících funkcí.</p>
+<p>Věta: Počet zakořeněných binárních stromů na $n$ vrcholech je roven Catalanovu číslu $C_n$.</p>
+<div class="proof">
+Proof: 
+Pro počet vrcholů $n$ můžeme počet binárních zakořeněných stromů $P(n)$ spočítat tak, že strom rozdělíme na jeden kořen, levý podstrom a pravý podstrom.
+Vyjádřeno formálně
+$$
+    P(n)=\sum_{i=0}^{n-1} \big(P(i) \cdot P(n-1-i)\big).
+$$
+Tento součet je stejný jako koeficient při $x^{n-1}$ v násobku $A_1 \cdot A_2$ dvou polynomů tvaru $A_1=A_2=(P(0)x^0 + P(1)x^1 + \dots + P(n-1)x^{n-1})$.
+Tyto polynomy můžeme rozšířit na nekonečné řady $B(x) = (P(0)x^0 + P(1)x^1 + \dots)$, protože členy s alespoň $x^n$ se do výsledného členu při $x^{n-1}$ nepromítnou.
+$B(x)^2$ nám dá správnou hodnotu při koeficientu $x^{n-1}$, přenásobením celku $x$ jej posuneme na $x^n$.
+Platí, že členy B(x) jsou rovny členům $xB(x)^2$ pro všechny členy s $x \ge 1$ (ty, které definuje náš vzorec).
+Avšak, konstantní koeficient při polynomu $B(x)$ má být $1$, proto bude platit
+$$
+    B(x)=1+xB(x)^2.
+$$
+Vyřešíme kvadratickou rovnici pro 'proměnnou' $B(x)$, a dostáváme kořeny $B_1(x) = (1+\sqrt{1-4x}) / 2x$ a $B_2(x) = (1-\sqrt{1-4x}) / 2x$.
+Vzhledem k tomu, že první kořen v nule diverguje, nemůže být generující funkcí.
+Odmocninu upravíme pomocí zobecněné binomické věty $(1-4x)^{1/2} = \sum_{k=0}^{\infty} \binom{1/2}{k}(-4x)^k$.
+První člen rozvoje se pokrátí s $1$, a zbytek jde vydělit $2x$, substituujeme $k'=k-1$.
+$$
+    B(x) = \frac{1-\sqrt{1-4x}}{2x}
+    = \frac{1-\sum_{k=0}^{\infty} \binom{1/2}{k}(-4x)^k}{2x}
+    = 2\sum_{k'=0}^{\infty} \binom{1/2}{k'+1}(-4x)^{k'}
+$$
+Z $B(x)$ nás zajímá pouze člen při $x^n$, což je $-\frac{1}{2}{(-4)}^{n+1}\binom{1/2}{n+1}$.
+$$
+        -\frac{1}{2}{(-4)}^{n+1}\binom{1/2}{n+1} 
+        =^{(1)} -\frac{1}{2}{(-4)}^{n+1}\frac{\prod_{i=0}^n (\frac12-i)}{(n+1)!}
+$$
+$$
+        =-\frac{1}{2}(-1)^{n+1}2^{2n+2}\frac{\prod_{i=0}^N (\frac12-i)}{(n+1)!}
+        =-(-1)^{n+1}2^{2n+1}\frac{\prod_{i=0}^n (\frac12-i)}{(n+1)!}
+$$
+$$
+        =^{(2)}-2^{2n+1}\frac{\prod_{i=0}^n (i-\frac12)}{(n+1)!}
+        =^{(3)}-2^{n}\frac{\prod_{i=0}^n (2i-1)}{(n+1)!}
+        =^{(4)}2^{n}\frac{\prod_{i=1}^n (2i-1)}{(n+1)!}
+$$
+$$
+        =\frac{\prod_{i=1}^n (2i-1)}{(n+1)n!}\frac{2^{n}n!}{n!}
+        =\frac{\prod_{i=1}^n (2i-1)}{(n+1)n!}\frac{\prod_{i=1}^n (2i)}{n!}
+$$
+$$
+        =^{(5)}\frac{\prod_{i=1}^{2n} i}{(n+1)n!n!}
+        =\frac{1}{n+1}\frac{(2n)!}{n!n!}
+        =\frac{1}{n+1}\binom{2n}{n}
+$$
+<ol>
+<li>zobecněná binomická věta</li>
+<li>$n+1$ aplikování $-1$ na produkt v čitatli</li>
+<li>$n+1$ pronásobení $2$ na produkt v čitatli</li>
+<li>vyndání prvního členu (-1) z produktu čitatele</li>
+<li>spojení produktů lichých a sudých čísel do společného produktu</li>
+</ol>
+<p>Sadou úprav jsme se dostali ke kanonickému tvaru Catalanova čísla.
+<span style="float: right">■</span></p>
+</div>
+<hr>
+<h1 id="teorie-grafů">Teorie grafů</h1>
+<h2 id="hahahugoshortcode116s19hbhb-intervalové-grafy"><span><a name="interval"></a><a href="#interval">#</a></span>
+ Intervalové grafy</h2>
+<p>Graf G je <strong>Intervalový graf</strong> (<a href="https://www.graphclasses.org/classes/gc_234.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a>)
+pokud existuje množina reálných intervalů, které reprezentují vrcholy, takových, že dva intervaly mají neprázdný průnik právě tehdy, když příslušné vrcholy jsou spojené hranou.</p>
+<ul>
+<li>Intervalové grafy jsou podmnožina chordálních (a tedy i perfektních) grafů.</li>
+<li>Graf je intervalový právě tehdy když je chordální, a jeho doplněk je comparability graf (aneb. graf převoditelný na poset; ten AB hranou ukáže, že je interval A vpravo od intervalu B).</li>
+<li>Na intervalovém grafu lze polynomiálně řešit mnoho problémů, jako najít optimální obarvení, maximální (váženou) kliku, (vážená) nezávislá množina, dominance, hamiltonovský cyklus a cesta, klikové pokrytí, či isomorfismůs grafů.</li>
+</ul>
+<p>Rozpoznání Intervalových grafů lze udělat v lineárním čase.
+Původní postup to řešil pomocí p,q-stromů.
+Novější postup to řeší za pomoci 6 iterací LexBFS.</p>
+<h2 id="hahahugoshortcode116s21hbhb-chordální-grafy"><span><a name="chordal"></a><a href="#chordal">#</a></span>
+ Chordální grafy</h2>
+<p>Graf je <strong>chordální graf</strong> (<a href="https://www.graphclasses.org/classes/gc_32.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a>)
+pokud neobsahuje indukovanou kružnici velikosti alespoň 4. Jinak řečeno, každá kružnice má chordu.</p>
+<ul>
+<li>Jsou podmnožinou perfektních grafů.</li>
+<li>Vlastnost zjevně platí i pro všechny indukované podgrafy.</li>
+<li>Vždy obsahuje vrchol, jehož sousedství indukuje kliku (simpliciální vrchol).</li>
+<li>Sekvence iterativního odebírání simpliciálního vrcholu tvoří (vrcholové) Perfektní Eliminační Schéma (PES).</li>
+<li>Graf je chordální $\Leftrightarrow$ graf má PES.</li>
+<li>PES lze použít pro výstavbu optimálního stromového rozkladu.
+Bag bude vždy vrchol a pravé sousedství v PES.
+Bagy se skládají z klik, takže lepší dekompozice nejde vytvořit.</li>
+<li>Chordální grafy jsou ekvivaltení průnikovým grafům podstromů ve stromě.</li>
+<li>Polynomiálně řešitelné problémy obsahují optimální obarvení (FF na PES), (vážená) klikovost, (vážená) nezávislá množina, stromová dekompozice, feedback-vertex set, a lineárně rozpoznání</li>
+<li>NP-complete je dominující množina, hamiltonovský cyklus a cesta, a max-cut</li>
+</ul>
+<p>Polynomiálně lze najít PES lehce iterativním odebíráním simpliciálního vrcholu.
+PES se dá lineárně najít pomocí LexBFS.</p>
+<p>Lemma: Každý v inkluzi minimální vrcholový řez je úplný.</p>
+<div class="proof">
+Proof: 
+Každý vrchol je spojen s každou zbylou komponentou (jinak není v inc. min.).
+Kdyby mezi dvěma vrcholy $x,y$ nebyla hrana, tak nejkratší cesta $x,H_1,y$ spojená s nej. cestou $y,H_2,x$ tvoří kružnici bez chordy.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Lemma: Každý chordální graf má simpliciální vrchol.</p>
+<div class="proof">
+Proof: 
+Pokud je $K_n$ či $|V| \le 4$ tak je to zřejmé.
+Jinak indukcí nad počtem vrcholů ukážeme, že $G$ obsahuje dva nesousední simpliciální vrcholy.
+Jinak lze postupovat indukcí nad počtem vrcholů, rozdělením grafu podle vrcholového řezu $A$ na $(G_1 \cup A)$ a $(G_2 \cup A)$.
+A je klika, tak tam je z indukce max jeden, a druhý vrchol zůstává simpliciální i po spojení.
+ <span style="float: right">&#9632;</span>
+</div>
+<h2 id="hahahugoshortcode116s25hbhb-perfektní-grafy"><span><a name="perfect"></a><a href="#perfect">#</a></span>
+ Perfektní grafy</h2>
+<p>Erdős ukázal, že existují grafy s velikým girth (obvod) a velikou barevností &ndash; u takových grafů je barevnost v jistém smyslu globální vlastnost, protože lokálně jsou tyto grafy podobné stromům.
+Tento výsledek otevřel otázku o grafech, kde je barevnost daná pouze lokálními vlastnostmi.</p>
+<p>Graf je <strong>perfektní</strong> (<a href="https://www.graphclasses.org/classes/gc_56.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a>)
+právě tehdy, když pro každý jeho indukovaný podgraf je barevnost rovna klikovosti.</p>
+<ul>
+<li>slabá věta o perfektních grafech (Lovász): graf je perfektní $\Leftrightarrow$ doplněk grafu je perfektní</li>
+<li>silná věta o perfektních grafech (Sezmour a spol.): graf je perfektní $\Leftrightarrow$ graf ani jeho doplněk neobsahují lichý indukovaný cyklus velikosti alespoň 5</li>
+</ul>
+<p>Další vlastnosti</p>
+<ul>
+<li>polynomiálně řešitelné jsou barevnost, nezávislá množina, klikovost, a rozpoznání</li>
+<li>NP-complete je dominující množina, hamiltonovký cyklus a cesta, feedback-vertex set</li>
+</ul>
+<p>recognition todo?</p>
+<h2 id="vztah-tříd-a-složitostní-dopady-speciálních-tříd-grafů">Vztah tříd a složitostní dopady speciálních tříd grafů</h2>
+<p>intervalové $\subset$ chordální $\subset$ perfektní</p>
+<p>Složitosti problémů podle ISGCI:</p>
+<table>
+<thead>
+<tr>
+<th>vlastnost / problém</th>
+<th>intervalové</th>
+<th>chordální</th>
+<th>perfektní</th>
+<th>obecné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rozpoznání</td>
+<td>lin</td>
+<td>lin</td>
+<td>poly</td>
+<td>&ndash;</td>
+</tr>
+<tr>
+<td>3-barevnost</td>
+<td>lin</td>
+<td>lin</td>
+<td>poly</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>barevnost</td>
+<td>lin</td>
+<td>lin</td>
+<td>poly</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>nezávislá mn.</td>
+<td>lin</td>
+<td>lin</td>
+<td>poly</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>klika</td>
+<td>poly</td>
+<td>poly</td>
+<td>poly</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>stromová dekompozice</td>
+<td>poly</td>
+<td>poly</td>
+<td>NP-com.</td>
+<td>&ndash;</td>
+</tr>
+<tr>
+<td>Feedback vertex set</td>
+<td>lin</td>
+<td>poly</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>dominující mn.</td>
+<td>lin</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>isomorfismus</td>
+<td>lin</td>
+<td><a href="https://en.wikipedia.org/wiki/Graph_isomorphism_problem#Complexity_class_GI"target="_blank">GI-com.<span style="white-space: nowrap;">&thinsp;↗</span></a></td>
+<td>GI-com.</td>
+<td>GI-com.</td>
+</tr>
+<tr>
+<td>Hamiltonovský cyklus</td>
+<td>lin</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+</tr>
+<tr>
+<td>Hamiltonovská cesta</td>
+<td>poly</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+<td>NP-com.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="minory">Minory</h1>
+<p>Reflexivní a tranzitivní relace je <em>quasi-ordering</em> (alt en: preorder, cs: Kvaziuspořádání).
+Pokud máme i &lt; j a x_i &lt;= x_j, potom (x_i,x_j) je <em>good pair</em>.
+Sekvence je <em>good</em> pokud obsahuje good pair.
+Quasi-ordering je <em>well-quasi-ordering</em> právě tehdy, když každá jeho nekonečná vybraná podposloupnost je good.
+Well-quasi-ordering jsou právě takové, které neobsahují nekonečný antichain, nebo nekonečnou klesající poloupnost (dk via Ramsey theorem 3 obarvení relace &lt;, &gt;, ~=).</p>
+<p>Pro relaci minoru se dá ukázat, že je uzavřená, a well-quasi-ordered, a proto každá třída grafů, která je uzavřená na minory, je vyjadřitelná konečným množstvím zakázaných minorů.</p>
+<h1 id="stromová-šířka">Stromová šířka</h1>
+<h2 id="stromová-šířka-alt-stromový-zdvih">Stromová šířka (alt: Stromový zdvih)</h2>
+<p><strong>Stromová dekompozice</strong> grafu $G$ je strom $T$, kde každý vrchol stromu je pozmnožina (bag) $X_1, X_2, \dots$ vrcholů G, a kde T splňuje následující podmínky.</p>
+<ol>
+<li>Každý vrchol z $V(G)$ je obsažen v nějakém $X_n$,</li>
+<li>každá hrana z $E(G)$ má v nějakém $X_n$ obsažené oba incidentní vrcholy,</li>
+<li>pro každou dvojici bagů $X_i$ a $X_k$ platí, že jejich průnik je podmnožina všech $X_j$ na cestě z $X_i$ do $X_k$ v $T$.</li>
+</ol>
+<p>Alternatnvně lze 3. podmínka formulovat tak, že každý vrchol z $V(G)$ je obsažen v souvislém podstromu $T$.</p>
+<p><strong>Stromová šířka</strong> $tw(G)$ grafu $G$ je velikost největší bag mínus $1$. (Stromy mají stromovou šířku $1$.)</p>
+<p>Zjištění stromové šířky grafu je NP-hard.
+Konstrukce dekompozice s šířkou nejvýše $k$ je FPT v $k$, tj. v $k$-exponenciální, ale v $n$ je lineární &ndash; pro málá $k$ tractable.</p>
+<ul>
+<li>Pokud $H \preccurlyeq G$ (minor), potom $tw(H) \le tw(G)$.</li>
+<li>Stromová šířka rovinných grafů s $n$ vrcholy je $O(\sqrt{n})$.</li>
+<li>$tw(K_n)=n-1$, $tw(K_{a,b}) = \min{a,b}-1$, expandery mají $tw = \Omega(n)$</li>
+</ul>
+<p>Každá dekompozice se dá převést na <strong>hezkou</strong> dekompozici, tj. dekompozice bude reprezentovaná zakořeněným stromem, rozdíl dvou bagů bude max v jednom vrcholu, a pokud má vrchol dekompozice více jak jednoho syna, tak je jeho bag totožný s bagy synů.
+Hezká dekompozice rozlišuje 3 typy vrcholů: introduce (přidá vrchol), forget (odebere vrchol), a join (má více synů).
+Dá se zkonstruovat v čase $O(k^2 \cdot \max(|V(T)|,|V(G)|))$ a má nejvíce $O(k \cdot |V(G)|)$ vrcholů.</p>
+<p>Na hezké stromové dekompozici lze (s trochou cviku) navrhnout DP pro rychlý výpočet obecně těžkých úloh.
+Často je DP podobné klasické stromové dynamice, ale namísto $S$ stavů v jednom vrcholu budeme mít $S^K$ v každém bagu, kde $K$ je velikost bagu.
+Více v sekci <a href="#twalgo">algoritmy na stromovém rozkladu</a>.</p>
+<h3 id="dualita-s-brabmlemi">Dualita s Brabmlemi</h3>
+<p><strong>Bramble</strong> je množina <strong>bramblátek</strong>, tj. souvislých množin vrcholů, které se po dvojicích překrývají nebo alespoň sousedí.</p>
+<p><strong>Velikost bramble</strong> je nejmenší hitting set, tj. nejmenší množina vrcholů takových, že v každém bramblátku je alespoň jeden.</p>
+<p>Theorem (tree-width duality, Seymour &amp; Thomas):
+Mějme celé číslo $k \ge 0$.
+Graf má $tw(G) &lt; k \Leftrightarrow G$ neobsahuje brambli řádu $&gt;k$.</p>
+<div class="proof">
+Proof: 
+(skeč)
+V dekompozici najdeme bag, který pokrývá brambli.
+Mějme iniciální bag, který nepokrývá všechny bramblátka.
+Najdeme kde v dekompozici je bramblátko a pohneme se blíže k němu.
+Bramblátka nemohou být ve více částech, protože by se nemohli dotýkat dle jejich definice.
+Ze stejného důvodu nemůže bramblátko přestat být pokryté vybraným bagem.
+<p>Druhý směr je docela těžký. (todo?)
+<span style="float: right">■</span></p>
+</div>
+<h3 id="dualita-s-chordálními-grafy">Dualita s Chordálními grafy</h3>
+<p>Theorem: $tw(G) = \min {\omega(H)-1 \mid G \subseteq H; H\text{ je chordální} }$, tj. slovy, největší bag optimální dekompozice je roven klikovosti chordálního nadgrafu s nejnižší klikovostí.</p>
+<div class="proof">
+Proof: 
+U chordálních grafů je jednoduché najít optimální dekompozici, a tak máme $tw(G) \le tw(H) = \omega(H)-1$.
+<p>Na druhou stranu, když máme optimální dekompozici $G$, tak můžeme do $G$ přidat všechny (neexistující) hrany, které budou v nějakém bagu.
+Každý bag se stane klikou, a z G je chordální nadgraf H, kterému se nezvýšilo $tw$, a proto $tw(H) \le tw(G)$.
+<span style="float: right">■</span></p>
+</div>
+<p>Stromová šířka = Velikost bramble - 1</p>
+<h3 id="hledání-stromového-rozkladu">Hledání stromového rozkladu</h3>
+<p>Theorem (Bodlaender): Existuje algoritmus, který pro $n$-vrcholový graf $G$ a konstantu $k$ v čase $k^{O(k^3)} \cdot n$ najde stromovou dekompozici s šířkou $k$ nebo řekne, že šířka je $&gt;k$.</p>
+<p>TODO: algoritmus, pro nalezení stromové šířky?</p>
+<h2 id="cestová-šířka-alt-cestný-zdvih-definice">Cestová šířka (alt: Cestný zdvih) (definice)</h2>
+<p><strong>Cestová dekompozice</strong> grafu G je sekvence podmnožin $(X_1,X_2,\dots)$ vrcholů V(G), která dodržuje dvě vlastnosti:</p>
+<ol>
+<li>Pro každou hranu z $E(G)$ platí, že v některé podmnožině $X_n$ se vyskytují oba incidentní vrcholy, a</li>
+<li>pro každé $i \le j \le k$ platí, že průnik $X_i$ a $X_k$ je podmnožina $X_j$.</li>
+</ol>
+<p>Cestová šířka je velikost největší množiny mínus 1.</p>
+<p>Je stejná jako stromová dekompozice, kde je graf dekompozice cestou.</p>
+<h2 id="kliková-šířka-alt-klikový-zdvih-definice">Kliková šířka (alt: Klikový zdvih) (definice)</h2>
+<p><strong>Kliková šířka</strong> grafu G je minimální počet barev, který je potřeba pro vytvoření grafu G pomocí následujících čtyř operací:</p>
+<ol>
+<li>Vytvoření nového isolovaného barevného vrcholu,</li>
+<li>Disjunktní sjednocení dvou barevných grafů,</li>
+<li>Spojení dvou různých barevných tříd úplným bipartitních grafem,</li>
+<li>Přebarvení všech vrcholů stejné barvy na jinou barvu.</li>
+</ol>
+<p>Kografy jsou grafy právě s klikovou šířkou 2.</p>
+<p>Uzavřené na indukované podgrafy.</p>
+<p>Bounda na klikovou šířku je cca $2^{tw}$, takže když je stromová šířka bounded, tak je i kliková šířka bounded.</p>
+<p>Konstruováni dekompozice i když máme předem dané $k$ je NP-těžký.</p>
+<h3 id="nlc-width">NLC width</h3>
+<p>Podobné klikové šířce, jen má upravené operace:</p>
+<ol>
+<li>Vytvoření nového isolovaného barevného vrcholu,</li>
+<li>Přemapování barev vrcholů,</li>
+<li>Disjunktní sjednocení dvou barevných grafů, a přidání hran $e \in (u,v), u\in A, v\in B$ kde $(A,B) \in S \subseteq G_A \times G_B$, tj. při operaci vybereme jaké dvojice značek se mají propojit úplným bipartitním grafem.</li>
+</ol>
+<p>$\text{NLC} \le \text{kliková šířka} \le 2 \cdot \text{NLC}$</p>
+<h2 id="vztah-mezi-šířkami-stručně">Vztah mezi šířkami (stručně)</h2>
+<p>Cestová dekompozice je stromová dekompozice, kde graf dekompozice je cesta, takže je stejná nebo větší.</p>
+<p>Husté grafy mohou mít omezenou klikovou šířku, ale obecně nemají omezenou stromovou šířku.
+Konkrétně, pokud má třída grafů omezenou klikovou šířku, tak buď má omezenou stromovou šířku, nebo každý bipartitní graf je podgrafem nějakého grafu z této třídy.</p>
+<h2 id="hahahugoshortcode116s29hbhb-algoritmy-pro-grafy-s-omezenou-stromovou-šířkou"><span><a name="twalgo"></a><a href="#twalgo">#</a></span>
+ Algoritmy pro grafy s omezenou stromovou šířkou</h2>
+<p>Běžně se jedná o dynamiku nad bagy.
+Navrhujeme DP pro hezkou dekompozici, tj. zakořeněný binární strom, kde přechod v dekompozici se skládá pouze z přidávání a odebírání vrcholů, a všechny větvící vrcholy nemění obsah bagu.
+Stačí navrhnout pouze 3 druhy operace:</p>
+<ul>
+<li>Přidání vrcholu (hrany),</li>
+<li>Odebrání vrcholy (hrany),</li>
+<li>Merge dvou podstromů identickým bagem na rozhraní.</li>
+</ul>
+<p>Příklady řešitelných problémů:</p>
+<ul>
+<li>vážená nezávislá množina / vrcholové pokrytí $2^k k^{O(1)} n$ &ndash; stavy: free a forbidden; intro pouze přidá, remove dovolí pokrýt, join sečte podvýsledky</li>
+<li>dominující množina $4^k k^{O(1)} n$ &ndash; navíc v dekompozici má introduce edge node; stavy: free, covered a taken; intro pouze přidá, remove může pokrýt, join zas sečte</li>
+<li>Steinerův strom $k^{O(k)} n$ &ndash; dek. má introduce edge node; přidá do každého bagu jeden z terminálů, aby měl neprázdné mezistavy; stav bagu: connected komponenty ve Steinerově lese (části řešení); introduce node vytvoří komponentu pokud je vrchol terminál, introduce edge potencielně spojí komponenty, forget node nechá nejlepší ze sloučených dělení po odebrání vrcholu, join musí dát bacha by nenadělal cykly (nesmí spojit do kruhu ani prvky s dvou komponent, tak ani komponenty dohromady)</li>
+<li>feedback vertex set, hamiltonian path &amp; cycle, chromatic number, cycle packing, connected VC DS a FVS</li>
+</ul>
+<h3 id="hahahugoshortcode116s30hbhb-monadická-logika-druhého-řádu"><span><a name="mso2"></a><a href="#mso2">#</a></span>
+ Monadická logika druhého řádu</h3>
+<p>Pojem <em>monadická logika druhého řádu</em> popisuje <a href="https://en.wikipedia.org/wiki/First-order_logic"target="_blank">logiku<span style="white-space: nowrap;">&thinsp;↗</span></a> rozšířenou následovně.</p>
+<ul>
+<li>monadická &ndash; dovolujeme kvantifikace přes podmnožiny prvků</li>
+<li>druhého řádu &ndash; podmnožinové kvantifikace lze dělat přes vrcholy i hrany (první řád jsou pouze vrcholy), to je způsobeno tím, že v $MSO_2$ se grafu můžeme ptát na indicenci, v $MSO_1$ se ptáme pouze na sousednost vrcholů</li>
+</ul>
+<p>Pro představu následuje příklad z modré knížky na kontrolu souvislosti množiny $X$.
+$$
+conn(X) = \forall_{Y \subseteq V} \big[(\exists_{u \in X}, u \in Y \wedge \exists_{v\in X}, v\not\in Y) \Rightarrow (\exists_{e\in E}, \exists_{u\in X}, \exists_{v\in X}, inc(u,e) \wedge inc(v,e)\wedge u\in Y \wedge v\not\in Y)\big].
+$$
+Tento výraz kontroluje, jestli existuje množina vrcholů $Y$, která neporkývá celé $X$, ale zároveň v $X$ neexistuje hrana z $Y$ do $\neg Y$.
+Takže pokud je $X$ nesouvislé, tak $Y$ může pokrýt jednu z jeho komponent, a formule zdetekuje, že $X$ není souvislé.</p>
+<p>V $MSO_2$ máme proměnné pro vrcholy, hrany, a podmnožiny vrcholů či hran, přes které kvantifikujeme univerzálním $\forall$ a existenčním $\exists$ kvantifikátorem.
+Dále je k disposici funkce incidence $int(u,e)$, logické operátory $\wedge,\vee,\Rightarrow,\neg$, a dále $\in, =$, a řadu zkratek $\subseteq, \neq$ či kvantifikace přes možiny různé od $V$ a $E$.</p>
+<ul>
+<li>souvislost &ndash; ukázáno výše</li>
+<li>dělení na konstantní počet množin &ndash; vypíšeme, že vrchol je právě v první, nebo v druhé, &hellip;</li>
+<li>nezávislá množina &ndash; nejsou v ní 2 sousední vrcholy</li>
+<li>3 barevnost &ndash; existuje dělení vrcholů na 3 množiny, kde každá je nezávislá</li>
+<li>vrcholy stupně 2 &ndash; pro vrchol existují 2 různé sousední hrany, každá další hrana je buď rovna té první či druhé</li>
+<li>souvislost hran &ndash; podobné vrcholové</li>
+<li>hamiltonovský &ndash; výběr souvislých hran takový, že všechny vrcholy mají stupeň 2</li>
+</ul>
+<h3 id="courcellův-teorém">Courcellův teorém</h3>
+<p>Každá grafová vlastnost vyjádřitelná v <a href="#mso2">$MSO_2$ <em>monadické logice druhého řádu na grafech</em></a> formulí $\varphi$ délky $||\varphi||$ s omezeonu stromovou šířkou $t=tw(G)$ lze rozhodnout v čáse $f(||\varphi||,t)\cdot n$.</p>
+<h1 id="barevnost">Barevnost</h1>
+<p>Rozhodnout, jestli lze graf $k$-obarvit ($k \ge 3$) je NP-úplný problém.
+Pro rovinné grafy platí $\chi(G) \le 4$ (důkaz netriviální).
+Důkaz pěti barev je relatively ezy (buď Thomassen z vybíravosti, nebo přímo přes dvoubarevné chainy ve stylu důkazu šesti barev).</p>
+<p>Důkaz šesti barev je skoro triviální.</p>
+<div class="proof">
+Proof: 
+Eulerova formule nám dává, že v rovinném grafu je vrchol stupně 5.
+$$
+    1+C=V-E+F, F \le 2E/3, E \le 3V-6
+$$
+Když budeme mít obrácené pořadí iterativního odebírání vrcholů stupně nejvýše 5, tak při vracení vrcholů do grafu má každý v tu chvíli maximálně 5 sousedů, a tak vždy zbude šestá barva, kterou jde obarvit.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Důkaz pěti barev také není těžký.</p>
+<div class="proof">
+Proof: 
+Postupujeme stejně jako v důkazu šesti barev, jen je potřeba vyřešit případ, kdy vracený vrchol stupně 5 má všechny sousedy různé barvy.
+Označme sousedy v cyklickém pořadí $A,B,C,D,E$ a jejich barvu funkcí $c$.
+Zaměřme se na podgraf $G$ indukovaný vrcholy barvy $c(A)$ a $c(C)$, a jestli v něm jsou vrcholy $A$ a $C$ ve stejné komponentě.
+Pokud ne, tak lze prohodit barvy $c(A)$ a $c(C)$ v komponentě $C$, a pak by měli $A$ i $C$ stejnou barvu.
+Pokud jsou ve stejné komponentě, uděláme stejné pozorování na vrcholy $B$ a $D$.
+Ovšem nyní je garantované, že nejsou ve stejné $BD$-komponentě, protože by se cesta musela v rovinném nakreslení křížit s $AC$-cestou, ale to nemohou, protože nesdílejí barvy.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Brook&rsquo;s theorem: Barevnost grafu $\chi(G) \le \Delta-1$, pokud $G$ není klika nebo lichý cyklus.</p>
+<div class="proof">
+Proof: 
+Uvažujme souvislý neúplný graf.
+Takový graf má indukovanou cestu na třech vrcholech, které označíme vrcholy v pořadí $x,v,y$ ($x,y$ nejsou spojeny).
+Vyrobme kostru z vrcholu $v$ a orientujme v ní hrany k $v$.
+Vyrobme topologické uspořádání této kostry, ve kterém ale dáme $x$ a $y$ na začátek.
+Obarvíme vrcholy v pořadí uspořádání první volnou barvou.
+$x$ a $y$ jsou obarveny stejně, a zjevně všem vrcholům až na $v$ bude stačit $\Delta$ barev, protože mají v uspořádání vždy jednoho souseda v uspořádání dál (neobarveného).
+$v$ ale také bude stačit pouze $\Delta$ barev, protože $x$ a $y$ mají stejnou barvu.
+ <span style="float: right">&#9632;</span>
+</div>
+<h2 id="hranová-barevnost">Hranová barevnost</h2>
+<p>Barvíme hrany, žádné dvě incidentní hrany nesmí mít stejnou barvy (dobré obarvení).
+Hranové chromatické číslo $\chi&rsquo;(G)$ je minimální počet barev, kdy existuje dobré obravení.
+Pozorujeme, že $\chi&rsquo;(G)=\chi(L(G))$, kde $L(G)$ line graf, takže lze na hranovou barevnost nahlížet jako barevnost na speciální třídě grafů.</p>
+<p>Každá hrana je incidentní nejvýše $2(\Delta(G)-1)$ hranám, a proto $\chi&rsquo;(G) \le 2\Delta(G)-1$.
+Navíc, pro grafy s $\Delta(G) \ge 3$ dává Brooksova věta boundu $\chi&rsquo;(G) \le 2\Delta-2$.</p>
+<p>Königova věta (1916): Pro bipartitní grafy $\chi&rsquo;(G) = \Delta(G)$.</p>
+<div class="proof">
+Proof: 
+Postupujme indukcí nad počtem hran.
+Pro $|E|=0$ není co dokazovat.
+Nyní uvažujme, že tvrzení platí pro všechny grafy s počtem hran menším než $|G(E)|$.
+Odeberme z $G$ hranu $\{x,y\}$ a z indukce dostaneme obarvení upraveného grafu $G'$.
+Rozeberme jak upravit obarvení po navrácení hrany $\{x,y\}$ do $G'$.
+<ul>
+<li>stupeň (búno) vrcholu $x$ v $G&rsquo;$ je $\le \Delta-1$, ale jedna z chybějících barev není incidentní ani $y$ &ndash; pak lze vybrat chybějící barvu,</li>
+<li>stupeň (búno) vrcholu $x$ v $G&rsquo;$ je $\le \Delta-1$, ale chybějící barva B je incidentní $y$ &ndash; pak existuje barva $A$ incidentní $x$ a neincidentní $y$, vyberme $AB$-střídavou cestu z $x$ a pozorujeme, že nemůže skončit v $y$ (protože $y$ není incidentní $A$), nakonec prohodíme barvy $AB$ střídavé cesty, což umožní obarvit ${x,y}$ barvou $A$.
+<span style="float: right">■</span></li>
+</ul>
+</div>
+<p>Vizingova věta (1964): Hranová barevnost $\chi&rsquo;(G)$ je vždy $\Delta$ nebo $\Delta+1$.</p>
+<div class="proof">
+Proof: 
+Zjevně $\chi'(G) \ge \Delta$.
+Nyní ukážeme, že algoritmus doobarvení jedné neobarvené hrany pomocí $\Delta+1$ barev.
+Tímto algoritmem budeme moci postupně postavit a barvit hrany celého grafu.
+<p>Mějme barvy $B={1,\dots,\Delta+1}$.
+Mějme $G$ a jeho obarvení $c:E(G)\rightarrow B$ s jednou neobarvenou ${x,y_1}$ hranou, a funkci $m:V(G) \rightarrow B$ (missing), která říká jaká barva není incidentní vrcholu $v$.
+Pokud $m(x)=m(y_1)$, tak můžeme ${x,y_1}$ obarvit barvou $m(x)$.
+Jinak vezměme maximální seznam sousedů $x$ značený $Y = {y_1,y_2,\dots,y_h}$, pro který platí $m(y_i)=c({x,y_{i+1}})$ pro $1 \le i \le h-1$ (Obrázek 1).
+Pokud $m(y_h)=m(x)$, tak přehodíme barvy hran $c({x,y_i}) := m(y_i)$ pro $1 \le i \le h$ (Obrázek 2).
+Jinak víme, že $m(y_i)\ne m(x)$ takže existuje $j &lt; h$ pro které $m(y_h)=c({x,y_j})$, (pro $j &gt; h$ by $Y$ nebylo maximální).
+Jako první krok přebarvíme $c({x,y_i}) := m(y_i)$ pro všechna $i &lt; j$ a odbarvíme hranu ${x,y_j}$ (Obrázek 3).
+Buď
+$$
+H_{c_1,c_2}\subseteq (V(G),{e\in E(G) \mid c(e)=c_1 \vee c(e)=c_2}),
+$$
+slovy je to graf, kde jsou ponechané jen hrany barvy $c_1$ a $c_2$ (červená barva na obrázku).
+Zjevně má $\Delta(G)\le 2$, takže se jedná o disjunktní sjednocení cest a kružnic, konkrétně vrcholy kde $m(v) \in {c_1,c_2}$ jsou ty kde jsou konce cest.</p>
+<p>Pozorujme strukturu $H_{m(x),m(y_h)}$.
+Pokud $x$ a $y_j$ jsou v $H_{m(x),m(y_h)}$ konce různých cest, tak můžeme v jedné cestě prohodit barvy $m(x)$ a $m(y_j)$, což způsobí, že $m(x)=m(y_j)$ a lze tuto barvu použít pro neobarvenou hranu (Obrázek 4).
+Pokud však $x$ a $y_j$ jsou konce stejné cesty, tak cesta vedoucí z $y_h$ nemůže být napojena na $x$.
+Obarvíme zbytek až po $y_h$, tj. $c({x,y_i}) := m(y_i)$ pro $j\le i &lt; h$ a odbarvíme $h$.
+Prohodíme barvy $m(x)$ a $m(y_h)$ v komponentě $H_{m(x),m(y_h)}$ vrcholu $y_h$, čímž bude $m(y_h)=m(x)$ a můžeme tuto barvu použít pro neobarvenou hranu (Obrázek 5).</p>
+<p><img src="./images/edge_coloring_vizing.svg" alt="Ilustrace případů v důkazu Vizingovy věty"></p>
+<p>Legenda obrázku: barvy hran: černá (obarvená), čárkovaná (neobarvená), zelená (poslední dobarvení), červená (podgraf $H_{m(x),m(y_h)}$, modré šipky (posun obarvení), červený čárkovaný ovál (prohození barev $m(x)$ a $m(y_h)$.
+<span style="float: right">■</span></p>
+</div>
+<p>Vizingův výsledek dělí grafy na Vizingovu třídu 1 ($\chi&rsquo;(G)=\Delta$) a třídu 2 ($\chi&rsquo;(G)=\Delta+1$).
+Rozhodnout jestli $G$ patří do Vizingovy třídy 1 je NP-úplné.</p>
+<h2 id="seznamová-listová-barevnost-a-vybíravost">Seznamová (listová) barevnost a Vybíravost</h2>
+<p><strong>Vybíravost</strong> $ch(G)$ je minimální velikost seznamů barev každého vrcholu taková, že pro libovolně vybrané seznamy existuje dobré obarvení grafu, kde má každý vrchol barvu z jeho seznamu.</p>
+<ul>
+<li>Barevnost je vždy nejvýše vybíravost, tj. $\chi(G) \le ch(G)$.</li>
+<li>Obdobně pro hranovou vybíravost a hranovou barevnost platí $\chi&rsquo;(G) \le ch&rsquo;(G)$.</li>
+<li>Barevnost úplného bipartitního grafu je 2, ale vybíravost této třídy není omezená.</li>
+<li>Zjevně $ch(G) \le d+1$ (degenerovanost)</li>
+<li>je NP-hard (claim z GAK &ndash; je NP-úplný)</li>
+<li>Brooksův teorém lze dokázat i pro vybíravost.</li>
+</ul>
+<p>Thomassenova věta (vybíravost rovinných grafů $\le 5$):</p>
+<div class="proof">
+Proof: 
+Doplňme G na rovinnou vnější triangulaci, vnitřní vrcholy mají seznamy velikosti 5, krajní cyklus mimo hranu {x,y} má listy velikosti 3, a x a y mají listy velikosti 1; G má seznamové obarvení.
+Dokážeme indukcí na počtu vrcholů: Pro 3 jasně platí.
+Pokud má vnější cyklus chodru, která rozděluje graf na G1 (kde je na obvodu x a y) a G2, tak můžeme z indukce vyřešit G1 a následně zafixovat jeho barvy a dořešit G2.
+Pokud nemá chordu, tak sousedu w vrcholu x odebereme z listu jedinou barvu listu x, a všem jeho vnitřním sousednům ze seznamů odebereme jeho seznam dvou zbývajících barev.
+Nyní odebráním w máme menší graf, který má stále vnější cyklus (w nemohl být na chordě), kde jeho vrcholy mají listy velikosti 3 a vrcholy x y mají listy velikosti 1.
+Při navrácení w do grafu může být pouze druhý soused na vnějším cyklu (mimo x) obarven barvami z listu w, tak w vybereme tu druhou barvu.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Theorem: Existuje rovinný graf s vybíravostí vyšší než 4, takže vybíravost třídy rovinných grafů je 5.</p>
+<div class="proof">
+Proof: 
+Konstrukce tkví ve vytvoření "banánů", tj. rovinných grafů, které nemohou být obarveny konkrétní dvojicí barev (např. 12-banán nemůže mít na jednom konci 1 a na druhém 2).
+Banány pak spojíme vedle sebe ve všech kombinacích mezi dva vrcholy $x$ a $y$, tudíž nemohou mít žádnou dvojici barev, protože vždy existuje banán, který té kombinaci brání.
+<p><img src="./images/banan.png" alt="banánová konstrukce"></p>
+<p>Výše vidíme ilustraci banánové konstrukce z předmětu GAK.
+<span style="float: right">■</span></p>
+</div>
+<h3 id="dinitzova-domněnka">Dinitzova domněnka</h3>
+<p>Domněnka o seznamové barevnosti (Dinitz): Každý graf splňuje $ch&rsquo;(G) = \chi&rsquo;(G)$.</p>
+<p><strong>Jádro</strong> orientovaného grafu $J(G)$ je nezávislá množina, která je zároveň dominující ve směru proti hranám.
+Jinak řečeno, $\forall_{v\in (V(G) \setminus J(G))}, \exists_{u\in J(G)}, (v,u) \in E(G)$.
+(Ne každý graf má jádro, např. lichý orientovaný cyklus.)</p>
+<p>Lemma: Pro graf $G$ a jeho orientaci $\bar G$, kde $deg^-(v) \le k$ a kde $\forall \bar H \subseteq_{ind} \bar G$ má $\bar H$ jádro, potom $ch(G)\le k+1$.</p>
+<div class="proof">
+Proof: 
+Vezměme barvu $c$ a podgraf $\bar H$ indukovaný vrcholy s listy obsahující barvu $c$.
+Určeme vrcholy jádra $\bar H$ a zafixujme jim barvu $c$, a odstraňme je z grafu $G$.
+Z ostatních vrcholů barvu $c$ odstraníme z listu.
+Všem vrcholům, kterým jsme odebrali barvu z listu jsme snížili výstupní stupeň.
+Výstupní stupeň byl na začátku $\le k$, tudíž listy velikosti $k+1$ budou stačit.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Lemma: Každá orientace bipartitiního grafu má jádro.</p>
+<div class="proof">
+Proof: 
+Indukce nad počtem vrcholů.
+Isolované vrcholy zahrňme do jádra vždy.
+Pokud má stok, tak dejme stok do jádra, odeberme ho a všechny jeho předchůdce, použijme indukci na zbytek grafu.
+Pokud nemá stok, tak $deg^-(v) \ge 1$, a stačí vzít celou jednu partitu.
+ <span style="float: right">&#9632;</span>
+</div>
+<p>Věta: Vybíravost rovinných bipartitních grafů je rovna 3.</p>
+<div class="proof">
+Proof: 
+Horní mez plyne z předchozích lemmat, pokud ukážeme existenci orientování $\bar G$ bipartitního grafu $G$ takové, že $deg^-(v) \le 2$.
+Dolní mez je daná protipříkladem na $K_{2,4}$.
+<p>Pro rovinné bipartitní grafy platí $|E| \le 2|V|-4$.
+Vytvořme $G&rsquo;$ z $G$ následovně:
+Prvně vytvořeme nové vrcholy $X$ tak, že podrozdělíme všechny hrany.
+Potom zdvojíme všechny původní vrcholy $V(G)$ (ne $X$).
+Díky zmíněné nerovnosti víme, že pro každou podmnožinu $W \subseteq X$ je splněna hallova podmínka, takže existuje párování pokrývající $X$.
+Párování si v $G$ vyložíme tak, že si hrana vybere zdrojový vrchol své orientace.
+Jelikož je každý vrchol v $G&rsquo;$ pouze 2x a párování může pokrýt max jednou, tak v $G$ vedou z každého vrcholu maximálně 2 hrany.
+<span style="float: right">■</span></p>
+</div>
+<p>Dinitzovu domněnku pro bipartitní grafy dokázal Galvin.</p>
+<p>Galvinova věta (1995): Pro bipartitní grafy $ch&rsquo;(G) = \chi&rsquo;(G)$ (což s Königovou větou dokazuje $ch&rsquo;(G)=\Delta(G)$).</p>
+<div class="proof">
+Proof: 
+Mějme graf $G$ s partitami $X$ a $Y$ a jeho optimální hranové obarvení $c$ používající $k = \chi'(G)$ barev.
+Je jasné, že $ch'(G) \ge k$.
+Ukážeme, že line-graf $H$ grafu $G$ má $ch(H) \le k$, na což stačí ukázat orientaci $H$ kde $\forall_{v\in V(H)} deg^-(v) < k$, a že tato orientace má jádro.
+<p>Orientaci $D$ grafu $H$ určíme následovně:
+Pro sousední hrany $e,e&rsquo;\in E(G)$, kde $c(e)&lt;c(e&rsquo;)$, bude v $H$ hrana ${e,e&rsquo;}$ orientovaná směrem $(e&rsquo;,e)$ pokud mají společného souseda v $X$, a směrem $(e,e&rsquo;)$ pokud mají společného souseda v $Y$.</p>
+<p>Z vrcholu $e \in H$ vychází hrana pouze pro sousední hrany z $G$, ale pro $X$ pouze ty s nižší barvou, a pro $Y$ pouze s vyšší, nedotýká se stejné barvy, tudíž $deg^-(e) &lt; k$.</p>
+<p>V $G$ je uspořádání hran incidentní $x$ lineární, takže může vyjadřovat preference.
+Bipartitní graf vždy má stabilní párování &ndash; to koresponduje s jádrem v $H$, protoze kdyby z hrany $e \in E(G)$ nevedla v $H$ hrana do hrany párování $e&rsquo;\in E(G)$, tak by to znamenalo, že by oba incidentní vrcholy preferovali mít $e$ spíš než jejich aktuální volbu, a párování by nebylo stabilní.
+Takže z každé nevybrané hrany v $E(G)$ vede v $E(H)$ hrana do vybrané hrany, a párování je nezávislá množina vrcholů z $V(H)$, což je definice jádra.
+<span style="float: right">■</span></p>
+</div>
+<h2 id="hahahugoshortcode116s42hbhb-vizualizace-grafů"><span><a name="visualization"></a><a href="#visualization">#</a></span>
+ Vizualizace grafů</h2>
+<p>Obv. můžeme nakreslit do roviny, vrcholy jako body a hrany jako křivky (mapování intervalu [0,1] do 2d tak, že 0 je výchozí vrchol a 1 je cílový).
+Pak chceme aby se křivky nedotýkaly bodů jinde než v 0 či 1, aby vrcholy měli unikátní body, a aby se křivky nedotýkaly, pokud se v onom bodě neprotnou (degenerované příady).</p>
+<p>Pokud lze graf nakreslit bez křížení hran, tak je <a href="#planar">rovinný</a>.</p>
+<p>V oblasti vizualizace se studuje, jaké parametry mají vliv na hezké nakreslení grafu.
+Do těch například spadá</p>
+<ul>
+<li>edge-length ratio &ndash; nejkratší a nejdelší hrana by se neměla moc lišit,</li>
+<li>crossing number &ndash; počet křížících se hran, chceme minimalizovat,</li>
+<li>area &ndash; pokud kreslíme vrcholy na mřížku, tak nás zajímá velikost oblasti, kterou potřebujeme,</li>
+<li>number of bends &ndash; můžeme dovolit, aby hrany byly polyline, pak nás zajímá minimální počet zalomení,</li>
+<li>angular resolution &ndash; chceme, aby v nareslení nebyly moc malé úhly.</li>
+</ul>
+<p>Je řada metod vizualizace, třeba</p>
+<ul>
+<li>force-based &ndash; nastřelí pozici vrcholů, a potom je pomalu, (skoro-)spojitě upravuje, není to exaktní metoda,</li>
+<li>orthogonal &ndash; kreslí vrcholy na mřížku, a hrany zarovnává rovnoběžně s osami, (např. UML),</li>
+<li>layered &ndash; podle hloubky v DAGu, (např. rodokmen).</li>
+</ul>
+<h1 id="dalšítémata">Další témata</h1>
+<h2 id="základy-kombinatoriky">Základy kombinatoriky</h2>
+<h2 id="princip-inkluze-a-exkluze">Princip inkluze a exkluze</h2>
+<h2 id="dominující-a-nezávislé-množiny">Dominující a nezávislé množiny</h2>
+<h2 id="náhodné-grafy--">Náhodné grafy (-)</h2>
+<h2 id="toky-a-řezy">Toky a řezy</h2>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2020
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            There is depth in shallowness - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-11-05T00:00:00Z" class="post-list timeago">05.11.2018</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>There is depth in shallowness</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>By P. Ossona de Mendez</p>
+<p>[missing]</p>
+<p>We considered Topological minors and Shallow Minors.
+(Stbility by $*K_p$)
+Both have bounded expansion for bounded average degree, chromatic number, and are ND for bounded clique number.</p>
+<p>Topological minor &ndash; paths representing edges are vertex disjoint.
+Minor &ndash; each vertex is represented by sugraph.
+What if we relax his requirement and allow edges to be only edge disjoint &ndash; we get an <em>immersion</em>.</p>
+<p>[obr 1]</p>
+<p>To avoid previous case we define a <strong>shallow immertion</strong>, which has bounded number of times the vertex can be traversed by an edge by r.</p>
+<p>For $K_t$ we have :</p>
+<ul>
+<li>Top minor &ndash; $\delta(G) \geq ct^2$ [ Komlos-Szemerédi,  Bollobás-Thomason]</li>
+<li>Minor &ndash; $rt\sqrt{\log t}$ [ Kostochka, Thomasson ]</li>
+<li>Shallow immertions &ndash; $\delta(v) \geq 11r+t$ [ Dvorák-Yepvenyan ]</li>
+</ul>
+<p>What if we grow every vertex to a small compelte graph? We could avoid crossing the vertex many times. Does it change sparsity?</p>
+<p>Def: $G*K_p : (v,\alpha) v\in G, \alpha \in K_p; (v,\alpha)<del>(u,\beta) \text{ if } u</del>v$ or $u=v$ and $\alpha \neq \beta$.
+[obr 2]</p>
+<p>Lemma: $\tilde\nabla_r(g<em>K_p) \leq p(p+2r) \tilde\nabla_r(G) + p$
+Pf: Let $H \in (G</em>K_p)\tilde\nabla_r$ such that ${||H||\over |H|} = \tilde\nabla_r(G*K_p)$
+[obr 3]</p>
+<ol>
+<li>No branch contains two twins except if the branch is edge linking them.</li>
+<li>Assume we have a subdivision vertex v of a branch corresponding to an edge $e \in H$ which is a twin to a principal vertex of H -&gt; delete e.</li>
+</ol>
+<p>We deleted at most $(p-1)|H|$. ${||H_1|| \over |H_1|} \geq {||H|| \over |H|}-(p-1)$</p>
+<p>Conflict graph of $H_1$: $V(C)=E(H_1)$.</p>
+<ul>
+<li>a~b if a,b are not subdivideed and their endpoints are equal to twins. [obr 4]</li>
+<li>a and b are subdivided and one subdivision vertex of a is a twin of one subdivision vertex of b. [obr 5]</li>
+</ul>
+<p>$\Delta(C) \leq \max(p^2-1, 2(p-1)r)$, $\chi(G) \leq \Delta(C) +1 \leq \max(p^2, 2(p-1)r+1)$.
+We will take a coloring with this number of colors.</p>
+<p>$H_2$ is the largest color class. $||H_2|| \geq {||H_1|| \over max(\dots)}$. $H_3 \subseteq G$ vertices of the &hellip; (path)?</p>
+<p>[obr 6]
+Q (Shallow immersion, $\leq 2r$ subdivision, $\leq r$ crossings at a vertex)
+Corollary: $\tilde\nabla_r(G) \leq Q(G) \leq \tilde\nabla_r(G*K_r) \leq 3r^2\tilde\nabla_r(G) +r$</p>
+<p>(Stbility by $*K_p$)
+For shallow immersions: bounded expansion if average degree, chromatic number, W and ND for $\omega$ are less than $\infty$.</p>
+<hr>
+<p><em>degeneracy</em> $deg(G)=\max_{H \subseteq G} \delta(H) = \lfloor mad(G)\rfloor$.
+Greedy algorithm for coloring &ndash; color by the first free color given that vertices are colored according to a linear order.
+A coloring number is minimum over such linear orders $col(G)=\min_{&lt;} \max_{v\in V(G)} |{u \leq v, u~v \text{ or } u=v}|$ = maximum back degree +1.</p>
+<p>Let ch(G) be choosability of G.</p>
+<p>$\chi(G) \leq ch(G) \leq col(G)$</p>
+<p>Degeneracy is the same as the coloring number: $col(G)=deg(G)+1$</p>
+<p>Lemma[Chrobak, Eppstein]: $G$ has an acyclic orientation $\arrow G$ with \Delta^-(\arrow G) \leq k$ if and only if $deg(G) \leq k$.</p>
+<p>Lemma[Hakimi]: $\lambda: V(G) \rightarrow \mathbb{N}$, $\exists$ orientation of $G$ such that $d^-(v) \leq \lambda(v)$ $\Rightleftarrow \foreach A\subseteq V(G), ||G[A]|| \leq \sum_{v \in A} \lambda(v)$. Moreover, if $||G||=\sum_{v\in V(G)} \lambda(G)$ then $d^-(V) = \lambda(v)$.</p>
+<p>$G, k\in \mathbb{N}, \exists$ unique partition $A,B$ of $V(G)$ such that</p>
+<ul>
+<li>$G[A]$ is $k$-degenerate</li>
+<li>$\lambda(G[B]) &gt; k$</li>
+</ul>
+<p>which we can get by gradually adding vertices of degree $&lt;k$ to $A$.</p>
+<p>We can use the partition A,B, so $\chi(G[A]) \leq k+1$ and $\delta(G[B]) \leq {2||G[B]|| \over |B|} \leq {2||G|| \over |B|}$ and $\chi(G[B]) \leq |B| \leq {2 ||G|| \over k}$ therefore $\chi(G) \leq \chi(G[B]) +\chi(G[A]) \leq 2\sqrt{2||G||}$</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

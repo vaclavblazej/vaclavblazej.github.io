@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/games/</link>
+    <description>Recent content in Games on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eleusis (card game)</title>
+      <link>https://blazeva1.pages.fit/post/2019/eleusis/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2019/eleusis/</guid>
+      <description>A card game by Robert Abbott&amp;thinsp;↗.&#xA;Overview Each round one player is God (dealer) and other players are scientists. God makes up a rule and scientists are trying to get rid of their cards by playing them accodring to the rule.&#xA;The following picture shows one possible layout of cards at the end of one round.&#xA;Example scoring: (Read the rules and scoring first.) Assume there were 5 players with hands of size (13, Prophet&amp;rsquo;s 11, 2, 0, and God which doesn&amp;rsquo;t have a hand), the scoring would go like this: First players gets no points.</description>
+    </item>
+    <item>
+      <title>Zmatené prší</title>
+      <link>https://blazeva1.pages.fit/post/2016/prsi/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2016/prsi/</guid>
+      <description>Pravidla zmateného prší.&#xA;Karty sedm[7] &amp;ndash; další bere + dvě karty (srdcová +4), přeskakuje lízání osm[8] &amp;ndash; ruší poslední sedmu, ale pořád líže devět[9] &amp;ndash; přeskakuje lízání deset[10] &amp;ndash; obrací směr hry, přeskakuje lízání spodek[1] &amp;ndash; mění hodnotu svršek[20, srdcový 40] &amp;ndash; mění barvu král[2] &amp;ndash; viz turnaj eso[11] &amp;ndash; přeskočí dalšího hráče, lze přebít dalším esem Přeskakuje lízání = přesto, že by měl hráč lízat, tak může zahrát kartu co přeskakuje lízání, a tím pošle lízání na dalšího hráče.</description>
+    </item>
+    <item>
+      <title>Forged Alliance na Linuxu</title>
+      <link>https://blazeva1.pages.fit/post/2016/faf/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2016/faf/</guid>
+      <description>Supreme Commander Forged Alliance je strategická PC hra. Tento návod Vám pomůže hru spustit pod lobby FAF, pokud máte hru koupenou na platformě Steam.&#xA;Jak na spuštění SC-FA Program playonlinux umožňuje běh windowsovských programů pod linuxem (s pomocí wine). Výhodou je, že tento program spravuje verze wine a verze programů, je také možné vytvořit více různých virtuálních disků s různými konfiguracemi.&#xA;Pro spuštění Forged Alliance je potřeba playonlinux nainstalovat, v něm vytvořit disk, na něj nainstalovat FAF, Steam a z něho i SC-FA.</description>
+    </item>
+  </channel>
+</rss>

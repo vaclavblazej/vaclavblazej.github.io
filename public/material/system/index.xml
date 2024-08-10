@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/material/system/</link>
+    <description>Recent content on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/material/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu system installation</title>
+      <link>https://blazeva1.pages.fit/material/system/system/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/system/system/</guid>
+      <description>Image download Download the system on the Ubuntu official page&amp;thinsp;↗.&#xA;USB preparation First, insert the USB and find what is the device&amp;rsquo;s name. Find whether the USB is sdb/sdc/etc.&#xA;sudo fdisk -l One of these is your hard disc &amp;ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!&#xA;Fdisk will show if the usb is bootable, we can check afte rinstalation.&#xA;Se can either copy the image to the drive.</description>
+    </item>
+    <item>
+      <title>Nástroj pro správu skriptů</title>
+      <link>https://blazeva1.pages.fit/material/system/cmd/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/system/cmd/</guid>
+      <description>Updated 2023-08-04&#xA;Idea programu cmd je umožnit správu a spouštění vlastních příkazů a scriptů.&#xA;Program je v rozpracovaném stavu, ovšem měl by být použitelný.&#xA;Na co správu příkazů? Po rozhovoru s kolegy jsem zjistil, že všichni zažíváme podobnou nepříjemnost: máme příkazy, které používáme často, ale nepamatujeme si je. Kolikrát má příkaz divné jméno, nebo divně pojmenovaný přepínač, který je nezapamatovatelný. Řešili jsme to různě:&#xA;já měl půlku věcí v aliasech, a půlku ve funkcích kolega hledal často používané příkazy pomocí bash-historie, třetí na to samé měl texťák Pro vyřešení vznikl příkaz cmd (shell-command-manager / shcmdmgr) napsaný v Python3 zamýšlený pro linux, který dovede příkazy uložit, vyhledat, a spustit.</description>
+    </item>
+    <item>
+      <title>Youtrack setup</title>
+      <link>https://blazeva1.pages.fit/material/system/youtrack/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/system/youtrack/</guid>
+      <description>Youtrack&amp;thinsp;↗ je aplikace od JetBrains pro správu softwarových projektů. Je zdarma pro max 10 lidí, pokud si ji dotyční někde nasadí.&#xA;Stáhnutí a zapnutí Stáhnout lze ze stránek programu&amp;thinsp;↗. Nejjednodušší je stáhnout .jar, které potom lze jednoduše spustit:&#xA;java -jar youtrack-7.0.27965.jar 8082 Poslední argument je port. Po spuštění lze najít stránky najít na adrese:&#xA;localhost:8082 Data se ukládají ve složce ~/teamsysdata/youtrack a jejich promazáním se vše resetuje jako před instalací. Také jsou nějaké pomocné informace ve složce ~/.</description>
+    </item>
+  </channel>
+</rss>

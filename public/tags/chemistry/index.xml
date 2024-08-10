@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chemistry on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/chemistry/</link>
+    <description>Recent content in Chemistry on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Segre chart (Table of nuclides)</title>
+      <link>https://blazeva1.pages.fit/post/2023/segre_chart/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/segre_chart/</guid>
+      <description>Decades of effort and millions of dollars compressed into a table that shows base blocks of our universe:&#xA;&amp;thinsp;↗&#xA;Table of nuclides&amp;thinsp;↗ depicts elements of the periodic table in the first axis and their isotopes in the second axis.&#xA;The first exposition to it I had was the excelent BobbyBroccoli video about &amp;ldquo;a guy who faked an element&amp;rdquo;.&#xA;Explore it yourself. A few websites that have a reasonable interactive chart are:</description>
+    </item>
+  </channel>
+</rss>

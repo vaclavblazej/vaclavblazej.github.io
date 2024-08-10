@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Profiling memory of C&#43;&#43; programs using Massif</title>
+      <link>https://blazeva1.pages.fit/post/2021/memory_profiling/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2021/memory_profiling/</guid>
+      <description>The valgrind program has many additional tools, one of which is called massif (manual here&amp;thinsp;↗). We can call it using syntax similar to normal valgrind call.&#xA;valgrind --tool=massif ./a.out &amp;lt;input.txt The command produces a file called massif.out.&amp;lt;number&amp;gt; where the number is bigger for later measurements. This file can be visualized with massif-visualizer from https://github.com/KDE/massif-visualizer&amp;thinsp;↗.&#xA;massif-visualizer massif.out.&amp;lt;number&amp;gt; valgrind --tool=massif --detailed-freq=1 ./a.out &amp;lt;input.txt Seeing leaks A leaking program will accumulate the used memory which will show in the graph as an ever-increasing mass of used memroy.</description>
+    </item>
+  </channel>
+</rss>

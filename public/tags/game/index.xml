@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/game/</link>
+    <description>Recent content in Game on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ring of Pain</title>
+      <link>https://blazeva1.pages.fit/post/2024/ring_of_pain/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2024/ring_of_pain/</guid>
+      <description>Rogue-lite games manifest in repeated playthroughs and gradual metagame progression. Complete mastery of the game may allow you to win a run on the first try. But for mortals there is no option other than to run many times to gain a better chance of winning. The notion of repeated play to challenge yourself to get knowledge and progression is apparent even in the name. Ring of Pain&amp;thinsp;↗ is a very good rogue-lite game with its theme embedded in every corner.</description>
+    </item>
+    <item>
+      <title>Inscription</title>
+      <link>https://blazeva1.pages.fit/post/2024/inscription/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2024/inscription/</guid>
+      <description>The appeal of Inscription&amp;thinsp;↗ is its cool card game tied to a rogue-lite progression through the story. I found the game to be made of two major parts and, surprisingly, even though the story is interesting, I think that the game establishes a theme which later gets betrayed &amp;ndash; let me elaborate; spoilers ahead.&#xA;The game starts with you being forced into playing a card game against a dungeon mater (Leshy) who challenges you in an ascension through a map.</description>
+    </item>
+    <item>
+      <title>Manipulating game files on Steam</title>
+      <link>https://blazeva1.pages.fit/post/2024/downgrading_steam_games/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2024/downgrading_steam_games/</guid>
+      <description>Steam&amp;thinsp;↗ installs and updates your games automatically. However, in some cases it may be needed to change local files manually.&#xA;Running a game with flags right click game, properties in general change the Launchh options The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &amp;ndash; that one is available through variable %command%. For adding a flag use</description>
+    </item>
+    <item>
+      <title>Dredge</title>
+      <link>https://blazeva1.pages.fit/post/2023/dredge/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/dredge/</guid>
+      <description>&amp;ldquo;Dredge&amp;thinsp;↗ is a single-player fisihing adventure with a sinister undercurrent&amp;rdquo; &amp;ndash; as Steam says. I do not want to spoil anything so I split this post into several sections with gradually increasing amount of spoilers. Let me start with a spoiler-free review.&#xA;Dredge is awesome. You end up on an island, you have a ship, go fishing - which is implemented via a simple mini-game, sell your catch, talk to townsfolk, discover the islands.</description>
+    </item>
+    <item>
+      <title>Wall world</title>
+      <link>https://blazeva1.pages.fit/post/2023/wallworld/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/wallworld/</guid>
+      <description>Wall world&amp;thinsp;↗ is a 14-hour&amp;thinsp;↗ rouge-lite digging game where you take on a role of a operator of a mech that can climb the Wall. The world consists only of the Wall and creatures from no-one-knows-where constantly attack you. You go and dig the Wall to find powerful upgrades while always escaping just before your mech gets destroyed by overwhelming waves of enemies.&#xA;I enjoyed this game a lot. It reminded me of times when I tried to find good games about digging and the only things I found were shitty flash games.</description>
+    </item>
+    <item>
+      <title>Patrick&#39;s Parabox</title>
+      <link>https://blazeva1.pages.fit/post/2023/patricks_parabox/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/patricks_parabox/</guid>
+      <description>Recently I finished Patrick&amp;rsquo;s Parabox&amp;thinsp;↗ and can recommend it to anyone who likes puzzle games. The whole game is in-theme and the production is very good. Great deal of planning seems to have gone into the puzzles and their progression is well thought-out.&#xA;The game uses well-known and easy-to-understand Sokoban mechanics while always adding something new to them. The main change is that each block that player usually pushes is itself a map and can under some circumstances be entered and exited.</description>
+    </item>
+    <item>
+      <title>Computing m-Eternal Domination Number of Cactus Graphs in Linear Time</title>
+      <link>https://blazeva1.pages.fit/pub/2023/cacti_eternal_domination/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/pub/2023/cacti_eternal_domination/</guid>
+      <description>This paper is a culmination of a long-term effort of me and Matyáš under the supervision of Tomáš. It was initiated by Bachelor&amp;rsquo;s thesis of Matyáš which then turned into a published paper.&#xA;The reserach concerns m-eternal domination &amp;ndash; a setting where two players, attacked and defender, play in turns. One designs the initial layout of $k$ guards on the input graph and tells how they are all moved. Each turn the attacked announces a vertex and the defender can move all guards, each by at most one edge, so that the attacked vertex now contains a guard.</description>
+    </item>
+    <item>
+      <title>How to write an Interactive story</title>
+      <link>https://blazeva1.pages.fit/post/2022/storytelling/</link>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2022/storytelling/</guid>
+      <description>➤ I&amp;#39;m a programmer, not a writer :o If I were a pure writer, then I couldn&amp;rsquo;t explain the target concepts.&#xA;If you are a programmer, then this post will be easier for you to read because it tries to convey basic programming concepts with comprehensible words and many examples.&#xA;If you are not a programmer, then this post was meant for you :)&#xA;Modern computer games increased the storytelling level lower bound significantly.</description>
+    </item>
+    <item>
+      <title>On the m-eternal Domination Number of Cactus Graphs</title>
+      <link>https://blazeva1.pages.fit/pub/2019/cacti_eternal_domination/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/pub/2019/cacti_eternal_domination/</guid>
+      <description>This research is a followup to Bachelor&amp;rsquo;s Thesis of Jan Matyáš Křišťan (available only with sign-in)&amp;thinsp;↗.&#xA;Abstract Given a graph $G$, guards are placed on vertices of $G$. Then vertices are subject to an infinite sequence of attacks, so that each attack must be defended by a guard moving from a neighboring vertex. The $m$-eternal domination number is the minimum number of guards such that the graph can be defended indefinitely.</description>
+    </item>
+    <item>
+      <title>On Induced Online Ramsey Number of Paths, Cycles, and Trees</title>
+      <link>https://blazeva1.pages.fit/pub/2019/induced_ornum/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/pub/2019/induced_ornum/</guid>
+      <description>Abstract An online Ramsey game is a game between Builder and Painter, alternating in turns. They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices. In each round Builder draws an edge and Painter colors it either red or blue. Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins. The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.</description>
+    </item>
+  </channel>
+</rss>

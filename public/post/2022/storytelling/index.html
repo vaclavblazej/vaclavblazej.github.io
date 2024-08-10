@@ -1,0 +1,475 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            How to write an Interactive story - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2022-01-09T00:00:00Z" class="post-list timeago">09.01.2022</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/text">text</a> <a href="https://blazeva1.pages.fit/tags/game">game</a> <a href="https://blazeva1.pages.fit/tags/editor">editor</a> <a href="https://blazeva1.pages.fit/tags/tutorial">tutorial</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>How to write an Interactive story</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <div class="expandbox">
+<div class="expand-container hidden" id="0_programmer-box">
+<button class="expand-title" id="0_programmer-control">➤ <b>I&#39;m a programmer, not a writer :o</b></button>
+<div class="expand-content">
+<p>If I were a pure writer, then I couldn&rsquo;t explain the target concepts.</p>
+<p>If you are a programmer, then this post will be easier for you to read because it tries to convey basic programming concepts with comprehensible words and many examples.</p>
+<p>If you are not a programmer, then this post was meant for you :)</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("0_programmer" + "-box", "0_programmer" + "-control")</script>
+<p>Modern computer games increased the storytelling level lower bound significantly.
+Compared to <em>Choose your adventure</em> books, which allow readers to interact with the story (by choosing various branches), modern games often incorporate not only short-term decisions but also inventory, situation, and long-term decisions.
+All of these are quite easy to use by the player but can be challenging to implement while writing a story.</p>
+<p>If your aspirations are to create such an interactive story, then you can use a specialized software for that.
+Noteworthy one is Artify (not free), which was used to write the Disco Elysium game.
+For our purposes, we shall focus on Twine, which aims to making text RPGs.</p>
+<p>The point you should keep in mind is that whatever you write: <em>it should be easy to work with</em>.</p>
+<p>Higher than simple interactive books, you may want to keep track of player&rsquo;s decisions and inventory so that the story may be altered down the line.
+You may also give your players more freedom so that the story is non-linear.
+This is very well implemented in games <a href="https://discoelysium.com/"target="_blank">Disco Elysium<span style="white-space: nowrap;">&thinsp;↗</span></a> and <a href="https://planescape.com/"target="_blank">Planescape Torment<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<p>In this post, we will have a look on how to start with interactive writing.
+Then, we shall see typical techniques used in contemporary games.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="0_ack-box">
+<button class="expand-title" id="0_ack-control">➤ <b>Author&#39;s note and acknowledgments</b></button>
+<div class="expand-content">
+<p>You may have a question &ldquo;Why should I believe <em>you</em>?&rdquo;</p>
+<p>I come from the other perspective of interactive storytelling &ndash; I am a programmer.
+My friend told me that we he would like to write interactive stories.
+I looked into how to do so and realized that it is not easy to get into without prior knowledge of programming.
+This post is my best effort to make-up for this; make a simple explanation not only for my friend, but also for you, and any other aspiring author, or anyone interested in this topic.</p>
+<p>As of writing this post (January 2022) there are no adds on this page and I am not associated with any studio involved in any games, nor am I associated with developers of any of the mentioned tools.
+I am a scientist and my current interest in this topic is purely academical.</p>
+<p>To construct this post I used the following sources.</p>
+<ul>
+<li>game <a href="https://discoelysium.com/"target="_blank">Disco Elysium<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>website <a href="https://disco-reader.gitlab.io/disco-reader/#/"target="_blank">Disco Reader<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>Arcity <a href="https://www.youtube.com/playlist?list=PLOGTuf9Pxm66iBymMEsiC023p-PvMBSo4"target="_blank">video tutorial series<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("0_ack" + "-box", "0_ack" + "-control")</script>
+<h2 id="getting-into-it">Getting into it</h2>
+<p>Download <a href="https://twinery.org/"target="_blank">Twine<span style="white-space: nowrap;">&thinsp;↗</span></a>, watch <a href="https://www.youtube.com/results?search_query=twine%20tutorial"target="_blank">tutorials<span style="white-space: nowrap;">&thinsp;↗</span></a>, practice.</p>
+<p>Write at least a very simple story and see how the program works.
+Try to use the following features.</p>
+<ul>
+<li>Reveal the story on a page gradually.</li>
+<li>Branch the story depending on what was clicked</li>
+<li>Join the branches of the story back together to a main story trunk.</li>
+</ul>
+<p>These features are quite specific to interactive storytelling so they should be quite easy to implement.
+However, first-time user will have <em>no idea</em> and they are not trivial to create in any program.
+If you opened the program, tried to click around and have no idea how to progress, then open the hints with examples which are just below this paragraph.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="1_hints-box">
+<button class="expand-title" id="1_hints-control">➤ <b>Hints</b></button>
+<div class="expand-content">
+<p>After installing and opening the program you should be able to click <code>+Story</code> button.
+This gets you into a story which you may get back from by clicking the house in the bottom left corner.
+The created box you see in the middle is the starting point of your story.
+Double-click it to edit it (or in the small menu which is revealed when you mouse-over it).
+This reveals a editing window which should be mostly self-explanatory.</p>
+<p>Aside from the home and editing window there is also a <code>&gt;Play</code> button you should try &ndash; it opens a browser and plays your story.
+This is how you see if the written thing is well formed.</p>
+<p>How to do the tasks above?
+This requires you to write some <em>commands</em>.
+This is still <strong>far</strong> from programming, but has a slight scent of it.
+Each command tells the story how it should behave.
+Commands can either encompass some text as: <code>(command)[text]</code> or it can apply the all of the remaining text as: <code>(command)[==</code>.
+You can find definition of command behaviors in the documentation.</p>
+<h3 id="gradual-reveal">Gradual reveal</h3>
+<p>Using <code>link-reveak</code> or <code>link</code> creates button which (after clicking) reveals rest of the text.
+Copy this on a separate line of a block inside your Twine story.</p>
+<pre tabindex="0"><code>(link-reveal:&#34;Click this to reveal rest of the text&#34;)[==
+</code></pre><p>You may use <code>(link:&quot;Click to reveal&quot;)[revealed text]</code> to reveal a part of a text.
+Note that it uses <code>[text]</code> instead of <code>[==</code> so it applies only to the enclosed text.</p>
+<h3 id="branching-the-story">Branching the story</h3>
+<p>The story is partitioned to pages (similar to websites), and links may jump to a different page.</p>
+<pre tabindex="0"><code>[[Page name]]
+[[This link makes you jump to the page which is named &#34;Page name&#34;-&gt;Page name]]
+</code></pre><h3 id="joining-the-story">Joining the story</h3>
+<p>You simply refer to a page with the same name.
+So e.g. you&rsquo;d have <code>[[Run-&gt;Home]]</code> on one page and <code>[[Go back-&gt;Home]]</code> on another page.
+The <code>-&gt;Home</code> makes both links point to the same page.</p>
+<p><img src="docs/diamond.png" alt="Branching and joining of the story"></p>
+<p>If you managed to use the links properly the diagram of pages should show something similar to the picture above.</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("1_hints" + "-box", "1_hints" + "-control")</script>
+<p>Have look at the final file.
+Click the following link and explore how it works.
+You may also import it into twine (or look at the hints above) to see its structure.</p>
+<ul>
+<li><a href="docs/Elementary_interactive_writing.html">Elementary_interactive_writing.html</a></li>
+</ul>
+<div class="expandbox">
+<div class="expand-container hidden" id="1_solution-box">
+<button class="expand-title" id="1_solution-control">➤ <b>Solution file import instructions</b></button>
+<div class="expand-content">
+<ul>
+<li>Download the following file and put it to the twine default storage folder (usually in <code>~/Documents/Twine/Stories/</code>).</li>
+<li>If it does not show up after restarting Twine, then click <code>Import From File</code> and find it.</li>
+</ul>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("1_solution" + "-box", "1_solution" + "-control")</script>
+<h2 id="elementary-techniques">Elementary techniques</h2>
+<p>These are needed for full interactive story experience.
+We include extensive examples in the expandable sections.</p>
+<h3 id="notation">Notation</h3>
+<p>First, we introduce some basic notation.</p>
+<ul>
+<li><strong>node</strong> &ndash; Is a conversation beat, represents a volume of text the character says at a time; usually depicted with box or a circle.</li>
+<li><strong>edge</strong> &ndash; A traversal from one node to another node, represents where the conversation goes next; usually depicted with an arrow.</li>
+<li><strong>actor</strong> &ndash; A character who speaks in the conversation. Each node has its actor signified by color, name, and/or picture.</li>
+<li><em>flow</em> &ndash; A synonym for <em>progression of the conversation</em>.</li>
+<li><em>branch</em> &ndash; One way the flow may go.</li>
+</ul>
+<p>Writing a dialogue consists of creating nodes and connecting them with edges.</p>
+<p>When a player starts a conversation he begins in a <em>starting node</em> and progresses along the edges to other nodes.
+One node can be considered <em>current</em>: the last node visited by the player which is the last conversation beat which was said.
+The nodes which the player did before may be called <em>past</em> or <em>passed</em> nodes.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="nodes_and_flow_examples-box">
+<button class="expand-title" id="nodes_and_flow_examples-control">➤ <b>Examples of nodes and edges</b></button>
+<div class="expand-content">
+<p>A conversation in Disco Elysium with nodes marked with colored rectangles.
+Each node has its actor written at the beginning (such as Authority, You, Klaasje, Encyclopedia).
+List at the end contains three nodes out of which we may choose any.</p>
+<p>Formally, we are currently in the blue (encyclopedia) node.
+The red, green, and pink node are those which were visited previously.
+The three green nodes at the bottom are possible <em>future</em> nodes.</p>
+<p><img src="./docs/nodes.png" alt="Nodes in a conversation"></p>
+<p>Diagram of a conversation: nodes are circles and squares, edges are arrows.
+The conversation starts in the left node and progresses to the right.
+When there are more outgoing edges it represents that the player has options.
+(The big gray boxes just represent parts of the conversations which return back after they end. Skip this now.)</p>
+<p><img src="./docs/example.png" alt="Diagram of a complex conversation without text"></p>
+<p>In disco reader, the graph is automatically generated from the conversations in the game.
+The nodes and edges are displayed very similarly to the example above.</p>
+<p><img src="./docs/disco_reader_nodes.png" alt="Nodes in Disco Reader"></p>
+<p>Above, we have very simple nodes.
+The following picture shows how nodes may be displayed in a more complex manner, including not only text but also the actor and other resources.</p>
+<p><img src="./docs/artify_nodes.png" alt="Nodes in artify"></p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("nodes_and_flow_examples" + "-box", "nodes_and_flow_examples" + "-control")</script>
+<h3 id="entities-and-global-properties">Entities and global properties</h3>
+<p>Things outside of the conversation are often called <strong>entities</strong>.
+This includes items (weapons, armor, tools), characters (player, NPCs, enemies), and ideas (technologies, thoughts).
+For us, the main uses will be to lead the conversation in different direction or give the player different conversation options when:</p>
+<ul>
+<li>the player has some item in their inventory,</li>
+<li>a NPC is in player&rsquo;s proximity.</li>
+</ul>
+<p>Although entities are important for the game, we shall touch on them just very lightly.
+As writers, we should be aware of entities but their setup should be left to programmers.</p>
+<p>In writing, the entities shall manifest via <em>variables</em> (see next section).</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="entities_more-box">
+<button class="expand-title" id="entities_more-control">➤ <b>More information on entities</b></button>
+<div class="expand-content">
+<p>The entities usually have some inherent properties.
+E.g., a character may have a name, picture, backstory; the weapon may have damage, weight, and so on.
+If the entities are very simple, then it may be quite easy to setup.
+For more complex project the entities usually have properties devised from various traits, e.g., a character may be a shopkeeper &ndash; all shopkeepers should have some extra properties common to them, which are not needed for normal characters.
+Setup of such traits is very close to things done in programming &ndash; that is why I propose to leave this step for programmers.</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("entities_more" + "-box", "entities_more" + "-control")</script>
+<p><strong>Global properties</strong> are things you want to check against as well, but they are not <em>physical things</em> in the game.
+They usually depend on previous conversation choices or the current situation of the player.
+Hence you may lead the conversation in different direction or give the player different conversation options when:</p>
+<ul>
+<li>the player knows some information (e.g., he read about the town on Wikipedia),</li>
+<li>the player chose to convey some information (e.g., introduce himself under a fake name),</li>
+<li>the player is at some location (e.g., indoors).</li>
+</ul>
+<div class="expandbox">
+<div class="expand-container hidden" id="properties_more-box">
+<button class="expand-title" id="properties_more-control">➤ <b>More information on global properties</b></button>
+<div class="expand-content">
+<p>The player being indoors example is actually used in DE in conversation with <em>damaged ledger</em>.
+If you are outside, there is an option to let a note fly with the wind.
+Otherwise, you get an idea to go outside.
+This is done by checking <code>IsExterior()</code> global property.</p>
+<p><img src="docs/damaged_ledger.png" alt="Damaged ledger in Disco reader"></p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("properties_more" + "-box", "properties_more" + "-control")</script>
+<p>In writing, the global variables shall also manifest via <em>variables</em>, but (usually) do not have a <em>concrete</em> representation in the game world.</p>
+<h3 id="variables">Variables</h3>
+<p>Imagine variables as an information-keeping tool to remember something.
+Such information may be used later to influence conversations or player options (see conditions section).
+They usually have clear names as <code>its_raining</code> or <code>inventory.handkerchief</code>.</p>
+<p><em>Setting a variable</em> means to remember something.
+E.g., if the player obtained a map we can set <code>items.map</code> variable to value <code>true</code> (usually by assignment as: <code>items.map = true</code>), indicating that fact in the system for later use.
+We distinguish several types of variables, usually:</p>
+<ul>
+<li><em>boolean</em> &ndash; true or false</li>
+<li><em>integer / double</em> &ndash; numbers</li>
+<li><em>string</em> &ndash; text</li>
+</ul>
+<p>Also, we want to <em>scope</em> the variables (group them) if they have something in common.
+E.g., putting all player items into <code>items</code> scope and putting shop items into <code>shop</code> scope allows us to distinguish <code>items.gun</code> from <code>shop.gun</code>.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="var_more_examples-box">
+<button class="expand-title" id="var_more_examples-control">➤ <b>More examples on variables</b></button>
+<div class="expand-content">
+<p>We state what happened; then how <em>setting the variable</em> looks like; then the effect it may have down the line.</p>
+<ul>
+<li>Player obtained a map; <code>items.map = true</code>; Later, he gets an dialogue option to navigate correctly.</li>
+<li>Player learned some secret information; <code>info.secret_learned = true</code> Later, he may surprise with it an NPC in dialogue.</li>
+<li>Player befriended a character; <code>character.tomy.status = 'friend'</code>; Later, the character will try to help.</li>
+<li>Player locked a door; <code>village.hut.locked_door = true</code>; An NPC will not be able to enter from the other side.</li>
+<li>It started raining outside; <code>its_raining = true</code> Player gets wet if you do not have a raincoat.</li>
+<li>Player character is wet; <code>player.is_wet = true</code>; Player may get electrocuted easily.</li>
+</ul>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("var_more_examples" + "-box", "var_more_examples" + "-control")</script>
+<h3 id="conditions">Conditions</h3>
+<p>Once a variable is set it can be checked with a condition.
+Most common is to check on the following.</p>
+<ul>
+<li>equality <code>==</code> &ndash; used as <code>items.gun.loaded_bullets == items.gun.bullet_capacity</code></li>
+<li>non-equality <code>!=</code> &ndash; used as <code>items.gun.loaded_bullets != 0</code></li>
+<li>bigger <code>&gt;</code> (or equal <code>&gt;=</code>) &ndash; used as <code>player.money &gt;= item.cost</code></li>
+<li>smaller <code>&lt;</code> (or equal <code>&lt;=</code>) &ndash; used as <code>player.weight &lt;= 100</code></li>
+</ul>
+<p>(Note the difference from assignment of a variable with <code>=</code> only one equal sign.)</p>
+<p>Also, we may want to check against more conditions at once.
+This is usually written as:</p>
+<ul>
+<li>all conditions at the same time hold &ndash; <code>and</code> or <code>&amp;&amp;</code></li>
+<li>at least one of the conditions hold &ndash; <code>or</code> or <code>||</code></li>
+</ul>
+<p>Mainly, we may use conditions to do the following.</p>
+<h4 id="split-the-flow">Split the flow</h4>
+<p>Main use is to <em>split the flow</em> to different branches.
+To accommodate this we may create an auxiliary node (with no text or actor) which serves only the function of checking the condition and diverting the flow.
+How to realize this functionality very much depends on what editor you use.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="split_the_flow-box">
+<button class="expand-title" id="split_the_flow-control">➤ <b>More on splitting the flow</b></button>
+<div class="expand-content">
+<p>todo</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("split_the_flow" + "-box", "split_the_flow" + "-control")</script>
+<h4 id="hide-dialog-options">Hide dialog options</h4>
+<p>We may also use conditions to <em>hide dialog options</em>.
+This</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="hide_dialog_options-box">
+<button class="expand-title" id="hide_dialog_options-control">➤ <b>More on hiding dialog options</b></button>
+<div class="expand-content">
+<p>todo</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("hide_dialog_options" + "-box", "hide_dialog_options" + "-control")</script>
+<h2 id="full-examples">Full examples</h2>
+<hr>
+<div class="expandbox">
+<div class="expand-container hidden" id="qq-box">
+<button class="expand-title" id="qq-control">➤ <b>Next</b></button>
+<div class="expand-content">
+</div>
+</div>
+</div>
+<script>setupToggleDiv("qq" + "-box", "qq" + "-control")</script>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2022
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

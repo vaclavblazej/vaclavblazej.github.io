@@ -1,0 +1,45 @@
+#include "../template.h"
+int kn[1234567];
+void pre(string& x) {
+int i=0, j=kn[0]=-1;
+while (i<x.size()) {
+while (j>-1 && x[i]!=x[j])
+j=kn[j];
+if(x[++i]==x[++j])
+kn[i]=kn[j];
+else kn[i]=j;
+}}
+vector<ll> kmp(string& x, string& y) {
+pre(x);
+int i=0,j=0;
+vector<ll> v;
+while (j<(int)y.size()) {
+while (i>-1 && x[i]!=y[j])
+i=kn[i];
+j++;
+if(++i>=x.size())
+v.push_back(j-i), i=kn[i];
+}
+return v;
+}
+vector<ll> kmpPref(string& x, string& y) {
+pre(x);
+int i=0,j=0;
+vector<ll> v(y.size(), 0);
+while (j<(int)y.size()) {
+while (i>-1 && x[i]!=y[j]) i=kn[i];
+v[j]=i+1;
+++j; ++i;
+if (i>=x.size()) i=kn[i];
+}
+return v;
+}
+int main(){
+string t,p;
+while(cin>>t>>p){
+auto res=kmp(p, t);
+cout<<res.size()<<endl;
+for(ll n:res)cout<<n<<' ';
+cout<<endl;
+}}
+

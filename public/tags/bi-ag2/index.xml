@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BI-AG2 on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/bi-ag2/</link>
+    <description>Recent content in BI-AG2 on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/bi-ag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AG2 progtest - 20/21 L</title>
+      <link>https://blazeva1.pages.fit/teaching/2021l/ag2_progtest/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/teaching/2021l/ag2_progtest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AG2 - 17/18 L</title>
+      <link>https://blazeva1.pages.fit/teaching/1718l/ag2/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/teaching/1718l/ag2/</guid>
+      <description>Info Kontakt: blazeva1 (na) fit.cvut.cz Konzultace: Po domluvě Kde mě najdete: NB 341b, či doktorandská místnost A-1246 (bývalé respirium) Odkud se učit&#xA;Průvodce labyrintem algoritmů&amp;thinsp;↗ Competitive Programmer’s Handbook&amp;thinsp;↗ body za aktivitu dostanete za předvedení správného řešení úlohy u tabule, nebo odevzdání úkolu z minulého cvika na papíře (vše je za 1 bod, max je 5 bodů za semestr) Body máte zapsané na stránce klasifikace&amp;thinsp;↗. 12. cvičení 14.5.2018 Nakreslete K_5, K_7 jedním uzavřeným tahem.</description>
+    </item>
+    <item>
+      <title>AG2 - 16/17 L</title>
+      <link>https://blazeva1.pages.fit/teaching/1617l/ag2/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/teaching/1617l/ag2/</guid>
+      <description>Info Kontakt: blazeva1 (na) fit.cvut.cz Konzultace: Po domluvě Kde mě najdete: NB 341b body za aktivitu dostanete za předvedení správného řešení úlohy, nebo odevzdání úkolu z minulého cvika na papíře (každý za 0.5 bodu, max je 5 bodů za semestr) 1. cvičení 23.2.2017 hodnocení, k-regulární graf s n vrcholy, grafy (normální/acyklické) bez stoků či zdrojů (spousta kombinací), mocniny matice sousednosti, rychlé mocnění úkoly do příště Je pravda, že každý orientovaný graf obsahuje acyklický faktor?</description>
+    </item>
+  </channel>
+</rss>

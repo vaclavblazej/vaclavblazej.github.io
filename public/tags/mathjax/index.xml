@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathjax on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/mathjax/</link>
+    <description>Recent content in Mathjax on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 09 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathjax</title>
+      <link>https://blazeva1.pages.fit/post/2023/mathjax/</link>
+      <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/mathjax/</guid>
+      <description>Setting up Mathjax&amp;thinsp;↗ for your website allows you to add mathematical symbols as either inline math $E = mc^2$, or display math: \[ R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_{\mu \nu} \] Such mathematics are written in LaTeX format&amp;thinsp;↗. If you already have old Mathjax 2 setup, you can use Conversion tool&amp;thinsp;↗ to migrate.&#xA;To setup the math from zero we enable inline math to be entered using dollar symbols $E = mc^2$ or display math by using escaped square brackets:</description>
+    </item>
+  </channel>
+</rss>

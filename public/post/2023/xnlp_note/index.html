@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            A note about XNLP-completeness - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2023-08-17T00:00:00Z" class="post-list timeago">17.08.2023</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/research">research</a> <a href="https://blazeva1.pages.fit/tags/complexity">complexity</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>A note about XNLP-completeness</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Classically, we aim to determine whether a computational problem is either NP-hard or polynomial-time solvable.
+Such a distinction is only the first step when researching a problem that is NP-hard as often we still need to devise an algorithm that will provide us with a solution.</p>
+<p>Within the field of parameterized complexity we aim to find algorithms that are &ldquo;terrible&rdquo; only with respect to some facet of the input.
+More precisely, this means that instead of having something like $\mathcal O(2^n)$ where $n$ is the size of the input we instead may have $f(k) n^{\mathcal O(1)}$ where $f$ is any computable function and $k$ describes parameter of the input.</p>
+<p>Extraction of the input parameter leads us to niecher distinction of complexity classes.
+When a parameter $k$ is extracted one may still get that the problem remains NP-hard &ndash; we call this para-NP-hardness.
+On the other hand, we may get that the problem becomes fixed parameter tractable (FPT), which means the algorithm has complexity $f(k) n^{\mathcal O(1)}$.
+Somewhere in the middle we may prove that there is an XP algorithm with complexity $n^{f(k)}$ and is at the same time W[1]-hard.
+W[1]-hardness refutes (under standard assumptions) that there exists an FPT algorithm.</p>
+<p>Going little deeper we may prove that the problem is XNLP-complete &ndash; we are finally getting to the point of this post.
+XNLP-hardness implies W[t]-hardness for every $t$, and it also implies XP membership, so it is a more precise place for some problems within the standard parameterized complexity analysis.</p>
+<p>Typically, XNLP membership is proved by showing a nondeterministic algorithm that runs in $f(k) \cdot n^{\mathcal O(1)}$ time and $f(k)\cdot \log n$ space with $f$ a computable function, $n$ input size, and $k$ the parameter.
+XNLP-hardness is shown by using a parameterized tractable logspace reduction &ndash; a parameterized reduction that runs in $\mathcal O(g(k) \cdot n^c)$ time and uses $\mathcal O(f(k) \cdot \log n)$.</p>
+<p>The hardness reductions begs a question:
+&ldquo;How does a reduction that does not have space to output its own answer works?&rdquo;
+Typically, this can be thought of having a Turing machine that has an input, output, and a work tape and where its space complexity is counted only in the used work tape space.
+Other way to think about such a reduction is that it is able to output a single bit of the output on demand.
+One could then concatenate such reductions.
+This increases the space used additively and time multiplicatively, which preserves the class in question.</p>
+<h2 id="soruces">Soruces</h2>
+<ul>
+<li>XNLP class was introduced (under name $N[f\ \textrm{poly}, f\ \textrm{log}]$) in &ndash; Michael Elberfeld, Christoph Stockhusen, and Till Tantau. On the space and circuit complexity of parameterized problems: Classes and completeness. Algorithmica, 71(3):661–701, 2015. <a href="https://www.doi.org/10.1007/s00453-014-9944-y"target="_blank">doi:10.1007/s00453-014-9944-y<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+<li>Its significance was shown in &ndash; Hans L. Bodlaender, Carla Groenland, Jesper Nederlof, and Céline M. F. Swennenhuis. Parameterized problems complete for nondeterministic FPT time and logarithmic space. In Proc. 62nd Ann. IEEE Symp. Foundat. Comput. Sci. (FOCS), pages 193–204, 2022. <a href="https://www.doi.org/10.1109/FOCS52979.2021.00027"target="_blank">doi:10.1109/FOCS52979.2021.00027<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+<li>Then, it was used to show results for linear width measures in &ndash; Hans L. Bodlaender, Carla Groenland, Hugo Jacob, Lars Jaffke, and Paloma T. Lima. XNLP-completeness for parameterized problems on graphs with a linear structure. In Holger Dell and Jesper Nederlof, editors, 17th Int. Symp. Param. Exact Comput. (IPEC), volume 249 of LIPIcs, pages 8:1–8:18. Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2022. <a href="https://www.doi.org/10.4230/LIPIcs.IPEC.2022.8"target="_blank">doi:10.4230/LIPIcs.IPEC.2022.8<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2023
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

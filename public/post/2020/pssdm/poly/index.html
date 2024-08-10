@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Notes from the &#39;Polynomial Paradigm in Algorithm Design&#39; - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2020-08-24T00:00:00Z" class="post-list timeago">24.08.2020</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Notes from the &#39;Polynomial Paradigm in Algorithm Design&#39;</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>The following 5 lectures were given by <a href="https://homes.cs.washington.edu/~shayan/"target="_blank">Shayan Oveis Gharan<span style="white-space: nowrap;">&thinsp;↗</span></a> (University of Washington) on the &lsquo;<a href="..">Prague Summer School on Discrete Mathematics 2020</a>&rsquo;.</p>
+<h1 id="real-stable-polynomials-and-strongly-rayleigh-distributionshttpswwwyoutubecomwatchv4t54jvgzzk4"><a href="https://www.youtube.com/watch?v=4T54JVgZzK4"target="_blank">Real stable polynomials and strongly Rayleigh distributions<span style="white-space: nowrap;">&thinsp;↗</span></a></h1>
+<h2 id="notation">Notation</h2>
+<ul>
+<li>polynomial $p \in \mathbb{R} [Z_1,\dots,Z_n]$</li>
+<li>$p \in \mathbb{R}_{\ge 0}$ non-negative coefficients</li>
+<li>$p \in \mathbb{R} [Z_1,\dots,Z_n]$ is $d$-homogenous if (every monimial of p has degree d)</li>
+<li>$\mathcal{H}$ is set of points in complex plain s.t. imaginary value is positive.</li>
+<li>$p \in \mathbb{R}$ is real stable if $p(Z_1,\dots,Z_n) \ne 0$ whenever $(Z_1,\dots,Z_n)\in\mathcal{H}^n$.</li>
+<li>$z^s = \Pi_{i\in S}z_i$</li>
+</ul>
+<h2 id="intuition">Intuition</h2>
+<p>Fact:
+If $p\in \mathbb{R}[Z]$ is real rooted iff $p$ is real stable.</p>
+<p>Equivalent definition:
+$p \in \mathbb{R}[Z_1,\dots,Z_n]$ is real stable iff for all $a\in \mathbb{R}^n_{&gt;0}$ and $b\in\mathbb{R}^n$ the univariable polynom $p(at+b)=f(t)$ not identically zero and is real rooted.</p>
+<p>Example:
+<a href="https://www.wolframalpha.com/input/?i=roots&#43;of&#43;%5B1-xy%5D"target="_blank">Roots of $1-z_1z_2$<span style="white-space: nowrap;">&thinsp;↗</span></a> are hyperbolae-like and is real stable.
+Because all &lsquo;positive&rsquo; lines (going from 3rd quadrant to 1st) are crossing both lines of the solutions, so they all cross $2$ solutions.</p>
+<p><a href="https://www.wolframalpha.com/input/?i=roots&#43;of&#43;%5B1%2Bxy%5D"target="_blank">Roots of $1+z_1z_2$<span style="white-space: nowrap;">&thinsp;↗</span></a> is not real stable because there are lines which have different number of solutions (some cross no solution).</p>
+<p>$p$ is real satble $\Rightarrow$ $p(at+b)$ is real rooted:
+By contradiction $\exists t:Im(t)\ne 0, p(at+b)=0$.
+We can assume $Im(t) &gt; 0$ and define $z_i=a_it+b_i \forall i$ and see that $Im(t) &gt; 0 \Rightarrow Im(Z_i) &gt; 0 \forall i$.
+$p(Z_1,\dots,Z_n) = p(at+b)=0$, a contradiction.</p>
+<p>$p(at+b)$ is not identically zero $\Rightarrow$ $p$ is real stable and real rooted.
+By contradiction if p is not real stabel $\Rightarrow$ $\exists z_1,\dots,z_n \in \mathcal{H}^n$ s.t. $p(z_1,\dots,z_n)=0$.
+Let $a_i = Im(z_i), b_i=Re(z_i) \Rightarrow a\in \mathbb{R}^n_{&gt;0}, b\in\mathbb{R}^n$.</p>
+<p>todo, few examples missing</p>
+<p>Non-exampele $z_1^2+z_2^2$.</p>
+<h3 id="mother-of-all-stable-polynomials">Mother of all stable polynomials</h3>
+<p>Thm: Given PSD matrices $A_1,\dots,A_n \in \mathbb{R}^{d\times d}$ and a symmetric matrix $B \in \mathbb{R}^{d\times d}$ then ${\rm det}(B+\sum Z_iA_i) = p(Z_1,\dots,Z_n)$.</p>
+<p>Application:
+Matrix tree thm:
+$b_e=(u,v)=1u-1v$, $\frac{1}{n^2}{\rm det}(1^T + \sum z_eb_eb_e^T)=\sum_{T st}\Pi_{e\in T} z_e$ (generating polynomial of all spanning trees).</p>
+<p>Thm (Choe-Oxly-Sokal-Wagner &lsquo;02):
+The support of any multi-affine homogenous real stable polynomial corresponds to Bases of a matroid.
+Def: $p\in \mathbb{R}[Z_1,\dots,Z_n]$ is multi affine if every monomial is square free (doesn&rsquo;t contain e.g. $z_2^2z_1$ or $z_5^3$).</p>
+<h3 id="limitations">Limitations</h3>
+<p>We cannot realize everything, we can realize only some Matroids.</p>
+<h3 id="closure-properties">Closure properties</h3>
+<p>Family of real state polynomials are closed under many operations.</p>
+<p>$p,q\in\mathbb{R}[Z_1,\dots,Z_n]$ is real stable.
+Real state polynomials are closed under the following operations (e.g.):</p>
+<ul>
+<li>$p \cdot q$ is real stable</li>
+<li>(symmetrization) $r(Z_1,Z_3,\dots,Z_n)=p(Z_1,Z_1,Z_3,\dots,Z_n)$</li>
+<li>(external field) $\lambda_1,\dots,\lambda_n &gt; 0$, $r(Z_1,\dots,Z_n)=p(\lambda_1Z_1,\dots,\lambda_nZ_n)$</li>
+<li>(specialization) $r(Z_2,\dots,Z_n) = p(a,Z_2,\dots,Z_n)$ for $Im(a) \ge 0$ (in particular if $a \in \mathbb{R}$)</li>
+</ul>
+<p>(Limit of real stable polynomials is real stable.)</p>
+<p>Some other closed operations:</p>
+<ul>
+<li>(differentiation) $\frac{\partial P}{\partial z_i}$</li>
+<li>(inversion) &hellip;</li>
+</ul>
+<h3 id="strongly-reyleigh-distribution">Strongly Reyleigh Distribution</h3>
+<p>(probabilistic analog of real stable polynomials)</p>
+<p>Def: $\mu : 2^{[n]} \rightarrow \mathbb{R}<em>{\ge 0}$ generating polynomial of $\mu$.
+$g</em>\mu(z_1,\dots,z_n)=\mathbb{E}[z^s] = \sum_{S\subseteq[n]}\mu(S)z^S.</p>
+<p>E.g. Two independent Bernoulli:
+$B_1,B_2$
+TODO &hellip; cca 50m in the video, didn&rsquo;t get it</p>
+<p>Def $\mu$ is SR if $g_\mu$ is real stable.</p>
+<p>Operations</p>
+<ul>
+<li><strong>Conditioning i in</strong> $g_\mu |<em>i = z_i \partial</em>{z_i}g_\mu / P[i]$ (note $/P[i]$ can be omitted because scaling doesn&rsquo;t change roots).</li>
+<li><strong>Conditioning i out</strong> $g_\mu |<em>{\bar i} = g</em>\mu |_{z_i=0}$</li>
+<li><strong>projection</strong> Fix $T \subseteq [n]$. $\mu|<em>T(a)=\sum</em>{S:S\cap T=A}\mu(S)$, $A\subseteq T$; projction is exactly $g_\mu |_{z_i=1} \forall i\not\in T$.</li>
+<li><strong>external field</strong> $\mu: \lambda_1,\dots,\lambda_n &gt; 0$, $\mu \cdot \lambda(S) = \mu(S) \cdot \lambda^S$</li>
+</ul>
+<p>App: $G=(V,E)$, $\mu$ = uniform distribution over spanning trees, $g_\mu = 1/{\text{#st}} \sum_T z^T$ real stabel, $\mu$ is S.R.</p>
+<p>Lemma: Say $F\subseteq E$ define $a_i=\mathbb{P}[|T\cap F|=i]$, $\Pi_i a_i$ correspond to sum of independent Bernoullis.</p>
+<p>Pf:
+$g_\mu$ first project onto $F$.
+$g_1 = g_\mu|<em>{z_e=1,\forall e\not\in F}$.
+$g_2 = g_1(t,t,t,\dots,t)$ (symmetrization), $g_2$ must be real rooted.
+$g_2 = a_0 + a_1t + \dots + a</em>{|F|}t^{|F|}$.
+Bacground notes: $\exists$ independent Bernoullis.</p>
+<p>We can study: What is the probability $\mathbb{P}[|T\cap F| \text{ is odd}]$? (used in TSP)</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2020
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

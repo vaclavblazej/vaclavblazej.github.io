@@ -1,0 +1,241 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Extended graph structure for data persistance - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2019-06-15T00:00:00Z" class="post-list timeago">15.06.2019</time>
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Extended graph structure for data persistance</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p><strong>Information in this post is superseeded by a <a href="https://blazeva1.pages.fit/material/gr">material page</a></strong></p>
+<p>Let us extend graphs and build system around their structure to accomodate better persistance.</p>
+<p>Relational databases are fine for a domain-specific usecase.
+Graph databases (like Neo4j) are nice for a very non-structured data.
+However, we want structure and flexibility.
+This can be achieved via defining the structure inside the graph itself &ndash; storing the metadata as data.
+Graphs are also not good enough, since they have only nodes and relations (both with parameters), but lack ordered lists of relations as parameters.
+We will define a structure which will have these features.</p>
+<h2 id="structure">Structure</h2>
+<p>All of the following structures are retrieved in JSON format.</p>
+<ul>
+<li><strong>Node</strong> &ndash; is an entry of the storage, describes something (Person, Event, Idea, anything really), has id, type, and list of parameters</li>
+<li><strong>Relation</strong> &ndash; connects two entries which indicates that the first entry did something to the other (e.g. Author -[wrote]-&gt; Book), has id, type, and list of parameters</li>
+<li><strong>Id</strong> &ndash; unique identifier (number) of a node / relation</li>
+<li><strong>Parameter</strong> &ndash; is the main way of storing information, has key (name) and value (content)
+<ul>
+<li><strong>Key</strong> &ndash; is a string code of the parameter</li>
+<li><strong>Value</strong> &ndash; is a content of the entry / relation parameter, has datatype</li>
+</ul>
+</li>
+<li><strong>Type</strong> &ndash; defines the entry / relation structure, i.e., mandatory parameters, their datatypes, and for relations: what entry types they can connect</li>
+<li><strong>Datatype</strong> &ndash; what can be stored in the value of a parameter
+<ul>
+<li><strong>primitive types</strong> &ndash; string, number (integer, float), bool</li>
+<li><strong>list of (relation, node) pairs</strong> &ndash; describe all of the incident relations of a given type, distinguishes outgoing, incoming, and undirected relations, can be unordered or ordered by a specific parameter</li>
+</ul>
+</li>
+</ul>
+<p>Since the data is valid when its type is well defined, the whole structure requires only one entry to be valid &ndash; type entry of the node which deifnes the Type type, which can look as follows.</p>
+<pre tabindex="0"><code>{
+    type: Type
+    name: Type
+    description: Entries with this type do not store the data as the standard entries, but define
+                 various types of entries. Each entry should have its type to say what it should
+                 store. Non-complience with this requirement will result in an error.
+}
+</code></pre><h2 id="methods">Methods</h2>
+<p>We use the REST API method format.
+All of the following work with entities in JSON format.</p>
+<ul>
+<li>nodes &ndash; create, find, remove, edit</li>
+<li>edges &ndash; create, find, remove, edit</li>
+</ul>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li>should relations be &ldquo;global&rdquo; or always dependent on the entity variable? (or both? somehow)</li>
+<li>define type for files and folders?</li>
+<li>relation for types</li>
+<li>should have inheritance?</li>
+</ul>
+<h2 id="implementations">Implementations</h2>
+<p>The structure is defined generally so it can be implemented with use of any technology.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2019
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

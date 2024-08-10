@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hops on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/hops/</link>
+    <description>Recent content in Hops on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/hops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hierarchy of Parameters update</title>
+      <link>https://blazeva1.pages.fit/post/2024/parameters_update/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2024/parameters_update/</guid>
+      <description>It&amp;rsquo;s been a long time coming but over the longer weekend I finished rewriting of HOPS&amp;thinsp;↗ from python to rust. Throughout the rewriting, there were some new ideas of what could be included, unfinished parts of which are coded. Now, after a long time, I believe the resulting page to be in a better state than it was before so it was finally released. The biggest changes are as follows.</description>
+    </item>
+  </channel>
+</rss>

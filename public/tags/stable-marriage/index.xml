@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stable Marriage on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/stable-marriage/</link>
+    <description>Recent content in Stable Marriage on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/stable-marriage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matchings</title>
+      <link>https://blazeva1.pages.fit/material/science/res/matchings/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/material/science/res/matchings/</guid>
+      <description>This set of problems focuses on finding a mathing in a graph. One very popular variant is stable marriage problem where the goal is to create a matching on a bipartite graph, where each vertex has its preference list of neighbors, such that no pair of non-matched vertices want to be with each other more than their current match &amp;ndash; that would be so called blocking pair.&#xA;Some research as of February 2019 On February of 2018 Chen, Hermelin, Sorge, and Yedidsion 1 studied the Egalitarian optimal stable matchings, in which we want to minimize the sum of chosen indices over all the preference lists, and with Matchings with minimum number of blocking pairs, where we want to minimize the number of blocking pairs.</description>
+    </item>
+  </channel>
+</rss>

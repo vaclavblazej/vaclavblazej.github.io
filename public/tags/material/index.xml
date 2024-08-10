@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Material on Homepage of Vašek</title>
+    <link>https://blazeva1.pages.fit/tags/material/</link>
+    <description>Recent content in Material on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Tue, 08 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blazeva1.pages.fit/tags/material/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Systems page update</title>
+      <link>https://blazeva1.pages.fit/post/2023/update_system/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://blazeva1.pages.fit/post/2023/update_system/</guid>
+      <description>This website is split between into two main parts. First are blog posts that are time-sensitive and eventually go out-of-date. Second is called material that is meant to be updated regularly or capture time-insensitive information.&#xA;Page about my system setup used to only list some programs I used or knew about and it was terribly out-of-date &amp;hellip; so the time came up to update it.&#xA;Though I am quite satisfied with my current setup there are still some minor things that I would like to fix eventually.</description>
+    </item>
+  </channel>
+</rss>

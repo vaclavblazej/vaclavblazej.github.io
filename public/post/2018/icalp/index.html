@@ -1,0 +1,392 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            ICALP 2018 - výpisky - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2018-07-10T00:00:00Z" class="post-list timeago">10.07.2018</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/research">research</a> <a href="https://blazeva1.pages.fit/tags/conference">conference</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>ICALP 2018 - výpisky</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9085/pdf/LIPIcs-ICALP-2018-81.pdf"target="_blank">T. Johnson, M. T. Goodrich, W. E. Devanny, J. J. B. Vial and D. Eppstein:
+<strong>Optimally Sorting Evolving Data</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme měnící se data, která chceme seřadit.
+Po každém compare-and-exchange operaci se vymění náhodná dvě sousední data.
+Počítáme vzdálenost ke správnému seřazení pomocí inverzí.
+Lower bound je Omega(N) inverzí po konci algoritmu.</p>
+<p>Autorům se povedlo dokázat, že insertion sort je optimální &ndash; tj. po doběhnutí algoritmu máme s vysokou pravděpodobností O(N) inverzí.
+Experimenty ukazují, že většina O(N^2) algoritmů má dobré výsledky.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9038/pdf/LIPIcs-ICALP-2018-34.pdf"target="_blank">M. Charikar, O. Geri, M. Kim and W. Kuszmaul:
+<strong>On Estimating Edit Distance: Alignment, Dimension Reduction, and Embeddings</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Lower bound pro počítání Lehvensteinovy vzdálenosti je v polynomu řádu N^2.
+Algoritmy, které jsou rychlejší, musí být aproximační, a některé poseldní algoritmy ani nevracejí operace, které je pro změnu prvního řetězce na druhý, ale pouze jejich počet.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9067/pdf/LIPIcs-ICALP-2018-63.pdf"target="_blank">P. Gawrychowski, G. Landau, W.-K. Sung and O. Weimann:
+<strong>A Faster Construction of Greedy Consensus Tree</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Mějme zakořeněné stromy, kde každý list má číslo 1..n, kde vnitřní vrcholy mají stupeň 2+.
+Tyto stromy reprezentují historii genetiky různých druhů stromů/zvířat apod.
+Máme několik způsobů jak kombinovat dva takové stromy, např: majority, loose, frequency, greedy consensus tree.</p>
+<p>Autoři dokázali udělat frequency ct v O(kn) a greedy v O(k n^1.5).</p>
+<p>Potřebujeme mít deterministický isomorfismus podstromů.
+Provedeme HLD + uděláme si úplný binární strom kde listy jsou bity příslušnosti do setu.
+Nějak to prostě umlátili :)
+Počítali LCA mnoha prvků pomocí micro-macro dekompozice stromů.</p>
+<hr>
+<p><a href="https://arxiv.org/pdf/1804.10186.pdf"target="_blank">B. Dudek and P. Gawrychowski:
+<strong>Edit Distance between Unrooted Trees in Cubic Time</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Mějme nezakořeněné, uspořádané stromy.
+Autoři dovedli v O(N^3) najít edit distance na takových stromech.
+(Pokud platí nějaká conjecture), tak tento problém nelze vyřešit v O(N^(3-e)) pro e&gt;0.</p>
+<p>Pro zakořeněné stromy to lze v O(N^2).
+Pokud bychom zkoušeli všechny zakořenění, tak máme O(M N^2).
+Autoři použili nějaké trýčky, aby se dostali z M na N.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9030/pdf/LIPIcs-ICALP-2018-26.pdf"target="_blank">J. Byrka, P. Skowron and K. Sornat:
+<strong>Proportional Approval Voting, Harmonic k-median, and Negative Association</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Mají 2.36-aproximaci pro harmonický k-medián pro Proportional Approval Voting použitím LP a dependent rounding.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9032/pdf/LIPIcs-ICALP-2018-28.pdf"target="_blank">L. Elisa Celis, D. Straszak and N. K. Vishnoi:
+<strong>Ranking with Fairness Constraints</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Když máme napovídání personalizované, vzniká problém, že člověk co má jeden názor ho také najde, a nemá tak přehled o všech možných oblastí, které pole zájmu obsahuje.
+Fair ranking problem &ndash; máme m itemů a n pozic, a utilitní matici jakou má váhu když item bude na vybrané pozici, chceme přiřadit všechny problémy.
+Můžeme mít nějaká omezení, která musí být splněna výsledným přiřazením.
+Autoři udělali řešení pro d=1, aproximaci pro d&gt;1 a ukázali těžkost problému.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9112/pdf/LIPIcs-ICALP-2018-108.pdf"target="_blank">J. Chen, B. Li, Y. Li and P. Lu:
+<strong>Brief Announcement: Bayesian Auctions with Efficient Queries</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Autoři se zabývali Bayesovskými aukcemi. Povedlo se jim odvodit lower bound a skoro optimální upper bound.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9158/pdf/LIPIcs-ICALP-2018-154.pdf"target="_blank">T. Harks, M. Hoefer, A. Huber and M. Surek:
+<strong>Efficient Black-Box Reductions for Separable Cost Sharing</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme hráče a zdorje, platí se za zapnutí zdroje a za propojení hráče ke zdroji.
+Když je hra separable, tak změna volby hráče neovlivní cenu ostatních, kteří nejsou u zdroje od/ke kterému se změnil.</p>
+<p>Matroid Games, Connection Games &ndash; Autoři udělali redukci, která změní profil na vynutitelný profil pro tyto třídy her.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9150/pdf/LIPIcs-ICALP-2018-146.pdf"target="_blank">V. Bilò, L. Moscardelli and C. Vinci:
+<strong>Uniform Mixed Equilibria in Network Congestion Games with Link Failures</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Jeden hráč se snaží projít sítí od s do d, tak aby byla šance přerušení nepřítelem, který zná jeho strategii, co nejnižší.
+Když bude mít hráč nerandomizovanou strategii, tak jeho cestu vždy nepřítel přeruší.
+Když použije náhodnou cestu tak, aby pravděpodobnost nejpravděpodobnější hrany byla co nejnižší, tak minimalizuje šanci, že jeho cestu nepřítel přeruší.
+Když budeme mít hráčů více, každý s vlastním nepřítelem, dostáváme se do (Network) Congestion Games.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9154/pdf/LIPIcs-ICALP-2018-150.pdf"target="_blank">G. Christodoulou, M. Gairing, Y. Giannakopoulos and P. Spirakis:
+<strong>The Price of Stability of Weighted Congestion Games</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Pro Congestion Games (viz předchozí talk) přišli autoři s lower a upper boundy na Price of Stability.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9155/pdf/LIPIcs-ICALP-2018-151.pdf"target="_blank">R. Colini-Baldeschi, M. Klimm and M. Scarsini:
+<strong>Demand-Independent Optimal Tolls</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Non-atomic congestion games &ndash; dvě skupiny řidičů, kteří mají jiný start/cíl.
+Každý chce minimalizovat svoji dobu řízení.
+Wardrop equilibrium, řešení toku (aut) zkrz síť; pokud jsou funkce hran striktně rostoucí je i prostor řešení konvexní a má řešení (LP).
+Pokud se řidiči chovají sobecky, tak se do tohoto equilibria asi nedostaneme &hellip; lze na hrany přidat clo tak, abychom se dostali do tohoto equilibria.</p>
+<p>Autoři dokázali, že demand-independent optimal cla existují právě tehdy, když funkce ceny hran jsou všechny typu c(x)=a x^t + b; když existují, tak jsou unikátní; pro generický výsledek mohou vyžadovat záporné clo.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9159/pdf/LIPIcs-ICALP-2018-155.pdf"target="_blank">T. Kesselheim and B. Kodric:
+<strong>Price of Anarchy for Mechanisms with Risk-Averse Agents</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Výsledky na <em>smoothness</em>; také ukázali, že v all-pay aukci s risk-averse hráči není Price of Anarchy omezené.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9083/pdf/LIPIcs-ICALP-2018-79.pdf"target="_blank">Z. Huang, Z. G. Tang, X. Wu and Y. Zhang:
+<strong>Online Vertex-Weighted Bipartite Matching: Beating 1-1/e with Random Arrivals</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Worst case tohoto problému je vyřešený.
+Autoři se zabývají případem, kde máme sice worst-case graf, ale příchozí vrcholy jsou náhodné.
+Podařilo se jim tak udělat řešení pro random-arrival, které je lepší než dolní mez worst-casu.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9055/pdf/LIPIcs-ICALP-2018-51.pdf"target="_blank">B. Feldkord, M. Feldotto, A. Gupta, G. Guruganesh, A. Kumar, S. Riechers and D. Wajc:
+<strong>Fully-Dynamic Bin Packing with Little Repacking</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Plně dynamické Bin Packing &ndash; mějme itemy, které chceme dát do tašek.
+Na offline případ je známý FPTAS algo.</p>
+<p>Pro online setting: itemy postupně přicházejí a odcházejí a chceme je zabalit do co nejméně tašek tak, abychom při jednom přidání/odebrání, přebalili maximálně R itemů.
+Zároveň chceme aby se algoritmus dostal na nějakou rozumnou c-aproximaci.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9017/pdf/LIPIcs-ICALP-2018-13.pdf"target="_blank">A. Bar-On, I. Dinur, O. Dunkelman, R. Hod, N. Keller, E. Ronen and A. Shamir:
+<strong>Tight Bounds on Online Checkpointing Algorithms</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Běží nám simulace, ve které chcme mít možnost se vrátit do libovolného bodu minulosti.
+Můžeme si uchovávat <em>checkpointy</em>, které načteme a simulujeme od nich.
+Co ale když máme místo pouze na K takových checkpointů; potřebujeme způsob jak se rozhodnout kdy udělat checkpoint a který z minulých uložených checkpointů smazat.
+Autoři mají nějaké lower a upper boundy.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9064/pdf/LIPIcs-ICALP-2018-60.pdf"target="_blank">B. Gärtner, T. D. Hansen, P. Hubáček, K. Král, H. Mosaad and V. Slívová:
+<strong>ARRIVAL: Next Stop in CLS</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Mějme vlak na vrcholu grafu G, kde každý vrchol má dvě vycházející hrany.
+Každý vrchol má výhybku na jedné ze dvou hran.
+Vlak vyjede z vrcholu po hraně, na kterou je výhybka, a za sebou ji přehodí na druhou kolej.
+Zajímá nás</p>
+<p>Switching flow &ndash; přiřazení počtu projití hranami.
+NP certifikát je switching flow co splňuje Korhofovy zákony a parity výjezdů z každého vrcholu.
+Cp-NP certifikát (někdo dokázal), že lze přidat garbage vrchol, do kterého vedou neexistující hrany; pak flow jde buď do cíle, nebo do garbage vrcholu.</p>
+<p>Graf posledně použitých hran (smažeme hrany, které nebyly použity poslední) &ndash; theorem, buď tam není cykl, nebo je zde jen jeden cykl, který obsahuje výsledný vrchol.
+Arrival je v UP (NP s pouze jedním certifikátem) i co-UP.
+Také dokázali, že Arrival je v CLS redukcí z Ar. na End of Metered Line, který je znám být v CLS.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9031/pdf/LIPIcs-ICALP-2018-27.pdf"target="_blank">M. Carmosino, R. Impagliazzo and M. Sabin:
+<strong>Fine-Grained Derandomization: From Problem-Centric Complexity to Resource-Centric Complexity</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Fine grained complextiy se z otázky P=?NP dostáváme k tomu, že máme mnoho tříd, a nevíme jestli nám dávají větší výpočetní sílu.
+V poli těchto komplexit máme čtyři hlaví typy kSUM, APSP, k-OV a k-CLIQ.</p>
+<p>Pokud je problém těžký dovedeme simulovat derandomizaci; pokud je derandomizace &lsquo;rozbitá&rsquo;, tak je problém jednoduchý.
+Weak k-clique conjecture a.e. =&gt; pro všechna alpha, pro všechna efektivní distribuce mu lze simulovat BPP pomocí heurBPP s n^{alpha} náhodných bitů.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9007/pdf/LIPIcs-ICALP-2018-3.pdf"target="_blank">Sam Staton:
+<strong>Probability theory from a programming perspective</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Programování výpočtů pro pravděpodobnostní je sice horší než model na míru, ale rychlost vytvoření programu prototypu má výhody při prototypování.
+Byla řeč o mírách, a rozšíření modelu tak, aby zahrnoval i funkce vyššího řádu &ndash; funkce co maj jako parametr funkce.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9156/pdf/LIPIcs-ICALP-2018-152.pdf"target="_blank">S. Dehghani, S. Ehsani, M. Hajiaghayi, V. Liaghat and S. Seddighin:
+<strong>Greedy Algorithms for Online Survivable Network Design</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme vážený graf a chceme vybrat k-souvislý podgraf, který je co nejlevnější.
+Hladový, lokální algoritmus má proticase, který ukazuje, že není c-aproximací.
+Autoři ukázali, že pokud budeme řešit vrcholy lokálně, ale v pořadí dle uniformního rozdělení, tak dostaneme 4-aproximaci.
+Také mají podobný výsledek s <em>prophet setting</em>, kde se rozdělení může měnit, ale víme jaké bude v každém kroce.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9149/pdf/LIPIcs-ICALP-2018-145.pdf"target="_blank">B. Aronov, G. Bar-On and M. Katz:
+<strong>Resolving SINR Queries in a Dynamic Setting</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Mějme vysílače v rovině s nějakou silou.
+Každý vysílač má také nějaké rušení, kterým zhoršuje příjem z ostatních vysílačů.
+Signal to Interference plus Noise Ratio (SINR) popisuje jaký bude příjem vzhledem k síle signálu a rušení.
+SINR query &ndash; může bod v rovině přijímat signál, a od koho?
+Bez rušení jde o Voroného diagram, s rušením bude prostor omezený a oblasti na hranicích nemohou kvůli rušení přijímat signál.</p>
+<p>Autoři mají řešení pro SINR query, ale v dynamickém případě.
+Rozdělí prostor na 2 části, blízké a vzdálené vysílače, a aproximují rušení z nich, pomocí více pásů, které aproximují polygony.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9162/pdf/LIPIcs-ICALP-2018-158.pdf"target="_blank">M. M. Halldorsson, G. Kortsarz, P. Mitra and T. Tonoyan:
+<strong>Spanning Trees With Edge Conflicts and Wireless Connectivity</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme graf &ndash; síť propojených komunikačních uzlů, a hledáme graf, který bude mít dobré vlastnosti.
+Proper obarvení hran nám dává <em>throughput</em>, tedy počet zpráv, které z dhlouhodobého hlediska zvládneme zpracovávat.</p>
+<p>Při komunikaci hranou vznikne interferenční disk a počítáme velikost rušení (podobně jako u předchozí přednášky).
+Pokud je celková interference &gt;1, tak je to problém a nelze takové hrany používat zároveň.</p>
+<p>Autoři se zabývali případem, kdy nemůžeme používat všechny možné hrany roviny, ale co když některé hrany nelze použít kvůli rušení &ndash; zeď, geometrie prostoru?
+Modelujeme grafem, popisující linky, a konfliktním grafem, které linky nelze použít zároveň; tento model je hodně obecný.
+Mají log n aproximaci pro obecný případ.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9152/pdf/LIPIcs-ICALP-2018-148.pdf"target="_blank">E. C. Akrida, G. Mertzios, P. Spirakis and V. Zamaraev:
+<strong>Temporal Vertex Covers and Sliding Time Windows</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Temporal graf &ndash; graf, kde hrany mají dány i časy své existence.
+Temporal vertex cover &ndash; časový výskyt vrcholy pokryje hrany, které jsou v daném čase incidentní pokrytému vrcholu; toto se podstatně liší od disjunktních řešení jednotlivích grafů.
+Sliding Window Termporal Vertex Cover &ndash; pokud vezmeme okno velikosti K, chceme aby v tomto okně bylo pokrytí Temporal Vertex Cover.</p>
+<p>Pro max stupeň 1 je v P, pro 3 neexistuje PTAS, pro 2 nevíme.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9166/pdf/LIPIcs-ICALP-2018-162.pdf"target="_blank">M. Bateni, S. Behnezhad, M. Derakhshan, M. Hajiaghayi and V. Mirrokni:
+<strong>Brief Announcement: MapReduce Algorithms For Massive Trees</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme grafy s triliony vrcholy; jeden způsob jak si s nimi poradit je pomocí MapReduce a zpracovat data paralelně na mnoha strojích.
+Stroje mezi sebou komunikují v <em>kolech</em> a snažíme se minimalizovat počet kol.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9167/pdf/LIPIcs-ICALP-2018-163.pdf"target="_blank">R. B. Basat, G. Einziger and R. Friedman:
+<strong>Brief Announcement: Give Me Some Slack: Efficient Network Measurements</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Dostáváme stream celých čísel, chceme odpovídat query: jaký je součét posledních X čísel?
+Existující model umožňuje e-multiplikativní chybu.
+Autoři uvádí nový model &hellip; odpoví korektně na query X+e a ukazují algoritmus s použitím O(e^-1 log R) bitů (R range čísel).
+Hlavní nápad je rozřezání na bloky.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9043/pdf/LIPIcs-ICALP-2018-39.pdf"target="_blank">A. Conway, M. Farach-Colton and P. Shilane:
+<strong>Optimal Hashing in External Memory</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Hash table BOA je optimální pro lambda=Omega(log N/log log N + logM/B N), vzhledem k počtu čtení/zápisů.
+Size-Tiered LSM &ndash; v levelech má runy hodnot; nad mina pak BS po levelech.
+Když se na hodnoty použije fingerprint (hash) a ten se pak rozbaketuje, tak dostaneme O(1) IO operací ne zjištění fingerprintu.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9009/pdf/LIPIcs-ICALP-2018-5.pdf"target="_blank">A. Aamand, M. B. T. Knudsen and M. Thorup:
+<strong>Power of d Choices with Simple Tabulation</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>D-choice paradigma pro hashování &ndash; při zahešování máme D možností, kam uložit hashovanou hodnotu; tohle pomáhá při hashování &ndash; max load pak je log log n / log d (oproti běžnému log n / log log n).
+Autoři se zabývali tím, co se děje s tímto paradigmatem pří nenáhodném hashování.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9086/pdf/LIPIcs-ICALP-2018-82.pdf"target="_blank">D. Kane, S. Lovett and S. Moran:
+<strong>Generalized comparison trees for point-location problems</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Linear Decision Trees (LDT) &ndash; máme rozhodovací strom (ternární =,&lt;,&gt;), který se rozhoduje podle hodnoty lineární funkce vstupu (x1+x3-2*x8).</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9106/pdf/LIPIcs-ICALP-2018-102.pdf"target="_blank">S. Walzer:
+<strong>Load Thresholds for Cuckoo Hashing with Overlapping Blocks</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Cukoo hashing with windows &ndash; abychom neměli moc vyvolání cache, tak můžeme do jednoho bloku dát více hash hodnot; zároveň může být hodnota na D různých adresách.
+V tomto hashování nechceme mít malé cykly.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9151/pdf/LIPIcs-ICALP-2018-147.pdf"target="_blank">S. Bouchard, Y. Dieudonne and A. Lamani:
+<strong>Byzantine Gathering in Polynomial Time</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme graf na kterém jsou agenti, kteří se chtějí sejít.
+Cílem je navrhnout protokol, díky kterému se jim to povede; v grafu jsou ovšem i nepřátelé, kteří jim to chtějí překazit.</p>
+<hr>
+<p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9169/pdf/LIPIcs-ICALP-2018-165.pdf"target="_blank">S. Das, D. Dereniowski and P. Uznański:
+<strong>Brief Announcement: Energy Constrained Depth First Search</strong><span style="white-space: nowrap;">&thinsp;↗</span></a></p>
+<p>Máme robota co prohledává graf, v grafu je jeden vrchol s nabíjecí stanicí a robot má omezenou baterii.
+Autoři dokázali, že intuitivní algoritmus je také c-aproximací optima.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2018
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Make heap složitost - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="wide-image">
+        <div style="background-image: url('https://blazeva1.pages.fit//images/wide/heap.jpg');">
+        </div>
+    </div>
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2015-11-08T00:00:00Z" class="post-list timeago">08.11.2015</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/proof">proof</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Make heap složitost</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <h2 id="kontext">Kontext</h2>
+<p>Halda je užitečná datová struktura. Avšak mnozí tvrdí, že ji lze z neseřazeného pole nainicializovat v čase $O(n)$.
+To nemusí na první pohled dávat smysl &mdash; kdyby totiž člověk vytvářel haldu postupným přidáváním prvků, tak by její vytvoření mělo složitost $\mathcal O(n \log(n))$.
+Tak jak to tedy je?</p>
+<p>Tvoření haldy neprobíhá postupným přidáváním prvků, ale opravy h-vlastnosti zespodu.
+Když si představíme haldu jako strom (viz obrázek), tak se od spodu bere každý podstrom a udělá se z něj halda.
+Protože se prvky berou odspodu, tak vždy víme, že synové podstromu, ze kterého se snažíme udělat haldu už haldy jsou (žlutý a zelený), a tak stačí pouze prvku na vrcholku upravit h-vlastnost (modrý).</p>
+<p><img src="make_heap.png" alt="Podstromy haldy při provádění make heap operace"></p>
+<p><strong>Teorém:</strong> Vytvoření haldy má složitost $\mathcal O(n)$.</p>
+<h2 id="důkaz">Důkaz</h2>
+<p>Pro všech n prvků musíme opravit h-vlastnost &mdash; to znamená prohodit jej s větším z potomků, pokud je prvek menší než alespoň jeden z jeho potomků.
+Tato operace se potom volá rekurzivně a víme, že se provede maximálně g krát, kde g je výška uzlu.
+Doplňme haldu tak, aby všechny listy ležely ve stejné hloubce.
+Tímto nezvětšíme velikost haldy o více jak n/2.
+Nyní spočteme kolik uzlů je v jedné výšce g.
+Protože je halda úplný binární strom, tak se s hloubkou počet uzlů dvojnásobí.
+Výška je však pojem opačný, takže začneme s vysokým počtem uzlů, který se bude se zvyšující se výškou dělit dvěma.
+Tedy: ve výšce g a hloubkce stromu h je
+\[
+\frac{2^h}{2^g}.
+\]</p>
+<p>Z toho co jsme si doposud řekli vyplývá, že počet operací pro celé jedno patro je \[
+g \frac{2^h}{2^g}.
+\]</p>
+<p>Pro sečtení všech pater použijeme sumu \[
+\sum_{g=1}^h g \frac{2^h}{2^g}.
+\]</p>
+<p>Hodnota h není v sumě proměnnou a tak ji můžeme vytknout.
+\[
+2^h \sum_{g=1}^h \frac{g}{2^g}
+\]</p>
+<p>Nyní se zaměříme pouze na člen sumy.
+Víme, že všechny členy sumy jsou nezáporné, a tak je suma určitě menší než součet s intervalem do nekonečna.
+Tuto sumu můžeme upravit vytknutím 1/2.
+Dále jen změníme index sumy.
+Potom sumu rozložíme na dvě, podle čitatele podílu.
+Nakonec z první sumy odebereme prvek pro $g=0$, protože výraz vychází 0, ten sumu nijak nemění.</p>
+<p>\[
+\sum_{g=1}^h \frac{g}{2^g} \leq \sum_{g=1}^\infty \frac{g}{2^g} = \frac{1}{2} \sum_{g=1}^\infty \frac{g}{2^{g-1}}
+\]
+\[
+= \frac{1}{2} \sum_{g=0}^\infty \frac{g + 1}{2^g} = \frac{1}{2} \left(\sum_{g=0}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \frac{1}{2^g}\right)
+\]
+\[
+= \frac{1}{2} \left(\sum_{g=1}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \frac{1}{2^g}\right)
+\]</p>
+<p>Z rovnice dostáváme vztah
+\[
+\sum_{g=1}^\infty \frac{g}{2^g} = \frac{1}{2} \left(\sum_{g=1}^\infty \frac{g}{2^g} + \sum_{g=0}^\infty \left(\frac{1}{2}^g\right)\right)
+\]</p>
+<p>Po substituci SUM výraz zjednodušíme.
+\[
+a = \frac{1}{2} \cdot (a + b) \rightarrow a = a/2 + b/2 \rightarrow a = b
+\]</p>
+<p>Zpátky dostáváme následující vztah.
+\[
+\sum_{g=1}^\infty \frac{g}{2^g} = \sum_{g=0}^\infty \frac{1}{2^g}
+\]</p>
+<p>Pravá strana výrazu má tvar geometrické řady, pro kterou je známý součtový vzorec.
+Mnoho lidí umí tuto řadu sečíst i bez součtového vzorce.
+\[
+\sum_{g=0}^\infty \frac{1}{2^g} = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots = 2
+\]</p>
+<p>Z toho vyplývá, že
+\[
+\sum_{g=1}^h \frac{g}{2^g} &lt; 2.
+\]</p>
+<p>A tak součet všech operací přes všechny prvky všech pater haldy je
+\[
+2^h \sum_{g=1}^h \frac{g}{2^g} &lt; 2^{h+1}.
+\]</p>
+<p>A protože pro hloubku úplného binárního stromu platí $h = \log(n)$, dostáváme složitost make heap
+\[
+\mathcal O(2^h) = \mathcal O(2^{\log(n)}) = \mathcal O(n).
+\]</p>
+<p>Což jsme chtěli dokázat. $\square$</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

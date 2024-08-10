@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Algorithmic game theory notes - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://blazeva1.pages.fit//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/fonts.css">
+
+    
+    <script src="https://blazeva1.pages.fit/js/custom.js"></script>
+    <link rel="stylesheet" href="https://blazeva1.pages.fit/css/custom.css">
+
+    <link rel="shortcut icon" href="https://blazeva1.pages.fit//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://blazeva1.pages.fit/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://blazeva1.pages.fit/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://blazeva1.pages.fit/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2020-01-15T00:00:00Z" class="post-list timeago">15.01.2020</time>
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://blazeva1.pages.fit/tags/notes">notes</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Algorithmic game theory notes</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <h2 id="source">Source</h2>
+<ul>
+<li><a href="https://kam.mff.cuni.cz/~balko/ath1920/main.pdf"target="_blank">Martin Balko&rsquo;s Lecture Notes<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h1 id="basic-notions----normal-form-game-player-actions-strategy-utility">Basic notions &ndash; Normal-form game, player actions, strategy, utility</h1>
+<p>Normal form of a game can be described as a matrix where each cell contains payoffs for each player.
+Formally we have a triple $(P,A,u)$ where $P$ is a set of $n$ players, $A = A_1 \times \dots \times A_n$ is a set of action profiles, and $u=(u_1,\dots,u_n)$ is a $n$-tuple where $u_i: A \rightarrow \mathbb{R}$ is the utility function.</p>
+<ul>
+<li>Player &ndash; (hopefully) Intelligent entity, which aims to maximize his payoff. He may only choose what action to choose from his action profile, however his payoff is determined not only from his action, but also actions of the remaining players.</li>
+<li>Player&rsquo;s action profile &ndash; List of possible actions which a player can take.</li>
+<li>Player&rsquo;s action &ndash; An action from action profile chosen by the player.</li>
+<li>Utility / Payoff &ndash; Given actions of each player, it says how many &lsquo;points&rsquo; players will receive (each player may get different amount). Players aim to maximize their payoff.</li>
+<li>Strategy &ndash; Determines how player will chose his action.</li>
+<li>Strategy profile &ndash; List of all strategies chosen by respective players.</li>
+<li>Pure strategy &ndash; Player chooses one action from his action profile.</li>
+<li>Mixed strategy &ndash; Player chooses his action according to a probability distribution over his action profile. In this case, player maximizes expected payoff.
+<ul>
+<li>support &ndash; Action which has non-zero probability in a mixed strategy.</li>
+</ul>
+</li>
+<li>Zero-sum game &ndash; Game with 2 players where sum of their utilities for any combination of actions is 0.</li>
+</ul>
+<h1 id="equilibria">Equilibria</h1>
+<h2 id="nash-equilibrium">Nash equilibrium</h2>
+<ul>
+<li>Best response &ndash; Assuming that all players chose their action, best response is player&rsquo;s mixed strategy with the best payoff.</li>
+<li>Nash equilibrium &ndash; Is a strategy profile where every player has best response to other players&rsquo; strategies.
+<ul>
+<li>It is implied that if each player knows what other players chose it is not benefitial to change their strategy.</li>
+<li>Pure Nash equilibrium / Mixed Nash equilibrium &ndash; is Nash equilibrium which is Pure / Mixed strategy respectively.</li>
+</ul>
+</li>
+</ul>
+<h3 id="nashs-theorem">Nash&rsquo;s theorem</h3>
+<p><strong>Every normal-form game has a mixed Nash equilibrium.</strong></p>
+<h2 id="pareto-optimality">Pareto optimality</h2>
+<ul>
+<li>Pareto domination &ndash; Strategy profile $S$ dominates $S&rsquo;$ if all players&rsquo; payofs are not worse, and at least one player has better payoff.</li>
+<li>Pareto optimal &ndash; Strategy profile is Pareto optimal if there is not pareto dominated by any other strategy profile.
+<ul>
+<li>Note that a set of pareto optimal strategy profiles is incomparable to Nash equilibria. In particular in prisoner&rsquo;s dillema we have both profiles present, but they do not overlap.</li>
+</ul>
+</li>
+</ul>
+<h1 id="game-classes">Game classes</h1>
+<h2 id="zero-sum-games">Zero-sum games</h2>
+<ul>
+<li>
+<p>We can find Nash equilibria of zero-sum games using linear programming. By assigning $x=(x_1,\dots,x_n)$ for first player and the same for $y$ for second player, we have variables representing the mixed strategies. We constraint their sum to be $1$. First player maximizes $\beta(x)=\min_{x\in S_1}x^T M y$, i.e., the worst outcome over all oponent&rsquo;s choices &ndash; this strategy is worst-case optimal.</p>
+</li>
+<li>
+<p>Value of a zero-sum game &ndash; The payoff which is unique and can be determined by LP.</p>
+</li>
+</ul>
+<h3 id="minimax-theorem">Minimax Theorem</h3>
+<p>For every zero-sum game, worst-case optimal strategies for both players exist and can be efficiently computed using linear programming. Moreover, there is a number $v$ such that, for any worst-case optimal strategies $x^<em>$ and $y^</em>$ of players 1 and 2, respectively, the strategy profile $(x^<em>,y^</em>)$ is a Nash equilibrium and $\beta(x^<em>)=(x^</em>)^T M y^* = \alpha(y^*) = v$.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2020
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">5. August 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
