@@ -1,0 +1,5 @@
+# Allow anyone to access site from the master branch.
+access:
+  '*':
+    /:
+      allow: [ANONYMOUS]
