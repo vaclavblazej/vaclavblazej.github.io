@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1819z on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/1819z/</link>
+    <link>https://vaclavblazej.github.io/tags/1819z/</link>
     <description>Recent content in 1819z on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/1819z/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/1819z/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AG1 - 18/19 Z</title>
-      <link>https://blazeva1.pages.fit/teaching/1819z/ag1/</link>
+      <link>https://vaclavblazej.github.io/teaching/1819z/ag1/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/teaching/1819z/ag1/</guid>
+      <guid>https://vaclavblazej.github.io/teaching/1819z/ag1/</guid>
       <description>Info Kontakt: blazeva1 (na) fit.cvut.cz Konzultace: Po domluvě emailem Kde mě najdete: NB 341b AG1 pro paralelku 201 (Středa 16:15).&#xA;Na této stránce najdete seznam probrané látky společně s dalšími úlohami k procvičení látky.&#xA;Body za aktivitu budou za domácí úkoly (max 5b). Jeden bod za jednu úlohu. Můžete očekávat přibližně jednu standardní a jednu programovací úlohu za 14 dní. Standardní úlohy lze poslat mailem či na papíře. Vyřešení programovací úlohy je potřeba doložit AC (poslat odkaz odevzdání) na testovacím serveru (CF&amp;thinsp;↗).</description>
     </item>
   </channel>

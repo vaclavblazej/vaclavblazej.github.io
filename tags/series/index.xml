@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/series/</link>
+    <link>https://vaclavblazej.github.io/tags/series/</link>
     <description>Recent content in Series on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Over the Garden Wall</title>
-      <link>https://blazeva1.pages.fit/post/2023/over_the_garden_wall/</link>
+      <link>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/over_the_garden_wall/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</guid>
       <description>I heard about Over The Garden Wall&amp;thinsp;↗ series for the first time two days ago. It is an almost 10 years old miniseries with runtime of 1 hour 40 minutes. It is rare to find a series with so much care given to it; I can wholeheartedly recommend it. The miniseries format gives it a short runtime and gave the creators incentive to tie all the knots, an important feature that I seek in any series that I consider watching.</description>
     </item>
   </channel>

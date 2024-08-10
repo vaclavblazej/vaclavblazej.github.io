@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/analysis/</link>
+    <link>https://vaclavblazej.github.io/tags/analysis/</link>
     <description>Recent content in Analysis on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>In Space with Markiplier diagram</title>
-      <link>https://blazeva1.pages.fit/post/2022/in_space_with_markiplier/</link>
+      <link>https://vaclavblazej.github.io/post/2022/in_space_with_markiplier/</link>
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/in_space_with_markiplier/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/in_space_with_markiplier/</guid>
       <description>In Space with Markiplier is an interactive video story which you should watch first&amp;thinsp;↗ before reading this post. The whole experiance will take approximately 2 hours and I recommend not to cheat by changing your choices.&#xA;Here we go The story is not only branching but also joins later. Moreover, some parts of the videos have the same parts, all of which is included in the following visualization. There is also a PDF version.</description>
     </item>
   </channel>

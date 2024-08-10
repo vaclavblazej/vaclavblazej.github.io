@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Approximation on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/approximation/</link>
+    <description>Recent content in Approximation on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/approximation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constant Factor Approximation for Tracking Paths and Fault Tolerant Feedback Vertex Set</title>
+      <link>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</guid>
+      <description>Consider a vertex-weighted graph $G$ with a source $s$ and a target $t$. Tracking Paths requires finding a minimum weight set of vertices (trackers) such that the sequence of trackers in each path from $s$ to $t$ is unique. In this work, we derive a factor $6$-approximation algorithm for Tracking Paths in weighted graphs and a factor $4$-approximation algorithm if the input is unweighted. This is the first constant factor approximation for this problem.</description>
+    </item>
+  </channel>
+</rss>

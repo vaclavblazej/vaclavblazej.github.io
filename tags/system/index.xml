@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/system/</link>
+    <link>https://vaclavblazej.github.io/tags/system/</link>
     <description>Recent content in System on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,68 +10,68 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Small survey on tools used by mathematicians</title>
-      <link>https://blazeva1.pages.fit/post/2023/ccc_survey/</link>
+      <link>https://vaclavblazej.github.io/post/2023/ccc_survey/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/ccc_survey/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/ccc_survey/</guid>
       <description>In the field of Theoretical Computer Science it is standard to write scientific papers in LaTeX. However, there are still quite a few options when deciding what software to use to create the text, images, or conference presentations. I asked several people during CCC 2023&amp;thinsp;↗ about this.&#xA;Up-to-date compilation of tools can be found in Material section.&#xA;Assuming we talk about collaborative works, majority of questioned people write their papers in Overleaf&amp;thinsp;↗.</description>
     </item>
     <item>
       <title>Command-line completion</title>
-      <link>https://blazeva1.pages.fit/post/2020/completion/</link>
+      <link>https://vaclavblazej.github.io/post/2020/completion/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2020/completion/</guid>
+      <guid>https://vaclavblazej.github.io/post/2020/completion/</guid>
       <description>The setup of completion is an essential part of creating a well-behaved script. Unfortunately, the setup has several obstacles, mainly that each shell handles completion differently. In this post, I hope to unravel the problems and show solutions to setting up completion for a custom script in several frequently used unix shells. The first section simply states the solution, its usage, and references used to accomplish these. In the second section we show a detailed progression which lead to the solution.</description>
     </item>
     <item>
       <title>Ubuntu system installation</title>
-      <link>https://blazeva1.pages.fit/material/system/system/</link>
+      <link>https://vaclavblazej.github.io/material/system/system/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/system/system/</guid>
+      <guid>https://vaclavblazej.github.io/material/system/system/</guid>
       <description>Image download Download the system on the Ubuntu official page&amp;thinsp;↗.&#xA;USB preparation First, insert the USB and find what is the device&amp;rsquo;s name. Find whether the USB is sdb/sdc/etc.&#xA;sudo fdisk -l One of these is your hard disc &amp;ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!&#xA;Fdisk will show if the usb is bootable, we can check afte rinstalation.&#xA;Se can either copy the image to the drive.</description>
     </item>
     <item>
       <title>Representing knowledge using graphs</title>
-      <link>https://blazeva1.pages.fit/post/2019/knowledge_graph/</link>
+      <link>https://vaclavblazej.github.io/post/2019/knowledge_graph/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/knowledge_graph/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/knowledge_graph/</guid>
       <description>Information in this post is superseeded by a material page&#xA;In this post we will discuss how to tackle representing an abstract structure as a graph (combinatorial graph). In particular, we will focus on representing a general knowledge structure. Our example arises from an academic environment. We have courses which teach students various concepts and skills. Our goal is to have some searchable representation of taught concepts. This representation can be used to generate student profiles and recommend suitable semestral projects, or to find what is (unintentionally) omitted from the curricula.</description>
     </item>
     <item>
       <title>Pár fixů pro nové ubuntu</title>
-      <link>https://blazeva1.pages.fit/post/2017/ubuntu_fix/</link>
+      <link>https://vaclavblazej.github.io/post/2017/ubuntu_fix/</link>
       <pubDate>Sat, 09 Dec 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/ubuntu_fix/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/ubuntu_fix/</guid>
       <description>Po čisté instalaci ubuntu jsem narazil na pár problémů.&#xA;Přestal jít zvuk Je pro mě magie, proč nastavení text-to-speech opraví zvuk.&#xA;Změnit RUN=yes v&#xA;sudo vim /etc/default/speech-dispatcher zdroj: fix&amp;thinsp;↗&#xA;Failed to start session v display manageru Zafungovalo přeinstalovat ubuntu-session. Taky nefungoval display manager, tak jsem tam dal lightdm.&#xA;sudo apt install lightdm sudo apt install [--reinstall] ubuntu-session </description>
     </item>
     <item>
       <title>Matrix screensaver</title>
-      <link>https://blazeva1.pages.fit/post/2017/matrix/</link>
+      <link>https://vaclavblazej.github.io/post/2017/matrix/</link>
       <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/matrix/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/matrix/</guid>
       <description>Pro linuxový X Window System máme program xscreensaver, který umožňuje nastavit matrixový screensaver. Prvně nainstalujeme xscreensaver a extra balíčky, kde je schovaný matrix styl.&#xA;sudo apt install xscreensaver xscreensaver-data-extra Nastavit screensaver můžeme buď přes rozhraní xscreensaver-demo, nebo přímo v souboru ~/.xscreensaver. Např. pro náš matrix xmatrix -root -small -no-trace -delay 50000 -density 6.&#xA;Aby šel screensaver zapnout, tak musí program běžet (třeba na pozadí). Přidáme do ~/.profile následující inicializaci.&#xA;xscreensaver -no-splash &amp;amp; Nakonec chceme nastavit klávesovou zkratku pro zamknutí obrazovky, tak nabindujeme následující příkaz.</description>
     </item>
     <item>
       <title>Klávesnice</title>
-      <link>https://blazeva1.pages.fit/post/2017/keyboard/</link>
+      <link>https://vaclavblazej.github.io/post/2017/keyboard/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/keyboard/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/keyboard/</guid>
       <description>Jak nastavit klávesnici? (bez přepínání - Unix) Programovat na české klávesnici je zlo. Programovat na české qwerty už je trochu lepší. Programovat na jedné klávesnici, která je schopná psát vše co chci &amp;hellip; je ultimátní.&#xA;Potřebujete mít: program setxkbmap&#xA;Překvapivě, některým developerům nejsou češi ukradení, tak udělali us(cz_sk_de) klávesnici. Ty lze nastavit buď jednorázově pomocí&#xA;setxkbmap -layout &#39;us&#39; -variant &#39;cz_sk_de&#39; setxkbmap -option &amp;quot;lv3:caps_switch&amp;quot; nebo permanentně úpravou souboru /etc/default/keyboard na&#xA;# KEYBOARD CONFIGURATION FILE # Consult the keyboard(5) manual page.</description>
     </item>
     <item>
       <title>Bash cheetsheet</title>
-      <link>https://blazeva1.pages.fit/post/2015/bash_cheetsheet/</link>
+      <link>https://vaclavblazej.github.io/post/2015/bash_cheetsheet/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2015/bash_cheetsheet/</guid>
+      <guid>https://vaclavblazej.github.io/post/2015/bash_cheetsheet/</guid>
       <description>What to use Use may want to use shellcheck program to check beginner mistakes.&#xA;The script should start with a shebang line #!/usr/bin/env bash&#xA;To make the script runnable use chmod u+x ./script.sh&#xA;system_name=$(uname) script_path=$(realpath $0) if [ $# -eq 0 ]; then echo &amp;#34;usage: ...&amp;#34;; fi #compare numbers using -eq -ne -lt -le -gt -ge #compare strings using = != &amp;lt; &amp;lt;= &amp;gt; &amp;gt;= while [ $# -ne 0 ]; do shift; done #remove the first argument with shift array=( &amp;#39;a&amp;#39; &amp;#39;b&amp;#39; &amp;#39;c d&amp;#39; ) echo &amp;#34;Array of ${#array[@]} contains: ${array[*]}&amp;#34; for element in &amp;#34;${array[@]}&amp;#34;; do echo &amp;#34;Value: $element&amp;#34; if [ &amp;#34;$element&amp;#34; = &amp;#34;c d&amp;#34; ]; then break; elif [ &amp;#34;$element&amp;#34; = &amp;#34;a&amp;#34; ]; then continue; echo &amp;#34;Only the element &amp;#39;b&amp;#39; is printed here&amp;#34; done unset array if [ -f &amp;#34;file.</description>
     </item>
     <item>
       <title>Přihlášení přes SSH bez hesla</title>
-      <link>https://blazeva1.pages.fit/post/2015/ssh_copy_id/</link>
+      <link>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2015/ssh_copy_id/</guid>
+      <guid>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</guid>
       <description>Přes SSH se můžeme bezpečně přihlásit na server, vždy je však potřeba zadat heslo. Je však možné zadánvání hesla nahradit ověřením pomocí RSA klíče.&#xA;Klíč RSA První krok je vytvořit si vlastní soukromý a veřejný rsa klíč. Tato dvojice klíčů slouží pro identifikaci počítače - soukromý klíč je nutno udržovat v tajnosti, a veřejný klíč lze libovolně distribuovat.&#xA;Generování klíče (v příkazové řádce):&#xA;user@localhost$ ssh-keygen Při vytváření klíče se program zeptá na nové heslo.</description>
     </item>
   </channel>

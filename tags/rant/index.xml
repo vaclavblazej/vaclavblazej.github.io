@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rant on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/rant/</link>
+    <link>https://vaclavblazej.github.io/tags/rant/</link>
     <description>Recent content in Rant on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,89 +10,89 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/rant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Over the Garden Wall</title>
-      <link>https://blazeva1.pages.fit/post/2023/over_the_garden_wall/</link>
+      <link>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/over_the_garden_wall/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/over_the_garden_wall/</guid>
       <description>I heard about Over The Garden Wall&amp;thinsp;↗ series for the first time two days ago. It is an almost 10 years old miniseries with runtime of 1 hour 40 minutes. It is rare to find a series with so much care given to it; I can wholeheartedly recommend it. The miniseries format gives it a short runtime and gave the creators incentive to tie all the knots, an important feature that I seek in any series that I consider watching.</description>
     </item>
     <item>
       <title>Evolution</title>
-      <link>https://blazeva1.pages.fit/post/2023/evolution/</link>
+      <link>https://vaclavblazej.github.io/post/2023/evolution/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/evolution/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/evolution/</guid>
       <description>Evolution is a process where an object adjust to the environment through change over time. For an evolution to appear we need two factors.&#xA;Objects that can multiply and change Environment that enforces the change Both are necessary and sufficient. Without objects we have no things to evolve. If they could not multiply than we only have self-improvement. Without environmental pressure the changes do not lead anywhere. Note that the improvement is always with respect to the environment &amp;ndash; there is no evolution for its own sake.</description>
     </item>
     <item>
       <title>Note on AI</title>
-      <link>https://blazeva1.pages.fit/post/2023/ai/</link>
+      <link>https://vaclavblazej.github.io/post/2023/ai/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/ai/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/ai/</guid>
       <description>Phrase artificial intelligence is changing its meaning quickly. In about 2012, I would say it is a sci-fi concept or a game&amp;rsquo;s opponent controlled by a computer. In 2017 this was very similar, but AI seemed to encompass gradient descent and fancy heuristics. Everyone was creating &amp;ldquo;chat-bots&amp;rdquo; that I never found anywhere close to useful, even for their dedicated purpose. (E.g. our school had big PR news about our awesome chatbot about Covid 2019; it didn&amp;rsquo;t have reasonable answers even for the most basic questions.</description>
     </item>
     <item>
       <title>About rants</title>
-      <link>https://blazeva1.pages.fit/post/2023/rant/</link>
+      <link>https://vaclavblazej.github.io/post/2023/rant/</link>
       <pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/rant/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/rant/</guid>
       <description>It is difficult to be consistent about anything. In good mood I decide to do something, then priorities change and I stop it. But the big ideas always boomerang back to me and I find myself thinking about them again. I am very glad that five years ago circumstances made me create this website. To an accidental reader, I wish to convey that it serves as a overview of my past thoughts.</description>
     </item>
     <item>
       <title>Dredge</title>
-      <link>https://blazeva1.pages.fit/post/2023/dredge/</link>
+      <link>https://vaclavblazej.github.io/post/2023/dredge/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/dredge/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/dredge/</guid>
       <description>&amp;ldquo;Dredge&amp;thinsp;↗ is a single-player fisihing adventure with a sinister undercurrent&amp;rdquo; &amp;ndash; as Steam says. I do not want to spoil anything so I split this post into several sections with gradually increasing amount of spoilers. Let me start with a spoiler-free review.&#xA;Dredge is awesome. You end up on an island, you have a ship, go fishing - which is implemented via a simple mini-game, sell your catch, talk to townsfolk, discover the islands.</description>
     </item>
     <item>
       <title>Initialization of Parameters hierarchy website</title>
-      <link>https://blazeva1.pages.fit/post/2023/parameters/</link>
+      <link>https://vaclavblazej.github.io/post/2023/parameters/</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/parameters/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/parameters/</guid>
       <description>During the last two weeks I set up repository&amp;thinsp;↗ which generates website&amp;thinsp;↗ about parameterized complexity. More specifically, it depicts hierarchy of various parameters. This project was on my mind for a while and wasn&amp;rsquo;t sure how to do it, but then realized it will be quite easy to do with a static website. I use static web generator for my homepage and understand it well enough to setup any other site.</description>
     </item>
     <item>
       <title>Patrick&#39;s Parabox</title>
-      <link>https://blazeva1.pages.fit/post/2023/patricks_parabox/</link>
+      <link>https://vaclavblazej.github.io/post/2023/patricks_parabox/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/patricks_parabox/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/patricks_parabox/</guid>
       <description>Recently I finished Patrick&amp;rsquo;s Parabox&amp;thinsp;↗ and can recommend it to anyone who likes puzzle games. The whole game is in-theme and the production is very good. Great deal of planning seems to have gone into the puzzles and their progression is well thought-out.&#xA;The game uses well-known and easy-to-understand Sokoban mechanics while always adding something new to them. The main change is that each block that player usually pushes is itself a map and can under some circumstances be entered and exited.</description>
     </item>
     <item>
       <title>Intense work</title>
-      <link>https://blazeva1.pages.fit/post/2023/work/</link>
+      <link>https://vaclavblazej.github.io/post/2023/work/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/work/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/work/</guid>
       <description>For the last fourteen days, I&amp;rsquo;ve been engrossed in my work. The process is enjoyable but each day flies by fairly quickly. On the other hand, looking back at this time so much was done that it feels like a long interval even though it is not. I guess you do not have time to notice the time goes by when things are happening.&#xA;During work, I&amp;rsquo;ve been enjoying the new Gorillaz album.</description>
     </item>
     <item>
       <title>Automation</title>
-      <link>https://blazeva1.pages.fit/post/2023/automatization/</link>
+      <link>https://vaclavblazej.github.io/post/2023/automatization/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/automatization/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/automatization/</guid>
       <description>A big part of programmer&amp;rsquo;s job is to automate processes. Some people find this activity very satisfying and enjoy programming because of it. The same feeling, but arguably stronger, can be achieved in games such as Factorio&amp;thinsp;↗ or Bitburner&amp;thinsp;↗.&#xA;The goal of automating something is to make a repetitive task easier or (ideally) entirely automatic. We shall consider only tasks that can be done on a computer. We categorize tasks into several levels of abstraction.</description>
     </item>
     <item>
       <title>Let old posts decompose</title>
-      <link>https://blazeva1.pages.fit/post/2023/old_posts/</link>
+      <link>https://vaclavblazej.github.io/post/2023/old_posts/</link>
       <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/old_posts/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/old_posts/</guid>
       <description>There are two types of information you can find on the internet. The first presents new information that decays with time. The second is more persistent. I wish to elaborate on cases where the second type turns into the first type unintentionally.&#xA;On the creation of this website, I had an unachievable dream of presenting a database of algorithms together with experiments that would compare various approaches or implementations. This attempt is hinted at in one of the first posts: Polynomial multiplication (in Czech) which compares three different multiplication methods.</description>
     </item>
     <item>
       <title>Posts in 2023?</title>
-      <link>https://blazeva1.pages.fit/post/2023/posts/</link>
+      <link>https://vaclavblazej.github.io/post/2023/posts/</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/posts/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/posts/</guid>
       <description>Hi! So, I&amp;rsquo;ve been thinking whether to write more posts on this blog and decided to create a post every week. Then three weeks went by and I did not finish any single post. So let me try again. I claim that I&amp;rsquo;ll do a post each week from now on &amp;ndash; we&amp;rsquo;ll see how it goes.&#xA;My main motivation is to improve in non-technical (but also technical) writing. I spend majority of my time slowly writing a precise text or going over it again and again, making sure it is correct, or writing code (which is basically the same thing).</description>
     </item>
     <item>
       <title>MBTI</title>
-      <link>https://blazeva1.pages.fit/post/2021/mbti/</link>
+      <link>https://vaclavblazej.github.io/post/2021/mbti/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2021/mbti/</guid>
+      <guid>https://vaclavblazej.github.io/post/2021/mbti/</guid>
       <description>Myers–Briggs Type Indicator (MBTI) is a way to classify psychological preferences in how people perceive the world and make decisions, see Wikipedia&amp;thinsp;↗ for more descriptions. The test which sets you in a specific box can be found online&amp;thinsp;↗, however I view these tests as an interesting entry point to the theory, but ultimately, they say how a person behaves, not how person thinks. To make self-classification, one can simply use a pretty nice chart&amp;thinsp;↗, which is present on wikipedia as well.</description>
     </item>
   </channel>

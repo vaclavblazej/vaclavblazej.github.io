@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NI-GAK on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/ni-gak/</link>
+    <link>https://vaclavblazej.github.io/tags/ni-gak/</link>
     <description>Recent content in NI-GAK on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,19 +10,19 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/ni-gak/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/ni-gak/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GAK - 19/20 L</title>
-      <link>https://blazeva1.pages.fit/teaching/1920l/gak/</link>
+      <link>https://vaclavblazej.github.io/teaching/1920l/gak/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/teaching/1920l/gak/</guid>
+      <guid>https://vaclavblazej.github.io/teaching/1920l/gak/</guid>
       <description>Materiály dostupné na courses&amp;thinsp;↗</description>
     </item>
     <item>
       <title>GAK - 18/19 L</title>
-      <link>https://blazeva1.pages.fit/teaching/1819l/gak/</link>
+      <link>https://vaclavblazej.github.io/teaching/1819l/gak/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/teaching/1819l/gak/</guid>
+      <guid>https://vaclavblazej.github.io/teaching/1819l/gak/</guid>
       <description>Info Kontakt: vaclav.blazej (na) fit.cvut.cz Konzultace: Po domluvě emailem Kde mě najdete: NB 341b GAK cvičení (pondělí, od 11:00).&#xA;Informace a úkoly předmětu jsou na Course Pages&amp;thinsp;↗. Body za úkoly máte na Grades&amp;thinsp;↗ za jednu sadu bude cca 12 bodů, celkem za semestr cca 150 bodů za 25 bodů zápočet za 60 bodů bude odpuštěna otázka u zkoušky (lehčí zkouška) za 100 bodů je automaticky dána známka A zkouška &amp;ndash; 2 otázky z teorie, 1 na vyřesení úlohy zápočet za techování poznámek Přehled témat Opakování pojmů z teorie grafů a kombinatoriky Generující funkce.</description>
     </item>
   </channel>

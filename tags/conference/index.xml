@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/conference/</link>
+    <link>https://vaclavblazej.github.io/tags/conference/</link>
     <description>Recent content in Conference on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,40 +10,40 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GD 2020 notes</title>
-      <link>https://blazeva1.pages.fit/post/2020/graph_drawing/</link>
+      <link>https://vaclavblazej.github.io/post/2020/graph_drawing/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2020/graph_drawing/</guid>
+      <guid>https://vaclavblazej.github.io/post/2020/graph_drawing/</guid>
       <description>This page contains my notes on talks given on GD 2020 conference, which was held online.&#xA;(speaker is shown in bold)&#xA;conference website&amp;thinsp;↗ program&amp;thinsp;↗ Gradient descent and queue layouts Reyan Ahmed, Felice De Luca, Sabin Devkota, Stephen Kobourov and Mingwei Li. Graph drawing via gradient descent, (GD)^2 &amp;ndash; multi-parameter graph drawing using gradient descent, live demo on Mingwei Li&amp;rsquo;s page&amp;thinsp;↗&#xA;Katharina Börsig, Ulrik Brandes and Barna Pasztor. Stochastic Gradient Descent Works Really Well for Stress Minimization &amp;ndash; Stochastic Gradient Descent (SGD) jako alternativa Majorization metody kreslení grafu, z experimentů se zdá, že funguje okay.</description>
     </item>
     <item>
       <title>CSR 2019</title>
-      <link>https://blazeva1.pages.fit/post/2019/csr/</link>
+      <link>https://vaclavblazej.github.io/post/2019/csr/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/csr/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/csr/</guid>
       <description>From 1. to 5. of July 2019 I attended the 14th International Computer Science Symposium in Russia&amp;thinsp;↗, Novosibirsk. Visa to Russia took approximately a week.&#xA;Getting there, I nearly missed the connecting flight from Moscow. The destination was Akademgorodok&amp;thinsp;↗ in Novosibirsk which is an awesome location in nature built for education and science. The conference was held in the new building of Novosibirsk State University&amp;thinsp;↗.&#xA;Some of the attendees were: Rahul Ilango&amp;thinsp;↗, Danny Hucke Dmitry Kravchenko Francesco Dolce&amp;thinsp;↗, Dmitriy Zhuk, Giuseppe Italiano&amp;thinsp;↗ Meena Mahajan&amp;thinsp;↗, Gregory Kucherov, René van Bevern, Michael Fellows&amp;thinsp;↗, Petros A.</description>
     </item>
     <item>
       <title>MCW - výpisky</title>
-      <link>https://blazeva1.pages.fit/post/2018/mcw/</link>
+      <link>https://vaclavblazej.github.io/post/2018/mcw/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/mcw/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/mcw/</guid>
       <description>Martin Loebl: Perfect matchings in double-torus grids&#xA;It is known that the number of the perfect matchings of each finite double-torus grid is a linear combination of 16 determinants. It is predicted by the Quantum field theory (Alvarez-Gaume, Vaffa) that exactly 6 of these determinants go to zero when the size of the grid grows. I will introduce the rich world around this claim.&#xA;Temperley bijection &amp;ndash; koster nxn mřížky a párování 2n+1 x 2n+1 mřížky.</description>
     </item>
     <item>
       <title>ICALP 2018 - výpisky</title>
-      <link>https://blazeva1.pages.fit/post/2018/icalp/</link>
+      <link>https://vaclavblazej.github.io/post/2018/icalp/</link>
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/icalp/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/icalp/</guid>
       <description>T. Johnson, M. T. Goodrich, W. E. Devanny, J. J. B. Vial and D. Eppstein: Optimally Sorting Evolving Data&amp;thinsp;↗&#xA;Máme měnící se data, která chceme seřadit. Po každém compare-and-exchange operaci se vymění náhodná dvě sousední data. Počítáme vzdálenost ke správnému seřazení pomocí inverzí. Lower bound je Omega(N) inverzí po konci algoritmu.&#xA;Autorům se povedlo dokázat, že insertion sort je optimální &amp;ndash; tj. po doběhnutí algoritmu máme s vysokou pravděpodobností O(N) inverzí.</description>
     </item>
     <item>
       <title>London Stringology Days</title>
-      <link>https://blazeva1.pages.fit/post/2017/london/</link>
+      <link>https://vaclavblazej.github.io/post/2017/london/</link>
       <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/london/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/london/</guid>
       <description>Mezi daty 8.2. a 11.2. jsem se zůčastnil konference LSD &amp;amp; LAW 2017&amp;thinsp;↗, kde jsem se potkal s širokou skupinou teoretických informatiků, zejména stringologů.&#xA;Ve středu jsem po příletu přejel z Gatwicku do Londýna (Victoria) a odsud na Russel Square kde jsem byl ubytovaný (pozn &amp;ndash; příště nekupovat nejlevnější hostel). (pozn &amp;ndash; při koupi lístků vždy vyžadovat &amp;lsquo;receipt&amp;rsquo;, čteme &amp;lsquo;rysít&amp;rsquo;) Univerzita je 15 minut pěšky, což značně ušetřilo náklady, protože doprava po Londýně není zrovna levná (odhadem 60,- za přejezd v centru).</description>
     </item>
   </channel>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setup on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/setup/</link>
+    <link>https://vaclavblazej.github.io/tags/setup/</link>
     <description>Recent content in Setup on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,138 +10,138 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 09 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mathjax</title>
-      <link>https://blazeva1.pages.fit/post/2023/mathjax/</link>
+      <link>https://vaclavblazej.github.io/post/2023/mathjax/</link>
       <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/mathjax/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/mathjax/</guid>
       <description>Setting up Mathjax&amp;thinsp;↗ for your website allows you to add mathematical symbols as either inline math $E = mc^2$, or display math: \[ R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_{\mu \nu} \] Such mathematics are written in LaTeX format&amp;thinsp;↗. If you already have old Mathjax 2 setup, you can use Conversion tool&amp;thinsp;↗ to migrate.&#xA;To setup the math from zero we enable inline math to be entered using dollar symbols $E = mc^2$ or display math by using escaped square brackets:</description>
     </item>
     <item>
       <title></title>
-      <link>https://blazeva1.pages.fit/material/system/</link>
+      <link>https://vaclavblazej.github.io/material/system/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/system/</guid>
+      <guid>https://vaclavblazej.github.io/material/system/</guid>
       <description>Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible. Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple. They were just put together gradually over the span of many years and will change when better alternatives appear.&#xA;The system consists of the latest version of Ubuntu&amp;thinsp;↗ but with a tiling window manager called AwesomeWM&amp;thinsp;↗.</description>
     </item>
     <item>
       <title>NeoVim Setup</title>
-      <link>https://blazeva1.pages.fit/post/2023/neovim/</link>
+      <link>https://vaclavblazej.github.io/post/2023/neovim/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/neovim/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/neovim/</guid>
       <description>Doing all my editing in Vim I thought for some time whether to switch to NeoVim&amp;thinsp;↗. A few days ago I finally decided to do the switch. The result is awesome.&#xA;I ought to credit ThePrimeagen whose videotutorial&amp;thinsp;↗ stands was the main reason for my transition. Another reason was a nice tutorial for using VimTeX by ejmastnak&amp;thinsp;↗.&#xA;Why Here are my reasons to use NeoVim.&#xA;highlighting (via incremental syntax tree) support for custom code snippets&amp;thinsp;↗ revert local changes via undotree&amp;thinsp;↗ good support for LaTex&amp;thinsp;↗ and Git&amp;thinsp;↗ quick fuzzy search for files or contents navigation&amp;thinsp;↗ LSP support&amp;thinsp;↗ :checkhealth tells you what is wrong (missing dependencies, old versions, etc.</description>
     </item>
     <item>
       <title>Manage versions of a scientific paper in LaTeX</title>
-      <link>https://blazeva1.pages.fit/post/2023/paper_versions/</link>
+      <link>https://vaclavblazej.github.io/post/2023/paper_versions/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/paper_versions/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/paper_versions/</guid>
       <description>Colleagues made me realize that this setup is too complex for collaborative work. There, simplicity is king and a simple \toappendix macro is simple enough to make multiple versions possible.&#xA;While working on a paper we usually need different versions. We can manage versions using primitives like the following.&#xA;\newif\iflongversion \longversiontrue % \longversionfalse \iflongversion Text shown only in the long version. \else Not-long version \fi Today I made a setup that allows for a more nuanced control.</description>
     </item>
     <item>
       <title>Synctex setup for Vim with Okular</title>
-      <link>https://blazeva1.pages.fit/post/2022/synctex/</link>
+      <link>https://vaclavblazej.github.io/post/2022/synctex/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/synctex/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/synctex/</guid>
       <description>Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa. This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup. I tried the setup of forward (code to PDF) and reverse search (PDF to code) with vim several times and failed. It is such a pain that I want to give this short tutorial on how I managed to make it work.</description>
     </item>
     <item>
       <title>Microphone</title>
-      <link>https://blazeva1.pages.fit/post/2021/microphone/</link>
+      <link>https://vaclavblazej.github.io/post/2021/microphone/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2021/microphone/</guid>
+      <guid>https://vaclavblazej.github.io/post/2021/microphone/</guid>
       <description>Recently, I got a new microphone and this post shall shed light on few weird things which happened during setting it up.&#xA;The full list of things:&#xA;microhpone: SHURE SM48-LC sound card: M-AUDIO M-Track SOLO table clamp: K&amp;amp;M 237 Table clamp XLR cable: ADAM HALL K3 MMF 0100 gooseneck: GRAVITY MA GOOSE XL windscreen: SHURE A58WS-BLK screw adapter 3/8&amp;rsquo;&amp;rsquo; to 5/8&amp;rsquo;&amp;rsquo;: STAGG 6000616N Buying a microphone one option you have is to have a stand between you and the keyboard.</description>
     </item>
     <item>
       <title>How to migrate static pages to another address</title>
-      <link>https://blazeva1.pages.fit/post/2021/migrating_pages/</link>
+      <link>https://vaclavblazej.github.io/post/2021/migrating_pages/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2021/migrating_pages/</guid>
+      <guid>https://vaclavblazej.github.io/post/2021/migrating_pages/</guid>
       <description>I knew that in time it would be necessary to move this web to another address. The setup for deployment is its own hassle. The main things I wanted was to be able to come to an old address and get redirected to the correct current address. It would be quite easy with something dynamic, but these pages are static, and so cannot really catch someone attending a random address of the old page.</description>
     </item>
     <item>
       <title>Profiling memory of C&#43;&#43; programs using Massif</title>
-      <link>https://blazeva1.pages.fit/post/2021/memory_profiling/</link>
+      <link>https://vaclavblazej.github.io/post/2021/memory_profiling/</link>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2021/memory_profiling/</guid>
+      <guid>https://vaclavblazej.github.io/post/2021/memory_profiling/</guid>
       <description>The valgrind program has many additional tools, one of which is called massif (manual here&amp;thinsp;↗). We can call it using syntax similar to normal valgrind call.&#xA;valgrind --tool=massif ./a.out &amp;lt;input.txt The command produces a file called massif.out.&amp;lt;number&amp;gt; where the number is bigger for later measurements. This file can be visualized with massif-visualizer from https://github.com/KDE/massif-visualizer&amp;thinsp;↗.&#xA;massif-visualizer massif.out.&amp;lt;number&amp;gt; valgrind --tool=massif --detailed-freq=1 ./a.out &amp;lt;input.txt Seeing leaks A leaking program will accumulate the used memory which will show in the graph as an ever-increasing mass of used memroy.</description>
     </item>
     <item>
       <title>C&#43;&#43; makefile</title>
-      <link>https://blazeva1.pages.fit/post/2021/makefile/</link>
+      <link>https://vaclavblazej.github.io/post/2021/makefile/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2021/makefile/</guid>
+      <guid>https://vaclavblazej.github.io/post/2021/makefile/</guid>
       <description>A while back I made a makefile which could compile virtually any simple project in c++. Recently, this need appeared again so I created the makefile again.&#xA;This source code is released into the public domain. Basically, you may use it in any way you like, but read the unlicense notice at the beginning of the file for more precise information.&#xA;Requirements The project should have this makefile above src folder, and it creates a build folder for intermediate compilation files and exe folder for the final executables.</description>
     </item>
     <item>
       <title>Command-line completion</title>
-      <link>https://blazeva1.pages.fit/post/2020/completion/</link>
+      <link>https://vaclavblazej.github.io/post/2020/completion/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2020/completion/</guid>
+      <guid>https://vaclavblazej.github.io/post/2020/completion/</guid>
       <description>The setup of completion is an essential part of creating a well-behaved script. Unfortunately, the setup has several obstacles, mainly that each shell handles completion differently. In this post, I hope to unravel the problems and show solutions to setting up completion for a custom script in several frequently used unix shells. The first section simply states the solution, its usage, and references used to accomplish these. In the second section we show a detailed progression which lead to the solution.</description>
     </item>
     <item>
       <title>Jak rozběhnout výpočet na RCI serveru</title>
-      <link>https://blazeva1.pages.fit/post/2019/rci_server/</link>
+      <link>https://vaclavblazej.github.io/post/2019/rci_server/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/rci_server/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/rci_server/</guid>
       <description>Základní info Oficiální návod&amp;thinsp;↗ je dobrý. Obsahuje všechno a je dobře udržovaný. Na následující stránce shrnu jak jsem server použil, a také pár drobností, které mě překvapily, nebo jsem je v návodu nenašel.&#xA;Přístup na server je rozdělen: přihlášení dovede uživatele na login1 node. Ten není výpočetní, a chybí mu například kompilátor. Na výpočetní node se dá dostat pomocí srun --pty bash -i, a kompilovat přes srun make.&#xA;Odkazy: novinky&amp;thinsp;↗ stránka s různorodým INFO&amp;thinsp;↗ zatížení RCI clusteru&amp;thinsp;↗ statistiky zatížení dle jobů a skupin&amp;thinsp;↗ zatížení GPU nodů&amp;thinsp;↗ chat s dalšímy uživately (Slack)&amp;thinsp;↗ Přihlášení nastavit si heslo pro cluster na https://login.</description>
     </item>
     <item>
       <title>Ubuntu system installation</title>
-      <link>https://blazeva1.pages.fit/material/system/system/</link>
+      <link>https://vaclavblazej.github.io/material/system/system/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/system/system/</guid>
+      <guid>https://vaclavblazej.github.io/material/system/system/</guid>
       <description>Image download Download the system on the Ubuntu official page&amp;thinsp;↗.&#xA;USB preparation First, insert the USB and find what is the device&amp;rsquo;s name. Find whether the USB is sdb/sdc/etc.&#xA;sudo fdisk -l One of these is your hard disc &amp;ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!&#xA;Fdisk will show if the usb is bootable, we can check afte rinstalation.&#xA;Se can either copy the image to the drive.</description>
     </item>
     <item>
       <title>Matrix screensaver</title>
-      <link>https://blazeva1.pages.fit/post/2017/matrix/</link>
+      <link>https://vaclavblazej.github.io/post/2017/matrix/</link>
       <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/matrix/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/matrix/</guid>
       <description>Pro linuxový X Window System máme program xscreensaver, který umožňuje nastavit matrixový screensaver. Prvně nainstalujeme xscreensaver a extra balíčky, kde je schovaný matrix styl.&#xA;sudo apt install xscreensaver xscreensaver-data-extra Nastavit screensaver můžeme buď přes rozhraní xscreensaver-demo, nebo přímo v souboru ~/.xscreensaver. Např. pro náš matrix xmatrix -root -small -no-trace -delay 50000 -density 6.&#xA;Aby šel screensaver zapnout, tak musí program běžet (třeba na pozadí). Přidáme do ~/.profile následující inicializaci.&#xA;xscreensaver -no-splash &amp;amp; Nakonec chceme nastavit klávesovou zkratku pro zamknutí obrazovky, tak nabindujeme následující příkaz.</description>
     </item>
     <item>
       <title>Klávesnice</title>
-      <link>https://blazeva1.pages.fit/post/2017/keyboard/</link>
+      <link>https://vaclavblazej.github.io/post/2017/keyboard/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/keyboard/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/keyboard/</guid>
       <description>Jak nastavit klávesnici? (bez přepínání - Unix) Programovat na české klávesnici je zlo. Programovat na české qwerty už je trochu lepší. Programovat na jedné klávesnici, která je schopná psát vše co chci &amp;hellip; je ultimátní.&#xA;Potřebujete mít: program setxkbmap&#xA;Překvapivě, některým developerům nejsou češi ukradení, tak udělali us(cz_sk_de) klávesnici. Ty lze nastavit buď jednorázově pomocí&#xA;setxkbmap -layout &#39;us&#39; -variant &#39;cz_sk_de&#39; setxkbmap -option &amp;quot;lv3:caps_switch&amp;quot; nebo permanentně úpravou souboru /etc/default/keyboard na&#xA;# KEYBOARD CONFIGURATION FILE # Consult the keyboard(5) manual page.</description>
     </item>
     <item>
       <title>Latex - instalace, kompilace</title>
-      <link>https://blazeva1.pages.fit/post/2017/latex/</link>
+      <link>https://vaclavblazej.github.io/post/2017/latex/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/latex/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/latex/</guid>
       <description>Systém latex (čtěme latech) slouží pro výrobu dokumentů. Základem je text psaný v .tex souboru, a ovládací příkazy, které latexu říkají, jak má tento text zpracovat.&#xA;Instalace pro Windows stáhněte a nainstalujte miktex&amp;thinsp;↗ a teprve potom texmaker&amp;thinsp;↗ (pokud je miktex při jeho instalaci už na PC, tak se automaticky nastaví) - všechny příkazy, o kterých se bavíme v tomto návodu jsou i v těchto programech pro Unix nainstalujte programy latex, bibtex a dvipdf Funguje to takto: Kompilaci provádíme příkazem &amp;ldquo;latex&amp;rdquo;</description>
     </item>
     <item>
       <title>Youtrack setup</title>
-      <link>https://blazeva1.pages.fit/material/system/youtrack/</link>
+      <link>https://vaclavblazej.github.io/material/system/youtrack/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/system/youtrack/</guid>
+      <guid>https://vaclavblazej.github.io/material/system/youtrack/</guid>
       <description>Youtrack&amp;thinsp;↗ je aplikace od JetBrains pro správu softwarových projektů. Je zdarma pro max 10 lidí, pokud si ji dotyční někde nasadí.&#xA;Stáhnutí a zapnutí Stáhnout lze ze stránek programu&amp;thinsp;↗. Nejjednodušší je stáhnout .jar, které potom lze jednoduše spustit:&#xA;java -jar youtrack-7.0.27965.jar 8082 Poslední argument je port. Po spuštění lze najít stránky najít na adrese:&#xA;localhost:8082 Data se ukládají ve složce ~/teamsysdata/youtrack a jejich promazáním se vše resetuje jako před instalací. Také jsou nějaké pomocné informace ve složce ~/.</description>
     </item>
     <item>
       <title>Autojump</title>
-      <link>https://blazeva1.pages.fit/post/2016/autojump/</link>
+      <link>https://vaclavblazej.github.io/post/2016/autojump/</link>
       <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2016/autojump/</guid>
+      <guid>https://vaclavblazej.github.io/post/2016/autojump/</guid>
       <description>Autojump je příkaz, který funguje jako cd, ale napříč celým diskem.&#xA;Setup:&#xA;sudo apt-get install automake echo &amp;quot;. /usr/share/autojump/autojump.sh&amp;quot; &amp;gt;&amp;gt; ~/.bashrc Použití:&#xA;blazeva1@localhost: ~ $ j gen /home/blazeva1/Documents/Projects/generator blazeva1@localhost: ~/Documents/Projects/generator $ Nejdříve je nutné chvíli používat příkazovou řádku bez autojumpu (jen se zapnutým scriptem). Autojump si udělá index používaných složek s váhami (zobrazí j -s). Potom co je složka v indexu, tak na ní lze přecházet pomocí &amp;lsquo;j&amp;rsquo;.</description>
     </item>
     <item>
       <title>Forged Alliance na Linuxu</title>
-      <link>https://blazeva1.pages.fit/post/2016/faf/</link>
+      <link>https://vaclavblazej.github.io/post/2016/faf/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2016/faf/</guid>
+      <guid>https://vaclavblazej.github.io/post/2016/faf/</guid>
       <description>Supreme Commander Forged Alliance je strategická PC hra. Tento návod Vám pomůže hru spustit pod lobby FAF, pokud máte hru koupenou na platformě Steam.&#xA;Jak na spuštění SC-FA Program playonlinux umožňuje běh windowsovských programů pod linuxem (s pomocí wine). Výhodou je, že tento program spravuje verze wine a verze programů, je také možné vytvořit více různých virtuálních disků s různými konfiguracemi.&#xA;Pro spuštění Forged Alliance je potřeba playonlinux nainstalovat, v něm vytvořit disk, na něj nainstalovat FAF, Steam a z něho i SC-FA.</description>
     </item>
     <item>
       <title>Přihlášení přes SSH bez hesla</title>
-      <link>https://blazeva1.pages.fit/post/2015/ssh_copy_id/</link>
+      <link>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2015/ssh_copy_id/</guid>
+      <guid>https://vaclavblazej.github.io/post/2015/ssh_copy_id/</guid>
       <description>Přes SSH se můžeme bezpečně přihlásit na server, vždy je však potřeba zadat heslo. Je však možné zadánvání hesla nahradit ověřením pomocí RSA klíče.&#xA;Klíč RSA První krok je vytvořit si vlastní soukromý a veřejný rsa klíč. Tato dvojice klíčů slouží pro identifikaci počítače - soukromý klíč je nutno udržovat v tajnosti, a veřejný klíč lze libovolně distribuovat.&#xA;Generování klíče (v příkazové řádce):&#xA;user@localhost$ ssh-keygen Při vytváření klíče se program zeptá na nové heslo.</description>
     </item>
   </channel>

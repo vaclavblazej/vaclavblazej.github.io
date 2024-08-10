@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Feature on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/feature/</link>
+    <link>https://vaclavblazej.github.io/tags/feature/</link>
     <description>Recent content in Feature on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/feature/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/feature/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple data consistency with two-sided references</title>
-      <link>https://blazeva1.pages.fit/post/2022/link/</link>
+      <link>https://vaclavblazej.github.io/post/2022/link/</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/link/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/link/</guid>
       <description>Imagine a programming language where the references can be mutual. What exactly does this mean and would such a feature be useful?&#xA;Basics Standard way to declare reference attribute is to set its name and type. We imagine a case where one could also declare attribute in the target class which would become mutually tied to the currently defined attribute. The declaration could look as in the following example.&#xA;class Person { passport: Passport.</description>
     </item>
   </channel>

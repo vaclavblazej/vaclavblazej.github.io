@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>p5 library on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/p5/</link>
+    <link>https://vaclavblazej.github.io/tags/p5/</link>
     <description>Recent content in p5 library on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,19 +10,19 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 21 Nov 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/p5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/p5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>p5js tutoriál - Uklízecí roboti</title>
-      <link>https://blazeva1.pages.fit/post/2018/p5_tutorial_roboti/</link>
+      <link>https://vaclavblazej.github.io/post/2018/p5_tutorial_roboti/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/p5_tutorial_roboti/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/p5_tutorial_roboti/</guid>
       <description>Pro tento tutoriál si potřebujete otevřít dvě stránky:&#xA;Editor&amp;thinsp;↗ Dokumentace&amp;thinsp;↗ Náš ultimátní cíl bude nasimulovat uklízací roboty, kteří jezdí po místnosti. Asi nějak takhle:&#xA;Základy O co jde? p5 je knihovna, ve které se dají jednoduše vytvářet vizualizace. Je postavená na Javascriptu, takže se dá spustit v prohlížeči (není potřeba nic instalovat). Navíc má i online editor!&#xA;Do editoru se dá přihlásit, aby se dali uložit rozdělané projekty. Po otevření editoru uvidíte:</description>
     </item>
     <item>
       <title>Historie</title>
-      <link>https://blazeva1.pages.fit/post/2018/history/</link>
+      <link>https://vaclavblazej.github.io/post/2018/history/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/history/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/history/</guid>
       <description>Následující vizualizace je inspirována Timeline z wikipedie, která se často vyskytuje u hudebních skupin.&#xA;Historie složení týmu rozvoje, později týmu spolupráce s průmyslem. Dynamická verze vytvořená v p5 js.&#xA;Složení organizátorů FIKS</description>
     </item>
   </channel>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fit Cvut on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/fit-cvut/</link>
+    <link>https://vaclavblazej.github.io/tags/fit-cvut/</link>
     <description>Recent content in Fit Cvut on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/fit-cvut/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/fit-cvut/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Žádost o GAČR grant</title>
-      <link>https://blazeva1.pages.fit/post/2022/gacr/</link>
+      <link>https://vaclavblazej.github.io/post/2022/gacr/</link>
       <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/gacr/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/gacr/</guid>
       <description>Začátkem Dubna 2022 jsem ve spolupráci s polskou univerzitou podal žádost o GAČR grant &amp;ndash; outgoing postdoc. Vzhledem k délce procesu s jeho komplikovanosti mám nyní nutnání o něm napsat pár odstavců.&#xA;Žádost o tento grant se podává 7.4.2022 a výsledek bude zhruba v Prosinci 2022. U podávání grantu je důležité pečlivě pročíst zadávací dokumentaci (tender document) &amp;ndash; zde se píše vše důležité, ovšem pár samozřejmostí není jasně oznámeno.&#xA;Celý grant sepisuje navrhovatel (já/ty), ale žádá o něj uchazeč (škola / instituce).</description>
     </item>
   </channel>

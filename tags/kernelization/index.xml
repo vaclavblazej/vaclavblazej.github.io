@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kernelization on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/kernelization/</link>
+    <description>Recent content in Kernelization on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
+    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/kernelization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Polynomial Kernels for Traveling Salesperson Problem and its Generalizations</title>
+      <link>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</guid>
+      <description>We investigated kernels for TSP and a related problem called Waypoint routing (WRP) &amp;ndash; a variant of TSP where one needs to only visit a subset of vertices (subset TSP) and edges have capacities for the maximum number of their traversal within the solution. Compared to the classical TSP where one may create edges that represent shortest paths, we leave the graph unchanged and analyze properties of the solution on the graph.</description>
+    </item>
+    <item>
+      <title>Polynomial Kernels for Tracking Shortest Paths</title>
+      <link>https://vaclavblazej.github.io/pub/2022/tracking-paths/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/pub/2022/tracking-paths/</guid>
+      <description>Tracking Shortest Paths is a task where we want to add $k$ trackers to a directed acyclic graph so that any shortest path which goes from source to the target activates a unique combination of trackers. In other words, there are no two paths that would activate the same set of trackers. One can study this problem also in variant where the paths are not necessarily shortest &amp;ndash; this is called Tracking Paths problem.</description>
+    </item>
+  </channel>
+</rss>

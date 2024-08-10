@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neovim on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/neovim/</link>
+    <link>https://vaclavblazej.github.io/tags/neovim/</link>
     <description>Recent content in Neovim on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forward and inverse serach in Okular with NeoVim and Lazy plugin loader</title>
-      <link>https://blazeva1.pages.fit/post/2023/synctex/</link>
+      <link>https://vaclavblazej.github.io/post/2023/synctex/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/synctex/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/synctex/</guid>
       <description>TLDR;&#xA;pip3 install neovim-remote setup vimtex in lazy&amp;thinsp;↗ and configure vimtex&amp;thinsp;↗ set &amp;ldquo;Okular/Settings/Configure Okular/Editor/Custom Text Editor&amp;rdquo; to nvr --remote-silent +%l %f 10 months ago I setup my vim to support jump to and from PDF viewer. Since then I jumped into NeoVim which broke this setup, so here is the new one.&#xA;In NeoVim ~/.config/nvim/init.lua apart from the typical lazy setup&amp;thinsp;↗ we include lervag/vimtex as a plugin while disabling lazy loading.</description>
     </item>
   </channel>

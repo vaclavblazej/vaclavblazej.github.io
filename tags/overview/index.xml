@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/overview/</link>
+    <link>https://vaclavblazej.github.io/tags/overview/</link>
     <description>Recent content in Overview on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/overview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://blazeva1.pages.fit/material/system/</link>
+      <link>https://vaclavblazej.github.io/material/system/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/system/</guid>
+      <guid>https://vaclavblazej.github.io/material/system/</guid>
       <description>Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible. Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple. They were just put together gradually over the span of many years and will change when better alternatives appear.&#xA;The system consists of the latest version of Ubuntu&amp;thinsp;↗ but with a tiling window manager called AwesomeWM&amp;thinsp;↗.</description>
     </item>
   </channel>

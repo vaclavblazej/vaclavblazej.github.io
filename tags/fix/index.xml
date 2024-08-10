@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fix on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/fix/</link>
+    <link>https://vaclavblazej.github.io/tags/fix/</link>
     <description>Recent content in Fix on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/fix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/fix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Issue submitting paper to arXiv; dvips issue with colors</title>
-      <link>https://blazeva1.pages.fit/post/2023/arxiv_colors/</link>
+      <link>https://vaclavblazej.github.io/post/2023/arxiv_colors/</link>
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/arxiv_colors/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/arxiv_colors/</guid>
       <description>On submitting a paper to arXiv I got an error &amp;ldquo;cannot convert to PDF&amp;rdquo; with no apparent reason. The minimum non-working example is as main.tex:&#xA;\documentclass[a4paper]{article} \usepackage{xcolor} \definecolor[named]{customColor}{rgb}{0.31,0.31,0.33} \begin{document} \textcolor{customColor} Hello world \end{document} Compiling it with latexmk -ps main.tex yields the following error.&#xA;Running &amp;#39;ps2pdf -dALLOWPSTRANSPARENCY &amp;#34;main.ps&amp;#34; &amp;#34;main.pdf&amp;#34;&amp;#39; ------------ Error: /undefined in XC@customColor Operand stack: Execution stack: %interp_exit .runexec2 --nostringval-- --nostringval-- --nostringval-- 2 %stopped_push --nostringval-- --nostringval-- --nostringval-- false 1 %stopped_push 1990 1 3 %oparray_pop 1989 1 3 %oparray_pop 1977 1 3 %oparray_pop 1833 1 3 %oparray_pop --nostringval-- %errorexec_pop .</description>
     </item>
   </channel>

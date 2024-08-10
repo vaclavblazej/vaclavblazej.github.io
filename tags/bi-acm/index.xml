@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Soutěžní programování on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/bi-acm/</link>
+    <link>https://vaclavblazej.github.io/tags/bi-acm/</link>
     <description>Recent content in Soutěžní programování on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,19 +10,19 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/bi-acm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/bi-acm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ACM - 20/21 L</title>
-      <link>https://blazeva1.pages.fit/teaching/2021l/acm/</link>
+      <link>https://vaclavblazej.github.io/teaching/2021l/acm/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/teaching/2021l/acm/</guid>
+      <guid>https://vaclavblazej.github.io/teaching/2021l/acm/</guid>
       <description>Další semestr ACMek. Vše je na courses&amp;thinsp;↗.</description>
     </item>
     <item>
       <title>ACM - 20/21 Z</title>
-      <link>https://blazeva1.pages.fit/teaching/2021z/acm/</link>
+      <link>https://vaclavblazej.github.io/teaching/2021z/acm/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/teaching/2021z/acm/</guid>
+      <guid>https://vaclavblazej.github.io/teaching/2021z/acm/</guid>
       <description>Z nějaké části jsem vedl BI-ACM i v letech minulých, ale tentokrát je to trochu oficiálněji, protože jsem napsaný v rozvrhu. Tento kurz jsem dělali napůl s J. Matyášem Křišťanem.</description>
     </item>
   </channel>

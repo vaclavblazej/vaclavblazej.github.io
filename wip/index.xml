@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wips on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/wip/</link>
+    <link>https://vaclavblazej.github.io/wip/</link>
     <description>Recent content in Wips on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,6 +10,6 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/wip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/wip/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

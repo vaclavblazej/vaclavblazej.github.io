@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/research/</link>
+    <link>https://vaclavblazej.github.io/tags/research/</link>
     <description>Recent content in Research on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,159 +10,124 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A note about XNLP-completeness</title>
-      <link>https://blazeva1.pages.fit/post/2023/xnlp_note/</link>
+      <link>https://vaclavblazej.github.io/post/2023/xnlp_note/</link>
       <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/xnlp_note/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/xnlp_note/</guid>
       <description>Classically, we aim to determine whether a computational problem is either NP-hard or polynomial-time solvable. Such a distinction is only the first step when researching a problem that is NP-hard as often we still need to devise an algorithm that will provide us with a solution.&#xA;Within the field of parameterized complexity we aim to find algorithms that are &amp;ldquo;terrible&amp;rdquo; only with respect to some facet of the input. More precisely, this means that instead of having something like $\mathcal O(2^n)$ where $n$ is the size of the input we instead may have $f(k) n^{\mathcal O(1)}$ where $f$ is any computable function and $k$ describes parameter of the input.</description>
     </item>
     <item>
       <title>Small survey on tools used by mathematicians</title>
-      <link>https://blazeva1.pages.fit/post/2023/ccc_survey/</link>
+      <link>https://vaclavblazej.github.io/post/2023/ccc_survey/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2023/ccc_survey/</guid>
+      <guid>https://vaclavblazej.github.io/post/2023/ccc_survey/</guid>
       <description>In the field of Theoretical Computer Science it is standard to write scientific papers in LaTeX. However, there are still quite a few options when deciding what software to use to create the text, images, or conference presentations. I asked several people during CCC 2023&amp;thinsp;↗ about this.&#xA;Up-to-date compilation of tools can be found in Material section.&#xA;Assuming we talk about collaborative works, majority of questioned people write their papers in Overleaf&amp;thinsp;↗.</description>
     </item>
     <item>
-      <title>Computing m-Eternal Domination Number of Cactus Graphs in Linear Time</title>
-      <link>https://blazeva1.pages.fit/pub/2023/cacti_eternal_domination/</link>
-      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/pub/2023/cacti_eternal_domination/</guid>
-      <description>This paper is a culmination of a long-term effort of me and Matyáš under the supervision of Tomáš. It was initiated by Bachelor&amp;rsquo;s thesis of Matyáš which then turned into a published paper.&#xA;The reserach concerns m-eternal domination &amp;ndash; a setting where two players, attacked and defender, play in turns. One designs the initial layout of $k$ guards on the input graph and tells how they are all moved. Each turn the attacked announces a vertex and the defender can move all guards, each by at most one edge, so that the attacked vertex now contains a guard.</description>
-    </item>
-    <item>
       <title>GD 2020 notes</title>
-      <link>https://blazeva1.pages.fit/post/2020/graph_drawing/</link>
+      <link>https://vaclavblazej.github.io/post/2020/graph_drawing/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2020/graph_drawing/</guid>
+      <guid>https://vaclavblazej.github.io/post/2020/graph_drawing/</guid>
       <description>This page contains my notes on talks given on GD 2020 conference, which was held online.&#xA;(speaker is shown in bold)&#xA;conference website&amp;thinsp;↗ program&amp;thinsp;↗ Gradient descent and queue layouts Reyan Ahmed, Felice De Luca, Sabin Devkota, Stephen Kobourov and Mingwei Li. Graph drawing via gradient descent, (GD)^2 &amp;ndash; multi-parameter graph drawing using gradient descent, live demo on Mingwei Li&amp;rsquo;s page&amp;thinsp;↗&#xA;Katharina Börsig, Ulrik Brandes and Barna Pasztor. Stochastic Gradient Descent Works Really Well for Stress Minimization &amp;ndash; Stochastic Gradient Descent (SGD) jako alternativa Majorization metody kreslení grafu, z experimentů se zdá, že funguje okay.</description>
     </item>
     <item>
-      <title>On the Edge-Length Ratio of 2-Trees</title>
-      <link>https://blazeva1.pages.fit/pub/2020/2-trees_edge_ratio_drawing/</link>
-      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/pub/2020/2-trees_edge_ratio_drawing/</guid>
-      <description>We study planar straight-line drawings of graphs that minimize the ratio between the length of the longest and the shortest edge. We answer a question of Lazard et al. [Theor. Comput. Sci. 770 (2019), 88&amp;ndash;94] and, for any given constant $r$, we provide a $2$-tree which does not admit a planar straight-line drawing with a ratio bounded by $r$. When the ratio is restricted to adjacent edges only, we prove that any $2$-tree admits a planar straight-line drawing whose edge-length ratio is at most $4 + \varepsilon$ for any arbitrarily small $\varepsilon &amp;gt; 0$, hence the upper bound on the local edge-length ratio of partial $2$-trees is $4$.</description>
-    </item>
-    <item>
       <title>Hat chromatic number of graphs</title>
-      <link>https://blazeva1.pages.fit/material/science/res/bears/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/bears/</link>
       <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/bears/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/bears/</guid>
       <description>List of sources used to create this summary can be found at the bottom of the page.&#xA;Problem statement We are given a graph $G$ and number of colors $K$. Vertices of $G$ are occupied by players (called Bears) which can see all their neighbors but not themselves. Each of them will be given a hat in one of $K$ colors (multiple Bears can have the same color) and their task is to come up with a collective strategy such that at least one of them will guess his hat correctly.</description>
     </item>
     <item>
       <title>CSR 2019</title>
-      <link>https://blazeva1.pages.fit/post/2019/csr/</link>
+      <link>https://vaclavblazej.github.io/post/2019/csr/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/csr/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/csr/</guid>
       <description>From 1. to 5. of July 2019 I attended the 14th International Computer Science Symposium in Russia&amp;thinsp;↗, Novosibirsk. Visa to Russia took approximately a week.&#xA;Getting there, I nearly missed the connecting flight from Moscow. The destination was Akademgorodok&amp;thinsp;↗ in Novosibirsk which is an awesome location in nature built for education and science. The conference was held in the new building of Novosibirsk State University&amp;thinsp;↗.&#xA;Some of the attendees were: Rahul Ilango&amp;thinsp;↗, Danny Hucke Dmitry Kravchenko Francesco Dolce&amp;thinsp;↗, Dmitriy Zhuk, Giuseppe Italiano&amp;thinsp;↗ Meena Mahajan&amp;thinsp;↗, Gregory Kucherov, René van Bevern, Michael Fellows&amp;thinsp;↗, Petros A.</description>
     </item>
     <item>
       <title>Jak rozběhnout výpočet na RCI serveru</title>
-      <link>https://blazeva1.pages.fit/post/2019/rci_server/</link>
+      <link>https://vaclavblazej.github.io/post/2019/rci_server/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/rci_server/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/rci_server/</guid>
       <description>Základní info Oficiální návod&amp;thinsp;↗ je dobrý. Obsahuje všechno a je dobře udržovaný. Na následující stránce shrnu jak jsem server použil, a také pár drobností, které mě překvapily, nebo jsem je v návodu nenašel.&#xA;Přístup na server je rozdělen: přihlášení dovede uživatele na login1 node. Ten není výpočetní, a chybí mu například kompilátor. Na výpočetní node se dá dostat pomocí srun --pty bash -i, a kompilovat přes srun make.&#xA;Odkazy: novinky&amp;thinsp;↗ stránka s různorodým INFO&amp;thinsp;↗ zatížení RCI clusteru&amp;thinsp;↗ statistiky zatížení dle jobů a skupin&amp;thinsp;↗ zatížení GPU nodů&amp;thinsp;↗ chat s dalšímy uživately (Slack)&amp;thinsp;↗ Přihlášení nastavit si heslo pro cluster na https://login.</description>
     </item>
     <item>
-      <title>On the m-eternal Domination Number of Cactus Graphs</title>
-      <link>https://blazeva1.pages.fit/pub/2019/cacti_eternal_domination/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/pub/2019/cacti_eternal_domination/</guid>
-      <description>This research is a followup to Bachelor&amp;rsquo;s Thesis of Jan Matyáš Křišťan (available only with sign-in)&amp;thinsp;↗.&#xA;Abstract Given a graph $G$, guards are placed on vertices of $G$. Then vertices are subject to an infinite sequence of attacks, so that each attack must be defended by a guard moving from a neighboring vertex. The $m$-eternal domination number is the minimum number of guards such that the graph can be defended indefinitely.</description>
-    </item>
-    <item>
       <title>Dimea Days 2019</title>
-      <link>https://blazeva1.pages.fit/post/2019/dimea_days/</link>
+      <link>https://vaclavblazej.github.io/post/2019/dimea_days/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/dimea_days/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/dimea_days/</guid>
       <description>During 12. and 13. of Juny 2019 there was Dimea Days 2019 first run in the center of Brno, Czech Republic. The event took place at the museum at &amp;lsquo;Zelný trh&amp;rsquo; near the main bus and train station &amp;lsquo;Hlavní nádraží&amp;rsquo;. The programme consisted mainly of eight cca 1h invited talks and one 1h10m poster session for presenting new research. The talks were combinatorial in nature and introduced the following concepts.</description>
     </item>
     <item>
       <title>Scientific poster for poster session</title>
-      <link>https://blazeva1.pages.fit/post/2019/poster/</link>
+      <link>https://vaclavblazej.github.io/post/2019/poster/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2019/poster/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/poster/</guid>
       <description>It is quite scary if have to prepare a poster for a conference. The main idea is to transfer the information about your research af efficiently as possible. I found a great video by Mike Morrison&amp;thinsp;↗ talking about the poster session difficulties. I think this is mainly applicable to big conferences.&#xA;Well, I used this format on a quite small and crowded poster session (15 posters in total) and it didn&amp;rsquo;t go particularly well.</description>
     </item>
     <item>
-      <title>On Induced Online Ramsey Number of Paths, Cycles, and Trees</title>
-      <link>https://blazeva1.pages.fit/pub/2019/induced_ornum/</link>
-      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/pub/2019/induced_ornum/</guid>
-      <description>Abstract An online Ramsey game is a game between Builder and Painter, alternating in turns. They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices. In each round Builder draws an edge and Painter colors it either red or blue. Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins. The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.</description>
-    </item>
-    <item>
       <title>MCW - výpisky</title>
-      <link>https://blazeva1.pages.fit/post/2018/mcw/</link>
+      <link>https://vaclavblazej.github.io/post/2018/mcw/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/mcw/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/mcw/</guid>
       <description>Martin Loebl: Perfect matchings in double-torus grids&#xA;It is known that the number of the perfect matchings of each finite double-torus grid is a linear combination of 16 determinants. It is predicted by the Quantum field theory (Alvarez-Gaume, Vaffa) that exactly 6 of these determinants go to zero when the size of the grid grows. I will introduce the rich world around this claim.&#xA;Temperley bijection &amp;ndash; koster nxn mřížky a párování 2n+1 x 2n+1 mřížky.</description>
     </item>
     <item>
       <title>ICALP 2018 - výpisky</title>
-      <link>https://blazeva1.pages.fit/post/2018/icalp/</link>
+      <link>https://vaclavblazej.github.io/post/2018/icalp/</link>
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2018/icalp/</guid>
+      <guid>https://vaclavblazej.github.io/post/2018/icalp/</guid>
       <description>T. Johnson, M. T. Goodrich, W. E. Devanny, J. J. B. Vial and D. Eppstein: Optimally Sorting Evolving Data&amp;thinsp;↗&#xA;Máme měnící se data, která chceme seřadit. Po každém compare-and-exchange operaci se vymění náhodná dvě sousední data. Počítáme vzdálenost ke správnému seřazení pomocí inverzí. Lower bound je Omega(N) inverzí po konci algoritmu.&#xA;Autorům se povedlo dokázat, že insertion sort je optimální &amp;ndash; tj. po doběhnutí algoritmu máme s vysokou pravděpodobností O(N) inverzí.</description>
     </item>
     <item>
       <title>MACIS - Vienna 2017</title>
-      <link>https://blazeva1.pages.fit/post/2017/macis/</link>
+      <link>https://vaclavblazej.github.io/post/2017/macis/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/macis/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/macis/</guid>
       <description>Mezi daty 14-17.11.2017 jsem byl ve Vídni na konferenci MACIS&amp;thinsp;↗, kde jsem prezentoval výsledky z bakalářky &amp;ndash; algoritmus na Swap Matching.&#xA;Před posláním na macis jsem práci ještě přepracoval do takového stavu, kdy jsem s ní byl spokojený. Navíc do článku přibyla měření rychlosti běhu algoritmů a měření míry chybovosti algoritmu z chybného článku. Díky tomu, že jsem článku konečně věřil se prezentace stala o poznání jednodušší - bez problémů jsem o vísledcích mluvil z patra 24 minut a zbylo dost času i na otázky.</description>
     </item>
     <item>
       <title>NSFOCS</title>
-      <link>https://blazeva1.pages.fit/post/2017/novi_sad/</link>
+      <link>https://vaclavblazej.github.io/post/2017/novi_sad/</link>
       <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/novi_sad/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/novi_sad/</guid>
       <description>Od 16. do 22.7. jsem byl v Novi Sad, Srbsko, na workshopu NSFOCS&amp;thinsp;↗. Konal se od pondělí do pátku, ale přijel jsem o den dřív a odjel o den později, abych si nenarušil průběh workshopu. Dopravil jsem se letadlem (cca 7000,-) a z Bělehradu pak autem (s několika dalšíma účastníkama), které zařídili organizátoři (děkuju). První dva dny byly plně věnovány přednáškám, a další dva dny pak měli přednáškové bloky jen dopoledne.</description>
     </item>
     <item>
       <title>Diplomová práce</title>
-      <link>https://blazeva1.pages.fit/post/2017/diplomka/</link>
+      <link>https://vaclavblazej.github.io/post/2017/diplomka/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/diplomka/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/diplomka/</guid>
       <description>V diplomové práci jsem se věnoval online Ramsey theorii.&#xA;Představte si hru Buildera a Paintera. Každé kolo Builder vytvoří hranu, a Painter rozhodne o její barvě. Úkolem Buildera je vynutit, aby vznikl jednobarevný podgraf. Nejmenší počet tahů, ve kterých Builder dovede vyhrát (proti jekékoli Painterově strategii) se nazýví online Ramsey number (ORN)&#xA;Výsledky:&#xA;definice nekonečné rodiny stromů, pro které je ORN menší nez size-Ramsey number horní mez na ORN cyklů horní mez na ORN k-podrozdělených hvězd zjištění přesné hodnoty ORN C_3 vs S_n na souvislých grafech Tyto výsledky byly publikvoány.</description>
     </item>
     <item>
       <title>Lower bound graphs for known Ramsey numbers</title>
-      <link>https://blazeva1.pages.fit/material/science/res/ramsey/classical/brute_force/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/ramsey/classical/brute_force/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</guid>
       <description>Graphs, which do not contain a monochromatic K_4 </description>
     </item>
     <item>
       <title>London Stringology Days</title>
-      <link>https://blazeva1.pages.fit/post/2017/london/</link>
+      <link>https://vaclavblazej.github.io/post/2017/london/</link>
       <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2017/london/</guid>
+      <guid>https://vaclavblazej.github.io/post/2017/london/</guid>
       <description>Mezi daty 8.2. a 11.2. jsem se zůčastnil konference LSD &amp;amp; LAW 2017&amp;thinsp;↗, kde jsem se potkal s širokou skupinou teoretických informatiků, zejména stringologů.&#xA;Ve středu jsem po příletu přejel z Gatwicku do Londýna (Victoria) a odsud na Russel Square kde jsem byl ubytovaný (pozn &amp;ndash; příště nekupovat nejlevnější hostel). (pozn &amp;ndash; při koupi lístků vždy vyžadovat &amp;lsquo;receipt&amp;rsquo;, čteme &amp;lsquo;rysít&amp;rsquo;) Univerzita je 15 minut pěšky, což značně ušetřilo náklady, protože doprava po Londýně není zrovna levná (odhadem 60,- za přejezd v centru).</description>
     </item>
     <item>
       <title>Stigma 2016</title>
-      <link>https://blazeva1.pages.fit/post/2016/stigma/</link>
+      <link>https://vaclavblazej.github.io/post/2016/stigma/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2016/stigma/</guid>
+      <guid>https://vaclavblazej.github.io/post/2016/stigma/</guid>
       <description>Mezi dny 26. září - 1. října jsme s kolegy s KTI byli na stigmě. Klasicky se konala v Kruhu u Jilemnice.&#xA;Kdo o čem mluvil: Pondělí 26.9.2016 cca 11:45 Příjezd autobusu na místo konference Přivítání, úvodní slovo Václav Blažej - On-line Ramsey Theory. (autory článku jsou J. A. Grytczuk, M. Haluszczak a H. A. Kierstead) Ivo Petr - Introduction to lattice-based cryptography and LLL algorithm. Úterý 27.9.2016 Klára Drhová - Výměna klíčů založená na isogeniích supersingulár-ních eliptických křivek.</description>
     </item>
     <item>
-      <title>A Simple Streaming Bit-parallel Algorithm for Swap Pattern Matching</title>
-      <link>https://blazeva1.pages.fit/pub/2015/gsm/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/pub/2015/gsm/</guid>
-      <description>In this paper we present a streaming algorithm for Pattern Matching with Swaps (Swap Matching).&#xA;Abstract The pattern matching problem with swaps is to find all occurrences of a pattern in a text while allowing the pattern to swap adjacent symbols. The goal is to design fast matching algorithm that takes advantage of the bit parallelism of bitwise machine instructions and has only streaming access to the input. We introduce a new approach to solve this problem based on the graph theoretic model and compare its performance to previously known algorithms.</description>
-    </item>
-    <item>
       <title>Bakalářská práce</title>
-      <link>https://blazeva1.pages.fit/post/2015/bakalarka/</link>
+      <link>https://vaclavblazej.github.io/post/2015/bakalarka/</link>
       <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2015/bakalarka/</guid>
+      <guid>https://vaclavblazej.github.io/post/2015/bakalarka/</guid>
       <description>V r. 2015 jsem v publikaci našel chybu. Přednesl jsem o ní na TS a nabídl způsob jak přepoužít model tak, aby algoritmus fungoval. Tomáš mi nabídl, abych z toho udělal bakalářskou práci. Společně jsme pak práci upravili a zkoušeli poslat na různé konference (neúspěšně). Přidal se i Ondra, ale o článek stejně nebyl zájem. Zkoušeli jsme poslat do TCS, taky nechtěli. S prací jsem potom jel na SVOČ (bez úspěchu).</description>
     </item>
   </channel>

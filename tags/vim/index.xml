@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/vim/</link>
+    <link>https://vaclavblazej.github.io/tags/vim/</link>
     <description>Recent content in Vim on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,12 +10,12 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Synctex setup for Vim with Okular</title>
-      <link>https://blazeva1.pages.fit/post/2022/synctex/</link>
+      <link>https://vaclavblazej.github.io/post/2022/synctex/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/synctex/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/synctex/</guid>
       <description>Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa. This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup. I tried the setup of forward (code to PDF) and reverse search (PDF to code) with vim several times and failed. It is such a pain that I want to give this short tutorial on how I managed to make it work.</description>
     </item>
   </channel>

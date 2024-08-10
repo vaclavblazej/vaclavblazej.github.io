@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talk on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/tags/talk/</link>
+    <link>https://vaclavblazej.github.io/tags/talk/</link>
     <description>Recent content in Talk on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,26 +10,26 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sun, 13 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/tags/talk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Přenášky na podzimním soustředění FIKS 2022</title>
-      <link>https://blazeva1.pages.fit/post/2022/fiks_podzim/</link>
+      <link>https://vaclavblazej.github.io/post/2022/fiks_podzim/</link>
       <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/fiks_podzim/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/fiks_podzim/</guid>
       <description>11.-13. listopadu 2022 bylo podzimní soustředění FIKS v Praze. Následují osnovy a dodatečné materiály k mým přednáškám.&#xA;Kreslení vektorové grafiky Ukázali jsme si jak kreslit vektorovou grafiku pomocí IPE a TikZu.&#xA;Řešení těžkých problémů Kód používaný pro demonstraci na přednášce stáhnete zde: fiks_sat.zip. MiniSat lze stáhnout online dle vašeho OS.&#xA;Které problémy umíme řešít rychle, a co &amp;lsquo;rychle&amp;rsquo; znamená? Rychlé uvažujeme polynomiální Co je to P a NP turingův stroj pouze pro rozhodovací problémy (odpověď je Ano/Ne) řešitelné v polynomiálním čase = P nedeterministicky řešitelné v polynomiálním čase = NP Logika Proměnné, Literály, Klauzule, Logické spojky, Formule Úprava logické formule Úloha SAT &amp;ndash; rozhodovací, jak je těžká?</description>
     </item>
     <item>
       <title>Combinatorial games talk at MATRIS</title>
-      <link>https://blazeva1.pages.fit/post/2022/matris_talk/</link>
+      <link>https://vaclavblazej.github.io/post/2022/matris_talk/</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/matris_talk/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/matris_talk/</guid>
       <description>An outline of a short talk that I have in Vienna on 20. July 2022.&#xA;Combinatorial games &amp;ndash; we have full information, deterministic How to play chess, game tree, heuristic to count winning chance, minmax Basics of game theory domineering &amp;ndash; L has vertical moves, R has horizontal moves winning states L, R, N, and P; first vs second player examples of plays L-shape je N I-shape je L I-hor. I je R square je N 2x square P square and L-shape N bigger L P impartial vs partizan games impartial: standardni triky Chocolate &amp;ndash; parity Placing dominos without restrictions &amp;ndash; symetrie Chomp &amp;ndash; strategy stealing Changing snake &amp;ndash; matching strategy building a theory lost game = 0 one move for L is 1, for R is 1 {|} = 0, creating numbers birthday &amp;ndash; step when created sum of games 0 does not change it other than that, we can only say L+L=L, R+R=R, L+N=LuN, R+N=RuN numbers we have -1,0,1 N={N-1|} a -N={|1-N} impartial nimbers and mex nim winning strategy for nim nim in misere variant </description>
     </item>
     <item>
       <title>Přenášky na soustředění FIKS 2022</title>
-      <link>https://blazeva1.pages.fit/post/2022/fiks/</link>
+      <link>https://vaclavblazej.github.io/post/2022/fiks/</link>
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/post/2022/fiks/</guid>
+      <guid>https://vaclavblazej.github.io/post/2022/fiks/</guid>
       <description>24.-30. Dubna 2022 bylo soustředění FIKS ve Štědroníně. Následují hrubé osnovy k mým přednáškám.&#xA;Neděle Základy složitosti Kdy je problém lehké a kdy těžké řešít? Konkrétní příklady společně se způsobem jak toto matematicky zachytit (O notace).&#xA;Vypisování hvězdiček: příklady na O(N), O(N na 2), O(N log N), O(2 na N), O(N!) Co je to algoritmus? Jak dlouho trva instrukce? &amp;ndash; problemy se zavislosti algoritmu na konkretnim stroji Který algoritmus je Rychlejší 30*N log N nebo N log^2 N Notace O(N) formálně &amp;ndash; funkce f a g, f = O(g) pokud existuje konstanta c a n0 takova, ze pro vsechna n &amp;gt;= n0 je f(n) &amp;lt;= c g(n) Omega a Theta Jak rychlý je jednoduchý algoritmus?</description>
     </item>
   </channel>

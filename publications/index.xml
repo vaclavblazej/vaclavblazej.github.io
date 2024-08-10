@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/publications/</link>
+    <link>https://vaclavblazej.github.io/publications/</link>
     <description>Recent content in Publications on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <atom:link href="https://blazeva1.pages.fit/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

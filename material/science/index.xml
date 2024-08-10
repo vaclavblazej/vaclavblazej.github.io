@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Science on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/material/science/</link>
+    <link>https://vaclavblazej.github.io/material/science/</link>
     <description>Recent content in Science on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,47 +10,47 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 11 Nov 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/material/science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/material/science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scientific Latex</title>
-      <link>https://blazeva1.pages.fit/material/science/latex/</link>
+      <link>https://vaclavblazej.github.io/material/science/latex/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/latex/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/latex/</guid>
       <description>Here I gather usefull tips and tricks for writing scientific papers in LaTeX. Although I work in theoretical computer science (which has big influence on styles we use) this post may be useful for anyone writing papers in latex.&#xA;General Technique Given an issue this post shall mention one solution to it eventhough there may exist many different ways to solve the issue. I try to do things so that the process of writing is easier and mistakes are harder to do.</description>
     </item>
     <item>
       <title>Hat chromatic number of graphs</title>
-      <link>https://blazeva1.pages.fit/material/science/res/bears/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/bears/</link>
       <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/bears/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/bears/</guid>
       <description>List of sources used to create this summary can be found at the bottom of the page.&#xA;Problem statement We are given a graph $G$ and number of colors $K$. Vertices of $G$ are occupied by players (called Bears) which can see all their neighbors but not themselves. Each of them will be given a hat in one of $K$ colors (multiple Bears can have the same color) and their task is to come up with a collective strategy such that at least one of them will guess his hat correctly.</description>
     </item>
     <item>
       <title>Length of a synchronizing word of finite automata</title>
-      <link>https://blazeva1.pages.fit/material/science/res/automata/synchronize/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/automata/synchronize/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/automata/synchronize/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/automata/synchronize/</guid>
       <description>Question What is the maximal length of a shortest synchronizing word over an automaton.&#xA;Known results Lower bound is asymptotically $n^2$.&#xA;Upper bound is asymptotically $n^3$. Consider the shortest synchronizing word W for an automata.&#xA;A Note on Homogeneous Experiments with Finite Automata, 1964&amp;thinsp;↗ Pin 1983 ${n^3-n \over 6}$ upper bound $n^2$ was shown for few classes of synchronizing automata On two combinatorial problems arising from automatatheory, 1981&amp;thinsp;↗ Kari 2003, if the underlying digraph is Eulerian, then the minimum reset word is of length at most (n-2)(n-1)+1 (open of tight?</description>
     </item>
     <item>
       <title>Manim</title>
-      <link>https://blazeva1.pages.fit/material/science/manim/</link>
+      <link>https://vaclavblazej.github.io/material/science/manim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/manim/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/manim/</guid>
       <description>Manim is a python library for programming images or video. It finds appeal among science communicators as it can be used to make high-quality graphics. I consider many well-made Manim graphics to be borderline art.&#xA;Manim started as a personal project of Grant Sanderson for creating 3Blue1Brown&amp;thinsp;↗ videos and later spawned a community that created Manim community edition&amp;thinsp;↗. It is perhaps the best way to convert mathematics to video. To use this tool to create a good video one needs a field expertise and some knowledge of programming.</description>
     </item>
     <item>
       <title>Scientific poster</title>
-      <link>https://blazeva1.pages.fit/material/science/poster/</link>
+      <link>https://vaclavblazej.github.io/material/science/poster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/poster/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/poster/</guid>
       <description></description>
     </item>
     <item>
       <title>TikZ</title>
-      <link>https://blazeva1.pages.fit/material/science/tikz/</link>
+      <link>https://vaclavblazej.github.io/material/science/tikz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/tikz/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/tikz/</guid>
       <description>TikZ is a LaTeX package for programically drawing pictures. It is a macro extension over PGF. The drawings can be of high quality and the integration with LaTeX provides advantages that are hard to find in other approaches, namely:&#xA;The drawing uses the same font as the docuemnt, it can reference and link to parts of the text, it can be parameterized when called. A note about this page / How to use / Page overview</description>
     </item>
   </channel>

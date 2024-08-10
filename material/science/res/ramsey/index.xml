@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Online Ramsey number survey on Homepage of Vašek</title>
-    <link>https://blazeva1.pages.fit/material/science/res/ramsey/</link>
+    <link>https://vaclavblazej.github.io/material/science/res/ramsey/</link>
     <description>Recent content in Online Ramsey number survey on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -10,19 +10,19 @@
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blazeva1.pages.fit/material/science/res/ramsey/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vaclavblazej.github.io/material/science/res/ramsey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Results in ORN</title>
-      <link>https://blazeva1.pages.fit/material/science/res/ramsey/online/results/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/ramsey/online/results/</link>
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/ramsey/online/results/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/ramsey/online/results/</guid>
       <description>known&#xA;paths $P_n$ $ORN \leq SRN$ for an infinite number of cliques the $ORN(K_n) \leq SRN(K_n)$ Haxell lowerbound on SRN of trees is $|T_1|\Delta(T_1)+|T_2|\Delta(T_2)$ thesis&#xA;infinite family of trees for which ORN is asymptotically smaller than SRN cycles $C_n$ in $O(n)$ spiders $S_{k,l}$ in $O(k^2 l)$ exact value for $\tilde{r}(C_3,S_n)$ on connected graphs is $3n-1$ generally&#xA;induced paths $P_n$ in $O(n)$ implies induced cycles, spiders (and more?) nsfocs&#xA;paths on 3 colors in $O(n^2)$ kamak</description>
     </item>
     <item>
       <title>Lower bound graphs for known Ramsey numbers</title>
-      <link>https://blazeva1.pages.fit/material/science/res/ramsey/classical/brute_force/</link>
+      <link>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://blazeva1.pages.fit/material/science/res/ramsey/classical/brute_force/</guid>
+      <guid>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</guid>
       <description>Graphs, which do not contain a monochromatic K_4 </description>
     </item>
   </channel>
