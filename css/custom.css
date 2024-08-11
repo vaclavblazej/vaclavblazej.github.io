@@ -161,14 +161,22 @@ body {
 }
 
 .conference {
+    color: #f8eede;
     background-color: #196ca3;
     border-color: #196ca3;
 }
 .journal {
+    color: #f8eede;
     background-color: #c32b72;
     border-color: #c32b72;
 }
+.video {
+    border-color: #888;
+}
+.video.icon {
+}
 .other {
+    color: #f8eede;
     background-color: #606b70;
     border-color: #606b70;
 }
@@ -176,33 +184,26 @@ body {
 .conference.accepted {
     background-color: rgb(248, 238, 222);
     color: #196ca3;
-    border-width: thin;
-    border-style: solid;
 }
 .journal.presented,
 .journal.accepted {
     background-color: rgb(248, 238, 222);
     color: #c32b72;
-    border-width: thin;
-    border-style: solid;
 }
 .other.presented,
 .other.accepted {
     background-color: rgb(248, 238, 222);
     color: #606b70;
-    border-width: thin;
-    border-style: solid;
 }
 .box {
-    color: #f8eede;
     margin-right: 2px;
     padding: 0px 5px;
+    border-width: thin;
+    border-style: solid;
 }
 .submitted{
     background-color: rgb(248, 238, 222);
     color: #606b70;
-    border-width: thin;
-    border-style: solid;
 }
 
 .p {
@@ -214,11 +215,11 @@ li p {
 }
 
 .posts li p {
-    margin-top: 0;
+    margin-top: 1;
 }
 
 .posts li {
-    margin-bottom: 1em;
+    margin-bottom: .6em;
 }
 
 
