@@ -249,6 +249,7 @@ Example codes have the following structure.</p>
           </ul>
         </li>
         <li><a href="#tikz-syntax--formally">TikZ Syntax / Formally</a></li>
+        <li><a href="#average-of-coordinates">Average of coordinates</a></li>
       </ul>
     </li>
     <li><a href="#todos">Todos</a></li>
@@ -1456,6 +1457,16 @@ Commands like <code>\draw</code> and <code>\fill</code> are simply shorthands fo
 The <code>&lt;path syntax&gt;</code> contains a list of points that are optionally connected with edges of various types.
 Many of these options are shown in further sections.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\path</span><span style="color:#008080">[&lt;options&gt;]</span> &lt;path syntax&gt; ;
+</span></span></code></pre></div><h2 id="average-of-coordinates">Average of coordinates</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#998;font-style:italic">% saves to coodinate named by the second argument the average coordinate
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% of the collection passed as the first argument
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\avgcord</span><span style="color:#0086b3">}</span>[2]<span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\coordinate</span> (#2) at (0,0)<span style="color:#0086b3">{}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\foreach</span><span style="color:#008080">[count=\i]</span> <span style="color:#000;font-weight:bold">\u</span> in #1 <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\coordinate</span> (#2) at (<span style="color:#d14">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0086b3">#</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">)!</span><span style="color:#099">1</span><span style="color:#000;font-weight:bold">/</span><span style="color:#008080">\i</span><span style="color:#000;font-weight:bold">!(</span><span style="color:#008080">\u</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">$</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
 </span></span></code></pre></div><h1 id="todos">Todos</h1>
 <ul>
 <li>custom and parameterizable tikzstyle</li>
@@ -1521,7 +1532,7 @@ Many of these options are shown in further sections.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">16. August 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">1. September 2024</ul>
 </div>
 
 <script type="text/javascript">
