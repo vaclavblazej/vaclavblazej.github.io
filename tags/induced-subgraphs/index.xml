@@ -16,7 +16,7 @@
       <link>https://vaclavblazej.github.io/pub/2019/induced_ornum/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/pub/2019/induced_ornum/</guid>
-      <description>Abstract An online Ramsey game is a game between Builder and Painter, alternating in turns. They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices. In each round Builder draws an edge and Painter colors it either red or blue. Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins. The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.</description>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;An online Ramsey game is a game between Builder and Painter, alternating in turns.&#xA;They are given a graph $H$ and a graph $G$ of an infinite set of independent vertices.&#xA;In each round Builder draws an edge and Painter colors it either red or blue.&#xA;Builder wins if after some finite round there is a monochromatic copy of the graph $H$, otherwise Painter wins.&#xA;The online Ramsey number $\widetilde r(H)$ is the minimum number of rounds such that Builder can force a monochromatic copy of $H$ in $G$.&#xA;This is an analogy to the size-Ramsey number $\overline r(H)$ defined as the minimum number such that there exists graph $G$ with $\overline r(H)$ edges where for any edge two-coloring $G$ contains a monochromatic copy of $H$.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -16,7 +16,7 @@
       <link>https://vaclavblazej.github.io/post/2015/karatsuba/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2015/karatsuba/</guid>
-      <description>Násobení polynomů lze řešit několika způsoby, zde si promluvíme o jednom z těch zajímavých.&#xA;Karatsuba Karatsuba využívá toho, že pro výpočet $(Ax + B)(Cx + D)$ nemusíme dělat čtyři násobení, ale stačí tři. Vyplývá to z následujícího:&#xA;(Ax + B)(Cx + D) = = ACx^2 + (AD+BC)x + BD Víme že: (A+B)(C+D) = AD + BC + AC + BD A proto: AD + BC = (A+B)(C+D) - AC - BD Nahrazením získáme: ACx^2 + ((A+B)(C+D) - AC - BD)x + BD Protože AC a BD už pronásobené máme, tak stačí spočítat $(A+B)(C+D)$ a od toho je odečíst.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;../polymul&#34;&gt;Násobení polynomů&lt;/a&gt; lze řešit několika způsoby, zde si promluvíme o jednom z těch zajímavých.&lt;/p&gt;&#xA;&lt;h2 id=&#34;karatsuba&#34;&gt;Karatsuba&lt;/h2&gt;&#xA;&lt;p&gt;Karatsuba využívá toho, že pro výpočet $(Ax + B)(Cx + D)$ nemusíme dělat čtyři násobení, ale stačí tři.&#xA;Vyplývá to z následujícího:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;(Ax + B)(Cx + D) =&#xA;= ACx^2 + (AD+BC)x + BD&#xA;Víme že: (A+B)(C+D) = AD + BC + AC + BD&#xA;A proto: AD + BC = (A+B)(C+D) - AC - BD&#xA;Nahrazením získáme:&#xA;ACx^2 + ((A+B)(C+D) - AC - BD)x + BD&#xA;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

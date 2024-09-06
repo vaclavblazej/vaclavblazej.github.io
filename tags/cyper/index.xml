@@ -16,7 +16,7 @@
       <link>https://vaclavblazej.github.io/post/2024/semaphor/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2024/semaphor/</guid>
-      <description>Flag semaphor&amp;thinsp;↗ is a method historically used to transfer infromation between ships. Currently, it is one of several methods of encrypting text in cypher games. While encoding text is best done with a map from alphabet to the semaphore decoding is not so easy. Either one has to decode in reverse direction to the alphabet, or with a 2d table that has one hand in rows and the second hand in columns &amp;ndash; this still takes quite a long time to find the correct cell.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Flag_semaphore&#34;target=&#34;_blank&#34;&gt;Flag semaphor&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is a method historically used to transfer infromation between ships.&#xA;Currently, it is one of several methods of encrypting text in cypher games.&#xA;While encoding text is best done with a map from alphabet to the semaphore decoding is not so easy.&#xA;Either one has to decode in reverse direction to the alphabet, or with a 2d table that has one hand in rows and the second hand in columns &amp;ndash; this still takes quite a long time to find the correct cell.&#xA;Towards making this process easier for people that did not memorize the encoding by hearth I devised the following decoding design.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

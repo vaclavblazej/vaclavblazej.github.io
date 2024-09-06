@@ -30,7 +30,7 @@
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/shallow_minors/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/shallow_minors/</guid>
-      <description>Let us have a minor H created taking a subgraph of G and contracting some connected components of G into one vertices. If each contracted component has bounded diameter, then the minor is called shallow minor.</description>
+      <description>&lt;p&gt;Let us have a minor H created taking a subgraph of G and contracting some connected components of G into one vertices.&#xA;If each contracted component has bounded diameter, then the minor is called &lt;strong&gt;shallow minor&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Polynomial expansion</title>
@@ -44,7 +44,7 @@
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/1/shallowness/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/1/shallowness/</guid>
-      <description>By P. Ossona de Mendez&#xA;[missing]&#xA;We considered Topological minors and Shallow Minors. (Stbility by $*K_p$) Both have bounded expansion for bounded average degree, chromatic number, and are ND for bounded clique number.&#xA;Topological minor &amp;ndash; paths representing edges are vertex disjoint. Minor &amp;ndash; each vertex is represented by sugraph. What if we relax his requirement and allow edges to be only edge disjoint &amp;ndash; we get an immersion.&#xA;[obr 1]</description>
+      <description>&lt;p&gt;By P. Ossona de Mendez&lt;/p&gt;&#xA;&lt;p&gt;[missing]&lt;/p&gt;&#xA;&lt;p&gt;We considered Topological minors and Shallow Minors.&#xA;(Stbility by $*K_p$)&#xA;Both have bounded expansion for bounded average degree, chromatic number, and are ND for bounded clique number.&lt;/p&gt;&#xA;&lt;p&gt;Topological minor &amp;ndash; paths representing edges are vertex disjoint.&#xA;Minor &amp;ndash; each vertex is represented by sugraph.&#xA;What if we relax his requirement and allow edges to be only edge disjoint &amp;ndash; we get an &lt;em&gt;immersion&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

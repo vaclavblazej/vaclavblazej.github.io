@@ -16,7 +16,7 @@
       <link>https://vaclavblazej.github.io/post/2022/synctex/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2022/synctex/</guid>
-      <description>Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa. This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup. I tried the setup of forward (code to PDF) and reverse search (PDF to code) with vim several times and failed. It is such a pain that I want to give this short tutorial on how I managed to make it work.</description>
+      <description>&lt;p&gt;Editing LaTeX is way easier when one can click in code to jump in PDF, and vice-versa.&#xA;This feature works out-of-the box in Overleaf or TeX Live, but using our own editor (like vim or vscode) needs some setup.&#xA;I tried the setup of &lt;em&gt;forward&lt;/em&gt; (code to PDF) and &lt;em&gt;reverse search&lt;/em&gt; (PDF to code) with vim several times and failed.&#xA;It is such a pain that I want to give this short tutorial on how I managed to make it work.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
