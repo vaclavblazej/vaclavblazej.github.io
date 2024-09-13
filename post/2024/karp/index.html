@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Steiner tree - Reducibility Among Combinatorial Problems - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="Václav Blažej">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-09-13T00:00:00Z" class="post-list timeago">13.09.2024</time>
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/math">math</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Steiner tree - Reducibility Among Combinatorial Problems</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>There is a mistake in <em>Steiner tree</em> reduction in Karp&rsquo;s paper, however, the result is still true.
+Let me go over the reduction mentioned in &ldquo;Reducibility Among Combinatorial Problems&rdquo; paper explicitly.
+The problems are defined as follows (paraphrased).</p>
+<ul>
+<li>Exact Cover
+<ul>
+<li>Input: family $\mathcal F={S_1,\dots,S_n}$ of sets over a universe $U$</li>
+<li>Output: Is there a subfamily $\mathcal H \subseteq \mathcal F$ such that every element $u_i \in U$ is in exactly one set of $\mathcal H$.</li>
+</ul>
+</li>
+<li>Steiner Tree
+<ul>
+<li>Input: graph $G$, terminal vertices $R \subseteq V(G)$, edge weights $w$, integer $k$</li>
+<li>Output: Does $G$ contain a tree subgraph of weight $\le k$ that contains all vertices of $R$?</li>
+</ul>
+</li>
+</ul>
+<p>The reduction looks as follows.</p>
+<p><img src="steiner_tree_reduction.png" alt="Steiner Tree reduction"></p>
+<p>We create 3 sets of vertices, one global &ldquo;root&rdquo; $n_0$, one vertex for each set $S_j$, and one vertex for each element of the universe $u_i$.
+We connect all sets to the root and all elements to sets they are contained in.
+The budget is set to $|U|$.
+By setting teminals to have the root and universe elements we aim to model selection of the sets by connections from $n_0$ that are chosen to the Steiner tree solution.</p>
+<p>The problem is in having weights 0 edges that connect sets with universe elements.
+So we can just include all (spanning tree of all) the edges between sets $\mathcal F$ and unvierse elements $U$.
+On the following figure observe the difference between the intended solution (left), and a feasible minimal solution (right).</p>
+<p><img src="bad_solution.svg" alt="bad solution"></p>
+<p>Even with the incorrect reduction the result is true as we can apply a different set of redcutions to get a stronger result.
+We have the following 3-reductions:</p>
+<ul>
+<li>3-SAT to 3-Dimensional Perfect Matching</li>
+<li>3-Dimensional Perfect Matching to 3-Exact Cover (trivial)</li>
+<li>3-Exact Cover to Unweighted Steiner Tree</li>
+</ul>
+<p>Let us first define the problems.</p>
+<ul>
+<li>3-SAT
+<ul>
+<li>Input: logical formula in CNF with all clauses having at most 3 literals</li>
+<li>Output: Is there a variable assignment such that the formula evaluates to true?</li>
+</ul>
+</li>
+<li>3-Dimensional Perfect Matching
+<ul>
+<li>Input: 3-partite graph</li>
+<li>Output: Is there a graph partition where each part is a triangle?</li>
+</ul>
+</li>
+<li>Exact Cover by 3-Sets
+<ul>
+<li>Input: family $\mathcal F={S_1,\dots,S_n}$ of sets over a universe $U$, each set of size 3</li>
+<li>Output: Is there a subfamily $\mathcal H \subseteq \mathcal F$ such that every element $u_i \in U$ is in exactly one set of $\mathcal H$.</li>
+</ul>
+</li>
+<li>Unweighted Steiner Tree
+<ul>
+<li>Input: graph $G$, terminal vertices $R \subseteq V(G)$, integer $k$</li>
+<li>Output: Does $G$ contain a tree subgraph with at most $k$ edges that contains all vertices of $R$?</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-sat-to-3-dimensional-perfect-matching">3-SAT to 3-Dimensional Perfect Matching</h3>
+<ul>
+<li>variable gadget
+<ul>
+<li>cycle of triangles where from each triangle we use only two vertices</li>
+<li>covering different parities of the cycle represents different variable valuations</li>
+</ul>
+</li>
+<li>clause gadget
+<ul>
+<li>for each variable occurrence $u \in C$ have that literal from variable gadget appear in ${u,c_1,c_2}$ where $c_1,c_2$ are fixed for each $C$ separately</li>
+<li>for $c_1,c_2$ to be covered we need to cover one of the literals that appear in it</li>
+</ul>
+</li>
+<li>garbage collection
+<ul>
+<li>number of occurrences minus clauses garbage gadgets are created</li>
+<li>each contains $g_1,g_2$ of its own and is connected to all occurrences of all variables</li>
+<li>this simply covers all literals that were not used to cover the clause gadget vertices</li>
+</ul>
+</li>
+</ul>
+<p>Found here: <a href="https://en.wikipedia.org/wiki/Computers_and_Intractability"target="_blank">Garey and Johnson - Computers and Intractability: A Guide to the Theory of NP-Completeness<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h3 id="3-dimensional-perfect-matching-to-3-exact-cover-trivial">3-Dimensional Perfect Matching to 3-Exact Cover (trivial)</h3>
+<p>3-Exact Cover is a generalization of 3-Dimensional Perfect Matching.</p>
+<p>Noted here: <a href="https://en.wikipedia.org/wiki/Computers_and_Intractability"target="_blank">Garey and Johnson - Computers and Intractability: A Guide to the Theory of NP-Completeness<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h3 id="3-exact-cover-to-unweighted-steiner-tree">3-Exact Cover to Unweighted Steiner Tree</h3>
+<p>Curiously the reduction is exactly the same as the one in Karp&rsquo;s paper except for weights, that are all equal to 1.
+The budget is set to $4/3|U|$.
+For the proof, as $U$ needs to be connected each vertex of $U$ is incident to at least one edge, this uses $|U|$ of the budget.
+As each $\mathcal F$ has degree at most 3 to $U$, we know that the selected edges incident to $U$ are incident to $q \ge |U|/3$ vertices of $\mathcal F$.
+These, along with $n_0$, constitute $q+1$ disjoint trees of the solution, so we need to use at least $q$ budget to join them.
+The solution does not care how the components are joined as long as the budget used is at most $q$, so we can simply connect all trees to $n_0$.
+We get a feasible solution iff $q=|U|/3$, which represents the exact cover by $q$ sets; $|U|+q = 4/3|U|$.</p>
+<p>Found here: <a href="http://profs.sci.univr.it/~rrizzi/classes/Complexity/provette/Santuari/steiner.pdf"target="_blank">Alessandro Santuari - Steiner Tree NP-completeness Proof<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<hr>
+<p>As noted in a <a href="https://blog.computationalcomplexity.org/2011/10/if-you-find-mistake-in-someone-elses.html"target="_blank">Computational Complexity blog<span style="white-space: nowrap;">&thinsp;↗</span></a>, there is no point in retroactively fixing this because the result is still correct.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">13. September 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

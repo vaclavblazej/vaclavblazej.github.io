@@ -9,8 +9,15 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math</title>
+      <link>https://vaclavblazej.github.io/tags/math/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/tags/math/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cypher</title>
       <link>https://vaclavblazej.github.io/tags/cypher/</link>
@@ -110,10 +117,10 @@
       <description></description>
     </item>
     <item>
-      <title>Rant</title>
-      <link>https://vaclavblazej.github.io/tags/rant/</link>
+      <title>Note</title>
+      <link>https://vaclavblazej.github.io/tags/note/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://vaclavblazej.github.io/tags/rant/</guid>
+      <guid>https://vaclavblazej.github.io/tags/note/</guid>
       <description></description>
     </item>
     <item>
@@ -149,13 +156,6 @@
       <link>https://vaclavblazej.github.io/tags/research/</link>
       <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/tags/research/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Math</title>
-      <link>https://vaclavblazej.github.io/tags/math/</link>
-      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
-      <guid>https://vaclavblazej.github.io/tags/math/</guid>
       <description></description>
     </item>
     <item>

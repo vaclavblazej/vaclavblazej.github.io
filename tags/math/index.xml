@@ -9,8 +9,15 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steiner tree - Reducibility Among Combinatorial Problems</title>
+      <link>https://vaclavblazej.github.io/post/2024/karp/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/karp/</guid>
+      <description>&lt;p&gt;There is a mistake in &lt;em&gt;Steiner tree&lt;/em&gt; reduction in Karp&amp;rsquo;s paper, however, the result is still true.&#xA;Let me go over the reduction mentioned in &amp;ldquo;Reducibility Among Combinatorial Problems&amp;rdquo; paper explicitly.&#xA;The problems are defined as follows (paraphrased).&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exact Cover&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input: family $\mathcal F={S_1,\dots,S_n}$ of sets over a universe $U$&lt;/li&gt;&#xA;&lt;li&gt;Output: Is there a subfamily $\mathcal H \subseteq \mathcal F$ such that every element $u_i \in U$ is in exactly one set of $\mathcal H$.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Steiner Tree&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input: graph $G$, terminal vertices $R \subseteq V(G)$, edge weights $w$, integer $k$&lt;/li&gt;&#xA;&lt;li&gt;Output: Does $G$ contain a tree subgraph of weight $\le k$ that contains all vertices of $R$?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The reduction looks as follows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Partial preorders</title>
       <link>https://vaclavblazej.github.io/post/2023/comparabilities/</link>

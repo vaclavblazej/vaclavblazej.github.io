@@ -9,8 +9,15 @@
     <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
     <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steiner tree - Reducibility Among Combinatorial Problems</title>
+      <link>https://vaclavblazej.github.io/post/2024/karp/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <guid>https://vaclavblazej.github.io/post/2024/karp/</guid>
+      <description>&lt;p&gt;There is a mistake in &lt;em&gt;Steiner tree&lt;/em&gt; reduction in Karp&amp;rsquo;s paper, however, the result is still true.&#xA;Let me go over the reduction mentioned in &amp;ldquo;Reducibility Among Combinatorial Problems&amp;rdquo; paper explicitly.&#xA;The problems are defined as follows (paraphrased).&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exact Cover&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input: family $\mathcal F={S_1,\dots,S_n}$ of sets over a universe $U$&lt;/li&gt;&#xA;&lt;li&gt;Output: Is there a subfamily $\mathcal H \subseteq \mathcal F$ such that every element $u_i \in U$ is in exactly one set of $\mathcal H$.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Steiner Tree&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input: graph $G$, terminal vertices $R \subseteq V(G)$, edge weights $w$, integer $k$&lt;/li&gt;&#xA;&lt;li&gt;Output: Does $G$ contain a tree subgraph of weight $\le k$ that contains all vertices of $R$?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The reduction looks as follows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Migrating static pages</title>
       <link>https://vaclavblazej.github.io/post/2024/migrating_pages/</link>
@@ -222,7 +229,7 @@
       <description>&lt;p&gt;It is well-known that the shortest synchronizing words for any automata lies between $n^2$ and roughly $n^3$.&#xA;We focused on the same question but for tree automata, i.e., what are the &amp;ldquo;smallest&amp;rdquo; terms which sychronize a tree automaton?&lt;/p&gt;&#xA;&lt;p&gt;It became clear that classical notion of sychronization does not 1-to-1 correspond to this new setting, so we define &amp;ldquo;weak&amp;rdquo; and &amp;ldquo;strong&amp;rdquo; synchronization and show bounds for both.&#xA;The weak sychronization is more string-like &amp;ndash; the interesting part of simpmlest synchronization terms boil down to a single path which is basically a string.&#xA;Surprisingly, the classical lower-bounds for strings stop working in this setting as it is not at all obvious that the sychronizing term cannot do something clever with the two subtrees to sychronize swiftly &amp;ndash; this takes mental effort to persuade yourself that is it not trivial.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Logos</title>
+      <title>Brand logos</title>
       <link>https://vaclavblazej.github.io/post/2023/logos/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
       <guid>https://vaclavblazej.github.io/post/2023/logos/</guid>
