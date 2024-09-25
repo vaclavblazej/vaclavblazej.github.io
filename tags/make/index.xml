@@ -6,22 +6,20 @@
     <description>Recent content in Make on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/make/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43; makefile</title>
       <link>https://vaclavblazej.github.io/post/2021/makefile/</link>
-      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2021/makefile/</guid>
       <description>&lt;p&gt;A while back I made a makefile which could compile virtually any simple project in c++.&#xA;Recently, this need appeared again so I created &lt;a href=&#34;./Makefile&#34;&gt;the makefile&lt;/a&gt; again.&lt;/p&gt;&#xA;&lt;p&gt;This &lt;a href=&#34;./Makefile&#34;&gt;source code&lt;/a&gt; is released into the &lt;em&gt;public domain&lt;/em&gt;.&#xA;Basically, you may use it in any way you like, but read the unlicense notice at the beginning of the file for more precise information.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;&#xA;&lt;p&gt;The project should have this makefile above &lt;code&gt;src&lt;/code&gt; folder, and it creates a &lt;code&gt;build&lt;/code&gt; folder for intermediate compilation files and &lt;code&gt;exe&lt;/code&gt; folder for the final executables.&#xA;It uses &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;g++&lt;/code&gt;, &lt;code&gt;mkdir&lt;/code&gt;, and &lt;code&gt;dirname&lt;/code&gt; which should be accessible on every unix system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Make &amp; Makefile</title>
       <link>https://vaclavblazej.github.io/post/2016/makefile/</link>
-      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2016/makefile/</guid>
       <description>&lt;p&gt;Makefile je soubor používaný programem &amp;lsquo;make&amp;rsquo;.&#xA;Spuštění příkazu &amp;lsquo;make&amp;rsquo; způsobí přečtení souboru &amp;lsquo;makefile&amp;rsquo; nebo &amp;lsquo;Makefile&amp;rsquo; (bez přípony), zparsování skriptu a provedení prvního cíle.&#xA;Definice cíle obsahuje název, závislosti a příkazy.&lt;/p&gt;&#xA;&lt;p&gt;Příklad cíle &amp;lsquo;clean&amp;rsquo;, bez závoslostí, se dvěma příkazy (všechny příkazy nutno předsadit TABem):&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;clean:&#xA;&#x9;rm -f $(OBJECTS) $(EXECUTABLE) ./doc&#xA;&#x9;rmdir $(TMP)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Příklad cíle &amp;lsquo;clear&amp;rsquo;, který je závislý na cíli &amp;lsquo;clean&amp;rsquo;:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;clear: clean&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Vyvolání konkrétního cíle provedeme např. příkazem &amp;lsquo;make clean&amp;rsquo;.&#xA;To způsobí, provedení závislostí a potom příkazů vybraného cíle.&#xA;Závislosti se neprovedou, pokud je cíl jméno souboru, který má závislost na nezměněné soubory.&lt;/p&gt;</description>
     </item>

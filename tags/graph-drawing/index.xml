@@ -6,15 +6,13 @@
     <description>Recent content in Graph Drawing on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/graph-drawing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Constrained and Ordered Level Planarity Parameterized by the Number of Levels</title>
       <link>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</link>
-      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</guid>
       <description>&lt;p&gt;We are given a graph where each vertex is assigned a position with an arbitrary x-coordinate, but y-coordinate being 1 to $k$.&#xA;The question is whether it is possible to embed the edges in a planar way so that each edge is y-monotone &amp;ndash; meaning from the lower vertex the edge always increases in y-coordinate until it reaches the other vertex.&lt;/p&gt;&#xA;&lt;p&gt;Note the problem can also be posed as having the vertices assigned to horizontal lines and given their left-to-right order.&#xA;Our original investigation concerned the case where the order is not total (called constrained level planarity).&#xA;For that variant it was known that 2 levels are easy and 5 levels are NP-hard (by a reduction from 3-partition).&#xA;We improved the hardness to 4 levels and 3 levels were investigated deeper.&#xA;It turns out that 3 levels can be solved, but the algorithm is quite complex.&lt;/p&gt;</description>
     </item>

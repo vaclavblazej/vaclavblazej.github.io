@@ -6,29 +6,27 @@
     <description>Recent content in Proof on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/proof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Počet koster úplného bipartitního grafu $K_{n,m}$</title>
       <link>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</guid>
       <description>&lt;p&gt;&lt;em&gt;Aktualizováno 15. Srpna 2023&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Parafrázování článku &lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-642-46908-4_38?no-access=true&#34;target=&#34;_blank&#34;&gt;Spanning Trees of the Complete Bipartite Graph&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;věta&#34;&gt;Věta&lt;/h2&gt;&#xA;&lt;p&gt;Počet koster úplného bipartitního grafu $K_{m,n}$ je $n^{m-1} m^{n-1}$.&lt;/p&gt;&#xA;&lt;h2 id=&#34;lemma&#34;&gt;Lemma&lt;/h2&gt;&#xA;&lt;p&gt;Mějme kostru T grafu $K_{m,n}, m \leq n$, s vrcholy rozdělenými na množiny $M={a_1,\dots,a_m}$ a $N={b_1,\dots,b_n}$, kde množiny $M,N$ jsou barvy přirozeného obarvení úplného bipartitního grafu.&#xA;Pak pro nějaké k, $1 \leq k \leq n, \textrm{deg}(b_k)=1$.&lt;/p&gt;&#xA;&lt;h2 id=&#34;důkaz-lemma&#34;&gt;Důkaz lemma&lt;/h2&gt;&#xA;&lt;p&gt;Mějme $A, B$ součty stupňů uvnitř T vrcholů v $M, N$ resp.&#xA;Zřejmě $A=B$ a $(A+B)/2=m+n-1$, protože $T$ je strom.&#xA;Takže \[B = \frac{A+B}{2}=m+n-1,\] a kdyby $\textrm{deg}(b_j) \ge 2$ platilo pro všechny j, pak \[B \geq m+n &amp;gt; m+n-1,\] což je spor s předchozí rovností pro $B$.&#xA;Takže existuje $k$ takové že $\textrm{deg}(b_k) = 1$.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exact family of trees for which $\alpha(G)=\gamma(G)$</title>
       <link>https://vaclavblazej.github.io/post/2017/independence_domination/</link>
-      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2017/independence_domination/</guid>
       <description>&lt;p&gt;The characterization of the family for which the domination number is equal to the independence.&lt;/p&gt;&#xA;&lt;p&gt;This proof was published however the paper was not published electronically so I proved it for myself.&#xA;I am not really sure how they proved it originally.&lt;/p&gt;&#xA;&lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$\alpha(G)$ is the independence number.&lt;/li&gt;&#xA;&lt;li&gt;$\gamma(G)$ is the domination number.&lt;/li&gt;&#xA;&lt;li&gt;$\widehat{T}$ of a tree T is a new tree created from T by adding one new leaf to each of its vertices.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;&#xA;&lt;p&gt;The family of trees for which $\alpha(T)=\gamma(T)$ are exactly those in the form of $T=\widehat{H}$ where H is some tree.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Make heap složitost</title>
       <link>https://vaclavblazej.github.io/post/2015/make_heap/</link>
-      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2015/make_heap/</guid>
       <description>&lt;h2 id=&#34;kontext&#34;&gt;Kontext&lt;/h2&gt;&#xA;&lt;p&gt;Halda je užitečná datová struktura. Avšak mnozí tvrdí, že ji lze z neseřazeného pole nainicializovat v čase $O(n)$.&#xA;To nemusí na první pohled dávat smysl &amp;mdash; kdyby totiž člověk vytvářel haldu postupným přidáváním prvků, tak by její vytvoření mělo složitost $\mathcal O(n \log(n))$.&#xA;Tak jak to tedy je?&lt;/p&gt;&#xA;&lt;p&gt;Tvoření haldy neprobíhá postupným přidáváním prvků, ale opravy h-vlastnosti zespodu.&#xA;Když si představíme haldu jako strom (viz obrázek), tak se od spodu bere každý podstrom a udělá se z něj halda.&#xA;Protože se prvky berou odspodu, tak vždy víme, že synové podstromu, ze kterého se snažíme udělat haldu už haldy jsou (žlutý a zelený), a tak stačí pouze prvku na vrcholku upravit h-vlastnost (modrý).&lt;/p&gt;</description>
     </item>

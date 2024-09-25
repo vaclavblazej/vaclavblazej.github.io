@@ -6,15 +6,13 @@
     <description>Recent content in Complexity on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/complexity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A note about XNLP-completeness</title>
       <link>https://vaclavblazej.github.io/post/2023/xnlp_note/</link>
-      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/xnlp_note/</guid>
       <description>&lt;p&gt;Classically, we aim to determine whether a computational problem is either NP-hard or polynomial-time solvable.&#xA;Such a distinction is only the first step when researching a problem that is NP-hard as often we still need to devise an algorithm that will provide us with a solution.&lt;/p&gt;&#xA;&lt;p&gt;Within the field of parameterized complexity we aim to find algorithms that are &amp;ldquo;terrible&amp;rdquo; only with respect to some facet of the input.&#xA;More precisely, this means that instead of having something like $\mathcal O(2^n)$ where $n$ is the size of the input we instead may have $f(k) n^{\mathcal O(1)}$ where $f$ is any computable function and $k$ describes parameter of the input.&lt;/p&gt;</description>
     </item>

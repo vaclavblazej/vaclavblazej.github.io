@@ -6,15 +6,13 @@
     <description>Recent content in Mathjax on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 09 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mathjax</title>
       <link>https://vaclavblazej.github.io/post/2023/mathjax/</link>
-      <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/mathjax/</guid>
       <description>&lt;p&gt;Setting up &lt;a href=&#34;https://www.mathjax.org/&#34;target=&#34;_blank&#34;&gt;Mathjax&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; for your website allows you to add mathematical symbols as either inline math $E = mc^2$, or display math:&#xA;\[&#xA;R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_{\mu \nu}&#xA;\]&#xA;Such mathematics are written in &lt;a href=&#34;https://www.overleaf.com/learn/latex/Mathematical_expressions&#34;target=&#34;_blank&#34;&gt;LaTeX format&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;If you already have old Mathjax 2 setup, you can use &lt;a href=&#34;https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html&#34;target=&#34;_blank&#34;&gt;Conversion tool&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; to migrate.&lt;/p&gt;&#xA;&lt;p&gt;To setup the math from zero we enable inline math to be entered using dollar symbols &lt;code&gt;$E = mc^2$&lt;/code&gt; or display math by using escaped square brackets:&lt;/p&gt;</description>
     </item>

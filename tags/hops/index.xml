@@ -6,15 +6,13 @@
     <description>Recent content in Hops on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/hops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hierarchy of Parameters update</title>
       <link>https://vaclavblazej.github.io/post/2024/parameters_update/</link>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2024/parameters_update/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a long time coming but over the longer weekend I finished rewriting of &lt;a href=&#34;https://vaclavblazej.github.io/parameters/&#34;target=&#34;_blank&#34;&gt;HOPS&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; from python to rust.&#xA;Throughout the rewriting, there were some new ideas of what could be included, unfinished parts of which are coded.&#xA;Now, after a long time, I believe the resulting page to be in a better state than it was before so it was finally released.&#xA;The biggest changes are as follows.&lt;/p&gt;</description>
     </item>

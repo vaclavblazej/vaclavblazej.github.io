@@ -6,71 +6,69 @@
     <description>Recent content in Game on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tunic</title>
       <link>https://vaclavblazej.github.io/post/2024/tunic/</link>
-      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2024/tunic/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/app/553420/TUNIC/&#34;target=&#34;_blank&#34;&gt;TUNIC&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is an isometric action game which also contains a good deal of puzzles.&#xA;The world consists of several non-trivially interconnected locations.&#xA;You progress through the game mainly by exploring, finding items, and beating bosses.&#xA;While you are not given explicit directions it is usually quite clear what to do next.&#xA;When some extra information is required (e.g. initially hidden control options) it is revealed through a booklet.&#xA;You get pages of the booklet throughout the game and it feeds you the information in a vague manner.&#xA;I found this feature to be surprisingly well done &amp;ndash; finding the information you need in the booklet is nice, often leading to sudden moments of understanding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ring of Pain</title>
       <link>https://vaclavblazej.github.io/post/2024/ring_of_pain/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2024/ring_of_pain/</guid>
       <description>&lt;p&gt;Rogue-lite games manifest in repeated playthroughs and gradual metagame progression.&#xA;Complete mastery of the game may allow you to win a run on the first try.&#xA;But for mortals there is no option other than to run many times to gain a better chance of winning.&#xA;The notion of repeated play to challenge yourself to get knowledge and progression is apparent even in the name.&#xA;&lt;a href=&#34;https://store.steampowered.com/app/998740/Ring_of_Pain/&#34;target=&#34;_blank&#34;&gt;Ring of Pain&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is a very good rogue-lite game with its theme embedded in every corner.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inscription</title>
       <link>https://vaclavblazej.github.io/post/2024/inscription/</link>
-      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2024/inscription/</guid>
       <description>&lt;p&gt;The appeal of &lt;a href=&#34;https://store.steampowered.com/app/1092790/Inscryption/&#34;target=&#34;_blank&#34;&gt;Inscription&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is its cool card game tied to a rogue-lite progression through the story.&#xA;I found the game to be made of two major parts and, surprisingly, even though the story is interesting, I think that the game establishes a theme which later gets betrayed &amp;ndash; let me elaborate; spoilers ahead.&lt;/p&gt;&#xA;&lt;p&gt;The game starts with you being forced into playing a card game against a dungeon mater (Leshy) who challenges you in an ascension through a map.&#xA;Throughout the journey you encounter varied places, building and upgrading your card deck.&#xA;The game becomes harder and harder and you inevitably lose which makes Leshy take a photo of you, killing you in the process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manipulating game files on Steam</title>
       <link>https://vaclavblazej.github.io/post/2024/downgrading_steam_games/</link>
-      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2024/downgrading_steam_games/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/&#34;target=&#34;_blank&#34;&gt;Steam&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; installs and updates your games automatically.&#xA;However, in some cases it may be needed to change local files manually.&lt;/p&gt;&#xA;&lt;h2 id=&#34;running-a-game-with-flags&#34;&gt;Running a game with flags&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;right click game, properties&lt;/li&gt;&#xA;&lt;li&gt;in general change the Launchh options&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &amp;ndash; that one is available through variable &lt;code&gt;%command%&lt;/code&gt;.&#xA;For adding a flag use&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dredge</title>
       <link>https://vaclavblazej.github.io/post/2023/dredge/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/dredge/</guid>
       <description>&lt;p&gt;&amp;ldquo;&lt;a href=&#34;https://store.steampowered.com/app/1562430/DREDGE/&#34;target=&#34;_blank&#34;&gt;Dredge&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is a single-player fisihing adventure with a sinister undercurrent&amp;rdquo; &amp;ndash; as Steam says.&#xA;I do not want to spoil anything so I split this post into several sections with gradually increasing amount of spoilers.&#xA;Let me start with a spoiler-free review.&lt;/p&gt;&#xA;&lt;p&gt;Dredge is awesome.&#xA;You end up on an island, you have a ship, go fishing - which is implemented via a simple mini-game, sell your catch, talk to townsfolk, discover the islands.&#xA;Along with the fishing minigame there is a space-management mini-game.&#xA;Some notable features that you discover very early (or on the steam page) are:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wall world</title>
       <link>https://vaclavblazej.github.io/post/2023/wallworld/</link>
-      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/wallworld/</guid>
       <description>&lt;img style=&#34;float: right; margin-left: 16px;&#34; src=&#34;wall.png&#34; width=&#34;30%&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/app/2187290/Wall_World/&#34;target=&#34;_blank&#34;&gt;Wall world&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; is a &lt;a href=&#34;https://howlongtobeat.com/game/126642&#34;target=&#34;_blank&#34;&gt;14-hour&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; rouge-lite digging game where you take on a role of a operator of a mech that can climb the Wall.&#xA;The world consists only of the Wall and creatures from no-one-knows-where constantly attack you.&#xA;You go and dig the Wall to find powerful upgrades while always escaping just before your mech gets destroyed by overwhelming waves of enemies.&lt;/p&gt;&#xA;&lt;p&gt;I enjoyed this game a lot.&#xA;It reminded me of times when I tried to find good games about digging and the only things I found were shitty flash games.&#xA;A problem of these games is that to dig further the dug-out tunnels need to be traversed to get to the same place.&#xA;This is a boring part of such games and is nicely tackled within Wall World by spreading mines apart and restricting depth of each site.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Patrick&#39;s Parabox</title>
       <link>https://vaclavblazej.github.io/post/2023/patricks_parabox/</link>
-      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/patricks_parabox/</guid>
       <description>&lt;p&gt;Recently I finished &lt;a href=&#34;https://store.steampowered.com/app/1260520/Patricks_Parabox/&#34;target=&#34;_blank&#34;&gt;Patrick&amp;rsquo;s Parabox&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; and can recommend it to anyone who likes puzzle games.&#xA;The whole game is in-theme and the production is very good.&#xA;Great deal of planning seems to have gone into the puzzles and their progression is well thought-out.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;patrick.png&#34; alt=&#34;patrick&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The game uses well-known and easy-to-understand Sokoban mechanics while always adding something new to them.&#xA;The main change is that each block that player usually pushes is itself a map and can under some circumstances be entered and exited.&#xA;Though the game is 2D it reminded me of Portal because it introduces and explores this map-mechanic in-depth and its interaction with many other cute mechanics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to write an Interactive story</title>
       <link>https://vaclavblazej.github.io/post/2022/storytelling/</link>
-      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2022/storytelling/</guid>
       <description>&lt;p&gt;This is an old version of the post about interactive stories, which I didn&amp;rsquo;t quite finish.&#xA;Please have a look at the &lt;a href=&#34;https://vaclavblazej.github.io/post/2024/interactive_stories&#34;&gt;newer version&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;div class=&#34;expandbox&#34;&gt;&#xA;&lt;div class=&#34;expand-container hidden&#34; id=&#34;0_programmer-box&#34;&gt;&#xA;&lt;button class=&#34;expand-title&#34; id=&#34;0_programmer-control&#34;&gt;➤ &lt;b&gt;I&amp;#39;m a programmer, not a writer :o&lt;/b&gt;&lt;/button&gt;&#xA;&lt;div class=&#34;expand-content&#34;&gt;&#xA;&lt;p&gt;If I were a pure writer, then I couldn&amp;rsquo;t explain the target concepts.&lt;/p&gt;&#xA;&lt;p&gt;If you are a programmer, then this post will be easier for you to read because it tries to convey basic programming concepts with comprehensible words and many examples.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Forged Alliance na Linuxu</title>
       <link>https://vaclavblazej.github.io/post/2016/faf/</link>
-      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2016/faf/</guid>
       <description>&lt;p&gt;Supreme Commander Forged Alliance je strategická PC hra.&#xA;Tento návod Vám pomůže hru spustit pod lobby FAF, pokud máte hru koupenou na platformě Steam.&lt;/p&gt;&#xA;&lt;h2 id=&#34;jak-na-spuštění-sc-fa&#34;&gt;Jak na spuštění SC-FA&lt;/h2&gt;&#xA;&lt;p&gt;Program playonlinux umožňuje běh windowsovských programů pod linuxem (s pomocí wine).&#xA;Výhodou je, že tento program spravuje verze wine a verze programů, je také možné vytvořit více různých virtuálních disků s různými konfiguracemi.&lt;/p&gt;&#xA;&lt;p&gt;Pro spuštění Forged Alliance je potřeba playonlinux nainstalovat, v něm vytvořit disk, na něj nainstalovat FAF, Steam a z něho i SC-FA.&#xA;FAF &amp;ndash; Forged Alliance Forever, je herní lobby, které nahradilo oficiální servery (THQ skončila), a kde lze v dneštní době najít komunitu FA.&lt;/p&gt;</description>
     </item>

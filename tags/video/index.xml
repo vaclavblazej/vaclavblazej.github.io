@@ -6,15 +6,13 @@
     <description>Recent content in Video on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A short peek at Manim</title>
       <link>https://vaclavblazej.github.io/post/2023/manim/</link>
-      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2023/manim/</guid>
       <description>&lt;p&gt;There are only a few public projects that I admire and Manim became a candidate to place among them.&#xA;Using Manim you can make programmical animations and pictures.&#xA;It is written in &lt;code&gt;python3&lt;/code&gt; and connects to &lt;code&gt;ffmpeg&lt;/code&gt; to render video.&#xA;Although its output is bitmap it holds vectors in its representation for as long as it can.&#xA;It started as a project of &lt;a href=&#34;https://www.youtube.com/c/3blue1brown&#34;target=&#34;_blank&#34;&gt;3b1b&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; who opened it to public via Community Edition.&lt;/p&gt;</description>
     </item>

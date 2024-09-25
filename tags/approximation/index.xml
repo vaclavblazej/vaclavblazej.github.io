@@ -6,15 +6,13 @@
     <description>Recent content in Approximation on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/approximation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Constant Factor Approximation for Tracking Paths and Fault Tolerant Feedback Vertex Set</title>
       <link>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2021/tracking_paths_approximation/</guid>
       <description>&lt;p&gt;Consider a vertex-weighted graph $G$ with a source $s$ and a target $t$.&#xA;&lt;em&gt;Tracking Paths&lt;/em&gt; requires finding a minimum weight set of vertices (&lt;em&gt;trackers&lt;/em&gt;) such that the sequence of trackers in each path from $s$ to $t$ is unique.&#xA;In this work, we derive a factor $6$-approximation algorithm for Tracking Paths in weighted graphs and a factor $4$-approximation algorithm if the input is unweighted.&#xA;This is the first constant factor approximation for this problem.&#xA;While doing so, we also study approximation of the closely related &lt;em&gt;$r$-Fault Tolerant Feedback Vertex Set&lt;/em&gt; problem.&#xA;There, for a fixed integer $r$ and a given vertex-weighted graph $G$, the task is to find a minimum weight set of vertices intersecting every cycle of $G$ in at least $r+1$ vertices.&#xA;We give a factor $\mathcal{O}(r)$ approximation algorithm for &lt;em&gt;$r$-Fault Tolerant Feedback Vertex Set&lt;/em&gt; if $r$ is a constant.&lt;/p&gt;</description>
     </item>

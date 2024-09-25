@@ -6,29 +6,27 @@
     <description>Recent content on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/material/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu system installation</title>
       <link>https://vaclavblazej.github.io/material/system/system/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/system/system/</guid>
       <description>&lt;h2 id=&#34;image-download&#34;&gt;Image download&lt;/h2&gt;&#xA;&lt;p&gt;Download the system on the &lt;a href=&#34;https://ubuntu.com/download/desktop&#34;target=&#34;_blank&#34;&gt;Ubuntu official page&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;usb-preparation&#34;&gt;USB preparation&lt;/h2&gt;&#xA;&lt;p&gt;First, insert the USB and find what is the device&amp;rsquo;s name.&#xA;Find whether the USB is sdb/sdc/etc.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo fdisk -l&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;One of these is your hard disc &amp;ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!&lt;/p&gt;&#xA;&lt;p&gt;Fdisk will show if the usb is bootable, we can check afte rinstalation.&lt;/p&gt;&#xA;&lt;p&gt;Se can either copy the image to the drive.&#xA;Add sudo when you are SURE the sdX is the USB&amp;rsquo;s descriptor.&#xA;Not sure why, but this doesn&amp;rsquo;t seem to set the bootable flag.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nástroj pro správu skriptů</title>
       <link>https://vaclavblazej.github.io/material/system/cmd/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/system/cmd/</guid>
       <description>&lt;p&gt;&lt;em&gt;Updated 2023-08-04&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Idea programu &lt;strong&gt;cmd&lt;/strong&gt; je umožnit správu a spouštění vlastních příkazů a scriptů.&lt;/p&gt;&#xA;&lt;p&gt;Program je v rozpracovaném stavu, ovšem měl by být použitelný.&lt;/p&gt;&#xA;&lt;h2 id=&#34;na-co-správu-příkazů&#34;&gt;Na co správu příkazů?&lt;/h2&gt;&#xA;&lt;p&gt;Po rozhovoru s kolegy jsem zjistil, že všichni zažíváme podobnou nepříjemnost: máme příkazy, které používáme často, ale nepamatujeme si je.&#xA;Kolikrát má příkaz divné jméno, nebo divně pojmenovaný přepínač, který je nezapamatovatelný.&#xA;Řešili jsme to různě:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;já měl půlku věcí v aliasech, a půlku ve funkcích&lt;/li&gt;&#xA;&lt;li&gt;kolega hledal často používané příkazy pomocí bash-historie,&lt;/li&gt;&#xA;&lt;li&gt;třetí na to samé měl texťák&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Pro vyřešení vznikl příkaz &lt;strong&gt;cmd&lt;/strong&gt; (shell-command-manager / shcmdmgr) napsaný v Python3 zamýšlený pro linux, který dovede příkazy uložit, vyhledat, a spustit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Youtrack setup</title>
       <link>https://vaclavblazej.github.io/material/system/youtrack/</link>
-      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/system/youtrack/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/youtrack/&#34;target=&#34;_blank&#34;&gt;Youtrack&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;&#xA;je aplikace od JetBrains pro správu softwarových projektů.&#xA;Je zdarma pro max 10 lidí, pokud si ji dotyční někde nasadí.&lt;/p&gt;&#xA;&lt;h3 id=&#34;stáhnutí-a-zapnutí&#34;&gt;Stáhnutí a zapnutí&lt;/h3&gt;&#xA;&lt;p&gt;Stáhnout lze ze stránek &lt;a href=&#34;https://www.jetbrains.com/youtrack/download/get_youtrack.html&#34;target=&#34;_blank&#34;&gt;programu&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;Nejjednodušší je stáhnout .jar, které potom lze jednoduše spustit:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;java -jar youtrack-7.0.27965.jar 8082&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Poslední argument je port.&#xA;Po spuštění lze najít stránky najít na adrese:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;localhost:8082&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Data se ukládají ve složce ~/teamsysdata/youtrack a jejich promazáním se vše resetuje jako před instalací.&#xA;Také jsou nějaké pomocné informace ve složce ~/.youtrack, ale se zdají být pouze cache apod.&lt;/p&gt;</description>
     </item>

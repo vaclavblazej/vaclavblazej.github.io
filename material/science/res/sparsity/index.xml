@@ -6,43 +6,41 @@
     <description>Recent content in Sparsity DocCourse Prague 2018 on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Tue, 27 Nov 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/material/science/res/sparsity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bounded expansion</title>
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/bounded_expansion/</link>
-      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/bounded_expansion/</guid>
       <description></description>
     </item>
     <item>
       <title>Polynomial expansion</title>
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/polynomial_expansion/</link>
-      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/polynomial_expansion/</guid>
       <description></description>
     </item>
     <item>
       <title>Shallow minors</title>
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/shallow_minors/</link>
-      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/shallow_minors/</guid>
       <description>&lt;p&gt;Let us have a minor H created taking a subgraph of G and contracting some connected components of G into one vertices.&#xA;If each contracted component has bounded diameter, then the minor is called &lt;strong&gt;shallow minor&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Polynomial expansion</title>
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/1/poly_expansion/</link>
-      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/1/poly_expansion/</guid>
       <description></description>
     </item>
     <item>
       <title>There is depth in shallowness</title>
       <link>https://vaclavblazej.github.io/material/science/res/sparsity/1/shallowness/</link>
-      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/sparsity/1/shallowness/</guid>
       <description>&lt;p&gt;By P. Ossona de Mendez&lt;/p&gt;&#xA;&lt;p&gt;[missing]&lt;/p&gt;&#xA;&lt;p&gt;We considered Topological minors and Shallow Minors.&#xA;(Stbility by $*K_p$)&#xA;Both have bounded expansion for bounded average degree, chromatic number, and are ND for bounded clique number.&lt;/p&gt;&#xA;&lt;p&gt;Topological minor &amp;ndash; paths representing edges are vertex disjoint.&#xA;Minor &amp;ndash; each vertex is represented by sugraph.&#xA;What if we relax his requirement and allow edges to be only edge disjoint &amp;ndash; we get an &lt;em&gt;immersion&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;[obr 1]&lt;/p&gt;</description>
     </item>

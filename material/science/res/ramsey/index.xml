@@ -6,22 +6,20 @@
     <description>Recent content in Online Ramsey number survey on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/material/science/res/ramsey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Results in ORN</title>
       <link>https://vaclavblazej.github.io/material/science/res/ramsey/online/results/</link>
-      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/ramsey/online/results/</guid>
       <description>&lt;p&gt;known&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;paths $P_n$&lt;/li&gt;&#xA;&lt;li&gt;$ORN \leq SRN$&lt;/li&gt;&#xA;&lt;li&gt;for an infinite number of cliques the $ORN(K_n) \leq SRN(K_n)$&lt;/li&gt;&#xA;&lt;li&gt;Haxell lowerbound on SRN of trees is $|T_1|\Delta(T_1)+|T_2|\Delta(T_2)$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;thesis&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;infinite family of trees for which ORN is asymptotically smaller than SRN&lt;/li&gt;&#xA;&lt;li&gt;cycles $C_n$ in $O(n)$&lt;/li&gt;&#xA;&lt;li&gt;spiders $S_{k,l}$ in $O(k^2 l)$&lt;/li&gt;&#xA;&lt;li&gt;exact value for $\tilde{r}(C_3,S_n)$ on connected graphs is $3n-1$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;generally&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;induced paths $P_n$ in $O(n)$&#xA;&lt;ul&gt;&#xA;&lt;li&gt;implies induced cycles, spiders (and more?)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;nsfocs&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;paths on 3 colors in $O(n^2)$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;kamak&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lower bound graphs for known Ramsey numbers</title>
       <link>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</link>
-      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</guid>
       <description>&lt;h2 id=&#34;graphs-which-do-not-contain-a-monochromatic-k_4&#34;&gt;Graphs, which do not contain a monochromatic K_4&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/8.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/9.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/10.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/11.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/12.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/13.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/14.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/15.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/16.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/17.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>

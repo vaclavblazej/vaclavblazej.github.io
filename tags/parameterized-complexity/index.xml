@@ -6,29 +6,27 @@
     <description>Recent content in Parameterized Complexity on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/parameterized-complexity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On the Parameterized Complexity of Eulerian Strong Component Arc Deletion</title>
       <link>https://vaclavblazej.github.io/pub/2024/eulertian_strong_components/</link>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2024/eulertian_strong_components/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;In this paper, we study the Eulerian Strong Component Arc Deletion problem, where the input is a directed multigraph and the goal is to delete the minimum number of arcs to ensure every strongly connected component of the resulting digraph is Eulerian.&lt;/p&gt;&#xA;&lt;p&gt;This problem is a natural extension of the Directed Feedback Arc Set problem and is also known to be motivated by certain scenarios arising in the study of housing markets.&#xA;The complexity of the problem, when parameterized by solution size (i.e., size of the deletion set), has remained unresolved and has been highlighted in several papers.&#xA;In this work, we answer this question by ruling out (subject to the usual complexity assumptions) a fixed-parameter tractable (FPT) algorithm for this parameter and conduct a broad analysis of the problem with respect to other natural parameterizations.&#xA;We prove both positive and negative results.&#xA;Among these, we demonstrate that the problem is also hard (W[1]-hard or even para-NP-hard) when parameterized by either treewidth or maximum degree alone.&#xA;Complementing our lower bounds, we establish that the problem is in XP when parameterized by treewidth and FPT when parameterized either by both treewidth and maximum degree or by both treewidth and solution size.&#xA;We show that these algorithms have near-optimal asymptotic dependence on the treewidth assuming the Exponential Time Hypothesis.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Constrained and Ordered Level Planarity Parameterized by the Number of Levels</title>
       <link>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</link>
-      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2024/xnlp_level_planarity/</guid>
       <description>&lt;p&gt;We are given a graph where each vertex is assigned a position with an arbitrary x-coordinate, but y-coordinate being 1 to $k$.&#xA;The question is whether it is possible to embed the edges in a planar way so that each edge is y-monotone &amp;ndash; meaning from the lower vertex the edge always increases in y-coordinate until it reaches the other vertex.&lt;/p&gt;&#xA;&lt;p&gt;Note the problem can also be posed as having the vertices assigned to horizontal lines and given their left-to-right order.&#xA;Our original investigation concerned the case where the order is not total (called constrained level planarity).&#xA;For that variant it was known that 2 levels are easy and 5 levels are NP-hard (by a reduction from 3-partition).&#xA;We improved the hardness to 4 levels and 3 levels were investigated deeper.&#xA;It turns out that 3 levels can be solved, but the algorithm is quite complex.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Parameterized Complexity of Network Microaggregation</title>
       <link>https://vaclavblazej.github.io/pub/2023/microaggregation/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2023/microaggregation/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Microaggregation is a classical statistical disclosure control technique which requires the input data to be partitioned into clusters while adhering to specified size constraints.&#xA;We provide novel exact algorithms and lower bounds for the task of microaggregating a given network while considering both unrestricted and connected clusterings, and analyze these from the perspective of the parameterized complexity paradigm.&#xA;Altogether, our results assemble a complete complexity-theoretic picture for the network microaggregation problem with respect to the most natural parameterizations of the problem, including input-specified parameters capturing the size and homogeneity of the clusters as well as the treewidth and vertex cover number of the network.&lt;/p&gt;</description>
     </item>

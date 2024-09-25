@@ -6,22 +6,20 @@
     <description>Recent content in Kernelization on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/kernelization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Polynomial Kernels for Traveling Salesperson Problem and its Generalizations</title>
       <link>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</link>
-      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2022/tsp-kernels/</guid>
       <description>&lt;p&gt;We investigated kernels for TSP and a related problem called &lt;em&gt;Waypoint routing&lt;/em&gt; (WRP) &amp;ndash; a variant of TSP where one needs to only visit a subset of vertices (subset TSP) and edges have capacities for the maximum number of their traversal within the solution.&#xA;Compared to the classical TSP where one may create edges that represent shortest paths, we leave the graph unchanged and analyze properties of the solution on the graph.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Polynomial Kernels for Tracking Shortest Paths</title>
       <link>https://vaclavblazej.github.io/pub/2022/tracking-paths/</link>
-      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/pub/2022/tracking-paths/</guid>
       <description>&lt;p&gt;&lt;em&gt;Tracking Shortest Paths&lt;/em&gt; is a task where we want to add $k$ trackers to a directed acyclic graph so that any shortest path which goes from source to the target activates a unique combination of trackers.&#xA;In other words, there are no two paths that would activate the same set of trackers.&#xA;One can study this problem also in variant where the paths are not necessarily shortest &amp;ndash; this is called &lt;em&gt;Tracking Paths&lt;/em&gt; problem.&lt;/p&gt;</description>
     </item>

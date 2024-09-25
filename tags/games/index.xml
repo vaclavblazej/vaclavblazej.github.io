@@ -6,22 +6,20 @@
     <description>Recent content in Games on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eleusis (card game)</title>
       <link>https://vaclavblazej.github.io/post/2019/eleusis/</link>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2019/eleusis/</guid>
       <description>&lt;p&gt;A card game by &lt;a href=&#34;https://www.logicmazes.com/games/eleusis/&#34;target=&#34;_blank&#34;&gt;Robert Abbott&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Each round one player is God (dealer) and other players are scientists.&#xA;God makes up a rule and scientists are trying to get rid of their cards by playing them accodring to the rule.&lt;/p&gt;&#xA;&lt;p&gt;The following picture shows one possible layout of cards at the end of one round.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;drawing.svg&#34; alt=&#34;A sample card layout for a round in Eleusis&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example scoring:&lt;/strong&gt; &lt;em&gt;(Read the rules and scoring first.)&lt;/em&gt; Assume there were 5 players with hands of size (13, Prophet&amp;rsquo;s 11, 2, 0, and God which doesn&amp;rsquo;t have a hand), the scoring would go like this: First players gets no points. Prophet (second player) begun after 21-st card. Prophet will get 19 points (11 correct + 2* 4 wrong cards) + 2 points because of his hand size (13-11). Third player gets 13-2=11 points. Fourth player gets 13-0=13 for hand and +4 because he has no cards. God will get minimum among 2* 21 and best player&amp;rsquo;s score (second player&amp;rsquo;s 21).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zmatené prší</title>
       <link>https://vaclavblazej.github.io/post/2016/prsi/</link>
-      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2016/prsi/</guid>
       <description>&lt;p&gt;Pravidla zmateného prší.&lt;/p&gt;&#xA;&lt;h2 id=&#34;karty&#34;&gt;Karty&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;sedm[7] &amp;ndash; další bere + dvě karty (srdcová +4), přeskakuje lízání&lt;/li&gt;&#xA;&lt;li&gt;osm[8] &amp;ndash; ruší poslední sedmu, ale pořád líže&lt;/li&gt;&#xA;&lt;li&gt;devět[9] &amp;ndash; přeskakuje lízání&lt;/li&gt;&#xA;&lt;li&gt;deset[10] &amp;ndash; obrací směr hry, přeskakuje lízání&lt;/li&gt;&#xA;&lt;li&gt;spodek[1] &amp;ndash; mění hodnotu&lt;/li&gt;&#xA;&lt;li&gt;svršek[20, srdcový 40] &amp;ndash; mění barvu&lt;/li&gt;&#xA;&lt;li&gt;král[2] &amp;ndash; viz turnaj&lt;/li&gt;&#xA;&lt;li&gt;eso[11] &amp;ndash; přeskočí dalšího hráče, lze přebít dalším esem&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Přeskakuje lízání = přesto, že by měl hráč lízat, tak může zahrát kartu co přeskakuje lízání, a tím pošle lízání na dalšího hráče. Případně líže, což lze zmírnit osmou.&lt;/p&gt;</description>
     </item>

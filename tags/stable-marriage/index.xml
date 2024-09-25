@@ -6,15 +6,13 @@
     <description>Recent content in Stable Marriage on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/stable-marriage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matchings</title>
       <link>https://vaclavblazej.github.io/material/science/res/matchings/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/material/science/res/matchings/</guid>
       <description>&lt;p&gt;This set of problems focuses on finding a mathing in a graph.&#xA;One very popular variant is stable marriage problem where the goal is to create a &lt;em&gt;matching&lt;/em&gt; on a bipartite graph, where each vertex has its preference list of neighbors, such that no pair of non-matched vertices want&#xA;to be with each other more than their current match &amp;ndash; that would be so called &lt;em&gt;blocking pair&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-research-as-of-february-2019&#34;&gt;Some research as of February 2019&lt;/h2&gt;&#xA;&lt;p&gt;On February of 2018 Chen, Hermelin, Sorge, and Yedidsion &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; studied the &lt;strong&gt;Egalitarian optimal stable matchings&lt;/strong&gt;, in which we want to minimize the sum of chosen indices over all the preference lists, and with &lt;strong&gt;Matchings with minimum number of blocking pairs&lt;/strong&gt;, where we want to minimize the number of blocking pairs.&#xA;For the egalitarian version they show that parametrized by the resulting sum it is fixed-parameter tractable.&#xA;On the other hand, for the second variant they show it is &lt;a href=&#34;https://en.wikipedia.org/wiki/Parameterized_complexity#W_hierarchy&#34;target=&#34;_blank&#34;&gt;W[1]-hard&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; when parametrized by number of blocking pairs.&lt;/p&gt;</description>
     </item>

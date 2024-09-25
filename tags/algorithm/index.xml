@@ -6,22 +6,20 @@
     <description>Recent content in Algorithm on Homepage of Vašek</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</managingEditor>
-    <webMaster>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</webMaster>
     <copyright>© Václav Blažej</copyright>
     <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fast Fourier Transform (FFT) c&#43;&#43; code explained</title>
       <link>https://vaclavblazej.github.io/post/2020/fft/</link>
-      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2020/fft/</guid>
       <description>&lt;p&gt;Discrete Fourier Transform (DFT) takes $x_0,\dots,x_{N-1}$ and produces $X_0,\dots,X_{N-1}$ by the following equality&lt;/p&gt;&#xA;&lt;p&gt;$$X_k = \sum^{N-1}_{n=0} x_n e^{-i2\pi kn/N}.$$&lt;/p&gt;&#xA;&lt;p&gt;Fast Fourier Transform (FFT) does this computation effectively in $O(N \log N)$ time.&#xA;Possibility of doing the computation in a more effective way raises from decomposition of the values into odd and even elements, and applying the computation recursively.&lt;/p&gt;&#xA;&lt;p&gt;Let $\omega_N=e^{-2i\pi /N}$, so we have&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;X_k&#xA;= \sum^{N-1}&lt;em&gt;{n=0} x_n \omega^{nk}&lt;em&gt;N&#xA;= \sum^{N/2-1}&lt;/em&gt;{n=0} x&lt;/em&gt;{2n} \omega^{2nk}_N&lt;/p&gt;</description>
     </item>
     <item>
       <title>Násobení polynomů</title>
       <link>https://vaclavblazej.github.io/post/2015/polymul/</link>
-      <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate><author>blazeva1 -a- fit.cvut.cz &lt;Václav Blažej&gt; (Václav Blažej)</author>
+      <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2015/polymul/</guid>
       <description>&lt;p&gt;Násobení dvou polynomů se dá naprogramovat třemi základními způsoby, které jsou progresivně obtížné na pochopení.&#xA;Zde najdete přehled známých řešení, jejich naměřenou rychlost a celkové srovnání.&lt;/p&gt;&#xA;&lt;h2 id=&#34;naivní-řešení&#34;&gt;Naivní řešení&lt;/h2&gt;&#xA;&lt;p&gt;Násobení můžeme implementovat přesně podle definice.&#xA;Je to nejspolehlivější způsob, který ale není zrovna efektivní.&#xA;Výsledná složitost je pro velikost N obou polynomů O(N^2).&#xA;Výsledný graf měření odpovídá očekávání - není co dodat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;polymul_naive.png&#34; alt=&#34;Naive&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;karatsuba&#34;&gt;Karatsuba&lt;/h2&gt;&#xA;&lt;p&gt;Algoritmus &lt;a href=&#34;https://vaclavblazej.github.io/post/karatsuba&#34;&gt;Karatsuba&lt;/a&gt; využívá toho, že pro výpočet (A&lt;em&gt;x + B)&lt;/em&gt;(C*x + D) nemusíme dělat čtyři násobení, ale pouze tři.&#xA;Toto pravidlo se uplatňuje rekurzivně, a tak ušetříme mnoho operací.&#xA;Stále jsme však uvězněni v polynomiální složitosti.&#xA;Výsledná složitost je O(N^(log2(3))), to je cca N^(1.585).&#xA;Skoky v grafu měření vysvětluje to, že implementace zaokrouhluje velikosti polynomů na nejbližší vyšší mocninu dvou - a tak pozorujeme skoky na 32768, 65536 atd.&lt;/p&gt;</description>
     </item>
