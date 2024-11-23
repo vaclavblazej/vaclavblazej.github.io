@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            LEAN theorem prover - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>LEAN theorem prover</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>We introduce LEAN 4 language (often typeset L∃∀N) with focus on Theoretical Computer Scientists.
+Basic knowledge of coding and proof techniques is assumed.</p>
+<h2 id="resources">Resources</h2>
+<p>When searching the internet for examples and solutions keep in mind that the many resoruces are written in older, incompatible, version of the language LEAN 3.
+Currently, LEAN 4 is the latest version and there is no reason to learn the old version.</p>
+<p><a href="https://leanprover-community.github.io/"target="_blank">LEAN Community<span style="white-space: nowrap;">&thinsp;↗</span></a> website is a good place to search for anything LEAN related.</p>
+<p>Sources are listed at the bottom of the page.</p>
+<h2 id="language-syntax">Language syntax</h2>
+<p>The language contains everything you would expect but additionally supports theorem proving.
+This is possible due to the dependant type theory the language is built upon.
+We touch on theorem proving later.</p>
+<p>Aside from the basic language syntax whenever one is expected to enter a term, then</p>
+<p>It is important to know that LEAN has two different modes &ndash; normal (term) and tactics.
+Unless we jump to tactics mode the entire source code is in normal mode.
+Many online examples show solutions in tactics but learning the underlying normal methods is important to understand what is happening.
+We explain tactics mode separately in a later section.</p>
+<h3 id="basic-syntax">Basic syntax</h3>
+<pre tabindex="0"><code class="language-lean" data-lang="lean">-- this is a comment
+namespace MyLeanTests
+
+-- function as: def &lt;name&gt; &lt;parameters&gt; : &lt;return type&gt; := &lt;body&gt;
+def sampleFunction1 (x : Nat) (y : Nat) := x*y + 3
+
+-- variable as: def &lt;name&gt; : &lt;type&gt; := &lt;value&gt;
+def res := sampleFunction1 4000000000 (20+30)
+
+-- newline &amp; repetitions of white-spaces don&#39;t matter (except for tactics)
+def sampleFunction2 (x : Nat) :=
+  if x &gt; 100 then
+    2*x*x - x + 3
+  else
+    x*x
+
+-- many types can be inferred from the context (x has no explicit type)
+-- separate statements on the same line by a semicolon ;
+def sampleFunction3 x := if x &gt; 100 then let z := 2*x*x; z - x + 3 else x*x
+
+-- show value
+#eval sampleFunction2 2000
+-- show type
+#check sampleFunction2
+
+-- function as a parameter
+def twice (f : Nat -&gt; Nat) (a : Nat) := f (f a)
+
+-- a trivial proof by reflexivity
+-- passing anonymous functions (lambdas)
+theorem twiceAdd2 (a : Nat) : twice (fun x =&gt; x + 2) a = a + 4 := rfl
+</code></pre><h3 id="enumerations">Enumerations</h3>
+<pre tabindex="0"><code>-- define enum
+inductive DayPhase where
+  | morning   : DayPhase
+  | afternoon : DayPhase
+  | evening   : DayPhase
+  | night     : DayPhase
+
+-- access an enum value
+#check DayPhase.morning
+
+-- expand namespace to allow accessing its elements directly
+open DayPhase
+#check morning
+
+-- match for pattern matching
+def preferences (d : DayPhase) : Nat :=
+  match d with
+  | afternoon =&gt; 3
+  | evening   =&gt; 6
+  | _         =&gt; 2
+
+def DayPhase.next (d : DayPhase) : DayPhase :=
+  match d with
+  | morning   =&gt; afternoon
+  | afternoon =&gt; evening
+  | evening   =&gt; night
+  | night     =&gt; morning
+
+def DayPhase.previous : DayPhase -&gt; DayPhase
+  | morning   =&gt; afternoon
+  | afternoon =&gt; evening
+  | evening   =&gt; night
+  | night     =&gt; morning
+
+def isMorning : DayPhase → Bool :=
+  fun -- idiom for lambda with a match
+    | morning =&gt; true
+    | _       =&gt; false
+
+-- ToString is a generic class which contains a toString function
+instance : ToString DayPhase where
+  toString (d : DayPhase) : String :=
+    match d with
+    | morning   =&gt; &#34;morning&#34;
+    | afternoon =&gt; &#34;afternoon&#34;
+    | evening   =&gt; &#34;evening&#34;
+    | night     =&gt; &#34;night&#34;
+
+theorem DayPhase.nextOfPrevious (d : DayPhase) : next (previous d) = d :=
+  sorry -- incomplete proof
+</code></pre><h3 id="special-symbols">Special symbols</h3>
+<p>The language adopts use of many special symbols.
+For example <code>-&gt;</code> can be written as <code>→</code>, and <code>fun</code> as <code>λ</code>.
+To enter these symbols we usually write something like <code>\to</code> in the editor and press Tab.
+The particular method depends on your editor, but know that any symbol can be inspected in the editor to show how it is written (in VS code just hover over it with mouse).</p>
+<p>We give a (non-exhaustive) table with such symbols and what they represent.
+All further examples use these symbols often.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Input</th>
+          <th>Alternative</th>
+          <th>Structure</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>λ</td>
+          <td><code>\lam</code>, <code>\fun</code></td>
+          <td><code>fun</code></td>
+          <td>?</td>
+      </tr>
+      <tr>
+          <td>→</td>
+          <td><code>\to</code></td>
+          <td><code>-&gt;</code></td>
+          <td>?</td>
+      </tr>
+      <tr>
+          <td>↔</td>
+          <td><code>\iff</code></td>
+          <td><code>&lt;-&gt;</code></td>
+          <td>Iff</td>
+      </tr>
+      <tr>
+          <td>∧</td>
+          <td><code>\and</code></td>
+          <td>?</td>
+          <td>And</td>
+      </tr>
+      <tr>
+          <td>∨</td>
+          <td><code>\or</code></td>
+          <td>?</td>
+          <td>Or</td>
+      </tr>
+      <tr>
+          <td>¬</td>
+          <td><code>\neg</code></td>
+          <td>?</td>
+          <td>λ x → False</td>
+      </tr>
+      <tr>
+          <td>·</td>
+          <td><code>\.</code></td>
+          <td>?</td>
+          <td>?</td>
+      </tr>
+      <tr>
+          <td>∘</td>
+          <td><code>\circ</code></td>
+          <td>?</td>
+          <td>?</td>
+      </tr>
+      <tr>
+          <td>⟨, ⟩</td>
+          <td><code>\&lt;</code>, <code>\&gt;</code></td>
+          <td>?</td>
+          <td>X.intro</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="proofs">Proofs</h3>
+<p>&hellip;</p>
+<h2 id="sources">Sources</h2>
+<p>This page paraphrases explanations and examples from various sources, you may find going through the original sources more preferable.
+The sources I used to create this page are:</p>
+<ul>
+<li>First, try the language to prove things so you can find out whether LEAN is something you want to learn and can work with. <a href="https://adam.math.hhu.de/#/g/leanprover-community/nng4"target="_blank">Nautral Numbers Game<span style="white-space: nowrap;">&thinsp;↗</span></a> is a guided tour for proving basics about natural numbers. It is online and needs no installation. More advanced proves still have nature similar to what is in the game.</li>
+<li>Now it is best to set-up LEAN on your machine, go through <a href="https://leanprover-community.github.io/get_started.html#regular-install"target="_blank">installation instructions<span style="white-space: nowrap;">&thinsp;↗</span></a>. Then set-up a text editor to work with LEAN &ndash; this seems easiest to do in VS code <a href="https://github.com/leanprover/vscode-lean4"target="_blank">using an extension<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+<li>Next step is to learn more about the language and how it works. The language itself is shown in <a href="https://lean-lang.org/lean4/doc/"target="_blank">Lean Manual<span style="white-space: nowrap;">&thinsp;↗</span></a> and the langauge for theorem proving in <a href="https://leanprover.github.io/theorem_proving_in_lean4/"target="_blank">Theorem Proving in Lean 4<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>I got some insight by attending <a href="https://adomani.github.io/Syllabus/MA4N1/toc"target="_blank">Warwick module on LEAN<span style="white-space: nowrap;">&thinsp;↗</span></a> lead by Damiano Testa. The course has quite a few resources in its <a href="https://github.com/adomani/MA4N1_Theorem_proving_with_Lean"target="_blank">GitHub repository<span style="white-space: nowrap;">&thinsp;↗</span></a>.</li>
+<li></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015-2024 
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">23. November 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

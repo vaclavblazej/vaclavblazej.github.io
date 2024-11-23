@@ -14,6 +14,9 @@ a:hover {
     text-decoration: underline;
 }
 
+pre {
+    background-color: white;
+}
 code {
     background-color: white;
 }
@@ -371,7 +374,7 @@ a {
 }
 .imagebutton {
     flex-grow: 1;
-    min-width: 308px;
+    min-width: 320px;
     height: 160px;
     background: #f6e0bc;
     overflow: hidden;
@@ -384,7 +387,7 @@ a {
 }
 .imagebuttonimg {
     position: absolute;
-    min-width: 308px;
+    min-width: 320px;
     width: 100%;
     height: 160px;
     background-size: cover;

@@ -44,5 +44,12 @@
       <guid>https://vaclavblazej.github.io/material/programming/make/processing/</guid>
       <description>&lt;p&gt;Přes program &lt;a href=&#34;https://processing.org/download/?processing&#34;target=&#34;_blank&#34;&gt;Processing&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; lze relativně jednoduše tvořit grafiku a animace.&#xA;Na téhle stránce jsou uvedeny příklady programů.&lt;/p&gt;&#xA;&lt;p&gt;Verze 2.2.1 umožňuje generovat .gif obrázky pomocí modulu GifAnimation.&lt;/p&gt;&#xA;&lt;p&gt;Postupně sem budu přidávat ukázky animací a příslušné kódy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bfs&#34;&gt;BFS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;./bfs.pde&#34;&gt;Processing BFS Code&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./bfs2.gif&#34; alt=&#34;BFS_1&#34;&gt;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>LEAN theorem prover</title>
+      <link>https://vaclavblazej.github.io/material/lean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/material/lean/</guid>
+      <description>&lt;p&gt;We introduce LEAN 4 language (often typeset L∃∀N) with focus on Theoretical Computer Scientists.&#xA;Basic knowledge of coding and proof techniques is assumed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;p&gt;When searching the internet for examples and solutions keep in mind that the many resoruces are written in older, incompatible, version of the language LEAN 3.&#xA;Currently, LEAN 4 is the latest version and there is no reason to learn the old version.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://leanprover-community.github.io/&#34;target=&#34;_blank&#34;&gt;LEAN Community&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; website is a good place to search for anything LEAN related.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
