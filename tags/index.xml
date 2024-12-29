@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Puzzle</title>
+      <link>https://vaclavblazej.github.io/tags/puzzle/</link>
+      <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/puzzle/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hops</title>
       <link>https://vaclavblazej.github.io/tags/hops/</link>
@@ -378,13 +385,6 @@
       <link>https://vaclavblazej.github.io/tags/teaching/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/tags/teaching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Puzzle</title>
-      <link>https://vaclavblazej.github.io/tags/puzzle/</link>
-      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/puzzle/</guid>
       <description></description>
     </item>
     <item>

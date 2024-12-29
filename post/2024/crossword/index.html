@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Vánoční křížovka 2024 - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-12-29T00:00:00Z" class="post-list timeago">29.12.2024</time>
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/puzzle">puzzle</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Vánoční křížovka 2024</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Během těchto vánoc jsem dal dohromady křížovku.
+Pěkné svátky, zde je (včetně zdroje), pro všechny k volnému užití.</p>
+<object data="main.pdf" type="application/pdf" width="100%" height="1380px">
+    <embed src="main.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="main.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+<p>K tomu přikládám zdrojový kód v LaTeX; křížovka je sázena pomocí TikZ.
+Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokoli bez nutnosti citace, avšak bez jakékoli záruky.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\documentclass</span><span style="color:#008080">[a4paper]</span><span style="color:#0086b3">{</span>article<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#008080">[utf8]</span><span style="color:#0086b3">{</span>inputenc<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>lmodern<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#008080">[T1]</span><span style="color:#0086b3">{</span>fontenc<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>moresize<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>anyfontsize<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>setspace<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#008080">[margin=2.3cm]</span><span style="color:#0086b3">{</span>geometry<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>xcolor<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\pagenumbering</span><span style="color:#0086b3">{</span>gobble<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>tikz<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand\mainfontsize</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\linespread</span><span style="color:#0086b3">{</span>1.0<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\ttfamily\fontsize</span><span style="color:#0086b3">{</span>10pt<span style="color:#0086b3">}{</span>10pt<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\selectfont</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand\smallfontsize</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\linespread</span><span style="color:#0086b3">{</span>1.0<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\ttfamily\fontsize</span><span style="color:#0086b3">{</span>6pt<span style="color:#0086b3">}{</span>6pt<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\selectfont</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\renewcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\baselinestretch</span><span style="color:#0086b3">}{</span>1.0<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \noindent
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% \mainfontsize
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% position
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\mythickbox</span><span style="color:#0086b3">}</span>[2]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill=white,line width=1.3pt,align=center,minimum width=10mm,minimum height=10mm]</span> at (#1,-#2) <span style="color:#0086b3">{}</span>;<span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\mytext</span><span style="color:#0086b3">}</span>[3]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[align=center,text width=10mm]</span> at (#1,-#2) <span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\smallfontsize</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        #3<span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\\</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#0086b3">}</span>;
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">}</span>[3]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">\mythickbox</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\mytext</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}{</span>#3<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">}</span>[4]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">\def\val</span><span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\smallfontsize</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        #3<span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\vspace</span><span style="color:#0086b3">{</span>1pt<span style="color:#0086b3">}</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\hrule</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">\vspace</span><span style="color:#0086b3">{</span>1pt<span style="color:#0086b3">}</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        #4<span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\mythickbox</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\mytext</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\val</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>figure<span style="color:#0086b3">}</span>[h]
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\centering</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">% \newcommand{\puzzlewidth}{15}
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">% \newcommand{\puzzleheight}{15}
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>scope<span style="color:#0086b3">}</span>[xshift=-.5cm,yshift=+.5cm]
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[fill=gray!30,]</span> (0.0,-8.0) rectangle (16.0,-9.0);
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[fill=gray!30,]</span> (0.0,-2.0) rectangle (7.0,-3.0);
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[fill=gray!30,]</span> (11.0,-8.0) rectangle (12.0,-14.0);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>scope<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\foreach</span><span style="color:#008080">[count=\r]</span> <span style="color:#000;font-weight:bold">\row</span> in <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>s,v,o,j,i,t, , ,s,l,e,v,a, , <span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>v,e,s,e,l,e, , ,t,e,l,e,c,i,m<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>a,l,e,l,u,j,a, ,o,m,e,l,e,t,a<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>r,e,k, ,z,d,r,o,j, ,g,a,r,a,z<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>a, , ,b,e,e,r, ,e,l,a, , ,l,a<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>k,o,s,a, ,n,a, ,d,e,n,a,r, ,n<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span> ,a,u,t,a, , ,t,e,c, ,b,o,z,e<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>a,s,t,a,s,t,n,y,n,o,v,y,r,o,k<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>n,i,e, ,i,n,d, ,a,s,a,s,i,n, <span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>o,s,r,a,m, ,r,o,c, ,n,e,s, , <span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span> , ,e,b,e,n, ,s,t,r,o,m,e,k, <span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>e,i,n,s,t,e,i,n, ,o,c, ,k,e,l<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>a,n, , ,r,o,d,o,k,m,e,n, ,j,o<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>s,r,s,t,i,n, ,v,s,e, ,o,c,t,y<span style="color:#0086b3">}</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">{</span>t,i,k, ,e,y,u,a,i,o, ,v,p,a,d<span style="color:#0086b3">}</span><span style="color:#998;font-style:italic">%
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#0086b3">}</span> <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\foreach</span><span style="color:#008080">[count=\c]</span> <span style="color:#000;font-weight:bold">\value</span> in <span style="color:#000;font-weight:bold">\row</span> <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#998;font-style:italic">% \mytext{\c}{\r}{\mainfontsize\value}
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>BEER, EAST, ID,<span style="color:#000;font-weight:bold">\,</span>ROC<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>1<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>OHŘÁTÝ KOŘENĚNÝ NÁPOJ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>2<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>-HORY -TOK -BIT<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>3<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>VÝSLEDEK SEKÁNÍ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>4<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>CESTOVAL<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>5<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>PŘELUD<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>6<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>SEDM DNÍ nesp.<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>9<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>111<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>10<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>OKRAJ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>11<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>ŠVIHÁK<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>12<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>MNOHO NÁŘEČ.<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>13<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span>ZNAČKA ELEKTRO-<span style="color:#000;font-weight:bold">\\</span>NIKY<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>14<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>15<span style="color:#0086b3">}{</span>0<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>14<span style="color:#0086b3">}{</span>1<span style="color:#0086b3">}{</span>EVROPAN<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>15<span style="color:#0086b3">}{</span>1<span style="color:#0086b3">}{</span>ZAHRNO-<span style="color:#000;font-weight:bold">\\</span>VÁN MOC PÉČÍ A LÁSKOU<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>1<span style="color:#0086b3">}{</span>ZVLÁD-<span style="color:#000;font-weight:bold">\\</span>NOUT BEZ O<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>1<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>1<span style="color:#0086b3">}{</span>SEN DŮCHODCE<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>2<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\mainfontsize</span> I<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>2<span style="color:#0086b3">}{</span>PAPOUŠEK SE ZDVOJE-<span style="color:#000;font-weight:bold">\\</span>NÝM R<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>2<span style="color:#0086b3">}{</span>MASEM<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>3<span style="color:#0086b3">}{</span>CHVALO-<span style="color:#000;font-weight:bold">\\</span>ZPĚV<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>3<span style="color:#0086b3">}{</span>VAJEČNÝ POKRM<span style="color:#0086b3">}{</span>ZAČ.<span style="color:#000;font-weight:bold">\,</span>6. PÁD.<span style="color:#000;font-weight:bold">\,</span>OTÁZ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>4<span style="color:#0086b3">}{</span>EVROPAN<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>4<span style="color:#0086b3">}{</span>4<span style="color:#0086b3">}{</span>PRAMEN<span style="color:#0086b3">}{</span>VÝROBCE OBUVI<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>10<span style="color:#0086b3">}{</span>4<span style="color:#0086b3">}{</span>PARKOVÁNÍ<span style="color:#0086b3">}{</span>NEURČITÁ SKUTEČ-<span style="color:#000;font-weight:bold">\\</span>NOST<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>SPOJKA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>2<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>BRITSKÁ HUDEBNÍ SKUPINA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>3<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>PIVO ang.<span style="color:#0086b3">}{</span>PODZEMÍ BUDOVY<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>ELIŠKA DOMÁCKY<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>12<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>ABYCH nesp.<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>13<span style="color:#0086b3">}{</span>5<span style="color:#0086b3">}{</span>POPĚVEK<span style="color:#0086b3">}{</span>RYCHLÝ PTÁČEK<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>6<span style="color:#0086b3">}{</span>ZIMA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>5<span style="color:#0086b3">}{</span>6<span style="color:#0086b3">}{</span>TUMÁŠ<span style="color:#0086b3">}{</span>NESOU-<span style="color:#000;font-weight:bold">\\</span>MĚRNOST<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>6<span style="color:#0086b3">}{</span>DÁVNÉ PLATIDLO<span style="color:#0086b3">}{</span>ZÁJMENO<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>14<span style="color:#0086b3">}{</span>6<span style="color:#0086b3">}{</span>PO EM<span style="color:#0086b3">}{</span>ZNAČKA LIMONÁD<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>7<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>1<span style="color:#0086b3">}{</span>7<span style="color:#0086b3">}{</span>VOZY<span style="color:#0086b3">}{</span>ANDRE-<span style="color:#000;font-weight:bold">\\</span>JOVA STRANA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>6<span style="color:#0086b3">}{</span>7<span style="color:#0086b3">}{</span>ZÁJMENO<span style="color:#0086b3">}{</span>KANÁL NA ČÍSLE 3<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>7<span style="color:#0086b3">}{</span>DOTYK MÍČE<span style="color:#0086b3">}{</span>SOUSEDI &#39;49<span style="color:#000;font-weight:bold">\,</span>AŽ<span style="color:#000;font-weight:bold">\,</span>90<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>11<span style="color:#0086b3">}{</span>7<span style="color:#0086b3">}{</span>CITOSL. PODIVU<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\mainfontsize</span> II<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>8<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\mainfontsize</span> III<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>9<span style="color:#0086b3">}{</span>NESOU-<span style="color:#000;font-weight:bold">\\</span>HLAS sloven.<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>4<span style="color:#0086b3">}{</span>9<span style="color:#0086b3">}{</span>ASIAT<span style="color:#0086b3">}{</span>BRZDICÍ SYSTÉM<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>8<span style="color:#0086b3">}{</span>9<span style="color:#0086b3">}{</span>VRAH<span style="color:#0086b3">}{</span>ŠKOLNÍ PLÁN UČIVA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>15<span style="color:#0086b3">}{</span>9<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>10<span style="color:#0086b3">}{</span>ZNAČKA ŽÁROVEK<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>6<span style="color:#0086b3">}{</span>10<span style="color:#0086b3">}{</span>franc. SKÁLA<span style="color:#0086b3">}{</span>NOČNÍ SVĚTLA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>10<span style="color:#0086b3">}{</span>10<span style="color:#0086b3">}{</span>ROZKAZ K PRÁCI<span style="color:#0086b3">}{</span>PŘÍTEL JULIE<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>14<span style="color:#0086b3">}{</span>10<span style="color:#0086b3">}{</span>KUS ZADNÍHO MASA nesp.<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>15<span style="color:#0086b3">}{</span>10<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>11<span style="color:#0086b3">}{</span><span style="color:#d14">$</span><span style="color:#008080">\times</span><span style="color:#d14">$</span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>1<span style="color:#0086b3">}{</span>11<span style="color:#0086b3">}{</span>ang. VÝCHOD<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>2<span style="color:#0086b3">}{</span>11<span style="color:#0086b3">}{</span>TVRDÉ DŘEVO<span style="color:#0086b3">}{</span>JEŽÍŠ<span style="color:#000;font-weight:bold">\,</span>NAZ KRÁL<span style="color:#000;font-weight:bold">\,</span>ŽIDŮ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>11<span style="color:#0086b3">}{</span>OZDOBA OBÝVÁKU<span style="color:#0086b3">}{</span>IDENTI-<span style="color:#000;font-weight:bold">\\</span>FIKACE<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>15<span style="color:#0086b3">}{</span>11<span style="color:#0086b3">}{</span>ZNAČKA ČAJŮ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>12<span style="color:#0086b3">}{</span>GÉNIUS<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>9<span style="color:#0086b3">}{</span>12<span style="color:#0086b3">}{</span>O CO?<span style="color:#0086b3">}{</span>ŘECKÉ PÍSMENO<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>12<span style="color:#0086b3">}{</span>12<span style="color:#0086b3">}{</span>ZUB<span style="color:#0086b3">}{</span>TEMNÁ FÁZE MĚSÍCE<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>13<span style="color:#0086b3">}{</span>ANGLICKÝ NEURČITÝ ČLEN<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>3<span style="color:#0086b3">}{</span>13<span style="color:#0086b3">}{</span>ZKRATKA SOUSED-<span style="color:#000;font-weight:bold">\\</span>NÍHO STÁTU<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>4<span style="color:#0086b3">}{</span>13<span style="color:#0086b3">}{</span>SEZNAM PŘEDKŮ<span style="color:#0086b3">}{</span>PŘED Ú<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>13<span style="color:#0086b3">}{</span>13<span style="color:#0086b3">}{</span>SOUHLAS<span style="color:#0086b3">}{</span>ČÍSLO POPISNÉ<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>14<span style="color:#0086b3">}{</span>HMYZO-<span style="color:#000;font-weight:bold">\\</span>ŽRAVEC<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextboxy</span><span style="color:#0086b3">{</span>7<span style="color:#0086b3">}{</span>14<span style="color:#0086b3">}{</span>OPAK NIČEHO<span style="color:#0086b3">}{</span>VEDLE<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>11<span style="color:#0086b3">}{</span>14<span style="color:#0086b3">}{</span>MOC STARÁ VÍNA<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>0<span style="color:#0086b3">}{</span>15<span style="color:#0086b3">}{</span>PŘED ŤAKEM<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>4<span style="color:#0086b3">}{</span>15<span style="color:#0086b3">}{</span>SAMO-<span style="color:#000;font-weight:bold">\\</span>HLÁSKY<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\mytextbox</span><span style="color:#0086b3">{</span>11<span style="color:#0086b3">}{</span>15<span style="color:#0086b3">}{</span>NÁHLÝ ÚTOK<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>scope<span style="color:#0086b3">}</span>[xshift=-.5cm,yshift=+.5cm]
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[draw,line width=0.5pt]</span> (-0.0,-0.0) grid (16.0,-16.0);
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[draw,line width=2pt]</span> (-0.0,-0.0) rectangle (16.0,-16.0);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>scope<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>figure<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
