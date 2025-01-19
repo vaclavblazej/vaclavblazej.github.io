@@ -153,12 +153,12 @@
         <div class="post-content">
             <p>The <code>valgrind</code> program has many additional tools, one of which is called <code>massif</code> (<a href="https://www.valgrind.org/docs/manual/ms-manual.html"target="_blank">manual here<span style="white-space: nowrap;">&thinsp;↗</span></a>).
 We can call it using syntax similar to normal valgrind call.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>valgrind --tool<span style="color:#000;font-weight:bold">=</span>massif ./a.out &lt;input.txt
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>valgrind --tool<span style="color:#0550ae">=</span>massif ./a.out &lt;input.txt
 </span></span></code></pre></div><p>The command produces a file called <code>massif.out.&lt;number&gt;</code> where the number is bigger for later measurements.
 This file can be visualized with <code>massif-visualizer</code> from <a href="https://github.com/KDE/massif-visualizer"target="_blank">https://github.com/KDE/massif-visualizer<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>massif-visualizer massif.out.&lt;number&gt;
 </span></span></code></pre></div><p><img src="./img/1.png" alt="massif default measurement"></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>valgrind --tool<span style="color:#000;font-weight:bold">=</span>massif --detailed-freq<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span> ./a.out &lt;input.txt
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>valgrind --tool<span style="color:#0550ae">=</span>massif --detailed-freq<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span> ./a.out &lt;input.txt
 </span></span></code></pre></div><p><img src="./img/2.png" alt="massif more frequent detail measurement"></p>
 <h2 id="seeing-leaks">Seeing leaks</h2>
 <p>A leaking program will accumulate the used memory which will show in the graph as an ever-increasing mass of used memroy.
@@ -187,7 +187,7 @@ In this case an instance created by the <code>copy()</code> method was not prope
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

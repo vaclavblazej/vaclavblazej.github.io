@@ -161,14 +161,14 @@ Ukazatel je jako bankovní účet &ndash; znáte číslo účtu a na peníze nel
 <p>Ukazatel (anglicky Pointer) je proměnná, která místo hodnoty ukládá <em>adresu jiné proměnné</em>.</p>
 <h3 id="adresa-proměnné">Adresa proměnné</h3>
 <p><em>Zdrojový kód (v C++):</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Adresa promenne &#39;a&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Adresa promenne &#39;a&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; = 0
@@ -179,22 +179,22 @@ Adresu proměnné <code>a</code> zjistíme příkazem <code>&amp;a</code>, v na�
 Vypsaná adresa proměnné bude pro každý běh programu nejspíše jiná, protože program dostane pokaždé novou část paměti, se kterou může pracovat.</p>
 <h3 id="nastavení-pointeru">Nastavení pointeru</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Adresa promenne &#39;a&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Adresa promenne &#39;a&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*</span> p;
-</span></span><span style="display:flex;"><span>    p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>a;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Adresa promenne &#39;p&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>p <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;p&#39; = &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> p <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*</span> p<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    p <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Adresa promenne &#39;p&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>p <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;p&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> p <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; = 4
@@ -209,21 +209,21 @@ Z příkladu vidíme, že hodnota proměnné <code>p</code> je <em>adresa</em> p
 To je jediný a nejdůležitější rozdíl mezi běžnou proměnnou a ukazatelem.</p>
 <h3 id="nastavení-hodnoty-proměnné-přes-ukazatel">Nastavení hodnoty proměnné přes ukazatel</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*</span> p;
-</span></span><span style="display:flex;"><span>    p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>a;
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">*</span>p <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">42</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*</span> p<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    p <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">*</span>p <span style="color:#0550ae">=</span> <span style="color:#0550ae">42</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 42
@@ -236,29 +236,29 @@ Použití <code>*p</code> má stejný výsledek jako kdybychom napsali <code>a</
 <p>Pochopení principu <em>adresy</em> a <em>dereference</em> je zásadní v pochopení ukazatelů!</p>
 <h3 id="jak-může-funkce-přepsat-hodnotu-předávaného-argumentu">Jak může funkce přepsat hodnotu předávaného argumentu?</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">funkce1</span>(<span style="color:#458;font-weight:bold">int</span> b){
-</span></span><span style="display:flex;"><span>    b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">42</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">funkce1</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> b<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#0550ae">=</span> <span style="color:#0550ae">42</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">funkce2</span>(<span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*</span>p){
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">*</span>p <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">42</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">funkce2</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> <span style="color:#0550ae">*</span>p<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">*</span>p <span style="color:#0550ae">=</span> <span style="color:#0550ae">42</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    funkce1(a);
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    funkce1<span style="color:#1f2328">(</span>a<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    funkce2(<span style="color:#000;font-weight:bold">&amp;</span>a);
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    funkce2<span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>a<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
@@ -275,38 +275,38 @@ Takto to například funguje pro neprimitovní hodnoty v pythonu či javě.
 Předání reference je pouze syntaktický fígl, který se nakonec stejně překládá na předání ukazatele.</p>
 <h3 id="ukazatele-na-ukazatele">Ukazatele na ukazatele</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*</span>b <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>a;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">**</span>c <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>b;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">***</span>d <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>c;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">****</span>e <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>d;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*****</span>f <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>e;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">******</span>g <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>f;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*******</span>h <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>g;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">********</span>i <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>h;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*********</span>j <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>i;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">**********</span>k <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>j;
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*</span>b <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">**</span>c <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">***</span>d <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>c<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">****</span>e <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>d<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*****</span>f <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>e<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">******</span>g <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>f<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*******</span>h <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>g<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">********</span>i <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>h<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*********</span>j <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>i<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">**********</span>k <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>j<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34; &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">**********</span>k <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">**********</span>k <span style="color:#0550ae">=</span> <span style="color:#0550ae">20</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34; &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">*********</span>k <span style="color:#000;font-weight:bold">=</span> (<span style="color:#458;font-weight:bold">int</span><span style="color:#000;font-weight:bold">*</span>)<span style="color:#099">20</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">//**********k = 20; // segfault!
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#000;font-weight:bold">&amp;</span>a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34; &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">*********</span>k <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">int</span><span style="color:#0550ae">*</span><span style="color:#1f2328">)</span><span style="color:#0550ae">20</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//**********k = 20; // segfault!
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0550ae">&amp;</span>a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>4
 </span></span><span style="display:flex;"><span>0x23cab4 0x23cab4
@@ -325,36 +325,36 @@ Proměnná <code>b</code> ukazuje do paměti na adresu <code>0x14</code> (to je 
 Tento úsek paměti nepatří našemu programu a pokud do něj budeme chtít zapsat, tak program spadne (segfault).</p>
 <h3 id="ukazatel-jsou-taky-jen-0ly-a-1ky">Ukazatel jsou taky jen 0ly a 1ky</h3>
 <p><em>Zdrojový kód:</em> (při kompilaci dostanete warning)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;iostream&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">using</span> <span style="color:#000;font-weight:bold">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">54</span>;
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;, &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> a <span style="color:#0550ae">=</span> <span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> b <span style="color:#0550ae">=</span> <span style="color:#0550ae">54</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;, &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> c;
-</span></span><span style="display:flex;"><span>    c <span style="color:#000;font-weight:bold">=</span> b;
-</span></span><span style="display:flex;"><span>    b <span style="color:#000;font-weight:bold">=</span> a;
-</span></span><span style="display:flex;"><span>    a <span style="color:#000;font-weight:bold">=</span> c;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> c<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    c <span style="color:#0550ae">=</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#0550ae">=</span> a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    a <span style="color:#0550ae">=</span> c<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;, &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;, &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> <span style="color:#000;font-weight:bold">*</span> p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">&amp;</span>c;
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">*</span>p <span style="color:#000;font-weight:bold">=</span> b;
-</span></span><span style="display:flex;"><span>    b <span style="color:#000;font-weight:bold">=</span> a;
-</span></span><span style="display:flex;"><span>    a <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">*</span>p;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> <span style="color:#0550ae">*</span> p <span style="color:#0550ae">=</span> <span style="color:#0550ae">&amp;</span>c<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">*</span>p <span style="color:#0550ae">=</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#0550ae">=</span> a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    a <span style="color:#0550ae">=</span> <span style="color:#0550ae">*</span>p<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;, &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;, &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    p <span style="color:#000;font-weight:bold">=</span> (<span style="color:#458;font-weight:bold">int</span><span style="color:#000;font-weight:bold">*</span>)b;
-</span></span><span style="display:flex;"><span>    b <span style="color:#000;font-weight:bold">=</span> a;
-</span></span><span style="display:flex;"><span>    a <span style="color:#000;font-weight:bold">=</span> (<span style="color:#458;font-weight:bold">long</span>)p;
+</span></span><span style="display:flex;"><span>    p <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">int</span><span style="color:#0550ae">*</span><span style="color:#1f2328">)</span>b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#0550ae">=</span> a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    a <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">long</span><span style="color:#1f2328">)</span>p<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cout <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#000;font-weight:bold">&lt;&lt;</span> a <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#d14">&#34;, &#34;</span> <span style="color:#000;font-weight:bold">&lt;&lt;</span> b <span style="color:#000;font-weight:bold">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a, b&#39; -&gt; &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;, &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> b <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 4, 54
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 54, 4
@@ -388,7 +388,7 @@ Velikost datového typu ukazatele <code>int*</code> závisí na architektuře (3
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

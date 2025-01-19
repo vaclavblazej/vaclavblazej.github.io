@@ -182,7 +182,7 @@ Ovšem <code>cmd deploy</code> funguje pouze, když jsem přeplý do podadresá�
 </span></span><span style="display:flex;"><span>Codename:	focal
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ cmd --save
-</span></span><span style="display:flex;"><span>The <span style="color:#0086b3">command</span> to be saved: lsb_release -a   % tento text byl předvyplněný
+</span></span><span style="display:flex;"><span>The <span style="color:#6639ba">command</span> to be saved: lsb_release -a   % tento text byl předvyplněný
 </span></span><span style="display:flex;"><span>Alias: sysversion
 </span></span><span style="display:flex;"><span>Short description: Zobrazí verzi systému
 </span></span></code></pre></div><p>Po uložení lze příkaz vyvolat aliasem</p>
@@ -193,16 +193,16 @@ Ovšem <code>cmd deploy</code> funguje pouze, když jsem přeplý do podadresá�
 </span></span><span style="display:flex;"><span>Codename:	focal
 </span></span></code></pre></div><p>nebo ho vyhledat pomocí <code>cmd -f</code> (nebo <code>cmd --find</code>).</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cmd --find
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">========================================</span>
-</span></span><span style="display:flex;"><span>query $ system                            % zobrazí se seznam výsledků hledání <span style="color:#000;font-weight:bold">(</span>podle regulárního výrazu<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>--- <span style="color:#099">1</span> ------------------------------
-</span></span><span style="display:flex;"><span>cmd: <span style="color:#000;font-weight:bold">do</span>-release-upgrade
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">========================================</span>
+</span></span><span style="display:flex;"><span>query $ system                            % zobrazí se seznam výsledků hledání <span style="color:#0550ae">(</span>podle regulárního výrazu<span style="color:#0550ae">)</span>
+</span></span><span style="display:flex;"><span>--- <span style="color:#0550ae">1</span> ------------------------------
+</span></span><span style="display:flex;"><span>cmd: <span style="color:#cf222e">do</span>-release-upgrade
 </span></span><span style="display:flex;"><span>des: Upgrades the system to the newest released version
-</span></span><span style="display:flex;"><span>--- <span style="color:#099">2</span> ------------------------------
+</span></span><span style="display:flex;"><span>--- <span style="color:#0550ae">2</span> ------------------------------
 </span></span><span style="display:flex;"><span>cmd: lsb_release -a
-</span></span><span style="display:flex;"><span>des: Shows the system <span style="color:#008080">version</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">========================================</span>
-</span></span><span style="display:flex;"><span>query $ <span style="color:#099">2</span>                                 % příkaz se spustí zadáním jeho čísla
+</span></span><span style="display:flex;"><span>des: Shows the system <span style="color:#953800">version</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">========================================</span>
+</span></span><span style="display:flex;"><span>query $ <span style="color:#0550ae">2</span>                                 % příkaz se spustí zadáním jeho čísla
 </span></span><span style="display:flex;"><span>run command: lsb_release -a
 </span></span><span style="display:flex;"><span>Distributor ID:	Ubuntu
 </span></span><span style="display:flex;"><span>Description:	Ubuntu 20.04 LTS
@@ -210,21 +210,21 @@ Ovšem <code>cmd deploy</code> funguje pouze, když jsem přeplý do podadresá�
 </span></span><span style="display:flex;"><span>Codename:	focal
 </span></span></code></pre></div><p>Pro úpravu záznamů o příkazech lze spustit <code>cmd -e</code> (nebo <code>cmd --edit</code>), což spustí <code>$EDITOR ./&lt;script_location&gt;/commands.json</code>, nebo tento soubor můžete otevřít a upravit ručně.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cmd --edit
-</span></span><span style="display:flex;"><span>% Program v proměnné <span style="color:#d14">&#34;</span><span style="color:#008080">$EDITOR</span><span style="color:#d14">&#34;</span> otevře soubor, který vypadá podobně jako následující ukázka.
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;command&#34;</span>: <span style="color:#d14">&#34;lsb_release -a&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;description&#34;</span>: <span style="color:#d14">&#34;Zobrazí verzi systému&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;alias&#34;</span>: <span style="color:#d14">&#34;sysversion&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;creation_time&#34;</span>: <span style="color:#d14">&#34;2020-04-11 00:24:27&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;command&#34;</span>: <span style="color:#d14">&#34;do-release-upgrade&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;description&#34;</span>: <span style="color:#d14">&#34;Upgraduje systém na nejnovější vydanou verzi&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;alias&#34;</span>: <span style="color:#d14">&#34;sysupgrade&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;creation_time&#34;</span>: <span style="color:#d14">&#34;2020-04-11 00:25:08&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>% Program v proměnné <span style="color:#0a3069">&#34;</span><span style="color:#953800">$EDITOR</span><span style="color:#0a3069">&#34;</span> otevře soubor, který vypadá podobně jako následující ukázka.
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;command&#34;</span>: <span style="color:#0a3069">&#34;lsb_release -a&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;description&#34;</span>: <span style="color:#0a3069">&#34;Zobrazí verzi systému&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;alias&#34;</span>: <span style="color:#0a3069">&#34;sysversion&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;creation_time&#34;</span>: <span style="color:#0a3069">&#34;2020-04-11 00:24:27&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;command&#34;</span>: <span style="color:#0a3069">&#34;do-release-upgrade&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;description&#34;</span>: <span style="color:#0a3069">&#34;Upgraduje systém na nejnovější vydanou verzi&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;alias&#34;</span>: <span style="color:#0a3069">&#34;sysupgrade&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;creation_time&#34;</span>: <span style="color:#0a3069">&#34;2020-04-11 00:25:08&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">]</span>
 </span></span></code></pre></div><h3 id="doplňování">Doplňování</h3>
 <p>Doplňování je připraveno pro <code>bash</code> a <code>zsh</code> shelly, a musí se zapnout ručně.
 Zapnutí sestává z přidání řádky do RC souboru.</p>
@@ -260,7 +260,7 @@ Další dění sem napíšu časem &hellip;</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

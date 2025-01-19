@@ -160,31 +160,31 @@ It would be quite easy with something dynamic, but these pages are static, and s
 <p>The structure of the new website should be identical so there is a simple way of doing it.
 Generate a single redirect page <code>index.html</code> for each of the previously active pages.</p>
 <p>The code for a moved page was given to me by <a href="https://twitter.com/jakubjirutka"target="_blank">JJ<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080">html</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#000080">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">title</span>&gt;Page Moved&lt;/<span style="color:#000080">title</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">meta</span> <span style="color:#008080">http-equiv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;refresh&#34;</span> <span style="color:#008080">content</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;0; URL=https://my.new.homepage.com/address&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#000080">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#000080">body</span>&gt;
-</span></span><span style="display:flex;"><span>    This page has moved. Click &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://my.new.homepage.com/address&#34;</span>&gt;here&lt;/<span style="color:#000080">a</span>&gt; to go to the new page.
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#000080">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">html</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#57606a">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">html</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">head</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">title</span><span style="color:#1f2328">&gt;</span>Page Moved<span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">title</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">meta</span> <span style="color:#1f2328">http-equiv</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;refresh&#34;</span> <span style="color:#1f2328">content</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;0; URL=https://my.new.homepage.com/address&#34;</span> <span style="color:#1f2328">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">head</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">body</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>    This page has moved. Click <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">a</span> <span style="color:#1f2328">href</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;https://my.new.homepage.com/address&#34;</span><span style="color:#1f2328">&gt;</span>here<span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">a</span><span style="color:#1f2328">&gt;</span> to go to the new page.
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">body</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">html</span><span style="color:#1f2328">&gt;</span>
 </span></span></code></pre></div><p>For each old page we need to substitute <code>address</code> with the old address.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#!/usr/bin/env bash
-</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#000;font-weight:bold">for</span> line in <span style="color:#000;font-weight:bold">$(</span>cat ./pages.txt<span style="color:#000;font-weight:bold">)</span>; <span style="color:#000;font-weight:bold">do</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#008080">par</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">$(</span>dirname <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">&#34;</span>
-</span></span><span style="display:flex;"><span>    mkdir -p <span style="color:#d14">&#34;</span><span style="color:#008080">$par</span><span style="color:#d14">&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$par</span><span style="color:#d14">&#34;</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#008080">pp</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">${</span><span style="color:#008080">par</span>:<span style="color:#008080">2</span>:<span style="color:#008080">1000</span><span style="color:#d14">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;</span><span style="color:#008080">$pp</span><span style="color:#d14">&#34;</span><span style="color:#d14">&#39;/&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">for</span> line in <span style="color:#cf222e">$(</span>cat ./pages.txt<span style="color:#cf222e">)</span><span style="color:#1f2328">;</span> <span style="color:#cf222e">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#953800">par</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#953800">$line</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>    mkdir -p <span style="color:#0a3069">&#34;</span><span style="color:#953800">$par</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">echo</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$par</span><span style="color:#0a3069">&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$line</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#953800">pp</span><span style="color:#0550ae">=</span><span style="color:#0a3069">${</span><span style="color:#953800">par</span><span style="color:#1f2328">:</span><span style="color:#953800">2</span><span style="color:#1f2328">:</span><span style="color:#953800">1000</span><span style="color:#0a3069">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">echo</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$pp</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">&#39;/&#39;</span>
 </span></span><span style="display:flex;"><span>    cp orig.html copy.html
-</span></span><span style="display:flex;"><span>    sed -i <span style="color:#d14">&#39;s|address|&#39;</span><span style="color:#d14">&#34;</span><span style="color:#008080">$pp</span><span style="color:#d14">&#34;</span><span style="color:#d14">&#39;|g&#39;</span> copy.html
-</span></span><span style="display:flex;"><span>    cp copy.html <span style="color:#d14">&#34;</span><span style="color:#008080">$line</span><span style="color:#d14">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span>    sed -i <span style="color:#0a3069">&#39;s|address|&#39;</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$pp</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">&#39;|g&#39;</span> copy.html
+</span></span><span style="display:flex;"><span>    cp copy.html <span style="color:#0a3069">&#34;</span><span style="color:#953800">$line</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">done</span>
 </span></span></code></pre></div><p>Where the <code>pages.txt</code> contains list of all pages on your page &ndash; one per line.
 You may get it e.g. like this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -iname <span style="color:#d14">&#34;*.html&#34;</span> &gt;pages.txt
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -iname <span style="color:#0a3069">&#34;*.html&#34;</span> &gt;pages.txt
 </span></span></code></pre></div><p>Now the old pages redirect (and contain link) to their new counterpart.</p>
 
         </div>
@@ -206,7 +206,7 @@ You may get it e.g. like this:</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

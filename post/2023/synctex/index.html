@@ -163,17 +163,17 @@
 Since then I <a href="https://vaclavblazej.github.io/post/2023/neovim/">jumped into NeoVim</a> which broke this setup, so here is the new one.</p>
 <p>In NeoVim <code>~/.config/nvim/init.lua</code> apart from the <a href="https://github.com/folke/lazy.nvim"target="_blank">typical lazy setup<span style="white-space: nowrap;">&thinsp;↗</span></a> we include <code>lervag/vimtex</code> as a plugin while disabling lazy loading.
 It is mentioned in the <a href="https://github.com/lervag/vimtex"target="_blank">VimTex README<span style="white-space: nowrap;">&thinsp;↗</span></a> lazy loading messes the <code>VimtexInverseSearch</code> command; I tried, it really does.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>require(<span style="color:#d14">&#39;lazy&#39;</span>).setup({
-</span></span><span style="display:flex;"><span>    {                               <span style="color:#998;font-style:italic">-- LaTeX support</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#39;lervag/vimtex&#39;</span>,
-</span></span><span style="display:flex;"><span>        lazy <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>,
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>})
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>require<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;lazy&#39;</span><span style="color:#1f2328">).</span>setup<span style="color:#1f2328">({</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>                               <span style="color:#57606a">-- LaTeX support</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#39;lervag/vimtex&#39;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        lazy <span style="color:#0550ae">=</span> <span style="color:#cf222e">false</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">})</span>
 </span></span></code></pre></div><p>Next, setup <code>vimtex</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>vim.g.vimtex_view_general_viewer <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;okular&#39;</span>
-</span></span><span style="display:flex;"><span>vim.g.vimtex_view_general_options <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;--unique file:@pdf</span><span style="color:#d14">\\</span><span style="color:#d14">#src:@line@tex&#39;</span>
-</span></span><span style="display:flex;"><span>vim.g.tex_flavor <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;latex&#39;</span>
-</span></span><span style="display:flex;"><span>vim.g.vimtex_compiler_progname <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;nvr&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>vim.g<span style="color:#1f2328">.</span>vimtex_view_general_viewer <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#39;okular&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g<span style="color:#1f2328">.</span>vimtex_view_general_options <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#39;--unique file:@pdf</span><span style="color:#0a3069">\\</span><span style="color:#0a3069">#src:@line@tex&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g<span style="color:#1f2328">.</span>tex_flavor <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#39;latex&#39;</span>
+</span></span><span style="display:flex;"><span>vim.g<span style="color:#1f2328">.</span>vimtex_compiler_progname <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#39;nvr&#39;</span>
 </span></span></code></pre></div><p>Now, opening a <code>.tex</code> file and <code>&lt;leader&gt;ll</code> should compile it and open PDF in Okular.</p>
 <p>To support Inverse search (clicking PDF to move editor) we install <code>neovim-remote</code> (requires <code>python3</code> and <code>pip3</code>) which adds a new command <code>nvr</code>.</p>
 <ul>
@@ -203,7 +203,7 @@ VimTex does not compile the document if source did not change so you may have to
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

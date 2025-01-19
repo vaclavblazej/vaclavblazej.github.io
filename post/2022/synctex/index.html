@@ -159,12 +159,12 @@ It is such a pain that I want to give this short tutorial on how I managed to ma
 <p>This setup works for me on linux.
 Install <code>vim</code>, <code>okular</code>, and <code>synctex</code>.
 Load <em>vimtex</em> plugin (see <a href="https://vimawesome.com/plugin/vimtex"target="_blank">VimAwesome<span style="white-space: nowrap;">&thinsp;↗</span></a> for details; note that the line with <code>Plug</code> changes depending on the vim plugin loader).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>Plug <span style="color:#d14">&#39;https://github.com/lervag/vimtex&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#1f2328">Plug</span> <span style="color:#0a3069">&#39;https://github.com/lervag/vimtex&#39;</span>
 </span></span></code></pre></div><h2 id="forward-search">Forward search</h2>
 <p>Put the following into vim configuration (<code>~/.vimrc</code>).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:vimtex_view_general_viewer = <span style="color:#d14">&#39;okular&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:vimtex_view_general_options = <span style="color:#d14">&#39;--unique file:@pdf\#src:@line@tex&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> g:tex_flavor = <span style="color:#d14">&#39;latex&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#cf222e">let</span> <span style="color:#1f2328">g</span>:<span style="color:#1f2328">vimtex_view_general_viewer</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;okular&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">let</span> <span style="color:#1f2328">g</span>:<span style="color:#1f2328">vimtex_view_general_options</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;--unique file:@pdf\#src:@line@tex&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">let</span> <span style="color:#1f2328">g</span>:<span style="color:#1f2328">tex_flavor</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;latex&#39;</span>
 </span></span></code></pre></div><p>Reload configuration vim with <code>:source ~/.vimrc</code> (or restart vim).
 Open latex document and try <code>&lt;leader&gt;ll</code> (by default <code>\ll</code>) which should compile and show the latex file.
 Forward search should already work on <code>&lt;leader&gt;lv</code> (default <code>\lv</code>).</p>
@@ -192,7 +192,7 @@ It may be necessary to setup an alias for vim: <code>alias vim='vim --servername
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

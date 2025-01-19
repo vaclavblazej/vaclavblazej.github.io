@@ -161,9 +161,9 @@ It is written in a way so that when read sequentially you should get a reasonabl
 <div class="expand-content">
 <p>To be able to do bulk edition a basic <code>bash</code> knowledge is expected.
 A command similar to the following one is expected to be used with the commands.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i in folder/*.png; <span style="color:#000;font-weight:bold">do</span>
-</span></span><span style="display:flex;"><span>    convert <span style="color:#008080">$i</span> <span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">$(</span>dirname <span style="color:#d14">&#34;</span><span style="color:#008080">$i</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">/</span><span style="color:#000;font-weight:bold">$(</span>basename <span style="color:#d14">&#34;</span><span style="color:#008080">$i</span><span style="color:#d14">&#34;</span> .png<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">.bmp&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">done</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">for</span> i in folder/*.png<span style="color:#1f2328">;</span> <span style="color:#cf222e">do</span>
+</span></span><span style="display:flex;"><span>    convert <span style="color:#953800">$i</span> <span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#953800">$i</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">/</span><span style="color:#cf222e">$(</span>basename <span style="color:#0a3069">&#34;</span><span style="color:#953800">$i</span><span style="color:#0a3069">&#34;</span> .png<span style="color:#cf222e">)</span><span style="color:#0a3069">.bmp&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">done</span>
 </span></span></code></pre></div></div>
 </div>
 </div>
@@ -197,7 +197,7 @@ convert knight.webp knight.jpg
 <p>Exact stretching
 Match one dimension and scale the picture
 Scale by the given percentage</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -resize 120x80<span style="color:#d14">\!</span> knight_wide.png
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -resize 120x80<span style="color:#0a3069">\!</span> knight_wide.png
 </span></span><span style="display:flex;"><span>convert knight.png -resize x80 knight_small.png
 </span></span><span style="display:flex;"><span>convert knight.png -resize 40% knight_smaller.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
@@ -207,15 +207,15 @@ Scale by the given percentage</p>
 <h2 id="cropping">Cropping</h2>
 <p>The coordinates for cropping are given as <code>&lt;width&gt;x&lt;height&gt;+&lt;x offset&gt;+&lt;y offset&gt;</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -crop 120x60+0+20 knight_cropped.png
-</span></span><span style="display:flex;"><span>convert knight.jpg -fill none -stroke white -draw <span style="color:#d14">&#34;rectangle 0,20 120,80&#34;</span> knight_crop_outline.png 
+</span></span><span style="display:flex;"><span>convert knight.jpg -fill none -stroke white -draw <span style="color:#0a3069">&#34;rectangle 0,20 120,80&#34;</span> knight_crop_outline.png 
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_cropped.png" alt="cropped">
 <img src="img/knight_crop_outline.png" alt="crop location"></p>
 <h2 id="mirroring-flipping-and-rotating">Mirroring (Flipping) and rotating</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -flip knight_flip.png
 </span></span><span style="display:flex;"><span>convert knight.png -flop knight_flop.png
-</span></span><span style="display:flex;"><span>convert knight.png -rotate <span style="color:#099">90</span> knight_rotate_90.png
-</span></span><span style="display:flex;"><span>convert knight.png -background none -rotate <span style="color:#099">25</span> knight_rotate_25.png
+</span></span><span style="display:flex;"><span>convert knight.png -rotate <span style="color:#0550ae">90</span> knight_rotate_90.png
+</span></span><span style="display:flex;"><span>convert knight.png -background none -rotate <span style="color:#0550ae">25</span> knight_rotate_25.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_flip.png" alt="flip">
 <img src="img/knight_flop.png" alt="flop">
@@ -301,7 +301,7 @@ Hence, the following command generates three pictures named <code>knight_channel
 <h2 id="alpha">Alpha</h2>
 <h3 id="create-transparent-background-in-a-picture-with-monotone-colored-background">Create transparent background in a picture with monotone colored background</h3>
 <p><a href="http://www.imagemagick.org/script/command-line-options.php#transparent"target="_blank">transparent<span style="white-space: nowrap;">&thinsp;↗</span></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 7% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha.png
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 7% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_background_alpha.png" alt="background into alpha"></p>
 <div class="expandbox">
@@ -320,12 +320,12 @@ Sometimes (such as for this picture), it is not good enough.</p>
 <img src="img/knight_background_alpha_5.png" alt="background into alpha with fuzz 5">
 <img src="img/knight_background_alpha_8.png" alt="background into alpha with fuzz 8"></p>
 <p>If we want to keep the removed area continuous, that mark the position (<code>0,0</code> here) where the background is located.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 0% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_0.png
-</span></span><span style="display:flex;"><span>convert knight.png -fuzz 2% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_2.png
-</span></span><span style="display:flex;"><span>convert knight.png -fuzz 3% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_3.png
-</span></span><span style="display:flex;"><span>convert knight.png -fuzz 4% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_4.png
-</span></span><span style="display:flex;"><span>convert knight.png -fuzz 8% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_8.png
-</span></span><span style="display:flex;"><span>convert knight.png -fuzz 20% -fill none -draw <span style="color:#d14">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_20.png
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 0% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_0.png
+</span></span><span style="display:flex;"><span>convert knight.png -fuzz 2% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_2.png
+</span></span><span style="display:flex;"><span>convert knight.png -fuzz 3% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_3.png
+</span></span><span style="display:flex;"><span>convert knight.png -fuzz 4% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_4.png
+</span></span><span style="display:flex;"><span>convert knight.png -fuzz 8% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_8.png
+</span></span><span style="display:flex;"><span>convert knight.png -fuzz 20% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_20.png
 </span></span></code></pre></div><p><img src="img/knight_background_alpha_fill_0.png" alt="background into alpha fill with fuzz 0">
 <img src="img/knight_background_alpha_fill_2.png" alt="background into alpha fill with fuzz 2">
 <img src="img/knight_background_alpha_fill_3.png" alt="background into alpha fill with fuzz 3">
@@ -362,7 +362,7 @@ Sometimes (such as for this picture), it is not good enough.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

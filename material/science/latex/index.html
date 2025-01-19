@@ -160,7 +160,7 @@ I try to do things so that the process of writing is easier and mistakes are har
 <h2 id="tools">Tools</h2>
 <h3 id="compilation">Compilation</h3>
 <p>The latex source which contains bibliography can be compiled with the following command.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pdflatex main.tex <span style="color:#000;font-weight:bold">&amp;&amp;</span> pdflatex main.tex <span style="color:#000;font-weight:bold">&amp;&amp;</span> bibtex main.aux <span style="color:#000;font-weight:bold">&amp;&amp;</span> pdflatex main.tex
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pdflatex main.tex <span style="color:#0550ae">&amp;&amp;</span> pdflatex main.tex <span style="color:#0550ae">&amp;&amp;</span> bibtex main.aux <span style="color:#0550ae">&amp;&amp;</span> pdflatex main.tex
 </span></span></code></pre></div><h3 id="editor">Editor</h3>
 <ul>
 <li><a href="https://www.xm1math.net/texmaker/"target="_blank">Texmaker<span style="white-space: nowrap;">&thinsp;↗</span></a> is a usable multiplatform latex editor.</li>
@@ -377,21 +377,21 @@ These are mistakes that I was informed about and do want to pay attention to.
 <h2 id="custom-labels">Custom labels</h2>
 <p>Taken from the <a href="https://tex.stackexchange.com/questions/18191/defining-custom-labels"target="_blank">stack exchange answer of Henrik Bøgelund Lavstsen<span style="white-space: nowrap;">&thinsp;↗</span></a>, the answer depends on if you use the <code>hyperref</code> package.
 If you use <code>hyperref</code> package, then use:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\makeatletter</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\customlabel</span><span style="color:#0086b3">}</span>[2]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>   <span style="color:#000;font-weight:bold">\protected</span>@write <span style="color:#000;font-weight:bold">\@</span>auxout <span style="color:#0086b3">{}{</span><span style="color:#000;font-weight:bold">\string</span> <span style="color:#000;font-weight:bold">\newlabel</span> <span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{{</span>#2<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\thepage</span><span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}{</span>#1<span style="color:#0086b3">}{}}</span> <span style="color:#0086b3">}</span><span style="color:#998;font-style:italic">%
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>   <span style="color:#000;font-weight:bold">\hypertarget</span><span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{</span>#2<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\makeatother</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\makeatletter</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\customlabel</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>   <span style="color:#cf222e">\protected</span>@write <span style="color:#cf222e">\@</span>auxout <span style="color:#6639ba">{}{</span><span style="color:#cf222e">\string</span> <span style="color:#cf222e">\newlabel</span> <span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{{</span>#2<span style="color:#6639ba">}{</span><span style="color:#cf222e">\thepage</span><span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}{</span>#1<span style="color:#6639ba">}{}}</span> <span style="color:#6639ba">}</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>   <span style="color:#cf222e">\hypertarget</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\makeatother</span>
 </span></span></code></pre></div><div class="expandbox">
 <div class="expand-container hidden" id="custom_labels-box">
 <button class="expand-title" id="custom_labels-control">➤ <b>Not using hyperref?</b></button>
 <div class="expand-content">
 <p>If you do not use <code>hyperref</code> package:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\makeatletter</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\customlabel</span><span style="color:#0086b3">}</span>[2]<span style="color:#0086b3">{</span><span style="color:#998;font-style:italic">%
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\protected</span>@write <span style="color:#000;font-weight:bold">\@</span>auxout <span style="color:#0086b3">{}{</span><span style="color:#000;font-weight:bold">\string</span> <span style="color:#000;font-weight:bold">\newlabel</span> <span style="color:#0086b3">{</span>#1<span style="color:#0086b3">}{{</span>#2<span style="color:#0086b3">}{}}}}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\makeatother</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\makeatletter</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\customlabel</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\protected</span>@write <span style="color:#cf222e">\@</span>auxout <span style="color:#6639ba">{}{</span><span style="color:#cf222e">\string</span> <span style="color:#cf222e">\newlabel</span> <span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{{</span>#2<span style="color:#6639ba">}{}}}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\makeatother</span>
 </span></span></code></pre></div></div>
 </div>
 </div>
@@ -419,7 +419,7 @@ If you use <code>hyperref</code> package, then use:</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

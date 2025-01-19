@@ -158,39 +158,39 @@ R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_
 Such mathematics are written in <a href="https://www.overleaf.com/learn/latex/Mathematical_expressions"target="_blank">LaTeX format<span style="white-space: nowrap;">&thinsp;↗</span></a>.
 If you already have old Mathjax 2 setup, you can use <a href="https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html"target="_blank">Conversion tool<span style="white-space: nowrap;">&thinsp;↗</span></a> to migrate.</p>
 <p>To setup the math from zero we enable inline math to be entered using dollar symbols <code>$E = mc^2$</code> or display math by using escaped square brackets:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#d14">\[</span><span style="color:#0086b3">
-</span></span></span><span style="display:flex;"><span><span style="color:#0086b3">    R_{</span><span style="color:#008080">\mu</span><span style="color:#0086b3"> </span><span style="color:#008080">\nu</span><span style="color:#0086b3">} </span><span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3"> </span><span style="color:#008080">\frac</span><span style="color:#0086b3"> </span><span style="color:#099">12</span><span style="color:#0086b3"> g_{</span><span style="color:#008080">\mu</span><span style="color:#0086b3"> </span><span style="color:#008080">\nu</span><span style="color:#0086b3">} R </span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3"> g_{</span><span style="color:#008080">\mu</span><span style="color:#0086b3"> </span><span style="color:#008080">\nu</span><span style="color:#0086b3">} </span><span style="color:#008080">\Delta</span><span style="color:#0086b3"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3"> </span><span style="color:#008080">\frac</span><span style="color:#0086b3">{</span><span style="color:#099">8</span><span style="color:#008080">\pi</span><span style="color:#0086b3"> G}{c^</span><span style="color:#099">4</span><span style="color:#0086b3">}T_{</span><span style="color:#008080">\mu</span><span style="color:#0086b3"> </span><span style="color:#008080">\nu</span><span style="color:#0086b3">}
-</span></span></span><span style="display:flex;"><span><span style="color:#0086b3"></span><span style="color:#d14">\]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#0a3069">\[</span><span style="color:#6639ba">
+</span></span></span><span style="display:flex;"><span><span style="color:#6639ba">    R_{</span><span style="color:#953800">\mu</span><span style="color:#6639ba"> </span><span style="color:#953800">\nu</span><span style="color:#6639ba">} </span><span style="color:#0550ae">-</span><span style="color:#6639ba"> </span><span style="color:#953800">\frac</span><span style="color:#6639ba"> </span><span style="color:#0550ae">12</span><span style="color:#6639ba"> g_{</span><span style="color:#953800">\mu</span><span style="color:#6639ba"> </span><span style="color:#953800">\nu</span><span style="color:#6639ba">} R </span><span style="color:#0550ae">+</span><span style="color:#6639ba"> g_{</span><span style="color:#953800">\mu</span><span style="color:#6639ba"> </span><span style="color:#953800">\nu</span><span style="color:#6639ba">} </span><span style="color:#953800">\Delta</span><span style="color:#6639ba"> </span><span style="color:#0550ae">=</span><span style="color:#6639ba"> </span><span style="color:#953800">\frac</span><span style="color:#6639ba">{</span><span style="color:#0550ae">8</span><span style="color:#953800">\pi</span><span style="color:#6639ba"> G}{c^</span><span style="color:#0550ae">4</span><span style="color:#6639ba">}T_{</span><span style="color:#953800">\mu</span><span style="color:#6639ba"> </span><span style="color:#953800">\nu</span><span style="color:#6639ba">}
+</span></span></span><span style="display:flex;"><span><span style="color:#6639ba"></span><span style="color:#0a3069">\]</span>
 </span></span></code></pre></div><p>The code to enable such math on your website is added to the head tag.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">head</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">head</span><span style="color:#1f2328">&gt;</span>
 </span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">script</span>&gt;
-</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">window</span>.MathJax <span style="color:#000;font-weight:bold">=</span> {
-</span></span><span style="display:flex;"><span>            tex<span style="color:#000;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>                inlineMath<span style="color:#000;font-weight:bold">:</span> [ [<span style="color:#d14">&#39;$&#39;</span>,<span style="color:#d14">&#39;$&#39;</span>] ],
-</span></span><span style="display:flex;"><span>                displayMath<span style="color:#000;font-weight:bold">:</span> [ [<span style="color:#d14">&#34;\\[&#34;</span>,<span style="color:#d14">&#34;\\]&#34;</span>] ],
-</span></span><span style="display:flex;"><span>                processEscapes<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">true</span>,
-</span></span><span style="display:flex;"><span>                autoload<span style="color:#000;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>                    color<span style="color:#000;font-weight:bold">:</span> [],
-</span></span><span style="display:flex;"><span>                    colorv2<span style="color:#000;font-weight:bold">:</span> [<span style="color:#d14">&#39;color&#39;</span>]
-</span></span><span style="display:flex;"><span>                },
-</span></span><span style="display:flex;"><span>                packages<span style="color:#000;font-weight:bold">:</span> {<span style="color:#d14">&#39;[+]&#39;</span><span style="color:#000;font-weight:bold">:</span> [<span style="color:#d14">&#39;noerrors&#39;</span>]}
-</span></span><span style="display:flex;"><span>            },
-</span></span><span style="display:flex;"><span>            options<span style="color:#000;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>                ignoreHtmlClass<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;tex2jax_ignore&#39;</span>,
-</span></span><span style="display:flex;"><span>                processHtmlClass<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;tex2jax_process&#39;</span>,
-</span></span><span style="display:flex;"><span>                renderActions<span style="color:#000;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>                    addMenu<span style="color:#000;font-weight:bold">:</span> [<span style="color:#099">0</span>, <span style="color:#d14">&#39;&#39;</span>, <span style="color:#d14">&#39;&#39;</span>]
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>            },
-</span></span><span style="display:flex;"><span>            loader<span style="color:#000;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>                load<span style="color:#000;font-weight:bold">:</span> [<span style="color:#d14">&#39;[tex]/noerrors&#39;</span>]
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        };
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#000080">script</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;MathJax-script&#34;</span>&gt;&lt;/<span style="color:#000080">script</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">head</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">script</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">window</span><span style="color:#1f2328">.</span><span style="color:#1f2328">MathJax</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">tex</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">inlineMath</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;$&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;$&#39;</span><span style="color:#1f2328">]</span> <span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">displayMath</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#34;\\[&#34;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#34;\\]&#34;</span><span style="color:#1f2328">]</span> <span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">processEscapes</span><span style="color:#0550ae">:</span> <span style="color:#cf222e">true</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">autoload</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">color</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">colorv2</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;color&#39;</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">packages</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;[+]&#39;</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;noerrors&#39;</span><span style="color:#1f2328">]}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">options</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">ignoreHtmlClass</span><span style="color:#0550ae">:</span> <span style="color:#0a3069">&#39;tex2jax_ignore&#39;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">processHtmlClass</span><span style="color:#0550ae">:</span> <span style="color:#0a3069">&#39;tex2jax_process&#39;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">renderActions</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">addMenu</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;&#39;</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">loader</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">load</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;[tex]/noerrors&#39;</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">script</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">&lt;</span><span style="color:#0550ae">script</span> <span style="color:#1f2328">src</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;</span> <span style="color:#1f2328">id</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;MathJax-script&#34;</span><span style="color:#1f2328">&gt;&lt;/</span><span style="color:#0550ae">script</span><span style="color:#1f2328">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">&lt;/</span><span style="color:#0550ae">head</span><span style="color:#1f2328">&gt;</span>
 </span></span></code></pre></div>
         </div>
     </div>
@@ -211,7 +211,7 @@ If you already have old Mathjax 2 setup, you can use <a href="https://mathjax.gi
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

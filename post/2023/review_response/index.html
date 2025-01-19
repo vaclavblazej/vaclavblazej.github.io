@@ -155,20 +155,20 @@
 The <code>rev</code> command guards that response is given and prints a red note otherwise.</p>
 <p><img src="main.png" alt="main.png"></p>
 <p><a href="main.tex">main.tex</a>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\documentclass</span><span style="color:#008080">[a4paper,USenglish]</span><span style="color:#0086b3">{</span>article<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>xcolor<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\rev</span><span style="color:#0086b3">}</span>[2]<span style="color:#0086b3">{</span> <span style="color:#000;font-weight:bold">\item</span> #1 <span style="color:#000;font-weight:bold">\if\relax\detokenize</span><span style="color:#0086b3">{</span>#2<span style="color:#0086b3">}</span><span style="color:#000;font-weight:bold">\relax</span> <span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\color</span><span style="color:#0086b3">{</span>red<span style="color:#0086b3">}</span>UNANSWERED<span style="color:#0086b3">}</span> <span style="color:#000;font-weight:bold">\else</span> <span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\color</span><span style="color:#0086b3">{</span>blue<span style="color:#0086b3">}</span>#2<span style="color:#0086b3">}</span> <span style="color:#000;font-weight:bold">\fi</span> <span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\section*</span><span style="color:#0086b3">{</span>Response<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>We thank the reviewers for their reviews <span style="color:#000;font-weight:bold">\dots</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\documentclass</span><span style="color:#1f2328">[a4paper,USenglish]</span><span style="color:#6639ba">{</span>article<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>xcolor<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\rev</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span> <span style="color:#cf222e">\item</span> #1 <span style="color:#cf222e">\if\relax\detokenize</span><span style="color:#6639ba">{</span>#2<span style="color:#6639ba">}</span><span style="color:#cf222e">\relax</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>red<span style="color:#6639ba">}</span>UNANSWERED<span style="color:#6639ba">}</span> <span style="color:#cf222e">\else</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>blue<span style="color:#6639ba">}</span>#2<span style="color:#6639ba">}</span> <span style="color:#cf222e">\fi</span> <span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\section*</span><span style="color:#6639ba">{</span>Response<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>We thank the reviewers for their reviews <span style="color:#cf222e">\dots</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\subsection*</span><span style="color:#0086b3">{</span>Reviewer 1<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>enumerate<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\rev</span><span style="color:#0086b3">{</span>Line 128: <span style="color:#000;font-weight:bold">\dots</span><span style="color:#0086b3">}{}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\rev</span><span style="color:#0086b3">{</span>Line 256: <span style="color:#000;font-weight:bold">\dots</span><span style="color:#0086b3">}{</span>we changed this<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>enumerate<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\subsection*</span><span style="color:#6639ba">{</span>Reviewer 1<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>enumerate<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\rev</span><span style="color:#6639ba">{</span>Line 128: <span style="color:#cf222e">\dots</span><span style="color:#6639ba">}{}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\rev</span><span style="color:#6639ba">{</span>Line 256: <span style="color:#cf222e">\dots</span><span style="color:#6639ba">}{</span>we changed this<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>enumerate<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
 </span></span></code></pre></div>
         </div>
     </div>
@@ -189,7 +189,7 @@ The <code>rev</code> command guards that response is given and prints a red note
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

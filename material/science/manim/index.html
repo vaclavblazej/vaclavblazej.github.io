@@ -178,7 +178,7 @@ We explore various shapes and how to connect them.</p>
 Then <a href="https://3b1b.github.io/manim/getting_started/quickstart.html"target="_blank">setup a project<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
 <p>This tutorial is created with conjunction with a public <a href="https://github.com/vaclavblazej/manim-tutorial"target="_blank">Github repository<span style="white-space: nowrap;">&thinsp;↗</span></a> that you may download and try.
 In general, you will be able to run a command of the following structure to get an output.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim <span style="color:#000;font-weight:bold">[</span>-p<span style="color:#000;font-weight:bold">]</span> -ql &lt;file.py&gt; &lt;Class&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim <span style="color:#0550ae">[</span>-p<span style="color:#0550ae">]</span> -ql &lt;file.py&gt; &lt;Class&gt;
 </span></span></code></pre></div><ul>
 <li>Command itself depends on the version you get &ndash; <code>manim</code> (community version, used here) or <code>manimgl</code> (Grant&rsquo;s version).</li>
 <li>Flags you will usually use are <code>-p</code> to display the output, and <code>-ql</code> or <code>-qh</code> to set quality. They can be squished to e.g. <code>-pql</code>.</li>
@@ -190,11 +190,11 @@ In general, you will be able to run a command of the following structure to get 
 </span></span></code></pre></div>
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">manim</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(manim<span style="color:#000;font-weight:bold">.</span>Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(manim<span style="color:#000;font-weight:bold">.</span>Text(<span style="color:#d14">&#34;Hello Manim!&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>manim<span style="color:#0550ae">.</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>manim<span style="color:#0550ae">.</span>Text<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Hello Manim!&#34;</span><span style="color:#1f2328">))</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/sample.png" alt="sample"/></span>
 </span>
@@ -216,14 +216,14 @@ Your python code can live outside of this scene, but whatever you want to be dra
 The <strong>self</strong> here represents the scene and it provides methods that allow you to interact with the scene.
 A typical way to add shapes to a scene is via <code>self.add</code> method.
 By default, any object is placed at $(0,0)$ coordinates.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">manim</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># &lt;imports&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># other code</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># &lt;imports&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># other code</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">SceneName</span>(manim<span style="color:#000;font-weight:bold">.</span>Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic"># your Manim code</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(manim<span style="color:#000;font-weight:bold">.</span>Text(<span style="color:#d14">&#34;Hello Manim!&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">SceneName</span><span style="color:#1f2328">(</span>manim<span style="color:#0550ae">.</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># your Manim code</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>manim<span style="color:#0550ae">.</span>Text<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Hello Manim!&#34;</span><span style="color:#1f2328">))</span>
 </span></span></code></pre></div><p>There are many things that can be added to a scene.
 You may find Manim objects (also called Mobjects) in the <a href="https://docs.manim.community/en/stable/reference_index/mobjects.html"target="_blank">documentation<span style="white-space: nowrap;">&thinsp;↗</span></a>.
 Many objects &ldquo;inherit&rdquo; from others and allow you to add objects using a simpler input method.
@@ -233,18 +233,18 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">manim</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span>frame_width<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">2</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        label <span style="color:#000;font-weight:bold">=</span> MathTex(<span style="color:#d14">r</span><span style="color:#d14">&#39;\alpha&#39;</span>, color<span style="color:#000;font-weight:bold">=</span>BLACK)
-</span></span><span style="display:flex;"><span>        grp <span style="color:#000;font-weight:bold">=</span> Group(<span style="color:#000;font-weight:bold">*</span>[
-</span></span><span style="display:flex;"><span>            Dot(),
-</span></span><span style="display:flex;"><span>            AnnotationDot(),
-</span></span><span style="display:flex;"><span>            LabeledDot(label),
-</span></span><span style="display:flex;"><span>        ])
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(grp<span style="color:#000;font-weight:bold">.</span>arrange())
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        label <span style="color:#0550ae">=</span> MathTex<span style="color:#1f2328">(</span><span style="color:#0a3069">r</span><span style="color:#0a3069">&#39;\alpha&#39;</span><span style="color:#1f2328">,</span> color<span style="color:#0550ae">=</span>BLACK<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        grp <span style="color:#0550ae">=</span> Group<span style="color:#1f2328">(</span><span style="color:#0550ae">*</span><span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>            Dot<span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>            AnnotationDot<span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>            LabeledDot<span style="color:#1f2328">(</span>label<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>grp<span style="color:#0550ae">.</span>arrange<span style="color:#1f2328">())</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/dots.png" alt="dots"/></span>
 </span>
@@ -252,25 +252,25 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">manim</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span>frame_width<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5.5</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">5.5</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(MovingCameraScene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        s <span style="color:#000;font-weight:bold">=</span> ORIGIN
-</span></span><span style="display:flex;"><span>        t <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>DOWN
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>camera<span style="color:#000;font-weight:bold">.</span>frame<span style="color:#000;font-weight:bold">.</span>set(ratio<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>)
-</span></span><span style="display:flex;"><span>        grp <span style="color:#000;font-weight:bold">=</span> Group(<span style="color:#000;font-weight:bold">*</span>[
-</span></span><span style="display:flex;"><span>            Line(s, t),
-</span></span><span style="display:flex;"><span>            Arrow(s, t),
-</span></span><span style="display:flex;"><span>            Arrow(s, t, buff<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>),
-</span></span><span style="display:flex;"><span>            DoubleArrow(s, t, buff<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>),
-</span></span><span style="display:flex;"><span>            ArcBetweenPoints(s, t),
-</span></span><span style="display:flex;"><span>            CurvedArrow(s, t),
-</span></span><span style="display:flex;"><span>            CurvedDoubleArrow(s, t),
-</span></span><span style="display:flex;"><span>            CubicBezier(s, s<span style="color:#000;font-weight:bold">+</span>LEFT<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span>, t<span style="color:#000;font-weight:bold">+</span>RIGHT<span style="color:#000;font-weight:bold">/</span><span style="color:#099">3</span>, t),
-</span></span><span style="display:flex;"><span>        ])
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(grp<span style="color:#000;font-weight:bold">.</span>arrange())
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>MovingCameraScene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        s <span style="color:#0550ae">=</span> ORIGIN
+</span></span><span style="display:flex;"><span>        t <span style="color:#0550ae">=</span> <span style="color:#0550ae">2</span><span style="color:#0550ae">*</span>DOWN
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>camera<span style="color:#0550ae">.</span>frame<span style="color:#0550ae">.</span>set<span style="color:#1f2328">(</span>ratio<span style="color:#0550ae">=</span><span style="color:#0550ae">3</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        grp <span style="color:#0550ae">=</span> Group<span style="color:#1f2328">(</span><span style="color:#0550ae">*</span><span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>            Line<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Arrow<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Arrow<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">,</span> buff<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            DoubleArrow<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">,</span> buff<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            ArcBetweenPoints<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            CurvedArrow<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            CurvedDoubleArrow<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            CubicBezier<span style="color:#1f2328">(</span>s<span style="color:#1f2328">,</span> s<span style="color:#0550ae">+</span>LEFT<span style="color:#0550ae">/</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> t<span style="color:#0550ae">+</span>RIGHT<span style="color:#0550ae">/</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> t<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>grp<span style="color:#0550ae">.</span>arrange<span style="color:#1f2328">())</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/edges.png" alt="edges"/></span>
 </span>
@@ -278,19 +278,19 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">manim</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span>frame_width<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">5</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">build_arrow</span>(tip):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> Arrow(ORIGIN, <span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>DOWN, tip_shape<span style="color:#000;font-weight:bold">=</span>tip)
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">build_arrow</span><span style="color:#1f2328">(</span>tip<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> Arrow<span style="color:#1f2328">(</span>ORIGIN<span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#0550ae">*</span>DOWN<span style="color:#1f2328">,</span> tip_shape<span style="color:#0550ae">=</span>tip<span style="color:#1f2328">)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        tips <span style="color:#000;font-weight:bold">=</span> [ArrowTriangleTip, ArrowTriangleFilledTip,
-</span></span><span style="display:flex;"><span>                ArrowCircleTip, ArrowCircleFilledTip,
-</span></span><span style="display:flex;"><span>                ArrowSquareTip, ArrowSquareFilledTip,
-</span></span><span style="display:flex;"><span>                StealthTip]
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(Group(<span style="color:#000;font-weight:bold">*</span><span style="color:#0086b3">map</span>(build_arrow, tips))<span style="color:#000;font-weight:bold">.</span>arrange())
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        tips <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>ArrowTriangleTip<span style="color:#1f2328">,</span> ArrowTriangleFilledTip<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                ArrowCircleTip<span style="color:#1f2328">,</span> ArrowCircleFilledTip<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                ArrowSquareTip<span style="color:#1f2328">,</span> ArrowSquareFilledTip<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                StealthTip<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>Group<span style="color:#1f2328">(</span><span style="color:#0550ae">*</span><span style="color:#6639ba">map</span><span style="color:#1f2328">(</span>build_arrow<span style="color:#1f2328">,</span> tips<span style="color:#1f2328">))</span><span style="color:#0550ae">.</span>arrange<span style="color:#1f2328">())</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/arrows.png" alt="arrows"/></span>
 </span>
@@ -298,21 +298,21 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">manim</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span>frame_width <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width <span style="color:#0550ae">=</span> <span style="color:#0550ae">10</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        grp <span style="color:#000;font-weight:bold">=</span> Group(<span style="color:#000;font-weight:bold">*</span>[
-</span></span><span style="display:flex;"><span>            Square(),
-</span></span><span style="display:flex;"><span>            Triangle(),
-</span></span><span style="display:flex;"><span>            Circle(),
-</span></span><span style="display:flex;"><span>            RegularPolygon(<span style="color:#099">5</span>),
-</span></span><span style="display:flex;"><span>            Star(<span style="color:#099">5</span>),
-</span></span><span style="display:flex;"><span>            Rectangle(width<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>, height<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>),
-</span></span><span style="display:flex;"><span>            Polygon([<span style="color:#099">0</span>,<span style="color:#099">0</span>,<span style="color:#099">0</span>], [<span style="color:#099">0</span>,<span style="color:#099">1</span>,<span style="color:#099">0</span>], [<span style="color:#099">1</span>,<span style="color:#099">0</span>,<span style="color:#099">0</span>]),
-</span></span><span style="display:flex;"><span>        ])
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(grp<span style="color:#000;font-weight:bold">.</span>arrange_in_grid(<span style="color:#099">2</span>,<span style="color:#099">4</span>))
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        grp <span style="color:#0550ae">=</span> Group<span style="color:#1f2328">(</span><span style="color:#0550ae">*</span><span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>            Square<span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>            Triangle<span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>            Circle<span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>            RegularPolygon<span style="color:#1f2328">(</span><span style="color:#0550ae">5</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Star<span style="color:#1f2328">(</span><span style="color:#0550ae">5</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Rectangle<span style="color:#1f2328">(</span>width<span style="color:#0550ae">=</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span> height<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Polygon<span style="color:#1f2328">([</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">],</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">],</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">]),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>grp<span style="color:#0550ae">.</span>arrange_in_grid<span style="color:#1f2328">(</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">4</span><span style="color:#1f2328">))</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/polygons.png" alt="polygons"/></span>
 </span>
@@ -320,20 +320,20 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">manim</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span>frame_width<span style="color:#000;font-weight:bold">=</span><span style="color:#099">9.5</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">9.5</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span>(Scene):
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">construct</span>(<span style="color:#999">self</span>):
-</span></span><span style="display:flex;"><span>        grp <span style="color:#000;font-weight:bold">=</span> Group(<span style="color:#000;font-weight:bold">*</span>[
-</span></span><span style="display:flex;"><span>            Arc(<span style="color:#099">1</span>, <span style="color:#099">0</span>, PI<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span>),
-</span></span><span style="display:flex;"><span>            ArcBetweenPoints(ORIGIN, DOWN),
-</span></span><span style="display:flex;"><span>            AnnularSector(<span style="color:#099">1</span>, <span style="color:#099">1.2</span>, PI<span style="color:#000;font-weight:bold">*</span><span style="color:#099">3</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">2</span>),
-</span></span><span style="display:flex;"><span>            Annulus(<span style="color:#099">1</span>, <span style="color:#099">1.2</span>),
-</span></span><span style="display:flex;"><span>            Circle(<span style="color:#099">1</span>),
-</span></span><span style="display:flex;"><span>            Ellipse(<span style="color:#099">1.5</span>, <span style="color:#099">2</span>),
-</span></span><span style="display:flex;"><span>        ])
-</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>add(grp<span style="color:#000;font-weight:bold">.</span>arrange_in_grid(<span style="color:#099">2</span>,<span style="color:#099">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        grp <span style="color:#0550ae">=</span> Group<span style="color:#1f2328">(</span><span style="color:#0550ae">*</span><span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>            Arc<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> PI<span style="color:#0550ae">/</span><span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            ArcBetweenPoints<span style="color:#1f2328">(</span>ORIGIN<span style="color:#1f2328">,</span> DOWN<span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            AnnularSector<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.2</span><span style="color:#1f2328">,</span> PI<span style="color:#0550ae">*</span><span style="color:#0550ae">3</span><span style="color:#0550ae">/</span><span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Annulus<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Circle<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            Ellipse<span style="color:#1f2328">(</span><span style="color:#0550ae">1.5</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>grp<span style="color:#0550ae">.</span>arrange_in_grid<span style="color:#1f2328">(</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">3</span><span style="color:#1f2328">))</span>
 </span></span></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/material/science/manim//build/circles.png" alt="circles"/></span>
 </span>
@@ -395,7 +395,7 @@ manim cfg write -l cwd</li>
         <li>
             © Václav Blažej
             
-                2015-2024 
+                2015-2025 
             
         </li>
         
@@ -404,7 +404,7 @@ manim cfg write -l cwd</li>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">

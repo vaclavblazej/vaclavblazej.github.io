@@ -160,25 +160,25 @@ Towards making this process easier for people that did not memorize the encoding
 <p>The image is generated in LaTeX using TikZ package from the following <a href="main.tex">source code</a>.
 Both the image and the source code is put to the public domain and can be used without any restrictions whatsoever.
 I would still appreaciate a memo if someone uses it.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\documentclass</span><span style="color:#0086b3">{</span>standalone<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usepackage</span><span style="color:#0086b3">{</span>tikz<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\usetikzlibrary</span><span style="color:#0086b3">{</span>calc<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\documentclass</span><span style="color:#6639ba">{</span>standalone<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>tikz<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\usetikzlibrary</span><span style="color:#6639ba">{</span>calc<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% position, degree 1, degree 2, text
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">\newcommand</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\semafor</span><span style="color:#0086b3">}</span>[4]<span style="color:#0086b3">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill=white,circle,inner sep=1pt]</span> (#4) at #1 <span style="color:#0086b3">{</span>#4<span style="color:#0086b3">}</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill,circle,inner sep=.8pt]</span> (a) at (<span style="color:#d14">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0086b3">#</span><span style="color:#099">4</span><span style="color:#000;font-weight:bold">)+(</span><span style="color:#0086b3">#</span><span style="color:#099">2</span><span style="color:#0086b3">:.</span><span style="color:#099">8</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">$</span>) <span style="color:#0086b3">{}</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\node</span><span style="color:#008080">[draw,fill,circle,inner sep=.8pt]</span> (b) at (<span style="color:#d14">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0086b3">#</span><span style="color:#099">4</span><span style="color:#000;font-weight:bold">)+(</span><span style="color:#0086b3">#</span><span style="color:#099">3</span><span style="color:#0086b3">:.</span><span style="color:#099">8</span><span style="color:#000;font-weight:bold">)</span><span style="color:#d14">$</span>) <span style="color:#0086b3">{}</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[thick,line cap=round]</span> (#4) -- (a);
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[thick,line cap=round]</span> (#4) -- (b);
-</span></span><span style="display:flex;"><span><span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">% position, degree 1, degree 2, text
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\semafor</span><span style="color:#6639ba">}</span>[4]<span style="color:#6639ba">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[draw,fill=white,circle,inner sep=1pt]</span> (#4) at #1 <span style="color:#6639ba">{</span>#4<span style="color:#6639ba">}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[draw,fill,circle,inner sep=.8pt]</span> (a) at (<span style="color:#0a3069">$</span><span style="color:#0550ae">(</span><span style="color:#6639ba">#</span><span style="color:#0550ae">4</span><span style="color:#0550ae">)+(</span><span style="color:#6639ba">#</span><span style="color:#0550ae">2</span><span style="color:#6639ba">:.</span><span style="color:#0550ae">8</span><span style="color:#0550ae">)</span><span style="color:#0a3069">$</span>) <span style="color:#6639ba">{}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[draw,fill,circle,inner sep=.8pt]</span> (b) at (<span style="color:#0a3069">$</span><span style="color:#0550ae">(</span><span style="color:#6639ba">#</span><span style="color:#0550ae">4</span><span style="color:#0550ae">)+(</span><span style="color:#6639ba">#</span><span style="color:#0550ae">3</span><span style="color:#6639ba">:.</span><span style="color:#0550ae">8</span><span style="color:#0550ae">)</span><span style="color:#0a3069">$</span>) <span style="color:#6639ba">{}</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\draw</span><span style="color:#1f2328">[thick,line cap=round]</span> (#4) -- (a);
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\draw</span><span style="color:#1f2328">[thick,line cap=round]</span> (#4) -- (b);
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\begin</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\foreach</span> <span style="color:#000;font-weight:bold">\i</span> in <span style="color:#0086b3">{</span>45,90,...,360<span style="color:#0086b3">}{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\draw</span><span style="color:#008080">[gray!60,thick]</span> (0,0) -- (<span style="color:#000;font-weight:bold">\i</span>:3.4);
-</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">\foreach</span> <span style="color:#000;font-weight:bold">\distance</span>/<span style="color:#000;font-weight:bold">\degree</span>/<span style="color:#000;font-weight:bold">\letter</span> in <span style="color:#0086b3">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>tikzpicture<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\foreach</span> <span style="color:#cf222e">\i</span> in <span style="color:#6639ba">{</span>45,90,...,360<span style="color:#6639ba">}{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\draw</span><span style="color:#1f2328">[gray!60,thick]</span> (0,0) -- (<span style="color:#cf222e">\i</span>:3.4);
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\foreach</span> <span style="color:#cf222e">\distance</span>/<span style="color:#cf222e">\degree</span>/<span style="color:#cf222e">\letter</span> in <span style="color:#6639ba">{</span>
 </span></span><span style="display:flex;"><span>        0/0/D,
 </span></span><span style="display:flex;"><span>        0/90/R,
 </span></span><span style="display:flex;"><span>        0/135/L,
@@ -209,15 +209,15 @@ I would still appreaciate a memo if someone uses it.</p>
 </span></span><span style="display:flex;"><span>        3/247.5/A,
 </span></span><span style="display:flex;"><span>        3/292.5/G,
 </span></span><span style="display:flex;"><span>        3/337.5/Z
-</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span> <span style="color:#0086b3">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\half</span><span style="color:#0086b3">{</span>(4-<span style="color:#000;font-weight:bold">\distance</span>)/2*45<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\one</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\degree</span>-<span style="color:#000;font-weight:bold">\half</span><span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\two</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">\degree</span>+<span style="color:#000;font-weight:bold">\half</span><span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\pgfmathsetmacro\fdist</span><span style="color:#0086b3">{</span>3-<span style="color:#000;font-weight:bold">\distance*</span>0.6<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">\semafor</span><span style="color:#0086b3">{</span>(<span style="color:#000;font-weight:bold">\degree</span>:<span style="color:#000;font-weight:bold">\fdist</span>)<span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\one</span><span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\two</span><span style="color:#0086b3">}{</span><span style="color:#000;font-weight:bold">\letter</span><span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>tikzpicture<span style="color:#0086b3">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">\end</span><span style="color:#0086b3">{</span>document<span style="color:#0086b3">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">}</span> <span style="color:#6639ba">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\pgfmathsetmacro\half</span><span style="color:#6639ba">{</span>(4-<span style="color:#cf222e">\distance</span>)/2*45<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\pgfmathsetmacro\one</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\degree</span>-<span style="color:#cf222e">\half</span><span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\pgfmathsetmacro\two</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\degree</span>+<span style="color:#cf222e">\half</span><span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\pgfmathsetmacro\fdist</span><span style="color:#6639ba">{</span>3-<span style="color:#cf222e">\distance*</span>0.6<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\semafor</span><span style="color:#6639ba">{</span>(<span style="color:#cf222e">\degree</span>:<span style="color:#cf222e">\fdist</span>)<span style="color:#6639ba">}{</span><span style="color:#cf222e">\one</span><span style="color:#6639ba">}{</span><span style="color:#cf222e">\two</span><span style="color:#6639ba">}{</span><span style="color:#cf222e">\letter</span><span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>tikzpicture<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
 </span></span></code></pre></div>
         </div>
     </div>
@@ -238,7 +238,7 @@ I would still appreaciate a memo if someone uses it.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">29. December 2024</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. January 2025</ul>
 </div>
 
 <script type="text/javascript">
