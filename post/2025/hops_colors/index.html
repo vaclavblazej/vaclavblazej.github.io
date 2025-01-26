@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            HOPS update to displaying relations - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2025-01-26T00:00:00Z" class="post-list timeago">26.01.2025</time>
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/design">design</a> <a href="https://vaclavblazej.github.io/tags/hops">hops</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>HOPS update to displaying relations</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>An update to HOPS dropped today.
+It has one major rework &ndash; colorful display of relations &ndash; which boils down the known information of a pairwise relation to a single color.
+See the following examples: left shows relations with respect to <em>treewidth</em>, right shows all pairwise parameter relations.</p>
+<p><img src="diagram.png" alt="colorful diagram">
+<img src="table.png" alt="colorful table"></p>
+<p>The color scheme works as follows.
+Consider parameters $A$ and $B$ and let us say $A \le B$ if $A(G) \le f(B(G))$ for some computable function $f$.
+Then we can generalize this notion to $\ge,&lt;,&gt;,\not\ge,\not\le,=$.
+Ideally, we aim to know one of the following four results: $A&lt;B$, $A&gt;B$, $A=B$, or $A$ is incomparable to $B$.
+Each such result comes from two elementary relations, $A \le B$, $A \ge B$, $A \not\le B$, or $A \not\ge B$.
+Based on how two elementary relations are combined we get a full result &ndash; structure of this is circular, which nicely maps to a color wheel.</p>
+<img class="svg" style="height:250px;" src="color_wheel.svg" alt="Parameter relations"/>
+<p>The idea is to keep final results to the primary colors red, green, and blue (and yellow), while secondary colors show only the elementary results, and represent that the information is not yet known (needs to be added to HOPS).
+Also note that swapping $A$ with $B$ reflects the color wheel by a horizontal mid-line &ndash; this is the reason behind the symmetric comparison table.</p>
+<p>The update also comes with small quality of life changes, for example:</p>
+<ul>
+<li>added tags</li>
+<li>added relations and other information to the set page</li>
+<li>updated documentation</li>
+<li>polished the local diagram to show only the more relevant parameters</li>
+<li>replaced PDFs with user-side rendered SVGs (directly from DOTs)</li>
+<li>improved the source formatting</li>
+<li>polished inferences to get $A&lt;B+C$ form $A&lt;B$ and $A&lt;C$</li>
+</ul>
+<p>Still, many things can be improved upon.
+In the next quarter I plan to focus on the following.</p>
+<ul>
+<li>add new pages for pairwise relations that show how the relation is inferred</li>
+<li>export data to a static json API</li>
+<li>create a more complete list of the known results</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2025
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">26. January 2025</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

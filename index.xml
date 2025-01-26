@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 29 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HOPS update to displaying relations</title>
+      <link>https://vaclavblazej.github.io/post/2025/hops_colors/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2025/hops_colors/</guid>
+      <description>&lt;p&gt;An update to HOPS dropped today.&#xA;It has one major rework &amp;ndash; colorful display of relations &amp;ndash; which boils down the known information of a pairwise relation to a single color.&#xA;See the following examples: left shows relations with respect to &lt;em&gt;treewidth&lt;/em&gt;, right shows all pairwise parameter relations.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;diagram.png&#34; alt=&#34;colorful diagram&#34;&gt;&#xA;&lt;img src=&#34;table.png&#34; alt=&#34;colorful table&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The color scheme works as follows.&#xA;Consider parameters $A$ and $B$ and let us say $A \le B$ if $A(G) \le f(B(G))$ for some computable function $f$.&#xA;Then we can generalize this notion to $\ge,&amp;lt;,&amp;gt;,\not\ge,\not\le,=$.&#xA;Ideally, we aim to know one of the following four results: $A&amp;lt;B$, $A&amp;gt;B$, $A=B$, or $A$ is incomparable to $B$.&#xA;Each such result comes from two elementary relations, $A \le B$, $A \ge B$, $A \not\le B$, or $A \not\ge B$.&#xA;Based on how two elementary relations are combined we get a full result &amp;ndash; structure of this is circular, which nicely maps to a color wheel.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Vánoční křížovka 2024</title>
       <link>https://vaclavblazej.github.io/post/2024/crossword/</link>
