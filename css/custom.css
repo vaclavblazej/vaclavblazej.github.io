@@ -489,6 +489,18 @@ a {
     max-width: stretch;                 /* Unprefixed */
 }
 
+.mini-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mini {
+    padding: 2px;
+    margin: 0;
+}
+
 @media print {
     .noprint {
         visibility: hidden;
