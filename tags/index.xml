@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graph Theory</title>
+      <link>https://vaclavblazej.github.io/tags/graph-theory/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/graph-theory/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Design</title>
       <link>https://vaclavblazej.github.io/tags/design/</link>
@@ -77,13 +84,6 @@
       <link>https://vaclavblazej.github.io/tags/cyper/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/tags/cyper/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Graph Theory</title>
-      <link>https://vaclavblazej.github.io/tags/graph-theory/</link>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/graph-theory/</guid>
       <description></description>
     </item>
     <item>
