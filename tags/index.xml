@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llms</title>
+      <link>https://vaclavblazej.github.io/tags/llms/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/llms/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Graph Theory</title>
       <link>https://vaclavblazej.github.io/tags/graph-theory/</link>
