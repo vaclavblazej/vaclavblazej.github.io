@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asking LLM for its rules</title>
+      <link>https://vaclavblazej.github.io/post/2025/llmanswers/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2025/llmanswers/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve tested a few llms and while they get polished with time I observed that when a company pushes out a &amp;ldquo;new&amp;rdquo; model it is not yet well-tuned.&#xA;After a conversation with microsoft&amp;rsquo;s llm, where you could ask only 20 questions (allegedly the llm loses its mind with more quetsions), I asked it to list its rules.&#xA;Of course the llm immediately gives them to me but is soonafter redacted and rewritten, see the following gif that I recorded.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Parameterized Perspective of All-Colors</title>
       <link>https://vaclavblazej.github.io/pub/2025/light_switching/</link>
