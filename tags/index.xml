@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graphs</title>
+      <link>https://vaclavblazej.github.io/tags/graphs/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proof</title>
+      <link>https://vaclavblazej.github.io/tags/proof/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/proof/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Llms</title>
       <link>https://vaclavblazej.github.io/tags/llms/</link>
@@ -609,20 +623,6 @@
       <link>https://vaclavblazej.github.io/tags/1718l/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/tags/1718l/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Proof</title>
-      <link>https://vaclavblazej.github.io/tags/proof/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/proof/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Graphs</title>
-      <link>https://vaclavblazej.github.io/tags/graphs/</link>
-      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/graphs/</guid>
       <description></description>
     </item>
     <item>
