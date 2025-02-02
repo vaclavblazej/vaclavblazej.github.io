@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>
         
-            Fit Cvut - Homepage of Vašek
+            An interesting proof of flow transitivity - Homepage of Vašek
         
     </title>
     <meta name="description" content="Homepage of Vašek">
@@ -120,23 +120,13 @@
 
 <div class="content">
     
-    <p class="posts-name">Fit Cvut:</p>
-    <div class="posts">
-        
-        <ul id="posts-list">
-
-    
-        
-<li>
-    <a href="https://vaclavblazej.github.io/post/2022/gacr/">Žádost o GAČR grant</a>
-    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
 
 
-    <p class="footnote">
-        
-
-
-    <time datetime="2022-04-04T00:00:00Z" class="post-list timeago">04.04.2022</time>
+    <time datetime="2025-02-02T00:00:00Z" class="post-list timeago">02.02.2025</time>
 
 
 
@@ -147,20 +137,48 @@
 
 
 
-    tags:[ <a href="https://vaclavblazej.github.io/tags/grant">grant</a> <a href="https://vaclavblazej.github.io/tags/gacr">gacr</a> <a href="https://vaclavblazej.github.io/tags/fit-cvut">fit cvut</a> ]
+    tags:[ <a href="https://vaclavblazej.github.io/tags/graphs">graphs</a> <a href="https://vaclavblazej.github.io/tags/proof">proof</a> ]
 
 
 
 
 
 
-    </p>
-</li>
+            </p>
+            <h1>An interesting proof of flow transitivity</h1>
 
-    
+            
 
-</ul>
+        </div>
+        <div class="post-content">
+            <p>Consider an unoriented unweighted graph $G$.
+Let $f(a,b)$ denote the maximum flow from $a$ to $b$.</p>
+<p><strong>Theorem:</strong>
+In a graph $G$ and its three vertices $a$, $b$, and $c$ we have $f(a,c) \ge \min \big( f(a,b),f(b,c) \big)$.</p>
+<p><strong>Proof (wrong):</strong>
+Let $k = \min \big( f(a,b),f(b,c) \big)$.
+Consider a set of $k$ directed paths $X$ that realize the flow $f(a,b)$ and a set of $k$ paths $Y$ that realize flow $f(b,c)$.
+Let $Z = X \cup Y$ and observe that this is a set of $k$ paths that realize a $k$ flow from $a$ to $c$, however, it may contain some edges multiple times and hence, is not valid.
+Take an edge $e \in Z$ that is duplicated.
+This edge is duplicated because a path $P_A \in A$ and path $P_B \in B$ overlapped on $e$ (and possibly more edges than that).
+These path $P_A$ go from $a$ to $b$ and path $P_B$ from $b$ to $c$.
+Consider part of $P_B$ that goes from $e$ to $b$, then part of $P_A$ from $b$ to $e$ &ndash; this is a cycle that can be removed from the flow, removing $e$ from the list of edges that are duplicated while not decreasing the flow from $a$ to $c$.
+Repeat the above cycle removing procedure until there are no edges that are duplicated.</p>
+<p>By removing the duplicated edges the above proof changes structure of the graph, hence, after removing the first cycle one may end up with a duplicated edge that does not lead to $b$ at all, and simply continues $c$ &ndash; so one cannot use iteration on this argument.</p>
+<p><strong>Proof (standard)</strong>
+Let $k = \min \big( f(a,b),f(b,c) \big)$.
+Consider the maximum flow minimum cut duality so there exists a cut $C_A$ and $C_B$ such that $C_A$ separates $a$ from $b$ and $C_B$ separates $b$ from $c$ and the smaller of these cuts has size at least $k$.
+Look at a cut $C_C$ from $a$ to $c$, the vertex $b$ is either before or after the cut.
+Hence $|C_C| \ge |C_A|$ or $|C_C| \ge |C_B|$, therefore, $|C_C| \ge k$.</p>
+<p><strong>Proof (interesting):</strong>
+Let $A$ be a set of paths that realize $f(a,b)$ and $B$ be a set of paths that realize $f(b,c)$.
+Let each $P_A \in A$ be considered a &ldquo;man&rdquo;.
+For $B$ let us flip all the paths in $B$ to create $B&rsquo;$, let each $P_B \in B&rsquo;$ be considered a &ldquo;woman&rdquo;.
+We define preferences based on a distance from path&rsquo;s beginning, i.e., if $P_A$ shares an edge with $P_1$ and $P_2$ of $B$ then $P_A$ prefers $P_1$ iff its (first) shared edge is before the (first) shared edge with $P_2$.
+Solve the <a href="https://en.wikipedia.org/wiki/Stable_marriage_problem"target="_blank">stable marriage problem<span style="white-space: nowrap;">&thinsp;↗</span></a> for these paths and let a new path be created from concatenating $P_A$ with $P_B$ iff these paths were matched.
+Notice that no pair of resulting paths can cross as for some $P_A \in A$ and $P_B \in B$ that cross means they cross before their respective overlaps with their matched paths &ndash; this is a pair that is not stable, which cannot happen.</p>
 
+        </div>
     </div>
 </div>
 
@@ -170,7 +188,7 @@
         <li>
             © Václav Blažej
             
-                2015-2025 
+                2025
             
         </li>
         
