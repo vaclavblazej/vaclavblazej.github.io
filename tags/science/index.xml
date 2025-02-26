@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A brief survey on tools</title>
+      <link>https://vaclavblazej.github.io/post/2025/pdr_survey/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2025/pdr_survey/</guid>
+      <description>&lt;p&gt;Today, during a Cake Chat I passed postgraduate-researchers a small survey on tools used for writing papers.&#xA;This time I asked about the used software but also hardware.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Up-to-date compilation of tools, including previous surveys, can be found in &lt;a href=&#34;https://vaclavblazej.github.io/material/science/tools/&#34;&gt;Material&lt;/a&gt; section.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Seven people answered, numbers higher than 7 imply people signified multiple choices.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;setup &amp;ndash; 6 laptops, 1 PC; 5 mac, 2 windows&lt;/li&gt;&#xA;&lt;li&gt;paper writing &amp;ndash; 6 overleaf, 2 vs code&lt;/li&gt;&#xA;&lt;li&gt;drawings &amp;ndash; 4 TikZ, 1 python, 1 quiver, 1 matcha, 1 MS word, 1 matplotlib, 1 networkx&lt;/li&gt;&#xA;&lt;li&gt;presentations &amp;ndash; 4 powerpoint, 3 beamer, 1 tablet (hand-drawn) slides&lt;/li&gt;&#xA;&lt;li&gt;notetaking &amp;ndash; 3 paper, 2 notion, 2 pain text, 2 phone&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>LaTeX setup for writing a paper review response</title>
       <link>https://vaclavblazej.github.io/post/2023/review_response/</link>

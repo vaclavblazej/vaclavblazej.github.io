@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survey on Homepage of Vašek</title>
+    <link>https://vaclavblazej.github.io/tags/survey/</link>
+    <description>Recent content in Survey on Homepage of Vašek</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Václav Blažej</copyright>
+    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vaclavblazej.github.io/tags/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A brief survey on tools</title>
+      <link>https://vaclavblazej.github.io/post/2025/pdr_survey/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2025/pdr_survey/</guid>
+      <description>&lt;p&gt;Today, during a Cake Chat I passed postgraduate-researchers a small survey on tools used for writing papers.&#xA;This time I asked about the used software but also hardware.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Up-to-date compilation of tools, including previous surveys, can be found in &lt;a href=&#34;https://vaclavblazej.github.io/material/science/tools/&#34;&gt;Material&lt;/a&gt; section.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Seven people answered, numbers higher than 7 imply people signified multiple choices.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;setup &amp;ndash; 6 laptops, 1 PC; 5 mac, 2 windows&lt;/li&gt;&#xA;&lt;li&gt;paper writing &amp;ndash; 6 overleaf, 2 vs code&lt;/li&gt;&#xA;&lt;li&gt;drawings &amp;ndash; 4 TikZ, 1 python, 1 quiver, 1 matcha, 1 MS word, 1 matplotlib, 1 networkx&lt;/li&gt;&#xA;&lt;li&gt;presentations &amp;ndash; 4 powerpoint, 3 beamer, 1 tablet (hand-drawn) slides&lt;/li&gt;&#xA;&lt;li&gt;notetaking &amp;ndash; 3 paper, 2 notion, 2 pain text, 2 phone&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Small survey on tools used by mathematicians</title>
+      <link>https://vaclavblazej.github.io/post/2023/ccc_survey/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2023/ccc_survey/</guid>
+      <description>&lt;p&gt;In the field of Theoretical Computer Science it is standard to write scientific papers in LaTeX.&#xA;However, there are still quite a few options when deciding what software to use to create the text, images, or conference presentations.&#xA;I asked several people during &lt;a href=&#34;https://computationalcomplexity.org/&#34;target=&#34;_blank&#34;&gt;CCC 2023&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; about this.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Up-to-date compilation of tools can be found in &lt;a href=&#34;https://vaclavblazej.github.io/material/science/tools/&#34;&gt;Material&lt;/a&gt; section.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Assuming we talk about collaborative works, majority of questioned people write their papers in &lt;a href=&#34;https://www.overleaf.com/&#34;target=&#34;_blank&#34;&gt;Overleaf&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;It is an order of magnitude more accessible than other setups.&#xA;Other approaches involve having a local editing software together with a versioning and collaboration support &amp;ndash; typically &lt;a href=&#34;https://git-scm.com/&#34;target=&#34;_blank&#34;&gt;Git&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;The small number of people that edit locally used &lt;a href=&#34;https://code.visualstudio.com/&#34;target=&#34;_blank&#34;&gt;VS Code&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.texstudio.org/&#34;target=&#34;_blank&#34;&gt;TeXstudio&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;target=&#34;_blank&#34;&gt;Emacs&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.vim.org/&#34;target=&#34;_blank&#34;&gt;Vim&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;, and &lt;a href=&#34;https://neovim.io/&#34;target=&#34;_blank&#34;&gt;Neovim&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;Only TeXstudio comes with LaTeX support by default, rest have plugins that handle useful features such as compilation, forward and backward search, or completion.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

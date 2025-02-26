@@ -226,7 +226,7 @@ $$    = \sum_{i,j=1}^n E[\epsilon_i \epsilon_j] (v_i,v_j)
 = n
 $$
 Takže lze vybrat takové hodnoty $\epsilon$ aby výsledný vektor byl buď $\leq \sqrt{n}$ či $\geq \sqrt{n}$, dle toho, jak to potřebujeme.</p>
-<h3 id="alterations----weak-turáns-theorem">Alterations &ndash; Weak Turán&rsquo;s theorem</h3>
+<h3 id="alterations--weak-turáns-theorem">Alterations &ndash; Weak Turán&rsquo;s theorem</h3>
 <p>Mějme graf $G$, kde $d=\frac{2m}{n}$ je průměrný stupeň, pak nezávislost $\alpha(G) \geq \frac{n}{2d}$ (plná věta říká $\geq \frac{n}{d+1}$).
 Vezměme náhodný sbuset $S \subseteq V$ s $\Pr[v \in S] = p$.
 $X=|S|, Y=|E(G[S])|$, $E[X]=pn$, $E[Y]=p^2m$, $E[X-Y]=p(n-pm)=pn(1-p\frac{d}{2})$.
@@ -248,7 +248,7 @@ Díky union bound dostáváme
 $$\Pr[\alpha(G)\geq a] \leq \binom{n}{a}(1-p)^{\binom{a}{2}} \leq n^a e^{-p\binom{a}{2}} \leq n^a n^{-3(a-1)/2} \rightarrow 0.$$
 Pro dost velká $n$ bude $\Pr &lt;\frac{1}{2}$.</p>
 <p>Spojením dvou vyšších výsledků dostáváme, že pro dost velká $n$ bude díky union bound šance malého cyklu nebo malé barevnosti menší než $1$.</p>
-<h3 id="frievalds-algorithm----testování-výsledku-násobení-matic">Frievald&rsquo;s algorithm &ndash; testování výsledku násobení matic</h3>
+<h3 id="frievalds-algorithm--testování-výsledku-násobení-matic">Frievald&rsquo;s algorithm &ndash; testování výsledku násobení matic</h3>
 <p>Mějme 3 matice A,B a C velikosti $n \times n$ a chceme zjistit jestli $A \times B = C$.
 Vygenerujeme vektor $r$ s $n$ náhodně vybranými 0/1 prvky a zkontrolujeme, že $A(Br)-Cr = 0$.</p>
 <ul>
@@ -426,7 +426,7 @@ Z teorie MC víme, že šance na to, dostat se po $j+2k$ krocích z $0$ do $j$ j
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">2. February 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">26. February 2025</ul>
 </div>
 
 <script type="text/javascript">
