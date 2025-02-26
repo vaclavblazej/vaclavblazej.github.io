@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Science</title>
+      <link>https://vaclavblazej.github.io/tags/science/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Survey</title>
+      <link>https://vaclavblazej.github.io/tags/survey/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/survey/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Graphs</title>
       <link>https://vaclavblazej.github.io/tags/graphs/</link>
@@ -245,13 +259,6 @@
       <link>https://vaclavblazej.github.io/tags/neovim/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/tags/neovim/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Science</title>
-      <link>https://vaclavblazej.github.io/tags/science/</link>
-      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/science/</guid>
       <description></description>
     </item>
     <item>
