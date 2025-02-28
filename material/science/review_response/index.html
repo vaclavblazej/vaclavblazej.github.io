@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Review response - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/teaching/">Teaching</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/science">science</a> <a href="https://vaclavblazej.github.io/tags/latex">latex</a> <a href="https://vaclavblazej.github.io/tags/tutorial">tutorial</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Review response</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>The following is a template for responsponding to the revier&rsquo;s comments obtained from a paper journal submission.
+Reacting to a critique of the <a href="https://vaclavblazej.github.io/post/2023/review_response/">previous template</a> I modified the template slightly &ndash; the template now contains two distinct commands: <code>\rev</code> and <code>\done</code> where the former is meant to contain comments that are not yet dealt with, and the latter is for the finished comments.
+Simply copy the reviewer&rsquo;s comments and wrap them in <code>\rev{comment}{}</code> first, then add your notes to the second empty brackets.
+When the comment is resolved, change <code>\rev</code> to <code>\done</code>.
+See the final formatting below.</p>
+<p><img src="response.png" alt="response"></p>
+<p>This review response template is put into public domain and can be used and modifier without any restrictions.</p>
+<ul>
+<li><a href="response.tex">response.tex</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\documentclass</span><span style="color:#1f2328">[a4paper,USenglish]</span><span style="color:#6639ba">{</span>article<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">% smaller margins
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>fullpage<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">% edit vertical spacing of the item lists
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>enumitem<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\setlist</span><span style="color:#6639ba">{</span>topsep=0pt, itemsep=0pt<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">% macros for review response
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>xcolor<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\rev</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span> <span style="color:#cf222e">\item</span> #1 <span style="color:#cf222e">\item</span><span style="color:#1f2328">[$\triangleright$]</span> <span style="color:#cf222e">\if\relax\detokenize</span><span style="color:#6639ba">{</span>#2<span style="color:#6639ba">}</span><span style="color:#cf222e">\relax</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>red<span style="color:#6639ba">}</span>UNANSWERED<span style="color:#6639ba">}</span> <span style="color:#cf222e">\else</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>red<span style="color:#6639ba">}</span>#2<span style="color:#6639ba">}</span> <span style="color:#cf222e">\fi</span> <span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\done</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span> <span style="color:#cf222e">\item</span> #1 <span style="color:#cf222e">\item</span><span style="color:#1f2328">[$\triangleright$]</span> <span style="color:#cf222e">\if\relax\detokenize</span><span style="color:#6639ba">{</span>#2<span style="color:#6639ba">}</span><span style="color:#cf222e">\relax</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>red<span style="color:#6639ba">}</span>UNANSWERED<span style="color:#6639ba">}</span> <span style="color:#cf222e">\else</span> <span style="color:#6639ba">{</span><span style="color:#cf222e">\color</span><span style="color:#6639ba">{</span>blue<span style="color:#6639ba">}</span>#2<span style="color:#6639ba">}</span> <span style="color:#cf222e">\fi</span> <span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\noindent</span>
+</span></span><span style="display:flex;"><span>Dear Editor,
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>8 pt<span style="color:#6639ba">}</span><span style="color:#cf222e">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\dots</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>8 pt<span style="color:#6639ba">}</span><span style="color:#cf222e">\\</span>
+</span></span><span style="display:flex;"><span>Regards,<span style="color:#cf222e">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\phantom</span><span style="color:#6639ba">{</span>,<span style="color:#6639ba">}</span><span style="color:#cf222e">\quad</span> Authors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\subsection*</span><span style="color:#6639ba">{</span>Reviewer 1<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>itemize<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\rev</span><span style="color:#6639ba">{</span>Line 128: comment 1<span style="color:#6639ba">}{}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\rev</span><span style="color:#6639ba">{</span>Line 256: comment 2<span style="color:#6639ba">}{</span>Partial response. Comments left for other authors.<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\done</span><span style="color:#6639ba">{</span>Line 384: comment 3<span style="color:#6639ba">}{}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\done</span><span style="color:#6639ba">{</span>Line 512: comment 4<span style="color:#6639ba">}{</span>Final response to the reviewer&#39;s comment.<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>itemize<span style="color:#6639ba">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">\end</span><span style="color:#6639ba">{</span>document<span style="color:#6639ba">}</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015-2025 
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">28. February 2025</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
