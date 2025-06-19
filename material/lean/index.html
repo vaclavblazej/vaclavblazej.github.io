@@ -154,38 +154,38 @@ Unless we jump to tactics mode the entire source code is in normal mode.
 Many online examples show solutions in tactics but learning the underlying normal methods is important to understand what is happening.
 We explain tactics mode separately in a later section.</p>
 <h3 id="basic-syntax">Basic syntax</h3>
-<pre tabindex="0"><code class="language-lean" data-lang="lean">-- this is a comment
-namespace MyLeanTests
-
--- function as: def &lt;name&gt; &lt;parameters&gt; : &lt;return type&gt; := &lt;body&gt;
-def sampleFunction1 (x : Nat) (y : Nat) := x*y + 3
-
--- variable as: def &lt;name&gt; : &lt;type&gt; := &lt;value&gt;
-def res := sampleFunction1 4000000000 (20+30)
-
--- newline &amp; repetitions of white-spaces don&#39;t matter (except for tactics)
-def sampleFunction2 (x : Nat) :=
-  if x &gt; 100 then
-    2*x*x - x + 3
-  else
-    x*x
-
--- many types can be inferred from the context (x has no explicit type)
--- separate statements on the same line by a semicolon ;
-def sampleFunction3 x := if x &gt; 100 then let z := 2*x*x; z - x + 3 else x*x
-
--- show value
-#eval sampleFunction2 2000
--- show type
-#check sampleFunction2
-
--- function as a parameter
-def twice (f : Nat -&gt; Nat) (a : Nat) := f (f a)
-
--- a trivial proof by reflexivity
--- passing anonymous functions (lambdas)
-theorem twiceAdd2 (a : Nat) : twice (fun x =&gt; x + 2) a = a + 4 := rfl
-</code></pre><h3 id="enumerations">Enumerations</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lean" data-lang="lean"><span style="display:flex;"><span><span style="color:#57606a">-- this is a comment</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">namespace</span><span style="color:#fff"> </span>MyLeanTests<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- function as: def &lt;name&gt; &lt;parameters&gt; : &lt;return type&gt; := &lt;body&gt;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">def</span><span style="color:#fff"> </span>sampleFunction1<span style="color:#fff"> </span><span style="color:#0550ae">(</span>x<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">(</span>y<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span>x<span style="color:#6a737d">*</span>y<span style="color:#fff"> </span><span style="color:#6a737d">+</span><span style="color:#fff"> </span><span style="color:#0550ae">3</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- variable as: def &lt;name&gt; : &lt;type&gt; := &lt;value&gt;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">def</span><span style="color:#fff"> </span>res<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span>sampleFunction1<span style="color:#fff"> </span><span style="color:#0550ae">4000000000</span><span style="color:#fff"> </span><span style="color:#0550ae">(</span><span style="color:#0550ae">20</span><span style="color:#6a737d">+</span><span style="color:#0550ae">30</span><span style="color:#0550ae">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- newline &amp; repetitions of white-spaces don&#39;t matter (except for tactics)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">def</span><span style="color:#fff"> </span>sampleFunction2<span style="color:#fff"> </span><span style="color:#0550ae">(</span>x<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#cf222e">if</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">&gt;</span><span style="color:#fff"> </span><span style="color:#0550ae">100</span><span style="color:#fff"> </span><span style="color:#cf222e">then</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">2</span><span style="color:#6a737d">*</span>x<span style="color:#6a737d">*</span>x<span style="color:#fff"> </span><span style="color:#6a737d">-</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">+</span><span style="color:#fff"> </span><span style="color:#0550ae">3</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#cf222e">else</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>x<span style="color:#6a737d">*</span>x<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- many types can be inferred from the context (x has no explicit type)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- separate statements on the same line by a semicolon ;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">def</span><span style="color:#fff"> </span>sampleFunction3<span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span><span style="color:#cf222e">if</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">&gt;</span><span style="color:#fff"> </span><span style="color:#0550ae">100</span><span style="color:#fff"> </span><span style="color:#cf222e">then</span><span style="color:#fff"> </span><span style="color:#cf222e">let</span><span style="color:#fff"> </span>z<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span><span style="color:#0550ae">2</span><span style="color:#6a737d">*</span>x<span style="color:#6a737d">*</span>x<span style="color:#6a737d">;</span><span style="color:#fff"> </span>z<span style="color:#fff"> </span><span style="color:#6a737d">-</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">+</span><span style="color:#fff"> </span><span style="color:#0550ae">3</span><span style="color:#fff"> </span><span style="color:#cf222e">else</span><span style="color:#fff"> </span>x<span style="color:#6a737d">*</span>x<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- show value</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#6a737d">#</span>eval<span style="color:#fff"> </span>sampleFunction2<span style="color:#fff"> </span><span style="color:#0550ae">2000</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- show type</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#6a737d">#</span>check<span style="color:#fff"> </span>sampleFunction2<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- function as a parameter</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">def</span><span style="color:#fff"> </span>twice<span style="color:#fff"> </span><span style="color:#0550ae">(</span>f<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#fff"> </span><span style="color:#6a737d">-&gt;</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">(</span>a<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span>f<span style="color:#fff"> </span><span style="color:#0550ae">(</span>f<span style="color:#fff"> </span>a<span style="color:#0550ae">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- a trivial proof by reflexivity</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a">-- passing anonymous functions (lambdas)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">theorem</span><span style="color:#fff"> </span>twiceAdd2<span style="color:#fff"> </span><span style="color:#0550ae">(</span>a<span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>Nat<span style="color:#0550ae">)</span><span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#fff"> </span>twice<span style="color:#fff"> </span><span style="color:#0550ae">(</span><span style="color:#cf222e">fun</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">=&gt;</span><span style="color:#fff"> </span>x<span style="color:#fff"> </span><span style="color:#6a737d">+</span><span style="color:#fff"> </span><span style="color:#0550ae">2</span><span style="color:#0550ae">)</span><span style="color:#fff"> </span>a<span style="color:#fff"> </span><span style="color:#6a737d">=</span><span style="color:#fff"> </span>a<span style="color:#fff"> </span><span style="color:#6a737d">+</span><span style="color:#fff"> </span><span style="color:#0550ae">4</span><span style="color:#fff"> </span><span style="color:#0550ae">:</span><span style="color:#6a737d">=</span><span style="color:#fff"> </span>rfl<span style="color:#fff">
+</span></span></span></code></pre></div><h3 id="enumerations">Enumerations</h3>
 <pre tabindex="0"><code>-- define enum
 inductive DayPhase where
   | morning   : DayPhase
@@ -341,7 +341,7 @@ The sources I used to create this page are:</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">13. April 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">19. June 2025</ul>
 </div>
 
 <script type="text/javascript">
