@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tractable Graph Structures in EFX Orientation</title>
+      <link>https://vaclavblazej.github.io/pub/2025/efx_orientation/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/pub/2025/efx_orientation/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Since its introduction, envy-freeness up to any good (EFX) has become a fundamental solution concept in fair division of indivisible goods. Its existence, however, remains elusive&amp;mdash;even for four agents with additive utility functions, it is unknown whether an EFX allocation always exists. Unsurprisingly, researchers have explored restricted settings to delineate tractable and intractable cases.&#xA;Christadolou, Fiat et al. [EC&#39;23] introduced the notion of EFX-orientation, where the agents form the vertices of a graph and the items correspond to edges, and an agent values only the items that are incident to it. The goal is to allocate items to one of the adjacent agents while satisfying the EFX condition.&#xA;This graph based setting has received considerable attention and has led to a growing body of work.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A brief survey on tools</title>
       <link>https://vaclavblazej.github.io/post/2025/pdr_survey/</link>
@@ -1243,9 +1250,9 @@
     </item>
     <item>
       <title>Graph swap matching</title>
-      <link>https://vaclavblazej.github.io/gsm/</link>
+      <link>https://vaclavblazej.github.io/gsm.html/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/gsm/</guid>
+      <guid>https://vaclavblazej.github.io/gsm.html/</guid>
       <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=../pub/2015/gsm/&#34; /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://vaclavblazej.github.io/pub/2015/gsm/&#34;&gt;content of this page was moved to /pub/2015/gsm, if you were not moved automatically click here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>

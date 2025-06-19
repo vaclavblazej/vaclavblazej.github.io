@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/graph-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tractable Graph Structures in EFX Orientation</title>
+      <link>https://vaclavblazej.github.io/pub/2025/efx_orientation/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/pub/2025/efx_orientation/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Since its introduction, envy-freeness up to any good (EFX) has become a fundamental solution concept in fair division of indivisible goods. Its existence, however, remains elusive&amp;mdash;even for four agents with additive utility functions, it is unknown whether an EFX allocation always exists. Unsurprisingly, researchers have explored restricted settings to delineate tractable and intractable cases.&#xA;Christadolou, Fiat et al. [EC&#39;23] introduced the notion of EFX-orientation, where the agents form the vertices of a graph and the items correspond to edges, and an agent values only the items that are incident to it. The goal is to allocate items to one of the adjacent agents while satisfying the EFX condition.&#xA;This graph based setting has received considerable attention and has led to a growing body of work.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Parameterized Perspective of All-Colors</title>
       <link>https://vaclavblazej.github.io/pub/2025/light_switching/</link>
