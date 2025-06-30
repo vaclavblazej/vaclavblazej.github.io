@@ -11,9 +11,9 @@
     <atom:link href="https://vaclavblazej.github.io/tags/graph-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parameterized Complexity of Directed Traveling Salesman Problem</title>
-      <link>https://vaclavblazej.github.io/pub/2025/light_switching/</link>
+      <link>https://vaclavblazej.github.io/pub/2025/directed_tsp/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/pub/2025/light_switching/</guid>
+      <guid>https://vaclavblazej.github.io/pub/2025/directed_tsp/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;The Directed Traveling Salesman Problem (DTSP) is a variant of the classical Traveling Salesman Problem in which the edges in the graph are directed and a vertex and edge can be visited multiple times.&#xA;The goal is to find a directed closed walk of minimum length (or total weight) that visits every vertex of the given graph at least once.&#xA;In a yet more general version, Directed Waypoint Routing Problem (DWRP), some vertices are marked as terminals and we are only required to visit all terminals.&#xA;Furthermore, each edge has its capacity bounding the number of times this edge can be used by a solution.&lt;/p&gt;</description>
     </item>
     <item>
@@ -25,9 +25,9 @@
     </item>
     <item>
       <title>A Parameterized Perspective of All-Colors</title>
-      <link>https://vaclavblazej.github.io/pub/2025/directed_tsp/</link>
+      <link>https://vaclavblazej.github.io/pub/2025/light_switching/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/pub/2025/directed_tsp/</guid>
+      <guid>https://vaclavblazej.github.io/pub/2025/light_switching/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;In this paper, we study the All-Colors problem: given a graph $G$ each of whose vertices is equipped with a button and assigned a color value from the set ${0,1, \dots, m-1}$ and an integer $k$, can we reach color value $1 \bmod m$ on every vertex of $G$ by pressing the button at most $k$ times.&#xA;The rule we follow is the following: if a button of a corresponding vertex is pressed one time, then the color values of the vertex and its neighbors are incremented by 1.&#xA;This problem is known to be NP-hard  on bipartite graphs even when $m = 2$ [Theor.~Comput.~Sci.,  2007], although linear time solvable on trees [SIAM J.~Comput., 2004].&#xA;In this work, we study this problem in the realm of parameterized complexity with respect to several parameters.&#xA;In particular, we show the followings for All-Colors.&#xA;W[1]-hard when parameterized by solution size $k$.&#xA;FPT algorithm parameterized by solution size + maximum degree.&#xA;FPT algorithm parameterized by treewidth or clique-width.&#xA;NP-hard on sub-cubic planar graphs.&lt;/p&gt;</description>
     </item>
     <item>

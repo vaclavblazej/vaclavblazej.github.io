@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>
         
-            Parameterized Complexity of Directed Traveling Salesman Problem - Homepage of Vašek
+            A Parameterized Perspective of All-Colors - Homepage of Vašek
         
     </title>
     <meta name="description" content="Homepage of Vašek">
@@ -118,7 +118,7 @@
                 
 
 
-    <time datetime="2025-06-30T00:00:00Z" class="post-list timeago">30.06.2025</time>
+    <time datetime="2025-01-30T00:00:00Z" class="post-list timeago">30.01.2025</time>
 
 
 
@@ -126,11 +126,11 @@
         
 
 
+    
+        <a class="box conference published" href="https://doi.org/10.1007/978-3-031-92932-8_15">CIAC 2025</a>
+    
 
 
-    
-        <a class="box other %!s(&lt;nil&gt;)" href="https://arxiv.org/abs/2506.22127">arXiv</a>
-    
 
 
     
@@ -150,27 +150,26 @@
 
 
             </p>
-            <h1>Parameterized Complexity of Directed Traveling Salesman Problem</h1>
+            <h1>A Parameterized Perspective of All-Colors</h1>
 
             
     
     with
-     Andreas Emil Feldmann, Foivos Fioravantes, Paweł Rzążewski, and Ondřej Suchý
+     Peter Strulo and Satyabrata Jana
 
 
         </div>
         <div class="post-content">
             <h2 id="abstract">Abstract</h2>
-<p>The Directed Traveling Salesman Problem (DTSP) is a variant of the classical Traveling Salesman Problem in which the edges in the graph are directed and a vertex and edge can be visited multiple times.
-The goal is to find a directed closed walk of minimum length (or total weight) that visits every vertex of the given graph at least once.
-In a yet more general version, Directed Waypoint Routing Problem (DWRP), some vertices are marked as terminals and we are only required to visit all terminals.
-Furthermore, each edge has its capacity bounding the number of times this edge can be used by a solution.</p>
-<p>While both problems (and many other variants of TSP) were extensively investigated, mostly from the approximation point of view, there are surprisingly few results concerning the parameterized complexity.
-Our starting point is the result of Marx et al. [APPROX/RANDOM 2016] who proved that DTSP is W[1]-hard parameterized by distance to pathwidth 3.
-In this paper we aim to initiate the systematic complexity study of variants of DTSP with respect to various, mostly structural, parameters.
-We show that DWRP is FPT parameterized by the solution size, the feedback edge number, and the vertex integrity of the underlying undirected graph.
-Furthermore, the problem is XP parameterized by treewidth.
-On the complexity side, we show that the problem is W[1]-hard parameterized by the distance to constant treedepth.</p>
+<p>In this paper, we study the All-Colors problem: given a graph $G$ each of whose vertices is equipped with a button and assigned a color value from the set ${0,1, \dots, m-1}$ and an integer $k$, can we reach color value $1 \bmod m$ on every vertex of $G$ by pressing the button at most $k$ times.
+The rule we follow is the following: if a button of a corresponding vertex is pressed one time, then the color values of the vertex and its neighbors are incremented by 1.
+This problem is known to be NP-hard  on bipartite graphs even when $m = 2$ [Theor.~Comput.~Sci.,  2007], although linear time solvable on trees [SIAM J.~Comput., 2004].
+In this work, we study this problem in the realm of parameterized complexity with respect to several parameters.
+In particular, we show the followings for All-Colors.
+W[1]-hard when parameterized by solution size $k$.
+FPT algorithm parameterized by solution size + maximum degree.
+FPT algorithm parameterized by treewidth or clique-width.
+NP-hard on sub-cubic planar graphs.</p>
 
         </div>
     </div>
