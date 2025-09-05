@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADFOCS 2025</title>
+      <link>https://vaclavblazej.github.io/post/2025/adfocs/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2025/adfocs/</guid>
+      <description>&lt;p&gt;From 17th of August till 23rd of August we (with officemates) participated at &lt;a href=&#34;https://www.mpi-inf.mpg.de/departments/algorithms-complexity/adfocs/2025/welcome&#34;target=&#34;_blank&#34;&gt;ADFOCS 2025&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/Saarbr%C3%BCcken&#34;target=&#34;_blank&#34;&gt;Saarbrücken&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.mpi-inf.mpg.de/home&#34;target=&#34;_blank&#34;&gt;MPI&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;We travelled Warsaw-Berlin-Saarbrücken via trains which was pretty comfortable, aside from the train cancellation that left us stranded in Mannheim at midnight.&#xA;Anyway, we departed on Sunday morning and arrived on Monday around 8:00.&#xA;We checked-in the hotel that on our arrival was just experiencing a fire-alarm, and then &amp;ndash; hoping that was all the excitement for the week &amp;ndash; travelled to MPI.&#xA;There, we got shorts and badges, that also worked as free-travel cards for busses.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A brief survey on tools</title>
       <link>https://vaclavblazej.github.io/post/2025/pdr_survey/</link>
