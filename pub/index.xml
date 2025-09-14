@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/pub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bridging Treewidth and Clique-width via Cograph-Modular-Treewidth</title>
+      <link>https://vaclavblazej.github.io/pub/2025/cmtw/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/pub/2025/cmtw/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Many classic graph problems &amp;ndash; such as Isomorphism, Max Cut, Chromatic Number, Edge Dominating Set and Hamiltonian Cycle &amp;ndash; are known to be polynomial-time solvable on cographs, fixed-parameter tractable (FPT) when parameterized by treewidth, yet W[1]-hard when parameterized by clique-width.&#xA;This reveals a sharp tractability gap between treewidth and clique-width.&#xA;In this work, we propose a new structural graph parameter, $\mathcal{C}$-modular-treewidth, which lies between treewidth and clique-width.&#xA;The parameter leverages modular decomposition and restricts modules to induce graphs from a fixed class $\mathcal{C}$ (e.g., cographs or edgeless graphs).&#xA;By exploiting true and false twins &amp;ndash; a hallmark of cograph-like structure &amp;ndash; our parameter allows the design of efficient algorithms for several hard problems beyond the reach of treewidth-based methods.&#xA;In this work, we show that $\mathcal{C}$-modular-treewidth enables efficient solutions under suitable choices of $\mathcal{C}$, opening a new pathway in the parameterized complexity landscape between treewidth and clique-width.&#xA;In particular we show that&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Parameterized Complexity of Directed Traveling Salesman Problem</title>
       <link>https://vaclavblazej.github.io/pub/2025/directed_tsp/</link>
