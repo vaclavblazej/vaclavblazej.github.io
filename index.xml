@@ -7,21 +7,28 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bridging Treewidth and Clique-width via Cograph-Modular-Treewidth</title>
-      <link>https://vaclavblazej.github.io/pub/2025/cmtw/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/pub/2025/cmtw/</guid>
-      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Many classic graph problems &amp;ndash; such as Isomorphism, Max Cut, Chromatic Number, Edge Dominating Set and Hamiltonian Cycle &amp;ndash; are known to be polynomial-time solvable on cographs, fixed-parameter tractable (FPT) when parameterized by treewidth, yet W[1]-hard when parameterized by clique-width.&#xA;This reveals a sharp tractability gap between treewidth and clique-width.&#xA;In this work, we propose a new structural graph parameter, $\mathcal{C}$-modular-treewidth, which lies between treewidth and clique-width.&#xA;The parameter leverages modular decomposition and restricts modules to induce graphs from a fixed class $\mathcal{C}$ (e.g., cographs or edgeless graphs).&#xA;By exploiting true and false twins &amp;ndash; a hallmark of cograph-like structure &amp;ndash; our parameter allows the design of efficient algorithms for several hard problems beyond the reach of treewidth-based methods.&#xA;In this work, we show that $\mathcal{C}$-modular-treewidth enables efficient solutions under suitable choices of $\mathcal{C}$, opening a new pathway in the parameterized complexity landscape between treewidth and clique-width.&#xA;In particular we show that&lt;/p&gt;</description>
-    </item>
     <item>
       <title>ADFOCS 2025</title>
       <link>https://vaclavblazej.github.io/post/2025/adfocs/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/post/2025/adfocs/</guid>
       <description>&lt;p&gt;From 17th of August till 23rd of August we (with officemates) participated at &lt;a href=&#34;https://www.mpi-inf.mpg.de/departments/algorithms-complexity/adfocs/2025/welcome&#34;target=&#34;_blank&#34;&gt;ADFOCS 2025&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/Saarbr%C3%BCcken&#34;target=&#34;_blank&#34;&gt;Saarbrücken&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.mpi-inf.mpg.de/home&#34;target=&#34;_blank&#34;&gt;MPI&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;We travelled Warsaw-Berlin-Saarbrücken via trains which was pretty comfortable, aside from the train cancellation that left us stranded in Mannheim at midnight.&#xA;Anyway, we departed on Sunday morning and arrived on Monday around 8:00.&#xA;We checked-in the hotel that on our arrival was just experiencing a fire-alarm, and then &amp;ndash; hoping that was all the excitement for the week &amp;ndash; travelled to MPI.&#xA;There, we got shorts and badges, that also worked as free-travel cards for busses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On Approximate MMS Allocations on Restricted Graph Classes</title>
+      <link>https://vaclavblazej.github.io/pub/2025/mms/</link>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/pub/2025/mms/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;We study the problem of fair division of a set of indivisible goods with connectivity constraints.&#xA;Specifically, we assume that the goods are represented as vertices of a connected graph, and sets of goods allocated to the agents are connected subgraphs of this graph.&#xA;We focus on the widely-studied maximin share criterion of fairness.&#xA;It has been shown that an allocation satisfying this criterion may not exist even without connectivity constraints, i.e., if the graph of goods is complete.&#xA;In view of this, it is natural to seek approximate allocations that guarantee each agent a connected bundle of goods with value at least a constant fraction of the maximin share value to the agent.&#xA;It is known that for some classes of graphs, such as complete graphs, cycles, and $d$-claw-free graphs for any fixed $d$, such approximate allocations indeed exist.&#xA;However, it is an open problem whether they exist for the class of all graphs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bridging Treewidth and Clique-width via Cograph-Modular-Treewidth</title>
+      <link>https://vaclavblazej.github.io/pub/2025/cmtw/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/pub/2025/cmtw/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Many classic graph problems &amp;ndash; such as Isomorphism, Max Cut, Chromatic Number, Edge Dominating Set and Hamiltonian Cycle &amp;ndash; are known to be polynomial-time solvable on cographs, fixed-parameter tractable (FPT) when parameterized by treewidth, yet W[1]-hard when parameterized by clique-width.&#xA;This reveals a sharp tractability gap between treewidth and clique-width.&#xA;In this work, we propose a new structural graph parameter, $\mathcal{C}$-modular-treewidth, which lies between treewidth and clique-width.&#xA;The parameter leverages modular decomposition and restricts modules to induce graphs from a fixed class $\mathcal{C}$ (e.g., cographs or edgeless graphs).&#xA;By exploiting true and false twins &amp;ndash; a hallmark of cograph-like structure &amp;ndash; our parameter allows the design of efficient algorithms for several hard problems beyond the reach of treewidth-based methods.&#xA;In this work, we show that $\mathcal{C}$-modular-treewidth enables efficient solutions under suitable choices of $\mathcal{C}$, opening a new pathway in the parameterized complexity landscape between treewidth and clique-width.&#xA;In particular we show that&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parameterized Complexity of Directed Traveling Salesman Problem</title>

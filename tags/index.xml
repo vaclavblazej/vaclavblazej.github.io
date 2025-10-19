@@ -7,21 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Parameterized Complexity</title>
-      <link>https://vaclavblazej.github.io/tags/parameterized-complexity/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/tags/parameterized-complexity/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Trip</title>
       <link>https://vaclavblazej.github.io/tags/trip/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/tags/trip/</guid>
       <description>&lt;p&gt;Vycestování mimo běžné lokace&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parameterized Complexity</title>
+      <link>https://vaclavblazej.github.io/tags/parameterized-complexity/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/parameterized-complexity/</guid>
+      <description></description>
     </item>
     <item>
       <title>Graph Theory</title>
