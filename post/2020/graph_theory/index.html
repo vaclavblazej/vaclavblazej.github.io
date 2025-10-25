@@ -324,7 +324,7 @@ Dekompozice grafu na 2-souvislé komponenty lze udělat v lineárním čáse pom
 Artikulace je vrchol, který je ve více jak jedné 2-souvislé komponentě.
 Most je každá 2-souvislá komponenta obsahující 2 vrcholy.</p>
 <p>Více o k-souvislosti v oddílu o <a href="#flow">tocích</a>.</p>
-<h2 id="hahahugoshortcode114s3hbhb-barevnost"><span><a name="coloring"></a><a href="#coloring">#</a></span>
+<h2 id="hahahugoshortcode115s3hbhb-barevnost"><span><a name="coloring"></a><a href="#coloring">#</a></span>
  Barevnost</h2>
 <p>$k$-obarvení grafu je funkce $c:V(G) \rightarrow {1,\dots,k}$, tj. obarvení vrcholů $k$ barvami, takové, že ${u,v}\in E(G) \implies c(u) \ne c(v)$.
 Barevnost grafu $\chi(G) = \min k$ pro které existuje $k$-obarvení grafu $G$.</p>
@@ -365,7 +365,7 @@ Pokud nějaká komponenta je klika či lichá kružnice, tak pozorujeme, že spo
 </div>
 <p><strong>Hadwigerova doměnka:</strong> Pokud graf nemá $K_t$ jako minor, pak jeho barevnost je ostře menší než $t$.</p>
 <p>Hadwigerova doměnka je dokázaná pro $1 \le t \le 6$.</p>
-<h2 id="hahahugoshortcode114s6hbhb-rovinné-grafy"><span><a name="planar"></a><a href="#planar">#</a></span>
+<h2 id="hahahugoshortcode115s6hbhb-rovinné-grafy"><span><a name="planar"></a><a href="#planar">#</a></span>
  Rovinné grafy</h2>
 <p>Kuratowského věta</p>
 <p>Věta o pěti barvách viz výše v části o barvenosti.</p>
@@ -525,7 +525,7 @@ Pokud se něco změní v jedné další iteraci, tak víme, že graf obsahuje z�
 Časová složitost je $O(n \cdot m)$.</p>
 </div>
 <p>Najít nejkratší cestu v libovolně ohodnoceném grafu je NP-úplné (všude vezměme ohodnocení -1 a nejlevnější=nejdelší cesta tj. uměli bychom hledat Hamiltonovskou cestu).</p>
-<h2 id="hahahugoshortcode114s13hbhb-toky-v-sítích"><span><a name="flow"></a><a href="#flow">#</a></span>
+<h2 id="hahahugoshortcode115s13hbhb-toky-v-sítích"><span><a name="flow"></a><a href="#flow">#</a></span>
  Toky v sítích</h2>
 <p><strong>Síť</strong> je čtveřice (G,z,s,c) kde G=(V,E) je orientovaný graf, z a s jsou zdroj a stok, a c je funkce kapacity c:E -&gt; R+0.</p>
 <p><strong>Tok</strong> v síti je každá funkce $f:E \rightarrow \mathbb{R}^+_0$, která splňuje $0 \le f(e) \le c(e)$ (tok zkrz hranu je v mezích kapacity), a pro každý vrchol u mimo zdroj a stok platí $\sum f(x,u) = \sum f(u,y)$ (první Kirchhoffův zákon).</p>
@@ -614,7 +614,7 @@ Toto zopakujeme nejvýše N-krát, a dostaneme maximální párování.</p>
 </li>
 <li>Počet zakořeněných stromů (Catalanovo číslo, tj. $({1 \over {n+1}}) \cdot {2n \choose n}$).</li>
 </ul>
-<h3 id="hahahugoshortcode114s17hbhb-catalanovo-číslo"><span><a name="catalan"></a><a href="#catalan">#</a></span>
+<h3 id="hahahugoshortcode115s17hbhb-catalanovo-číslo"><span><a name="catalan"></a><a href="#catalan">#</a></span>
  Catalanovo číslo</h3>
 <p><a href="https://en.wikipedia.org/wiki/Catalan_number"target="_blank">Catalanovo číslo<span style="white-space: nowrap;">&thinsp;↗</span></a> $C_n$ je rovno počtu</p>
 <ul>
@@ -689,7 +689,7 @@ $$
 </div>
 <hr>
 <h1 id="teorie-grafů">Teorie grafů</h1>
-<h2 id="hahahugoshortcode114s19hbhb-intervalové-grafy"><span><a name="interval"></a><a href="#interval">#</a></span>
+<h2 id="hahahugoshortcode115s19hbhb-intervalové-grafy"><span><a name="interval"></a><a href="#interval">#</a></span>
  Intervalové grafy</h2>
 <p>Graf G je <strong>Intervalový graf</strong> (<a href="https://www.graphclasses.org/classes/gc_234.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a>)
 pokud existuje množina reálných intervalů, které reprezentují vrcholy, takových, že dva intervaly mají neprázdný průnik právě tehdy, když příslušné vrcholy jsou spojené hranou.</p>
@@ -701,7 +701,7 @@ pokud existuje množina reálných intervalů, které reprezentují vrcholy, tak
 <p>Rozpoznání Intervalových grafů lze udělat v lineárním čase.
 Původní postup to řešil pomocí p,q-stromů.
 Novější postup to řeší za pomoci 6 iterací LexBFS.</p>
-<h2 id="hahahugoshortcode114s21hbhb-chordální-grafy"><span><a name="chordal"></a><a href="#chordal">#</a></span>
+<h2 id="hahahugoshortcode115s21hbhb-chordální-grafy"><span><a name="chordal"></a><a href="#chordal">#</a></span>
  Chordální grafy</h2>
 <p>Graf je <strong>chordální graf</strong> (<a href="https://www.graphclasses.org/classes/gc_32.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a>)
 pokud neobsahuje indukovanou kružnici velikosti alespoň 4. Jinak řečeno, každá kružnice má chordu.</p>
@@ -736,7 +736,7 @@ Jinak lze postupovat indukcí nad počtem vrcholů, rozdělením grafu podle vrc
 A je klika, tak tam je z indukce max jeden, a druhý vrchol zůstává simpliciální i po spojení.
  <span style="float: right">&#9632;</span>
 </div>
-<h2 id="hahahugoshortcode114s25hbhb-perfektní-grafy"><span><a name="perfect"></a><a href="#perfect">#</a></span>
+<h2 id="hahahugoshortcode115s25hbhb-perfektní-grafy"><span><a name="perfect"></a><a href="#perfect">#</a></span>
  Perfektní grafy</h2>
 <p>Erdős ukázal, že existují grafy s velikým girth (obvod) a velikou barevností &ndash; u takových grafů je barevnost v jistém smyslu globální vlastnost, protože lokálně jsou tyto grafy podobné stromům.
 Tento výsledek otevřel otázku o grafech, kde je barevnost daná pouze lokálními vlastnostmi.</p>
@@ -937,7 +937,7 @@ Každý bag se stane klikou, a z G je chordální nadgraf H, kterému se nezvý�
 <p>Cestová dekompozice je stromová dekompozice, kde graf dekompozice je cesta, takže je stejná nebo větší.</p>
 <p>Husté grafy mohou mít omezenou klikovou šířku, ale obecně nemají omezenou stromovou šířku.
 Konkrétně, pokud má třída grafů omezenou klikovou šířku, tak buď má omezenou stromovou šířku, nebo každý bipartitní graf je podgrafem nějakého grafu z této třídy.</p>
-<h2 id="hahahugoshortcode114s29hbhb-algoritmy-pro-grafy-s-omezenou-stromovou-šířkou"><span><a name="twalgo"></a><a href="#twalgo">#</a></span>
+<h2 id="hahahugoshortcode115s29hbhb-algoritmy-pro-grafy-s-omezenou-stromovou-šířkou"><span><a name="twalgo"></a><a href="#twalgo">#</a></span>
  Algoritmy pro grafy s omezenou stromovou šířkou</h2>
 <p>Běžně se jedná o dynamiku nad bagy.
 Navrhujeme DP pro hezkou dekompozici, tj. zakořeněný binární strom, kde přechod v dekompozici se skládá pouze z přidávání a odebírání vrcholů, a všechny větvící vrcholy nemění obsah bagu.
@@ -954,7 +954,7 @@ Stačí navrhnout pouze 3 druhy operace:</p>
 <li>Steinerův strom $k^{O(k)} n$ &ndash; dek. má introduce edge node; přidá do každého bagu jeden z terminálů, aby měl neprázdné mezistavy; stav bagu: connected komponenty ve Steinerově lese (části řešení); introduce node vytvoří komponentu pokud je vrchol terminál, introduce edge potencielně spojí komponenty, forget node nechá nejlepší ze sloučených dělení po odebrání vrcholu, join musí dát bacha by nenadělal cykly (nesmí spojit do kruhu ani prvky s dvou komponent, tak ani komponenty dohromady)</li>
 <li>feedback vertex set, hamiltonian path &amp; cycle, chromatic number, cycle packing, connected VC DS a FVS</li>
 </ul>
-<h3 id="hahahugoshortcode114s30hbhb-monadická-logika-druhého-řádu"><span><a name="mso2"></a><a href="#mso2">#</a></span>
+<h3 id="hahahugoshortcode115s30hbhb-monadická-logika-druhého-řádu"><span><a name="mso2"></a><a href="#mso2">#</a></span>
  Monadická logika druhého řádu</h3>
 <p>Pojem <em>monadická logika druhého řádu</em> popisuje <a href="https://en.wikipedia.org/wiki/First-order_logic"target="_blank">logiku<span style="white-space: nowrap;">&thinsp;↗</span></a> rozšířenou následovně.</p>
 <ul>
@@ -1150,7 +1150,7 @@ Bipartitní graf vždy má stabilní párování &ndash; to koresponduje s jádr
 Takže z každé nevybrané hrany v $E(G)$ vede v $E(H)$ hrana do vybrané hrany, a párování je nezávislá množina vrcholů z $V(H)$, což je definice jádra.
 <span style="float: right">■</span></p>
 </div>
-<h2 id="hahahugoshortcode114s42hbhb-vizualizace-grafů"><span><a name="visualization"></a><a href="#visualization">#</a></span>
+<h2 id="hahahugoshortcode115s42hbhb-vizualizace-grafů"><span><a name="visualization"></a><a href="#visualization">#</a></span>
  Vizualizace grafů</h2>
 <p>Obv. můžeme nakreslit do roviny, vrcholy jako body a hrany jako křivky (mapování intervalu [0,1] do 2d tak, že 0 je výchozí vrchol a 1 je cílový).
 Pak chceme aby se křivky nedotýkaly bodů jinde než v 0 či 1, aby vrcholy měli unikátní body, a aby se křivky nedotýkaly, pokud se v onom bodě neprotnou (degenerované příady).</p>
@@ -1196,7 +1196,7 @@ Do těch například spadá</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">19. October 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">25. October 2025</ul>
 </div>
 
 <script type="text/javascript">
