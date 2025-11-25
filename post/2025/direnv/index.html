@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Project specific scripts - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/">Material</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Research</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2025-11-25T00:00:00Z" class="post-list timeago">25.11.2025</time>
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/howto">howto</a> <a href="https://vaclavblazej.github.io/tags/tool">tool</a> <a href="https://vaclavblazej.github.io/tags/shell">shell</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Project specific scripts</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>To setup custom scripts to be available only when you are within any subdirectory of your project, do the following:</p>
+<ol>
+<li>install <code>direnv</code> and <code>git</code></li>
+<li>add <code>.envrc</code> file to the root directory of your project with this content:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#6639ba">export</span> <span style="color:#953800">PROJECT_ROOT</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>git rev-parse --show-toplevel 2&gt;/dev/null<span style="color:#cf222e">)</span>
+</span></span><span style="display:flex;"><span>PATH_add <span style="color:#0a3069">&#34;</span><span style="color:#953800">$PROJECT_ROOT</span><span style="color:#0a3069">/.env/scripts&#34;</span>
+</span></span></code></pre></div><ol start="3">
+<li>run <code>direnv allow</code> in the root directory of your project</li>
+<li>create folder <code>.env/scripts</code> and add any scripts you want available there &ndash; make them executable</li>
+</ol>
+<p>Already now, if you have <code>.env/scripts/test</code> by typing <code>test</code> in any subdirectory of the project the <code>test</code> script should run.</p>
+<h3 id="scoping-the-scripts-into-a-custom-command">Scoping the scripts into a custom command</h3>
+<p>If you don&rsquo;t want the scripts exposed directly, not to pollute your <code>PATH</code>, do the following instead:</p>
+<ol>
+<li>install <code>direnv</code> and <code>git</code></li>
+<li>add <code>.envrc</code> file to the root directory of your project with this content:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#6639ba">export</span> <span style="color:#953800">PROJECT_ROOT</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>git rev-parse --show-toplevel 2&gt;/dev/null<span style="color:#cf222e">)</span>
+</span></span></code></pre></div><ol start="3">
+<li>run <code>direnv allow</code> in the root directory of your project</li>
+<li>create <code>~/bin/</code> folder</li>
+<li>add <code>export PATH=&quot;~/bin/:$PATH&quot;</code> to the end of your <code>.bashrc</code></li>
+<li>create an executable file <code>~/bin/cmd</code> with the following content</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#6639ba">set</span> -eo pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#953800">SCRIPT_FOLDER</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$PROJECT_ROOT</span><span style="color:#0a3069">/.env/scripts/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>show-help<span style="color:#0550ae">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span> <span style="color:#0a3069">&#34;usage: </span><span style="color:#cf222e">$(</span>basename <span style="color:#0a3069">&#34;</span><span style="color:#953800">$0</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069"> &lt;command&gt; [&lt;args&gt;]\n&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#953800">items</span><span style="color:#0550ae">=()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> <span style="color:#0550ae">[[</span> -d <span style="color:#0a3069">&#34;</span><span style="color:#953800">$SCRIPT_FOLDER</span><span style="color:#0a3069">&#34;</span> <span style="color:#0550ae">]]</span><span style="color:#1f2328">;</span> <span style="color:#cf222e">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">cd</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$SCRIPT_FOLDER</span><span style="color:#0a3069">&#34;</span> <span style="color:#0550ae">||</span> <span style="color:#6639ba">exit</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#953800">script_list</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>find . -type f <span style="color:#1f2328">|</span> sed <span style="color:#0a3069">&#39;s|^\./||&#39;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">while</span> <span style="color:#953800">IFS</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#39;&#39;</span> <span style="color:#6639ba">read</span> -r line<span style="color:#1f2328">;</span> <span style="color:#cf222e">do</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#953800">items</span><span style="color:#0550ae">+=(</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$line</span><span style="color:#0a3069">&#34;</span><span style="color:#0550ae">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">done</span> <span style="color:#0550ae">&lt;&lt;&lt;</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$script_list</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span> <span style="color:#0a3069">&#34;   %s\n&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">items</span><span style="color:#1f2328">[@]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">else</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span> <span style="color:#0a3069">&#34;\nfirst change directory to a project&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#953800">command</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$1</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">case</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$command</span><span style="color:#0a3069">&#34;</span> in
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;</span> <span style="color:#1f2328">|</span> <span style="color:#0a3069">&#34;-h&#34;</span> <span style="color:#1f2328">|</span> <span style="color:#0a3069">&#34;--help&#34;</span> <span style="color:#1f2328">|</span> <span style="color:#0a3069">&#34;help&#34;</span><span style="color:#0550ae">)</span>
+</span></span><span style="display:flex;"><span>        show-help
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">;;</span>
+</span></span><span style="display:flex;"><span>    *<span style="color:#0550ae">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">shift</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">[[</span> -f <span style="color:#0a3069">&#34;</span><span style="color:#953800">$SCRIPT_FOLDER</span><span style="color:#0a3069">/</span><span style="color:#953800">$command</span><span style="color:#0a3069">&#34;</span> <span style="color:#0550ae">]]</span><span style="color:#1f2328">;</span> <span style="color:#cf222e">then</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#34;</span><span style="color:#953800">$SCRIPT_FOLDER</span><span style="color:#0a3069">/</span><span style="color:#953800">$command</span><span style="color:#0a3069">&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#953800">$@</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">echo</span> <span style="color:#0a3069">&#34;command not found: </span><span style="color:#953800">$command</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">exit</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">fi</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">;;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">esac</span>
+</span></span></code></pre></div><p>After your source <code>.bashrc</code>, when you run <code>cmd</code> from subfolder of your project the command prints whatever scripts you have in <code>.env/scripts</code>.
+And, for example, if you run <code>cmd test [&lt;pars&gt;]</code> then the <code>.env/test [&lt;pars&gt;]</code> is invoked.</p>
+<h2 id="a-more-detailed-description">A more detailed description</h2>
+<p>The setup and the description below is meant for Linux machines.</p>
+<p>Note that <code>.envrc</code> and <code>.env</code> are by hidden and will not be shown by default (use <code>ls -a</code> or enable hidden files in your file explorer).</p>
+<h3 id="direnv"><code>direnv</code></h3>
+<p><code>direnv</code> is a utility that changes your environment based on the subdirectory where you are.
+You will find it within your package manager (<code>apt</code>, <code>pacman</code>, etc.).
+We use this to detect the root folder of the project.
+This utility detects whether a folder (or any ancestor folder) contains <code>.envrc</code> file, and executes it if so &ndash; however, to prevent unwanted invocation the user needs to allow every particular <code>.envrc</code> with <code>direnv allow</code>
+Whenever the <code>.envrc</code> file changes <code>direnv allow</code> needs to be re-run.</p>
+<p>The commands that should be used within the <code>.env</code> script are meant NOT to be permanent.
+If you leave your project, whatever the script changed should be reverted.
+For this to work you need to use a set of revertible commands that <code>direnv</code> defines, e.g. <code>PATH_add</code>, <a href="https://direnv.net/man/direnv-stdlib.1.html"target="_blank">see its documentation<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<h3 id="custom-scripts">Custom scripts</h3>
+<p>Create your project scripts within <code>.env/scripts/</code>, you may rename this to anything.
+I chose <code>.env</code> as it makes sense with <code>.envrc</code> setup.
+Note that:</p>
+<ul>
+<li>to make your scripts executable run <code>chmod u+x &lt;script&gt;</code></li>
+<li>omit extensions like <code>.sh</code> as those will be the necessary part of the command</li>
+<li>setup command that runs your script using shebang: <code>#!/usr/bin/env bash</code> on the first line of the script</li>
+</ul>
+<p>Note that invoking a script does not change your folder &ndash; the script is run from your current directory.
+You may use <code>cd &quot;$PROJECT_ROOT&quot;</code> for script to jump to the root of the project.
+Alternately, if you want the scripts to be usable by users that do not have <code>direnv</code> then use <code>cd &quot;$(dirname &quot;$0&quot;)/../..&quot; || exit</code> instead.</p>
+<h3 id="cmd"><code>cmd</code></h3>
+<p>The instructions simply add the new script to be always available.
+Its functionality is based on the <code>PROJECT_ROOT</code> variable that that is set up by <code>direnv</code>.</p>
+<p>It would be nice to improve <code>cmd help</code> so that it prints descriptions of each command &ndash; which for now, I keep as comment on the second line of the file.</p>
+<h2 id="references">References</h2>
+<p>This setup is inspired by <a href="https://olivernguyen.io/w/direnv.run/"target="_blank">Upgrade your scripts using &lsquo;direnv&rsquo; and &lsquo;run&rsquo; script<span style="white-space: nowrap;">&thinsp;↗</span></a> post by Oliver Nguyen.
+His setup extracts commands from functions of a single shell script.
+I wanted this simple functionality for too many years, that post is quite long, but will give you a list of reasons to set this up.</p>
+<p>All the code in this post is dedicated to the public domain, use it without any restrictions but without any warranty.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2025
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">25. November 2025</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
