@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            This website - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2021-01-23T00:00:00Z" class="post-list timeago">23.01.2021</time>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>This website</h1>
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>The website similar to this current form was created approximately on <em>2015-11-06</em> and gradually expanded into the thing it is now.
+First, it was needed for publishing additional research data and information about courses I tought.</p>
+<h2 id="build-system">Build system</h2>
+<p>All posts are written in markdown (with bits in html) and converted to final html with use of <a href="https://gohugo.io/"target="_blank"><em>hugo</em><span style="white-space: nowrap;">&thinsp;↗</span></a>.
+Hugo makes the process of creating static websites pretty smooth.
+The structure of websites reflects the folder structure in the <code>content</code> folder.
+A page is created for every:</p>
+<ul>
+<li><code>example.md</code> file on address <code>example</code> (and no subsites will be created!),</li>
+<li><code>about/index.md</code> file on address <code>about</code> (and no subsites will be created!),</li>
+<li>and finally, <code>path/_index.md</code> on address <code>path</code>.</li>
+</ul>
+<p>This caveat burned me several times &ndash; the first two ways <em>cannot</em> be used for directories which have site subdirectories, as they represent the leafs in website&rsquo;s structure.</p>
+<p>Example structure quite:</p>
+<pre tabindex="0"><code>content/
+├── _index.md
+├── about
+│   └── index.md
+├── example.md
+└── images
+    ├── background
+    │   └── pic.png
+    └── anim.gif
+</code></pre><h2 id="color-scheme">Color scheme</h2>
+<img style="float: right;" src="colors.png">
+<ul>
+<li>primary colors
+<ul>
+<li><font color="#ff6b00"><tt>main: #ff6b00</tt></font></li>
+<li><font color="#923d00"><tt>dark (link): #923d00</tt></font></li>
+<li><span style="background-color:#f6e0bc !important"><font color="#000"><tt>medium (bg): #f6e0bc</tt></font></span></li>
+<li><span style="background-color:#f8eede !important"><font color="#000"><tt>light (default bg): #f8eede</tt></font></span></li>
+</ul>
+</li>
+<li>secondary colors
+<ul>
+<li><font color="#37f7fa"><tt>main: #37f7fa</tt></font></li>
+<li><font color="#484848"><tt>dark (font): #484848</tt></font></li>
+<li><span style="background-color:#b0b0b0 !important"><font color="#000"><tt>medium (bg): #b0b0b0</tt></font></span></li>
+<li><span style="background-color:#f0f0f0 !important"><font color="#000"><tt>light (code bg): #f0f0f0</tt></font></span></li>
+</ul>
+</li>
+</ul>
+<p>This scheme is used in <code>css</code> files across the site.
+Code is colored using <code>highlight.js</code> with custom style.</p>
+<h2 id="elements">Elements</h2>
+<h3 id="markdown">Markdown</h3>
+<p>All markdown elements are as usual:</p>
+<ul>
+<li><a href="#" title="tooltip">link</a> using [link](address &ldquo;tooltip&rdquo;)</li>
+<li><img src="#" alt="picture" title="tooltip"> using ![picture](address &ldquo;tooltip&rdquo;)</li>
+<li><em>*italic*</em></li>
+<li><strong>**bold**</strong></li>
+<li>~~~~cross~~~~</li>
+<li><code>code</code> using backticks `</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>code block is enclosed in three backticks `
+</span></span></code></pre></div><h3 id="expandbox">Expandbox</h3>
+<div class="expandbox">
+<div class="expand-container hidden" id="expand_box_id-box">
+<button class="expand-title" id="expand_box_id-control">➤ <b>Code of the expandbox element</b></button>
+<div class="expand-content">
+<p>Easy enough, make js function to toggle style and bind it to onclick.</p>
+<pre tabindex="0"><code>function toggleDiv(divID) {
+    var box = document.getElementById(divID);
+    if(box.classList.contains(&#34;hidden&#34;)){
+        box.classList.remove(&#34;hidden&#34;);
+    }else{
+        box.classList.add(&#34;hidden&#34;);
+    }
+}
+function setupToggleDiv(divID, contolID) {
+    document.getElementById(contolID).onclick = function (){
+        toggleDiv(divID)
+    };
+}
+</code></pre><p>The html setup is like this</p>
+<pre tabindex="0"><code>&lt;div class=&#34;expandbox&#34;&gt;
+&lt;div class=&#34;expand-container hidden&#34; id=&#34;{{.Get &#34;id&#34;}}-box&#34;&gt;
+&lt;div class=&#34;expand-title&#34; id=&#34;{{.Get &#34;id&#34;}}-control&#34;&gt;➤ **{{.Get &#34;title&#34;}}**&lt;/div&gt;
+&lt;div class=&#34;expand-content&#34;&gt;
+{{ .Inner }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;setupToggleDiv({{.Get &#34;id&#34;}} + &#34;-box&#34;, {{.Get &#34;id&#34;}} + &#34;-control&#34;)&lt;/script&gt;
+</code></pre><p>And last, the <code>css</code> is roughly like this</p>
+<pre tabindex="0"><code>.expandbox .expand-content {
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.3s ease-out;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 1px;
+	transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+}
+.expandbox .expand-container.hidden .expand-content {
+	font-size: 0;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s;
+}
+</code></pre></div>
+</div>
+</div>
+<script>setupToggleDiv("expand_box_id" + "-box", "expand_box_id" + "-control")</script>
+<p>Click the element to expand its content.</p>
+<div class="expandbox">
+<div class="expand-container hidden" id="test_id-box">
+<button class="expand-title" id="test_id-control">➤ <b>Title example (click here)</b></button>
+<div class="expand-content">
+<p>Rerum molestiae necessitatibus perspiciatis autem dolores ipsam quibusdam ut. Velit minima magni qui. Beatae ad velit illum reiciendis explicabo. Animi nihil aut voluptatibus laborum id facilis aut qui. Qui iste architecto deleniti cupiditate officiis.
+At voluptas quo tempore maiores sed in magni. Odit molestiae aliquid enim id. Aspernatur quia qui officiis ut a eveniet eligendi. Unde saepe beatae fugiat corrupti voluptate non.</p>
+</div>
+</div>
+</div>
+<script>setupToggleDiv("test_id" + "-box", "test_id" + "-control")</script>
+<ul>
+<li>This expandbox is based on the method posted on <a href="https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css"target="_blank">stack overflow<span style="white-space: nowrap;">&thinsp;↗</span></a> by Steven Vachon.</li>
+</ul>
+<!--
+### Images
+
+Changing picture can be either created as `.gif` or via `.js`.
+-->
+<h3 id="webs-with-nice-elements">Webs with nice elements</h3>
+<ul>
+<li><a href="http://www.mattmakesgames.com/"target="_blank">Matt Makes Games<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="http://noelberry.ca/"target="_blank">Noel Berry<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h2 id="hugo">Hugo</h2>
+<p>Debugging</p>
+<pre tabindex="0"><code>{{ printf &#34;%#v&#34; . }}
+</code></pre><p>Passign arguments to partials</p>
+<pre tabindex="0"><code>{{ partial &#34;header&#34; (dict &#34;first&#34; firstValue &#34;second&#34; secondValue) }}
+</code></pre><p>Kontext</p>
+<pre tabindex="0"><code>{{ with .Page }}
+    {{/* The context, &#34;.&#34;, is now the page */}}
+{{ end }}
+</code></pre><pre tabindex="0"><code>{{ range .Pages }}
+    {{/* The context, &#34;.&#34;, is now each one of the pages as it goes through the loop */}}
+{{ end }}
+</code></pre><h1 id="sources">Sources</h1>
+<ul>
+<li><a href="https://ruddra.com/hugo-add-toc-anywhere/"target="_blank">https://ruddra.com/hugo-add-toc-anywhere/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2021
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">9. December 2025</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

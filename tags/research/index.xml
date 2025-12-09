@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Hat chromatic number of graphs</title>
-      <link>https://vaclavblazej.github.io/material/science/res/bears/</link>
+      <link>https://vaclavblazej.github.io/garden/hat-chromatic-number/</link>
       <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/science/res/bears/</guid>
+      <guid>https://vaclavblazej.github.io/garden/hat-chromatic-number/</guid>
       <description>&lt;p&gt;List of sources used to create this summary can be found at the bottom of the page.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h2&gt;&#xA;&lt;p&gt;We are given a graph $G$ and number of colors $K$.&#xA;Vertices of $G$ are occupied by players (called Bears) which can see all their neighbors but not themselves.&#xA;Each of them will be given a hat in one of $K$ colors (multiple Bears can have the same color) and their task is to come up with a collective strategy such that at least one of them will guess his hat correctly.&#xA;The guess may depend only on hat colors of Bear&amp;rsquo;s neighbors.&#xA;The coloring of $G$ is chosen by an evil adversary (called Demon) who knows bears&amp;rsquo; strategy.&#xA;If the Bears are guaranteed that at least one correct guess in each coloring, then their strategy wins.&lt;/p&gt;</description>
     </item>
     <item>
@@ -102,10 +102,10 @@
     </item>
     <item>
       <title>Lower bound graphs for known Ramsey numbers</title>
-      <link>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</link>
+      <link>https://vaclavblazej.github.io/garden/ramsey-numbers/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</guid>
-      <description>&lt;h2 id=&#34;graphs-which-do-not-contain-a-monochromatic-k_4&#34;&gt;Graphs, which do not contain a monochromatic K_4&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/8.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/9.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/10.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/11.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/12.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/13.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/14.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/15.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/16.svg&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../img/17.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://vaclavblazej.github.io/garden/ramsey-numbers/</guid>
+      <description>&lt;h2 id=&#34;graphs-which-do-not-contain-a-monochromatic-k_4&#34;&gt;Graphs, which do not contain a monochromatic $K_4$&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/8.svg&#34; alt=&#34;K8&#34;&gt;&#xA;&lt;img src=&#34;../img/9.svg&#34; alt=&#34;K9&#34;&gt;&#xA;&lt;img src=&#34;../img/10.svg&#34; alt=&#34;K10&#34;&gt;&#xA;&lt;img src=&#34;../img/11.svg&#34; alt=&#34;K11&#34;&gt;&#xA;&lt;img src=&#34;../img/12.svg&#34; alt=&#34;K12&#34;&gt;&#xA;&lt;img src=&#34;../img/13.svg&#34; alt=&#34;K13&#34;&gt;&#xA;&lt;img src=&#34;../img/14.svg&#34; alt=&#34;K14&#34;&gt;&#xA;&lt;img src=&#34;../img/15.svg&#34; alt=&#34;K15&#34;&gt;&#xA;&lt;img src=&#34;../img/16.svg&#34; alt=&#34;K16&#34;&gt;&#xA;&lt;img src=&#34;../img/17.svg&#34; alt=&#34;K17&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>London Stringology Days</title>

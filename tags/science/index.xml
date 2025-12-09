@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Review response</title>
-      <link>https://vaclavblazej.github.io/material/science/review_response/</link>
+      <link>https://vaclavblazej.github.io/garden/review-response/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/science/review_response/</guid>
+      <guid>https://vaclavblazej.github.io/garden/review-response/</guid>
       <description>&lt;p&gt;The following is a template for responsponding to the revier&amp;rsquo;s comments obtained from a paper journal submission.&#xA;Reacting to a critique of the &lt;a href=&#34;https://vaclavblazej.github.io/post/2023/review_response/&#34;&gt;previous template&lt;/a&gt; I modified the template slightly &amp;ndash; the template now contains two distinct commands: &lt;code&gt;\rev&lt;/code&gt; and &lt;code&gt;\done&lt;/code&gt; where the former is meant to contain comments that are not yet dealt with, and the latter is for the finished comments.&#xA;Simply copy the reviewer&amp;rsquo;s comments and wrap them in &lt;code&gt;\rev{comment}{}&lt;/code&gt; first, then add your notes to the second empty brackets.&#xA;When the comment is resolved, change &lt;code&gt;\rev&lt;/code&gt; to &lt;code&gt;\done&lt;/code&gt;.&#xA;See the final formatting below.&lt;/p&gt;</description>
     </item>
   </channel>

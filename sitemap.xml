@@ -167,7 +167,7 @@
     <loc>https://vaclavblazej.github.io/tags/graph-drawing/</loc>
     <lastmod>2024-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/archive/</loc>
+    <loc>https://vaclavblazej.github.io/garden/</loc>
     <lastmod>2024-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/note/</loc>
@@ -227,16 +227,13 @@
     <loc>https://vaclavblazej.github.io/post/2023/update_system/</loc>
     <lastmod>2023-08-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/system/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/tags/overview/</loc>
     <lastmod>2023-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/program/</loc>
+    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/garden/setup/</loc>
     <lastmod>2023-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2023/ccc_survey/</loc>
@@ -251,13 +248,7 @@
     <loc>https://vaclavblazej.github.io/post/2023/parameters/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/cpx/</loc>
-    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/cpx/parameters/</loc>
-    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/</loc>
+    <loc>https://vaclavblazej.github.io/garden/hops/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/chemistry/</loc>
@@ -362,7 +353,7 @@
     <loc>https://vaclavblazej.github.io/post/2022/matris_talk/</loc>
     <lastmod>2022-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/cpx/hardness/</loc>
+    <loc>https://vaclavblazej.github.io/garden/hardness-reductions/</loc>
     <lastmod>2022-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/kernelization/</loc>
@@ -419,10 +410,10 @@
     <loc>https://vaclavblazej.github.io/tags/text/</loc>
     <lastmod>2022-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/programming/rust/cheatsheet/</loc>
+    <loc>https://vaclavblazej.github.io/garden/rust-lang/cheatsheet/</loc>
     <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/latex/</loc>
+    <loc>https://vaclavblazej.github.io/garden/latex/</loc>
     <lastmod>2021-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/audio/</loc>
@@ -497,6 +488,12 @@
     <loc>https://vaclavblazej.github.io/post/2021/imagemagick/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://vaclavblazej.github.io/post/2021/aoe/</loc>
+    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/tags/games/</loc>
+    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://vaclavblazej.github.io/pub/2021/bears-hats-independent/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -511,6 +508,9 @@
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/bi-ag1/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/garden/this-website/</loc>
+    <lastmod>2021-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2021/makefile/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
@@ -560,9 +560,6 @@
     <loc>https://vaclavblazej.github.io/post/2020/graph_theory/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/wip/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/tags/1920l/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -590,16 +587,13 @@
     <loc>https://vaclavblazej.github.io/teaching/1920z/ag1/</loc>
     <lastmod>2019-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/bears/</loc>
+    <loc>https://vaclavblazej.github.io/garden/hat-chromatic-number/</loc>
     <lastmod>2019-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/card-games/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2019/eleusis/</loc>
-    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/tags/games/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2019/ics/</loc>
@@ -614,10 +608,10 @@
     <loc>https://vaclavblazej.github.io/pub/2019/cacti_eternal_domination/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/system/system/</loc>
+    <loc>https://vaclavblazej.github.io/post/2019/ubuntu/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/automata/synchronize/</loc>
+    <loc>https://vaclavblazej.github.io/garden/cerny-conjecture/</loc>
     <lastmod>2019-06-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2019/extended_graphs/</loc>
@@ -641,13 +635,10 @@
     <loc>https://vaclavblazej.github.io/tags/programming-language/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/system/lang/</loc>
+    <loc>https://vaclavblazej.github.io/garden/programming-languages/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/matchings/egalitarian/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/matchings/</loc>
+    <loc>https://vaclavblazej.github.io/garden/matching/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/popular-matchings/</loc>
@@ -680,26 +671,11 @@
     <loc>https://vaclavblazej.github.io/post/2018/cerc/</loc>
     <lastmod>2018-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/bounded_expansion/</loc>
-    <lastmod>2018-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/polynomial_expansion/</loc>
-    <lastmod>2018-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/shallow_minors/</loc>
-    <lastmod>2018-11-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/tags/p5/</loc>
     <lastmod>2018-11-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2018/p5_tutorial_roboti/</loc>
     <lastmod>2018-11-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/1/poly_expansion/</loc>
-    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/1/shallowness/</loc>
-    <lastmod>2018-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/1819z/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
@@ -719,23 +695,17 @@
     <loc>https://vaclavblazej.github.io/post/2018/ppa/</loc>
     <lastmod>2018-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/sparsity/</loc>
-    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/post/2018/gr2/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/post/2018/asymptote/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2018/training/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/programming/typing/</loc>
+    <loc>https://vaclavblazej.github.io/garden/keyboard-typing/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/ramsey/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/tags/ramsey/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/1718l/</loc>
     <lastmod>2018-02-22T00:00:00+00:00</lastmod>
@@ -758,7 +728,7 @@
     <loc>https://vaclavblazej.github.io/post/2017/macis/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/programming/acm/</loc>
+    <loc>https://vaclavblazej.github.io/garden/competitive-programming/acm/</loc>
     <lastmod>2017-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</loc>
@@ -776,18 +746,6 @@
     <loc>https://vaclavblazej.github.io/post/2017/independence_domination/</loc>
     <lastmod>2017-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/ramsey/online/results/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/eternal/2017ddspm/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/tags/eternal-games/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/eternal/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/post/2017/math/</loc>
     <lastmod>2017-09-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -803,13 +761,13 @@
     <loc>https://vaclavblazej.github.io/post/2017/doktorat/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/system/cmd/</loc>
+    <loc>https://vaclavblazej.github.io/garden/cmd/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2017/svoc/</loc>
     <lastmod>2017-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/programming/profiling/</loc>
+    <loc>https://vaclavblazej.github.io/post/2017/profiling/</loc>
     <lastmod>2017-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2017/diplomka/</loc>
@@ -821,7 +779,7 @@
     <loc>https://vaclavblazej.github.io/post/2017/latex/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/res/ramsey/classical/brute_force/</loc>
+    <loc>https://vaclavblazej.github.io/garden/ramsey-numbers/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/tags/1617z/</loc>
@@ -836,7 +794,7 @@
     <loc>https://vaclavblazej.github.io/post/2016/prsi/</loc>
     <lastmod>2016-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/system/youtrack/</loc>
+    <loc>https://vaclavblazej.github.io/post/2016/youtrack/</loc>
     <lastmod>2016-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2016/zagreb/</loc>
@@ -860,7 +818,7 @@
     <loc>https://vaclavblazej.github.io/post/2016/faf/</loc>
     <lastmod>2016-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/programming/make/processing/</loc>
+    <loc>https://vaclavblazej.github.io/post/2015/processing/</loc>
     <lastmod>2015-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2015/polymul/</loc>
@@ -923,26 +881,30 @@
     <loc>https://vaclavblazej.github.io/teaching/1415l/pa2/</loc>
     <lastmod>2015-02-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://vaclavblazej.github.io/garden/gardens/</loc>
+  </url><url>
     <loc>https://vaclavblazej.github.io/about/</loc>
   </url><url>
     <loc>https://vaclavblazej.github.io/categories/</loc>
   </url><url>
+    <loc>https://vaclavblazej.github.io/garden/computational-complexity/</loc>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/garden/interesting-websites/</loc>
+  </url><url>
     <loc>https://vaclavblazej.github.io/rocks/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/lean/</loc>
+    <loc>https://vaclavblazej.github.io/garden/lean/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/manim/</loc>
+    <loc>https://vaclavblazej.github.io/garden/manim/</loc>
   </url><url>
     <loc>https://vaclavblazej.github.io/publications/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/review_response/</loc>
+    <loc>https://vaclavblazej.github.io/garden/review-response/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/poster/</loc>
+    <loc>https://vaclavblazej.github.io/garden/theoretical-computer-science/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/tikz/</loc>
+    <loc>https://vaclavblazej.github.io/garden/tikz/</loc>
   </url><url>
-    <loc>https://vaclavblazej.github.io/material/science/tools/</loc>
-  </url><url>
-    <loc>https://vaclavblazej.github.io/material/website/</loc>
+    <loc>https://vaclavblazej.github.io/garden/writing-tools/</loc>
   </url>
 </urlset>

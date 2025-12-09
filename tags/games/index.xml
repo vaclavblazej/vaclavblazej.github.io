@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Age of Empires II Definitive Edition - Hotkeys setup</title>
+      <link>https://vaclavblazej.github.io/post/2021/aoe/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2021/aoe/</guid>
+      <description>&lt;p&gt;This post is merely a &lt;a href=&#34;#Sources&#34; title=&#34;See sources section&#34;&gt;compilation&lt;/a&gt; of information about common setups for the AoE II hotkeys.&#xA;It should be considered supplementary information as it is always &lt;em&gt;your&lt;/em&gt; call how to setup your hotkeys.&#xA;It is meant for all players who aim to get better.&#xA;First, few general notes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Setup hotkeys so that you &lt;strong&gt;like&lt;/strong&gt; them, if you don&amp;rsquo;t like them you will not use them and don&amp;rsquo;t get better.&lt;/li&gt;&#xA;&lt;li&gt;all professionals say that their setup is by no means the best as they are already used to it and know about few things they would change &amp;ndash; so don&amp;rsquo;t look for a perfect general setup&lt;/li&gt;&#xA;&lt;li&gt;good hotkeys will not make you higher level player (only practice will do that); bad hotkeys will make it harder for you to advance to higher levels&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We shall use shortcuts &lt;a href=&#34;.&#34; title=&#34;Definitive Edition&#34;&gt;DE&lt;/a&gt;, &lt;a href=&#34;.&#34; title=&#34;Town center&#34;&gt;TC&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Eleusis (card game)</title>
       <link>https://vaclavblazej.github.io/post/2019/eleusis/</link>

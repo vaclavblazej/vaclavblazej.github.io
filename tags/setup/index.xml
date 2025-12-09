@@ -24,10 +24,10 @@
       <description>&lt;p&gt;Setting up &lt;a href=&#34;https://www.mathjax.org/&#34;target=&#34;_blank&#34;&gt;Mathjax&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; for your website allows you to add mathematical symbols as either inline math $E = mc^2$, or display math:&#xA;\[&#xA;R_{\mu \nu} - \frac 12 g_{\mu \nu} R + g_{\mu \nu} \Delta = \frac{8\pi G}{c^4}T_{\mu \nu}&#xA;\]&#xA;Such mathematics are written in &lt;a href=&#34;https://www.overleaf.com/learn/latex/Mathematical_expressions&#34;target=&#34;_blank&#34;&gt;LaTeX format&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;If you already have old Mathjax 2 setup, you can use &lt;a href=&#34;https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html&#34;target=&#34;_blank&#34;&gt;Conversion tool&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; to migrate.&lt;/p&gt;&#xA;&lt;p&gt;To setup the math from zero we enable inline math to be entered using dollar symbols &lt;code&gt;$E = mc^2$&lt;/code&gt; or display math by using escaped square brackets:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://vaclavblazej.github.io/material/system/</link>
+      <title>System</title>
+      <link>https://vaclavblazej.github.io/garden/setup/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/system/</guid>
+      <guid>https://vaclavblazej.github.io/garden/setup/</guid>
       <description>&lt;p&gt;Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible.&#xA;Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple.&#xA;They were just put together gradually over the span of many years and will change when better alternatives appear.&lt;/p&gt;&#xA;&lt;p&gt;The system consists of the latest version of &lt;a href=&#34;https://ubuntu.com/&#34;target=&#34;_blank&#34;&gt;Ubuntu&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; but with a tiling window manager called &lt;a href=&#34;https://awesomewm.org/&#34;target=&#34;_blank&#34;&gt;AwesomeWM&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
@@ -73,6 +73,13 @@
       <description>&lt;p&gt;The &lt;code&gt;valgrind&lt;/code&gt; program has many additional tools, one of which is called &lt;code&gt;massif&lt;/code&gt; (&lt;a href=&#34;https://www.valgrind.org/docs/manual/ms-manual.html&#34;target=&#34;_blank&#34;&gt;manual here&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;).&#xA;We can call it using syntax similar to normal valgrind call.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;valgrind --tool&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;massif ./a.out &amp;lt;input.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command produces a file called &lt;code&gt;massif.out.&amp;lt;number&amp;gt;&lt;/code&gt; where the number is bigger for later measurements.&#xA;This file can be visualized with &lt;code&gt;massif-visualizer&lt;/code&gt; from &lt;a href=&#34;https://github.com/KDE/massif-visualizer&#34;target=&#34;_blank&#34;&gt;https://github.com/KDE/massif-visualizer&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;massif-visualizer massif.out.&amp;lt;number&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./img/1.png&#34; alt=&#34;massif default measurement&#34;&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;valgrind --tool&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;massif --detailed-freq&lt;span style=&#34;color:#0550ae&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0550ae&#34;&gt;1&lt;/span&gt; ./a.out &amp;lt;input.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./img/2.png&#34; alt=&#34;massif more frequent detail measurement&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Age of Empires II Definitive Edition - Hotkeys setup</title>
+      <link>https://vaclavblazej.github.io/post/2021/aoe/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/post/2021/aoe/</guid>
+      <description>&lt;p&gt;This post is merely a &lt;a href=&#34;#Sources&#34; title=&#34;See sources section&#34;&gt;compilation&lt;/a&gt; of information about common setups for the AoE II hotkeys.&#xA;It should be considered supplementary information as it is always &lt;em&gt;your&lt;/em&gt; call how to setup your hotkeys.&#xA;It is meant for all players who aim to get better.&#xA;First, few general notes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Setup hotkeys so that you &lt;strong&gt;like&lt;/strong&gt; them, if you don&amp;rsquo;t like them you will not use them and don&amp;rsquo;t get better.&lt;/li&gt;&#xA;&lt;li&gt;all professionals say that their setup is by no means the best as they are already used to it and know about few things they would change &amp;ndash; so don&amp;rsquo;t look for a perfect general setup&lt;/li&gt;&#xA;&lt;li&gt;good hotkeys will not make you higher level player (only practice will do that); bad hotkeys will make it harder for you to advance to higher levels&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We shall use shortcuts &lt;a href=&#34;.&#34; title=&#34;Definitive Edition&#34;&gt;DE&lt;/a&gt;, &lt;a href=&#34;.&#34; title=&#34;Town center&#34;&gt;TC&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>C&#43;&#43; makefile</title>
       <link>https://vaclavblazej.github.io/post/2021/makefile/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
@@ -95,9 +102,9 @@
     </item>
     <item>
       <title>Ubuntu system installation</title>
-      <link>https://vaclavblazej.github.io/material/system/system/</link>
+      <link>https://vaclavblazej.github.io/post/2019/ubuntu/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/system/system/</guid>
+      <guid>https://vaclavblazej.github.io/post/2019/ubuntu/</guid>
       <description>&lt;h2 id=&#34;image-download&#34;&gt;Image download&lt;/h2&gt;&#xA;&lt;p&gt;Download the system on the &lt;a href=&#34;https://ubuntu.com/download/desktop&#34;target=&#34;_blank&#34;&gt;Ubuntu official page&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;usb-preparation&#34;&gt;USB preparation&lt;/h2&gt;&#xA;&lt;p&gt;First, insert the USB and find what is the device&amp;rsquo;s name.&#xA;Find whether the USB is sdb/sdc/etc.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo fdisk -l&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;One of these is your hard disc &amp;ndash; be sure you found it correctly! OR YOU WILL DELETE YOUR DISC!&lt;/p&gt;&#xA;&lt;p&gt;Fdisk will show if the usb is bootable, we can check afte rinstalation.&lt;/p&gt;&#xA;&lt;p&gt;Se can either copy the image to the drive.&#xA;Add sudo when you are SURE the sdX is the USB&amp;rsquo;s descriptor.&#xA;Not sure why, but this doesn&amp;rsquo;t seem to set the bootable flag.&lt;/p&gt;</description>
     </item>
     <item>
@@ -123,9 +130,9 @@
     </item>
     <item>
       <title>Youtrack setup</title>
-      <link>https://vaclavblazej.github.io/material/system/youtrack/</link>
+      <link>https://vaclavblazej.github.io/post/2016/youtrack/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://vaclavblazej.github.io/material/system/youtrack/</guid>
+      <guid>https://vaclavblazej.github.io/post/2016/youtrack/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/youtrack/&#34;target=&#34;_blank&#34;&gt;Youtrack&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;&#xA;je aplikace od JetBrains pro správu softwarových projektů.&#xA;Je zdarma pro max 10 lidí, pokud si ji dotyční někde nasadí.&lt;/p&gt;&#xA;&lt;h3 id=&#34;stáhnutí-a-zapnutí&#34;&gt;Stáhnutí a zapnutí&lt;/h3&gt;&#xA;&lt;p&gt;Stáhnout lze ze stránek &lt;a href=&#34;https://www.jetbrains.com/youtrack/download/get_youtrack.html&#34;target=&#34;_blank&#34;&gt;programu&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&#xA;Nejjednodušší je stáhnout .jar, které potom lze jednoduše spustit:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;java -jar youtrack-7.0.27965.jar 8082&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Poslední argument je port.&#xA;Po spuštění lze najít stránky najít na adrese:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;localhost:8082&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Data se ukládají ve složce ~/teamsysdata/youtrack a jejich promazáním se vše resetuje jako před instalací.&#xA;Také jsou nějaké pomocné informace ve složce ~/.youtrack, ale se zdají být pouze cache apod.&lt;/p&gt;</description>
     </item>
     <item>
