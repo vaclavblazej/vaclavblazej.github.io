@@ -167,6 +167,12 @@
     <loc>https://vaclavblazej.github.io/tags/graph-drawing/</loc>
     <lastmod>2024-02-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://vaclavblazej.github.io/tags/algorithm/</loc>
+    <lastmod>2024-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/garden/cole-parallel-merge-sort/</loc>
+    <lastmod>2024-01-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://vaclavblazej.github.io/garden/</loc>
     <lastmod>2024-01-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -548,9 +554,6 @@
     <loc>https://vaclavblazej.github.io/post/2020/pssdm/</loc>
     <lastmod>2020-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/tags/algorithm/</loc>
-    <lastmod>2020-08-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://vaclavblazej.github.io/post/2020/fft/</loc>
     <lastmod>2020-08-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -728,7 +731,7 @@
     <loc>https://vaclavblazej.github.io/post/2017/macis/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/garden/competitive-programming/acm/</loc>
+    <loc>https://vaclavblazej.github.io/garden/competitive-programming/</loc>
     <lastmod>2017-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vaclavblazej.github.io/post/2017/spanning_trees_of_bipartite_graph/</loc>
@@ -881,13 +884,13 @@
     <loc>https://vaclavblazej.github.io/teaching/1415l/pa2/</loc>
     <lastmod>2015-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vaclavblazej.github.io/garden/gardens/</loc>
-  </url><url>
     <loc>https://vaclavblazej.github.io/about/</loc>
   </url><url>
     <loc>https://vaclavblazej.github.io/categories/</loc>
   </url><url>
     <loc>https://vaclavblazej.github.io/garden/computational-complexity/</loc>
+  </url><url>
+    <loc>https://vaclavblazej.github.io/garden/gardens/</loc>
   </url><url>
     <loc>https://vaclavblazej.github.io/garden/interesting-websites/</loc>
   </url><url>

@@ -24,6 +24,13 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/&#34;target=&#34;_blank&#34;&gt;Steam&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; installs and updates your games automatically.&#xA;However, in some cases it may be needed to change local files manually.&lt;/p&gt;&#xA;&lt;h2 id=&#34;running-a-game-with-flags&#34;&gt;Running a game with flags&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;right click game, properties&lt;/li&gt;&#xA;&lt;li&gt;in general change the Launchh options&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &amp;ndash; that one is available through variable &lt;code&gt;%command%&lt;/code&gt;.&#xA;For adding a flag use&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Cole&#39;s parallel merge sort using N/log(N) processors</title>
+      <link>https://vaclavblazej.github.io/garden/cole-parallel-merge-sort/</link>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/garden/cole-parallel-merge-sort/</guid>
+      <description>&lt;p&gt;This parallel sort runs on EREW in O(log(N)^2) time using O(N/log(N)) processors and results in the optimum cost O(N log(N)).&#xA;There is also a more complicated variant of Cole&amp;rsquo;s merge sort which is cost and time optimal (runs in O(log(N))).&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This parallel merge sort works in the same manner as the sequential merge sort.&#xA;It divides the array into halves, sorts them, and then merges the results.&#xA;Parallelization into halves is easy as we can dedicate half of the processors to each and sort the halves independently.&#xA;An implementation-wise easier approach may be to do a bottom-up evaluation, sorting pairs, then quadruplets, then each 8 consecutive elements, etc.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Forward and inverse serach in Okular with NeoVim and Lazy plugin loader</title>
       <link>https://vaclavblazej.github.io/post/2023/synctex/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>

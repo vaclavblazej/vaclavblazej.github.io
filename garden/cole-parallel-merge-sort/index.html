@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Cole&#39;s parallel merge sort using N/log(N) processors - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2024-01-27T00:00:00Z" class="post-list timeago">27.01.2024</time>
+
+
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/algorithm">algorithm</a> <a href="https://vaclavblazej.github.io/tags/tutorial">tutorial</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Cole&#39;s parallel merge sort using N/log(N) processors</h1>
+
+            
+
+
+            
+    
+        
+        completion: 20%
+        
+            🌱
+        
+        
+        
+    
+
+
+        </div>
+        <div class="post-content">
+            <p>This parallel sort runs on EREW in O(log(N)^2) time using O(N/log(N)) processors and results in the optimum cost O(N log(N)).
+There is also a more complicated variant of Cole&rsquo;s merge sort which is cost and time optimal (runs in O(log(N))).</p>
+<h2 id="overview">Overview</h2>
+<p>This parallel merge sort works in the same manner as the sequential merge sort.
+It divides the array into halves, sorts them, and then merges the results.
+Parallelization into halves is easy as we can dedicate half of the processors to each and sort the halves independently.
+An implementation-wise easier approach may be to do a bottom-up evaluation, sorting pairs, then quadruplets, then each 8 consecutive elements, etc.</p>
+<p>It is clear that such an algorithm will perform O(log(N)) division into halves.
+As the whole algorithm should have time complexity of O(log(N)^2) we have to ensure that the most computationally intensive task &ndash; merging &ndash; has complexity of O(log(N)).</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>There are several things we use to make the explanation easier.
+With some extra work one could prove the later statements without these assumptions.</p>
+<ul>
+<li><em>input array size is a power or 2</em> &ndash; this increases size of the input by less than 2 and as our complexity shall be polynomial we only get an extra multiplicative constant (that hides into the O notation), let N denote this size and let n=log(N)</li>
+<li><em>elements are unique</em> &ndash; changing the numbers X into tuples (X,i) where i is its index makes all elements unique</li>
+<li><em>hidden element parameters</em> &ndash; when we mention that something is saved for or retrieved from each element we use notation akin to the retrieval of object&rsquo;s parameter (from programming); this is a shortcut so that we do not end up with many nested array indexing (we wish to avoid things like P[X[M[i]+1]-1])</li>
+</ul>
+<p>Let&rsquo;s get to it.</p>
+<h2 id="merging">Merging</h2>
+<p>We are given two sorted arrays A and B that have the same size which is a power of 2^n.
+The goal is to create an array C of size 2^(n+1) that contains elements of A and B in sorted order.
+The algorithm must have time complexity of O(log(N)).</p>
+<p>To merge arrays A with B let us split them into even-indexed and odd-indexed elements &ndash; call them Ae, Be and Ao, Bo (for even / odd).
+First, we recursively merge Ae with Be (assume this works well for now, we&rsquo;ll return to a more precise analysis later).
+After doing so, we have a sorted array E that contains elements of Ae and Be in the sorted order.
+The main part of the procedure now focuses on how to get the resulting array C that represents sorted array of elements from A and B.</p>
+<p>Let us index the elements from 1, so A consists of elements indexed (A[1], A[2], A[3], &hellip;), and similarly for B, E, and C, but also Ae and Ao.
+To illustrate how to place elements of E to C we present the procedure on a single element:</p>
+<p>Assume that E[7] is the element A[4].
+As A[4] is the second even-indexed element of A the other 5 elements in E before E[7] are the first five even-indexed elements from B.
+Every even-indexed element has an odd-indexed element before it.
+The only element that has unknown relation to E[7] is the odd-indexed element from the other array B[11] (2*7-4+1 = 11).
+This is because B[10] is smaller than A[4] and B[12] is bigger than A[4], but A[4] was not compared to B[11] at all.
+So we compare B[11] with A[4] and if it is smaller, then we set C[15] = A[4], otherwise it is bigger so C[14] = A[4].</p>
+<p>We can do the operation described above in parallel for all elements of E and place them into C.
+Note that elements of E must have attached information about their original array and their original index for us to be able to do this.</p>
+<p>Now, to determine the final indices of odd-indexed elements of A and B in C we first notice that in C there may be at most two odd-indexed elements after each other.
+This is caused by C being a result of sequential merging in which we take the smallest elements of A or B and move them to C one-by-one.
+We give the responsibility of placing odd-indexed elements to the even element that stands just after them in C.
+Again, by example: an element E[7] that started at A[4] and was placed at C[15] is preceded zero, one, or two odd-indexed elements.
+First of them is potentially A[3], the second is from B and takes some work to figure out.
+We look at E[6] (the element which in E precedes our element E[7]) and whether E[6] belonged to B.
+If not, then there is no other element</p>
+<hr>
+<p><img src="images/cole_1.svg" alt="test"></p>
+<hr>
+<h2 id="analysis">Analysis</h2>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2024
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">10. December 2025</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
