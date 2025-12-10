@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cole&#39;s parallel merge sort using N/log(N) processors</title>
+      <link>https://vaclavblazej.github.io/garden/cole-parallel-merge-sort/</link>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/garden/cole-parallel-merge-sort/</guid>
+      <description>&lt;p&gt;This parallel sort runs on EREW in O(log(N)^2) time using O(N/log(N)) processors and results in the optimum cost O(N log(N)).&#xA;There is also a more complicated variant of Cole&amp;rsquo;s merge sort which is cost and time optimal (runs in O(log(N))).&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This parallel merge sort works in the same manner as the sequential merge sort.&#xA;It divides the array into halves, sorts them, and then merges the results.&#xA;Parallelization into halves is easy as we can dedicate half of the processors to each and sort the halves independently.&#xA;An implementation-wise easier approach may be to do a bottom-up evaluation, sorting pairs, then quadruplets, then each 8 consecutive elements, etc.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fast Fourier Transform (FFT) c&#43;&#43; code explained</title>
       <link>https://vaclavblazej.github.io/post/2020/fft/</link>
