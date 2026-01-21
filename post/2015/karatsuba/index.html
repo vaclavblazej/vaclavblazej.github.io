@@ -136,6 +136,7 @@
 
 
 
+
     |
 
 
@@ -173,10 +174,10 @@ Pro násobení polynomů to funguje podobně, navíc ale rekurzivně.
 Proto je výsledná složitost $O(N^{\log_2(3)})$, to je cca $N^{1.585}$.</p>
 <h2 id="kód-a-měření">Kód a měření</h2>
 <p>To vede na kód (pochopitelnost 60% / efektivita N^1585):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#define REP(i, n) for (int i = 0; i &lt; n; i++)
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#define REP(i, n) for (int i = 0; i &lt; n; i++)
 </span></span></span><span style="display:flex;"><span><span style="color:#57606a">#define F(W) REP(i,W)
 </span></span></span><span style="display:flex;"><span><span style="color:#57606a">#define FF(W) REP(j,W)
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">kar</span><span style="color:#1f2328">(</span>ll <span style="color:#0550ae">*</span>a<span style="color:#1f2328">,</span>ll <span style="color:#0550ae">*</span>b<span style="color:#1f2328">,</span>ll L<span style="color:#1f2328">,</span>ll <span style="color:#0550ae">*</span>c<span style="color:#1f2328">,</span>ll <span style="color:#0550ae">*</span>v<span style="color:#1f2328">,</span>ll <span style="color:#0550ae">*</span>w<span style="color:#1f2328">,</span>ll h<span style="color:#1f2328">,</span>ll m<span style="color:#1f2328">){</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>h<span style="color:#0550ae">&gt;=</span>m<span style="color:#1f2328">)</span><span style="color:#cf222e">return</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>L<span style="color:#0550ae">&lt;=</span><span style="color:#0550ae">8</span><span style="color:#1f2328">){</span>
@@ -226,7 +227,7 @@ Proto je výsledná složitost $O(N^{\log_2(3)})$, to je cca $N^{1.585}$.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">10. December 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
 </div>
 
 <script type="text/javascript">

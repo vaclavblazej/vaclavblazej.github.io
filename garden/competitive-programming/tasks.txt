@@ -1,0 +1,26 @@
++++
+title = "Zajímavé úložky"
+date = "2018-05-08"
+draft = true
++++
+
+## Havlova věta
+* [976 D. Degree Set](http://codeforces.com/problemset/problem/976/D)
+
+## Grafy
+### Kaktusy
+* [962 F. Simple Cycles Edges](http://codeforces.com/problemset/problem/962/F)
+
+## Geometrie
+### Lehčí
+* [975 D. Ghosts](http://codeforces.com/problemset/problem/975/D)
+### Těžká
+* [962 G. Visible Black Areas](http://codeforces.com/problemset/problem/962/G)
+
+## Matematika
+### skoro LIS
+* [977 F. Consecutive Subsequence](http://codeforces.com/problemset/problem/977/F)
+
+## Dynamika
+* [991 D. Bishwock](http://codeforces.com/contest/991/problem/D)
+
