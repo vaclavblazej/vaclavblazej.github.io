@@ -136,6 +136,7 @@
 
 
 
+
     |
 
 
@@ -166,7 +167,7 @@ Pěkné svátky, zde je (včetně zdroje), pro všechny k volnému užití.</p>
 </object>
 <p>K tomu přikládám zdrojový kód v LaTeX; křížovka je sázena pomocí TikZ.
 Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokoli bez nutnosti citace, avšak bez jakékoli záruky.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\documentclass</span><span style="color:#1f2328">[a4paper]</span><span style="color:#6639ba">{</span>article<span style="color:#6639ba">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\documentclass</span><span style="color:#1f2328">[a4paper]</span><span style="color:#6639ba">{</span>article<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\usepackage</span><span style="color:#1f2328">[utf8]</span><span style="color:#6639ba">{</span>inputenc<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\usepackage</span><span style="color:#6639ba">{</span>lmodern<span style="color:#6639ba">}</span>
@@ -192,34 +193,34 @@ Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokol
 </span></span><span style="display:flex;"><span><span style="color:#57606a">% \noindent
 </span></span></span><span style="display:flex;"><span><span style="color:#57606a">% \mainfontsize
 </span></span></span><span style="display:flex;"><span><span style="color:#57606a">% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a">% position
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\mythickbox</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[draw,fill=white,line width=1.3pt,align=center,minimum width=10mm,minimum height=10mm]</span> at (#1,-#2) <span style="color:#6639ba">{}</span>;<span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#6639ba">}</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\mythickbox</span><span style="color:#6639ba">}</span>[2]<span style="color:#6639ba">{</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[draw,fill=white,line width=1.3pt,align=center,minimum width=10mm,minimum height=10mm]</span> at (#1,-#2) <span style="color:#6639ba">{}</span>;<span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\mytext</span><span style="color:#6639ba">}</span>[3]<span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[align=center,text width=10mm]</span> at (#1,-#2) <span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\smallfontsize</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        #3<span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\\</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">}</span>;
+</span></span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\node</span><span style="color:#1f2328">[align=center,text width=10mm]</span> at (#1,-#2) <span style="color:#6639ba">{</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\smallfontsize</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        #3<span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\\</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>    <span style="color:#6639ba">}</span>;
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\mytextbox</span><span style="color:#6639ba">}</span>[3]<span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">\mythickbox</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}</span>
+</span></span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\mythickbox</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\mytext</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}{</span>#3<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\mytextboxy</span><span style="color:#6639ba">}</span>[4]<span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">\def\val</span><span style="color:#6639ba">{</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\smallfontsize</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        #3<span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>1pt<span style="color:#6639ba">}</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\hrule</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>1pt<span style="color:#6639ba">}</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        #4<span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">}</span>
+</span></span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\def\val</span><span style="color:#6639ba">{</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\smallfontsize</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        #3<span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>1pt<span style="color:#6639ba">}</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\hrule</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\vspace</span><span style="color:#6639ba">{</span>1pt<span style="color:#6639ba">}</span><span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>        #4<span style="color:#57606a">%
+</span></span></span><span style="display:flex;"><span>    <span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\mythickbox</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\mytext</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}{</span>#2<span style="color:#6639ba">}{</span><span style="color:#cf222e">\val</span><span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">}</span>
@@ -227,8 +228,8 @@ Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokol
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>figure<span style="color:#6639ba">}</span>[h]
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\centering</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#57606a">% \newcommand{\puzzlewidth}{15}
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">% \newcommand{\puzzleheight}{15}
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>tikzpicture<span style="color:#6639ba">}</span>
+</span></span></span><span style="display:flex;"><span>    <span style="color:#57606a">% \newcommand{\puzzleheight}{15}
+</span></span></span><span style="display:flex;"><span>    <span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>tikzpicture<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\begin</span><span style="color:#6639ba">{</span>scope<span style="color:#6639ba">}</span>[xshift=-.5cm,yshift=+.5cm]
 </span></span><span style="display:flex;"><span>            <span style="color:#cf222e">\draw</span><span style="color:#1f2328">[fill=gray!30,]</span> (0.0,-8.0) rectangle (16.0,-9.0);
 </span></span><span style="display:flex;"><span>            <span style="color:#cf222e">\draw</span><span style="color:#1f2328">[fill=gray!30,]</span> (0.0,-2.0) rectangle (7.0,-3.0);
@@ -250,10 +251,10 @@ Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokol
 </span></span><span style="display:flex;"><span>            <span style="color:#6639ba">{</span>a,n, , ,r,o,d,o,k,m,e,n, ,j,o<span style="color:#6639ba">}</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#6639ba">{</span>s,r,s,t,i,n, ,v,s,e, ,o,c,t,y<span style="color:#6639ba">}</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#6639ba">{</span>t,i,k, ,e,y,u,a,i,o, ,v,p,a,d<span style="color:#6639ba">}</span><span style="color:#57606a">%
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#6639ba">}</span> <span style="color:#6639ba">{</span>
+</span></span></span><span style="display:flex;"><span>        <span style="color:#6639ba">}</span> <span style="color:#6639ba">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#cf222e">\foreach</span><span style="color:#1f2328">[count=\c]</span> <span style="color:#cf222e">\value</span> in <span style="color:#cf222e">\row</span> <span style="color:#6639ba">{</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#57606a">% \mytext{\c}{\r}{\mainfontsize\value}
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            <span style="color:#6639ba">}</span>
+</span></span></span><span style="display:flex;"><span>            <span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\mytextbox</span><span style="color:#6639ba">{</span>0<span style="color:#6639ba">}{</span>0<span style="color:#6639ba">}{</span>BEER, EAST, ID,<span style="color:#cf222e">\,</span>ROC<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#cf222e">\mytextbox</span><span style="color:#6639ba">{</span>1<span style="color:#6639ba">}{</span>0<span style="color:#6639ba">}{</span>OHŘÁTÝ KOŘENĚNÝ NÁPOJ<span style="color:#6639ba">}</span>
@@ -355,7 +356,7 @@ Dáno veřejně pod licencí <em>public domain</em>, tj volné užití pro cokol
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">10. December 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
 </div>
 
 <script type="text/javascript">

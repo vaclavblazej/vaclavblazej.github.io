@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/program/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>System</title>
       <link>https://vaclavblazej.github.io/garden/setup/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://vaclavblazej.github.io/garden/setup/</guid>
-      <description>&lt;p&gt;Everyone who uses computer majority of their time should strive to use their tools as efficiently as possible.&#xA;Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple.&#xA;They were just put together gradually over the span of many years and will change when better alternatives appear.&lt;/p&gt;&#xA;&lt;p&gt;The system consists of the latest version of &lt;a href=&#34;https://ubuntu.com/&#34;target=&#34;_blank&#34;&gt;Ubuntu&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; but with a tiling window manager called &lt;a href=&#34;https://awesomewm.org/&#34;target=&#34;_blank&#34;&gt;AwesomeWM&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Everyone who uses a computer for the majority of their time should strive to use their tools as efficiently as possible.&#xA;Though the following &amp;ndash; my setup &amp;ndash; may look complicated, all its parts are quite simple.&#xA;They were just put together gradually over the span of many years and will change when better alternatives appear.&lt;/p&gt;&#xA;&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;&#xA;&lt;p&gt;There are many Linux distributions to choose from.&#xA;I used Ubuntu for adoption &amp;ndash; there are simply many people using it so any small issues get eventually fixed.&#xA;It can be setup easily from windows so that the windows is still available after installation, making the transition less scary.&#xA;For less technically inclined, I&amp;rsquo;d recommend Ubuntu with the default settings.&#xA;For technically inclined individuals I&amp;rsquo;d recommend trying &lt;a href=&#34;https://archlinux.org/&#34;target=&#34;_blank&#34;&gt;Arch Linux&lt;span style=&#34;white-space: nowrap;&#34;&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt; (where you setup everything manually).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nástroj pro správu skriptů</title>

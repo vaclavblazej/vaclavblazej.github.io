@@ -1,0 +1,51 @@
++++
+date = "2020-08-19"
+title = "Paper template"
+draft = true
++++
+
+## Notes on typesetting
+
+### Setup
+
+```
+\let\doendproof\endproof
+\renewcommand\endproof{~\hfill$\qed$\doendproof}
+
+\graphicspath{{images/}}
+```
+
+
+### Meta
+
+```
+\usepackage{todonotes}
+\usepackage{refcheck}
+\usepackage[displaymath,mathlines,running]{lineno}
+\linenumbers
+```
+
+* **todonotes** allows to add `\todo{comment}` to points in the text to mark parts which need some work, and `\todo[inline]{comment}` to add a wide comment block; use e.g. `\todo[color=green]{}` to have different background color
+* **refcheck** shows labels for parts of the document where there is `\label{text}`
+
+### Convention
+
+* use shortcuts to indicate **label** type, such as `\label{thm:lipany}` to indicate that the label is for a theorem; shortcuts are: `lem, thm, pf, fig, tbl, cor, rem,` etc.
+* mention what is the type of the **reference** in the text `Theorem~\ref{thm:lipany}` (may use cleverref package, todo)
+* use `\qed` at the end of proofs; note that simply using `\qed` breaks numbering in *lineno*, use `~\hfill$\qed$` instead
+
+
+## Notes on writing
+
+### Reduction
+
+* add a picture
+* describe the construction: SAT / clique to our problem, show gadgets and observe their behavior
+* lemma for YES instance => YES instance and another lemma for vice versa
+* theorem which sees that using 2 lemmas and observations that the reduction is good
+
+
+
+
+
+

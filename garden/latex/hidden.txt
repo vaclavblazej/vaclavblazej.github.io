@@ -1,0 +1,74 @@
++++
+title = "--"
+date = "2021-11-11"
+draft = true
++++
+
+
+### Complementary scripts
+
+The following codes may spawn their own page in the future if they become usable by other people.
+
+**Bibtex sanitizer**
+
+{{% expandbox title="Author's note" id="beware_bibtex_sanitizer" %}}
+This script shows not only notes which might be useful, but also many additional notes.
+Some notes may be pretty polarizing so take them with a grain of salt.
+(Do not use this script if you are easy to offend.)
+The code may be (unfortunatelly) wrong on some places so take the tooltips only as suggestions.
+
+The script works locally in your browser (using javascript) and works offline as well (as it does not send anything to server) -- see the network communication for youself.
+{{% /expandbox %}}
+
+<script>
+function work(evt) {
+    var file = document.getElementById('file').files[0];
+    var reader = new FileReader();
+    reader.readAsText(file, "UTF-8");
+    reader.onload = loaded;
+}
+function encodeHTML(str){ 
+    var el = document.createElement("div");
+    el.innerText = el.textContent = str;
+    str = el.innerHTML;
+    return str;
+}
+function loaded(evt) {
+    var str = encodeHTML(evt.target.result);
+    function ttp(tooltiptext){ return function(x){ return "<a href=\"#\" title=\"" + tooltiptext + "\">" + x + "</a>"; } }
+
+    str = str.replace(/([^ ]=[^ ])/gi, ttp("indent please"));
+    str = str.replace(/(and *\n)/gi, ttp("keep the authors on one line"));
+
+    str = str.replace(/(doi[ "{=]*https:\/\/doi.org\/)/gi, ttp("doi field should contain only the number (e.g. just 10.1016/j.ipl.2015.02.004) without the https://doi.org/ prefix"));
+    str = str.replace(/(pages[ "{=]*\d+-\d+[ "}])/gi, ttp("use -- (two dashes) to signify page ranges"));
+    //str = str.replace(/([=][^<]+[^A-Z{][A-Z]{2,}[^A-Z]|[^A-Z][A-Z]{2,}[^A-Z}])/g, ttp("This part will probably be decapitalized; enclose it in curly braces, like {THIS}."));
+    str = str.replace(/(author[^<]+[^{a-zA-Z]Di[^}a-zA-Z])/gi, ttp("This word will probably be abbreviated, eventhough it should be left whole. Enclose it in curly braces like {This}."));
+
+    str = str.replace(/(keywords)/gi, ttp("unnecessary"));
+    str = str.replace(/(numpages)/gi, ttp("unnecessary"));
+    str = str.replace(/(bibsource)/gi, ttp("unnecessary"));
+    str = str.replace(/(biburl)/gi, ttp("unnecessary"));
+    str = str.replace(/(timestamp)/gi, ttp("unnecessary"));
+
+    str = str.replace(/([áéíóúůý])/gi, ttp("UTF-8 symbol with acute should be written differently. E.g. á as {\'a}"));
+    str = str.replace(/([žščřďťň])/gi, ttp("UTF-8 symbol with crane should be written differently. E.g. š as {\v s}"));
+    str = str.replace(/([ő])/gi, ttp("UTF-8 symbol with double acute accent should be written differently. E.g. ő as {\H o}. Pál is turning in his grave."));
+    str = str.replace(/(Erdos)/gi, ttp("Did you mean Paul (or P{\'a}l) Er{\H o}s?"));
+    str = str.replace(/((Marcin|M\.) +(Piotr|P\.)? +Krzywkowski)/gi, ttp("This person is excommunicated."));
+
+    str = str.replace(/(journal[ ={a-zA-Z]+}[,\n])/gi, ttp("You may have forgotten to shorten the journal name according to the ISO 4 standard. Find the journal on Wikipedia, the abbreviation is written there."));
+
+
+    $("#op")[0].innerHTML = str;
+}
+</script>
+
+<input type="file" id="file"/>
+<input value="click this for magic to happen" type="button" onClick="work()"/>
+
+<code class="sourceCode hljs" id="op">
+    <span>Loaded file shall be processed,</span></br>
+    <span>and its internals will show here.</span></br>
+    <span>The help is displayed as <a href="#" title="Errors and how to fix them is shown as tooltips">tooltips</a> over some words.</span>
+</code>

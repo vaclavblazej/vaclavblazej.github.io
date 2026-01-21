@@ -136,6 +136,7 @@
 
 
 
+
     |
 
 
@@ -167,7 +168,7 @@ It is written in a way so that when read sequentially you should get a reasonabl
 <div class="expand-content">
 <p>To be able to do bulk edition a basic <code>bash</code> knowledge is expected.
 A command similar to the following one is expected to be used with the commands.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">for</span> i in folder/*.png<span style="color:#1f2328">;</span> <span style="color:#cf222e">do</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">for</span> i in folder/*.png<span style="color:#1f2328">;</span> <span style="color:#cf222e">do</span>
 </span></span><span style="display:flex;"><span>    convert <span style="color:#953800">$i</span> <span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#953800">$i</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">/</span><span style="color:#cf222e">$(</span>basename <span style="color:#0a3069">&#34;</span><span style="color:#953800">$i</span><span style="color:#0a3069">&#34;</span> .png<span style="color:#cf222e">)</span><span style="color:#0a3069">.bmp&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">done</span>
 </span></span></code></pre></div></div>
@@ -203,7 +204,7 @@ convert knight.webp knight.jpg
 <p>Exact stretching
 Match one dimension and scale the picture
 Scale by the given percentage</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -resize 120x80<span style="color:#0a3069">\!</span> knight_wide.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -resize 120x80<span style="color:#0a3069">\!</span> knight_wide.png
 </span></span><span style="display:flex;"><span>convert knight.png -resize x80 knight_small.png
 </span></span><span style="display:flex;"><span>convert knight.png -resize 40% knight_smaller.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
@@ -212,13 +213,13 @@ Scale by the given percentage</p>
 <img src="img/knight_small_smaller.png" alt="even smaller"></p>
 <h2 id="cropping">Cropping</h2>
 <p>The coordinates for cropping are given as <code>&lt;width&gt;x&lt;height&gt;+&lt;x offset&gt;+&lt;y offset&gt;</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -crop 120x60+0+20 knight_cropped.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -crop 120x60+0+20 knight_cropped.png
 </span></span><span style="display:flex;"><span>convert knight.jpg -fill none -stroke white -draw <span style="color:#0a3069">&#34;rectangle 0,20 120,80&#34;</span> knight_crop_outline.png 
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_cropped.png" alt="cropped">
 <img src="img/knight_crop_outline.png" alt="crop location"></p>
 <h2 id="mirroring-flipping-and-rotating">Mirroring (Flipping) and rotating</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -flip knight_flip.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -flip knight_flip.png
 </span></span><span style="display:flex;"><span>convert knight.png -flop knight_flop.png
 </span></span><span style="display:flex;"><span>convert knight.png -rotate <span style="color:#0550ae">90</span> knight_rotate_90.png
 </span></span><span style="display:flex;"><span>convert knight.png -background none -rotate <span style="color:#0550ae">25</span> knight_rotate_25.png
@@ -231,7 +232,7 @@ Scale by the given percentage</p>
 <h3 id="blur">Blur</h3>
 <p><a href="https://legacy.imagemagick.org/Usage/blur/"target="_blank">Blur<span style="white-space: nowrap;">&thinsp;↗</span></a> with <code>&lt;radius&gt;x&lt;sigma&gt;</code>, 0 radius is unlimited.
 Small radius restricts the blur to some radius; leads to artifacts.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -blur 0x1 knight_blur_0_1.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -blur 0x1 knight_blur_0_1.png
 </span></span><span style="display:flex;"><span>convert knight.png -blur 0x10 knight_blur_0_10.png
 </span></span><span style="display:flex;"><span>convert knight.png -blur 2x10 knight_blur_2_10.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
@@ -239,7 +240,7 @@ Small radius restricts the blur to some radius; leads to artifacts.</p>
 <img src="img/knight_blur_0_10.png" alt="blur 0 10">
 <img src="img/knight_blur_2_10.png" alt="blur 2 10"></p>
 <h3 id="sharpen">Sharpen</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight_blur_0_1.png -sharpen 0x1 knight_sharpen_0_1.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight_blur_0_1.png -sharpen 0x1 knight_sharpen_0_1.png
 </span></span><span style="display:flex;"><span>convert knight_blur_0_3.png -sharpen 0x3 knight_sharpen_0_3.png
 </span></span></code></pre></div><p><img src="img/knight_blur_0_1.png" alt="blur 0 1">
 <img src="img/knight_sharpen_0_1.png" alt="sharpen 0 1">
@@ -247,13 +248,13 @@ Small radius restricts the blur to some radius; leads to artifacts.</p>
 <h2 id="recoloring">Recoloring</h2>
 <p>Note that the colors can be written in formats: <code>blue</code>, <code>#0000ff</code>.</p>
 <h3 id="recolor-black-white-to-green-gold">Recolor black-white to green-gold</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png +level-colors green,gold knight_green_gold.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png +level-colors green,gold knight_green_gold.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_green_gold.png" alt="mapping to green and gold"></p>
 <h3 id="splitswapcombine-color-channels">Split/Swap/Combine color channels</h3>
 <p>Splitting via <code>-separate</code> creates a picture for each channel in the buffer.
 Hence, the following command generates three pictures named <code>knight_channels-0.png</code>, <code>knight_channels-1.png</code>, and <code>knight_channels-2.png</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -channel RGB -separate knight_channels.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -channel RGB -separate knight_channels.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_channels-0.png" alt="red">
 <img src="img/knight_channels-1.png" alt="green">
@@ -263,11 +264,11 @@ Hence, the following command generates three pictures named <code>knight_channel
 <button class="expand-title" id="channels-control">➤ <b>Working with and combining the channels back into the original picture</b></button>
 <div class="expand-content">
 <p>The separated pictures can be manipulated with (e.g. <code>-swap 1,2</code>) and recombined.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -channel RGB -separate -swap 1,2 -combine knight_swapped_channels.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -channel RGB -separate -swap 1,2 -combine knight_swapped_channels.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_swapped_channels.png" alt="channels swapped"></p>
 <p>Having the channels as input, we can <code>-combine</code> into a single picture</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert -channel RGB knight_channels-0.png knight_channels-1.png knight_channels-2.png -combine knight_combined_channels.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert -channel RGB knight_channels-0.png knight_channels-1.png knight_channels-2.png -combine knight_combined_channels.png
 </span></span></code></pre></div><p><img src="img/knight_channels-0.png" alt="red">
 <img src="img/knight_channels-1.png" alt="green">
 <img src="img/knight_channels-2.png" alt="blue">
@@ -277,7 +278,7 @@ Hence, the following command generates three pictures named <code>knight_channel
 </div>
 <script>setupToggleDiv("channels" + "-box", "channels" + "-control")</script>
 <h3 id="ramp-up-contrast">Ramp up contrast</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -contrast knight_contrast.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -contrast knight_contrast.png
 </span></span><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 10,50% knight_contrast_sig.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_contrast.png" alt="contrast">
@@ -286,14 +287,14 @@ Hence, the following command generates three pictures named <code>knight_channel
 <div class="expand-container hidden" id="contrast-box">
 <button class="expand-title" id="contrast-control">➤ <b>More examples on contrast</b></button>
 <div class="expand-content">
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 4,20% knight_contrast_4_20.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 4,20% knight_contrast_4_20.png
 </span></span><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 4,50% knight_contrast_4_50.png
 </span></span><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 4,80% knight_contrast_4_80.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_contrast_4_20.png" alt="contrast">
 <img src="img/knight_contrast_4_50.png" alt="contrast">
 <img src="img/knight_contrast_4_80.png" alt="contrast"></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 10,20% knight_contrast_10_20.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 10,20% knight_contrast_10_20.png
 </span></span><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 10,50% knight_contrast_10_50.png
 </span></span><span style="display:flex;"><span>convert knight.png -sigmoidal-contrast 10,80% knight_contrast_10_80.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
@@ -307,7 +308,7 @@ Hence, the following command generates three pictures named <code>knight_channel
 <h2 id="alpha">Alpha</h2>
 <h3 id="create-transparent-background-in-a-picture-with-monotone-colored-background">Create transparent background in a picture with monotone colored background</h3>
 <p><a href="http://www.imagemagick.org/script/command-line-options.php#transparent"target="_blank">transparent<span style="white-space: nowrap;">&thinsp;↗</span></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 7% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 7% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha.png
 </span></span></code></pre></div><p><img src="img/knight.png" alt="original for comparison">
 <img src="img/knight_background_alpha.png" alt="background into alpha"></p>
 <div class="expandbox">
@@ -316,7 +317,7 @@ Hence, the following command generates three pictures named <code>knight_channel
 <div class="expand-content">
 <p>Setting the fuzz is image-dependent.
 Sometimes (such as for this picture), it is not good enough.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -transparent black knight_background_alpha_0.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -transparent black knight_background_alpha_0.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 2% -transparent black knight_background_alpha_2.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 5% -transparent black knight_background_alpha_5.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 8% -transparent black knight_background_alpha_8.png
@@ -326,7 +327,7 @@ Sometimes (such as for this picture), it is not good enough.</p>
 <img src="img/knight_background_alpha_5.png" alt="background into alpha with fuzz 5">
 <img src="img/knight_background_alpha_8.png" alt="background into alpha with fuzz 8"></p>
 <p>If we want to keep the removed area continuous, that mark the position (<code>0,0</code> here) where the background is located.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 0% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_0.png
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>convert knight.png -fuzz 0% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_0.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 2% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_2.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 3% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_3.png
 </span></span><span style="display:flex;"><span>convert knight.png -fuzz 4% -fill none -draw <span style="color:#0a3069">&#34;matte 0,0 floodfill&#34;</span> knight_background_alpha_fill_4.png
@@ -368,7 +369,7 @@ Sometimes (such as for this picture), it is not good enough.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">10. December 2025</ul>
+    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
 </div>
 
 <script type="text/javascript">
