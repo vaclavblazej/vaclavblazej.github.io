@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Bevy 0.18 - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Bevy 0.18</h1>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Bevy is a code-first game engine in Rust.
+It utilizes Entity-Component-System (ECS) architecture.
+As of 2026-02, the engine is still being developed; the authors publish migration instructions with each new version.</p>
+<p><em>This website focuses on showing the main constructs of Bevy and expects knowledge of Rust.</em></p>
+<h2 id="setup">Setup</h2>
+<p>Running the following commands should result in a gray empty window.
+Requires <a href="https://doc.rust-lang.org/cargo/getting-started/installation.html"target="_blank">Cargo<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+<p><strong>shell:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cargo init hello_world
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">cd</span> hello_world
+</span></span><span style="display:flex;"><span>cargo add bevy
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># change src/main.rs to the code below</span>
+</span></span><span style="display:flex;"><span>cargo run
+</span></span></code></pre></div><p><strong>main.rs:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#cf222e">use</span><span style="color:#fff"> </span>bevy::prelude::<span style="color:#0550ae">*</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">let</span><span style="color:#fff"> </span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>app<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span>App::new<span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_plugins<span style="color:#1f2328">(</span>DefaultPlugins<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>run<span style="color:#1f2328">();</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><p>To develop consult the official documentation.</p>
+<ul>
+<li><a href="https://bevy.org/learn/quick-start/getting-started/"target="_blank">Getting Started<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://bevy.org/examples/"target="_blank">Bevy Examples<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li><a href="https://docs.rs/bevy/latest/bevy/index.html"target="_blank">Bevy Documentation<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+<h2 id="ecs-and-other-engine-components">ECS and other engine components</h2>
+<ul>
+<li><strong>Resources</strong> are data-holding singletons implemented as Rust structs.</li>
+<li><strong>Components</strong> are data-holding Rust structs.</li>
+<li><strong>Entities</strong> are sets of components.</li>
+<li><strong>Systems</strong> are functions that use resources to act on entities.</li>
+<li><strong>Plugins</strong> collect operations over <code>app</code> to make the program more readable.</li>
+</ul>
+<p>Each of these parts need to be registered within the engine to work.
+We&rsquo;ll see examples for each in two parts: its code, and part that needs to register it in the <code>main()</code> function.</p>
+<p>Note that many arguments in Bevy accept either the structure itself or a tuple of such structures.</p>
+<h3 id="plugins">Plugins</h3>
+<p>Every other part can be registered to the <code>app</code> in <code>fn main()</code>, <strong>plugins</strong> serve only to group these parts in a logical manner to make the project easier to orient in.</p>
+<p>Plugin is an empty struct that gets its functionality by implementing <code>Plugin</code>.
+It acts on <code>app</code>, the same way as we do in <code>main</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#cf222e">pub</span><span style="color:#fff"> </span><span style="color:#cf222e">struct</span> <span style="color:#1f2328">ResearchPlugin</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">impl</span><span style="color:#fff"> </span>Plugin<span style="color:#fff"> </span><span style="color:#cf222e">for</span><span style="color:#fff"> </span>ResearchPlugin<span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">build</span><span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span><span style="color:#fff"> </span>app: <span style="color:#cf222e">&amp;</span><span style="color:#1f2328">mut</span><span style="color:#fff"> </span>App<span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>app<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">            </span><span style="color:#1f2328">.</span>init_resource<span style="color:#fff"> </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">            </span><span style="color:#1f2328">.</span>add_systems<span style="color:#fff"> </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_plugins<span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#1f2328">(</span>ResearchPlugin<span style="color:#1f2328">,</span><span style="color:#fff"> </span>GameControlsPlugin<span style="color:#1f2328">,</span><span style="color:#fff"> </span>MenuPlugin<span style="color:#1f2328">,</span><span style="color:#fff"> </span>UiPlugin<span style="color:#1f2328">,</span><span style="color:#fff"> </span>CameraPlugin<span style="color:#1f2328">)</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><p>Bevy comes with many prepared resources of its own which we registered when we invoked <code>app.add_plugins(DefaultPlugins);</code>.
+Many of its parts can be activated/deactivated with features settings in <code>Cargo.toml</code>.
+The plugins within the <code>DefaultPlugins</code> can be modified as follows.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_plugins<span style="color:#1f2328">(</span>DefaultPlugins<span style="color:#1f2328">.</span>set<span style="color:#1f2328">(</span>WindowPlugin<span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>primary_window: <span style="color:#6639ba">Some</span><span style="color:#1f2328">(</span>Window<span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">            </span>title: <span style="color:#6639ba">String</span>::from<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Hello world!&#34;</span><span style="color:#1f2328">),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">            </span><span style="color:#0550ae">..</span>default<span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#1f2328">}),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#0550ae">..</span>default<span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">}));</span><span style="color:#fff">
+</span></span></span></code></pre></div><h3 id="resources">Resources</h3>
+<p>Resources are data-holding singletons.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#57606a">#[derive(Resource, Default)]</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">struct</span> <span style="color:#1f2328">RoundInfo</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>level: <span style="color:#cf222e">u32</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>score: <span style="color:#cf222e">u32</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>init_resource::<span style="color:#0550ae">&lt;</span>RoundInfo<span style="color:#0550ae">&gt;</span><span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><h3 id="component">Component</h3>
+<p>Components hold some data for an entity.
+Its presence can be queried on later, so empty components can serve as a tag.
+Components can be <code>struct</code> or <code>enum</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#57606a">#[derive(Component)]</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">struct</span> <span style="color:#1f2328">Player</span><span style="color:#1f2328">;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#[derive(Component)]</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">struct</span> <span style="color:#1f2328">Health</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>maximum: <span style="color:#cf222e">u32</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>current: <span style="color:#cf222e">u32</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><h3 id="entity">Entity</h3>
+<p>To design an Entity we first need to decompose into its constituent Components.
+Do <strong>not</strong> think of Entities as objects, they are entirely made of just components.</p>
+<p>Once we have the necessary components we can <code>spawn</code> an entity.
+Canonically, this is done through <code>Commands</code> which puts entity&rsquo;s creation to a command queue.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">spawn_player</span><span style="color:#1f2328">(</span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>commands: <span style="color:#1f2328">Commands</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">let</span><span style="color:#fff"> </span>player<span style="color:#fff"> </span><span style="color:#0550ae">=</span><span style="color:#fff"> </span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>Player<span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>Health<span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff"> </span>other<span style="color:#fff"> </span>components<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>commands<span style="color:#1f2328">.</span>spawn<span style="color:#1f2328">(</span>player<span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_systems<span style="color:#1f2328">(</span>Startup<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#1f2328">(</span>spawn_player<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><h3 id="systems">Systems</h3>
+<p>Systems are simple rust methods that have parameters injected by the engine.
+Arguments can be:</p>
+<ul>
+<li>engine&rsquo;s utilities like <code>Commands</code></li>
+<li>resources
+<ul>
+<li><code>Res&lt;Resource&gt;</code> for immutable</li>
+<li><code>ResMut&lt;Resource&gt;</code> for mutable</li>
+</ul>
+</li>
+<li>queries pass in a collection of entities that satisfy the query &ndash; think of it as a database select
+<ul>
+<li><code>Query&lt;&amp;mut Position)&gt;</code> access positions of all entities that have a position</li>
+<li><code>Query&lt;(&amp;Player, &amp;mut Health), (With&lt;Visible&gt;, Without&lt;Sleeping&gt;)&gt;</code> to access <code>Player</code> and <code>Health</code> components of entities given some restrictions on existence of its other components</li>
+<li><code>Query</code> here can be replaced with <code>Single</code>, <code>Option&lt;Single&gt;</code>, or <code>Populated</code> if we want to filter based on assumptions on the result size</li>
+<li>queries must be disjoint so that two queries cannot mutably access the same component</li>
+</ul>
+</li>
+</ul>
+<p>They get registered in the <code>app</code> as to run once with <code>Startup</code> or run every frame with <code>Update</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">spawn_default_map</span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>commands: <span style="color:#1f2328">Commands</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>meshes: <span style="color:#1f2328">ResMut</span><span style="color:#0550ae">&lt;</span>Assets<span style="color:#0550ae">&lt;</span>Mesh<span style="color:#0550ae">&gt;&gt;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>turrets: <span style="color:#1f2328">Query</span><span style="color:#0550ae">&lt;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>Transform<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0550ae">&amp;</span><span style="color:#cf222e">mut</span><span style="color:#fff"> </span>TurretCombat<span style="color:#1f2328">),</span><span style="color:#fff"> </span>Without<span style="color:#0550ae">&lt;</span>UnderConstruction<span style="color:#0550ae">&gt;&gt;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>enemies: <span style="color:#1f2328">Query</span><span style="color:#0550ae">&lt;</span><span style="color:#1f2328">(</span>Entity<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#0550ae">&amp;</span>Transform<span style="color:#1f2328">),</span><span style="color:#fff"> </span>With<span style="color:#0550ae">&lt;</span>EnemyUnit<span style="color:#0550ae">&gt;&gt;</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#cf222e">fn</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span><span style="color:#fff"> </span><span style="color:#1f2328">{</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_systems<span style="color:#1f2328">(</span>Startup<span style="color:#1f2328">,</span><span style="color:#fff"> </span><span style="color:#1f2328">(</span>setup<span style="color:#1f2328">,</span><span style="color:#fff"> </span>spawn_default_map<span style="color:#1f2328">));</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>app<span style="color:#1f2328">.</span>add_systems<span style="color:#1f2328">(</span>Update<span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>move_everything<span style="color:#1f2328">.</span>run_if<span style="color:#1f2328">(</span>in_state<span style="color:#1f2328">(</span>AppState::GamePlaying<span style="color:#1f2328">))</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">..</span><span style="color:#1f2328">.</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span><span style="color:#fff">
+</span></span></span></code></pre></div><h2 id="further-engine-systems">Further engine systems</h2>
+<p>Above, we saw <code>Commands</code> which gets injected due to it implementing <code>SystemParam</code>.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2015-2026 
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

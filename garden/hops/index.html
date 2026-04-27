@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>
         
-            Parameterized complexity hierarchy - Homepage of Vašek
+            Hierarchy of Parameters - Homepage of Vašek
         
     </title>
     <meta name="description" content="Homepage of Vašek">
@@ -145,7 +145,7 @@
 
 
             </p>
-            <h1>Parameterized complexity hierarchy</h1>
+            <h1>Hierarchy of Parameters</h1>
 
             
 
@@ -153,7 +153,7 @@
             
     
         
-        completion: 0
+        completion: 1
         
             🌱
         
@@ -164,7 +164,24 @@
 
         </div>
         <div class="post-content">
-            <p>This content was moved to <a href="https://vaclavblazej.github.io/parameters/"target="_blank">another website<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
+            <p>I started developing the Hierarchy of Parameters in 2022.
+Initially in Python, the first version was deployed somewhat fast.
+However, with time the complexity of the project grew as well so I decided to rewrite HOPS to Rust &ndash; using this opportunity to learn the language.</p>
+<p>Currently, you can find more information about HOPS on <a href="https://vaclavblazej.github.io/parameters/"target="_blank">its own website<span style="white-space: nowrap;">&thinsp;↗</span></a>.
+Here, I would like to give a more personal viewpoint on the project.</p>
+<h2 id="why-make-the-project">Why make the project</h2>
+<p>The idea for HOPS was in the air for years.
+During my Ph.D. studies at CTU, we would study a problem and inevitably the questions about pushing results to further parameters would arise.
+Having a more complete overview of the hierarchy would have been quite useful.</p>
+<p>We were not the only ones that stumbled upon this idea.
+Already in 2012 <a href="https://manyu.pro/"target="_blank">M. Sorge<span style="white-space: nowrap;">&thinsp;↗</span></a> started to put together a <a href="https://manyu.pro/assets/parameter-hierarchy.pdf"target="_blank">document<span style="white-space: nowrap;">&thinsp;↗</span></a> with parameters and their relations.
+This overview is quite nice, kept in a <a href="https://gitlab.com/gruenwald/parameter-hierarchy"target="_blank">repository<span style="white-space: nowrap;">&thinsp;↗</span></a>, and served as a starting points for many later projects.</p>
+<p>In 2015-03-26 <a href="https://www.graphclasses.org/index.html"target="_blank">ISGCI<span style="white-space: nowrap;">&thinsp;↗</span></a> added some support for graph parameters.
+There, source of the information were compilations (theses) of <a href="https://nva.sikt.no/registration/0198f0edd959-7e333d6a-bfda-456c-8497-fbc26ba87a75"target="_blank">Sasák<span style="white-space: nowrap;">&thinsp;↗</span></a> and Spiess.</p>
+<h2 id="what-hops-offers-now">What HOPS offers now</h2>
+<p>The current state of HOPS has much to be desired.
+The good parts include &ndash; rough overview of the known parameters, interactable diagrams, ability to add detailed information about relations that references proved, clear picture of what is known or missing in HOPS.
+The bad parts are &ndash; missing relations due to a small number of sources, missing API (only simplified is available), limited interaction with the community.</p>
 
         </div>
     </div>
@@ -185,7 +202,7 @@
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

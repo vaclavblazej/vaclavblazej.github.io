@@ -167,7 +167,7 @@ In the second section we show a detailed progression which lead to the solution.
 <p>When the completion is invoked we want to consider the command written up to that point, and complete the parameter under the cursor.</p>
 <p>In the following example, we are trying to invoke completion while having the cursor at the location of <code>|</code> (pipe symbol).
 The second line shows us what is the desired input for the completion.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first <span style="color:#1f2328">|</span>  <span style="color:#57606a"># at the end</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first <span style="color:#1f2328">|</span>  <span style="color:#57606a"># at the end</span>
 </span></span><span style="display:flex;"><span>in: <span style="color:#0550ae">(</span><span style="color:#0a3069">&#39;test&#39;</span>, <span style="color:#0a3069">&#39;first&#39;</span>, <span style="color:#0a3069">&#39;&#39;</span><span style="color:#0550ae">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first  <span style="color:#0a3069">&#34;second second&#34;</span>    th<span style="color:#1f2328">|</span>ird  fourth  <span style="color:#57606a"># in the middle</span>
@@ -183,12 +183,12 @@ We then have to handle script&rsquo;s output and pass it to completion system.</
 <p>Second part is shell-independent and consists of the script which is given the written command and its arguments for completion and prints all the words which should be shown in completion.</p>
 <p>The major advantage of this setup is that you may write the completion scipt in anything invokable (bash, python, c++, &hellip;) and don&rsquo;t have to care for what shell is running it.</p>
 <h3 id="file-structure">file structure</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>completion_example/
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>completion_example/
 </span></span><span style="display:flex;"><span>├── test_completion.py
 </span></span><span style="display:flex;"><span>├── test_completion_setup.bash
 </span></span><span style="display:flex;"><span>└── test_completion_setup.zsh
 </span></span></code></pre></div><h3 id="test_completion_setupbash">test_completion_setup.bash</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
 </span></span></span><span style="display:flex;"><span><span style="color:#953800">DIR</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">cd</span> <span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">BASH_SOURCE</span><span style="color:#1f2328">[0]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span> &gt;/dev/null 2&gt;<span style="color:#1f2328">&amp;</span><span style="color:#0550ae">1</span> <span style="color:#0550ae">&amp;&amp;</span> <span style="color:#6639ba">pwd</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">SCRIPT</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$DIR</span><span style="color:#0a3069">/test_completion.py&#34;</span> <span style="color:#57606a"># relative to the script location</span>
 </span></span><span style="display:flex;"><span>
@@ -203,7 +203,7 @@ We then have to handle script&rsquo;s output and pass it to completion system.</
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -o nospace -F _my_custom_completion_func <span style="color:#6639ba">test</span>
 </span></span></code></pre></div><h3 id="test_completion_setupzsh">test_completion_setup.zsh</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env zsh
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env zsh
 </span></span></span><span style="display:flex;"><span><span style="color:#953800">DIR</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>dirname <span style="color:#953800">$0</span>:A<span style="color:#cf222e">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">SCRIPT</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$DIR</span><span style="color:#0a3069">/test_completion.py&#34;</span> <span style="color:#57606a"># relative to the script location</span>
 </span></span><span style="display:flex;"><span>
@@ -242,7 +242,7 @@ The flip-side is that some shells, for example <strong>zsh</strong>, provide add
 <h3 id="register-completion">Register completion</h3>
 <p>One of the following commands should be enough for the most basic cases.
 By adding invocation of one of these on bash startup you will be able to invoke completion of that command.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -W <span style="color:#0a3069">&#34;word1 word2&#34;</span> &lt;command_name&gt;  <span style="color:#57606a"># complete static set of words</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -W <span style="color:#0a3069">&#34;word1 word2&#34;</span> &lt;command_name&gt;  <span style="color:#57606a"># complete static set of words</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -A file &lt;command_name&gt;  <span style="color:#57606a"># complete files from the current directory</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -A directory &lt;command_name&gt;  <span style="color:#57606a"># complete directories from the current directory</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -F _my_custom_completion_func &lt;command_name&gt;  <span style="color:#57606a"># invoke the given function for completion</span>
@@ -251,7 +251,7 @@ Let&rsquo;s discuss how to write this function.</p>
 <p>The following shows a command with cursor at the position of <code>|</code> (pipe symbol).
 We tap <code>&lt;tab&gt;</code> key twice and our function will be invoked.
 Our function will get all the necessary information via several variables, whose content is shown in the example below. (Note the weird spacing to distinguish raw input from the array.)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first    <span style="color:#0a3069">&#34;second second&#34;</span> th<span style="color:#1f2328">|</span>ird       fourth
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first    <span style="color:#0a3069">&#34;second second&#34;</span> th<span style="color:#1f2328">|</span>ird       fourth
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>COMP_LINE:    <span style="color:#6639ba">test</span> first    <span style="color:#0a3069">&#34;second second&#34;</span> third       fourth  <span style="color:#57606a"># content of the input line</span>
 </span></span><span style="display:flex;"><span>COMP_POINT:   <span style="color:#0550ae">32</span>  <span style="color:#57606a"># index into COMP_LINE where the cursor is located</span>
@@ -259,7 +259,7 @@ Our function will get all the necessary information via several variables, whose
 </span></span><span style="display:flex;"><span>COMP_WORDS<span style="color:#0550ae">[]</span>: <span style="color:#6639ba">test</span> first <span style="color:#0a3069">&#34;second second&#34;</span> third fourth  <span style="color:#57606a"># array of command and its arguments</span>
 </span></span><span style="display:flex;"><span>COMP_CWORD:   <span style="color:#0550ae">3</span>  <span style="color:#57606a"># index into COMP_WORDS where the cursor is located</span>
 </span></span></code></pre></div><p>You may now extract the word for completion by <code>${COMP_WORDS[$COMP_CWORD]}</code> and from <code>COMP_CWORD</code> deduce what exactly you should complete.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env bash
 </span></span></span><span style="display:flex;"><span><span style="color:#57606a"># this file: completion_setup.sh</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">COMPREPLY</span><span style="color:#0550ae">=(</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">compgen</span> -W <span style="color:#0a3069">&#34;thursday third fourth&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">COMP_WORDS</span><span style="color:#1f2328">[</span><span style="color:#953800">$COMP_CWORD</span><span style="color:#1f2328">]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0550ae">)</span>
@@ -268,7 +268,7 @@ Our function will get all the necessary information via several variables, whose
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -F _my_custom_completion_func <span style="color:#6639ba">test</span>
 </span></span></code></pre></div><p>The result is set to the <code>COMPREPLY</code> variable with array of possible word completions.</p>
 <p>Now run:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">source</span> completion_setup.sh
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">source</span> completion_setup.sh
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> &lt;tab&gt;&lt;tab&gt;
 </span></span><span style="display:flex;"><span>fourth     third     thursday  
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> th&lt;tab&gt;&lt;tab&gt;
@@ -278,7 +278,7 @@ Our function will get all the necessary information via several variables, whose
 </span></span></code></pre></div><p>This is workable only if you can tolerate imperfections.
 There is an ugly behavior waiting for you, if you try completion from the middle.
 Let <code>|</code> be the cursor and see what doesn&rsquo;t work!</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> <span style="color:#1f2328">|</span> thursday friday
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> <span style="color:#1f2328">|</span> thursday friday
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> thursday<span style="color:#1f2328">|</span> thursday friday  <span style="color:#57606a"># :( I would expect list of all options</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> th<span style="color:#1f2328">|</span>ursday friday
@@ -288,7 +288,7 @@ Let <code>|</code> be the cursor and see what doesn&rsquo;t work!</p>
 <h3 id="fixing-the-completion-in-the-middle-of-arguments">Fixing the completion in the middle of arguments</h3>
 <p>Note that <code>COMP_WORDS</code> and <code>COMP_CWORD</code> are unusable if you want the completion to work if the cursor is not at the end of an arugment.
 The solution is to take <code>COMP_LINE</code> and truncate it to <code>COMP_POINT</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">comp_words</span><span style="color:#0550ae">=(</span><span style="color:#0a3069">${</span><span style="color:#953800">COMP_LINE</span><span style="color:#1f2328">:</span><span style="color:#953800">0</span><span style="color:#1f2328">:</span><span style="color:#953800">$COMP_POINT</span><span style="color:#0a3069">}</span><span style="color:#0550ae">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">COMPREPLY</span><span style="color:#0550ae">=(</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">compgen</span> -W <span style="color:#0a3069">&#34;thursday third fourth&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">comp_words</span><span style="color:#1f2328">[</span><span style="color:#953800">$COMP_CWORD</span><span style="color:#1f2328">]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0550ae">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#0550ae">}</span>
@@ -296,7 +296,7 @@ The solution is to take <code>COMP_LINE</code> and truncate it to <code>COMP_POI
 </span></span></code></pre></div><p>You will notice that when trying the completion now it works, but does not append a space after completion which is not at the end of the line.
 This is very weird behavior, which is intrinsic to the complete implementation.
 We can fix it by appending each word with a space, and disabling the default space adding.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">comp_words</span><span style="color:#0550ae">=(</span><span style="color:#0a3069">${</span><span style="color:#953800">COMP_LINE</span><span style="color:#1f2328">:</span><span style="color:#953800">0</span><span style="color:#1f2328">:</span><span style="color:#953800">$COMP_POINT</span><span style="color:#0a3069">}</span><span style="color:#0550ae">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">COMPREPLY</span><span style="color:#0550ae">=()</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">reply</span><span style="color:#0550ae">=(</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">compgen</span> -W <span style="color:#0a3069">&#34;this thursday third fourth&#34;</span> <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">comp_words</span><span style="color:#1f2328">[</span><span style="color:#953800">$COMP_CWORD</span><span style="color:#1f2328">]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0550ae">)</span>
@@ -306,7 +306,7 @@ We can fix it by appending each word with a space, and disabling the default spa
 </span></span><span style="display:flex;"><span><span style="color:#57606a"># disable default spaces with -o nospace</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">complete</span> -o nospace -F _my_custom_completion_func <span style="color:#6639ba">test</span>
 </span></span></code></pre></div><p>The same attempts for completion as before give us the following results.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> <span style="color:#1f2328">|</span> thursday friday
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> <span style="color:#1f2328">|</span> thursday friday
 </span></span><span style="display:flex;"><span>fouth      third      thursday
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> th<span style="color:#1f2328">|</span>ursday friday
@@ -323,7 +323,7 @@ The first option takes more work, but gives more power to the script.</p>
 <p>The script should be placed <a href="https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself?page=1&amp;tab=votes#tab-top"target="_blank">next to this setup script<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
 <p>However, how do we distinguish case where there is a space after the last argument?
 The trick is to check if the command ends in space, and append an empty argument if it is so.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#953800">DIR</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">cd</span> <span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">BASH_SOURCE</span><span style="color:#1f2328">[0]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span> &gt;/dev/null 2&gt;<span style="color:#1f2328">&amp;</span><span style="color:#0550ae">1</span> <span style="color:#0550ae">&amp;&amp;</span> <span style="color:#6639ba">pwd</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#953800">DIR</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span><span style="color:#6639ba">cd</span> <span style="color:#0a3069">&#34;</span><span style="color:#cf222e">$(</span>dirname <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">${</span><span style="color:#953800">BASH_SOURCE</span><span style="color:#1f2328">[0]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span> &gt;/dev/null 2&gt;<span style="color:#1f2328">&amp;</span><span style="color:#0550ae">1</span> <span style="color:#0550ae">&amp;&amp;</span> <span style="color:#6639ba">pwd</span><span style="color:#cf222e">)</span><span style="color:#0a3069">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">SCRIPT</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$DIR</span><span style="color:#0a3069">/test_completion.py&#34;</span> <span style="color:#57606a"># relative to the script location</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> _my_custom_completion_func <span style="color:#0550ae">{</span>
@@ -343,10 +343,10 @@ This means that not only it shows possible completions, but can also display add
 Either we create a standardized file, used solely for defining the completion, and autoload it.
 Or we create a setup script which we will invoke from <code>.zshrc</code> and register completion manually.</p>
 <p>First, registering the function is quite easy.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>compdef _my_custom_completion_func <span style="color:#6639ba">test</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>compdef _my_custom_completion_func <span style="color:#6639ba">test</span>
 </span></span></code></pre></div><p>To extract what this complex machinery gives us to work with, we can run the <code>set &gt; vars.txt</code> command and compare results from default zsh terminal with that of completion script function.
 This gives the following additional variables.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first <span style="color:#0a3069">\
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>$ <span style="color:#6639ba">test</span> first <span style="color:#0a3069">\
 </span></span></span><span style="display:flex;"><span>&gt; <span style="color:#0a3069">&#34;second second&#34;</span> th<span style="color:#1f2328">|</span>ird       fourth   <span style="color:#57606a"># this is second line of the command</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">BUFFER</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#39;&#34;second second&#34; third       fourth&#39;</span>  <span style="color:#57606a"># only the current line of the command</span>
@@ -361,7 +361,7 @@ We can acheve this by merging the PREBUFFER which contains already entered lines
 We substitute newlines with spaces, to ignore them properly.
 We push this through our script and parse the result into an array.
 Finally, we can set list of completion words into the system via <code>_describe</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env zsh
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#57606a">#!/usr/bin/env zsh
 </span></span></span><span style="display:flex;"><span><span style="color:#953800">DIR</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>dirname <span style="color:#953800">$0</span>:A<span style="color:#cf222e">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">SCRIPT</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;</span><span style="color:#953800">$DIR</span><span style="color:#0a3069">/test_completion.py&#34;</span> <span style="color:#57606a"># relative to the script location</span>
 </span></span><span style="display:flex;"><span>
@@ -407,7 +407,7 @@ std output: &lt;completion_option1&gt; &lt;completion_option2&gt; ...
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

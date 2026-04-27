@@ -167,9 +167,9 @@ However, in some cases it may be needed to change local files manually.</p>
 </ul>
 <p>The entered command can be anything run from the relative location of the correct folder, but, usually we do not want to alter the run command itself &ndash; that one is available through variable <code>%command%</code>.
 For adding a flag use</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>%command% -flag
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>%command% -flag
 </span></span></code></pre></div><p>And for delegating start to a script, use a command like</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./start_game_bepinex.sh %command%
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./start_game_bepinex.sh %command%
 </span></span></code></pre></div><h2 id="find-game-files">Find game files</h2>
 <p>First, we find where Steam keeps files of a game.</p>
 <ul>
@@ -182,7 +182,7 @@ For adding a flag use</p>
 <p>Steam has a hidden console that can be opened by opening <a href="steam://open/console"><code>steam://open/console</code></a> in web browser.
 This shows a new tab on steam named <em>Console</em> which allows you to input commands directly.</p>
 <p>The same can be achieved by running:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>steam -console
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>steam -console
 </span></span></code></pre></div><h2 id="downloading-an-old-build-of-a-game">Downloading an old build of a game</h2>
 <p>First find App ID, Depot ID, and Manifest ID.</p>
 <ul>
@@ -196,7 +196,7 @@ This shows a new tab on steam named <em>Console</em> which allows you to input c
 <li>note Manifest ID for the version you want</li>
 </ul>
 <p>Run command in steam console</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>download_depot &lt;App ID&gt; &lt;Depot ID&gt; &lt;Manifest ID&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>download_depot &lt;App ID&gt; &lt;Depot ID&gt; &lt;Manifest ID&gt;
 </span></span></code></pre></div><p>This command does not seem to display progress but will print message when the download is finished.
 The command then prints the final directory location, which will be similar to the following.</p>
 <pre tabindex="0"><code>/home/user/.local/share/Steam/ubuntu12_32/steamapps/content/app_730/depot_734
@@ -227,7 +227,7 @@ Steam copy may get automatically updated, which may defeat the purpose of doing 
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

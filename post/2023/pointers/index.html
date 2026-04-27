@@ -168,7 +168,7 @@ Ukazatel je jako bankovní účet &ndash; znáte číslo účtu a na peníze nel
 <p>Ukazatel (anglicky Pointer) je proměnná, která místo hodnoty ukládá <em>adresu jiné proměnné</em>.</p>
 <h3 id="adresa-proměnné">Adresa proměnné</h3>
 <p><em>Zdrojový kód (v C++):</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
@@ -177,7 +177,7 @@ Ukazatel je jako bankovní účet &ndash; znáte číslo účtu a na peníze nel
 </span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Hodnota promenne &#39;a&#39; = &#34;</span><span style="color:#0550ae">&lt;&lt;</span> a <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; = 0
 </span></span></code></pre></div><p><em>Vysvětlení:</em>
 Každá proměnná je v paměti (na RAMce) uložena na nějaké pozici.
@@ -186,7 +186,7 @@ Adresu proměnné <code>a</code> zjistíme příkazem <code>&amp;a</code>, v na�
 Vypsaná adresa proměnné bude pro každý běh programu nejspíše jiná, protože program dostane pokaždé novou část paměti, se kterou může pracovat.</p>
 <h3 id="nastavení-pointeru">Nastavení pointeru</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
@@ -203,7 +203,7 @@ Vypsaná adresa proměnné bude pro každý běh programu nejspíše jiná, prot
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Adresa promenne &#39;a&#39; = 0x23cabc
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; = 4
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Adresa promenne &#39;p&#39; = 0x23cab0
@@ -216,7 +216,7 @@ Z příkladu vidíme, že hodnota proměnné <code>p</code> je <em>adresa</em> p
 To je jediný a nejdůležitější rozdíl mezi běžnou proměnnou a ukazatelem.</p>
 <h3 id="nastavení-hodnoty-proměnné-přes-ukazatel">Nastavení hodnoty proměnné přes ukazatel</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
@@ -232,7 +232,7 @@ To je jediný a nejdůležitější rozdíl mezi běžnou proměnnou a ukazatele
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 42
 </span></span></code></pre></div><p><em>Vysvětlení:</em>
 Stejně jako v minulém případě jsme nastavili hodnotu ukazatele <code>p</code> na adresu proměnné <code>a</code>.
@@ -243,7 +243,7 @@ Použití <code>*p</code> má stejný výsledek jako kdybychom napsali <code>a</
 <p>Pochopení principu <em>adresy</em> a <em>dereference</em> je zásadní v pochopení ukazatelů!</p>
 <h3 id="jak-může-funkce-přepsat-hodnotu-předávaného-argumentu">Jak může funkce přepsat hodnotu předávaného argumentu?</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">funkce1</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> b<span style="color:#1f2328">){</span>
@@ -267,7 +267,7 @@ Použití <code>*p</code> má stejný výsledek jako kdybychom napsali <code>a</
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a&#39; -&gt; 42
 </span></span></code></pre></div><p><em>Vysvětlení:</em>
@@ -282,7 +282,7 @@ Takto to například funguje pro neprimitovní hodnoty v pythonu či javě.
 Předání reference je pouze syntaktický fígl, který se nakonec stejně překládá na předání ukazatele.</p>
 <h3 id="ukazatele-na-ukazatele">Ukazatele na ukazatele</h3>
 <p><em>Zdrojový kód:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
@@ -315,7 +315,7 @@ Předání reference je pouze syntaktický fígl, který se nakonec stejně p�
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>4
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>4
 </span></span><span style="display:flex;"><span>0x23cab4 0x23cab4
 </span></span><span style="display:flex;"><span>20
 </span></span><span style="display:flex;"><span>0x23cab4 0x23cab4
@@ -332,7 +332,7 @@ Proměnná <code>b</code> ukazuje do paměti na adresu <code>0x14</code> (to je 
 Tento úsek paměti nepatří našemu programu a pokud do něj budeme chtít zapsat, tak program spadne (segfault).</p>
 <h3 id="ukazatel-jsou-taky-jen-0ly-a-1ky">Ukazatel jsou taky jen 0ly a 1ky</h3>
 <p><em>Zdrojový kód:</em> (při kompilaci dostanete warning)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> <span style="color:#cf222e">namespace</span> std<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
@@ -363,7 +363,7 @@ Tento úsek paměti nepatří našemu programu a pokud do něj budeme chtít zap
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p><em>Výpis:</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 4, 54
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 4, 54
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 54, 4
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 4, 54
 </span></span><span style="display:flex;"><span>Hodnota promenne &#39;a, b&#39; -&gt; 54, 4
@@ -395,7 +395,7 @@ Velikost datového typu ukazatele <code>int*</code> závisí na architektuře (3
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

@@ -160,13 +160,13 @@
         <div class="post-content">
             <p>Pro optimalizace výkonu programu potřebujeme vědět, které jeho části se počítají nejdéle.</p>
 <p>Náinstalujeme nástroje pro profilování:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt-get install valgrind kcachegrind graphviz
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt-get install valgrind kcachegrind graphviz
 </span></span></code></pre></div><p>Zkompilujeme program s přidaným info (-g přepínač)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>g++ -std<span style="color:#0550ae">=</span>c++11 -g main.cpp -o program
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>g++ -std<span style="color:#0550ae">=</span>c++11 -g main.cpp -o program
 </span></span></code></pre></div><p>A pustíme pod valgrind s nastaveným nástrojem callgrind</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>valgrind --tool<span style="color:#0550ae">=</span>callgrind ./program <span style="color:#0550ae">[</span>program_options<span style="color:#0550ae">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>valgrind --tool<span style="color:#0550ae">=</span>callgrind ./program <span style="color:#0550ae">[</span>program_options<span style="color:#0550ae">]</span>
 </span></span></code></pre></div><p>výstupem je soubor typu callgrind.out.XXXXX (X čísla se stále zvětšují, poslední je aktuálnější), ten otevřeme pod kcachegrind</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kcachegrind callgrind.out.20942
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kcachegrind callgrind.out.20942
 </span></span></code></pre></div><p>Tento program visualizuje kolik proběhlo volání každé řádky.</p>
 
         </div>
@@ -188,7 +188,7 @@
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

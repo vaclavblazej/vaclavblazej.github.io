@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Programming Language Cheatsheet – Template - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2026-01-28T00:00:00Z" class="post-list timeago">28.01.2026</time>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Programming Language Cheatsheet – Template</h1>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>This page defines a <strong>standardized structure</strong> for creating concise programming language cheatsheets.</p>
+<hr>
+<h2 id="language-overview">Language Overview</h2>
+<p>High-level overview with no code.</p>
+<ul>
+<li>title as <code>&lt;language name&gt; Cheatsheet</code></li>
+<li>initial paragraph as a short introduction
+<ul>
+<li>main characteristics of the language</li>
+<li>typical use cases</li>
+<li>primary goals (performance, safety, simplicity, etc.)</li>
+<li>trade‑offs of the language</li>
+</ul>
+</li>
+<li>high-level list of characteristics
+<ul>
+<li>category (imperative, functional, etc.)</li>
+<li>memory model</li>
+<li>type system &ndash; explicit / dynamic typing, type inference</li>
+<li>concurrency</li>
+<li>execution (compiled or interpreted)</li>
+<li>ecosystem tools</li>
+</ul>
+</li>
+</ul>
+<h2 id="project-setup">Project setup</h2>
+<ul>
+<li>list how to create a simple project in the language</li>
+<li>file layout &ndash; as printed from the <code>tree</code> command</li>
+<li>minimal code example that prints <code>Hello World!</code></li>
+<li>show how to compile and run</li>
+</ul>
+<h2 id="language-basics">Language Basics</h2>
+<ul>
+<li>include all comment types &ndash; single line, multiline, documentation (module, function, etc.)</li>
+<li>memory model &ndash; stack or heap variables, are variables values or references, note mutability, ownership, lifetime, garbage collection</li>
+<li>primitive types &ndash; numbers, booleans, strings, null / undefined</li>
+<li>variables &ndash; declaration, basic operations <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>&amp;&amp;</code>, <code>||</code>, <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code></li>
+<li>flow control &ndash; if, else, switch, match</li>
+<li>loops &ndash; for, while, iterators</li>
+<li>error handling &ndash; exceptions, result / option types, error propagation syntax</li>
+<li>functions, lambdas, closures</li>
+<li>class, enum, union, tuple, interfaces, traits &ndash; constructor, destructor, method override, overloading, inheritance</li>
+<li>iterators, map, filter, reduce</li>
+<li>generics</li>
+</ul>
+<h2 id="expanding-the-project">Expanding the project</h2>
+<ul>
+<li>list and explain pitfalls for the library data structures &ndash; vector (array), set, multiset, map, multimap, stack, queue, deque, priority queue</li>
+<li>string &ndash; formatting, printing structures, pattern matching, regex</li>
+<li>how to split the project into multiple files or modules, consider visibility, importing external dependencies</li>
+<li>show tools for the language &ndash; compiler, interpreter, linter, formatter, repl,</li>
+</ul>
+<h2 id="language-advanced-optional">Language Advanced (optional)</h2>
+<ul>
+<li>standard concurrency structures</li>
+<li>interfacing with code base in another language</li>
+</ul>
+<h2 id="other-resources">Other Resources</h2>
+<ul>
+<li>official documentation</li>
+<li>community resources</li>
+<li>recommended books or tutorials</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2026
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
