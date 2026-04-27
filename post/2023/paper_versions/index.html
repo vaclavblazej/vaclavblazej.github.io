@@ -162,7 +162,7 @@
 <hr>
 <p>While working on a paper we usually need different versions.
 We can manage versions using primitives like the following.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\newif\iflongversion</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\newif\iflongversion</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\longversiontrue</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a">% \longversionfalse
 </span></span></span><span style="display:flex;"><span>
@@ -178,7 +178,7 @@ Also, we may toggle <em>appendix</em> which is useful conference proceeding subm
 (Note that the <code>\toappendix</code> takes the enclosed text and moves it to the appendix.)</p>
 <p>My goal was to make writing easier, by toggling <em>draft</em> we get parts of the appendix displayed in the place where they were defined.
 Toggling <em>color</em> colors linenumbers at affected paragraphs so that one can see which parts of the text fall exclusively into some version.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#57606a">%==== VERSIONS: macros for various paper variants; requires \usepackage{etoolbox} ==================
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#57606a">%==== VERSIONS: macros for various paper variants; requires \usepackage{etoolbox} ==================
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">\def\appendixProofText</span><span style="color:#6639ba">{}</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newtoggle</span><span style="color:#6639ba">{</span>short<span style="color:#6639ba">}</span><span style="color:#cf222e">\newtoggle</span><span style="color:#6639ba">{</span>long<span style="color:#6639ba">}</span><span style="color:#cf222e">\newtoggle</span><span style="color:#6639ba">{</span>appendix<span style="color:#6639ba">}</span><span style="color:#cf222e">\newtoggle</span><span style="color:#6639ba">{</span>color<span style="color:#6639ba">}</span><span style="color:#cf222e">\newtoggle</span><span style="color:#6639ba">{</span>draft<span style="color:#6639ba">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a">%---- typically we need many versions; named toggles should have \toggletrue, others \togglefalse --
@@ -219,7 +219,7 @@ Toggling <em>color</em> colors linenumbers at affected paragraphs so that one ca
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newcommand</span><span style="color:#6639ba">{</span><span style="color:#cf222e">\appversion</span><span style="color:#6639ba">}</span>[1]<span style="color:#6639ba">{</span><span style="color:#cf222e">\iftoggle</span><span style="color:#6639ba">{</span>appendix<span style="color:#6639ba">}{</span><span style="color:#cf222e">\appcolor</span><span style="color:#6639ba">{</span>#1<span style="color:#6639ba">}}{}}</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a">%==== END OF VERSIONS ==============================================================================
 </span></span></span></code></pre></div><p>Setup appendix as follows.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\appversion</span><span style="color:#6639ba">{</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#cf222e">\appversion</span><span style="color:#6639ba">{</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\newpage</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\appendix</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">\section*</span><span style="color:#6639ba">{</span>Appendix<span style="color:#6639ba">}</span>
@@ -246,7 +246,7 @@ Toggling <em>color</em> colors linenumbers at affected paragraphs so that one ca
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

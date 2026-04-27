@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Václav Blažej</copyright>
-    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vaclavblazej.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reflections</title>
+      <link>https://vaclavblazej.github.io/tags/reflections/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://vaclavblazej.github.io/tags/reflections/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Howto</title>
       <link>https://vaclavblazej.github.io/tags/howto/</link>

@@ -164,7 +164,7 @@ What exactly does this mean and would such a feature be useful?</p>
 <p>Standard way to declare reference attribute is to set its name and type.
 We imagine a case where one could also declare attribute in the target class which would become mutually tied to the currently defined attribute.
 The declaration could look as in the following example.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Person</span> <span style="color:#1f2328">{</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Person</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">passport</span><span style="color:#1f2328">:</span> Passport<span style="color:#1f2328">.</span>person<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Passport</span> <span style="color:#1f2328">{</span>
@@ -174,7 +174,7 @@ The declaration could look as in the following example.</p>
 Additionally, if the passport <code>a</code> was already set to another person, then setting the attribute would remove this passport from its previous owner.</p>
 <p>Defining and working with many data structures becomes quite easy.
 A linked list would be defined as follows.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// linked list
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// linked list
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">LinkNode</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">next</span><span style="color:#1f2328">:</span> LinkNode<span style="color:#1f2328">.</span>previous<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">previous</span><span style="color:#1f2328">:</span> LinkNode<span style="color:#1f2328">.</span>next<span style="color:#1f2328">;</span>
@@ -182,7 +182,7 @@ A linked list would be defined as follows.</p>
 </span></span></code></pre></div><p>Adding a new element is now just about setting the new node correctly.
 As the back references are set automatically, we do not need to change other entries manually in order to keep the data consistent.
 Adding a new element to a linked list would look similar as follows.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>node <span style="color:#0550ae">=</span> <span style="color:#cf222e">new</span> LinkNode<span style="color:#1f2328">(</span><span style="color:#0550ae">20</span><span style="color:#1f2328">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>node <span style="color:#0550ae">=</span> <span style="color:#cf222e">new</span> LinkNode<span style="color:#1f2328">(</span><span style="color:#0550ae">20</span><span style="color:#1f2328">);</span>
 </span></span><span style="display:flex;"><span>node<span style="color:#1f2328">.</span>prev <span style="color:#0550ae">=</span> head<span style="color:#1f2328">.</span>prev<span style="color:#1f2328">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a">// would set: head.prev.next = node
 </span></span></span><span style="display:flex;"><span>node<span style="color:#1f2328">.</span>next <span style="color:#0550ae">=</span> head<span style="color:#1f2328">;</span>
@@ -193,7 +193,7 @@ However, this model can work nicely in a setting with transactions, where such s
 <h1 id="data-structures">Data structures</h1>
 <p>In tree structures each node has a list of its children while each child points to its parent.
 This is another natural use case for reference linking.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// tree
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// tree
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">TreeNode</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">children</span><span style="color:#1f2328">:</span> TreeNode<span style="color:#1f2328">.</span>parent<span style="color:#1f2328">[]</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">parent</span><span style="color:#1f2328">:</span> TreeNode<span style="color:#1f2328">.</span>children
@@ -202,7 +202,7 @@ This is another natural use case for reference linking.</p>
 To declare these attributes correctly, we need to link one attribute to multiple ones.
 Setting the parent attribute manually becomes ambiguous as we do not know which linked attribute should we change.
 We may resolve this by forbidding assignment of this attribute or defaulting the assignment to one attribute (which seems to be a pretty confusing solution for the programmer).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// binary tree
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// binary tree
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">BinaryTreeNode</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">left</span><span style="color:#1f2328">:</span> BinaryTreeNode<span style="color:#1f2328">.</span>parent<span style="color:#1f2328">[]</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">right</span><span style="color:#1f2328">:</span> BinaryTreeNode<span style="color:#1f2328">.</span>parent<span style="color:#1f2328">[]</span>
@@ -211,7 +211,7 @@ We may resolve this by forbidding assignment of this attribute or defaulting the
 </span></span></code></pre></div><p>However, we may resolve the assignment issue when substitution is taking place.
 E.g. setting <code>x.parent = node.parent</code> may infer the chosen attribute by what is currently set.
 We may see this in the following implementation of <code>leftRotation</code> which is used in AVL tree.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// AVL tree method
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// AVL tree method
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">leftRotation</span><span style="color:#1f2328">(</span>BinaryTreeNode node<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    assert<span style="color:#1f2328">(</span>node<span style="color:#1f2328">.</span>right<span style="color:#1f2328">);</span>
 </span></span><span style="display:flex;"><span>    let x <span style="color:#0550ae">=</span> node<span style="color:#1f2328">.</span>right<span style="color:#1f2328">;</span>
@@ -222,12 +222,12 @@ We may see this in the following implementation of <code>leftRotation</code> whi
 </span></span></code></pre></div><p>One can also link a attribute to itself.
 This defines a mutual relation.
 In this way, we may define a graph structure where each node lists its neighbors.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// graph
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// graph
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Node</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">neighbor</span><span style="color:#1f2328">:</span> Node<span style="color:#1f2328">.</span>neighbor<span style="color:#1f2328">[]</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>Similarly, we may tie two attributes to create an oriented relation.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// oriented graph
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">// oriented graph
 </span></span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Node</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">outNeighbor</span><span style="color:#1f2328">:</span> Node<span style="color:#1f2328">.</span>inNeighbor<span style="color:#1f2328">[]</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">inNeighbor</span><span style="color:#1f2328">:</span> Node<span style="color:#1f2328">.</span>outNeighbor<span style="color:#1f2328">[]</span>
@@ -261,7 +261,7 @@ It seems that there are other issues which would need to be tackled.</p>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">

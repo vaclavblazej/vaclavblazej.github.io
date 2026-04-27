@@ -1,0 +1,590 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Python Cheatsheet - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2026-02-14T00:00:00Z" class="post-list timeago">14.02.2026</time>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h1>Python Cheatsheet</h1>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Python is a high-level, general-purpose programming language.
+The language is interpreted, has code blocks based on indentation, has an extensive standard library, and many third-party libraries.
+Python has slower runtime performance and higher memory overhead compared to compiled languages.
+Python is used across many domains, for exapmle in scripting, web development, data analysis, and machine learning.</p>
+<p><strong>Key characteristics</strong>:</p>
+<ul>
+<li>Paradigm: multi-paradigm (imperative, object-oriented, functional)</li>
+<li>Memory model: automatic memory management with garbage collection</li>
+<li>Type system: dynamically typed with optional static typing (type hints)</li>
+<li>Concurrency: threads, multiprocessing, async/await</li>
+<li>Execution: interpreted (bytecode executed by a virtual machine)</li>
+<li>Ecosystem tools: <code>pip</code>, <code>venv</code>, <code>pytest</code>, <code>mypy</code>, <code>black</code></li>
+</ul>
+<hr>
+<h2 id="project-setup">Project Setup</h2>
+<h3 id="create-a-simple-project">Create a simple project</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir hello_python
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">cd</span> hello_python
+</span></span><span style="display:flex;"><span>python3 -m venv .venv
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">source</span> .venv/bin/activate
+</span></span></code></pre></div><h3 id="file-layout">File layout</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello_python/
+</span></span><span style="display:flex;"><span>├── .venv/
+</span></span><span style="display:flex;"><span>└── main.py
+</span></span></code></pre></div><h3 id="minimal-example">Minimal example</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#57606a"># main.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">print</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Hello World!&#34;</span><span style="color:#1f2328">)</span>
+</span></span></code></pre></div><h3 id="run-the-program">Run the program</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python main.py
+</span></span></code></pre></div><hr>
+<h2 id="language-basics">Language Basics</h2>
+<p>Compared to other languages, there is no <code>main</code> function.
+Entry point is the file we invoke when running <code>python &lt;file&gt;</code>.
+Note that Python source code is interpreted line by line, so we may not call functions that are defined later in code.
+This issue is often handled as follows.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">Multiline comment / docstring, &#39;&#39;&#39; also works
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>    hello<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>    hello<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Joe&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">hello</span><span style="color:#1f2328">(</span>to_whom<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span> <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;World&#34;</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">print</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Hello&#34;</span><span style="color:#1f2328">,</span> to_whom <span style="color:#0550ae">+</span> <span style="color:#0a3069">&#34;!&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main<span style="color:#1f2328">()</span>      <span style="color:#57606a"># Single-line comment</span>
+</span></span></code></pre></div><pre tabindex="0"><code>Hello World!
+Hello Joe!
+</code></pre><h3 id="memory-model">Memory Model</h3>
+<p>In Python, all variables are references to values stored on the heap.
+Primitive types are immutable, changing the variable changes their reference.
+Variables can be <code>None</code>.
+Python uses garbage collection.</p>
+<p>All primitive values are immutable, even though variables pointing to them can be easily reassigned, e.g. through <code>+=</code>.
+Additionally, tuples are immutable lists &ndash; their structure cannot change, but we can mutate their mutable elements.</p>
+<h3 id="primitive-types">Primitive Types</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#0550ae">=</span> <span style="color:#0550ae">42</span>          <span style="color:#57606a"># int, unbounded values - uses bigint automatically</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#0550ae">=</span> <span style="color:#0550ae">3.14</span>        <span style="color:#57606a"># float, normal -- bounded precision</span>
+</span></span><span style="display:flex;"><span>l <span style="color:#0550ae">=</span> <span style="color:#cf222e">True</span>        <span style="color:#57606a"># bool</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span>        <span style="color:#57606a"># NoneType is the null value</span>
+</span></span><span style="display:flex;"><span>s <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;text&#34;</span>      <span style="color:#57606a"># str, array of unicode characters</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#0550ae">=</span> <span style="color:#0a3069">b</span><span style="color:#0a3069">&#34;data&#34;</span>     <span style="color:#57606a"># bytes, array of raw 8-bit values</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#0550ae">=</span> <span style="color:#0550ae">3</span> <span style="color:#0550ae">+</span> <span style="color:#0550ae">4</span>j      <span style="color:#57606a"># complex, access with .real, .imag</span>
+</span></span></code></pre></div><ul>
+<li>Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (<a href="https://en.wikipedia.org/wiki/Modulo"target="_blank">modulo<span style="white-space: nowrap;">&thinsp;↗</span></a>, least <strong>positive</strong> residue), <code>//</code> (<strong>floored</strong> division), <code>**</code> (power)</li>
+<li>Logical: <code>and</code>, <code>or</code>, <code>not</code></li>
+<li>Comparison: <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>!=</code></li>
+<li>Bitwise: <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code></li>
+<li>Ternary: <code>True if x else False</code></li>
+<li>internally, all of these are classes; by convention in lower-case</li>
+</ul>
+<h3 id="standard-types">Standard Types</h3>
+<p>Due to dynamic typing Python&rsquo;s collections can be <strong>non-uniform</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>l <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;hi&#34;</span><span style="color:#1f2328">]</span>    <span style="color:#57606a"># list</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;hi&#34;</span><span style="color:#1f2328">)</span>    <span style="color:#57606a"># tuple</span>
+</span></span><span style="display:flex;"><span>s <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;hi&#34;</span><span style="color:#1f2328">}</span>    <span style="color:#57606a"># set, needs to be hashable</span>
+</span></span><span style="display:flex;"><span>d <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">0</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;hi&#34;</span><span style="color:#1f2328">}</span>       <span style="color:#57606a"># dict, needs hashable key</span>
+</span></span></code></pre></div><p>Each of the above types has a constructor that takes an iterable as its parameter.
+Hence, <code>list(t)</code> given tuple transforms it to a list, same works with <code>tuple</code> and <code>set</code>.
+Similarly with <code>dict</code>, but each element must consist of two values, e.g. <code>dict([(0, &quot;hi&quot;)])</code> converts list of tuples of size 2 to <code>{0: &quot;hi&quot;}</code>.</p>
+<p>Hashable requirement means we cannot use lists, sets, or dicts as keys.
+For this, we can transform list to tuple using <code>tuple(l)</code>, note that its elements must be hashable; nested lists can be transformed recursively.</p>
+<h3 id="flow-control">Flow Control</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">if</span> <span style="color:#0550ae">0</span> <span style="color:#0550ae">&lt;</span> x <span style="color:#0550ae">&lt;=</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">:</span>     <span style="color:#57606a"># comparisons can be merged</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">pass</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">elif</span> x <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span> <span style="color:#0550ae">or</span> x <span style="color:#0550ae">==</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">2</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">pass</span>    <span style="color:#57606a"># nil operation, needed here as blocks cannot be empty</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">else</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">pass</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">match</span> value<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">case</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">pass</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">case</span> <span style="color:#0550ae">2</span> <span style="color:#0550ae">|</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">pass</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">case</span> _<span style="color:#1f2328">:</span>     <span style="color:#57606a"># default branch</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">pass</span>
+</span></span></code></pre></div><h3 id="loops">Loops</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">for</span> i <span style="color:#0550ae">in</span> <span style="color:#6639ba">range</span><span style="color:#1f2328">(</span><span style="color:#0550ae">5</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">while</span> condition<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">break</span>
+</span></span></code></pre></div><h3 id="error-handling">Error Handling</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">try</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    risky<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">except</span> ValueError <span style="color:#cf222e">as</span> e<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    handle<span style="color:#1f2328">(</span>e<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">raise</span> e     <span style="color:#57606a"># optionally propagate</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">else</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    success<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">finally</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    cleanup<span style="color:#1f2328">()</span>
+</span></span></code></pre></div><h3 id="functions-lambdas-closures">Functions, Lambdas, Closures</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">func</span><span style="color:#1f2328">(</span>a<span style="color:#1f2328">,</span> b<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">*</span>args<span style="color:#1f2328">,</span> <span style="color:#0550ae">**</span>kwargs<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> a <span style="color:#0550ae">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>lambda_func <span style="color:#0550ae">=</span> <span style="color:#cf222e">lambda</span> x<span style="color:#1f2328">:</span> x <span style="color:#0550ae">*</span> <span style="color:#0550ae">2</span>
+</span></span></code></pre></div><p>Closures capture variables from outer scopes.</p>
+<p><strong>Unpacking</strong> like <code>func(*list)</code> can be used to pass values of arr as list of arguments.
+Similarly, <code>func(**dict)</code> can pass named arguments to a function, where argument names are the same as the dictionary keys.</p>
+<h3 id="classes-and-data-structures">Classes and Data Structures</h3>
+<p>By convention our classes should be upper-case named.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Base</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> x<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>x <span style="color:#0550ae">=</span> x      <span style="color:#57606a"># calls setter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__str__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">{</span><span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>x<span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@property</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">x</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>        <span style="color:#57606a"># getter for x</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_x <span style="color:#0550ae">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@x.setter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">x</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> value<span style="color:#1f2328">):</span> <span style="color:#57606a"># setter for x</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_x <span style="color:#0550ae">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    letters <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span><span style="color:#0a3069">&#34;a&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;b&#34;</span><span style="color:#1f2328">]</span>    <span style="color:#57606a"># class variable</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@classmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">get_letters</span><span style="color:#1f2328">(</span><span style="color:#6a737d">cls</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6a737d">cls</span><span style="color:#0550ae">.</span>letters
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Base<span style="color:#0550ae">.</span>get_letters<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Derived</span><span style="color:#1f2328">(</span>Base<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">value</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">super</span><span style="color:#1f2328">()</span><span style="color:#0550ae">.</span>x <span style="color:#0550ae">*</span> <span style="color:#0550ae">2</span>
+</span></span></code></pre></div><ul>
+<li>by convention variables starting with <code>_</code> are meant to be private; and <code>__</code> are &ldquo;very&rdquo; private</li>
+<li><code>__repr__(self)</code> representation for developers</li>
+<li><code>__add__(self, other)</code> overloading the <code>+</code> operator</li>
+</ul>
+<p>Enums:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">enum</span> <span style="color:#cf222e">import</span> Enum
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Color</span><span style="color:#1f2328">(</span>Enum<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    RED <span style="color:#0550ae">=</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>    BLUE <span style="color:#0550ae">=</span> <span style="color:#0550ae">2</span>
+</span></span></code></pre></div><p>Tuples and unions:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">typing</span> <span style="color:#cf222e">import</span> Union
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Point <span style="color:#0550ae">=</span> <span style="color:#6639ba">tuple</span><span style="color:#1f2328">[</span><span style="color:#6639ba">int</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">int</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>Number <span style="color:#0550ae">=</span> Union<span style="color:#1f2328">[</span><span style="color:#6639ba">int</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">]</span>
+</span></span></code></pre></div><h3 id="iterators-map-filter-reduce">Iterators, Map, Filter, Reduce</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6639ba">map</span><span style="color:#1f2328">(</span>function<span style="color:#1f2328">,</span> data<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">filter</span><span style="color:#1f2328">(</span>predicate<span style="color:#1f2328">,</span> data<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">functools</span> <span style="color:#cf222e">import</span> reduce
+</span></span><span style="display:flex;"><span>reduce<span style="color:#1f2328">(</span>function<span style="color:#1f2328">,</span> data<span style="color:#1f2328">)</span>
+</span></span></code></pre></div><h3 id="generics">Generics</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">typing</span> <span style="color:#cf222e">import</span> TypeVar<span style="color:#1f2328">,</span> Generic
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>T <span style="color:#0550ae">=</span> TypeVar<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;T&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Box</span><span style="color:#1f2328">(</span>Generic<span style="color:#1f2328">[</span>T<span style="color:#1f2328">]):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> value<span style="color:#1f2328">:</span> T<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>value <span style="color:#0550ae">=</span> value
+</span></span></code></pre></div><hr>
+<h2 id="expanding-the-project">Expanding the Project</h2>
+<h3 id="standard-library-functions">Standard library functions</h3>
+<tt>
+<table>
+<tr><th> function call </th><th> complexity </th><th> meaning </th></tr>
+<tr><td> list.sort() | sorted(iter) </td><td> $O(N \log N)$ </td><td> sort a list | sorted copy </td></tr>
+<tr><td colspan=2> sorted(a, reverse=True) </td><td> in the decreasing order </td></tr>
+<tr><td colspan=2> sorted(a, key=func) </td><td> custom sorting </td></tr>
+<tr><td> a, b = b, a    </td><td> $O(1)$           </td><td> swaps elements </td></tr>
+<tr><td> range(start, stop) </td><td> $O(1)$ </td><td> lazy sequence of integers </td></tr>
+<tr><td> list.reverse() | reversed(a) </td><td> $O(N)$ </td><td> reverse a list | reversed copy </td></tr>
+<tr><td> list[shift:] + list[:shift] </td><td> $O(N)$ </td><td> left shifts contents of the list </td></tr>
+<tr><td> collections.deque.rotate(-shift) </td><td> $O(\mathrm{shift})$ </td><td> in-place rotation on deque </td></tr>
+<tr><td> a, b, c = tup </td><td> $O(|\mathrm{tup}|)$ </td><td> tuple unpacking </td></tr>
+</table>
+</tt>
+<h3 id="standard-library-data-structures">Standard library data structures</h3>
+<tt>
+<table>
+<tr><th> structure     </th><th> operation     </th><th> returns       </th><th> complexity    </th><th> note </th></tr>
+<tr><td> a: list[V]   </td><td colspan=4> dynamically-sized array, fast element access </td></tr>
+<tr><td>               </td><td> list(iter)       </td><td> list           </td><td> $O(|\mathrm{iter}|)$</td><td> initialize with <b>references</b> to the iterator elements </td></tr>
+<tr><td>               </td><td> [default]*len    </td><td> list           </td><td> $O(\mathrm{len})$           </td><td> initialize with <b>references</b> to the default </td></tr>
+<tr><td>               </td><td> a[idx]           </td><td> V              </td><td> $O(1)$        </td><td>   </td></tr>
+<tr><td>               </td><td> a.append(V)      </td><td> None           </td><td> $O'(1)$ amortized      </td><td>   </td></tr>
+<tr><td>               </td><td> a.pop()          </td><td> V              </td><td> $O(1)$        </td><td> removes and returns the last element </td></tr>
+<tr><td>               </td><td> a[-1]            </td><td> V              </td><td> $O(1)$        </td><td> access the last element </td></tr>
+<tr><td>               </td><td> a.insert(i, V)   </td><td> None           </td><td> $O(N)$        </td><td> insert at position </td></tr>
+<tr><td>               </td><td> a.extend(iter)   </td><td> None           </td><td> $O(K)$        </td><td> append K elements </td></tr>
+<tr><td> s: set[V] </td><td colspan=4> collection of unique hashable keys, unordered </td></tr>
+<tr><td>               </td><td> a.add(V)       </td><td> None        </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td>               </td><td> V in a         </td><td> bool        </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td>               </td><td> a.remove(V)    </td><td> None        </td><td> $O(1)$      </td><td> KeyError if missing </td></tr>
+<tr><td>               </td><td> a.discard(V)   </td><td> None        </td><td> $O(1)$      </td><td> no error if missing </td></tr>
+<tr><td>               </td><td> a | b          </td><td> set         </td><td> $O(N+M)$    </td><td> union </td></tr>
+<tr><td>               </td><td> a & b          </td><td> set         </td><td> $O(\min(N,M))$ </td><td> intersection </td></tr>
+<tr><td>               </td><td> a - b          </td><td> set         </td><td> $O(N)$      </td><td> difference </td></tr>
+<tr><td> frozenset </td><td colspan=4> immutable version of set, can be used as dict key or set element </td></tr>
+<tr><td> dict  </td><td colspan=4> key-value pairs, unique keys, insertion-ordered (Python 3.7+) </td></tr>
+<tr><td>          </td><td> a[K]           </td><td> V        </td><td> $O(1)$      </td><td> KeyError if missing </td></tr>
+<tr><td>          </td><td> a.get(K, def)  </td><td> V        </td><td> $O(1)$      </td><td> returns def if missing </td></tr>
+<tr><td>          </td><td> a[K] = V       </td><td> None     </td><td> $O(1)$      </td><td> insert or update </td></tr>
+<tr><td>          </td><td> K in a         </td><td> bool     </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td>          </td><td> del a[K]       </td><td> --       </td><td> $O(1)$      </td><td> KeyError if missing </td></tr>
+<tr><td>          </td><td> a.pop(K)       </td><td> V        </td><td> $O(1)$      </td><td> remove and return </td></tr>
+<tr><td>          </td><td> a.setdefault(K,V) </td><td> V     </td><td> $O(1)$      </td><td> get or insert default </td></tr>
+<tr><td> collections.defaultdict(factory) </td><td colspan=4> dict subclass, auto-creates missing keys using factory (e.g. int, list) </td></tr>
+<tr><td> collections.Counter </td><td colspan=4> dict subclass for counting hashable objects (like C++ multiset for counting) </td></tr>
+<tr><td>          </td><td> Counter(iter)    </td><td> Counter  </td><td> $O(N)$      </td><td> count elements </td></tr>
+<tr><td>          </td><td> c.most_common(k) </td><td> list     </td><td> $O(N \log k)$ </td><td> top k elements </td></tr>
+<tr><td>          </td><td> c.update(k)      </td><td> --       </td><td> $O(k)$      </td><td> add elements </td></tr>
+<tr><td> list (as stack)  </td><td colspan=4> last in first out </td></tr>
+<tr><td></td><td> a.append(V)     </td><td> None      </td><td> $O(1)$      </td><td> push </td></tr>
+<tr><td></td><td> a[-1]           </td><td> V         </td><td> $O(1)$      </td><td> peek top </td></tr>
+<tr><td></td><td> a.pop()         </td><td> V         </td><td> $O(1)$      </td><td> pop </td></tr>
+<tr><td> collections.deque  </td><td colspan=4> double-ended queue, fast access to both ends </td></tr>
+<tr><td></td><td> a.appendleft(V) </td><td> None      </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a[0]            </td><td> V         </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a.popleft()     </td><td> V         </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a.append(V)     </td><td> None      </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a[-1]           </td><td> V         </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a.pop()         </td><td> None      </td><td> $O(1)$      </td><td>  </td></tr>
+<tr><td></td><td> a.rotate(k)     </td><td> None      </td><td> $O(k)$      </td><td> rotate right by k </td></tr>
+<tr><td></td><td colspan=4> also usable as queue (FIFO): append() to push, popleft() to pop </td></tr>
+<tr><td> heapq (module) </td><td colspan=4> min-heap operations on a list, smallest element first </td></tr>
+<tr><td></td><td colspan=4> for max-heap, negate values or use tuples with negated priority </td></tr>
+<tr><td></td><td> heapq.heappush(a, V)  </td><td> None      </td><td> $O(\log N)$  </td><td>  </td></tr>
+<tr><td></td><td> a[0]                  </td><td> V         </td><td> $O(1)$       </td><td> peek smallest </td></tr>
+<tr><td></td><td> heapq.heappop(a)      </td><td> V         </td><td> $O(\log N)$  </td><td>  </td></tr>
+<tr><td></td><td> heapq.heapify(a)      </td><td> None      </td><td> $O(N)$       </td><td> turn list into heap in-place </td></tr>
+<tr><td> str </td><td colspan=4> immutable sequence of characters </td></tr>
+<tr><td></td><td> s[start:]            </td><td> str </td><td> $O({\rm len}-{\rm start})$  </td><td> suffix of a string </td></tr>
+<tr><td></td><td> s[start:start+count] </td><td> str </td><td> $O({\rm count})$  </td><td> substring </td></tr>
+<tr><td></td><td> s.find(sub)          </td><td> int </td><td> $O(N \cdot M)$  </td><td> index or -1 </td></tr>
+<tr><td></td><td> s.split(sep)         </td><td> list </td><td> $O(N)$  </td><td> split into parts </td></tr>
+<tr><td></td><td> sep.join(parts)      </td><td> str </td><td> $O(N)$  </td><td> join parts </td></tr>
+<tr><td> tuple </td><td colspan=4> immutable sequence, usable as dict key or set element </td></tr>
+<tr><td></td><td> t[idx]    </td><td> V    </td><td> $O(1)$  </td><td>  </td></tr>
+<tr><td></td><td> a, b = t  </td><td> --   </td><td> $O(N)$  </td><td> unpacking </td></tr>
+</table>
+</tt>
+<ul>
+<li>number of elements: <code>len(a)</code>,</li>
+<li>membership test: <code>V in a</code>,</li>
+<li>copying: <code>a.copy()</code> or <code>a[:]</code> (shallow),</li>
+<li>deep copy: <code>copy.deepcopy(a)</code>,</li>
+<li>iterating: <code>for x in a</code>, <code>for i, x in enumerate(a)</code>.</li>
+</ul>
+<h3 id="strings">Strings</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>name <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;Alice&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Hello </span><span style="color:#0a3069">{</span>name<span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">{}</span><span style="color:#0a3069"> </span><span style="color:#0a3069">{}</span><span style="color:#0a3069">&#34;</span><span style="color:#0550ae">.</span>format<span style="color:#1f2328">(</span>a<span style="color:#1f2328">,</span> b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Hello </span><span style="color:#0a3069">{</span>d<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;key&#39;</span><span style="color:#1f2328">]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span>     <span style="color:#57606a"># for dictionaries</span>
+</span></span></code></pre></div><p><code>.strip()</code>, <code>.title()</code>, <code>a, b = s.split(&quot; &quot;)</code>, <code>s.replace(&quot;what&quot;, &quot;with&quot;)</code></p>
+<p>Regex:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">re</span>
+</span></span><span style="display:flex;"><span>re<span style="color:#0550ae">.</span><span style="color:#cf222e">match</span><span style="color:#1f2328">(</span><span style="color:#0a3069">r</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">\\</span><span style="color:#0a3069">d+&#34;</span><span style="color:#1f2328">,</span> text<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">if</span> matches <span style="color:#0550ae">:=</span> re<span style="color:#0550ae">.</span>search<span style="color:#1f2328">(</span>pattern<span style="color:#1f2328">,</span> text<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    matches<span style="color:#0550ae">.</span>group<span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>        <span style="color:#57606a"># to retrieve capture groups</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#0550ae">=</span> re<span style="color:#0550ae">.</span>sub<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;pattern&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;replace with&#34;</span><span style="color:#1f2328">,</span> text<span style="color:#1f2328">)</span>
+</span></span></code></pre></div><ul>
+<li>using <code>r&quot;pattern&quot;</code> says this is a raw string so that, e.g., <code>\n</code> is not interpreted as newline</li>
+<li><code>.</code> any</li>
+<li><code>*</code> 0 or more</li>
+<li><code>+</code> 1 or more</li>
+<li><code>?</code> optional</li>
+<li><code>{m}</code> m repetitions</li>
+<li><code>{m,n}</code> m to n repetitions</li>
+<li><code>(...)</code> captured group, <code>(?:...)</code> non-captured group</li>
+<li><code>a|b</code> or</li>
+<li><code>re.IGNORECASE</code>, <code>re.MULTILINE</code>, <code>re.DOTALL</code></li>
+<li><code>re.split</code> and <code>re.findall</code></li>
+</ul>
+<h3 id="modules-and-packages">Modules and Packages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>project/
+</span></span><span style="display:flex;"><span>├── package/
+</span></span><span style="display:flex;"><span>│   ├── __init__.py
+</span></span><span style="display:flex;"><span>│   └── module.py
+</span></span><span style="display:flex;"><span>└── main.py
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">package.module</span> <span style="color:#cf222e">import</span> func
+</span></span></code></pre></div><p>Any importing interprets the file, so any code gets executed.
+Libraries should only define the library functions.
+To fix this define the called code in <code>if __name__ == '__main__':</code> which is true only if the code is called directly.</p>
+<p>External dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests
+</span></span></code></pre></div><h3 id="tooling">Tooling</h3>
+<ul>
+<li>Interpreter: <code>python</code> / <code>python3</code></li>
+<li>Package manager: <code>pip</code></li>
+<li>Virtual environments: <code>venv</code></li>
+<li>Linter: <code>pylint</code>, <code>flake8</code></li>
+<li>Formatter: <code>black</code></li>
+<li>Type checker: <code>mypy</code></li>
+<li>REPL: <code>python</code></li>
+</ul>
+<hr>
+<h2 id="language-advanced-optional">Language Advanced (Optional)</h2>
+<h3 id="concurrency">Concurrency</h3>
+<ul>
+<li>threading: shared memory, GIL-limited</li>
+<li>multiprocessing: true parallelism</li>
+<li>asyncio: cooperative async I/O</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">await</span> task<span style="color:#1f2328">()</span>
+</span></span></code></pre></div><h3 id="interfacing-with-other-languages">Interfacing with Other Languages</h3>
+<ul>
+<li>C extensions via CPython API</li>
+<li>CFFI / ctypes</li>
+<li>Embedding Python in C/C++</li>
+</ul>
+<hr>
+<h2 id="other-resources">Other Resources</h2>
+<ul>
+<li>Official documentation: <a href="https://docs.python.org/3/"target="_blank">https://docs.python.org/3/<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+<li>Community: PyPI, Stack Overflow, Real Python</li>
+<li>Books: <em>Fluent Python</em>, <em>Effective Python</em></li>
+</ul>
+<hr>
+<ul>
+<li>slices</li>
+<li>res=sorted(arr)</li>
+<li>first, second = myline.split(&quot;,&quot;)     # fails if there are not 2</li>
+<li><code>type(object)</code> to find the type of an object</li>
+<li><code>global var</code> to have access to a global variable</li>
+<li>constant variables are by a convention capitalized</li>
+<li><code>for idx, val in enumerate(iterable):</code></li>
+</ul>
+<h2 id="generators">Generators</h2>
+<p>We may return from a function using <code>yield</code> which creates a generator with this one value given.</p>
+<h2 id="comprehension">Comprehension</h2>
+<p>List comprehension is <code>[returned_value for value in iterable if predicate]</code> where <code>if predicate</code> is optional.
+This has the same result as <code>map(returned_value, filter(predicate, iterable))</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>upper_cased_words <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>word<span style="color:#0550ae">.</span>upper<span style="color:#1f2328">()</span> <span style="color:#cf222e">for</span> word <span style="color:#0550ae">in</span> words<span style="color:#1f2328">]</span>
+</span></span></code></pre></div><p>Dictionary comprehension is <code>{key: value for value in iterable if predicate}</code>.</p>
+<h2 id="file-io">File I/O</h2>
+<p>We open files with <code>open</code>, defining type of access as <code>&quot;r&quot;</code> to read, <code>&quot;w&quot;</code> to write, <code>&quot;a&quot;</code> to append.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">with</span> <span style="color:#6639ba">open</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;file.txt&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;a&#34;</span><span style="color:#1f2328">)</span> <span style="color:#cf222e">as</span> myfile
+</span></span><span style="display:flex;"><span>    myfile<span style="color:#0550ae">.</span>write<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;whatever&#34;</span><span style="color:#1f2328">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>myfile <span style="color:#0550ae">=</span> <span style="color:#6639ba">open</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;file.txt&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;r&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span> line <span style="color:#0550ae">in</span> myfile<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>line<span style="color:#0550ae">.</span>rstrip<span style="color:#1f2328">())</span>
+</span></span><span style="display:flex;"><span>myfile<span style="color:#0550ae">.</span>close<span style="color:#1f2328">()</span>      <span style="color:#57606a"># manually closing the file</span>
+</span></span></code></pre></div><h2 id="testing">Testing</h2>
+<p>Using <code>pytest</code> we may invoke a file that includes our library and runs each function that starts with <code>test_</code> or ends with <code>_test</code> to test everything works as intended using asserts.
+Pytest then gives more information on values of the failed asserts.
+May expect an error through <code>with pytest.raises(ErrorType)</code>.
+We may run <code>pytest test</code> on director <code>test</code> that contains <code>__init__.py</code> (defines a package) then it runs all</p>
+<h2 id="documentation">Documentation</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">myfun</span><span style="color:#1f2328">(</span>n<span style="color:#1f2328">:</span> <span style="color:#6639ba">int</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    Docstring for my function in the restructured text format.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    :param n: Description of what the n parameter is.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    :type n: int
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    :raise TypeError: When does this happen?
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    :rtype: str
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">(</span>n<span style="color:#1f2328">)</span> <span style="color:#0550ae">+</span> <span style="color:#0a3069">&#34; was a number</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span>
+</span></span></code></pre></div><h2 id="libraries">Libraries</h2>
+<ul>
+<li><code>sys.argv</code> list for passed arguments, <code>sys.exit(&quot;message&quot;)</code></li>
+<li><code>random.choice([options ...])</code>, <code>randint(from, to)</code>, <code>shuffle(arr)</code> in place,</li>
+<li><code>statistics.mean([values])</code></li>
+<li><code>json.dumps(&quot;json_string&quot;)</code></li>
+<li><code>requests.get</code>, <code>response.json()</code></li>
+<li><code>csv.reader(file)</code>, <code>csv.DictReader(file)</code> when first line has field names, <code>w=csv.vwriter(file)</code> and <code>w.writeline(line)</code>, <code>csv.DictWriter(file, fieldnames=[&quot;col1&quot;, &quot;col2&quot;])</code></li>
+<li><code>pillow</code> for processing image files</li>
+<li><code>argparse</code> for parsing command line arguments</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nLRL_NcnK-4"target="_blank">Harvard CS50’s Introduction to Programming with Python – Full University Course<span style="white-space: nowrap;">&thinsp;↗</span></a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2026
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+

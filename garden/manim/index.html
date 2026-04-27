@@ -195,7 +195,7 @@ We explore various shapes and how to connect them.</p>
 Then <a href="https://3b1b.github.io/manim/getting_started/quickstart.html"target="_blank">setup a project<span style="white-space: nowrap;">&thinsp;↗</span></a>.</p>
 <p>This tutorial is created with conjunction with a public <a href="https://github.com/vaclavblazej/manim-tutorial"target="_blank">Github repository<span style="white-space: nowrap;">&thinsp;↗</span></a> that you may download and try.
 In general, you will be able to run a command of the following structure to get an output.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim <span style="color:#0550ae">[</span>-p<span style="color:#0550ae">]</span> -ql &lt;file.py&gt; &lt;Class&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim <span style="color:#0550ae">[</span>-p<span style="color:#0550ae">]</span> -ql &lt;file.py&gt; &lt;Class&gt;
 </span></span></code></pre></div><ul>
 <li>Command itself depends on the version you get &ndash; <code>manim</code> (community version, used here) or <code>manimgl</code> (Grant&rsquo;s version).</li>
 <li>Flags you will usually use are <code>-p</code> to display the output, and <code>-ql</code> or <code>-qh</code> to set quality. They can be squished to e.g. <code>-pql</code>.</li>
@@ -203,11 +203,11 @@ In general, you will be able to run a command of the following structure to get 
 <li>Last, <code>Class</code> refers to a class (that inherits Scene) within the source code. One file can contain many scenes and setting this class selects which one should be prepared. We default its name to <code>Main</code> but this is just our convention.</li>
 </ul>
 <p>If you set up Manim correctly and download the repository you should be able to run the following command that produces and opens the final picture.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim -pql examples/sample.py Main
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>manim -pql examples/sample.py Main
 </span></span></code></pre></div>
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>manim<span style="color:#0550ae">.</span>Scene<span style="color:#1f2328">):</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">construct</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
@@ -233,7 +233,7 @@ Your python code can live outside of this scene, but whatever you want to be dra
 The <strong>self</strong> here represents the scene and it provides methods that allow you to interact with the scene.
 A typical way to add shapes to a scene is via <code>self.add</code> method.
 By default, any object is placed at $(0,0)$ coordinates.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">manim</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a"># &lt;imports&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#57606a"># other code</span>
 </span></span><span style="display:flex;"><span>
@@ -250,7 +250,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">2</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
@@ -269,7 +269,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">5.5</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>MovingCameraScene<span style="color:#1f2328">):</span>
@@ -295,7 +295,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">5</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">build_arrow</span><span style="color:#1f2328">(</span>tip<span style="color:#1f2328">):</span>
@@ -315,7 +315,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width <span style="color:#0550ae">=</span> <span style="color:#0550ae">10</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
@@ -337,7 +337,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">manim</span> <span style="color:#cf222e">import</span> <span style="color:#0550ae">*</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#0550ae">.</span>frame_width<span style="color:#0550ae">=</span><span style="color:#0550ae">9.5</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Main</span><span style="color:#1f2328">(</span>Scene<span style="color:#1f2328">):</span>
@@ -358,7 +358,7 @@ For example, <code>Line</code> draws a line if you provide start and end; <code>
 
 
 <span class="split-display">
-<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"></code></pre></div></span>
+<span class="split-display-code"><div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-py" data-lang="py"></code></pre></div></span>
 <span class="split-display-rasimage"><img src="https://vaclavblazej.github.io/garden/manim//build/plots.png" alt="plots"/></span>
 </span>
 
@@ -421,7 +421,7 @@ manim cfg write -l cwd</li>
 
         
     </ul>
-    <ul title="Last update of the website" class="pull-right pad">21. January 2026</ul>
+    <ul title="Last update of the website" class="pull-right pad">27. April 2026</ul>
 </div>
 
 <script type="text/javascript">
