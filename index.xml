@@ -12,9 +12,16 @@
 			<copyright>© Václav Blažej</copyright>
 		
 		
-			<lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://vaclavblazej.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2026 2/3 - finding a flat, starting a new job</title>
+				<link>https://vaclavblazej.github.io/post/2026/t2/</link>
+				<pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://vaclavblazej.github.io/post/2026/t2/</guid>
+				<description>&lt;p&gt;I find it somewhat hard to write about anything without being prompted to. (Note how &amp;ldquo;prompt&amp;rdquo; slightly changed its meaning recently.)&#xA;But I like the idea of being able to look back at these posts in the future, so (I hope) I&amp;rsquo;ll continue doing the reflections.&lt;/p&gt;&#xA;&lt;p&gt;A few days after the &lt;a href=&#34;../T1/&#34;&gt;last post&lt;/a&gt; I departed Warsaw to return to Czechia.&#xA;The last rail section was being renovated so to get to Szklarska Poręba I changed from train to bus in Jelenia Góra.&#xA;I took the guitar back on prior visit home so luggages were manageable.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>A Coarse Menger&#39;s Theorem for Planar and Bounded Genus Graphs</title>
 				<link>https://vaclavblazej.github.io/pub/2026/coarse_menger/</link>
@@ -30,7 +37,7 @@
 				<description>&lt;p&gt;The tree-independence number of a graph is the minimum, over all tree-decompositions, of the largest independent set contained in a single bag.&#xA;Classes of graphs with bounded tree-independence number enjoy strong structural and algorithmic properties, but the parameter can blow up even in fairly restricted classes &amp;ndash; for instance, an induced biclique $K_{\ell,\ell}$ alone forces tree-independence number at least $\ell$.&#xA;This raises the question whether large induced bicliques are the &lt;em&gt;only&lt;/em&gt; obstruction to bounded tree-independence number in natural hereditary classes.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>2026 1/3 – deciding to change a job</title>
+				<title>2026 1/3 - deciding to change a job</title>
 				<link>https://vaclavblazej.github.io/post/2026/t1/</link>
 				<pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
 				<guid>https://vaclavblazej.github.io/post/2026/t1/</guid>
