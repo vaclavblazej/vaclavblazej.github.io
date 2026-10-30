@@ -12,9 +12,23 @@
 			<copyright>© Václav Blažej</copyright>
 		
 		
-			<lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://vaclavblazej.github.io/tags/graph-theory/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Almost Linear 3-Spanners of Temporal Cliques</title>
+				<link>https://vaclavblazej.github.io/pub/2026/temporal_3_spanners/</link>
+				<pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://vaclavblazej.github.io/pub/2026/temporal_3_spanners/</guid>
+				<description>&lt;p&gt;Temporal graphs model dynamic networks by assigning positive integer time labels to the edges, while information propagates along temporal paths, whose edge labels are traversed in nondecreasing order. A temporal $\alpha$-spanner of a temporal graph with $n$ vertices is a temporal subgraph that approximates the minimum-hop temporal distance between every pair of vertices within a factor of $\alpha$. While general temporal graphs may not admit sparse temporal $\alpha$-spanners for any value of $\alpha$, temporal cliques are known to admit temporal $(2k-1)$-spanners of size $\widetilde{\mathcal{O}}(kn^{1+1/k})$ for every positive integer $k$.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Coarse Block-Cut Tree Theorem</title>
+				<link>https://vaclavblazej.github.io/pub/2026/coarse_block_cut_tree/</link>
+				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://vaclavblazej.github.io/pub/2026/coarse_block_cut_tree/</guid>
+				<description>&lt;p&gt;We prove a coarse analogue of the classic fact that every graph can be decomposed along its cut-vertices into $2$-connected components. Precisely, we prove that for every graph $G$ and a positive integer $d$, $G$ admits a tree decomposition whose adhesion sets have weak diameter at most $3d+2$ so that no two vertices $u,v$ lying in the same bag can be separated by a set of weak diameter at most $d$ whose distance from $u$ and $v$ is more than $d$. By the Coarse Menger&amp;rsquo;s Theorem for two paths, this condition admits also a dual formulation, phrased in terms of the existence of two paths that are far from each other and connect the vicinity of $u$ with the vicinity of $v$.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>A Coarse Menger&#39;s Theorem for Planar and Bounded Genus Graphs</title>
 				<link>https://vaclavblazej.github.io/pub/2026/coarse_menger/</link>

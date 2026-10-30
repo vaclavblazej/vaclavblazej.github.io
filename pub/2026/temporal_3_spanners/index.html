@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>
+        
+            Almost Linear 3-Spanners of Temporal Cliques - Homepage of Vašek
+        
+    </title>
+    <meta name="description" content="Homepage of Vašek">
+    <meta name="author" content="">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://vaclavblazej.github.io//font/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/fonts.css">
+
+    
+    <script src="https://vaclavblazej.github.io/js/custom.js"></script>
+    <link rel="stylesheet" href="https://vaclavblazej.github.io/css/custom.css">
+
+    <link rel="shortcut icon" href="https://vaclavblazej.github.io//favicon.ico" />
+
+    
+
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [ ['$','$'] ],
+                displayMath: [ ["\\[","\\]"] ],
+                processEscapes: true,
+                autoload: {
+                    color: [],
+                    colorv2: ['color']
+                },
+                packages: {'[+]': ['noerrors']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process',
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            },
+            loader: {
+                load: ['[tex]/noerrors']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+    <script src="https://vaclavblazej.github.io/js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRSWGL3JS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BRSWGL3JS5');
+</script>
+
+<body>
+
+<div class="header noprint">
+    
+    <div class="desktop nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <ul>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile nav-menu">
+        <a href="https://vaclavblazej.github.io/" class="site-title pad">Homepage of Vašek</a>
+        <a href="#" id="toggle-btn">&#9776;</a>
+    </div>
+    <div>
+        <ul id="toggle-content" style="display:none;">
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/garden/">Garden</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/post/">Blog</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/pub/">Papers</a>
+            </li>
+            
+            <li class="pad-vertically">
+                <a class="pad" href="https://vaclavblazej.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+    
+    <div class="post">
+        <div class="post-title">
+            <p class="footnote">
+                
+
+
+    <time datetime="2026-09-02T00:00:00Z" class="post-list timeago">02.09.2026</time>
+
+
+
+
+    
+        
+
+
+
+
+    
+        <a class="box other %!s(&lt;nil&gt;)" href="https://arxiv.org/abs/2609.02851">arXiv</a>
+    
+
+
+    
+
+
+
+
+    |
+
+
+
+    tags:[ <a href="https://vaclavblazej.github.io/tags/graph-theory">graph theory</a> ]
+
+
+
+
+
+
+            </p>
+            <h1>Almost Linear 3-Spanners of Temporal Cliques</h1>
+
+            
+    
+    with
+     Júlia Baligács, Davide Bilò, Maël Dumas, and Anna Zych-Pawlewicz
+
+
+
+            
+
+        </div>
+        <div class="post-content">
+            <p>Temporal graphs model dynamic networks by assigning positive integer time labels to the edges, while information propagates along temporal paths, whose edge labels are traversed in nondecreasing order. A temporal $\alpha$-spanner of a temporal graph with $n$ vertices is a temporal subgraph that approximates the minimum-hop temporal distance between every pair of vertices within a factor of $\alpha$. While general temporal graphs may not admit sparse temporal $\alpha$-spanners for any value of $\alpha$, temporal cliques are known to admit temporal $(2k-1)$-spanners of size $\widetilde{\mathcal{O}}(kn^{1+1/k})$ for every positive integer $k$.</p>
+<p>We present a simple recursive algorithm that computes, for every temporal clique on $n$ vertices, a temporal $3$-spanner of size $n^{1+2/\sqrt{\ln n}}=n^{1+o(1)}$, thereby improving the previous best upper bound of $\widetilde{\mathcal{O}}(n^{3/2})$. We also show that a modified version of our algorithm computes temporal $3$-spanners of size $\mathcal{O}(nL)$ when the lifetime is bounded by $L$, i.e., all time labels are in ${1,\ldots,L}$, thus improving the previous bound of $\mathcal{O}(2^Ln\log n)$. Both results are particularly striking in light of the known lower bound of $\Omega(n^2)$ on the size of temporal $2$-spanners, which already holds for temporal cliques of lifetime $L\geq 3$.</p>
+<p>Both algorithms rely on a new simple recursive decomposition that certifies temporal connectivity for a large collection of source-target pairs using only $\mathcal{O}(n)$ carefully selected edges and recursively processes only the remaining pairs. Besides yielding substantially improved upper bounds, this approach is significantly simpler than previous constructions.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="pad-content">
+
+        <li>
+            © Václav Blažej
+            
+                2026
+            
+        </li>
+        
+
+        
+
+        
+    </ul>
+    <ul title="Last update of the website" class="pull-right pad">30. October 2026</ul>
+</div>
+
+<script type="text/javascript">
+    $("#toggle-btn").click(function(){
+        $("#toggle-content").toggle();
+        if($(this).html() === "☰") {
+            $(this).html("X")
+        } else {
+            $(this).html("☰")
+        }
+    });
+    $(window).resize(function(){
+        if(window.innerWidth > 768) {
+            $(".desktop").removeAttr("style");
+        }
+    });
+</script>
+</body>
+</html>
+
